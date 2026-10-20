@@ -174,7 +174,6 @@ const List = props => {
     investigateDs.setQueryParameter('params', {
       partnerCompanyId: supplierCompanyId,
       isLifeCyclesSummaryFlag,
-      companyId,
       queryCompanyAndGroup: 1,
       customizeUnitCode: `${prefix}.SURVEY,${prefix}.SURVEY_SEARCH_BAR`,
       ...remoteInvestigate,
@@ -182,18 +181,15 @@ const List = props => {
     sampleDs.setQueryParameter('params', {
       supplierId: supplierCompanyId,
       isLifeCyclesSummaryFlag,
-      companyId,
       customizeUnitCode: `${prefix}.SAMPLE,${prefix}.SAMPLE_SEARCH_BAR`,
     });
     siteInspectionDs.setQueryParameter('params', {
       supplierCompanyId,
       isLifeCyclesSummaryFlag: 1, // src-21084 现场考察单据展示要个360汇总查询一致
-      companyId,
       customizeUnitCode: `${prefix}.SITE_INSPECTION,${prefix}.SITE_INSPECTION_SEARCH_BAR`,
       ...remoteSiteInspection,
     });
     evaluationDs.setQueryParameter('params', {
-      companyId,
       isLifeCyclesSummaryFlag,
       pageEntryPoint: 'CUSTOMER_OWNED',
       supplierId: supplierCompanyId,
@@ -201,29 +197,24 @@ const List = props => {
       ...remoteEvaluation,
     });
     agreementDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       customizeUnitCode: `${prefix}.AGREEMENT_LIST,${prefix}.AGREEMENT_SEARCH_BAR`,
     });
     inquiryDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       customizeUnitCode: `${prefix}.INQUIRY_LIST,${prefix}.INQUIRY_SEARCH_BAR`,
     });
     bidDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       secondarySourceCategory: 'NEW_BID',
       customizeUnitCode: `${prefix}.BID_LIST,${prefix}.BID_SEARCH_BAR`,
     });
     rectifyDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       pageEntryPoint: 'CUSTOMER_OWNED',
       customizeUnitCode: `${prefix}.RECTIFY_LIST,${prefix}.RECTIFY_SEARCH_BAR`,
     });
     materialDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       isReturnEmptyCompanyFlag: dimensionCode === 'GROUP' ? undefined : 1,
       customizeUnitCode: `${prefix}.MATERIAL_LIST,${prefix}.MATERIAL_SEARCH_BAR`,
@@ -231,18 +222,15 @@ const List = props => {
     });
     evalEventDs.setQueryParameter('params', {
       dimensionCode,
-      companyId,
       supplierCompanyId,
       customizeUnitCode: `${prefix}.EVAL_EVENT,${prefix}.EVAL_EVENT_SEARCH_BAR`,
     });
     supplierEvaluationDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       isLifeCyclesSummaryFlag: 1,
       customizeUnitCode: `${prefix}.EVALUATION_REPORT,${prefix}.EVALUATION_REPORT_SEARCH_BAR`,
     });
     ppapDocumentDs.setQueryParameter('params', {
-      companyId,
       supplierCompanyId,
       action: 'ALL',
       customizeUnitCode: `${prefix}.PPAP_DOCUMENT,${prefix}.PPAP_SEARCH_BAR`,
@@ -586,7 +574,6 @@ const List = props => {
   const modelTableProps = {
     isPub,
     queryParams: {
-      companyId,
       supplierCompanyId,
       relationId: isLifeCyclesSummaryFlag ? partnerId : requisitionId,
     },
