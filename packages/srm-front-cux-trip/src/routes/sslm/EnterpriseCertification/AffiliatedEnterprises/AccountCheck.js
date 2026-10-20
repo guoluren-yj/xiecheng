@@ -14,27 +14,35 @@ const AccountCheck = ({ dataSet, readOnly = false }) => {
   const ctripAccountInfo = [
     {
       label: intl.get('sslm.enterpriseCertification.model.remit.ctripAccountName').d('户名'),
-      value: '携程计算机技术（上海）有限公司',
+      value: intl
+        .get('sslm.enterpriseCertification.model.remit.ctripAccountNameValue')
+        .d('携程计算机技术（上海）有限公司'),
     },
     {
       label: intl
         .get('sslm.enterpriseCertification.model.remit.ctripBankBranchName')
         .d('开户行'),
-      value: '中国工商银行股份有限公司上海市桂林路支行',
+      value: intl
+        .get('sslm.enterpriseCertification.model.remit.ctripBankBranchNameValue')
+        .d('中国工商银行股份有限公司上海市桂林路支行'),
     },
     {
       label: intl.get('sslm.enterpriseCertification.model.remit.ctripBankAccountNum').d('账号'),
-      value: '1001294819200067328',
+      value: intl
+        .get('sslm.enterpriseCertification.model.remit.ctripBankAccountNumValue')
+        .d('1001294819200067328'),
     },
     {
       label: intl.get('sslm.enterpriseCertification.model.remit.cnapsCode').d('联行号'),
-      value: '102290029486',
+      value: intl
+        .get('sslm.enterpriseCertification.model.remit.cnapsCodeValue')
+        .d('102290029486'),
     },
   ];
 
   return (
     <div>
-      <div className={styles['manual-review-title']}>
+      <div className={styles['manual-review-title']} style={{ marginBottom: 12 }}>
         <span />
         {intl.get('sslm.enterpriseCertification.view.title.ctripAccount').d('携程账户')}
       </div>
@@ -46,7 +54,7 @@ const AccountCheck = ({ dataSet, readOnly = false }) => {
           </div>
         ))}
       </div>
-      <div className={styles['manual-review-title']} style={{ marginTop: '32px' }}>
+      <div className={styles['manual-review-title']} style={{ margin: '32px 0 12px' }}>
         <span />
         {intl
           .get('sslm.enterpriseCertification.view.title.supplierPayInfo')

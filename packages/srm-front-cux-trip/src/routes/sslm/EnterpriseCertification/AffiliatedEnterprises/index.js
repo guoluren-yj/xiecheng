@@ -38,7 +38,7 @@ import { getCuxEnterpriseVerifyDS } from '../stores/getCuxEnterpriseVerifyDS';
 const REMIT_HELP_TEXT = intl
   .get('sslm.enterpriseCertification.view.title.accountTransferMsgCux')
   .d(
-    '请使用对公账户（对公账户名称默认为供应名称）向携程账户打款（打款金额0-1元，打款备注：XX），打款完成后输入打款的开户行和金额提交认证，提交后请确保在48小时内完成打款，否则回自动过期。'
+    '请使用对公账户（对公账户名称默认为供应名称）向携程账户打款（打款金额0-1元，打款备注：企业名称+员工姓名），打款完成后输入打款的开户行和金额提交认证，提交后请确保在48小时内完成打款，否则回自动过期。'
   );
 
 // 对公账户打款-认证中状态（查看接口后端暂未提供，先本地 mock）
