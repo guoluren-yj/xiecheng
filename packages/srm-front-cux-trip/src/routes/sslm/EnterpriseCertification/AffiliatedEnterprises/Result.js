@@ -15,7 +15,7 @@ import { getResponse, getCurrentOrganizationId } from 'utils/utils';
 import notification from 'utils/notification';
 import { Header, Content } from 'components/Page';
 
-import { getAgreementModal } from 'srm-front-sslm/lib/routes/components/PrivacyAgreement';
+import { getAgreementModal } from '../../components/PrivacyAgreement';
 import {
   queryEnterprisesInfo,
   relevanceEnterpriseVerify,
