@@ -5,9 +5,9 @@
  * @date 2019-10-16
  * @copyright 2019-10-16 © HAND
  */
+import sslmRoutes from './sslm';
 
-module.exports = {
+export default {
   tenantNum: 'SRM-TRIP',
-  routers: [
-  ],
+  routers: [...sslmRoutes],
 };
