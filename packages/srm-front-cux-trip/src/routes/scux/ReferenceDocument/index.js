@@ -95,7 +95,7 @@ const ReferenceDocument = (props) => {
     if (!sourceHeaderId) {
       return;
     }
-    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetail').d('询价单明细');
+    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetailCux').d('寻源项目管理');
     // 线下整单录入：跳整单详情
     if (Number(offlineWholeFlag) === 1) {
       openTab({
@@ -164,7 +164,7 @@ const ReferenceDocument = (props) => {
         name: 'attributeVarchar40',
         width: 120,
         renderer: ({ record }) => {
-          const text = record.get('attributeVarchar40');
+          const text = record.get('sourceNum');
           if (!text) {
             return '-';
           }

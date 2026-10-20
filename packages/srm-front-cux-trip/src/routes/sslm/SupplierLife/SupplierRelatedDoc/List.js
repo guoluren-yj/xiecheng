@@ -444,7 +444,7 @@ const List = props => {
     if (!rfxHeaderId) {
       return;
     }
-    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetail').d('询价单明细');
+    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetailCux').d('寻源项目管理');
     // 线下整单录入：跳整单详情
     if (Number(offlineWholeFlag) === 1) {
       openTab({
