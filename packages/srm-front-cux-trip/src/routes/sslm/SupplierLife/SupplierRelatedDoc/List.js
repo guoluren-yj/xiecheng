@@ -456,24 +456,28 @@ const List = props => {
     if (!rfxHeaderId) {
       return;
     }
+    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetail').d('询价单明细');
     // 线下整单录入：跳整单详情
     if (Number(offlineWholeFlag) === 1) {
-      window.open(
-        `/ssrc/new-inquiry-hall/whole-detail/${rfxHeaderId}`,
-        '_blank',
-        'noopener,noreferrer'
-      );
+      openTab({
+        key: `/ssrc/new-inquiry-hall/whole-detail/${rfxHeaderId}`,
+        title,
+      });
       return;
     }
     // 线上询价单：走单据流 doc-link
     const innerLink = `/ssrc/new-inquiry-hall/rfx-detail/${rfxHeaderId}?current=newInquiryHall&docLinkFlag=1${
       projectLineSectionId ? `&projectLineSectionId=${projectLineSectionId}` : ''
     }`;
-    window.open(
-      `/spfm/doc-link?link=${encodeURIComponent(innerLink)}&rfxId=${rfxHeaderId}&linkCheckFlag=1`,
-      '_blank',
-      'noopener,noreferrer'
-    );
+    openTab({
+      key: '/spfm/doc-link',
+      title,
+      search: querystring.stringify({
+        link: innerLink,
+        rfxId: rfxHeaderId,
+        linkCheckFlag: 1,
+      }),
+    });
   }, []);
 
   // 招投标跳转详情
