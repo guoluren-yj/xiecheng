@@ -6,8 +6,11 @@
  * @copyright 2019-10-16 © HAND
  */
 
+const sslmRoutes = require('./sslm');
+
 module.exports = {
   tenantNum: 'SRM-TRIP',
   routers: [
+    ...sslmRoutes,
   ],
 };
