@@ -23,10 +23,6 @@ const sourcingResultsDS = () => ({
       name: 'sourceNum',
     },
     {
-      label: intl.get(`spcm.common.model.common.sourceLink`).d('寻源链接'),
-      name: 'attributeVarchar40',
-    },
-    {
       label: intl.get(`spcm.common.model.common.lineNumber`).d('行号'),
       name: 'itemNum',
     },

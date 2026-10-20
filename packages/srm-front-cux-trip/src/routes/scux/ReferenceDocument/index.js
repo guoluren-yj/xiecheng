@@ -11,7 +11,6 @@ import { dateRender } from 'utils/renderer';
 import withCustomize from 'srm-front-cuz/lib/c7nCustomize';
 import { DATETIME_MIN } from 'utils/constants';
 import { getCurrentOrganizationId, getResponse } from 'utils/utils';
-import { openTab } from 'utils/menuTab';
 import { getSearchBarCache } from '_components/SearchBarTable/util/cache';
 import SearchBarTable from '_components/SearchBarTable';
 import formatterCollections from 'utils/intl/formatterCollections';
@@ -86,37 +85,6 @@ const ReferenceDocument = (props) => {
     });
   };
 
-  // 寻源链接跳转
-  const openSourceLink = (record) => {
-    const { sourceHeaderId, offlineWholeFlag } = record.get([
-      'sourceHeaderId',
-      'offlineWholeFlag',
-    ]);
-    if (!sourceHeaderId) {
-      return;
-    }
-    const title = intl.get('ssrc.inquiryHall.view.message.title.rfxDetail').d('询价单明细');
-    // 线下整单录入：跳整单详情
-    if (Number(offlineWholeFlag) === 1) {
-      openTab({
-        key: `/ssrc/new-inquiry-hall/whole-detail/${sourceHeaderId}`,
-        title,
-      });
-      return;
-    }
-    // 线上询价单：走单据流 doc-link
-    const innerLink = `/ssrc/new-inquiry-hall/rfx-detail/${sourceHeaderId}?current=newInquiryHall&docLinkFlag=1`;
-    openTab({
-      key: '/spfm/doc-link',
-      title,
-      search: qs.stringify({
-        link: innerLink,
-        rfxId: sourceHeaderId,
-        linkCheckFlag: 1,
-      }),
-    });
-  };
-
   const onQuerySourcing = ({ filter: { unitCode }, params, dataSet }, ds) => {
     // 获取 searchCode 对应的筛选器缓存
     const queryArr = ['createDateFrom', 'createDateTo'];
@@ -157,18 +125,6 @@ const ReferenceDocument = (props) => {
         width: 150,
         renderer: ({ record }) => {
           return `${record.get('sourceNum')}-${record.get('itemNum')}`;
-        },
-      },
-      {
-        label: intl.get(`spcm.common.model.common.sourceLink`).d('寻源链接'),
-        name: 'attributeVarchar40',
-        width: 120,
-        renderer: ({ record }) => {
-          const text = record.get('attributeVarchar40');
-          if (!text) {
-            return '-';
-          }
-          return <a onClick={() => openSourceLink(record)}>{text}</a>;
         },
       },
       {
