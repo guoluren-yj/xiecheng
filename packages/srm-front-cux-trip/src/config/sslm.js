@@ -1,7 +1,7 @@
 /**
  * 供应商关联业务单据（sslm）二开路由
  */
-module.exports = [
+export default [
   {
     coverPath: '/sslm/supplier-related-doc/list',
     path: '/cux/sslm/supplier-related-doc/list',

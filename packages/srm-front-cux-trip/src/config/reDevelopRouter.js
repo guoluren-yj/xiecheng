@@ -6,9 +6,9 @@
  * @copyright 2019-10-16 © HAND
  */
 
-const sslmRoutes = require('./sslm');
+import sslmRoutes from './sslm';
 
-module.exports = {
+export default {
   tenantNum: 'SRM-TRIP',
   routers: [
     ...sslmRoutes,
