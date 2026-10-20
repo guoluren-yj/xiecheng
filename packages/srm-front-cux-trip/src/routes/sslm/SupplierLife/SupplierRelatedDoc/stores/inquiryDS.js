@@ -131,12 +131,11 @@ const inquiryDS = () => ({
   ],
   transport: {
     read: ({ data }) => {
-      const { params: { companyId, supplierCompanyId, customizeUnitCode } = {}, ...other } = data;
+      const { params: { supplierCompanyId, customizeUnitCode } = {}, ...other } = data;
       return {
         url: `${SRM_SSRC}/v2/${organizationId}/rfx/list/all`,
         method: 'GET',
         data: filterNullValueObject({
-          companyIdForSupplierService: companyId,
           supplierCompanyId,
           customizeUnitCode,
           ...other,

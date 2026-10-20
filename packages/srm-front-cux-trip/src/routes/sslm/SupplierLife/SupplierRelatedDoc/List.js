@@ -708,6 +708,13 @@ const List = props => {
                 }}
                 searchBarConfig={{
                   autoQuery: true,
+                  // 去掉筛选器默认带出的公司ID，避免作为查询条件传给接口
+                  beforeQuery: ({ params }) => {
+                    if (params) {
+                      delete params.companyId;
+                    }
+                    return true;
+                  },
                   fieldProps: autoQueryTab?.includes(tabPane.key) ? getFieldProps() : null,
                 }}
               />
