@@ -1,0 +1,71 @@
+.ec-introduce {
+  :global {
+    .ec-name-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      .ec-name {
+        font-size: 16px;
+        color: #1D2129;
+        line-height: 24px;
+        font-weight: 600;
+        margin-right: 8px;
+        max-width: 250px;
+      }
+      .ec-card-status {
+        border: none;
+        margin: 0;
+      }
+    }
+    .c7n-pro-output {
+      line-height: 1.5;
+      white-space: initial;
+    }
+  }
+}
+
+.ec-signing {
+  :global {
+    .ec-signing-divider {
+      width: calc(100% + 40px);
+      margin: 20px;
+      margin-left: -20px;
+      margin-bottom: 16px;
+    }
+    .ec-signing-form-wapper {
+      height: calc(100vh - 240px);
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-top: 4px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.page-content.ec-sign-detail-content {
+  height: inherit !important;
+  :global {
+    .ec-sign-detail-tabs{
+      height: 100%;
+      .c7n-tabs-bar {
+          min-width: 180px;
+          max-width: 220px;
+          padding: 20px 0 12px 20px;
+          .c7n-tabs-nav {
+          .c7n-tabs-tab {
+            text-align: left;
+            padding: 0 24px 0 0;
+          }
+        }
+      }
+      .c7n-tabs-content {
+        padding: 20px;
+        overflow: auto;
+        max-height: 100%;
+      }
+      .c7n-tabs-content:has(.siging-tab-pane[aria-hidden="false"]) {
+        overflow: hidden;
+      }
+    }
+  }
+}

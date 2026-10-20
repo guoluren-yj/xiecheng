@@ -1,0 +1,128 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@tag-prefix-cls: ~'@{c7n-prefix}-tag';
+
+.@{tag-prefix-cls} {
+  .reset-component;
+  display: inline-block;
+  height: 0.22rem;
+  margin-right: 0.08rem;
+  padding: 0 0.07rem;
+  font-weight: @tag-font-weight;
+  font-size: @tag-font-size;
+  line-height: 0.2rem;
+  white-space: nowrap;
+  background-color: @tag-default-bg;
+  border: @border-width-base @border-style-base @tag-default-bg;
+  border-radius: @border-radius-base;
+  cursor: pointer;
+  opacity: 1;
+  transition: all @animation-duration-slow @ease-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &,
+  a,
+  a:hover {
+    color: @tag-default-color;
+  }
+
+  > a:first-child:last-child {
+    display: inline-block;
+    margin: 0 -0.08rem;
+    padding: 0 0.08rem;
+  }
+
+  .@{iconfont-css-prefix}-close {
+    .iconfont-size-under-12px(0.1rem);
+    margin-left: 0.03rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all @animation-duration-slow;
+  }
+
+  &&-has-color {
+    border-color: transparent;
+
+    &,
+    a,
+    a:hover,
+    .@{iconfont-css-prefix}-close,
+    .@{iconfont-css-prefix}-close:hover {
+      color: #fff;
+    }
+  }
+
+  &-checkable {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:not(&-checked):hover {
+      color: @primary-color;
+    }
+
+    &,
+    a,
+    a:hover {
+      color: #000;
+    }
+
+    &:active,
+    &-checked {
+      color: #fff;
+    }
+
+    &-checked {
+      background-color: @primary-6;
+    }
+
+    &:active {
+      background-color: @primary-7;
+    }
+  }
+
+  &-close {
+    width: 0 !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-zoom-enter,
+  &-zoom-appear {
+    animation: antFadeIn @animation-duration-base @ease-in-out-circ;
+    animation-fill-mode: both;
+  }
+
+  &-zoom-leave {
+    animation: antZoomOut @animation-duration-slow @ease-in-out-circ;
+    animation-fill-mode: both;
+  }
+
+  // mixin to iterate over colors and create CSS class for each one
+  .make-color-classes(@i: length(@preset-colors)) when (@i > 0) {
+    .make-color-classes(@i - 1);
+    @color: extract(@preset-colors, @i);
+    @lightColor: '@{color}-1';
+    @lightBorderColor: '@{color}-3';
+    @darkColor: '@{color}-6';
+    &&-@{color} {
+      color: @@darkColor;
+      background-color: @@lightColor;
+      border-color: @@lightBorderColor;
+    }
+    &&-@{color}-inverse {
+      color: #fff;
+      background-color: @@darkColor;
+      border-color: @@darkColor;
+    }
+    &&-@{color}&&-no-border,
+    &&-@{color}-inverse&&-no-border {
+      border-color: transparent;
+    }
+  }
+
+  .make-color-classes();
+}

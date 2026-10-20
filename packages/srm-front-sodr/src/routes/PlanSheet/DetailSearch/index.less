@@ -1,0 +1,33 @@
+/*
+ * style - 我收到的订单明细查询
+ * @date: 2018-12-27 19:23:43
+ * @author: FQL <qilin.feng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.button-group {
+  margin-bottom: 16px;
+  :global {
+    .ant-btn:not(:first-child) {
+      margin-left: 14px;
+    }
+  }
+}
+.row-agent-column {
+  display: flex;
+  align-items: center;
+  img {
+    height: 16px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

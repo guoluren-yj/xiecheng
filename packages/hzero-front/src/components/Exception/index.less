@@ -1,0 +1,129 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+
+.exception {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100% !important;
+  overflow: hidden;
+  background-color: #fff;
+
+  .imgBlock {
+    width: 100%;
+    height: 50%;
+    flex: 0 0 50%;
+    // width: 62.5%;
+    // padding-right: 152px;
+    zoom: 1;
+    &:before,
+    &:after {
+      content: ' ';
+      display: table;
+    }
+    &:after {
+      clear: both;
+      visibility: hidden;
+      font-size: 0;
+      height: 0;
+    }
+  }
+
+  .imgEle {
+    height: 100%;
+    width: 100%;
+    // max-width: 430px;
+    // float: right;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
+    // background-size: contain;
+    color: @primary-color;
+  }
+
+  .actions {
+    color: @primary-color;
+    button:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  .content {
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: @primary-color;
+      font-size: 120px;
+      font-family: 'PingFangSC-Regular';
+      font-weight: 400;
+      line-height: 120px;
+      margin-bottom: 12px;
+    }
+
+    .desc {
+      // color: @text-color-secondary;
+      color: #1D2129;
+      font-size: 18px;
+      // line-height: 28px;
+      // margin-bottom: 16px;
+    }
+
+    .actions {
+      color: @primary-color;
+      button:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .imgBlock404 {
+    height: 100%;
+    width: 100%;
+    .imgEle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: -6%;
+    }
+  }
+  .desc404 {
+    font-size: 18px;
+    color: #1D2129;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 24px;
+  }
+
+  .imgBlock403 {
+    height: 100%;
+    width: 100%;
+    .imgEle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .desc403 {
+    font-size: 18px;
+    color: #1D2129;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .exception {
+    display: block;
+    text-align: center;
+    // .imgBlock {
+    //   padding-right: 0;
+    //   margin: 0 auto 24px;
+    // }
+  }
+}
+

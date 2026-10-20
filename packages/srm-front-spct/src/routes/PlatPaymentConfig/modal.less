@@ -1,0 +1,44 @@
+.modal-container {
+  :global {
+    .modal-title {
+      background: #eaf4fd;
+      padding: 8px 12px 8px 20px;
+      color: #3095f2;
+
+      .icon {
+        position: relative;
+        top: -1px;
+        margin-right: 12px;
+      }
+    }
+
+    .modal-content {
+      padding: 0 20px 20px 20px;
+
+      .modal-header {
+        font-size: 14px;
+        color: #000;
+        position: relative;
+        font-weight: 600;
+        padding-left: 11px;
+        margin-bottom: 8px;
+        margin-top: 32px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 12px;
+          background-color: #36c2cf;
+        }
+      }
+
+      .modal-description {
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

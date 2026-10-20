@@ -1,0 +1,200 @@
+.interface-definition-detail {
+  height: calc(100% - 48px);
+  overflow: auto;
+  padding: 0 8px 8px;
+  .card-title {
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  :global {
+    .page-content {
+      margin: 8px 0 0 !important;
+      padding: 0;
+      .c7n-card-body {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+// 基础信息
+.basic-info {
+  .expand-icon {
+    font-size: 12px;
+    color: @primary-color;
+    font-weight: 400;
+    > span {
+      cursor: pointer;
+    }
+  }
+  :global {
+    .c7n-pro-input-wrapper,
+    .c7n-pro-select-wrapper,
+    .c7n-pro-textarea-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// 扩展信息
+.extended-info {
+  &-header {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    &-border {
+      width: 3px;
+      height: 12px;
+      background-color: @primary-color;
+      margin: 0 8px 0 0;
+    }
+  }
+  :global {
+    .c7n-pro-input-wrapper,
+    .c7n-pro-select-wrapper,
+    .c7n-pro-input-number-wrapper {
+      width: 100%;
+    }
+    .c7n-pro-input-number {
+      text-align: left;
+    }
+  }
+}
+
+// 参数维护
+.params-content {
+  .card-title {
+    height: 60px;
+    margin-bottom: 0;
+    line-height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .params-bottom {
+    display: flex;
+    width: 100%;
+  }
+  :global {
+    .c7n-card-body {
+      padding: 0 !important;
+    }
+    .c7n-pro-input-number {
+      text-align: left;
+    }
+    .c7n-tabs-nav-scroll {
+      padding: 20px 20px 0;
+      .c7n-tabs-tab {
+        font-weight: 600;
+        padding-bottom: 18px;
+        font-size: 16px;
+        color: #000;
+      }
+      .c7n-tabs-nav .c7n-tabs-tab-active {
+        color: @primary-color;
+      }
+    }
+    .c7n-tabs-bar {
+      margin: 0;
+    }
+  }
+}
+
+.params-nodata {
+  text-align: center;
+  margin: 66px 0;
+  .none-content-svg {
+    // width: 3rem;
+    // height: 2.5rem;
+    margin: auto;
+    color: @primary-color;
+  }
+  &-info {
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 24px 0 4px 0;
+  }
+  &-tip {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    // line-height: 22px;
+    margin-top: 0.16rem;
+    font-weight: 400;
+    .create-param {
+      color: @primary-color;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+// 数据转换弹窗
+.data-conversion-modal {
+  width: 7.42rem;
+  .modal-card {
+    margin-bottom: 32px;
+    .header {
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      margin: 0 0 16px 0;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      &-border {
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        margin: 0 8px 0 0;
+      }
+    }
+    :global {
+      .c7n-pro-field-wrapper {
+        padding-right: 0 !important;
+        .c7n-pro-field {
+          .c7n-col-12:nth-child(2n),
+          .c7n-col-24 {
+            padding-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  :global {
+    .c7n-pro-input-wrapper,
+    .c7n-pro-select-wrapper,
+    .c7n-pro-textarea-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.data-conversion-info {
+  margin-left: 0.05rem;
+  font-size: 0.14rem;
+}
+
+.app-api-detail {
+  height: 100%;
+  :global {
+    .c7n-spin-nested-loading {
+      height: 100%;
+      .c7n-spin-container {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.link-span {
+  cursor: pointer;
+  color: @primary-color;
+}

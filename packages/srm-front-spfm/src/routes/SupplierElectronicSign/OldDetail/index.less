@@ -1,0 +1,228 @@
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0;
+    }
+  }
+}
+
+// 头wrapper
+.header-wrapper {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+  }
+}
+
+.old-detail-panel-basic {
+  :global {
+    .page-content {
+      margin: 8px;
+    }
+  }
+}
+
+.fail-reason-form-item {
+  :global {
+    .ant-form-explain,
+    .ant-form-extra {
+      margin-top: 0;
+    }
+    .ant-input {
+      border-radius: 4px;
+      margin-top: 5px;
+      padding: 4px 8px;
+      box-shadow: none;
+      &:focus {
+        border-color: #d9d9d9;
+      }
+      &:hover {
+        border-color: #d9d9d9;
+      }
+    }
+    textarea {
+      overflow-x: hidden;
+    }
+  }
+}
+
+.content {
+  background-color: transparent;
+  padding: 0;
+  margin: 8px;
+  height: calc(100vh - 152px);
+  overflow-y: auto;
+
+  // :global {
+  //   .c7n-steps-item-title {
+  //     font-size: 14px;
+  //     line-height: 24px;
+  //   }
+
+  //   .c7n-steps-item-icon {
+  //     font-size: 14px;
+  //     line-height: 24px;
+  //     width: 0.22rem;
+  //     height: 0.22rem;
+  //   }
+
+  //   .c7n-steps-item-icon span.icon {
+  //     width: 0.22rem;
+  //     height: 0.22rem;
+  //     line-height: .22rem;
+  //   }
+
+  //   .c7n-steps-item-finish {
+  //     .c7n-steps-item-icon {
+  //       width: 24px;
+  //       height: 24px;
+  //       span.icon {
+  //         width: 24px;
+  //         height: 24px;
+  //         line-height: 24px;
+  //       }
+  //     }
+  //   }
+  // }
+}
+.cardTitle {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 24px;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+.card {
+  padding: 20px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  width: 100%;
+  &:last-child {
+    // height: 43vh !important;
+    height: 35vh;
+    margin-bottom: 0;
+  }
+  .cardWrapper {
+    width: 75%;
+    max-width: 1172px;
+    min-width: 750px;
+  }
+
+  :global {
+    .c7n-steps-item-title {
+      font-size: 14px;
+      color: #101319;
+      line-height: 23px;
+      letter-spacing: 0;
+    }
+
+    .c7n-steps-item-wait {
+      .c7n-steps-item-icon {
+        background: #f2f3f5;
+        .c7n-steps-icon {
+          color: #4e5769 !important;
+        }
+      }
+
+      .c7n-steps-item-title {
+        color: #4e5769;
+      }
+    }
+
+    .c7n-steps-item-finish {
+      .c7n-steps-item-icon {
+        background: rgba(59, 179, 70, 0.1);
+        span.icon {
+          color: #3bb346 !important;
+        }
+      }
+
+      .c7n-steps-item-title:after {
+        background: rgba(59, 179, 70, 1) !important;
+      }
+    }
+
+    .c7n-steps-item-process {
+      .c7n-steps-item-icon {
+        background: #3bb346;
+      }
+
+      .c7n-steps-item-title {
+        font-size: 14px;
+        color: #3bb346;
+        letter-spacing: 0;
+        line-height: 23px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.theme-config-protocol :global {
+  width: 6rem;
+  background-color: #fff;
+  background-image: url(../../../assets/agreement-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  border-radius: 0.05rem;
+  padding: 0;
+
+  .ant-modal-header,
+  .ant-modal-footer {
+    display: none;
+  }
+
+  .ant-modal-content {
+    background: initial;
+  }
+
+  .protocol-title {
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 0.36rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.08rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .protocol-please {
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 0.18rem;
+    font-weight: 600;
+
+    p {
+      margin-bottom: 0.08rem;
+    }
+  }
+
+  .protocol-content {
+    width: 5.4rem;
+    margin: 0.22rem auto 0;
+    padding: 0.2rem;
+    background: #f5f7fa;
+    box-shadow: 0 0.01rem 0.02rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.05rem;
+    font-size: 0.14rem;
+
+    p:first-of-type {
+      margin-bottom: 0.16rem;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .protocol-footer {
+    margin-top: 0.36rem;
+    text-align: right;
+
+    .c7n-pro-btn {
+      margin-left: 0.08rem;
+    }
+  }
+}

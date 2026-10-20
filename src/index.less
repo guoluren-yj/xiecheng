@@ -1,0 +1,43 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+@fontFamily: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+  sans-serif;
+
+.cart-button {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  color: #b3b3b3;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #29bece;
+  }
+}
+
+.header-link {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+// 添加语言切换小地球图标
+:global {
+  .hzero-normal-header-right {
+    .ant-select-sm.select-no-border.default-language-select.hzero-normal-header-right-item.hzero-normal-header-right-item-select.hzero-normal-header-right-item-language.ant-select.ant-select-enabled{
+      padding-left: 10px !important;
+      &::before {
+        content: "\E6F1";
+        font-size: 12px;
+        transition: transform .3s,-webkit-transform .3s;
+        font-family: anticon !important;
+        position: absolute;
+        top: 12px;
+        left: -2px;
+      }
+    }
+  }
+}

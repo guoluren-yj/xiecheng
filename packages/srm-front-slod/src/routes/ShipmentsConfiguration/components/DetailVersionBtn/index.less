@@ -1,0 +1,58 @@
+.ver_dev {
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 0;
+  scrollbar-width: none; /* firefox */ // 隐藏滚动条
+  -ms-overflow-style: none; /* IE 10+ */ // 隐藏滚动条
+  .ver_dev_a {
+    color: '#1D2129';
+    cursor: pointer;
+    // padding-top: 10px 0;
+    margin: 20px 0;
+    .ver_dev_v {
+      color: rgb(29, 33, 41);
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .ver_dev_text {
+      color: rgb(134, 141, 156);
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 4px;
+      .ver_dev_name {
+        // display: inline-block;
+        display: block;
+        margin-right: 4px;
+        float: left;
+      }
+      .ver_dev_data {
+        display: block;
+        float: left;
+      }
+    }
+    .ver_dev_text::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  // 父元素添加 伪类hover 使子元素发生改变
+  .ver_dev_a:hover .ver_dev_v {
+    color: #29becf;
+  }
+}
+
+// 获取父元素的第一个子元素和最后一个子元素
+.ver_dev > :first-child {
+  margin-top: 0;
+} // 这是设置第一个
+.ver_dev:last-child {
+  margin-bottom: 0;
+} // 这是设置最后一个
+
+.ver_dev_empty {
+  color: rgb(134, 141, 156);
+}

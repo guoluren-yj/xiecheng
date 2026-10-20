@@ -1,0 +1,317 @@
+@import '~choerodon-ui/lib/style/themes/default';
+
+.common-import {
+  &-title {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &-template {
+    display: flex;
+    align-items: baseline;
+
+    // &::before {
+    //   content: '\B7';
+    //   position: relative;
+    //   width: 15px;
+    //   padding-right: 12px;
+    //   color: rgba(0, 0, 0, 0.65);
+    // }
+
+    &-title {
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 28px;
+    }
+
+    &-select {
+      border: none !important;
+      :global {
+        .c7n-pro-select {
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 600;
+          border: none !important;
+        }
+        label:after,
+        label:before {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &-button {
+      position: relative;
+      top: -1px;
+      color: @primary-color !important;
+      font-weight: 600;
+      line-height: 1;
+      background-color: transparent !important;
+      border-color: transparent !important ;
+      cursor: pointer;
+      pointer-events: all;
+      // &-item-hover:hover {
+      //   background-color: #33b6c2 !important;
+      // }
+      :global {
+        .icon {
+          font-weight: normal;
+        }
+      }
+      .icon {
+        font-weight: normal !important;
+      }
+      &:hover {
+        span,
+        i {
+          color: @primary-color !important;
+        }
+      }
+      &:before,
+      &:after {
+        visibility: hidden;
+      }
+    }
+    &-button-item {
+      pointer-events: auto;
+    }
+  }
+
+  &-upload {
+    margin: 16px 0 24px 0;
+    // height: 210px;
+    :global {
+      .c7n-upload.c7n-upload-drag .c7n-upload-drag-container {
+        vertical-align: top;
+      }
+    }
+    &-file-icon {
+      color: @primary-color;
+      font-size: 44px;
+    }
+    &-cursor {
+      cursor: pointer;
+
+      :global {
+        .c7n-upload.c7n-upload-drag.c7n-upload.c7n-upload-drag.c7n-upload.c7n-upload-drag {
+          padding: 20px;
+          background: #fbfbfc;
+          cursor: auto;
+          .c7n-upload.c7n-upload-btn {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      width: 44px;
+      padding: 24px 0 12px 0;
+      // height: 90px;
+    }
+
+    &-icon-excel {
+      width: 44px;
+      padding: 24px 0 12px 0;
+      // height: 90px;
+    }
+
+    &-text {
+      padding-bottom: 4px;
+      color: #000;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &-extra {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 40px;
+      padding-left: 0;
+      text-align: left;
+
+      &-icon {
+        width: 12px;
+        height: 14px;
+        vertical-align: middle;
+      }
+
+      &-text {
+        padding-left: 8px;
+        color: #000;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    &-import-progress {
+      display: flex;
+      // justify-content: space-around;
+      // padding-left: 20px;
+      // padding-right: 20px;
+      &-item {
+        width: 50%;
+        max-width: 194px;
+        &:first-of-type {
+          margin-right: 12px;
+        }
+        &-title {
+          height: 20px;
+          text-align: left;
+          i {
+            margin-left: 4px;
+            font-size: 14px;
+            line-height: 15px;
+          }
+          &-text {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: justify;
+          }
+
+          &-success {
+            color: #47b883;
+          }
+
+          &-error {
+            color: #f56349;
+          }
+        }
+
+        &-content {
+          max-width: 194px;
+          height: 4px;
+          line-height: 4px;
+          :global {
+            .c7n-progress-line {
+              text-align: left;
+            }
+            .c7n-progress-inner {
+              height: 2px !important;
+              background-color: #cdcdce !important;
+            }
+            .c7n-progress-bg {
+              height: 2px !important;
+            }
+          }
+        }
+      }
+    }
+
+    &-import-tooltip {
+      padding-top: 12px;
+      padding-bottom: 24px;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+    }
+
+    &-import-tooltip-failed {
+      text-align: left;
+      // padding-left: 20px;
+      // padding-bottom: 16px;
+      &-title {
+        color: rgba(0, 0, 0, 0.65);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      &-content {
+        &-text {
+          display: inline-block;
+          height: 24px;
+          color: #000;
+          font-weight: 400;
+          line-height: 24px;
+          vertical-align: middle;
+        }
+      }
+      .common-import-template-button {
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+
+    &-progress {
+      width: calc(100% - 40px);
+      padding-bottom: 8px;
+    }
+
+    &-button {
+      pointer-events: all;
+      // &-it
+      //  em {
+      // z-index: 1;
+      // }
+    }
+  }
+}
+
+.srm-common-import-edit-drawer {
+  :global {
+    .c7n-pro-modal-footer .c7n-pro-btn-disabled {
+      color: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.08);
+      border: none;
+      &,
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.alert {
+  :global {
+    .c7n-alert-icon {
+      position: relative !important;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.srm-common-import-button {
+  position: relative;
+  &-tag {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    display: inline-block;
+    padding: 0 2px;
+    color: #fff;
+    font-size: 8px;
+    background: #f56349;
+    border-radius: 2px;
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.common-import-status-tag .ant-tag {
+  font-weight: 600;
+  font-size: 12px;
+  border-color: transparent;
+}
+
+.srm-common-import-history-alert {
+  padding-left: 40px;
+  color: #3095f2;
+  background-color: rgba(48, 149, 242, 0.1);
+  border: none;
+  i {
+    top: 9px;
+    font-size: 16px;
+  }
+}
+
+.common-import-svg-circle {
+  fill: @primary-color;
+}

@@ -1,0 +1,697 @@
+@import '~hzero-front/lib/srm-variables';
+// 步骤条样式
+.certification-steps {
+  padding: 16px;
+  margin: 8px 8px 0 8px;
+  background-color: #fff;
+  :global {
+    .c7n-steps-item-icon {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .c7n-steps-item-title {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .c7n-steps-item {
+      .c7n-steps-item-content {
+        max-width: 2.4rem;
+      }
+    }
+    .c7n-steps-item-process {
+      .c7n-steps-item-icon {
+        background: #47b881;
+      }
+      .c7n-steps-item-title {
+        color: @text-1;
+      }
+    }
+    .c7n-steps-item-finish {
+      .c7n-steps-item-icon {
+        background: #47b881;
+        color: #fff;
+      }
+      .c7n-steps-item-title {
+        color: @text-2;
+      }
+    }
+    .c7n-steps-item-wait {
+      .c7n-steps-item-icon {
+        background: rgba(0, 0, 0, 0.25);
+      }
+      .c7n-steps-item-title {
+        color: @text-3;
+      }
+    }
+  }
+}
+
+.certification-wrap {
+  :global {
+    .page-content {
+      margin: 8px;
+      min-height: calc(100% - 16px) !important;
+    }
+  }
+}
+
+// 实名认证
+.certification-title {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  &-help {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+    font-weight: 400;
+  }
+  :global {
+    .c7n-tag-blue {
+      font-size: 14px;
+      margin-left: 8px;
+      height: 28px;
+      border: 0;
+      padding: 4px;
+    }
+  }
+}
+.certification-relname-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  .certification-card {
+    width: 250px;
+    margin-right: 80px;
+    :global {
+      .c7n-card-body {
+        padding: 0;
+        text-align: center;
+      }
+    }
+    &-svg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-img {
+      margin-bottom: 32px;
+      > span {
+        // display: inline-block;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 40px;
+        > img {
+          height: 32px;
+        }
+      }
+    }
+    &-title {
+      font-size: 14px;
+      color: #000;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    &-tips {
+      display: inline-block;
+      padding: 0 5px;
+      font-size: 12px;
+      color: #47b881;
+      line-height: 18px;
+      font-weight: 600;
+      background: rgba(71, 184, 129, 0.1);
+      border-radius: 2px;
+      margin-left: 4px;
+    }
+    &-help {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 18px;
+      font-weight: 400;
+    }
+    &-btn {
+      margin-top: 24px;
+      > button {
+        font-size: 14px;
+      }
+    }
+  }
+  .certification-card:last-child {
+    margin-right: 0;
+  }
+}
+.manual-review-title {
+  font-size: 14px;
+  color: #000;
+  line-height: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  > span {
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background: #36c2cf;
+    margin-right: 8px;
+  }
+}
+.manual-id-card-title {
+  margin-top: 32px;
+}
+.certificate-photo {
+  margin-bottom: -8px;
+  :global {
+    .c7n-col-10 {
+      width: 130px;
+      margin-right: 16px;
+    }
+    .c7n-pro-attachment-list-card {
+      margin-top: 0;
+    }
+  }
+  &-example {
+    > div {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+    > img {
+      width: 150px;
+      height: 108px;
+    }
+  }
+}
+.certification-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 258px);
+
+  &-item {
+    width: 600px;
+    text-align: center;
+    &-title {
+      margin: 16px 0 4px;
+      font-size: 16px;
+      color: #000;
+      line-height: 24px;
+      font-weight: 600;
+    }
+    &-help {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 22px;
+      font-weight: 400;
+    }
+    &-btn {
+      margin-top: 24px;
+    }
+    &-terms {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 16px;
+    }
+  }
+}
+
+// 企业主要信息样式
+.upload-img-style {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  :global {
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .img-btn {
+    display: none;
+  }
+  &:hover .img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    font-size: 18px;
+    color: #fff;
+    a {
+      color: #fff;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.view-img-no-model {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+.view-img-model {
+  height: 210px;
+}
+.certification-title-tips {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+// uuid上传
+.file-card-uuid {
+  :global {
+    .c7n-pro-attachment-list-card {
+      margin-top: 0 !important;
+      .c7n-pro-btn-link {
+        font-weight: 500;
+      }
+    }
+    .c7n-pro-attachment-list-item {
+      display: none;
+    }
+  }
+}
+
+.file-card-uuid-required {
+  :global {
+    .c7n-pro-attachment-list-card {
+      .c7n-pro-btn-link {
+        div::after {
+          content: '*';
+          color: #d50000;
+          width: 0.08rem;
+          line-height: 12px;
+          margin-left: 2px;
+          font-family: 'SimSun', sans-serif;
+        }
+      }
+    }
+  }
+}
+
+// 附件弹窗上传
+.legal-basic-domestic-upload-form {
+  .domestic-upload-unfinish-card {
+    display: flex;
+    :global {
+      .c7n-pro-attachment-list-card {
+        margin-top: 0;
+        .c7n-pro-attachment-card-button {
+          display: block;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .domestic-upload-finish-card {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 4px;
+      width: 3px;
+      height: 14px;
+      background-color: @primary-color;
+      pointer-events: none;
+    }
+    :global {
+      .c7n-pro-attachment-list-card {
+        margin-top: 0;
+        .c7n-pro-attachment-list-item-success {
+          position: absolute;
+        }
+        .c7n-pro-attachment-card-button {
+          display: none;
+        }
+      }
+    }
+  }
+  .domestic-upload-business-license {
+    img {
+      width: 140px;
+    }
+  }
+  // 拖拽上传弹窗
+  .upload-dragger {
+    height: 210px;
+    :global {
+      .c7n-upload-drag-container {
+        line-height: 1.5;
+        .c7n-upload-drag-icon {
+          margin-top: 24px;
+        }
+        .c7n-upload-text {
+          font-weight: 400;
+          height: 22px;
+          font-size: 14px;
+        }
+        .c7n-upload-hint {
+          margin-bottom: 24px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    // orc失败
+    .upload-dragger-icon {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+      :global {
+        div {
+          width: 20px;
+          height: 20px;
+          background-color: #f56349;
+          border-radius: 10px;
+          margin-right: 12px;
+        }
+        span {
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.65);
+        }
+        .icon-sentiment_dissatisfied {
+          color: #fff;
+          font-size: 16px !important;
+          margin-top: 1px;
+        }
+      }
+    }
+    .upload-dragger-again {
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+  :global {
+    & tr:first-child {
+      & > td:first-child {
+        width: 360px;
+      }
+    }
+    & tr:nth-child(2) {
+      & > td:first-child {
+        .c7n-pro-field-wrapper {
+          margin-top: 0 !important;
+        }
+      }
+    }
+    .c7n-upload-list-item-done {
+      width: 100%;
+      // height: 210px;
+      .c7n-upload-list-item-thumbnail {
+        position: absolute !important;
+      }
+    }
+  }
+  .upload-dragger-tips {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+// 境内上传组件
+.domestic-attachment-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  background-color: #f8f8f8;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  flex-direction: column;
+  cursor: pointer;
+  .domestic-attachment-label::after {
+    content: '*';
+    color: #d50000;
+    width: 0.08rem;
+    line-height: 12px;
+    margin: 0 10px 0 2px;
+    font-family: 'SimSun', sans-serif;
+  }
+}
+
+// 登记，业务信息-form
+.legal-basic-form {
+  display: flex;
+  margin-top: 24px;
+  .legal-basic-form-second {
+    width: 40%;
+    margin-left: 12px;
+    .register-business-license {
+      img {
+        width: 140px;
+      }
+    }
+    .company-logo {
+      img {
+        width: 100px;
+      }
+    }
+    :global {
+      .c7n-pro-attachment-required::after {
+        display: none;
+      }
+      .c7n-upload-list-item {
+        height: 180px;
+        width: 180px;
+        margin: 0;
+        .c7n-upload-list-item-span {
+          height: 100%;
+        }
+      }
+      .c7n-upload {
+        height: 180px;
+        width: 180px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// 电话前置标签样式
+.addon-before-style {
+  :global {
+    .c7n-pro-input-group-before {
+      padding-left: 0;
+      padding-right: 0;
+      border: none;
+      width: 130px;
+    }
+    .c7n-pro-input-group-input {
+      margin-left: -0.01rem;
+    }
+  }
+}
+
+.register-attachment-modal {
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0 0.24rem 0.24rem 0.24rem;
+    }
+  }
+}
+
+// 联系人信息-联系电话样式
+.line-form {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-select,
+    .c7n-pro-input {
+      border-color: #fca000;
+      background-color: #fffbef;
+    }
+    .c7n-pro-select:focus,
+    .c7n-pro-input:focus {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.c7n-upload-url {
+  :global {
+    .c7n-upload-list-item-done {
+      display: none;
+    }
+    .c7n-upload-list-item-undefined {
+      display: none;
+    }
+  }
+}
+.upload-card-url-required {
+  :global {
+    .c7n-upload-text::after {
+      content: '*';
+      color: #d50000;
+      width: 0.08rem;
+      line-height: 12px;
+      margin: 0 10px 0 2px;
+    }
+  }
+}
+
+.main-index-content {
+  margin: 8px 8px 16px;
+  border: none !important;
+}
+
+.secondary-index-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  border: none !important;
+  margin: 0 8px 8px !important;
+  :global {
+    .page-content {
+      margin-top: 8px;
+      margin-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      border: none !important;
+    }
+  }
+}
+
+.result-index-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0 !important;
+  border: none !important;
+  .main-index-content {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 0 !important;
+  }
+  .secondary-index-content {
+    :global {
+      .page-content {
+        margin: 8px 0 0 0;
+      }
+    }
+  }
+  :global {
+    .c7n-pro-vertical-form-display {
+      .c7n-pro-field-label-vertical.c7n-pro-field-required.c7n-pro-field-label:before {
+        display: none;
+      }
+    }
+  }
+}
+
+// 地址信息- 省市区table列样式
+.region-td {
+  :global {
+    .c7n-pro-input-group {
+      margin-top: -4px;
+    }
+    .c7n-pro-table-cell-inner {
+      .c7n-pro-input-wrapper.c7n-pro-input-readonly {
+        .c7n-pro-input {
+          height: 0.26rem;
+          line-height: 0.26rem;
+        }
+      }
+    }
+    .c7n-pro-table-cell-inner-invalid {
+      .c7n-pro-input {
+        background-color: #fcebeb;
+        border-color: #f56349;
+      }
+    }
+  }
+}
+
+//ocr识别modal按钮
+.ocr-btn {
+  padding-top: 32px;
+  text-align: right;
+}
+
+.create-modal {
+  margin-right: 0 !important;
+}
+
+.sup-entry-alert {
+  background: rgba(48, 149, 242, 0.1);
+  border-radius: 2px;
+  margin-bottom: 30px;
+  :global {
+    .c7n-alert-icon {
+      width: 13.33px;
+      height: 13.33px;
+      top: 10px;
+    }
+    .c7n-alert-content {
+      font-size: 12px;
+      color: #3095f2;
+      text-align: justify;
+      line-height: 22px;
+      font-weight: 400;
+      .c7n-alert-message {
+        max-height: initial;
+      }
+    }
+    .c7n-alert-close-wrapper {
+      display: flex;
+      align-items: flex-start;
+      .icon-close {
+        color: #3095f2;
+      }
+    }
+  }
+}
+// 调查表节点
+.investigation-index-content {
+  overflow: hidden !important;
+  :global {
+    .page-content {
+      margin: 8px;
+    }
+  }
+}
+
+// 企业标签样式
+.enterprise-tags-wrap {
+  background-color: #f4f5f7;
+  margin: -16px -16px 16px;
+  overflow: hidden;
+  .enterprise-tags-content {
+    padding: 16px;
+    background: #fff;
+    margin-bottom: 8px;
+    .enterprise-name {
+      font-size: 16px;
+      color: #1d2129;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  }
+}

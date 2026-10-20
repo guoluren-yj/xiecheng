@@ -1,0 +1,106 @@
+@import '~hzero-front/lib/srm-variables';
+.punchout-tab {
+  .cart-template-definition-icon-punchout {
+    // color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: -2px;
+  }
+  // .c7n-tabs-tab-active {
+  //   .cart-template-definition-icon-punchout {
+  //     color:@primary-color;
+  //   }
+  // }
+  // .c7n-tabs-tab {
+  //   &:hover {
+  //     .cart-template-definition-icon-punchout {
+  //       color:@primary-color;
+  //     }
+  //   }
+  // }
+}
+.cart-template-wrapper {
+  .change-tips {
+    position: relative;
+    top: -16px;
+    left: -16px;
+    width: calc(100% + 36px);
+    span {
+      width: 98%;
+      padding-left: 5px;
+      color: #0161d5;
+    }
+  }
+}
+
+.history-version-btn{
+  :global{
+    .icon{
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+.history-version-menu{
+  border-right: none;
+  max-height: 400px;
+  overflow: auto;
+  :global{
+    .c7n-menu-item{
+      height: 54px !important;
+      max-width: 520px;
+      min-width: 30px;
+      padding: 7px 16px !important;
+        .version-item-header{
+          font-size: 12px;
+          color: #1D2129;
+          line-height: 18px;
+          font-weight: 400;
+          margin-bottom: 4px;
+        }
+        .version-item-footer{
+          font-size: 12px;
+          color: #868D9C;
+          line-height: 18px;
+          font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          .version-item-date{
+            margin-left: 4px;
+        }
+      }
+    }
+    .c7n-menu-item-active .version-item-header, .c7n-menu-item-active .version-item-footer{
+      color:@primary-color;
+    }
+  }
+}
+
+.template-history-item {
+  padding-bottom: 12px;
+  &:last-child {
+    padding-bottom: 0;
+  }
+  :global {
+    .history-date {
+      color: @text-color-secondary;
+    }
+    .action {
+      color: @text-2;
+    }
+    .left,.operator,.operationObject {
+      color: @text-color;
+    }
+    .operator {
+      line-height: 20px;
+    }
+  }
+}
+
+.cart-export-template {
+  color: inherit;
+  &:hover {
+    color: @primary-color;
+  }
+}

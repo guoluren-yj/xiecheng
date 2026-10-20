@@ -1,0 +1,219 @@
+@import '~hzero-front/lib/srm-variables';
+
+.score-wrap {
+  padding: 0;
+  .score-content {
+    background: #f4f5f7;
+    .score-card {
+      padding: 20px;
+      background: #fff;
+      .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+    }
+    // 评分信息样式
+    .score-info-wrap {
+      background: #fff;
+      margin: 8px 0;
+      .score-info-header {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 16px;
+        background: #fff;
+        border-bottom: solid 1px #e5e7ec;
+        .score-info-header-title {
+          flex: 1;
+          font-size: 16px;
+          color: #1d2129;
+          font-weight: 600;
+        }
+        .score-info-dimension {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 8px;
+          background: #f2f3f5;
+          border-radius: 2px;
+          font-size: 14px;
+          color: #1d2129;
+          line-height: 22px;
+          cursor: pointer;
+          > div {
+            margin: 0;
+            padding: 5px 10px;
+          }
+          .active {
+            background: #fff;
+            box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            padding: 3px 8px;
+            font-weight: 500;
+            margin: 2px;
+          }
+        }
+      }
+      .score-info-content {
+        display: flex;
+        .score-info-content-tabs {
+          border-right: solid 1px #e5e7ec;
+          :global {
+            .c7n-tabs.c7n-tabs-left {
+              padding: 0 0 0 20px;
+              .c7n-tabs-bar {
+                padding: 20px 0;
+                min-width: 180px;
+                max-width: 220px;
+                .c7n-tabs-bar-inner {
+                  .c7n-tabs-nav-container.c7n-tabs-nav-container-scrolling {
+                    padding: 0;
+                    .c7n-tabs-tab-prev,
+                    .c7n-tabs-tab-next {
+                      display: none;
+                    }
+                  }
+                  .c7n-tabs-nav-wrap {
+                    max-height: calc(100vh - 300px);
+                    width: 226px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    .c7n-tabs-tab {
+                      text-align: left;
+                      padding: 0 20px 0 0;
+                      .c7n-text-wrapper {
+                        width: 100%;
+                        .c7n-text {
+                          width: 100%;
+                          .tab-title-wrap {
+                            display: flex;
+                            flex-direction: column;
+                            .item-name-wrap {
+                              display: flex;
+                              .item-name {
+                                flex: 1;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                              }
+                              .c7n-tag {
+                                border: none;
+                                padding: 0 4px;
+                                margin-right: 0;
+                                margin-left: 16px;
+                              }
+                            }
+                            .item-num {
+                              font-size: 12px;
+                              color: #868d9c;
+                              line-height: 18px;
+                              font-weight: 400;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .c7n-tabs-extra-content {
+                    order: -1;
+                    .icon {
+                      font-size: 14px;
+                      color: #1d2129;
+                      padding: 0 8px;
+                    }
+                  }
+                }
+              }
+              .c7n-tabs-content {
+                display: none;
+              }
+            }
+            .c7n-pro-table-row > th.c7n-pro-table-cell {
+              font-weight: 400;
+            }
+          }
+        }
+        .score-info-content-table {
+          flex: 1;
+          overflow: hidden;
+          padding: 20px;
+        }
+      }
+      .tabs-extra-form {
+        margin-top: 2px;
+        :global {
+          .c7n-pro-field-wrapper {
+            padding: 0 0 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 单据样式定制工作流样式
+.score-approval {
+  :global {
+    .page-content {
+      padding: 8px;
+      margin: 0 !important;
+      background-color: #f4f5f7;
+    }
+  }
+  .score-content {
+    :global {
+      .af-basic-container,
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .af-extra-container {
+        margin: 8px 0 0;
+        > .af-extra-field {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.referrer-alert {
+  color: @blue-6;
+  border: none;
+  margin: -20px -20px 20px;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+.no-data-wrap {
+  display: flex;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .no-tab {
+    width: 240px;
+    padding: 142px 0 200px;
+    border-right: solid 1px #e5e7ec;
+  }
+  .no-data {
+    flex: 1;
+    padding-top: 100px;
+  }
+  span {
+    color: #868d9c;
+    margin-top: 16px;
+  }
+  svg {
+    color: @primary-color;
+  }
+}

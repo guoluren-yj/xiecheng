@@ -1,0 +1,31 @@
+.address-content {
+  :global {
+    .c7n-form-item-children {
+      .c7n-select-has-border {
+        height: 36px;
+        .c7n-select-selection__rendered {
+          height: 36px;
+          .c7n-select-selection-selected-value {
+            line-height: 36px;
+          }
+        }
+      }
+    }
+    .c7n-input-suffix {
+      width: 100%;
+      padding: 0;
+      .icon {
+        outline: none;
+        width: 100%;
+        &::before {
+          position: relative;
+          left: 215px;
+        }
+      }
+    }
+    .c7n-input-rendered {
+      margin: 0 !important;
+      width: 100% !important;
+    }
+  }
+}

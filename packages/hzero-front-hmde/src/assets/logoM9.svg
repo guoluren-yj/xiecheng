@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="78.4991808%" y1="-10.8095748%" x2="32.646948%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4388FF" offset="0%"></stop>
+            <stop stop-color="#012492" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="展现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" fill-rule="nonzero">
+            <g id="编组-58">
+                <polygon id="矩形-9备份-2" fill="#012492" points="4.875 16.25 0 16.25 0 4.875 0 0 16.25 0 16.25 4.875 4.875 4.875 4.875 11.375 9.75 11.375 9.75 16.25"></polygon>
+                <path d="M6.5,26 L4.875,26 L0,26 L0,17.875 L4.875,17.875 L4.875,21.125 L6.5,21.125 C14.5771645,21.125 21.125,14.5771645 21.125,6.5 L21.125,4.875 L17.875,4.875 L17.875,0 L26,0 L26,4.875 L26,6.5 C26,17.2695526 17.2695526,26 6.5,26 Z" id="椭圆形-3备份-2" fill="#012492"></path>
+                <path d="M11.375,16.25 C15.2020008,16.25 18.6875,11.2161309 18.6875,6.5 L13.8125,6.5 C13.8125,7.71699351 13.3561166,9.07183381 12.6166768,10.1397564 C12.2929318,10.6073193 11.9428368,10.9758123 11.6261091,11.2027803 C11.5077202,11.2876181 11.4073521,11.3430106 11.3339891,11.3710139 C11.3162473,11.3777861 11.3301726,11.375 11.375,11.375 L11.375,16.25 Z" id="路径-83备份" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

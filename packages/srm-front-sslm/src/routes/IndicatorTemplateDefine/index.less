@@ -1,0 +1,181 @@
+@import '~hzero-front/lib/srm-variables';
+
+:global {
+  .reference-indicator-modal {
+    .c7n-pro-modal-drawer-content {
+      .c7n-pro-modal-drawer-body {
+        .c7n-pro-table-wrapper {
+          .c7n-pro-table-search-bar-expand {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+  .manual-create-modal {
+    .c7n-pro-modal-drawer-body {
+      .top-section-title {
+        display: none;
+      }
+      .second-section-title {
+        color: @text-1;
+      }
+    }
+  }
+  .formula-config-alert {
+    background: rgba(25, 132, 247, 0.1);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border: none;
+    .icon.c7n-alert-icon {
+      font-size: 16px;
+      position: initial;
+      margin-right: 8px;
+    }
+    .c7n-alert-content {
+      color: #0161d5;
+    }
+    .icon.icon-close {
+      font-size: 16px;
+      color: #1983f5;
+    }
+  }
+}
+
+// 模板定义-明细样式
+.template-content {
+  padding: 0;
+  :global {
+    .c7n-tabs-bar {
+      min-height: calc(100vh - 152px) !important;
+      .c7n-tabs-bar-inner {
+        .c7n-tabs-nav-wrap {
+          padding: 16px 0;
+          min-width: 180px;
+          max-width: 220px;
+          .c7n-tabs-tab {
+            width: 100%;
+            text-align: left;
+            padding: 8px 20px;
+            .c7n-badge.c7n-tabs-invalid-badge {
+              width: 100%;
+              .c7n-scroll-number-custom-component.c7n-tabs-invalid-badge-content {
+                display: none;
+              }
+            }
+            .c7n-text-wrapper {
+              width: 100%;
+              .c7n-text {
+                width: 100%;
+                .tab-title-wrap {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  .tab-title {
+                    flex: 1;
+                    margin-right: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                  .c7n-tag {
+                    border: none;
+                    padding: 0 4px;
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .c7n-tabs-content {
+      padding: 20px !important;
+      .top-section-title {
+        display: none;
+      }
+    }
+  }
+}
+.policy-config-modal {
+  :global {
+    .c7n-pro-modal-content {
+      .c7n-pro-modal-drawer-body {
+        .top-section-title {
+          display: none;
+        }
+        .second-section-title {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+.history-version-submenu {
+  :global {
+    .c7n-menu-submenu-title {
+      width: 140px;
+    }
+    .c7n-menu.c7n-menu-sub.c7n-menu-vertical {
+      max-height: 400px;
+      overflow-y: auto;
+      .c7n-menu-item {
+        height: auto;
+        line-height: normal;
+        padding: 8px 16px;
+      }
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}

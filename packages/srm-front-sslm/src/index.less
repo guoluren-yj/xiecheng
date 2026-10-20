@@ -1,0 +1,95 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+@import '~hzero-front/lib/srm-variables';
+
+.header-link {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+:global {
+  .hzero-leaf-menu-item {
+    line-height: 20px !important;
+  }
+
+  .hzero-sub-menu-item-content {
+    height: 40px !important;
+  }
+
+  .hzero-leaf-menu-item-wrap-line {
+    margin: 9.5px !important;
+  }
+
+  // 修复c7n 弹框样式
+  .c7n-pro-modal-container {
+    & > div:last-child {
+      position: fixed;
+      overflow: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      word-break: break-all;
+      left: 0;
+      z-index: 1000;
+      -webkit-overflow-scrolling: touch;
+      outline: 0;
+
+      .c7n-pro-modal-center:not(.c7n-pro-modal-fullscreen) {
+        padding-top: 1rem;
+        position: static;
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+// ”评估进度“样式
+.progress-steps {
+  :global {
+    .c7n-steps-item {
+      .c7n-steps-item-tail {
+        left: 8px;
+      }
+      .c7n-steps-item-icon {
+        margin-right: 8px;
+      }
+      .c7n-steps-item-content {
+        .c7n-steps-item-title {
+          margin-top: 2px;
+        }
+        .c7n-steps-item-description {
+          color: #4e5769;
+        }
+      }
+      &:last-child {
+        .c7n-steps-item-content {
+          min-height: 24px;
+        }
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-process,
+    .c7n-steps-item.c7n-steps-item-finish {
+      .c7n-steps-item-icon,
+      .c7n-steps-item-title {
+        color: #179454;
+        font-weight: 400;
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-wait {
+      .c7n-steps-item-icon {
+        color: #c9cdd4;
+      }
+      .c7n-steps-item-title {
+        color: #868d9c;
+      }
+    }
+  }
+}
+
+.indicator-status-popover {
+  :global {
+    .c7n-popover-content {
+      width: 680px;
+    }
+  }
+}

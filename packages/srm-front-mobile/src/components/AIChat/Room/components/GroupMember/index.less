@@ -1,0 +1,135 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-chat-room-group-member {
+  flex-shrink: 0;
+  background: @primary-color-white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .smbl-chat-room-group-member-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    border-radius: 2px;
+    color: #868d9c;
+    :global {
+      .icon {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .smbl-chat-room-group-member-title {
+    padding: 20px 20px 5px 20px;
+    font-size: 14px;
+    color: #1d2129;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .smbl-chat-room-group-member-content {
+    margin: 5px 20px;
+    padding: 0;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .smbl-chat-room-group-member-tenant {
+    .smbl-chat-room-group-member-tenant-name {
+      position: sticky;
+      top: 0;
+      font-size: 12px;
+      color: #868d9c;
+      font-weight: 400;
+      line-height: 17px;
+      padding: 16px 0 12px 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #fff;
+    }
+    .smbl-chat-room-group-member-tenant-member {
+      display: flex;
+      line-height: 28px;
+      align-items: center;
+      margin-bottom: 4px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .smbl-chat-room-group-member-tag-purchase {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        background-color: fade(@srm-primary-color, 10%);
+        font-size: 12.5px;
+        color: @srm-primary-color;
+        font-weight: 600;
+        line-height: 20px;
+        border-radius: 2.5px;
+        text-align: center;
+        margin-right: 8px;
+      }
+      .smbl-chat-room-group-member-tag-supplier {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        background-color: fade(@primary-color-red, 10%);
+        font-size: 12.5px;
+        color: @primary-color-red;
+        font-weight: 600;
+        line-height: 20px;
+        border-radius: 2.5px;
+        text-align: center;
+        margin-right: 8px;
+      }
+      .smbl-chat-room-group-member-username {
+        font-size: 12px;
+        color: #1d2129;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .smbl-chat-room-group-member-tenant-member-offline {
+      .smbl-chat-room-group-member-tag-purchase {
+        background: #f2f3f5 !important;
+        color: #c9cdd4 !important;
+      }
+      .smbl-chat-room-group-member-tag-supplier {
+        background: #f2f3f5 !important;
+        color: #c9cdd4 !important;
+      }
+      .smbl-chat-room-group-member-username {
+        color: #c9cdd4;
+      }
+    }
+  }
+}
+
+.smbl-chat-room-group-member-cover {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.smbl-chat-room-group-member-right {
+  min-width: 200px;
+  max-width: 280px;
+  height: 100%;
+  position: relative;
+  border-left: 1px solid #e5e7ec;
+  .smbl-chat-room-group-member-drag-view {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: col-resize;
+  }
+}

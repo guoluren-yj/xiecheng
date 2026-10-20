@@ -1,0 +1,12 @@
+config/*.js
+scripts/*.js
+*.ts
+*.tsx
+public/lib/
+src/serviceWorker.js
+build/
+packages/
+dist
+core/
+bin
+/lib

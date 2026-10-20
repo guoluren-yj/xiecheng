@@ -1,0 +1,28 @@
+.mall-home-config-content {
+  margin-bottom: 32px;
+  :global {
+    .mall-home-config-com-title {
+      // font-family: PingFangSC-Medium, sans-serif;
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      line-height: 24px;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+      }
+    }
+  }
+}
+
+.mall-home-config-content:last-child {
+  margin-bottom: 0;
+}

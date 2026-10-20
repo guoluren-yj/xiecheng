@@ -1,0 +1,32 @@
+@import '~hzero-front/lib/srm-variables';
+
+.spfp-columnBtnGroup-wrapper {
+  height: 100%;
+  :global {
+    .c7n-pro-btn + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+      margin-left: 16px;
+    }
+  }
+}
+.spfp-command-menu,
+.spfp-columnBtnGroup-menu {
+  :global {
+    .c7n-menu-item {
+      .c7n-pro-btn-primary.c7n-pro-btn-link {
+        color: @text-1;
+      }
+    }
+  }
+}
+
+.spfp-command-more-icon,
+.spfp-columnBtnGroup-more-icon {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+:global {
+  :local(.spfp-command-btn) + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+    margin-left: 16px;
+  }
+}

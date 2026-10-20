@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="96px" viewBox="0 0 136 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>制品库仓库设置 - 制品库 - 示例项目 - 上海甄云科技</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="54" rx="1"></rect>
+    </defs>
+    <g id="数据表管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数据表管理-空态" transform="translate(-891.000000, -322.000000)">
+            <g id="编组-12" transform="translate(494.000000, 125.000000)">
+                <g id="编组-5" transform="translate(374.000000, 197.000000)">
+                    <g id="制品库仓库设置---制品库---示例项目---上海甄云科技" transform="translate(23.000000, 0.000000)">
+                        <g id="Rectangle">
+                            <g id="path-1-link" fill="#000000" fill-rule="nonzero">
+                                <rect id="path-1" x="0" y="0" width="136" height="96" rx="3"></rect>
+                            </g>
+                            <g id="path-1-link" fill="#F2F4F6">
+                                <rect id="path-1" x="0" y="0" width="136" height="96" rx="3"></rect>
+                            </g>
+                        </g>
+                        <g id="title" fill-rule="nonzero">
+                            <path d="M3,0 L133,0 C134.656854,0 136,1.34314575 136,3 L136,9 L136,9 L0,9 L0,3 C0,1.34314575 1.34314575,0 3,0 Z" id="Rectangle-Copy-10" fill="#606C80" opacity="0.200000003"></path>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="5.5" cy="4.5" r="1.5"></circle>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="11.5" cy="4.5" r="1.5"></circle>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="17.5" cy="4.5" r="1.5"></circle>
+                        </g>
+                        <g id="title" fill-rule="nonzero">
+                            <path d="M3,0 L133,0 C134.656854,0 136,1.34314575 136,3 L136,9 L136,9 L0,9 L0,3 C0,1.34314575 1.34314575,0 3,0 Z" id="Rectangle-Copy-10" fill="#D4D9DE"></path>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="5.5" cy="4.5" r="1.5"></circle>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="11.5" cy="4.5" r="1.5"></circle>
+                            <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="17.5" cy="4.5" r="1.5"></circle>
+                        </g>
+                        <g id="issue" transform="translate(7.000000, 14.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <rect id="Rectangle" x="0" y="0" width="122" height="78" rx="2"></rect>
+                        </g>
+                        <rect id="Rectangle" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="63" y="22" width="16" height="4" rx="1"></rect>
+                        <rect id="Rectangle-Copy-12" fill="#36C2CF" fill-rule="nonzero" x="113" y="21" width="10" height="6" rx="1"></rect>
+                        <g id="编组-3" transform="translate(63.000000, 33.000000)">
+                            <g id="Rectangle备份-3" stroke-dasharray="2">
+                                <g id="path-3-Clipped">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="path-3"></g>
+                                    <path d="M1,0 L59,0 C59.5522847,-1.01453063e-16 60,0.44771525 60,1 L60,53 C60,53.5522847 59.5522847,54 59,54 L1,54 C0.44771525,54 6.76353751e-17,53.5522847 0,53 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="path-3" stroke="#DFE5F0" stroke-width="2" fill-opacity="0.25" fill="#E5EAEE" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                                </g>
+                            </g>
+                            <circle id="Oval" fill="#E3E9EF" fill-rule="nonzero" cx="8" cy="8" r="2"></circle>
+                            <circle id="Oval" fill="#E3E9EF" fill-rule="nonzero" cx="8" cy="18" r="2"></circle>
+                            <circle id="Oval" fill="#E3E9EF" fill-rule="nonzero" cx="8" cy="27" r="2"></circle>
+                            <circle id="Oval" fill="#E3E9EF" fill-rule="nonzero" cx="8" cy="37" r="2"></circle>
+                            <circle id="Oval" fill="#E3E9EF" fill-rule="nonzero" cx="8" cy="46" r="2"></circle>
+                            <rect id="Rectangle备份-4" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="14" y="16" width="40" height="4" rx="1"></rect>
+                            <rect id="Rectangle备份-4" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="14" y="6" width="40" height="4" rx="1"></rect>
+                            <rect id="Rectangle备份-5" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="14" y="25" width="40" height="4" rx="1"></rect>
+                            <rect id="Rectangle备份-6" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="14" y="35" width="40" height="4" rx="1"></rect>
+                            <rect id="Rectangle备份-7" fill="#CFD8E5" fill-rule="nonzero" opacity="0.499279204" x="14" y="44" width="40" height="4" rx="1"></rect>
+                        </g>
+                        <g id="编组" transform="translate(7.000000, 14.000000)">
+                            <g id="issue">
+                                <g id="Rectangle">
+                                    <g id="path-5-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="path-5" x="0" y="0" width="50" height="78" rx="1.8"></rect>
+                                    </g>
+                                    <g id="path-5-link" fill="#FFFFFF">
+                                        <rect id="path-5" x="0" y="0" width="50" height="78" rx="1.8"></rect>
+                                    </g>
+                                </g>
+                                <rect id="Rectangle" fill-opacity="0.1" fill="#36C2CF" fill-rule="nonzero" x="0" y="19" width="50" height="18"></rect>
+                            </g>
+                            <g id="分组-2" transform="translate(6.000000, 7.000000)" fill-rule="nonzero">
+                                <g id="Content-/-CI-/-Status-/-Not-Build" fill="#C3CAD5" transform="translate(0.000000, -0.000000)">
+                                    <path d="M4.5,9 C6.98528137,9 9,6.98528137 9,4.5 C9,2.01471863 6.98528137,0 4.5,0 C2.01471863,0 0,2.01471863 0,4.5 C0,6.98528137 2.01471863,9 4.5,9 Z M4.5,7.5 C2.84314575,7.5 1.5,6.15685425 1.5,4.5 C1.5,2.84314575 2.84314575,1.5 4.5,1.5 C6.15685425,1.5 7.5,2.84314575 7.5,4.5 C7.5,6.15685425 6.15685425,7.5 4.5,7.5 Z" id="Oval"></path>
+                                </g>
+                                <rect id="Rectangle-Copy-12" fill="#CFD8E5" opacity="0.5" x="12.6875" y="2.7" width="24" height="4" rx="0.9"></rect>
+                            </g>
+                            <g id="编组-2" transform="translate(6.000000, 24.000000)">
+                                <rect id="Rectangle-Copy-12备份" fill="#36C2CF" fill-rule="nonzero" x="12.6875" y="2.7" width="24" height="4" rx="0.9"></rect>
+                                <g id="Content-/-CI-/-Status-/-Success">
+                                    <circle id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="4.5" cy="4.5" r="4.5"></circle>
+                                    <path d="M3.65917543,6.65771506 L1.94677717,4.95557068 C1.89892567,4.90771918 1.875,4.84619589 1.875,4.77100081 C1.875,4.69580573 1.89892567,4.63428244 1.94677717,4.58643094 L2.3261708,4.21729119 C2.3740223,4.16260388 2.43383656,4.13526014 2.50561373,4.13526014 C2.5773909,4.13526014 2.64062323,4.16260388 2.69531054,4.21729119 L3.84374531,5.36572596 L6.30467694,2.90479432 C6.35936426,2.85010701 6.42259658,2.82276327 6.49437375,2.82276327 C6.56615092,2.82276327 6.62596518,2.85010701 6.67381668,2.90479432 L7.05321031,3.27393407 C7.10106181,3.32178557 7.12498748,3.38330886 7.12498748,3.45850394 C7.12498748,3.53369902 7.10106181,3.59522231 7.05321031,3.64307381 L4.02831518,6.65771506 C3.98046368,6.71240238 3.91894039,6.73974612 3.84374531,6.73974612 C3.76855023,6.73974612 3.70702693,6.71240238 3.65917543,6.65771506 Z" id="c" fill="#69CE30" fill-rule="nonzero"></path>
+                                </g>
+                            </g>
+                            <g id="issue" transform="translate(6.000000, 43.000000)" fill-rule="nonzero">
+                                <g id="Content-/-CI-/-Status-/-Not-Build" fill="#C3CAD5" transform="translate(0.000000, -0.000000)">
+                                    <path d="M4.5,9 C6.98528137,9 9,6.98528137 9,4.5 C9,2.01471863 6.98528137,0 4.5,0 C2.01471863,0 0,2.01471863 0,4.5 C0,6.98528137 2.01471863,9 4.5,9 Z M4.5,7.5 C2.84314575,7.5 1.5,6.15685425 1.5,4.5 C1.5,2.84314575 2.84314575,1.5 4.5,1.5 C6.15685425,1.5 7.5,2.84314575 7.5,4.5 C7.5,6.15685425 6.15685425,7.5 4.5,7.5 Z" id="Oval"></path>
+                                </g>
+                                <rect id="Rectangle-Copy-12" fill="#CFD8E5" opacity="0.5" x="12.6875" y="2.67916667" width="24" height="4" rx="0.9"></rect>
+                            </g>
+                            <g id="issue" transform="translate(6.000000, 60.979167)" fill-rule="nonzero">
+                                <g id="Content-/-CI-/-Status-/-Not-Build" fill="#C3CAD5" transform="translate(0.000000, -0.000000)">
+                                    <path d="M4.5,9 C6.98528137,9 9,6.98528137 9,4.5 C9,2.01471863 6.98528137,0 4.5,0 C2.01471863,0 0,2.01471863 0,4.5 C0,6.98528137 2.01471863,9 4.5,9 Z M4.5,7.5 C2.84314575,7.5 1.5,6.15685425 1.5,4.5 C1.5,2.84314575 2.84314575,1.5 4.5,1.5 C6.15685425,1.5 7.5,2.84314575 7.5,4.5 C7.5,6.15685425 6.15685425,7.5 4.5,7.5 Z" id="Oval"></path>
+                                </g>
+                                <rect id="Rectangle-Copy-12" fill="#CFD8E5" opacity="0.5" x="12.6875" y="2.69999967" width="24" height="4" rx="0.9"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

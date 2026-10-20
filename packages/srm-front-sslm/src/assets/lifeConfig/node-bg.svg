@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 27</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4、维护明细-流程设置-节点设置" transform="translate(-1138.000000, -440.000000)">
+            <g id="编组-29" transform="translate(1042.000000, 424.000000)">
+                <g id="编组-28" transform="translate(16.000000, 16.000000)">
+                    <g id="编组-27" transform="translate(80.000000, 0.000000)">
+                        <rect id="矩形-nodeBg-1" fill="#3AB545" x="0" y="0" width="36" height="36" rx="4"></rect>
+                        <g id="编组-60" transform="translate(9.000000, 8.000000)">
+                            <rect id="矩形-nodeBg-2" fill="#FFFFFF" x="0" y="0" width="8" height="6" rx="1"></rect>
+                            <rect id="矩形备份-5" fill="#FFFFFF" x="10" y="6" width="8" height="6" rx="1"></rect>
+                            <rect id="矩形备份-6" fill="#FFFFFF" x="10" y="14" width="8" height="6" rx="1"></rect>
+                            <path d="M4,6 L4,16 C4,16.5522847 4.44771525,17 5,17 L10,17 L10,17" id="路径-13" stroke="#FFFFFF" stroke-width="2"></path>
+                            <line x1="4" y1="9" x2="10" y2="9" id="路径-14" stroke="#FFFFFF" stroke-width="2"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

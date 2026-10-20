@@ -1,0 +1,75 @@
+@import '~hzero-front/lib/srm-variables';
+
+.signature {
+  width: 180px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  border: dashed 2px #dfdfdf;
+
+  .signature-img {
+    width: 140px;
+    margin: 20px;
+  }
+}
+
+.activeSignature {
+  border: dashed 2px @primary-color;
+}
+
+.ssta-message-code {
+  :global {
+    .c7n-pro-input-suffix {
+      color: @primary-color;
+      margin-right: 8px;
+      width: 110px;
+      text-align: right;
+    }
+
+    .c7n-pro-modal-header {
+      border-bottom: none !important;
+    }
+
+    .c7n-pro-modal-footer {
+      border-top: none !important;
+    }
+
+    .c7n-pro-field-wrapper {
+      padding: 0 0.08rem !important;
+    }
+  }
+}
+
+.ssta-time-code {
+  display: inline-block;
+  width: 100%;
+}
+
+.ssta-time-diable {
+  color: #999;
+}
+
+.batch-modify-alert {
+  :global {
+    border: none;
+    color: #1890ff;
+    margin: -20px -20px 16px -20px;
+    line-height: 21px;
+  }
+}
+
+.ssta-detail-render {
+  // height: 100%;
+  // :global {
+  //   .c7n-spin-nested-loading{
+  //     height: 100%;
+  //     .c7n-spin-container {
+  //       height: 100%;
+  //       display: flex;
+  //       flex-direction: column;
+  //       .ssta-detail-collapse-content {
+  //         height: 100%;
+  //       }
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>screen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.9226092,1 C12.1987516,1 12.4226092,1.22385763 12.4226092,1.5 C12.4226092,1.61076228 12.385831,1.71838939 12.318047,1.80598856 L8.48140846,6.763 L8.48220066,12.6779224 C8.48220066,12.7883794 8.39265761,12.8779224 8.28220066,12.8779224 C8.25143818,12.8779224 8.22109032,12.8708262 8.19351743,12.8571856 L5.78748066,11.666896 C5.61704604,11.5825803 5.50918872,11.4088882 5.50918872,11.218738 L5.50840846,6.711 L1.6802786,1.80769873 C1.51034129,1.59003863 1.54902825,1.27582884 1.76668835,1.10589152 C1.85457796,1.03727203 1.96288273,1 2.07438708,1 L11.9226092,1 Z" id="path-1"></path>
+    </defs>
+    <g id="screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/列表/筛选">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="矩形-2" fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <g id="颜色/按钮色" mask="url(#mask-2)" fill="#5A6677" fill-rule="evenodd">
+                <g transform="translate(-33.000000, -33.000000)" id="主色">
+                    <rect x="0" y="0" width="80" height="80"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

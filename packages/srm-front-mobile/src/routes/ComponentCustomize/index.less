@@ -1,0 +1,56 @@
+.config-content {
+  position:relative;
+  padding: 0;
+  background-color: #ffffff;
+  height: 100%;
+  margin: 8px;
+  :global {
+    .config-tabs {
+      margin-right: 520px;
+      border-right: 1px solid #e8e8e8;
+      padding: 16px 20px;
+      height: 100%;
+    }
+    .preview-area {
+      width: 520px;
+      position:absolute;
+      right: 0px;
+      top: 0;
+      height: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      padding: 48px 0;
+      .preview-area-title {
+        position:absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 22px;
+        font-weight: 600;
+        &::before {
+          content: "";
+          display: block;
+          float: left;
+          background-color: #00B8CC;
+          width: 3px;
+          height: 12px;
+          margin-top: 5px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .c7n-alert-info {
+      margin-top: -16px;
+      margin-bottom: 16px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      border: none;
+      color: #0161D5;
+      .c7n-alert-icon {
+        top: 7px;
+      }
+    }
+  }
+}

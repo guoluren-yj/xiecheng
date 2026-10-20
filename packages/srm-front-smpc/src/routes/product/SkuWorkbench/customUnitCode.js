@@ -1,0 +1,78 @@
+// 采购方工作台列表
+export const purListCode = [
+  'SMPC.WORKBENCH_PUR.LIST_ALL', // 全部
+  'SMPC.WORKBENCH_PUR.LIST_NEW', // 待提交
+  'SMPC.WORKBENCH_PUR.LIST_WAIT_APPROVE', // 待审批
+  'SMPC.WORKBENCH_PUR.LIST_APPROVE', // 已审批
+  'SMPC.WORKBENCH_PUR.LIST_WAIT_SHELF', // 待上架
+  'SMPC.WORKBENCH_PUR.LIST_SHELF', // 已上架
+  'SMPC.WORKBENCH_PUR.LIST_EXPIRE', // 已失效
+  'SMPC.WORKBENCH_PUR_HEADER.BTNS', // 按钮组
+  'SMPC.WORKBENCH_PUR_HEADER.TABS', // 标签页
+  'SMPC.WORKBENCH_PUR.LIST_EC_ALL', // 电商-全部
+  'SMPC.WORKBENCH_PUR.LIST_EC__APPROVING', // 电商-审批中
+  'SMPC.WORKBENCH_PUR.LIST_EC_WAIT_SHELF', // 电商-待上架
+  'SMPC.WORKBENCH_PUR.LIST_EC_SHELF', // 电商-已上架
+  'SMPC.WORKBENCH_PUR.LIST_EC_RECYCLE', // 电商-回收站
+  'SMPC.WORKBENCH_PUR.LIST_RECEIVE_ALL', // 领用-全部
+  'SMPC.WORKBENCH_PUR.LIST_RECEIVE_RECYCLE', // 领用-回收站
+];
+
+// 供应商工作台列表
+export const supListCode = [
+  'SMPC.WORKBENCH_SUP.LIST_ALL', // 全部
+  'SMPC.WORKBENCH_SUP.LIST_NEW', // 待提交
+  'SMPC.WORKBENCH_SUP.LIST_WAIT_APPROVE', // 待审批
+  'SMPC.WORKBENCH_SUP.LIST_APPROVE', // 已审批
+  'SMPC.WORKBENCH_SUP.LIST_WAIT_SHELF', // 待上架
+  'SMPC.WORKBENCH_SUP.LIST_SHELF', // 已上架
+  'SMPC.WORKBENCH_SUP.LIST_EXPIRE', // 已失效
+  'SMPC.WORKBENCH_SUP_HEADER.BTNS', // 按钮组
+  'SMPC.WORKBENCH_SUP_HEADER.TABS', // 标签页
+];
+
+// 列表价格信息
+export const priceReadCode = [
+  'SMPC.WORKBENCH_PUR.LIST_PRICES', // 采购方
+  'SMPC.WORKBENCH_SUP.LIST_PRICES', // 供应商
+];
+
+// 编辑页
+export const skuEditCode = [
+  'SMPC.WORKBENCH_PUR.BASE_INFO', // 采购方基本信息表单
+  'SMPC.WORKBENCH_PUR.SPU_INFO', // 采购方商品组名称表单
+  'SMPC.WORKBENCH_PUR.SKU_LIST', // 采购方商品行表格
+  // 'SMPC.WORKBENCH_PUR.PRICE_INFO', // 采购方价格信息表格
+
+  'SMPC.WORKBENCH_SUP.BASE_INFO', // 供应商基本信息表单
+  'SMPC.WORKBENCH_SUP.SPU_INFO', // 供应商商品组名称表单
+  'SMPC.WORKBENCH_SUP.SKU_LIST', // 供应商商品行表格
+  // 'SMPC.WORKBENCH_SUP.PRICE_INFO', // 供应商价格信息表格
+
+  'SMPC.WORKBENCH_PUR.SKU_ATTRS', // 采购方商品基本属性扩展表单
+  'SMPC.WORKBENCH_SUP.SKU_ATTRS', // 供应商商品基本属性扩展表单
+
+  'SMPC.WORKBENCH_PUR.ITEM_INFO', // 采购方物料信息表单
+  'SMPC.WORKBENCH_SUP.ITEM_INFO', // 供应商物料信息表单
+];
+
+// 明细页
+export const skuDetailCode = [
+  'SMPC.WORKBENCH_PUR.BASE_INFO_READ', // 采购方商品组信息表单 0
+  'SMPC.WORKBENCH_PUR.BASE_INFO_COMPARE', // 采购方商品组信息对比表单 1
+  'SMPC.WORKBENCH_PUR.SKU_INFO_READ', // 采购方商品信息表单 2
+  'SMPC.WORKBENCH_PUR.SKU_INFO_COMPARE', // 采购方商品信息对比表单 3
+  // 'SMPC.WORKBENCH_PUR.PRICE_INFO_READ', // 采购方价格信息表格
+
+  'SMPC.WORKBENCH_SUP.BASE_INFO_READ', // 供应商商品组信息表单 4
+  'SMPC.WORKBENCH_SUP.BASE_INFO_COMPARE', // 供应商商品组信息对比表单 5
+  'SMPC.WORKBENCH_SUP.SKU_INFO_READ', // 供应商商品信息表单 6
+  'SMPC.WORKBENCH_SUP.SKU_INFO_COMPARE', // 供应商商品信息对比表单 7
+  // 'SMPC.WORKBENCH_SUP.PRICE_INFO_READ', // 供应商价格信息表格
+
+  'SMPC.WORKBENCH_PUR.SKU_ATTRS_READ', // 采购方商品基本属性扩展表单 8
+  'SMPC.WORKBENCH_SUP.SKU_ATTRS_READ', // 供应商商品基本属性扩展表单 9
+
+  'SMPC.WORKBENCH_PUR.SKU_PRICEINFO_READ', // 采购方 商品信息价格信息 10
+  'SMPC.WORKBENCH_SUP.SKU_PRICEINFO_READ', // 供应商 商品信息价格信息 11
+];

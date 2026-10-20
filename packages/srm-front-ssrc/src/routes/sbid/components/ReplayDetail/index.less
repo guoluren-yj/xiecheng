@@ -1,0 +1,39 @@
+.ssrc-reply-detail-line {
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+  :global {
+    border-bottom: 1px solid #e5e7ec;
+    padding: 20px 0;
+    font-size: 12px;
+    font-weight: 400;
+    // margin-bottom: 10px;
+    .question {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      .description {
+        max-width: 70%;
+        // font-family: PingFangSC-Regular;
+        color: #1d2129;
+        line-height: 18px;
+      }
+      .other-info {
+        .uuid {
+          .split {
+            margin: 0 8px;
+            color: #e5e7ec;
+          }
+        }
+        .asked {
+          // font-family: PingFangSC-Regular;
+          color: #4e5769;
+          line-height: 18px;
+        }
+      }
+    }
+    .result {
+      color: #4e5769;
+    }
+  }
+}

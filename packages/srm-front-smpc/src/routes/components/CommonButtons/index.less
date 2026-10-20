@@ -1,0 +1,158 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+
+.drop-head-btn,
+.weight-head-btn,
+.primary-head-btn {
+  font-weight: 600 !important;
+  > span {
+    font-weight: 600 !important;
+  }
+  > button > span {
+    font-weight: 600 !important;
+  }
+}
+
+.primary-head-btn:focus,
+.primary-head-btn:hover {
+  background-color: @hzero-primary-color !important;
+  border-color: @hzero-primary-color !important;
+}
+
+.overflow-hid {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.remark-reason {
+  color: #000;
+  display: block;
+  .overflow-hid;
+}
+
+.action-link-hor {
+  display: flex;
+  :global {
+    a:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.action-link-ver {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-link-hor,
+.action-link-ver {
+  :global {
+    a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.sku-container {
+  :global {
+    .sku-info {
+      width: 100%;
+      display: flex;
+      .sku-img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        margin-top: 6px;
+      }
+      .sku-content {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.unit-line {
+  display: block;
+  width: 100%;
+  .overflow-hid;
+}
+
+.btn-list-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  &:hover {
+    :global {
+      .btn-list-content {
+        display: flex;
+      }
+    }
+  }
+  :global {
+    .btn-list-content {
+      padding: 8px 0;
+      position: absolute;
+      display: none;
+      // width: 100%;
+      flex-direction: column;
+      background: #fff;
+      right: 0;
+      border-radius: 2px;
+      box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      z-index: 9;
+      .c7n-pro-btn-disabled-wrapper {
+        margin-left: 0 !important;
+      }
+      .c7n-pro-btn {
+        font-weight: 400 !important;
+        > span {
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
+}
+
+#c7n-export,
+#c7n-head-export {
+  border: none;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+.more-opts {
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+.drop-down-link-btn-wrapper {
+  padding: 0 16px;
+  height: 40px;
+  :global {
+    .srm-common-import-button {
+      overflow: visible;
+      .srm-common-import-button-tag {
+        right: -14px;
+      }
+    }
+  }
+  button {
+    height: 0.4rem;
+    color: #000 !important;
+    &:hover {
+      color: @primary-color !important;
+    }
+  }
+}

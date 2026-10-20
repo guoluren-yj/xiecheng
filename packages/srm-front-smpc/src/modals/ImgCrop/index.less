@@ -1,0 +1,40 @@
+.img-crop-wrapper {
+  :global {
+    .img-dragger-container {
+      width: 400px;
+      height: 200px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 53px;
+      // .img-dragger {
+      // }
+    }
+    .img-cropper-container {
+      .top-area {
+        display: flex;
+        .preview-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          vertical-align: top;
+          margin-left: 54px;
+          > p {
+            width: 130px;
+            font-size: 12px;
+            text-align: center;
+          }
+          > p:first-child {
+            font-size: 16px;
+          }
+          .preview-box {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

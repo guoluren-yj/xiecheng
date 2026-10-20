@@ -1,0 +1,147 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.srm-card-wrapper {
+  // position: absolute;
+  background-color: #fff;
+  min-width: 876px;
+  max-height: 600px;
+  color: #000;
+  box-shadow: 0 9px 28px 8px rgba(29, 33, 41, 0.05);
+  box-shadow: 0 3px 6px -4px rgba(29, 33, 41, 0.12);
+  box-shadow: 0 6px 16px 0 rgba(29, 33, 41, 0.08);
+
+  > div {
+    max-height: 580px;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+
+  .data-record {
+    display: flex;
+    flex-direction: column;
+
+    &-field {
+      margin: 20px 0 12px 20px;
+    }
+
+    &-border {
+      position: relative;
+      width: 840px;
+      margin-left: 20px;
+      background-color: #f7f8fa;
+      border-radius: 5px;
+
+      > div {
+        border: 1px solid #e5e7ec;
+        border-radius: 5px;
+      }
+    }
+
+    &-bill {
+      position: relative;
+      bottom: 5px;
+    }
+
+    &-text {
+      font-size: 12px;
+      color: #000;
+      line-height: 17px;
+      font-weight: 400;
+    }
+
+    &-number {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 12px;
+      color: @primary-color;
+      line-height: 17px;
+      font-weight: 500;
+    }
+
+    &-default {
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    &-see {
+      font-size: 12px;
+      color: @primary-color;
+      font-weight: 500;
+      text-align: right;
+      margin-right: 20px;
+      margin-left: auto;
+      float: right;
+    }
+
+    &-box {
+      position: relative;
+      top: 6px;
+      left: -10px;
+    }
+
+    &-type {
+      margin: 0;
+      padding: 0;
+
+      &-tag {
+        position: relative;
+        border-radius: 2px;
+        border: 0;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        margin: 4px 0 4px 8px;
+        bottom: 6px;
+        background-color: rgba(81, 88, 116, 0.1);
+        color: #515874;
+        font-size: 12px;
+        font-weight: 600;
+
+        &:hover {
+          color: #515874 !important;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        & > span {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+
+      &-switch {
+        border: 1px solid @primary-color;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border-color: transparent @primary-color @primary-color transparent;
+          border-style: solid;
+          border-width: 7px;
+        }
+
+        &:before {
+          content: '';
+          width: 5px;
+          height: 8px;
+          position: absolute;
+          right: 2px;
+          bottom: 2px;
+          border: 1px solid #fff;
+          border-top-color: transparent;
+          border-left-color: transparent;
+          transform: rotate(40deg);
+          z-index: 9;
+        }
+      }
+    }
+  }
+}
+
+.common-table {
+  :global {
+    .c7n-pro-table-tbody.c7n-pro-table-cell {
+      background-color: #fff !important;
+    }
+  }
+}

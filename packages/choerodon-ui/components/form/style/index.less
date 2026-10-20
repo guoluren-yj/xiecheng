@@ -1,0 +1,603 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+@import '../../input/style/mixin';
+@import '../../button/style/mixin';
+@import '../../grid/style/mixin';
+@import './mixin';
+
+@form-prefix-cls: ~'@{c7n-prefix}-form';
+@input-prefix-cls: ~'@{c7n-prefix}-input';
+@select-prefix-cls: ~'@{c7n-prefix}-select';
+@form-component-height: @input-height-base;
+@form-component-max-height: @input-height-lg;
+@form-feedback-icon-size: 0.14rem;
+
+.@{form-prefix-cls} {
+  .reset-component;
+  .reset-form;
+}
+
+.@{form-prefix-cls}-item-required::before {
+  display: inline-block;
+  margin-right: 0.04rem;
+  color: @label-required-color;
+  font-size: @font-size-base;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+  .@{form-prefix-cls}-hide-required-mark & {
+    display: none;
+  }
+}
+
+// Radio && Checkbox
+input[type='radio'],
+input[type='checkbox'] {
+  &[disabled],
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+// These classes are used directly on <label>s
+.@{c7n-prefix}-radio-inline,
+.@{c7n-prefix}-radio-vertical,
+.@{c7n-prefix}-checkbox-inline,
+.@{c7n-prefix}-checkbox-vertical {
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+// These classes are used on elements with <label> descendants
+.@{c7n-prefix}-radio,
+.@{c7n-prefix}-checkbox {
+  &.disabled {
+    label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+// Form items
+// You should wrap labels and controls in .@{form-prefix-cls}-item for optimum spacing
+.@{form-prefix-cls}-item {
+  label {
+    position: relative;
+
+    > .@{iconfont-css-prefix} {
+      font-size: @font-size-base;
+      vertical-align: top;
+    }
+  }
+
+  .reset-component;
+  margin-bottom: @form-item-margin-bottom;
+  padding-top: @form-item-margin-top;
+  vertical-align: top;
+
+  // nested FormItem
+  &-control > &:last-child,
+  & [class^='@{c7n-prefix}-col-'] > &:only-child {
+    margin-bottom: -@form-item-margin-bottom;
+  }
+
+  &-control {
+    position: relative;
+    .clearfix;
+  }
+
+  &-children {
+    position: relative;
+  }
+
+  &-label {
+    display: inline-block;
+    overflow: hidden;
+    line-height: @form-component-max-height - 0.000001rem;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: middle;
+
+    label {
+      color: @label-color;
+
+      &::after {
+        & when (@form-item-trailing-colon=true) {
+          content: ':';
+        }
+        & when not (@form-item-trailing-colon=true) {
+          content: ' ';
+        }
+        position: relative;
+        top: -0.005rem;
+        margin: 0 0.08rem 0 0.02rem;
+      }
+    }
+  }
+
+  .@{c7n-prefix}-switch {
+    margin: 0.02rem 0 0.04rem;
+  }
+
+  &-no-colon &-label label::after {
+    content: ' ';
+  }
+}
+
+.@{form-prefix-cls}-explain,
+.@{form-prefix-cls}-extra {
+  position: absolute;
+  color: @text-color-secondary;
+  line-height: @line-height-base;
+  transition: color 0.15s @ease-out;
+}
+
+.@{form-prefix-cls}-extra {
+  padding-top: 0.04rem;
+}
+
+.@{form-prefix-cls}-text {
+  display: inline-block;
+  padding-right: 0.08rem;
+}
+
+.@{form-prefix-cls}-split {
+  display: block;
+  text-align: center;
+}
+
+// 表单下的输入框尺寸唯一: 大尺寸
+form {
+  .has-feedback {
+    .@{c7n-prefix}-input {
+      padding-right: 0.24rem;
+    }
+
+    // Fix overlapping between feedback icon and <Select>'s arrow.
+    > .@{c7n-prefix}-select .@{c7n-prefix}-select-arrow,
+    > .@{c7n-prefix}-select .@{c7n-prefix}-select-selection__clear,
+    :not(.@{c7n-prefix}-input-group-addon) > .@{c7n-prefix}-select .@{c7n-prefix}-select-arrow,
+    :not(.@{c7n-prefix}-input-group-addon)
+      > .@{c7n-prefix}-select
+      .@{c7n-prefix}-select-selection__clear {
+      right: 0.28rem;
+    }
+    > .@{c7n-prefix}-select .@{c7n-prefix}-select-selection-selected-value,
+    :not(.@{c7n-prefix}-input-group-addon)
+      > .@{c7n-prefix}-select
+      .@{c7n-prefix}-select-selection-selected-value {
+      padding-right: 0.42rem;
+    }
+
+    .@{c7n-prefix}-cascader-picker {
+      &-arrow {
+        margin-right: 0.17rem;
+      }
+      &-clear {
+        right: 0.28rem;
+      }
+    }
+
+    .@{c7n-prefix}-input-search:not(.@{c7n-prefix}-input-search-enter-button) {
+      .@{c7n-prefix}-input-suffix {
+        right: 0.28rem;
+      }
+    }
+
+    .@{c7n-prefix}-calendar-picker,
+    .@{c7n-prefix}-time-picker {
+      &-icon,
+      &-clear {
+        right: 0.28rem;
+      }
+      &-icon {
+        position: absolute;
+      }
+    }
+  }
+
+  textarea.@{c7n-prefix}-input {
+    height: auto;
+  }
+
+  // input[type=file]
+  .@{c7n-prefix}-upload {
+    background: transparent;
+  }
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    width: 0.16rem;
+    height: 0.16rem;
+  }
+
+  // Radios and checkboxes on same line
+  .@{c7n-prefix}-radio-inline,
+  .@{c7n-prefix}-checkbox-inline {
+    display: inline-block;
+    margin-left: 0.08rem;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .@{c7n-prefix}-checkbox-vertical,
+  .@{c7n-prefix}-radio-vertical {
+    display: block;
+  }
+
+  .@{c7n-prefix}-checkbox-vertical + .@{c7n-prefix}-checkbox-vertical,
+  .@{c7n-prefix}-radio-vertical + .@{c7n-prefix}-radio-vertical {
+    margin-left: 0;
+  }
+
+  .@{c7n-prefix}-input-number + .@{form-prefix-cls}-text {
+    margin-left: 0.08rem;
+  }
+
+  .@{c7n-prefix}-select,
+  .@{c7n-prefix}-cascader-picker {
+    width: 100%;
+  }
+
+  // Don't impact select inside input group
+  .@{c7n-prefix}-input-group .@{c7n-prefix}-select,
+  .@{c7n-prefix}-input-group .@{c7n-prefix}-cascader-picker {
+    width: auto;
+  }
+
+  .@{c7n-prefix}-input-group-wrapper {
+    position: relative;
+    top: -0.01rem;
+    vertical-align: middle;
+  }
+}
+
+// Input combined with select
+.@{c7n-prefix}-input-group-wrap {
+  .@{c7n-prefix}-select-selection {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &:hover {
+      border-color: @border-color-base;
+    }
+  }
+
+  .@{c7n-prefix}-select-selection--single {
+    height: @input-height-lg;
+    margin-left: -0.01rem;
+    background-color: #eee;
+    .@{c7n-prefix}-select-selection__rendered {
+      padding-right: 0.25rem;
+      padding-left: 0.08rem;
+      line-height: 0.3rem;
+    }
+  }
+
+  .@{c7n-prefix}-select-open .@{c7n-prefix}-select-selection {
+    border-color: @border-color-base;
+    box-shadow: none;
+  }
+}
+
+// Form layout
+//== Vertical Form
+.make-vertical-layout-label() {
+  display: block;
+  margin: @form-vertical-label-margin;
+  padding: @form-vertical-label-padding;
+  line-height: @line-height-base;
+  text-align: left;
+
+  label::after {
+    display: none;
+  }
+}
+
+.make-vertical-layout() {
+  .@{form-prefix-cls}-item-label,
+  .@{form-prefix-cls}-item-control-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+.@{form-prefix-cls}-vertical .@{form-prefix-cls}-item-label,
+  // when labelCol is 24, it is a vertical form
+.@{c7n-prefix}-col-24.@{form-prefix-cls}-item-label,
+.@{c7n-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
+  .make-vertical-layout-label();
+}
+
+.@{form-prefix-cls}-vertical {
+  .@{form-prefix-cls}-item {
+    padding-bottom: 0.08rem;
+  }
+  .@{form-prefix-cls}-item-control {
+    line-height: @line-height-base;
+  }
+  .@{form-prefix-cls}-explain,
+  .@{form-prefix-cls}-extra {
+    margin-top: 0.02rem;
+    margin-bottom: -0.04rem;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .make-vertical-layout();
+  .@{c7n-prefix}-col-xs-24.@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .@{c7n-prefix}-col-sm-24.@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+@media (max-width: @screen-md-max) {
+  .@{c7n-prefix}-col-md-24.@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+@media (max-width: @screen-lg-max) {
+  .@{c7n-prefix}-col-lg-24.@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+@media (max-width: @screen-xl-max) {
+  .@{c7n-prefix}-col-xl-24.@{form-prefix-cls}-item-label {
+    .make-vertical-layout-label();
+  }
+}
+
+//== Inline Form
+.@{form-prefix-cls}-inline {
+  .@{form-prefix-cls}-item {
+    display: inline-block;
+    margin-right: 0.16rem;
+    margin-bottom: 0;
+
+    &-with-help {
+      margin-bottom: @form-item-margin-bottom;
+      padding-top: @form-item-margin-top;
+    }
+
+    > .@{form-prefix-cls}-item-control-wrapper,
+    > .@{form-prefix-cls}-item-label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .@{form-prefix-cls}-text {
+    display: inline-block;
+  }
+
+  .has-feedback {
+    display: inline-block;
+  }
+
+  .@{form-prefix-cls}-explain {
+    position: absolute;
+  }
+}
+
+// Validation state
+.has-success,
+.has-warning,
+.has-error,
+.is-validating {
+  &.has-feedback .@{form-prefix-cls}-item-children::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    width: @form-component-height;
+    height: 0.2rem;
+    margin-top: -0.08rem;
+    font-size: @form-feedback-icon-size;
+    line-height: 0.2rem;
+    text-align: center;
+    visibility: visible;
+    animation: zoomIn @animation-duration-slow @ease-out-back;
+    pointer-events: none;
+    .iconfont-font('');
+  }
+}
+
+.has-success {
+  &.has-feedback .@{form-prefix-cls}-item-children {
+    &::after {
+      color: @success-color;
+      animation-name: diffZoomIn1 !important;
+      content: '\e86c';
+    }
+
+    .@{input-prefix-cls}-suffix,
+    .@{input-prefix-cls}-icon {
+      display: none !important;
+    }
+    .@{select-prefix-cls}-arrow,
+    .@{select-prefix-cls}-clear {
+      display: none !important;
+    }
+  }
+}
+
+.has-warning {
+  .form-control-validation(@warning-color; @warning-color;);
+
+  &.has-feedback .@{form-prefix-cls}-item-children::after {
+    color: @warning-color;
+    animation-name: diffZoomIn3 !important;
+    content: '\e000';
+  }
+
+  //select
+  .@{c7n-prefix}-select {
+    &-selection {
+      border-color: @warning-color;
+    }
+    &-open .@{c7n-prefix}-select-selection,
+    &-focused .@{c7n-prefix}-select-selection {
+      .active(@warning-color);
+    }
+  }
+
+  // arrow and icon
+  .@{c7n-prefix}-calendar-picker-icon::after,
+  .@{c7n-prefix}-time-picker-icon::after,
+  .@{c7n-prefix}-picker-icon::after,
+  .@{c7n-prefix}-select-arrow,
+  .@{c7n-prefix}-cascader-picker-arrow {
+    color: @warning-color;
+  }
+
+  //input-number, timepicker
+  .@{c7n-prefix}-input-number,
+  .@{c7n-prefix}-time-picker-input {
+    border-color: @warning-color;
+    &-focused,
+    &:focus {
+      .active(@warning-color);
+    }
+    &:not([disabled]):hover {
+      border-color: @warning-color;
+    }
+  }
+
+  .@{c7n-prefix}-cascader-picker:focus .@{c7n-prefix}-cascader-input {
+    .active(@warning-color);
+  }
+}
+
+.has-error {
+  .form-control-validation(@error-color; @error-color;);
+
+  &.has-feedback .@{form-prefix-cls}-item-children::after {
+    color: @error-color;
+    animation-name: diffZoomIn2 !important;
+    content: '\e5c9';
+  }
+
+  //select
+  .@{c7n-prefix}-select {
+    &-selection {
+      border-color: @error-color;
+    }
+    &-open .@{c7n-prefix}-select-selection,
+    &-focused .@{c7n-prefix}-select-selection {
+      .active(@error-color);
+    }
+  }
+
+  .@{c7n-prefix}-select.@{c7n-prefix}-select-auto-complete {
+    .@{c7n-prefix}-input:focus {
+      border-color: @error-color;
+    }
+  }
+
+  .@{c7n-prefix}-input-group-addon .@{c7n-prefix}-select {
+    &-selection {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  // arrow and icon
+  .@{c7n-prefix}-calendar-picker-icon::after,
+  .@{c7n-prefix}-time-picker-icon::after,
+  .@{c7n-prefix}-picker-icon::after,
+  .@{c7n-prefix}-select-arrow,
+  .@{c7n-prefix}-cascader-picker-arrow {
+    color: @error-color;
+  }
+
+  //input
+  .@{input-prefix-cls}-length-info {
+    display: none;
+  }
+
+  //input-number, timepicker
+  .@{c7n-prefix}-input-number,
+  .@{c7n-prefix}-time-picker-input {
+    border-color: @error-color;
+    &-focused,
+    &:focus {
+      .active(@error-color);
+    }
+    &:not([disabled]):hover {
+      border-color: @error-color;
+    }
+  }
+
+  .@{c7n-prefix}-cascader-picker:focus .@{c7n-prefix}-cascader-input {
+    .active(@error-color);
+  }
+}
+
+.is-validating {
+  &.has-feedback .@{form-prefix-cls}-item-children {
+    &::after {
+      display: inline-block;
+      color: @primary-color;
+      animation: loadingCircle 1s infinite linear;
+      content: '\e917';
+    }
+    .@{input-prefix-cls}-suffix,
+    .@{input-prefix-cls}-icon {
+      display: none !important;
+    }
+    .@{select-prefix-cls}-arrow,
+    .@{select-prefix-cls}-clear {
+      display: none !important;
+    }
+  }
+}
+
+.@{c7n-prefix}-advanced-search-form {
+  .@{form-prefix-cls}-item {
+    margin-bottom: 0.24rem;
+  }
+}
+
+// need there different zoom animation
+// otherwise won't trigger anim
+@keyframes diffZoomIn1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes diffZoomIn2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes diffZoomIn3 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

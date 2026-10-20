@@ -1,0 +1,150 @@
+.risk-profile-basic {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.risk-profile-fold-basic {
+  background-color: #f7f8fa;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.risk-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.risk-profile-header-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d2129;
+}
+
+.risk-profile-score-row {
+  margin-top: 16px;
+  min-height: 50px;
+  display: flex;
+}
+
+.low-score-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  // height: 48px;
+  color: #179454;
+  background-color: rgba(71, 184, 131, 0.1);
+}
+
+.middle-score-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  // height: 48px;
+  color: #f06200;
+  background-color: rgba(242, 128, 26, 0.1);
+}
+
+.high-score-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  // height: 48px;
+  color: #e64322;
+  background-color: rgba(242, 85, 53, 0.1);
+}
+
+.score-row {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.level-word-row {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.risk-profile-level-panel {
+  padding-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.risk-profile-level-row {
+  // display: flex;
+}
+
+.risk-profile-level-item {
+  margin-left: 48px;
+  // width: calc(100vw - 202px);
+}
+
+.risk-profile-second-title {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  width: 48px;
+  float: left;
+}
+
+.risk-profile-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.high-risk-tag {
+  background: rgba(242, 85, 53, 0.15);
+  border-radius: 2px;
+  color: #e64322;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.middle-risk-tag {
+  color: #f06200;
+  background-color: rgba(242, 128, 26, 0.1);
+  border-radius: 2px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.low-risk-tag {
+  color: #179454;
+  background-color: rgba(71, 184, 131, 0.1);
+  border-radius: 2px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.risk-profile-card-second-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #1D2129;
+  line-height: 22px;
+  font-weight: 500;
+  height: 12px;
+  border-left: 3px solid @primary-color;
+  padding-left: 8px;
+  margin: 16px 0;
+
+  :global {
+    .c7n-tag {
+      border: none;
+    }
+  }
+}

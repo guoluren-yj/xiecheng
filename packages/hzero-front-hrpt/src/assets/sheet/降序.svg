@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>降序</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-1298.000000, -94.000000)" fill-rule="nonzero">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(54.000000, 1.000000)">
+                        <g id="编组-29" transform="translate(818.500000, 0.000000)">
+                            <g id="降序" transform="translate(206.000000, 3.000000)">
+                                <rect id="Rectangle" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                                <g id="编组-10" transform="translate(4.166667, 4.333333)" fill="#464D5A">
+                                    <g id="编组-9" transform="translate(0.000000, 0.416667)" stroke="#464D5A" stroke-width="0.25">
+                                        <g id="编组">
+                                            <path d="M3.46666667,9.65833333 L1.44166667,9.65833333 L0.941666667,11.0833333 L0,11.0833333 L1.94166667,6.08333333 L3,6.08333333 L4.93333333,11.0833333 L3.95833333,11.0833333 L3.46666667,9.65833333 Z M3.25,9.04166667 L3,8.36666667 C2.8,7.825 2.625,7.26666667 2.44166667,6.7 L2.44166667,6.7 C2.275,7.275 2.09166667,7.825 1.9,8.36666667 L1.65833333,9.04166667 L3.25,9.04166667 Z" id="形状备份"></path>
+                                            <polygon id="路径备份" points="0.233333333 4.525 3.425 0.666666667 0.5 0.666666667 0.5 0 4.66666667 0 4.66666667 0.475 1.475 4.33333333 4.66666667 4.33333333 4.66666667 5 0.233333333 5"></polygon>
+                                        </g>
+                                    </g>
+                                    <polygon id="形状结合" transform="translate(9.583333, 5.875000) scale(-1, 1) rotate(-180.000000) translate(-9.583333, -5.875000) " points="9.58333333 -7.40148683e-16 11.6666667 3.33333333 10.1241667 3.3325 10.125 11.75 9.04166667 11.75 9.04083333 3.3325 7.5 3.33333333"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

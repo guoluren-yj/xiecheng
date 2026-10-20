@@ -1,0 +1,50 @@
+@import '~hzero-front/lib/srm-variables';
+.select-box-row {
+  .select-box-label {
+    padding-right: 12px;
+    color: @text-3;
+  }
+  .select-suffix-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .select-card-label-help {
+    font-size: 14px;
+    margin-top: -2px;
+    margin-left: 4px;
+    color: @fill-3;
+    font-weight: 400;
+  }
+  .radio-suffix {
+    font-weight: 400;
+    margin-left: 16px;
+    position: relative;
+  }
+
+  .radio-suffix-changed {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -3px;
+      display: inline-block;
+      width: 0;
+      white-space: normal;
+      border-top: 0.06rem solid #29bece;
+      border-right: 0.06rem solid transparent;
+      content: ' ';
+    }
+  }
+
+  :global {
+    .c7n-pro-select-box-vertical {
+      .c7n-pro-radio-wrapper {
+        height: 28px;
+        margin: 0;
+      }
+    }
+
+    .c7n-pro-output {
+      line-height: 1.5;
+    }
+  }
+}

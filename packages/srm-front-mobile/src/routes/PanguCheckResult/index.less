@@ -1,0 +1,254 @@
+.pangu-check-result-basic {
+  // height: 100%;
+  padding: 20px 20px 0 20px;
+  background: #fff;
+}
+
+.ai-alert-msg {
+  font-size: 12px;
+  color: #bcc2cc;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.result-summary-card {
+  padding: 16px;
+  background: #f8f9fb;
+  border-radius: 8px;
+
+  .summary-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #4e5769;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+.status-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.status-count-approved-suggest {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f06200;
+}
+
+.status-count-rejected {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ed2f00;
+}
+
+.status-count-approved {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3bb346;
+}
+
+.status-text {
+  font-size: 12px;
+  color: #868d9c;
+}
+
+.risk-description {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #4e5769;
+  font-weight: 400;
+}
+
+.audit-details {
+  margin-bottom: 16px;
+}
+
+.audit-header {
+  margin: 12px 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #4e5769;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.finished-time {
+  color: #bcc2cc;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.expand-icon {
+  margin: -1px 0 0 4px;
+  transition: all 0.3s ease;
+}
+
+.expand-icon.expanded {
+  transform: rotate(90deg);
+}
+
+.audit-content {
+  padding-top: 4px;
+}
+
+.show-all-link:hover {
+  color: #40a9ff;
+}
+
+.passed {
+  padding: 1px 4px;
+  background: rgba(71, 184, 131, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #179454;
+  text-align: justify;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.rejected {
+  padding: 1px 4px;
+  background: #ffefed;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #e11900;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.check {
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #f06200;
+  line-height: 18px;
+  font-weight: 400;
+  background: rgba(255, 120, 0, 0.15);
+  border-radius: 2px;
+}
+
+.alert {
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #0161d5;
+  line-height: 18px;
+  font-weight: 400;
+  background: rgba(25, 132, 247, 0.15);
+  border-radius: 2px;
+}
+
+.alert2 {
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #ffc043;
+  line-height: 16px;
+  font-weight: 400;
+  background: #fffaf0;
+  border-radius: 2px;
+}
+
+.check-result-sort {
+  display: inline-block;
+  white-space: normal;
+
+  &-control {
+    display: inline-block;
+    line-height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+
+    i {
+      vertical-align: sub;
+      margin-left: 4px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.check-result-sort-menu {
+  max-width: 240px;
+  max-height: 400px;
+  overflow: auto;
+  background: white;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 2px 1px -2px rgb(0 0 0 / 20%);
+
+  &-item {
+    width: 100%;
+    height: 32px !important;
+    display: flex;
+    align-items: center;
+    padding: 0 10px !important;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    color: #000 !important;
+  }
+}
+
+.feedback-cell {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #868d9c;
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+
+  &:hover {
+    color: #4e5769;
+  }
+
+  i {
+    font-size: 14px;
+  }
+}
+
+.feedback-liked {
+  color: #3bb346 !important;
+  font-weight: 600;
+}
+
+.feedback-disliked {
+  color: #ed2f00 !important;
+  // font-weight: 600;
+}
+
+.feedback-clear {
+  font-size: 16px;
+  color: #868d9c;
+  cursor: pointer;
+  margin-left: auto;
+  user-select: none;
+
+  &:hover {
+    color: #4e5769;
+  }
+}

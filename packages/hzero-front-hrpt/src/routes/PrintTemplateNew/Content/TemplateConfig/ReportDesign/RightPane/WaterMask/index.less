@@ -1,0 +1,114 @@
+.water-mask-pane {
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 16px;
+  :global {
+    .water-mask-title {
+      font-size: 16px;
+      color: #1D2129;
+      line-height: 24px;
+      padding: 0 16px;
+      font-weight: 500;
+      position: relative;
+    }
+    .water-mask-close {
+      position: absolute;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .c7n-pro-form-wrapper {
+      margin: 16px 0 0 !important;
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-switch-float-label {
+      padding-top: 0;
+      height: 22px;
+      display: inline-block;
+      line-height: 22px;
+      vertical-align: top;
+    }
+    .water-mask-item-group {
+      display: flex;
+      position: relative;
+      margin-bottom: 16px;
+      &>:first-child {
+        flex: 1;
+        .c7n-pro-textarea-wrapper {
+          width: 100%;
+        }
+      }
+      &>:last-child {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 1px solid rgb(201, 205, 212);
+        border-radius: 0 3px 3px 0;
+        width: 32px;
+        padding-left: 6px;
+      }
+      .c7n-pro-validation-message {
+        position: absolute;
+      }
+    }
+    .water-mask-content {
+      flex: 1;
+      overflow: auto;
+      margin-bottom: 32px;
+    }
+    .water-mask-footer {
+      padding: 12px 16px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .water-mask-content-alert {
+      border: none;
+      margin-top: 16px;
+      background-color: @blue-1;
+      color: @blue-6;
+      padding: 0.08rem 0.08rem 0.08rem 0.4rem;
+      :global {
+        .c7n-alert-icon {
+          top: 9px;
+          font-size: 16px;
+        }
+        .c7n-alert-close-icon i {
+          font-size: 16px;
+          color: @blue-6;
+        }
+        .c7n-alert-description {
+          max-height: unset;
+        }
+      }
+    }
+  }
+}
+
+.water-mask-content-editor {
+  display: flex;
+  &-left {
+    flex: 1;
+    :global {
+      .c7n-pro-textarea-wrapper {
+        width: 100%;
+      }
+    }
+  }
+  &-right {
+    width: 240px;
+    background: #F8F9FB;
+    border-right: 1px solid rgb(229, 231, 236);
+    :global {
+      .c7n-tabs-bar {
+        padding-top: 16px;
+        padding-left: 20px;
+      }
+    }
+  }
+}

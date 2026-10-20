@@ -1,0 +1,40 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../trigger-field/style/mixin';
+@import '../../field/style/mixin';
+@import '../../../components/select/style/mixin';
+@import '../../../components/checkbox/style/mixin';
+
+@select-prefix-cls: ~'@{c7n-pro-prefix}-select';
+@checkbox-prefix-cls: ~'@{c7n-prefix}-checkbox';
+
+.@{select-prefix-cls} {
+  .trigger-field;
+
+  margin: 0;
+
+  &-trigger {
+    transition: transform @animation-duration-slow;
+  }
+
+  &-expand &-trigger {
+    transform: rotate(180deg);
+    &.icon-search {
+      transform: none;
+    }
+    &-common-item-wrapper {
+      display: none !important;
+    }
+  }
+
+  &-dropdown-menu {
+    .dropdown-menu;
+    .checked(@checkbox-prefix-cls, @select-primary-color);
+  }
+
+  .select-all;
+
+  .common-item;
+
+  .search-bar;
+}

@@ -1,0 +1,97 @@
+.tip {
+  margin-left: 4px;
+  margin-right: 4px;
+  color: red;
+}
+
+.pageWrap {
+  margin-bottom: 16px;
+}
+.pageTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.wrap {
+  margin-bottom: 8;
+  padding: 20;
+  overflow: auto;
+}
+
+.pageWrapperOne {
+  background-color: #fff;
+  padding: 16px;
+  margin: 8px 16px 8px 16px;
+}
+.pageWrapperTwo {
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 16px 8px 16px;
+}
+.pageWrapperThree {
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 16px 10px 16px;
+}
+
+.pageContent {
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.attachment {
+  margin-top: 0;
+  margin-bottom: 8;
+  padding: 20;
+}
+
+.footer-form {
+  :global {
+    display: flex;
+    width: 100%;
+    .c7n-pro-field-label {
+      height: 0;
+      padding: 0;
+    }
+    .c7n-pro-form-wrapper {
+      table {
+        tr {
+          td {
+            max-height: 10%;
+            overflow-y: auto;
+            .c7n-pro-field-wrapper {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.logistics-title {
+  font-size: 14px;
+  position: relative;
+  padding: 0 16px 16px;
+  &::before {
+    content: '';
+    width: 3px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    background: #29bece;
+  }
+}
+.logistics-basic {
+  padding: 0 16px;
+  .ant-form-item-label {
+    text-align: left;
+  }
+}

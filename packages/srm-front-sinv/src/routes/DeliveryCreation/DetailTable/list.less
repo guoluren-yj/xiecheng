@@ -1,0 +1,72 @@
+/*
+ * Line - 行样式
+ * @date: 2019-01-25
+ * @author: gcc <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.action-btns {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 16px;
+  .ant-btn.action-btn:first-child {
+    margin-left: 8px;
+  }
+}
+.logistics-form {
+  :global {
+    .writable-row {
+      margin: 0 16px 8px !important;
+      > .ant-col-24 {
+        width: 30%;
+        padding: 0 !important;
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      > .ant-form-item-label {
+        text-align: left;
+      }
+    }
+    // .ant-col-8 {
+    //   & > .ant-row.ant-form-item {
+    //     & > .ant-col-9.ant-form-item-label {
+    //       text-align: left;
+    //       padding-left: 16px;
+    //       line-height: 28px;
+    //       color: #666;
+
+    //       label {
+    //         color: #666;
+    //       }
+    //     }
+    //   }
+    // }
+    // .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+    //   line-height: 28px;
+    // }
+    // .ant-form-item {
+    //   margin-bottom: 0;
+    // }
+    // .writable-row {
+    //   margin-bottom: 16px;
+    // }
+  }
+}
+
+.add-log-alert {
+  display: flex;
+  .add-log-icon {
+    background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+    margin: 0 8px 0 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 32px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+  }
+}
+.add-log-form {
+  padding-top: 20px;
+}

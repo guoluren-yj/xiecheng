@@ -1,0 +1,149 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.catalog-manage-container {
+  :global {
+    .action-link-btns {
+      height: 100%;
+
+      :global {
+        .c7n-pro-btn-link + .c7n-pro-btn-link {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .catalog-manage-table {
+      // 展开图标左对齐
+      .c7n-pro-table-thead .c7n-pro-table-cell[data-index='enabledFlag'] .c7n-pro-table-cell-inner {
+        padding-left: 20px;
+      }
+
+      table .c7n-pro-table-tbody .c7n-pro-table-row td[data-index='enabledFlag'] {
+        padding-left: 0 !important;
+
+        .c7n-pro-table-cell-prefix {
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+// 表单
+.catalog-form-wrapper {
+  :global {
+    .c7n-pro-field-help {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-number {
+      text-align: left;
+    }
+
+    .icon-preview {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      border: 1px solid #eee;
+    }
+  }
+}
+
+// 目录侧弹窗
+.custom-tree-form {
+  width: 100%;
+  margin-bottom: 16px;
+  // height: 40px;
+  // margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  :global {
+    .custom-tree-input {
+      flex: 1;
+      margin-right: 8px;
+    }
+
+    .c7n-pro-input-prefix,
+    .c7n-pro-input-suffix {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: default;
+    }
+
+    .c7n-pro-input-suffix {
+      width: auto;
+      min-width: 0.24rem;
+      padding-right: 4px;
+    }
+
+    .custom-tree-arrow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 16px;
+      }
+
+      .has-pointer {
+        cursor: pointer;
+
+        &:focus {
+          background: #eee;
+        }
+      }
+
+      .arrow-disible {
+        color: #eee;
+      }
+    }
+  }
+}
+
+.tree-container {
+  flex: 1;
+  min-height: 1px;
+
+  :global {
+    // .c7n-spin-nested-loading,
+    // .c7n-spin-container,
+    // .c7n-tree,
+    // .c7n-tree-list {
+    //   height: 100%;
+    // }
+
+    // .c7n-tree-list {
+    //   overflow-y: auto;
+    // }
+
+    .search-result-node {
+      > span {
+        color: @primary-color;
+      }
+    }
+    .c7n-tree-list-holder {
+      height: calc(100vh - 1.68rem - 56px);
+      overflow-y: auto;
+    }
+  }
+}
+
+.catalog-head-tip {
+  border: none;
+  width: calc(100% + 32px);
+  position: relative;
+  top: -16px;
+  left: -16px;
+  display: flex;
+  align-items: center;
+  :global {
+    .icon-help,
+    .icon-close {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,247 @@
+@import '~hzero-front/lib/srm-variables';
+.detailContent {
+  margin: 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0);
+
+  .stepContent {
+    margin: 0 0 8px 0 !important;
+
+    .steps {
+      :global {
+        .c7n-steps-item-finish .c7n-steps-item-icon {
+          background: #47b881;
+          border-color: #47b881;
+        }
+        .c7n-steps-item-process .c7n-steps-item-icon {
+          background: #fca400;
+          border-color: #fca400;
+        }
+
+        .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title {
+          color: @text-2;
+        }
+
+        .c7n-steps-item-process > .c7n-steps-item-content > .c7n-steps-item-title {
+          color: @text-1;
+        }
+
+        .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title:after {
+          background: #47b881;
+        }
+
+        .c7n-steps-item-process > .c7n-steps-item-content > .c7n-steps-item-title:after {
+          background: #fca400;
+        }
+
+        .c7n-steps-item-wait .c7n-steps-item-icon {
+          background: rgba(0, 0, 0, 0.25);
+          border: 0;
+        }
+
+        .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title {
+          color: @text-3;
+        }
+
+        .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title:after {
+          background: rgba(0, 0, 0, 0.08);
+        }
+        .c7n-steps-item-title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .detailPanel {
+    box-sizing: border-box;
+    border-bottom: 0.08rem solid rgba(0, 0, 0, 0.05);
+    :global {
+      .c7n-collapse-header {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 20px 16px;
+      }
+
+      .c7n-collapse-content {
+        padding: 0 20px;
+      }
+
+      .c7n-collapse-content-box {
+        padding: 0 0 20px !important;
+      }
+
+      .c7n-collapse-header > .compact-left {
+        color: #1d2129 !important;
+        cursor: pointer;
+      }
+    }
+
+    :global {
+      .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+        padding: 0;
+        line-height: 1.5;
+        margin-bottom: 4px;
+        margin-top: 16px;
+      }
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+        padding: 0;
+      }
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .scoreContent {
+    padding: 0;
+    margin: 8px 8px 0 8px;
+
+    .scoreContentTitle {
+      padding: 20px;
+      font-size: 16px;
+      // color: #1d2129;
+      font-weight: 600;
+    }
+    .scoreInfoContentTitle {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 20px 26px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+}
+
+// TextField前置标签样式
+.addon-before-style {
+  .c7n-pro-input-group-before {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    width: 130px;
+  }
+  :global {
+    .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-output::after {
+      content: ':';
+    }
+  }
+}
+
+// 处理表单，使用FormField时，只读页面不展示必填*标识
+.c7n-pro-readOnly-style {
+  table > tbody > tr:first-child > td > label {
+    margin-top: 0 !important;
+  }
+  :global {
+    .c7n-pro-field-label-vertical.c7n-pro-field-required.c7n-pro-field-label:before,
+    .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-useColon label > span:before,
+    .c7n-pro-field-row .c7n-pro-field-required.c7n-pro-field-label-useColon:before {
+      display: none;
+      content: '';
+    }
+    .c7n-pro-attachment-required:after {
+      display: none;
+      content: '';
+    }
+  }
+}
+
+// 联系人信息-联系电话样式
+.LineForm {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-select,
+    .c7n-pro-input {
+      border-color: #fca000;
+      background-color: #fffbef;
+    }
+    .c7n-pro-select:focus,
+    .c7n-pro-input:focus {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.attTitle {
+  margin-bottom: 19px;
+  p {
+    margin: 0;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    color: #868d9c;
+    font-weight: 400;
+  }
+}
+
+.noHeader {
+  :global {
+    .c7n-collapse-header {
+      padding: 0 !important;
+    }
+  }
+}
+
+.detail-content {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 !important;
+  padding: 8px 0 0 0;
+  border: 0 !important;
+
+  .card-content {
+    padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .detail-card {
+      .card-title {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      :global {
+        .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+          padding: 0;
+          line-height: 1.5;
+          margin-bottom: 4px;
+          margin-top: 16px;
+        }
+        .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+          padding: 0;
+        }
+        .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.collapse-content {
+  :global {
+    .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+      padding: 0;
+      line-height: 1.5;
+      margin-bottom: 4px;
+      margin-top: 16px;
+    }
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+      line-height: 1.5;
+    }
+  }
+}

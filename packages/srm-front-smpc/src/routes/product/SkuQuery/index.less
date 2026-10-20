@@ -1,0 +1,53 @@
+.small-custom-c7n-page {
+  :global {
+    .product-query-info {
+      display: flex;
+      overflow: hidden;
+      .img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #eee;
+      }
+      .text-wrapper {
+        margin-left: 12px;
+        flex: 1;
+        > p {
+          width: 100%;
+          line-height: 18px;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          > span {
+            margin-right: 8px;
+            background: #eee;
+            padding: 0 5px;
+          }
+        }
+        .product-name {
+          .overflow-text;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .list-wrapper {
+      > p {
+        line-height: 18px;
+        height: 18px;
+        padding: 0;
+        margin: 0;
+        .overflow-text;
+      }
+    }
+  }
+}
+
+.overflow-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}

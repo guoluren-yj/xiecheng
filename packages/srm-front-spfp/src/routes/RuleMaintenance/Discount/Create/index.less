@@ -1,0 +1,111 @@
+@import '~hzero-front/lib/srm-variables';
+@import '../../../common.less';
+
+.create-settle-steps {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f5f5f5;
+
+  :global {
+    .c7n-steps-item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        padding-right: 20px;
+        margin-right: 0;
+      }
+
+      .c7n-steps-item-icon {
+        margin-right: 0;
+      }
+
+      .c7n-steps-item-title {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+
+        &::after {
+          top: -12px;
+        }
+      }
+    }
+  }
+}
+.create-steps-wrapper {
+  height: calc(100vh - 190px);
+  :global {
+    // .c7n-steps-item-finish {
+    //   .spfp-step-color(@backgroundColor:@green-6,@color:@text-2);
+    // }
+    // .c7n-steps-item-process {
+    //   .spfp-step-color(@backgroundColor:@green-6,@color:@text-1);
+    // }
+    // .c7n-steps-item-wait {
+    //   .spfp-step-color(@backgroundColor:@fill-4,@color:@text-3);
+    // }
+    .create-steps-content > .c7n-pro-form-wrapper {
+      padding-top: 5px;
+    }
+    .create-steps-content {
+      // max-height: calc(100% - 41px);
+      height: 100%;
+      overflow-y: overlay;
+      overflow-x: hidden;
+      // padding-bottom: 20px;
+
+      .spfp-one-field-query-bar {
+        padding-top: 5px;
+      }
+      .c7n-pro-form-float-label {
+        margin: 0 !important;
+      }
+      .c7n-pro-form > table > tbody > tr > td {
+        .c7n-pro-field-wrapper {
+          padding: 0 !important;
+        }
+      }
+      .c7n-pro-form > table > tbody > tr > td {
+        padding: 1px 0 1px 0 !important;
+      }
+      .c7n-pro-form > table > tbody > tr > td:not(:nth-child(3)) {
+        // .c7n-pro-field-wrapper {
+        padding-right: 16px !important;
+        // }
+      }
+      .rule-editor-form {
+        tr > td:not(:last-child) {
+          padding-right: 16px !important;
+        }
+      }
+    }
+  }
+}
+.create-steps-page {
+  :global {
+    .spfp-body-footer {
+      height: @modal-footer-height;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      text-align: left;
+      padding: 0.12rem 0.2rem;
+      background-color: #fff;
+      border-top: 0.01rem solid #e0e0e0;
+      z-index: 99;
+    }
+  }
+}
+
+.create-collapse-steps {
+  :global {
+    .c7n-collapse-item.c7n-collapse-item-active:first-child > .c7n-collapse-header {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.spfp-rule-content {
+  height: 100%;
+}

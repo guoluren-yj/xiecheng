@@ -1,0 +1,22 @@
+.page-content-wrap {
+  overflow: hidden !important;
+}
+
+.page-content {
+  display: flex;
+  overflow: hidden !important;
+  :global {
+    .c7n-tabs {
+      overflow: hidden !important;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      .c7n-tabs-content {
+        flex: 1;
+        .c7n-tabs-tabpane {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

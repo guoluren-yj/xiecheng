@@ -1,0 +1,16 @@
+// 当图片有变更时
+.mall-card {
+  :global {
+    .card-body {
+      background-image: url('../assets/dashboard/srouce-event-b.svg');
+      .card-header {
+        background-image: url('../assets/dashboard/srouce-event-n.svg');
+      }
+      &:hover {
+        .card-header {
+          background-image: url('../assets/dashboard/srouce-event-h.svg');
+        }
+      }
+    }
+  }
+}

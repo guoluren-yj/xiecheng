@@ -1,0 +1,20 @@
+.c7n-form-label-required {
+  :global {
+    .c7n-pro-field-required {
+      &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        line-height: 1;
+        content: '*';
+      }
+      &::after {
+        content: '';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+  }
+}

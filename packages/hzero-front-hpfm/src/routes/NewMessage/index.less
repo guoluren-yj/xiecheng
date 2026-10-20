@@ -1,0 +1,170 @@
+@import '~hzero-front/lib/srm-variables';
+
+.message {
+  height: 100%;
+  :global {
+    .message-content {
+      display: flex;
+      height: 100%;
+    }
+    .page-content-wrap {
+      height: calc(100% - 0.48rem);
+      .page-content {
+        padding: 0;
+        height: calc(100% - 0.16rem) !important;
+        .c7n-pro-table-cell {
+          span > div > div > div {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            > span {
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 左侧树目录
+.left-list {
+  width: 2.4rem;
+  flex: 0 1 2rem;
+  padding-top: 0.16rem;
+  padding-left: 0.16rem;
+  padding-bottom: 0.16rem;
+  height: 100%;
+  font-weight: normal;
+  border-right: 1px solid @table-border-color;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  :global {
+    .list-select {
+      color: @primary-color;
+      font-weight: 600;
+      border-right: 2px solid @primary-color;
+    }
+    .left-list-content {
+      display: flex;
+      border-right: 2px solid transparent;
+      padding-right: 0.16rem;
+      margin-top: 0.16rem;
+      font-size: 13px;
+      .list-text {
+        cursor: pointer;
+      }
+      .list-count {
+        margin-left: auto;
+      }
+    }
+    .c7n-pro-input-wrapper {
+      width: 100%;
+    }
+    .c7n-spin-nested-loading {
+      height: calc(100% - 40px);
+      overflow: auto;
+    }
+  }
+}
+
+// 表格
+.search-bar {
+  flex: 1;
+  height: 100%;
+  padding: 0.16rem;
+  :global {
+    .c7n-pro-table-tbody .c7n-pro-table-selection-column .c7n-pro-checkbox-wrapper {
+      margin-top: 3px;
+    }
+    .c7n-pro-table-tbody .c7n-pro-table-cell {
+      vertical-align: top;
+      .c7n-pro-table-cell-inner {
+        // height: 0.69rem !important;
+        height: auto !important;
+        line-height: 0.69rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > div {
+          line-height: 0.23rem !important;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .c7n-pro-table-tbody .c7n-pro-table-cell.c7n-pro-table-selection-column {
+      .c7n-pro-table-cell-inner {
+        align-items: center;
+      }
+    }
+  }
+}
+.column-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &-text {
+    width: calc(100% - 0.24rem);
+    .code-content {
+      display: flex;
+      .text-code {
+        color: @primary-color;
+        cursor: pointer;
+      }
+      .text-icon {
+        margin-left: 0.08rem;
+        :global {
+          .icon {
+            font-size: 0.12rem;
+            color: #f56649;
+          }
+        }
+      }
+    }
+    .text-content {
+      line-height: 0.23rem !important;
+      overflow: hidden;
+      // white-space: nowrap;
+      // text-overflow: ellipsis;
+    }
+  }
+  &-action {
+    margin-left: auto;
+    cursor: pointer;
+    color: #a5a5a5;
+  }
+}
+
+.form-label {
+  border-left: 3px solid @primary-color;
+  font-weight: 700;
+  text-indent: 8px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 13px;
+  margin-bottom: 8px;
+}
+
+.text-label {
+  color: @text-color-secondary;
+  margin-right: 8px;
+}
+.text {
+  color: @text-color;
+}
+.card-title {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  &::before {
+    height: 12px;
+    border-left: 3px solid @primary-color;
+    padding-left: 8px;
+    content: ' ';
+  }
+}

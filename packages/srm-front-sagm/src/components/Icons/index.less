@@ -1,0 +1,17 @@
+/*
+* 此文件可以对icon自定义样式
+*/
+.primary-color {
+  // 通用样式1.主题色
+  color: @primary-color;
+}
+.hover-color:hover::before {
+  // 通用样式2.hover主题色
+  color: @primary-color;
+}
+.hover-rotate:hover::before {
+  // 通用样式3.hover时旋转180°
+  display: inline-block;
+  transform: rotate(-180deg);
+  transition: 0.3s all;
+}

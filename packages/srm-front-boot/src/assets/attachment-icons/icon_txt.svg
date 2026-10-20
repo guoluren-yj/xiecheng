@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>文件类型-标准图-记事本</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文件类型-标准图-记事本">
+            <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+            <g id="编组-7" transform="translate(1.900000, 0.000000)" fill-rule="nonzero">
+                <path d="M11.25,0 L16.25,5 L16.25,18.75 C16.25,19.440375 15.690375,20 15,20 L1.25,20 C0.559625,20 0,19.440375 0,18.75 L0,1.25 C0,0.559625 0.559625,0 1.25,0 L11.25,0 Z M11.6,7.146 L5.165,7.146 L5.165,8.246 L7.739,8.246 L7.739,15 L9.026,15 L9.026,8.246 L11.6,8.246 L11.6,7.146 Z" id="形状结合" fill="#8289AD"></path>
+                <path d="M11.25,0 L16.25,5 L12.5,5 C11.809625,5 11.25,4.440375 11.25,3.75 L11.25,0 Z" id="路径" fill="#CDCFDE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

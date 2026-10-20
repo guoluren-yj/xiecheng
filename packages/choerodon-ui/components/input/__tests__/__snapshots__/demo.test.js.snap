@@ -1,0 +1,1518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/input/demo/addon.md correctly 1`] = `
+<div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              maxlength="30"
+              type="text"
+              value="mysite"
+            />
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          6/30
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="mysite"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                mysite
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/input/demo/autosize-textarea.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-input-wrapper c7n-input-textarea c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <textarea
+        class="c7n-input c7n-input-textarea-element"
+      />
+      <div
+        class="c7n-input-label-wrapper"
+      >
+        <div
+          class="c7n-input-label"
+        >
+          Autosize height based on content lines
+        </div>
+      </div>
+    </div>
+  </span>
+  <div
+    style="margin:24px 0"
+  />
+  <span
+    class="c7n-input-wrapper c7n-input-textarea c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <textarea
+        class="c7n-input c7n-input-textarea-element"
+      />
+      <div
+        class="c7n-input-label-wrapper"
+      >
+        <div
+          class="c7n-input-label"
+        >
+          Autosize height with minimum and maximum number of lines
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-row"
+  style="margin-left:-4px;margin-right:-4px"
+>
+  <div
+    class="c7n-col-12"
+    style="padding-left:4px;padding-right:4px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-input-has-copy"
+              maxlength="50"
+              required=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Basic usage
+              </div>
+            </div>
+            <span
+              class="c7n-input-icon"
+            >
+              <i
+                class="icon icon-library_books c7n-input-icon-copy"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          0/50
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="c7n-col-12"
+    style="padding-left:4px;padding-right:4px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              disabled=""
+              maxlength="20"
+              required=""
+              type="text"
+              value="123"
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Basic
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          3/20
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/input/demo/group.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-input-group c7n-input-group-lg"
+  >
+    <div
+      class="c7n-col-5"
+    >
+      <span
+        class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      >
+        <div
+          class="c7n-input-content"
+        >
+          <div
+            class="c7n-input-rendered-wrapper"
+          >
+            <div
+              class="c7n-input-rendered"
+            >
+              <input
+                class="c7n-input"
+                type="text"
+                value="0571"
+              />
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div
+      class="c7n-col-8"
+    >
+      <span
+        class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      >
+        <div
+          class="c7n-input-content"
+        >
+          <div
+            class="c7n-input-rendered-wrapper"
+          >
+            <div
+              class="c7n-input-rendered"
+            >
+              <input
+                class="c7n-input"
+                type="text"
+                value="26888888"
+              />
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      style="width:20%"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="0571"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      style="width:30%"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="26888888"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Zhejiang"
+          >
+            Zhejiang
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      style="width:50%"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="Xihu District, Hangzhou"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Option1"
+          >
+            Option1
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      style="width:50%"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="input content"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+    <div
+      class="c7n-input-number"
+    >
+      <span
+        class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+      >
+        <div
+          class="c7n-input-content"
+        >
+          <div
+            class="c7n-input-rendered-wrapper"
+          >
+            <div
+              class="c7n-input-rendered"
+            >
+              <input
+                autocomplete="off"
+                class="c7n-input"
+                min="-9007199254740991"
+                step="1"
+                type="text"
+                value=""
+              />
+            </div>
+            <span
+              class="c7n-input-suffix"
+            >
+              <div
+                class="c7n-input-number-handler-wrap"
+              >
+                <span
+                  aria-disabled="false"
+                  aria-label="Increase Value"
+                  class="c7n-input-number-handler c7n-input-number-handler-up "
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                    unselectable="unselectable"
+                  />
+                </span>
+                <span
+                  aria-disabled="false"
+                  aria-label="Decrease Value"
+                  class="c7n-input-number-handler c7n-input-number-handler-down "
+                  role="button"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                    unselectable="unselectable"
+                  />
+                </span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </span>
+    </div>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      style="width:50%"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value="input content"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+    <span
+      class="c7n-calendar-picker"
+    >
+      <span
+        class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+      >
+        <div
+          class="c7n-input-content"
+        >
+          <div
+            class="c7n-input-rendered-wrapper"
+          >
+            <div
+              class="c7n-input-rendered"
+            >
+              <input
+                class="c7n-input c7n-calendar-picker-input c7n-input"
+                readonly=""
+                type="text"
+                value=""
+              />
+              <div
+                class="c7n-input-label-wrapper"
+              >
+                <div
+                  class="c7n-input-label"
+                >
+                  Select date
+                </div>
+              </div>
+            </div>
+            <span
+              class="c7n-input-suffix"
+            >
+              <span
+                class="c7n-calendar-picker-icon-wrapper"
+              >
+                <i
+                  class="icon icon-date_range c7n-calendar-picker-icon"
+                />
+              </span>
+            </span>
+          </div>
+        </div>
+      </span>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Option1-1"
+          >
+            Option1-1
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Option2-2"
+          >
+            Option2-2
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Between"
+          >
+            Between
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <span
+      class="c7n-input-wrapper c7n-input-has-border"
+      style="width:100px;text-align:center"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Minimum
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-border"
+      style="width:30px;border-left:0;pointer-events:none;background-color:#fff"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              disabled=""
+              type="text"
+              value="~"
+            />
+          </div>
+        </div>
+      </div>
+    </span>
+    <span
+      class="c7n-input-wrapper c7n-input-has-border"
+      style="width:100px;text-align:center;border-left:0"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Maximum
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Sign Up"
+          >
+            Sign Up
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-select-show-search c7n-select-auto-complete c7n-select c7n-select-combobox c7n-select-enabled c7n-select-has-border"
+      style="width:200px"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-search c7n-select-search--inline"
+            style="display:inline-block"
+          >
+            <div
+              class="c7n-select-search__field__wrap"
+            >
+              <span
+                class="c7n-input-wrapper"
+              >
+                <div
+                  class="c7n-input-content"
+                >
+                  <div
+                    class="c7n-input-rendered-wrapper"
+                  >
+                    <div
+                      class="c7n-input-rendered"
+                    >
+                      <input
+                        class="c7n-input c7n-select-search__field"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span
+                class="c7n-select-search__field__mirror"
+              >
+                 
+              </span>
+            </div>
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+        <div
+          class="c7n-select-label-wrapper"
+        >
+          <div
+            class="c7n-select-label"
+          >
+            Email
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <br />
+  <span
+    class="c7n-input-group c7n-input-group-compact"
+  >
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+      style="width:30%"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="Home"
+          >
+            Home
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+    <span
+      class="c7n-cascader-picker"
+      style="width:70%"
+      tabindex="0"
+    >
+      <span
+        class="c7n-cascader-picker-label"
+      />
+      <span
+        class="c7n-input-wrapper c7n-input-has-border"
+      >
+        <div
+          class="c7n-input-content"
+        >
+          <div
+            class="c7n-input-rendered-wrapper"
+          >
+            <div
+              class="c7n-input-rendered"
+            >
+              <input
+                autocomplete="off"
+                class="c7n-input c7n-cascader-input "
+                readonly=""
+                type="text"
+                value=""
+              />
+              <div
+                class="c7n-input-label-wrapper"
+              >
+                <div
+                  class="c7n-input-label"
+                >
+                  Select Address
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+      <i
+        class="icon icon-arrow_drop_down c7n-cascader-picker-arrow"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input/demo/password.md correctly 1`] = `
+<div
+  class="c7n-row"
+  style="margin-left:-4px;margin-right:-4px"
+>
+  <div
+    class="c7n-col-8"
+    style="padding-left:4px;padding-right:4px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              maxlength="50"
+              required=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                username
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          0/50
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="c7n-col-8"
+    style="padding-left:4px;padding-right:4px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              maxlength="20"
+              required=""
+              type="password"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                password
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          0/20
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="c7n-col-8"
+    style="padding-left:4px;padding-right:4px"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input"
+              maxlength="20"
+              required=""
+              type="password"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                password
+              </div>
+            </div>
+            <span
+              class="c7n-input-icon"
+            >
+              <i
+                class="icon icon-visibility_off c7n-input-icon-copy"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          class="c7n-input-length-info"
+        >
+          0/20
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/input/demo/presuffix.md correctly 1`] = `
+<span
+  class="c7n-input-wrapper c7n-input-has-value c7n-input-has-label c7n-input-has-prefix c7n-input-has-suffix c7n-input-has-border"
+>
+  <div
+    class="c7n-input-content"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <span
+        class="c7n-input-prefix"
+      >
+        input-
+      </span>
+      <div
+        class="c7n-input-rendered"
+      >
+        <input
+          class="c7n-input c7n-input-has-copy"
+          type="text"
+          value="xxx"
+        />
+        <div
+          class="c7n-input-label-wrapper"
+        >
+          <div
+            class="c7n-input-label"
+          >
+            username
+          </div>
+        </div>
+        <span
+          class="c7n-input-icon"
+        >
+          <i
+            class="icon icon-library_books c7n-input-icon-copy"
+          />
+        </span>
+      </div>
+      <span
+        class="c7n-input-suffix"
+      >
+        <i
+          class="icon icon-close"
+        />
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`renders ./components/input/demo/search-input.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    style="width:200px"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered c7n-input-rendered-sm"
+        >
+          <input
+            class="c7n-input c7n-input-sm c7n-input-search c7n-input-search-small"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              input search text
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix c7n-input-suffix-sm"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-search"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </span>
+  <br />
+  <br />
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered c7n-input-rendered-sm"
+        >
+          <input
+            class="c7n-input c7n-input-sm c7n-input-search c7n-input-search-enter-button c7n-input-search-small"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              input search text
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix c7n-input-suffix-sm"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-search"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </span>
+  <br />
+  <br />
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered c7n-input-rendered-lg"
+        >
+          <input
+            class="c7n-input c7n-input-lg c7n-input-search c7n-input-search-enter-button c7n-input-search-large"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              input search text
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix c7n-input-suffix-lg"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-lg c7n-btn-flat"
+            type="button"
+          >
+            <span>
+              Search
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input/demo/size.md correctly 1`] = `
+<div
+  class="example-input"
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered c7n-input-rendered-lg"
+        >
+          <input
+            class="c7n-input c7n-input-lg"
+            maxlength="20"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              large size
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-input-length-info"
+      >
+        0/20
+      </div>
+    </div>
+  </span>
+  <span
+    class="c7n-input-wrapper c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              default size
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <span
+    class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered c7n-input-rendered-sm"
+        >
+          <input
+            class="c7n-input c7n-input-sm"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              small size
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input/demo/textarea.md correctly 1`] = `
+<span
+  class="c7n-input-wrapper c7n-input-textarea c7n-input-has-label c7n-input-has-border"
+>
+  <div
+    class="c7n-input-rendered-wrapper"
+  >
+    <textarea
+      class="c7n-input c7n-input-textarea-element"
+      label="textarea"
+      maxlength="20"
+      rows="4"
+    />
+    <div
+      class="c7n-input-label-wrapper"
+    >
+      <div
+        class="c7n-input-label"
+      >
+        textarea usage
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-input-length-info"
+  >
+    0/20
+  </div>
+</span>
+`;
+
+exports[`renders ./components/input/demo/tooltip.md correctly 1`] = `
+<span
+  class="c7n-input-wrapper c7n-input-has-border"
+  style="width:120px"
+>
+  <div
+    class="c7n-input-content"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <div
+        class="c7n-input-rendered"
+      >
+        <input
+          class="c7n-input"
+          maxlength="25"
+          type="text"
+          value=""
+        />
+        <div
+          class="c7n-input-label-wrapper"
+        >
+          <div
+            class="c7n-input-label"
+          >
+            Input a number
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-input-length-info"
+    >
+      0/25
+    </div>
+  </div>
+</span>
+`;

@@ -1,0 +1,69 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-file-message-wrap {
+  user-select: none;
+  display: inline-block;
+  width: 260px;
+  vertical-align: bottom;
+  .smbl-file-message-at {
+    white-space: pre-wrap;
+    overflow: hidden;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-size: 12px;
+    color: #868d9c;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 0 4px;
+    margin-top: 4px;
+  }
+  .smbl-file-message {
+    text-align: left;
+    display: flex;
+    width: 100%;
+    border: 1px solid @border-color-split;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .smbl-file-message-right {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .smbl-file-message-space {
+      width: 8px;
+      height: 8px;
+      flex-shrink: 0;
+    }
+    .smbl-file-message-left {
+      flex-grow: 1;
+      overflow: hidden;
+      .smbl-file-message-name {
+        width: 100%;
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #1d2129;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 40px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .smbl-file-message-size {
+        font-size: 14px;
+        color: #868d9c;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+  }
+}

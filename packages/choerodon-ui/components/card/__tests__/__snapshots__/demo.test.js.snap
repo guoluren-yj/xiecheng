@@ -1,0 +1,789 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/card/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered"
+  style="width:300px"
+>
+  <div
+    class="c7n-card-head"
+  >
+    <div
+      class="c7n-card-head-wrapper"
+    >
+      <div
+        class="c7n-card-head-title"
+      >
+        Card title
+      </div>
+      <div
+        class="c7n-card-extra"
+      >
+        <a
+          href="#"
+        >
+          More
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <p>
+      Card content
+    </p>
+    <p>
+      Card content
+    </p>
+    <p>
+      Card content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/border-less.md correctly 1`] = `
+<div
+  style="background:#ECECEC;padding:30px"
+>
+  <div
+    class="c7n-card"
+    style="width:300px"
+  >
+    <div
+      class="c7n-card-head"
+    >
+      <div
+        class="c7n-card-head-wrapper"
+      >
+        <div
+          class="c7n-card-head-title"
+        >
+          Card title
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-card-body"
+    >
+      <p>
+        Card content
+      </p>
+      <p>
+        Card content
+      </p>
+      <p>
+        Card content
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/flexible-content.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered c7n-card-hoverable"
+  style="width:240px"
+>
+  <div
+    class="c7n-card-cover"
+  >
+    <img
+      alt="example"
+      src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+    />
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <div
+      class="c7n-card-meta"
+    >
+      <div
+        class="c7n-card-meta-detail"
+      >
+        <div
+          class="c7n-card-meta-title"
+        >
+          Europe Street beat
+        </div>
+        <div
+          class="c7n-card-meta-description"
+        >
+          www.instagram.com
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/grid-card.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered c7n-card-contain-grid"
+>
+  <div
+    class="c7n-card-head"
+  >
+    <div
+      class="c7n-card-head-wrapper"
+    >
+      <div
+        class="c7n-card-head-title"
+      >
+        Card Title
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+    <div
+      class="c7n-card-grid"
+      style="width:25%;text-align:center"
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/in-column.md correctly 1`] = `
+<div
+  style="background:#ECECEC;padding:30px"
+>
+  <div
+    class="c7n-row"
+    style="margin-left:-8px;margin-right:-8px"
+  >
+    <div
+      class="c7n-col-8"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="c7n-card"
+      >
+        <div
+          class="c7n-card-head"
+        >
+          <div
+            class="c7n-card-head-wrapper"
+          >
+            <div
+              class="c7n-card-head-title"
+            >
+              Card title
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-card-body"
+        >
+          Card content
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-col-8"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="c7n-card"
+      >
+        <div
+          class="c7n-card-head"
+        >
+          <div
+            class="c7n-card-head-wrapper"
+          >
+            <div
+              class="c7n-card-head-title"
+            >
+              Card title
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-card-body"
+        >
+          Card content
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-col-8"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="c7n-card"
+      >
+        <div
+          class="c7n-card-head"
+        >
+          <div
+            class="c7n-card-head-wrapper"
+          >
+            <div
+              class="c7n-card-head-title"
+            >
+              Card title
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-card-body"
+        >
+          Card content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/inner.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered"
+>
+  <div
+    class="c7n-card-head"
+  >
+    <div
+      class="c7n-card-head-wrapper"
+    >
+      <div
+        class="c7n-card-head-title"
+      >
+        Card title
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <p
+      style="font-size:14px;color:rgba(0, 0, 0, 0.85);margin-bottom:16px;font-weight:500"
+    >
+      Group title
+    </p>
+    <div
+      class="c7n-card c7n-card-bordered c7n-card-type-inner"
+    >
+      <div
+        class="c7n-card-head"
+      >
+        <div
+          class="c7n-card-head-wrapper"
+        >
+          <div
+            class="c7n-card-head-title"
+          >
+            Inner Card title
+          </div>
+          <div
+            class="c7n-card-extra"
+          >
+            <a
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-card-body"
+      >
+        Inner Card content
+      </div>
+    </div>
+    <div
+      class="c7n-card c7n-card-bordered c7n-card-type-inner"
+      style="margin-top:16px"
+    >
+      <div
+        class="c7n-card-head"
+      >
+        <div
+          class="c7n-card-head-wrapper"
+        >
+          <div
+            class="c7n-card-head-title"
+          >
+            Inner Card title
+          </div>
+          <div
+            class="c7n-card-extra"
+          >
+            <a
+              href="#"
+            >
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-card-body"
+      >
+        Inner Card content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/loading.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-loading c7n-card-bordered"
+  style="width:34%"
+>
+  <div
+    class="c7n-card-head"
+  >
+    <div
+      class="c7n-card-head-wrapper"
+    >
+      <div
+        class="c7n-card-head-title"
+      >
+        Card title
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <div
+      class="c7n-card-loading-content"
+    >
+      <p
+        class="c7n-card-loading-block"
+        style="width:94%"
+      />
+      <p>
+        <span
+          class="c7n-card-loading-block"
+          style="width:28%"
+        />
+        <span
+          class="c7n-card-loading-block"
+          style="width:62%"
+        />
+      </p>
+      <p>
+        <span
+          class="c7n-card-loading-block"
+          style="width:22%"
+        />
+        <span
+          class="c7n-card-loading-block"
+          style="width:66%"
+        />
+      </p>
+      <p>
+        <span
+          class="c7n-card-loading-block"
+          style="width:56%"
+        />
+        <span
+          class="c7n-card-loading-block"
+          style="width:39%"
+        />
+      </p>
+      <p>
+        <span
+          class="c7n-card-loading-block"
+          style="width:21%"
+        />
+        <span
+          class="c7n-card-loading-block"
+          style="width:15%"
+        />
+        <span
+          class="c7n-card-loading-block"
+          style="width:40%"
+        />
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/meta.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered"
+  style="width:300px"
+>
+  <div
+    class="c7n-card-cover"
+  >
+    <img
+      alt="example"
+      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+    />
+  </div>
+  <div
+    class="c7n-card-body"
+  >
+    <div
+      class="c7n-card-meta"
+    >
+      <div
+        class="c7n-card-meta-avatar"
+      >
+        <span
+          class="c7n-avatar c7n-avatar-circle c7n-avatar-image"
+        >
+          <img
+            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          />
+        </span>
+      </div>
+      <div
+        class="c7n-card-meta-detail"
+      >
+        <div
+          class="c7n-card-meta-title"
+        >
+          Card title
+        </div>
+        <div
+          class="c7n-card-meta-description"
+        >
+          This is the description
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    class="c7n-card-actions"
+  >
+    <li
+      style="width:33.333333333333336%"
+    >
+      <span>
+        <i
+          class="icon icon-setting"
+        />
+      </span>
+    </li>
+    <li
+      style="width:33.333333333333336%"
+    >
+      <span>
+        <i
+          class="icon icon-edit"
+        />
+      </span>
+    </li>
+    <li
+      style="width:33.333333333333336%"
+    >
+      <span>
+        <i
+          class="icon icon-ellipsis"
+        />
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders ./components/card/demo/simple.md correctly 1`] = `
+<div
+  class="c7n-card c7n-card-bordered"
+  style="width:300px"
+>
+  <div
+    class="c7n-card-body"
+  >
+    <p>
+      Card content
+    </p>
+    <p>
+      Card content
+    </p>
+    <p>
+      Card content
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/card/demo/tabs.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-card c7n-card-bordered c7n-card-contain-tabs"
+    style="width:100%"
+  >
+    <div
+      class="c7n-card-head"
+    >
+      <div
+        class="c7n-card-head-wrapper"
+      >
+        <div
+          class="c7n-card-head-title"
+        >
+          Card title
+        </div>
+        <div
+          class="c7n-card-extra"
+        >
+          <a
+            href="#"
+          >
+            More
+          </a>
+        </div>
+      </div>
+      <div
+        class="c7n-tabs c7n-tabs-top c7n-card-head-tabs c7n-tabs-line c7n-tabs-large"
+      >
+        <div
+          class="c7n-tabs-bar"
+          role="tablist"
+          tabindex="0"
+        >
+          <div
+            class="c7n-tabs-nav-container"
+          >
+            <span
+              class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+              unselectable="unselectable"
+            >
+              <span
+                class="c7n-tabs-tab-prev-icon"
+              />
+            </span>
+            <span
+              class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+              unselectable="unselectable"
+            >
+              <span
+                class="c7n-tabs-tab-next-icon"
+              />
+            </span>
+            <div
+              class="c7n-tabs-nav-wrap"
+            >
+              <div
+                class="c7n-tabs-nav-scroll"
+              >
+                <div
+                  class="c7n-tabs-nav c7n-tabs-nav-animated"
+                >
+                  <div
+                    class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-selected="false"
+                    class=" c7n-tabs-tab"
+                    role="tab"
+                  >
+                    tab1
+                    <div
+                      class="c7n-ripple-wrapper"
+                    />
+                  </div>
+                  <div
+                    aria-disabled="false"
+                    aria-selected="false"
+                    class=" c7n-tabs-tab"
+                    role="tab"
+                  >
+                    tab2
+                    <div
+                      class="c7n-ripple-wrapper"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-tabs-content c7n-tabs-content-animated"
+          style="display:none"
+        >
+          <div
+            aria-hidden="true"
+            class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+            role="tabpanel"
+          />
+          <div
+            aria-hidden="true"
+            class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+            role="tabpanel"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-card-body"
+    >
+      <p>
+        content1
+      </p>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    class="c7n-card c7n-card-bordered c7n-card-contain-tabs"
+    style="width:100%"
+  >
+    <div
+      class="c7n-card-head"
+    >
+      <div
+        class="c7n-card-head-wrapper"
+      />
+      <div
+        class="c7n-tabs c7n-tabs-top c7n-card-head-tabs c7n-tabs-line c7n-tabs-large"
+      >
+        <div
+          class="c7n-tabs-bar"
+          role="tablist"
+          tabindex="0"
+        >
+          <div
+            class="c7n-tabs-nav-container"
+          >
+            <span
+              class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+              unselectable="unselectable"
+            >
+              <span
+                class="c7n-tabs-tab-prev-icon"
+              />
+            </span>
+            <span
+              class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+              unselectable="unselectable"
+            >
+              <span
+                class="c7n-tabs-tab-next-icon"
+              />
+            </span>
+            <div
+              class="c7n-tabs-nav-wrap"
+            >
+              <div
+                class="c7n-tabs-nav-scroll"
+              >
+                <div
+                  class="c7n-tabs-nav c7n-tabs-nav-animated"
+                >
+                  <div
+                    class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-selected="false"
+                    class=" c7n-tabs-tab"
+                    role="tab"
+                  >
+                    article
+                    <div
+                      class="c7n-ripple-wrapper"
+                    />
+                  </div>
+                  <div
+                    aria-disabled="false"
+                    aria-selected="true"
+                    class="c7n-tabs-tab-active c7n-tabs-tab"
+                    role="tab"
+                  >
+                    app
+                    <div
+                      class="c7n-ripple-wrapper"
+                    />
+                  </div>
+                  <div
+                    aria-disabled="false"
+                    aria-selected="false"
+                    class=" c7n-tabs-tab"
+                    role="tab"
+                  >
+                    project
+                    <div
+                      class="c7n-ripple-wrapper"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c7n-tabs-content c7n-tabs-content-animated"
+          style="margin-left:-100%"
+        >
+          <div
+            aria-hidden="true"
+            class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+            role="tabpanel"
+          />
+          <div
+            aria-hidden="false"
+            class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+            role="tabpanel"
+          />
+          <div
+            aria-hidden="true"
+            class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+            role="tabpanel"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-card-body"
+    >
+      <p>
+        app content
+      </p>
+    </div>
+  </div>
+</div>
+`;

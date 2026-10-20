@@ -1,0 +1,118 @@
+.smdm_reginal_mapping {
+  :global {
+    height: 100%;
+    overflow: scroll;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: -8px;
+    .card-content {
+      // padding-bottom:16px ;
+      padding: 20px;
+      margin: 8px 0 8px 8px;
+      background-color: #fff;
+    }
+    .content-title {
+      margin-bottom: 16px !important;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .reginal-map-radio {
+      float: right;
+      position: absolute;
+      top: -4px;
+      right: 0;
+      .c7n-radio-group {
+        margin-right: 16px;
+      }
+
+      .c7n-divider-vertical {
+        height: 0.16rem;
+      }
+
+      .c7n-radio-button-wrapper {
+        font-size: 14px;
+        height: 30px;
+        min-width: 44px;
+        line-height: 26px;
+        border: none;
+        display: inline-block;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.06);
+
+        span:last-child {
+          padding: 3.75px 6px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+
+      .c7n-radio-button-wrapper:first-child {
+        border-radius: 2px 0 0 2px;
+      }
+
+      .c7n-radio-button-wrapper:last-child {
+        border-radius: 0 2px 2px 0;
+      }
+
+      .c7n-radio-button-wrapper:not(:first-child)::before {
+        content: none;
+      }
+
+      .c7n-radio-button-wrapper-checked {
+        box-shadow: none;
+
+        span:last-child {
+          font-weight: 600;
+          background-color: #fff;
+          border-radius: 2px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+        .c7n-radio-button-inner {
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .tree-table-reginal-map {
+      .c7n-pro-table-content {
+        table > thead.c7n-pro-table-thead {
+          > tr > th:nth-child(1) {
+            padding-left: 45px !important;
+            min-width: 100px;
+          }
+        }
+      }
+    }
+
+    .card-content:last-child {
+      margin: 8px 0 0 8px;
+      padding: 20px;
+      min-height: calc(100vh - 325px);
+      > h3 {
+        width: 100%;
+        height: 24px;
+        display: inline-block;
+        margin-bottom: 16px !important;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+    }
+    .card-content-read {
+      margin: 8px 0 0 8px;
+      padding: 20px;
+      min-height: calc(100vh - 340px) !important;
+      > h3 {
+        width: 100%;
+        height: 24px;
+        display: inline-block;
+        margin-bottom: 16px !important;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}

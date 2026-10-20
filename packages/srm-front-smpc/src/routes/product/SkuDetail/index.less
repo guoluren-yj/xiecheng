@@ -1,0 +1,206 @@
+@card-padding: 20px;
+.card-style {
+  padding: @card-padding;
+  border-bottom: 1px solid #ebebeb;
+}
+
+@current-header-color: #47b881;
+@history-header-color: #f56349;
+.compare-header {
+  padding: 8px @card-padding;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 22px;
+  font-weight: 500;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.sku-content-detail {
+  display: flex;
+  padding: 0;
+  :global {
+    .sku-card-title {
+      font-size: 16px;
+      color: #000;
+      height: 24px;
+      margin-bottom: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+    .spu-info-wrapper {
+      .spu-content {
+        display: flex;
+        margin-bottom: 20px;
+        .spu-info {
+          flex: 1;
+          margin-left: 14px;
+          .spu-name {
+            max-height: 34px;
+            line-height: 17px;
+            font-size: 12px;
+            color: #000;
+            font-weight: 500;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 8px;
+          }
+          .spu-code {
+            height: 18px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .sku-container {
+      flex: 1;
+      overflow: hidden;
+      overflow-y: auto;
+      .sku-current,
+      .sku-history {
+        .compare-header;
+      }
+      .sku-current {
+        color: @current-header-color;
+      }
+      .sku-history {
+        color: @history-header-color;
+      }
+      .sku-info-wrapper {
+        .card-style;
+        .sku-content {
+          display: flex;
+          margin-bottom: 20px;
+          .sku-infos {
+            flex: 1;
+            overflow: hidden;
+            margin-left: 16px;
+            .sku-top {
+              display: flex;
+              overflow: hidden;
+              .sku-status {
+                margin-left: 4px;
+              }
+            }
+            .sku-name {
+              margin: 0;
+              max-width: 520px;
+              height: 24px;
+              font-size: 16px;
+              color: #000;
+              line-height: 24px;
+              font-weight: 600;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .sku-title {
+              height: 18px;
+              font-size: 12px;
+              color: #f56349;
+              line-height: 18px;
+              font-weight: 400;
+              margin-top: 4px;
+            }
+            .sku-price {
+              margin-top: 4px;
+              .sku-price-value {
+                font-size: 22px;
+                color: #fa6400;
+                letter-spacing: 0;
+                font-weight: 600;
+                margin-right: 4px;
+              }
+              .sku-price-label {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.45);
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        // .sku-status {
+        //   margin-right: 46px;
+        // }
+      }
+      .spu-info-wrapper {
+        .card-style;
+      }
+      .pur-price-wrapper {
+        .card-style;
+      }
+      .sku-attrs-wrapper {
+        .card-style;
+        padding-bottom: 4px;
+        .sku-attrs-none {
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 12px;
+          // text-align: center;
+          line-height: 24px;
+        }
+      }
+      .sku-afs-wrapper {
+        .card-style;
+      }
+      .sku-third-wrapper {
+        padding: @card-padding;
+      }
+    }
+    .vertical-line {
+      height: auto;
+      width: 8px;
+      background-color: #f4f5f7;
+    }
+    .spu-container {
+      width: 312px;
+      padding: @card-padding;
+      overflow-y: auto;
+    }
+  }
+}
+
+.sku-modal-compare {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  :global {
+    .sku-current,
+    .sku-history {
+      .compare-header;
+    }
+    .sku-current {
+      color: @current-header-color;
+    }
+    .sku-history {
+      color: @history-header-color;
+    }
+    .sku-compare-wrapper {
+      flex: 1;
+      overflow: hidden;
+      border-right: 1px solid #ebebeb;
+      display: flex;
+      flex-direction: column;
+      .sku-compare-body {
+        padding: @card-padding;
+        overflow: auto;
+        flex: 1;
+      }
+    }
+  }
+}
+
+:global {
+  .page-content-wrap {
+    :global {
+      .smpc-sku-detail {
+        height: 0 !important;
+        overflow: hidden;
+      }
+    }
+  }
+}

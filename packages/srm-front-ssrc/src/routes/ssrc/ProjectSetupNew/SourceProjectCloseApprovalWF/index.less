@@ -1,0 +1,37 @@
+.ssrc-source-project-approval-wrapper {
+  background-color: #f7f8fa;
+  padding: 0 8px;
+  .ssrc-source-project-approval-af-basic-card.approval-common-top-section-card {
+    padding: 0;
+    :global {
+      .af-basic-container,
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  .approval-common-top-section-card {
+    background: #fff;
+    padding: 0.2rem;
+    margin: 8px 0;
+  }
+  .approval-top-section-pur_org_card.approval-common-top-section-card {
+    :global {
+      .second-section-title {
+        &:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+// 打开关联单据页面详情弹框样式
+.ssrc-source-project-approval-detail-link-modal {
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.drawer-container {
+  display: flex;
+  height: 100%;
+}
+
+.drawer-container-left {
+  width: 310px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .left-title {
+    font-size: 14px;
+    color: #000;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .left-list {
+    overflow: auto;
+    padding-top: 8px;
+    :global {
+      .c7n-timeline {
+        padding-top: 20px;
+      }
+    }
+    .list-item {
+      padding-left: 20px;
+      display: flex;
+      padding-top: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      font-weight: 400;
+      &-active,
+      &:hover {
+        background: #f2f3f5;
+        .list-item-line,
+        .list-item-border {
+          visibility: hidden;
+        }
+      }
+      &-dot i {
+        vertical-align: top;
+      }
+      &-line {
+        visibility: visible;
+        flex: 1;
+        width: 1px;
+        margin-left: 8px;
+        margin-top: 4px;
+        border-left: 1px dashed rgba(0, 0, 0, 0.12);
+      }
+      &-border {
+        visibility: visible;
+        height: 1px;
+        margin-top: 12px;
+        background: rgba(0, 0, 0, 0.08);
+      }
+      &-content-left {
+        display: flex;
+        flex-direction: column;
+      }
+      &-content-right {
+        margin-left: 12px;
+        // padding-bottom: 4px;
+        line-height: 20px;
+        flex: 1;
+        padding-right: 20px;
+      }
+      &-summary-detail {
+        margin: 4px 0;
+      }
+    }
+  }
+  .list-loading,
+  .list-no-data {
+    margin: 10px 20px;
+  }
+}
+.drawer-container-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .right-title {
+    font-size: 14px;
+    color: #000;
+    line-height: 1;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.list-table {
+  flex: 1;
+  margin: 16px 20px 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.list {
+  margin-top: 8px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list-item-icon {
+  display: inline-flex;
+  align-items: center;
+  i {
+    margin-right: 4px;
+  }
+}
+
+.file-download-icon {
+  margin-left: 8px;
+  width: 0.14rem;
+  &:hover {
+    color: @primary-color;
+  }
+  i {
+    font-size: 0.14rem !important;
+  }
+}

@@ -1,0 +1,154 @@
+@import '~hzero-front/lib/srm-variables';
+
+.extractWrapper {
+  display: flex;
+  align-items: self-start;
+}
+
+.fileContent {
+  width: 75%;
+  flex: 1;
+  .intelligent-steps {
+    background: #f4f5f7;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: -16px;
+  }
+}
+
+.contractContent {
+  width: 25%;
+  margin-left: 0 !important;
+
+  .extractCard {
+    margin-bottom: 16px;
+  }
+
+  .spcmCard-form {
+    :global {
+      .c7n-pro-field-label > label {
+        padding-top: 0.04rem;
+        padding-bottom: 0.04rem;
+      }
+
+      .c7n-pro-field-label > label > span {
+        line-height: 1;
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 12px;
+        color: #868d9c;
+        font-weight: 400;
+      }
+
+      .c7n-pro-field-wrapper .c7n-pro-output {
+        line-height: 1;
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 12px;
+        color: #1d2129;
+        font-weight: 400;
+      }
+
+      table > tbody > tr > td {
+        vertical-align: middle;
+
+        &:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+          padding: 0.04rem 0;
+        }
+      }
+    }
+  }
+
+  // :global {
+  //   .c7n-tabs-content {
+  //     overflow-y: auto;
+  //     overflow-x: hidden;
+  //     height: calc(100vh - 182px);
+  //   }
+  // }
+}
+
+.spcm-workSpace-contract-extract {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 182px);
+
+  :global {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        margin-bottom: 16px;
+        overflow: initial;
+
+        & > .c7n-collapse-header {
+          padding: 0;
+          font-size: 14px;
+          font-weight: 600;
+
+          .compact-left {
+            &::before {
+              content: '';
+              height: 12px;
+              display: inline-block;
+              border-left: 3px solid @primary-color;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        & > .c7n-collapse-content {
+          padding: 0;
+
+          & > .c7n-collapse-content-box {
+            padding: 0;
+          }
+        }
+      }
+
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    .c7n-card-type-inner .c7n-card-head {
+      height: 34px;
+      min-height: auto;
+      line-height: 34px;
+      padding: 0 15px;
+    }
+
+    .c7n-card-type-inner {
+      .c7n-card-extra,
+      .c7n-card-head-title {
+        padding: 0;
+      }
+    }
+
+    .c7n-card-type-inner .c7n-card-body {
+      padding: 12px;
+    }
+  }
+}
+
+// 不展示文件
+.spcm-workSpace-no-file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 126px);
+  svg {
+    margin-bottom: 16px;
+    color: @primary-color;
+  }
+  .text-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  .text-title-tips {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 400;
+  }
+}

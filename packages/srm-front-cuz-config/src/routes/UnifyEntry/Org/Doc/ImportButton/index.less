@@ -1,0 +1,498 @@
+.import-modal {
+  :global {
+    .c7n-pro-modal-title {
+      font-size  : 16px;
+      color      : #000;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width : 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color  : rgba(0, 0, 0, 0.26);
+    -webkit-transition: background-color 0.3s;
+    transition        : background-color 0.3s;
+  }
+
+}
+
+.container {
+  width      : 100%;
+  height     : 100%;
+  overflow   : hidden;
+  display    : flex;
+}
+
+.container-left {
+  position    : relative;
+  width       : 300px;
+  border-right: 0.01rem solid #e0e0e0;
+  transform   : width 0.3s;
+
+  .collapse-icon {
+    right        : 0;
+    border-radius: 20px 0 0 20px;
+
+    i {
+      margin-left: -2px;
+    }
+  }
+}
+
+.container-left-collpase {
+  width     : 0;
+  visibility: hidden;
+  display   : none;
+}
+
+.container-right {
+  flex-grow: 1;
+
+  .collapse-icon {
+    left         : 0;
+    border-radius: 0 20px 20px 0;
+
+    i {
+      margin-left: -4px;
+    }
+  }
+}
+
+.collapse-icon {
+  cursor    : pointer;
+  width     : 12px;
+  height    : 50px;
+  position  : absolute;
+  top       : 50%;
+  transform : translateY(-50%);
+  background: #e0e0e0;
+
+  i {
+    line-height: 50px;
+  }
+}
+
+.left-list-wrapper {
+  height        : 100%;
+  display       : flex;
+  width         : 300px;
+  flex-direction: column;
+}
+
+.left-title {
+  font-weight: 600;
+  font-size  : 14px;
+  color      : #000;
+  padding    : 20px 20px 8px;
+}
+
+.left-list {
+  &-no-data {
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  &-tree {
+    overflow: auto;
+    height: 100%;
+    margin-right: 1px;
+    padding: 12px;
+    :global {
+
+      .c7n-tree-node-content-wrapper:hover {
+        cursor:default;
+        background-color: transparent;
+      }
+      .c7n-tree-node-content-wrapper .c7n-tree-title .list-tree-node.child:hover {
+        cursor:pointer;
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+      .level1 + .level2 {
+        .c7n-tree-indent-unit::before {
+          height: 91px!important;
+          transform: translateY(-42px);
+          z-index: 1;
+        }
+      }
+      .level2 + .level3,
+      .level2 + .level3-no-err {
+        .c7n-tree-switcher-leaf-line::before,
+        .c7n-tree-indent .c7n-tree-indent-unit::before {
+          height: 100px!important;
+          transform: translateY(-22px);
+          z-index: 1;
+        }
+      }
+      .level2 + .level3 {
+        .c7n-tree-switcher-leaf-line::before,
+        .c7n-tree-indent .c7n-tree-indent-unit::before {
+          height: 122px!important;
+        }
+      }
+      .level2.less-child.c7n-tree-treenode-leaf-last + .level3-no-err,
+      .level2.less-child.c7n-tree-treenode-leaf-last + .level3 {
+        .c7n-tree-switcher-leaf-line::before {
+          height: 36px!important;
+        }
+      }
+      .c7n-tree-treenode-leaf-last .c7n-tree-switcher-leaf-line::before,
+      .c7n-tree-switcher-leaf-line::after {
+        margin-top: -4px;
+      }
+      .c7n-progress-small.c7n-progress-loading .c7n-progress-inner {
+        width     : 14px;
+        height    : 14px;
+        margin-top: 2.5px;
+      }
+
+      .c7n-tree-treenode-loading .c7n-tree-iconEle {
+        display: block;
+      }
+
+      .c7n-tree-title {
+        display    : block;
+        margin-left: 14px;
+      }
+
+      .c7n-tree-switcher {
+        line-height: 14px;
+      }
+
+      .c7n-tree-iconEle {
+        float: left;
+      }
+
+      .c7n-tree-switcher>.icon,
+      .c7n-tree-iconEle {
+        width      : 14px !important;
+        height     : 14px !important;
+        line-height: 14px !important;
+        font-size  : 14px !important;
+        margin-top : 2px;
+
+        .icon {
+          font-size     : 14px !important;
+          vertical-align: top;
+        }
+      }
+
+      .c7n-tree-node-content-wrapper {
+        padding-left: 0;
+      }
+
+      .list-tree-node {
+        color      : rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+        margin-left: 4px;
+        position   : relative;
+
+        &>*:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+
+      .import-header {
+        display: flex;
+        color  : #000;
+
+        &>span {
+          &:first-child {
+            font-weight : 500;
+            margin-right: 4px;
+          }
+
+          vertical-align: -1.5px;
+          display       : inline-block !important;
+          line-height   : 18px;
+          text-overflow : ellipsis;
+          white-space   : nowrap;
+          word-break    : keep-all;
+          overflow      : hidden;
+        }
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  height  : 100%;
+  padding : 16px 20px;
+  overflow: hidden auto;
+
+  :global {
+    .history-detail-title {
+      font-weight: 600;
+      font-size  : 14px;
+      color      : #000;
+      margin-top : 4px;
+    }
+
+    td>.c7n-pro-table-cell-inner {
+      line-height: 20px !important;
+    }
+  }
+}
+
+.card {
+  margin-bottom: 8px;
+
+  &-header {
+    padding: 12px 0;
+  }
+
+  &-title {
+    font-weight: 700;
+    border-left: 3px solid #29bece;
+    text-indent: 8px;
+    font-size  : 14px;
+    display    : inline-block;
+    line-height: 14px;
+  }
+
+  &-desc {
+    font-size  : 12px;
+    margin-left: 16px;
+
+    &>span {
+      display     : inline-flex;
+      align-items : center;
+      margin-right: 8px;
+
+      .list-item-icon {
+        margin-right: 4px;
+
+      }
+    }
+  }
+}
+
+.card-content {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: fit-content !important;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.field-info {
+  line-height: 20px;
+
+  :global {
+    .c7n-tag {
+      border     : none;
+      height     : 20px;
+      // 本应当是20px，但因为使用的字体有问题，22才居中
+      line-height: 22px;
+    }
+
+    .field-name {
+      font-weight: 400;
+      color      : #000;
+    }
+  }
+
+  &>div {
+    &:first-child {
+      color      : rgb(102, 102, 102);
+      font-weight: 600;
+      display    : flex;
+      align-items: center;
+    }
+
+    &:last-child {
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+}
+
+.unit-info {
+  :global {
+    .unit-name {
+      font-weight: 400;
+      color      : #000;
+    }
+
+    .c7n-tag {
+      border     : none;
+      height     : 20px;
+      // 本应当是20px，但因为使用的字体有问题，22才居中
+      line-height: 22px;
+    }
+  }
+}
+
+.list-table {
+  :global {
+    .c7n-pro-table-tbody .c7n-pro-table-cell-inner {
+      padding: 0;
+
+      // overflow: visible;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.import-result-title {
+  margin-bottom: 12px;
+
+  &>span {
+    display     : inline-flex;
+    align-items : center;
+    margin-right: 8px;
+
+    .list-item-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+
+.importing-notice,
+.import-success-notice,
+.import-error-notice {
+  :global {
+    .c7n-notification-notice-icon {
+      line-height: 0.2rem;
+      margin-left: 0;
+
+      i {
+        font-size: 0.2rem;
+
+        &.icon-download_for_offline {
+          color: #505776;
+        }
+
+        &.icon-mood {
+          color: #00bc7c;
+        }
+
+        &.icon-mood_bad {
+          color: #ff563c;
+        }
+      }
+    }
+
+    .c7n-notification-notice {
+      padding: 0.16rem;
+    }
+
+    .c7n-notification-notice-message {
+      font-size  : 14px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-left: 0.3rem;
+    }
+
+    .c7n-notification-notice-description {
+      color      : rgba(0, 0, 0, 0.85);
+      line-height: 18px;
+      font-weight: 400;
+      margin-left: 0;
+
+      &>span {
+        display    : inline-block;
+        line-height: 18px;
+        color      : rgba(0, 0, 0, 0.85);
+      }
+    }
+
+    .c7n-notification-notice-close {
+      display: none;
+    }
+  }
+}
+
+.total-number {
+  margin     : 0 4px;
+  font-weight: 500;
+  color      : #000;
+}
+
+.success-number {
+  color      : #47B881;
+  line-height: 18px;
+  margin     : 0 4px;
+  font-weight: 500;
+}
+
+.warn-number {
+  color      : #FCA000;
+  line-height: 18px;
+  margin     : 0 4px;
+  font-weight: 500;
+}
+
+.error-number {
+  color      : #F56349;
+  line-height: 18px;
+  font-weight: 500;
+  margin     : 0 4px;
+}
+
+.list-table {
+  margin-top: 10px;
+}
+
+.list-item-icon {
+  display    : inline-flex;
+  align-items: center;
+  font-weight: 500;
+
+  :global {
+    i.icon {
+      margin-top  : -1px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.file-download-icon {
+  margin-left: 8px;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.import-menu-item {
+  span {
+    display: block !important;
+  }
+
+  :global {
+    .c7n-upload {
+      display: block !important;
+    }
+  }
+}
+
+.history-detail {
+  height: 100%;
+
+  :global {
+    .history-detail-title {
+      font-weight: 600;
+      font-size  : 14px;
+      color      : #000;
+      margin-top : 4px;
+    }
+
+    td>.c7n-pro-table-cell-inner {
+      line-height: 20px !important;
+    }
+  }
+}

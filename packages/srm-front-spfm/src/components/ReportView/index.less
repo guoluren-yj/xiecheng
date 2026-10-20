@@ -1,0 +1,29 @@
+:global {
+  .report-view {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    .select-wrap {
+      margin: auto;
+      display: flex;
+      .x-data-select {
+        flex: 1;
+      }
+      .select-item {
+        margin-bottom: 15px;
+        display: flex;
+        .echarts-select-text {
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

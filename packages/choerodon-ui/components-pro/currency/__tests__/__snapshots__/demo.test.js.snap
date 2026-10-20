@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components-pro/currency/demo/basic.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-row"
+    style="margin-left:-5px;margin-right:-5px"
+  >
+    <div
+      class="c7n-col-12"
+      style="padding-left:5px;padding-right:5px"
+    >
+      <span
+        class="c7n-pro-input-number-wrapper"
+      >
+        <label>
+          <input
+            autocomplete="off"
+            class="c7n-pro-input-number"
+            type="text"
+            value="10,000.00"
+          />
+        </label>
+      </span>
+      <span />
+    </div>
+    <div
+      class="c7n-col-12"
+      style="padding-left:5px;padding-right:5px"
+    >
+      <span
+        class="c7n-pro-input-number-wrapper"
+      >
+        <label>
+          <input
+            autocomplete="off"
+            class="c7n-pro-input-number"
+            currency="CNY"
+            type="text"
+            value="CN¥10,000.00"
+          />
+        </label>
+      </span>
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components-pro/currency/demo/controlled.md correctly 1`] = `
+Array [
+  <span
+    class="c7n-pro-input-number-wrapper"
+  >
+    <label>
+      <input
+        autocomplete="off"
+        class="c7n-pro-input-number"
+        type="text"
+        value="100.00"
+      />
+    </label>
+  </span>,
+  <span />,
+]
+`;
+
+exports[`renders ./components-pro/currency/demo/dataset.md correctly 1`] = `
+Array [
+  <span
+    class="c7n-pro-input-number-wrapper c7n-pro-input-number-required"
+  >
+    <label>
+      <input
+        autocomplete="off"
+        class="c7n-pro-input-number"
+        name="money"
+        type="text"
+        value="$100,000,000,000,000.00"
+      />
+    </label>
+  </span>,
+  <span />,
+]
+`;
+
+exports[`renders ./components-pro/currency/demo/precision.md correctly 1`] = `
+<div
+  class="c7n-row"
+  style="margin-left:-5px;margin-right:-5px"
+>
+  <div
+    class="c7n-col-12"
+    style="padding-left:5px;padding-right:5px"
+  >
+    <span
+      class="c7n-pro-input-number-wrapper"
+    >
+      <label>
+        <input
+          autocomplete="off"
+          class="c7n-pro-input-number"
+          name="precision"
+          placeholder="精度"
+          type="text"
+          value="4"
+        />
+      </label>
+    </span>
+    <span />
+  </div>
+  <div
+    class="c7n-col-12"
+    style="padding-left:5px;padding-right:5px"
+  >
+    <span
+      class="c7n-pro-input-number-wrapper c7n-pro-input-number-required"
+    >
+      <label>
+        <input
+          autocomplete="off"
+          class="c7n-pro-input-number"
+          name="money"
+          type="text"
+          value="1000000.1230"
+        />
+      </label>
+    </span>
+    <span />
+  </div>
+</div>
+`;

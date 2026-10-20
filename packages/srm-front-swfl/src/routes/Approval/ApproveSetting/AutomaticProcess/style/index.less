@@ -1,0 +1,128 @@
+.filter-form {
+  width: 33%;
+  display: flex;
+  margin-left: auto;
+  align-items: flex-start;
+  margin-top: -0.05rem;
+  &-btns {
+    margin-left: 10px;
+    flex-shrink: 0;
+    display: flex;
+    margin-top: 10px;
+  }
+  :global {
+    .c7n-pro-form-float-label {
+      margin: 0 !important;
+    }
+    .c7n-pro-form-float-label .c7n-pro-field-wrapper {
+      margin: 0 16px 16px 0 !important;
+      max-width: 300px;
+    }
+    .c7n-pro-form.c7n-pro-form-float-label > table > tbody .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+    .c7n-pro-field-wrapper {
+      padding-right: 0 !important;
+    }
+  }
+}
+
+.input-number-form-item {
+  :global {
+    .t-number {
+      width: 67% !important;
+      margin-right: 3% !important;
+    }
+    .ant-input-number {
+      width: 100% !important;
+    }
+  }
+}
+
+.rule-modal-form {
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    &::before {
+      font-weight: 100;
+    }
+  }
+  :global(.ant-form-item) {
+    padding-bottom: 0 !important;
+  }
+  :global(.ant-calendar-picker) {
+    width: 100%;
+  }
+  :global(.ant-form-item-label) {
+    padding: 0 0 4px !important;
+  }
+}
+
+.rule-modal-inline-form {
+  label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.rule-model-bottom-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 24px;
+  text-align: right;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+}
+// .list-table {
+//   :global {
+//     //针对c7n更新后，表格padding-right消失的情况，新写样式进行覆盖
+//     .c7n-pro-table-tbody .c7n-pro-table-cell {
+//       border-right: 0.01rem solid #e0e0e0 !important;
+//     }
+//     .c7n-pro-table-thead.c7n-pro-table-column-resizable .c7n-pro-table-cell {
+//       border-right: 0.01rem solid #e0e0e0 !important;
+//     }
+//   }
+// }
+.filter {
+  padding: 0 20px;
+  margin: 12px 0;
+}
+.collpase-filter {
+  display: inline-block;
+  line-height: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+  i.icon.icon-arrow_drop_down {
+    color: #000;
+  }
+}
+.collpase-filter-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 4px;
+}
+.automatic-process-list {
+  margin: 0 20px;
+}
+
+.form-float {
+  :global {
+    .c7n-pro-switch-float-label {
+      line-height: 22px;
+      padding-top: 0;
+      vertical-align: super;
+      display: inline-block;
+    }
+  }
+}

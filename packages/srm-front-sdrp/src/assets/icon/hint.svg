@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>hint</title>
+    <desc>Created with Sketch.</desc>
+    <g id="展现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="发布后状态、分组收起、HTML、开关、颜色" transform="translate(-106.000000, -262.000000)">
+            <g id="编组-15" transform="translate(52.000000, 48.000000)">
+                <g id="编组-4">
+                    <g id="编组-11" transform="translate(0.000000, 46.000000)">
+                        <g id="page-modify" transform="translate(48.000000, 162.000000)">
+                            <g id="hint" transform="translate(6.000000, 6.000000)">
+                                <circle id="椭圆形" fill="#FFBA1E" cx="4" cy="4" r="4"></circle>
+                                <path d="M4,5.38730183 C4.30068836,5.38730183 4.54444444,5.63105791 4.54444444,5.93174627 C4.54444444,6.23243463 4.30068836,6.47619072 4,6.47619072 C3.69931164,6.47619072 3.45555556,6.23243463 3.45555556,5.93174627 C3.45555556,5.63105791 3.69931164,5.38730183 4,5.38730183 Z M4,1.52380928 C4.30068836,1.52380928 4.54444444,1.76756537 4.54444444,2.06825373 L4.54444444,4.46926193 C4.54444444,4.7699503 4.30068836,5.01370638 4,5.01370638 C3.69931164,5.01370638 3.45555556,4.7699503 3.45555556,4.46926193 L3.45555556,2.06825373 C3.45555556,1.76756537 3.69931164,1.52380928 4,1.52380928 Z" id="形状结合" fill="#FFFFFF" transform="translate(4.000000, 4.000000) scale(1, -1) translate(-4.000000, -4.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+.preview-container {
+  width: 375px;
+  height: 600px;
+  margin: 39px auto;
+  background: #f2f2f2;
+  :global {
+    .preview-container-header {
+      width: 375px;
+      height: 88px;
+      display: block;
+    }
+    .preview-container-content {
+      padding: 47px 20px;
+      .preview-card {
+        width: 330px;
+        background: #fff;
+        border: 1px solid rgba(220, 225, 230, 1);
+        border-radius: 5px;
+        padding: 15px 10px;
+        .preview-card-title {
+          font-size: 14px;
+          color: #000;
+          font-weight: 600;
+          line-height: 22px;
+        }
+        .preview-card-subTitle {
+          margin-top: 2px;
+          font-size: 12px;
+          line-height: 22px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+        .preview-card-picture {
+          .preview-card-picture-img {
+            width: 310px;
+            height: 140px;
+          }
+        }
+        .preview-card-field {
+          margin-top: 13px;
+          .preview-card-field-item {
+            margin-bottom: 4px;
+            font-size: 12px;
+            line-height: 18px;
+            span:nth-child(1) {
+              color: rgba(0, 0, 0, 0.45);
+            }
+            span:nth-child(2) {
+              color: #000;
+            }
+          }
+        }
+        .preview-card-button {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .preview-button-field {
+            width: 147px;
+            height: 40px;
+            margin-top: 20px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 600;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 15px;
+            background: #f2f2f4;
+            color: #010000;
+          }
+          .button-field-primary {
+            background: #3095f2;
+            color: #fff;
+          }
+          .button-field-info {
+            background: #f3f2f4;
+            color: #3a7fe1;
+          }
+          .button-field-plain {
+            background: #f2f3f3;
+            color: #f56349;
+          }
+        }
+        .preview-card-vertical-content {
+          .preview-card-vertical-content-desc {
+            .c7n-pro-textarea {
+              padding: 0;
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

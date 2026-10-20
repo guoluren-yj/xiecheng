@@ -1,0 +1,131 @@
+/*
+ * @Description: index
+ * @Date: 2021-11-24 10:38:14
+ * @author: zuoxiangyu <xiangyu.zuo@going-link.com>
+ * @version: 0.0.1
+ * @copyright: Copyright (c) 2021, Hand
+ */
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/srm-variables';
+@import '~hzero-front/lib/index.less';
+
+.content-header {
+  margin: 8px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.content-line {
+  margin: 0 8px 8px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.info-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  .block {
+    height: 12px;
+    width: 3px;
+    background-color: #29bece;
+    // margin-right: 16px;
+    margin-right: 8px;
+  }
+}
+.form-info_noids {
+  height: calc(100vh - 235px);
+}
+
+// 弹框模式下
+.line_charts-height {
+  width: 100%;
+  height: 420px;
+  .page-title_line {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 92%;
+  }
+}
+
+// 新流程图样式
+.new-line-charts {
+  width: 100%;
+  height: calc(100vh - 365px);
+  .page-title_line {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 92%;
+  }
+}
+
+.new-line-charts-read {
+  width: 100%;
+  height: calc(100vh - 385px);
+  .page-title_line {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 92%;
+  }
+}
+
+.tag-green {
+  width: 44px;
+  height: 18px;
+  // background-color: @tag-green;
+}
+.tag-gray {
+  width: 44px;
+  height: 18px;
+  // background-color: @tag-gray;
+}
+
+.title-alert {
+  :global {
+    margin: -20px -20px 16px -20px;
+    background-color: #e6f7ff;
+    border: none;
+    color: #1890ff;
+    vertical-align: middle;
+    line-height: 21px;
+
+    .c7n-alert-close-icon {
+      top: 0.1rem;
+      color: #1890ff;
+    }
+
+    div {
+      i {
+        margin-top: -4px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.page-title {
+  // 标题样式
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,100 @@
+@import '~hzero-front/lib/srm-variables.less';
+.new-common-product-img-content {
+  position: relative;
+  display: flex;
+  :global {
+    .new-detail-images-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 16px;
+      position: relative;
+    }
+    #smpc-detail-images {
+      height: 224px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .main-img {
+      width: 280px;
+      height: 280px;
+    }
+    .detail-images-prev,
+    .detail-images-next {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 24px;
+      }
+    }
+    .swiper-container {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+    }
+    .swiper-button-disabled {
+      cursor: not-allowed;
+      i {
+        color: #ccc;
+      }
+    }
+    .new-product-detail-imgs {
+      // width: 72px;
+      // height: 56px;
+      display: flex;
+      flex-direction: column;
+      .small-img.small-img-box {
+        border: solid 1px @primary-color;
+      }
+
+      .small-img {
+        width: 48px;
+        height: 48px;
+        position: relative;
+        border: solid 1px #e0e0e0;
+        box-sizing: content-box;
+        .video-react {
+          padding-top: 0 !important;
+          overflow: hidden;
+        }
+        .video-react.video-react-fluid {
+          width: 48px;
+          height: 48px;
+          position: relative;
+          .video-react-big-play-button {
+            display: none;
+          }
+          .video-react-control-bar {
+            display: none;
+          }
+        }
+        .disabled-video {
+          position: absolute;
+          height: 48px;
+          width: 48px;
+          left: 0;
+          top: 0;
+          z-index: 999;
+        }
+      }
+    }
+    .product-img-control {
+      .p-collect {
+        display: inline-block;
+        width: 106px;
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        border-style: none;
+      }
+      .collected {
+        color: #d49d18;
+      }
+    }
+  }
+}

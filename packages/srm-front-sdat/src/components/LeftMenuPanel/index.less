@@ -1,0 +1,57 @@
+.page-left-content {
+  .left-list-panel {
+    height: calc(100vh - 280px);
+    overflow-y: auto;
+
+    .left-list-item {
+      padding: 0 16px;
+      line-height: 32px;
+      height: 32px;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: nowrap;
+      white-space: nowrap;
+
+      &:hover {
+        background: rgba(54, 194, 207, 0.1);
+        // color: rgba(54, 194, 207, 1);
+        // font-weight: 500;
+      }
+    }
+
+    .selected-item {
+      background: rgba(54, 194, 207, 0.1);
+      color: rgba(54, 194, 207, 1);
+      font-weight: 500;
+    }
+
+    .left-list-load-more {
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: rgba(54, 194, 207, 1);
+      cursor: pointer;
+    }
+  }
+
+  // 滚动条整体样式
+  .left-list-panel::-webkit-scrollbar {
+    width: 5px; // 高宽分别对应横竖滚动条的尺寸
+    height: 5px;
+  }
+
+  // 滚动条里面小方块
+  .left-list-panel::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #53535305;
+  }
+
+  // 滚动条里面轨道
+  .left-list-panel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: #ededed03;
+  }
+}

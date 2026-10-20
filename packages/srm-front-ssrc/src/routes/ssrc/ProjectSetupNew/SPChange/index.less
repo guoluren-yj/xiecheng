@@ -1,0 +1,41 @@
+.ssrc-sp-wrapper {
+  height: 100%;
+  background-color: #f7f8fa;
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+  .ssrc-sp-content-wrapper {
+    height: calc(100% - 0.48rem);
+    overflow: auto;
+    padding: 0 8px;
+  }
+  .sp-common-top-section-card {
+    background: #fff;
+    padding: 0.2rem;
+    margin: 8px 0;
+  }
+  .sp-common-top-section-has-child.sp-common-top-section-card {
+    :global {
+      .second-section-title {
+        &:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+// 供应商分配标段下拉框-样式
+.ssrc-sp-change-allot-section {
+  :global {
+    .c7n-pro-select-search-bar {
+      display: none;
+    }
+    .c7n-pro-table-wrapper.c7n-pro-lov-table {
+      min-width: 3.8rem !important;
+    }
+  }
+}

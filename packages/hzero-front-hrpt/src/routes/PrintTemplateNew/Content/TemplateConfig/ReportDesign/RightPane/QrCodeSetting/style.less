@@ -1,0 +1,61 @@
+@prefix: qrcode-pane;
+.@{prefix} :global {
+  .@{prefix}-title {
+    font-size: 16px;
+    color: #1D2129;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 16px;
+    position: relative;
+    .@{prefix}-close {
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+  .@{prefix}-config {
+    padding: 0 8px;
+    margin: 0 0 15px;
+  }
+  .@{prefix}-example {
+    &-title {
+      font-size: 12px;
+      color: #868D9C;
+      line-height: 18px;
+      padding: 0 16px;
+      margin-bottom: 8px;
+    }
+    &-pic-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 16px;
+    }
+    &-pic {
+      width: 80px;
+      &-1 {
+        height: 80px;
+        margin-bottom: 8px;
+        background-size: cover;
+        background-image: url(../../../../../../../assets/sheet/version-1.svg);
+      }
+      &-text {
+        display: flex;
+        font-size: 12px;
+        color: #1D2129;
+        line-height: 18px;
+        align-items: center;
+        justify-content: center;
+      }
+      &-20 {
+        height: 80px;
+        margin-bottom: 8px;
+        background-size: cover;
+        background-image: url(../../../../../../../assets/sheet/version-20.png);
+      }
+    }
+  }
+}

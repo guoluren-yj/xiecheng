@@ -1,0 +1,62 @@
+.picker-drop-down {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  padding: 1px 5px;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  input {
+    cursor: pointer;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+  }
+
+  .picker-input-area {
+    width: 1px;
+    background: transparent !important;
+
+    .c7n-pro-calendar-picker-clear-button {
+      display: none;
+    }
+  }
+
+  .c7n-pro-calendar-picker-suffix-button .c7n-pro-calendar-picker-suffix {
+    display: none;
+  }
+
+  .picker-clear-span {
+    display: inline-block;
+    margin-left: -4px;
+    cursor: pointer;
+  }
+
+  .picker-value-span {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  .c7n-pro-calendar-picker {
+    padding: 0 !important;
+    width: 1px !important;
+    border: none;
+
+    input {
+      width: 0 !important;
+    }
+
+    .c7n-pro-calendar-picker-range-split {
+      display: none;
+    }
+  }
+}

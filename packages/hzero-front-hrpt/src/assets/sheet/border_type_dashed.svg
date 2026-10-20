@@ -1,0 +1,7 @@
+<svg width="180" height="30" xmlns="http://www.w3.org/2000/svg">
+    <title>border_type_dashed</title>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h180v30H0z"/>
+        <path d="M31 15v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3zm4 0v1h-3v-1h3z" fill-opacity=".88" fill="#000"/>
+    </g>
+</svg>

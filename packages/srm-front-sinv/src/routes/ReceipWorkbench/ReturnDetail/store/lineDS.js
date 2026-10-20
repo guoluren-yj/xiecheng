@@ -1,0 +1,882 @@
+/*
+ * @Description:
+ * @Date: 2021-07-06 10:38:14
+ * @author: zuoxiangyu <xiangyu.zuo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright: Copyright (c) 2020, Hand
+ */
+import intl from 'utils/intl';
+import { SRM_SPUC, PRIVATE_BUCKET } from '_utils/config';
+import { getCurrentOrganizationId } from 'utils/utils';
+import { DEFAULT_DATETIME_FORMAT } from 'utils/constants';
+import { amountCalculation } from 'srm-front-boot/lib/utils/utils';
+import { conversionUpdate, getBatchOperationFlag } from '@/routes/components/utils';
+import { math } from 'choerodon-ui/dataset';
+import { isEmpty, isNil, isArray } from 'lodash';
+import { queryBatchApprovaFlag } from '_utils/utils';
+import { SINV_DIRECTORY } from '@/utils/constant';
+
+const organizationId = getCurrentOrganizationId();
+
+const formDS = () => ({
+  dataToJSON: 'all',
+  selection: false,
+  paging: false,
+  forceValidate: true,
+  fields: [
+    {
+      name: 'displayTrxNum',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.displayTrxNum').d('单据编号'),
+    },
+    {
+      name: 'companyName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.companyName').d('公司'),
+    },
+    {
+      name: 'supplierCompanyName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.supplierName').d('供应商'),
+    },
+    {
+      name: 'nodeConfigName',
+      type: 'string',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.rcvTypeName.nodeConfigName')
+        .d('收货节点'),
+    },
+    {
+      name: 'returnedFlag',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.ReturnedThings').d('收货/退货'),
+    },
+    {
+      name: 'rcvTypeAll',
+      type: 'object',
+      label: intl.get('sinv.receiptWorkbench.model.receipt.rcvTypeReName').d('收货类型'),
+      lovCode: 'SPUC.SINV_MOVE_TYPE',
+      dynamicProps: {
+        lovPara({ record }) {
+          return {
+            tenantId: organizationId,
+            nodeConfigId: record.get('nodeConfigId'),
+          };
+        },
+      },
+      ignore: 'always',
+      required: true,
+    },
+    {
+      name: 'rcvTypeName',
+      type: 'string',
+      bind: 'rcvTypeAll.rcvTypeName',
+    },
+    {
+      name: 'rcvTrxTypeId',
+      type: 'string',
+      bind: 'rcvTypeAll.rcvTrxTypeId',
+    },
+    {
+      name: 'creationName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.creationName').d('单据创建人'),
+    },
+    {
+      name: 'creationDate',
+      type: 'date',
+      format: DEFAULT_DATETIME_FORMAT,
+      label: intl.get('sinv.receiptExecution.model.receipt.creationDateTime').d('创建时间'),
+    },
+    {
+      name: 'unitAll',
+      type: 'object',
+      label: intl.get('sinv.receiptExecution.model.receipt.unitAll').d('创建人部门'),
+      lovCode: 'SPUC.USER_AUTHORITY_UNIT',
+      dynamicProps: {
+        lovPara({ record }) {
+          return {
+            tenantId: organizationId,
+            unitIds: isArray(record.get('unitIds')) && record.get('unitIds').join(','),
+          };
+        },
+      },
+      ignore: 'always',
+      multiple: true,
+    },
+    {
+      name: 'unitNames',
+      type: 'string',
+      bind: 'unitAll.unitName',
+      multiple: ',',
+    },
+    {
+      name: 'unitIds',
+      type: 'number',
+      bind: 'unitAll.unitId',
+      multiple: ',',
+    },
+    {
+      name: 'rcvStatusCode',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.aogRcvStatusCode').d('收货单状态'),
+    },
+    {
+      name: 'totalQuantity',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.invoicesQuantity').d('汇总数量'),
+    },
+    {
+      name: 'totalTaxIncludedAmount',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.totalTaxIncludedAmount').d('汇总金额'),
+    },
+    {
+      name: 'remark',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.remark').d('备注'),
+      maxLength: 1000,
+    },
+    {
+      name: 'receivedBy',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.returnBy').d('实际退货人'),
+      maxLength: 120,
+    },
+    {
+      name: 'supplierReceiptFlag',
+      type: 'number',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.supplierReceiptFlag')
+        .d('是否供应商收货'),
+    },
+    {
+      name: 'linkFirst',
+      type: 'string',
+      label: intl.get('sinv.common.model.common.linkFirst').d('链接字段1'),
+    },
+    {
+      name: 'linkSecond',
+      type: 'string',
+      label: intl.get('sinv.common.model.common.linkSecond').d('链接字段2'),
+    },
+  ],
+  transport: {
+    read: ({ data }) => {
+      const { rcvTrxHeaderId, ...other } = data.params || {};
+      return {
+        url: `${SRM_SPUC}/v1/${organizationId}/sinv/rcv/trx/workbench/trx/header/${rcvTrxHeaderId}/detail`,
+        method: 'GET',
+        data: other,
+      };
+    },
+  },
+  events: {
+    load: async ({ dataSet }) => {
+      const businessKeys = dataSet?.current?.get('businessKey');
+      if (businessKeys) {
+        // 获取审批按钮显示状态
+        const approvaFlags = await queryBatchApprovaFlag([businessKeys]);
+        // 获取撤销审批按钮状态
+        const operationFlags = await getBatchOperationFlag([businessKeys]);
+        dataSet.setState({ approvaFlags, operationFlags });
+      }
+    },
+  },
+});
+
+const tableDS = (cuxListField, renderValidateField) => ({
+  dataToJSON: 'all',
+  primaryKey: 'rcvTrxLineId',
+  selection: 'multiple',
+  modifiedCheck: true,
+  forceValidate: true,
+  pageSize: 20,
+  fields: [
+    {
+      name: 'importStatusMeaning',
+      type: 'string',
+      label: intl.get(`sinv.common.model.common.erpSyncStatus`).d('同步状态'),
+    },
+    {
+      name: 'action',
+      type: 'string',
+      label: intl.get(`hzero.common.button.action`).d('操作'),
+    },
+    {
+      name: 'itemCode',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.itemCode').d('物料编码'),
+    },
+    {
+      name: 'itemName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.itemName').d('物料名称'),
+    },
+    {
+      name: 'secondaryUomId',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.secondaryUomName').d('单位'),
+    },
+    {
+      name: 'uomName',
+      type: 'string',
+    },
+    {
+      name: 'secondaryQuantity',
+      type: 'number',
+      // min: 0,
+      label: intl.get('sinv.receiptExecution.model.receipt.return.quantitys').d('退货数量'),
+      dynamicProps: {
+        required: ({ record }) => record.get('doubleUnitEnabled'), // && record.get('subjectType') === 'QUANTITY' 可编辑必填
+        max: ({ record }) => {
+          if (record.get('subjectType') === 'QUANTITY') {
+            return record.get('secondaryLeftQuantity');
+          }
+        },
+        min: ({ record }) => {
+          if (
+            record.get('subjectType') === 'AMOUNT' &&
+            record.get('orderTypeCode') === 'PC' &&
+            record.get('checkTypeCode') === 'target'
+          ) {
+            return false;
+          } else {
+            return 0;
+          }
+        },
+        // min: ({ record }) => {
+        //   if ([0, '0'].includes(record.get('secondaryUomPrecision'))) {
+        //     return 1;
+        //   }
+        //   const uomPrecision = !isNil(record.get('secondaryUomPrecision'))
+        //     ? record.get('secondaryUomPrecision')
+        //     : 10;
+        //   const textNum = `0.${Array(Number(uomPrecision)).join(0)}1`;
+        //   return textNum;
+        // },
+      },
+    },
+    {
+      name: 'secondaryLeftQuantity',
+      type: 'number',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.canLeftSecondaryLeftQuantity')
+        .d('可退货数量'),
+    },
+    {
+      name: 'quantity',
+      type: 'number',
+      // min: 0,
+      dynamicProps: {
+        required: ({ record }) => record.get('subjectType') === 'QUANTITY',
+        max: ({ record }) => {
+          if (record.get('subjectType') === 'QUANTITY') {
+            return record.get('leftQuantity');
+          }
+        },
+        min: ({ record }) => {
+          if (
+            record.get('subjectType') === 'AMOUNT' &&
+            record.get('orderTypeCode') === 'PC' &&
+            record.get('checkTypeCode') === 'target'
+          ) {
+            return false;
+          }
+          if ([0, '0'].includes(record.get('uomPrecision'))) {
+            return 1;
+          }
+          const uomPrecision = !isNil(record.get('uomPrecision')) ? record.get('uomPrecision') : 10;
+          const textNum = `0.${Array(Number(uomPrecision)).join(0)}1`;
+          return textNum;
+        },
+      },
+    },
+    {
+      name: 'moveReason',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.moveReasons').d('退货原因'),
+      lookupCode: 'SPUC.SINV.MOVE.REASON',
+    },
+    {
+      name: 'leftQuantity',
+      type: 'number',
+    },
+    {
+      name: 'taxIncludedAmount',
+      type: 'number',
+      // min: 0,
+      label: intl.get('sinv.receiptExecution.model.receipt.returnTaxIncludedAmounts').d('退货金额'),
+      dynamicProps: {
+        required: ({ record }) => record.get('subjectType') === 'AMOUNT',
+        max: ({ record }) => {
+          if (record.get('subjectType') === 'AMOUNT') {
+            return record.get('leftTaxAmount');
+          }
+        },
+        step: ({ record }) => {
+          const financialPrecision = !isNil(record.get('financialPrecision'))
+            ? record.get('financialPrecision')
+            : 10;
+          const num = 1 / 10 ** financialPrecision;
+          if (record.get('subjectType') === 'AMOUNT') {
+            return num;
+          }
+        },
+        min: ({ record }) => {
+          if (['1', 1].includes(record.get('freeFlag')) || math.isZero(record.get('netPrice'))) {
+            return;
+          }
+          if ([0, '0'].includes(record.get('financialPrecision'))) {
+            return 1;
+          }
+          // 恒立液压埋点
+          if (
+            typeof renderValidateField === 'function' &&
+            renderValidateField(record.get('fromPcStageId'), record.get('payRatio'))
+          ) {
+            return 0;
+          }
+          const financialPrecision = !isNil(record.get('financialPrecision'))
+            ? record.get('financialPrecision')
+            : 10;
+          const textNum = `0.${Array(Number(financialPrecision)).join(0)}1`;
+          return textNum;
+        },
+      },
+    },
+    {
+      name: 'leftTaxAmount',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.canLeftTaxAmounts').d('可退货金额'),
+    },
+    {
+      name: 'trxDate',
+      type: 'date',
+      label: intl.get('sinv.receiptExecution.model.receipt.trxDate').d('实际操作日期'),
+    },
+    {
+      name: 'invOrganizationName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.invOrganizationName').d('收货组织'),
+    },
+    {
+      name: 'inventoryId',
+      type: 'object',
+      label: intl.get('sinv.receiptExecution.model.receipt.inventoryName').d('库房'),
+      ignore: 'always',
+      lovCode: 'SODR.INVENTORY',
+      dynamicProps: {
+        lovPara: ({ record }) => {
+          return {
+            tenantId: organizationId,
+            invOrganizationId: record.get('invOrganizationId'),
+          };
+        },
+      },
+      transformResponse: (value, object) =>
+        object?.inventoryId
+          ? {
+              ...object,
+              inventoryId: object?.inventoryId,
+            }
+          : null,
+    },
+    {
+      name: 'inventoryName',
+      type: 'string',
+      bind: 'inventoryId.inventoryName',
+    },
+    {
+      name: '_inventoryId',
+      type: 'string',
+      bind: 'inventoryId.inventoryId',
+    },
+    {
+      name: 'locatorId',
+      type: 'object',
+      label: intl.get('sinv.receiptExecution.model.receipt.locationName').d('库位'),
+      ignore: 'always',
+      lovCode: 'HPFM.LOCATION_URL',
+      dynamicProps: {
+        lovPara: ({ record }) => {
+          return {
+            tenantId: organizationId,
+            inventoryId: record.get('inventoryId')?.inventoryId,
+          };
+        },
+        disabled: ({ record }) => !record.get('inventoryId')?.inventoryId,
+      },
+      transformResponse: (value, object) =>
+        object?.locatorId
+          ? {
+              ...object,
+              locatorId: object?.locatorId,
+            }
+          : null,
+    },
+    {
+      name: '_locatorId',
+      type: 'string',
+      bind: 'locatorId.locationId',
+      transformResponse: (value, object) => {
+        return object?.locatorId;
+      },
+    },
+    {
+      name: 'locationName',
+      type: 'string',
+      bind: 'locatorId.locationName',
+    },
+    {
+      name: 'fromDisplayPoNum',
+      type: 'string',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.theFromDisplayPoLineNum')
+        .d('来源订单编号-行号'),
+    },
+    {
+      name: 'fromPcNum',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.theFromPcNum').d('来源协议编号｜行号'),
+    },
+    {
+      name: 'fromDisplayAsnNum',
+      type: 'string',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.theFromPcSubjectNum')
+        .d('来源送货单编号-行号'),
+    },
+    {
+      name: 'fromOrderTypeName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.thiOrderTypeName').d('来源单据类型'),
+    },
+    {
+      name: 'fromDisplayTrxNum',
+      type: 'string',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.theDisplayTrxNum')
+        .d('参考凭证编号-行号'),
+    },
+    {
+      name: 'productNum',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.productNum').d('商品编码'),
+    },
+    {
+      name: 'productName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.productName').d('商品名称'),
+    },
+    {
+      name: 'supplierCompanyName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.supplierName').d('供应商'),
+    },
+    {
+      name: 'companyName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.companyName').d('公司'),
+    },
+    {
+      name: 'agentName',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.purchaseAgentName').d('采购员'),
+    },
+    {
+      name: 'remark',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.lineRemark').d('行备注'),
+      maxLength: 480,
+    },
+    {
+      name: 'sinvLineAttachmentUuid',
+      type: 'attachment',
+      bucketName: PRIVATE_BUCKET,
+      bucketDirectory: SINV_DIRECTORY,
+      label: intl.get('sinv.receiptExecution.model.receipt.lineUuid').d('行附件'),
+      // accept: [
+      //   '.rar',
+      //   '.zip',
+      //   '.doc',
+      //   '.docx',
+      //   '.pdf',
+      //   '.jpg',
+      //   '.png',
+      //   '.jpeg',
+      //   '.ppt',
+      //   '.pptx',
+      //   '.exe',
+      //   '.xlsx',
+      //   '.xls',
+      // ],
+    },
+    {
+      name: 'customSpecsJson',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.customSpecsJson').d('定制品属性'),
+    },
+    {
+      name: 'orderReturnedFlag',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.orderReturnedFlag').d('退货订单行'),
+    },
+    {
+      label: intl.get(`sinv.common.model.common.attachmentUrlList`).d('图片附件'),
+      name: 'attachmentUrlList',
+    },
+    {
+      name: 'linkFirst',
+      type: 'string',
+      label: intl.get('sinv.common.model.common.linkFirst').d('链接字段1'),
+    },
+    {
+      name: 'linkSecond',
+      type: 'string',
+      label: intl.get('sinv.common.model.common.linkSecond').d('链接字段2'),
+    },
+    {
+      name: 'processDocuments',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.processDocuments').d('单据流'),
+    },
+    {
+      name: 'projectTaskId',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.projectTaskId').d('项目任务名称'),
+    },
+    ...(typeof cuxListField === 'function' ? cuxListField() : []),
+  ],
+  events: {
+    // load: ({ dataSet }) => {
+    //   dataSet.forEach((record) => {
+    //     // eslint-disable-next-line no-param-reassign
+    //     record.status = 'update';
+    //   });
+    // },
+    update: ({ record, name, value, dataSet }) => {
+      if (name === 'inventoryId' || !record.get('inventoryId')?.inventoryId) {
+        record.set('locatorId', '');
+        record.set('locationName', '');
+      }
+      const financialPrecision = !isNil(record.get('financialPrecision'))
+        ? record.get('financialPrecision')
+        : 10;
+      const defaultPrecision = !isNil(record.get('defaultPrecision'))
+        ? record.get('defaultPrecision')
+        : 10;
+      const uomPrecision = !isNil(record.get('uomPrecision')) ? record.get('uomPrecision') : 10;
+      if (record.get('subjectType') === 'QUANTITY' && name === 'quantity' && value) {
+        if (record.get('orderTypeCode') === 'PC' && record.get('payRatio')) {
+          record
+            .getField('quantity')
+            .checkValidity()
+            .then((res) => {
+              if (res) {
+                const taxIncludedAmount = math.div(
+                  math.multipliedBy(
+                    math.multipliedBy(
+                      math.multipliedBy(value, record.get('taxIncludedPrice')),
+                      record.get('payRatio')
+                    ),
+                    1000000
+                  ),
+                  math.multipliedBy(math.multipliedBy(record.get('unitPriceBatch'), 1000000), 100)
+                );
+                record.set(
+                  'taxIncludedAmount',
+                  math.toFixed(taxIncludedAmount, financialPrecision)
+                );
+              }
+            });
+        } else {
+          const {
+            benchmarkPriceType,
+            taxRate,
+            quantity,
+            unitPriceBatch,
+            taxIncludedPrice,
+            netPrice,
+            taxRateType,
+          } = record.get([
+            'benchmarkPriceType',
+            'taxRate',
+            'quantity',
+            'unitPriceBatch',
+            'taxIncludedPrice',
+            'netPrice',
+            'taxRateType',
+          ]);
+          const entryParams = {
+            hasTax: benchmarkPriceType === 'TAX_INCLUDED_PRICE',
+            hasMount: true,
+            each: unitPriceBatch,
+            taxRate,
+            quantity,
+            financialPrecision,
+            defaultPrecision,
+            taxUnitPrice: taxIncludedPrice, // 含税
+            netUnitPrice: netPrice, // 不含税
+            caclRule: dataSet.get('amountCalcRule') || 'Amount',
+            taxRateType,
+          };
+          const { calcTaxAmount } = amountCalculation(entryParams);
+          record.set('taxIncludedAmount', calcTaxAmount);
+        }
+      } else if (record.get('subjectType') === 'AMOUNT' && name === 'taxIncludedAmount' && value) {
+        // 按金额
+        if (record.get('orderTypeCode') === 'PC' && record.get('payRatio')) {
+          record
+            .getField('taxIncludedAmount')
+            .checkValidity()
+            .then((res) => {
+              if (res) {
+                const quantity = math.div(
+                  math.multipliedBy(
+                    math.multipliedBy(
+                      math.multipliedBy(value, record.get('unitPriceBatch')),
+                      1000000
+                    ),
+                    100
+                  ),
+                  math.multipliedBy(
+                    math.multipliedBy(record.get('taxIncludedPrice'), record.get('payRatio')),
+                    1000000
+                  )
+                );
+                record.set('quantity', math.toFixed(quantity, uomPrecision));
+                // 按金额接收 (先根据明细页金额=>基本数量换算逻辑算出基本数量=>再调公共方法)
+                conversionUpdate({
+                  dataSet,
+                  record,
+                  value,
+                  field: 'secondaryQuantity',
+                  type: 'amount',
+                });
+              }
+            });
+        } else {
+          record
+            .getField('taxIncludedAmount')
+            .checkValidity()
+            .then((res) => {
+              if (res) {
+                const quantity = math.div(
+                  math.multipliedBy(
+                    math.multipliedBy(value, record.get('unitPriceBatch')),
+                    1000000
+                  ),
+                  math.multipliedBy(record.get('taxIncludedPrice'), 1000000)
+                );
+                record.set('quantity', math.toFixed(quantity, uomPrecision));
+                // 按金额接收 (先根据明细页金额=>基本数量换算逻辑算出基本数量=>再调公共方法)
+                conversionUpdate({
+                  dataSet,
+                  record,
+                  value,
+                  field: 'secondaryQuantity',
+                  type: 'amount',
+                });
+              }
+            });
+        }
+      }
+
+      if (name === 'secondaryQuantity' && record.get('subjectType') === 'QUANTITY' && value) {
+        // 按退货数量接收
+        conversionUpdate({ dataSet, record, value, field: 'quantity', type: 'return' });
+      }
+    },
+  },
+  transport: {
+    read: ({ data }) => {
+      const { params, ...other } = data;
+      const { rcvTrxHeaderId, ...others } = params || {};
+      return {
+        url: `${SRM_SPUC}/v1/${organizationId}/sinv/rcv/trx/workbench/trx/line/${rcvTrxHeaderId}/detail`,
+        method: 'GET',
+        data: { ...other, ...others },
+      };
+    },
+    // destroy: ({ data }) => {
+    //   const headerData = { ...formDs.toData()[0], sinvRcvTrxLineDTOS: data };
+    //   return {
+    //     url: `${SRM_SPUC}/v1/${organizationId}/sinv/rcv/trx/workbench/line/delete`,
+    //     data: headerData,
+    //     method: 'DELETE',
+    //   };
+    // },
+  },
+});
+
+const batchMaintenanceDS = (tableDs) => ({
+  dataToJSON: 'normal',
+  autoCreate: true,
+  fields: [
+    {
+      name: 'trxDate',
+      type: 'date',
+      label: intl.get('sinv.receiptExecution.model.receipt.trxDate').d('实际操作日期'),
+    },
+    // { name: 'invOrganizationLineId' },
+    // { name: 'inventoryLineId' },
+    {
+      name: 'inventoryId',
+      type: 'object',
+      label: intl.get('sinv.receiptExecution.model.receipt.inventoryName').d('库房'),
+      ignore: 'always',
+      lovCode: 'SODR.INVENTORY',
+      dynamicProps: {
+        lovPara: () => {
+          const invOrganizationId = isEmpty(tableDs?.selected)
+            ? tableDs?.toData()[0]?.invOrganizationId
+            : tableDs?.selected[0]?.get('invOrganizationId');
+          return {
+            invOrganizationId,
+            tenantId: organizationId,
+          };
+        },
+      },
+      transformRequest: (value) => value?.inventoryId ?? null,
+      transformResponse: (value, object) =>
+        object?.inventoryId
+          ? {
+              ...object,
+              inventoryId: object?.inventoryId,
+            }
+          : null,
+    },
+    {
+      name: 'inventoryName',
+      type: 'string',
+      bind: 'inventoryId.inventoryName',
+    },
+    {
+      name: 'locatorId',
+      type: 'object',
+      label: intl.get('sinv.receiptExecution.model.receipt.locationName').d('库位'),
+      ignore: 'always',
+      lovCode: 'HPFM.LOCATION_URL',
+      dynamicProps: {
+        lovPara: ({ record }) => {
+          const inventoryId = isEmpty(tableDs?.selected)
+            ? tableDs?.toData()[0]?.inventoryId
+            : tableDs?.selected[0]?.get('inventoryId');
+          return {
+            tenantId: organizationId,
+            inventoryId: record.get('inventoryId')?.inventoryId || inventoryId,
+          };
+        },
+      },
+      transformRequest: (value, record) =>
+        (value?.locationId || record.get('inventoryId')?.locatorId) ?? null,
+      transformResponse: (value, object) =>
+        object?.locationId
+          ? {
+              ...object,
+              locatorId: object?.locationId,
+            }
+          : null,
+    },
+    {
+      name: 'locationName',
+      type: 'string',
+      bind: 'locatorId.locationName',
+    },
+  ],
+  events: {
+    update: ({ record, name }) => {
+      if (name === 'inventoryId') {
+        record.set('locatorId', '');
+        record.set('locationName', '');
+      }
+    },
+  },
+});
+
+const formRateDS = () => ({
+  paging: false,
+  autoCreate: true, // 解决初次加载页面个性化必输不生效
+  fields: [
+    {
+      name: 'overallScore',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.overallScore').d('总体评分'),
+    },
+    {
+      name: 'deliveryScore',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.relevant').d('响应'),
+    },
+    {
+      name: 'qualityScore',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.quality').d('质量'),
+    },
+    {
+      name: 'serviceScore',
+      type: 'number',
+      label: intl.get('sinv.receiptExecution.model.receipt.rcvTypeName.service').d('服务'),
+    },
+    {
+      name: 'overallEvaluate',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.overallEvaluate').d('总体评价'),
+    },
+    {
+      name: 'deliveryEvaluate',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.relevantEvaluate').d('响应评价'),
+    },
+    {
+      name: 'qualityEvaluate',
+      type: 'string',
+      label: intl.get('sinv.receiptExecution.model.receipt.qualityEvaluate').d('质量评价'),
+    },
+    {
+      name: 'serviceEvaluate',
+      type: 'string',
+      label: intl
+        .get('sinv.receiptExecution.model.receipt.rcvTypeName.serviceEvaluate')
+        .d('服务评价'),
+    },
+  ],
+  transport: {
+    read: ({ data }) => {
+      const { rcvTrxHeaderId, ...other } = data.params || {};
+      return {
+        url: `${SRM_SPUC}/v1/${organizationId}/sinv/rcv/trx/score/${rcvTrxHeaderId}/detail`,
+        method: 'GET',
+        data: other,
+      };
+    },
+  },
+  events: {
+    load: ({ dataSet }) => {
+      dataSet.forEach((record) => {
+        Object.assign(record, { status: 'update' });
+      });
+    },
+  },
+});
+
+const attachmentDS = (limitAttr = (e) => e, limitator = (e) => e) => ({
+  dataToJSON: 'dirty-field',
+  paging: false,
+  autoQuery: false,
+  autoCreate: true,
+  forceValidate: true,
+  fields: [
+    {
+      name: 'sinvHeaderAttachmentUuid',
+      type: 'attachment',
+      label: intl.get('sinv.receiptExecution.model.receipt.headerAttachmentUuid').d('附件上传'),
+      bucketDirectory:
+        limitAttr()?.bucketDirectory || limitator()?.bucketDirectory || SINV_DIRECTORY,
+      max: limitAttr()?.maxCount || limitator()?.maxCount,
+    },
+  ],
+});
+
+export { formDS, tableDS, batchMaintenanceDS, formRateDS, attachmentDS };

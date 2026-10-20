@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/input-number/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-input-number"
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-value c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            autocomplete="off"
+            class="c7n-input"
+            max="10"
+            min="1"
+            step="1"
+            type="text"
+            value="3"
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              数字
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <div
+            class="c7n-input-number-handler-wrap"
+          >
+            <span
+              aria-disabled="false"
+              aria-label="Increase Value"
+              class="c7n-input-number-handler c7n-input-number-handler-up "
+              role="button"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                unselectable="unselectable"
+              />
+            </span>
+            <span
+              aria-disabled="false"
+              aria-label="Decrease Value"
+              class="c7n-input-number-handler c7n-input-number-handler-down "
+              role="button"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                unselectable="unselectable"
+              />
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input-number/demo/digit.md correctly 1`] = `
+<div
+  class="c7n-input-number"
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            autocomplete="off"
+            class="c7n-input"
+            max="10"
+            min="0"
+            step="0.1"
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              小数
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <div
+            class="c7n-input-number-handler-wrap"
+          >
+            <span
+              aria-disabled="false"
+              aria-label="Increase Value"
+              class="c7n-input-number-handler c7n-input-number-handler-up "
+              role="button"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                unselectable="unselectable"
+              />
+            </span>
+            <span
+              aria-disabled="false"
+              aria-label="Decrease Value"
+              class="c7n-input-number-handler c7n-input-number-handler-down "
+              role="button"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                unselectable="unselectable"
+              />
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/input-number/demo/disabled.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-input-number"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-input"
+              disabled=""
+              max="10"
+              min="1"
+              step="1"
+              type="text"
+              value="3"
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                禁用
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <div
+              class="c7n-input-number-handler-wrap"
+            >
+              <span
+                aria-disabled="true"
+                aria-label="Increase Value"
+                class="c7n-input-number-handler c7n-input-number-handler-up "
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+              <span
+                aria-disabled="true"
+                aria-label="Decrease Value"
+                class="c7n-input-number-handler c7n-input-number-handler-down "
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    style="margin-top:20px"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Toggle disabled
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/input-number/demo/formatter.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-input-number"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-input"
+              min="-9007199254740991"
+              step="1"
+              type="text"
+              value="$ 1,000"
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                金额
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <div
+              class="c7n-input-number-handler-wrap"
+            >
+              <span
+                aria-disabled="false"
+                aria-label="Increase Value"
+                class="c7n-input-number-handler c7n-input-number-handler-up "
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+              <span
+                aria-disabled="false"
+                aria-label="Decrease Value"
+                class="c7n-input-number-handler c7n-input-number-handler-down "
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="c7n-input-number"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-input"
+              max="100"
+              min="0"
+              step="1"
+              type="text"
+              value="100%"
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                百分比
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <div
+              class="c7n-input-number-handler-wrap"
+            >
+              <span
+                aria-disabled="true"
+                aria-label="Increase Value"
+                class="c7n-input-number-handler c7n-input-number-handler-up c7n-input-number-handler-up-disabled"
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+              <span
+                aria-disabled="false"
+                aria-label="Decrease Value"
+                class="c7n-input-number-handler c7n-input-number-handler-down "
+                role="button"
+                unselectable="unselectable"
+              >
+                <i
+                  class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                  unselectable="unselectable"
+                />
+              </span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;

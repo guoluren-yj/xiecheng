@@ -1,0 +1,43 @@
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0;
+    }
+
+    .ant-input {
+      overflow: hidden;
+    }
+  }
+}
+
+.input-number {
+  width: 100%;
+  // margin-bottom: 10px;
+}
+
+.sfin-pagination {
+  :global {
+    .ant-pagination-item,
+    .ant-pagination-item:hover,
+    .ant-pagination-item:focus,
+    .ant-pagination-next,
+    .ant-pagination-prev {
+      .common-set;
+
+      a,
+      a:hover {
+        .common-set;
+      }
+    }
+  }
+
+  .common-set {
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.prompt-alert {
+  margin-bottom: 10px;
+}

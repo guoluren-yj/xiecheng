@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker prop locale should works 1`] = `
+<span
+  class="c7n-calendar-picker"
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    style=""
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+          style="margin: 0px 0px 0px 0px;"
+        >
+          <input
+            class="c7n-input c7n-calendar-picker-input c7n-input"
+            readonly=""
+            type="text"
+            value="2000-01-01"
+          />
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <span
+            class="c7n-calendar-picker-icon-wrapper"
+          >
+            <button
+              class="c7n-btn c7n-calendar-picker-clear c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+              type="button"
+            >
+              <i
+                class="icon icon-close"
+              />
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </button>
+            <i
+              class="icon icon-date_range c7n-calendar-picker-icon"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;

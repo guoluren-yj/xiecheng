@@ -1,0 +1,59 @@
+.page-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.form-info {
+  width: 75%;
+}
+
+.logistic-info {
+  width: 25%;
+  :global {
+    .c7n-pro-field-wrapper {
+      .c7n-pro-input-group-before {
+        width: 35% !important;
+        padding: 0 !important;
+        border: none !important;
+      }
+    }
+  }
+}
+
+.footer-form {
+  :global {
+    display: flex;
+    width: 100%;
+    .c7n-pro-field-label {
+      height: 0;
+      padding: 0;
+    }
+    .c7n-pro-form-wrapper {
+      table {
+        tr {
+          td {
+            max-height: 10%;
+            overflow-y: auto;
+            .c7n-pro-field-wrapper {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-log-alert {
+  display: flex;
+  .add-log-icon {
+    background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+    margin: 0 8px 0 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 32px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+  }
+}

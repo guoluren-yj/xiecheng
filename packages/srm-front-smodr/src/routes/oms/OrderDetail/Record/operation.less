@@ -1,0 +1,50 @@
+@import '~hzero-front/lib/srm-variables.less';
+.record-container {
+  :global {
+    .record-item {
+      display: flex;
+
+      .item-box {
+        width: 100%;
+        position: relative;
+        top: 2px;
+
+        .item-content {
+          display: flex;
+          color: @text-2;
+
+          .item-user,.item-target {
+            color: @text-1;
+            font-weight: 600;
+          }
+          .item-operate {
+            margin: 0 4px;;
+          }
+        }
+      }
+
+      .item-pic {
+        .icon {
+          margin-right: 12px;
+          font-size: 14px;
+          margin-left: 6px;
+        }
+      }
+
+      .item-detail {
+        .label-detail {
+          color: @text-2;
+          margin-top: 8px;
+
+        }
+      }
+
+      .item-time {
+        margin-top: 8px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #E5E7EC;
+        color: @text-3;
+      }
+    }
+  }
+}

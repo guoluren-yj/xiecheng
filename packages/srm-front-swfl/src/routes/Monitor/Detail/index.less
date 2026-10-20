@@ -1,0 +1,137 @@
+/*!
+    index - 待办事项页面
+    @date 2018-8-31
+    @author LZY <zhuyan.luo@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.content-table {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  width: 100%;
+  color: #333;
+  td {
+    padding: 8px;
+    border: 1px solid #e8e8e8;
+  }
+}
+.td-title {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  font-weight: bold;
+  width: '20%';
+}
+.label-col {
+  font-weight: bold;
+  border-left: 2px solid rgb(94, 126, 230);
+  text-indent: 10px;
+  display: inline-block;
+  line-height: 14px;
+  margin-bottom: 20px;
+}
+.comment-pre {
+  margin-bottom: 0;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.opinion {
+  max-width: 400px;
+}
+
+.approve-item-content {
+  word-break: break-word;
+  padding-right: 0.2rem;
+  :global {
+    .ant-tag {
+      border: none;
+      font-weight: 600;
+    }
+  }
+}
+
+.table-info-assigneeName-tag {
+  :global {
+    line-height: 18px;
+    height: 18px;
+    border: none;
+    padding: 0 4px;
+    cursor: default;
+    margin-left: 4px;
+    transform: scale(0.84);
+    color: #4e5769;
+  }
+}
+.work-log-button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  & > i {
+    font-size: 14px !important;
+    font-weight: 400;
+  }
+}
+.work-log-content {
+  padding: 0.16rem;
+  z-index: 999;
+  .delegate-record-title {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+  }
+  .delegate-record-label {
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+    font-weight: 400;
+    width: 80px;
+    display: inline-block;
+  }
+  .delegate-record-text {
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: text-top;
+  }
+  .delegate-record-line {
+    background: #e8e8e8;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 0.01rem;
+    margin: 0.16rem 0;
+  }
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0.16rem;
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}
+
+.approve-history-collapse {
+  :global {
+    .c7n-collapse-header {
+      padding: 0.12rem 0 !important;
+    }
+    .c7n-collapse-item {
+      border-bottom: none;
+    }
+    .c7n-collapse-content {
+      padding: 0;
+    }
+  }
+}
+.collapse-item-header {
+  display: inline-flex;
+  width: 80%;
+  .collapse-item-title {
+    font-weight: 600;
+    flex: 1 2;
+  }
+  &-extra {
+    flex: 1 2;
+    color: #868d9c;
+    margin-left: 200px;
+    font-weight: 400;
+  }
+}

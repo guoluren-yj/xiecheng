@@ -1,0 +1,177 @@
+@import '../../global';
+
+.batch-modal-frame {
+  margin: -10px;
+  height: 100%;
+  overflow: hidden;
+
+  .top-menu {
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .top-menu-title {
+      color: #5a6677;
+      flex: 1;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap !important;
+    }
+  }
+
+  .batch-modal-frame-left {
+    position: relative;
+    padding: 10px;
+    background-color: @Grey8;
+    /* border-radius: 20px; */
+    margin-right: 20px;
+  }
+
+  .assign-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    .form-label {
+      display: flex;
+      padding: 10px 0;
+      align-items: center;
+      width: 120px;
+
+      i {
+        margin: 0 4px;
+        color: @red1;
+      }
+    }
+  }
+
+  .batch-modal-frame-right {
+    :global {
+      .c7n-pro-table-body {
+        height: calc(100vh - 192px) !important;
+        max-height: 555px;
+      }
+    }
+  }
+
+  .list-menu {
+    position: relative;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .c7n-pro-base-table-filter {
+      margin: 5px 0;
+    }
+
+    > ul {
+      height: calc(100vh - 245px) !important;
+      max-height: 500px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      > li {
+        position: relative;
+      }
+    }
+
+    .tree-node-edit {
+      position: absolute;
+      right: 5px;
+    }
+
+    :global {
+      .c7n-tree.c7n-tree-icon-hide {
+        overflow: hidden scroll;
+        max-height: 562px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .c7n-tree-node-content-wrapper {
+        background: none !important;
+      }
+
+      .c7n-iam-apitree-operation {
+        overflow: hidden;
+      }
+
+      .c7n-tree li .c7n-tree-node-content-wrapper {
+        position: initial;
+      }
+
+      .c7n-tree-treenode {
+        width: 100%;
+
+        .c7n-tree-node-content-wrapper {
+          overflow: hidden;
+        }
+      }
+
+      .c7n-tree-list {
+        background-color: #fafafa;
+      }
+    }
+
+    .tree-node-3 {
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(41, 190, 206, 0.1);
+      }
+      .tree-node-title {
+        display: flex;
+        align-items: center;
+      }
+
+      :global {
+        .c7n-tree-node-content-wrapper {
+          overflow: hidden;
+        }
+        .c7n-tree-node-content-wrapper.c7n-tree-node-selected {
+          background-color: rgba(41, 190, 206, 0.1) !important;
+        }
+      }
+    }
+    .title-overflow {
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+.frame-left-button {
+  margin-left: 20.5%;
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  padding-top: 2px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: @HzeroGreen;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 9;
+  transition: all 300ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}

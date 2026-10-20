@@ -1,0 +1,38 @@
+/*
+ * style - 订单关闭明细
+ * @date: 2018/11/13 16:28:37
+ * @author: FQL <qilin.feng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.logistics {
+  padding-left: 16px;
+  :global {
+    .ant-col-8 {
+      .ant-form-item {
+        .ant-form-item-label label {
+          color: #666;
+        }
+        margin-bottom: 16px;
+        & div:first-child {
+          text-align: left;
+          line-height: 20px;
+        }
+        & div:last-child {
+          & > div {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  :global {
+    .ant-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+}

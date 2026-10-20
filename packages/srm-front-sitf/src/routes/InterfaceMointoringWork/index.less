@@ -1,0 +1,77 @@
+.sitf-tabpane {
+  :global {
+    .c7n-card:first-child {
+      height: calc(100vh - 244px);
+      width: 350px;
+      float: left;
+      overflow-y: scroll;
+      margin-right: 12px;
+    }
+    .sitf-table-bar-arrow {
+      display: none;
+    }
+    .c7n-card:last-child {
+      height: calc(100vh - 244px);
+      overflow-y: scroll;
+    }
+    .c7n-pro-table-dynamic-filter-toolbar {
+      .hzero-permission-btn {
+        border: none;
+        color: #29bece;
+      }
+      .hzero-permission-btn:hover {
+        background-color: rgb(235, 235, 235);
+      }
+    }
+    .c7n-card-bordered {
+      .iconArrow {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: #eee;
+      }
+      .iconArrow:hover {
+        background-color: #29bece;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sitf-table-bar {
+  :global {
+    .c7n-pro-table-dynamic-filter-bar {
+      .c7n-pro-table-filter-menu {
+        .c7n-pro-table-filter-search {
+          display: none;
+        }
+        .c7n-pro-table-filter-buttons {
+          display: none;
+        }
+        .c7n-pro-table-filter-menu-expand {
+          display: none;
+        }
+        .c7n-pro-table-filter-search-divide {
+          display: none;
+        }
+        .c7n-pro-table-dynamic-filter-toolbar {
+          margin-left: initial;
+          width: 100%;
+          .c7n-pro-table-dynamic-filter-toolbar-button-group {
+            display: inline-block;
+            width: 100%;
+
+            .c7n-tag-cyan-inverse {
+              float: right;
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    .dispalyBorder {
+      border: none !important;
+    }
+  }
+}

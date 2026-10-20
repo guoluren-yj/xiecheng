@@ -1,0 +1,118 @@
+.collapse-box {
+  :global {
+    .collapse-box-wrapper {
+      position: relative;
+      height: 100%;
+
+      .collapse-box-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 4px;
+        box-shadow: 0 0.6px 1.6px 0 rgba(0, 0, 0, 0.133), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.11);
+        height: 100%;
+        background-color: #fff;
+        transition: width 0.3s;
+
+        .c7n-tree {
+          overflow: auto;
+          margin-left: 16px;
+          &::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+          }
+          .c7n-tree-treenode {
+            width: 100%;
+          }
+          .c7n-tree-node-content-wrapper {
+            display: flex;
+            flex: 1 1;
+            overflow: hidden;
+            padding: 0 0 0 4px;
+            &.c7n-tree-node-selected {
+              background-color: transparent;
+              .c7n-tree-title {
+                border-color: @primary-color;
+              }
+            }
+          }
+          .c7n-tree-title {
+            flex: 1 1;
+            overflow: hidden;
+            border-right: 2px solid transparent;
+          }
+        }
+      }
+      .collapse-box-hide {
+        width: 0;
+      }
+      .collapse-box-show {
+        width: 270px;
+      }
+
+      .collapse-box-control {
+        height: 60px;
+        width: 10px;
+        background: #d8d6d6;
+        text-align: center;
+        line-height: 60px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border: 1px solid #c0bebe;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        transform-origin: right;
+
+        & > i {
+          font-size: 12px;
+          width: 12px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          > i {
+            color: #29bece;
+          }
+        }
+      }
+      .collapse-box-control-show {
+        transform: rotateY(0deg);
+        right: 0;
+      }
+      .collapse-box-control-hide {
+        transform: rotateY(180deg);
+        right: -10px;
+      }
+    }
+    .tree-divide-op {
+      width: 12px;
+      height: 56px;
+      background: #ebebeb;
+      border: 1px solid #e0e0e0;
+      border-radius: 0 25px 25px 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 258px;
+      transform: translateY(-50%) rotateY(180deg);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      transition: left 0.3s;
+      &:after {
+        content: '';
+        height: 0;
+        border: 2.5px solid transparent;
+        border-right: none;
+        border-left: 2.5px solid #000;
+        display: block;
+      }
+      &.collpase {
+        left: 0;
+        transform: translateY(-50%) rotateY(0);
+      }
+    }
+  }
+}

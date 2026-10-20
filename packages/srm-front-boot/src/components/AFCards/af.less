@@ -1,0 +1,323 @@
+:global {
+  .af-extra-container {
+    margin: 4px 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0;
+
+    &.tooltip-wrap {
+      display: block;
+    }
+
+    .af-extra-field,
+    .af-extra-fields {
+      position: relative;
+      padding: 16px 40px 16px 16px;
+      margin-bottom: 8px;
+      margin-right: 8px;
+      font-size: 0.1rem;
+      display: inline-block;
+      background-color: #fff;
+      width: 230px;
+      height: 76px;
+      overflow: hidden;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &[data-width-ratio='1x'] {
+        flex: 1 1;
+      }
+      &[data-width-ratio='2x'] {
+        flex: 2 2;
+      }
+      &[data-width-ratio='3x'] {
+        flex: 3 3;
+      }
+      &[data-width-ratio='4x'] {
+        flex: 4 4;
+      }
+    }
+
+    .af-extra-field-label,
+    .af-extra-fields-label {
+      font-size: 0;
+      & > div {
+        display: inline-block;
+        max-width: 100%;
+        font-size: 12px;
+        color: #8f94a2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.field-has-help > div {
+        padding-right: 22px;
+      }
+    }
+
+    .af-extra-field-value,
+    .af-extra-fields-value {
+      font-size: 0;
+      & > div {
+        line-height: 22px;
+        height: 22px;
+        font-weight: 600;
+        display: inline-block;
+        max-width: 100%;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &.field-has-more > div {
+        padding-right: 22px;
+      }
+    }
+
+    .af-extra-fields-value-wrap,
+    .af-extra-fields-label-wrap {
+      max-width: 45px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &::after {
+        content: '/';
+        margin: 0 4px;
+      }
+      &:last-of-type:after {
+        content: none;
+      }
+    }
+
+    .af-extra-field-value .af-extra-more .icon {
+      font-size: 14px;
+    }
+    .af-extra-more {
+      margin-left: -18px;
+      font-weight: normal;
+      vertical-align: top;
+      cursor: pointer;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+
+      .icon {
+        font-size: 18px;
+      }
+    }
+
+    .af-extra-field-icon {
+      display: block;
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .af-extra-more-card.af-extra-field {
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    padding: 0;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: 0;
+    margin-bottom: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #e5e7ec;
+    }
+  }
+
+  .af-basic-tags-more-content,
+  .af-extra-fields-more-content {
+    padding: 8px;
+    margin: -12px -16px;
+    min-width: 240px;
+    min-height: 80px;
+  }
+
+  .af-basic-tags-more-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+
+    .tag-field {
+      display: inline-block;
+      height: 20px;
+      font-size: 12px;
+      color: #646c7d;
+      background-color: #e7e8ed;
+      text-align: center;
+      margin-right: 8px;
+      margin-bottom: 4px;
+      padding: 1px 4px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .af-extra-fields-more-content {
+    max-width: 400px;
+    .af-extra-more-field {
+      display: flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-bottom: 0.3px solid #e8e8e8;
+      flex-wrap: wrap;
+      word-break: break-word;
+
+      & > .label {
+        display: inline-block;
+        font-size: 12px;
+        color: #8f94a2;
+
+        &::after {
+          content: ':';
+          margin-right: 4px;
+        }
+
+        & + span > {
+          color: #646c7d;
+        }
+      }
+      & > i.icon-help {
+        margin-left: 4px !important;
+      }
+    }
+    .more-aggregation-field {
+      display: flex;
+      align-items: center;
+      .more-aggregation-field-label {
+        color: #8f94a2;
+        &::after {
+          font-size: 12px;
+          content: ':';
+          margin-right: 4px;
+        }
+      }
+      .more-aggregation-field-value,
+      .more-aggregation-field-label {
+        font-size: 0;
+        & > div {
+          line-height: 18px;
+          height: 18px;
+          display: inline-block;
+          font-size: 12px;
+        }
+        &.field-has-help > div {
+          padding-right: 18px;
+        }
+      }
+      &:not(:last-of-type)::after {
+        content: '|';
+        margin: 0 8px;
+        color: #8f94a2;
+      }
+    }
+  }
+
+  .af-basic-container {
+    position: relative;
+    background-color: #fff;
+    margin: 4px 16px;
+    padding: 16px;
+
+    .af-basic-row {
+      margin-bottom: 4px;
+      padding: 2px 0;
+      font-size: 0;
+      overflow: hidden;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .af-basic-remain-area {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .title-field {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 16px;
+      float: left;
+    }
+
+    .tag-fields {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      .tag-field {
+        display: inline-block;
+        font-size: 12px;
+        height: 20px;
+        color: #646c7d;
+        background-color: #e7e8ed;
+        text-align: center;
+        margin-right: 8px;
+        margin-top: 4px;
+        padding: 1px 4px;
+        &.without-bg {
+          background-color: unset;
+          padding: 0 0;
+        }
+      }
+    }
+
+    .normal-fields {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .normal-field {
+        font-size: 12px;
+        color: #8f94a2;
+
+        &::after {
+          content: '|';
+          margin: 0 8px;
+        }
+
+        &:last-child::after {
+          content: none;
+        }
+      }
+    }
+
+    .af-basic-tags-more {
+      font-size: 12px;
+      font-weight: normal;
+      cursor: pointer;
+
+      .icon {
+        font-size: 14px;
+        vertical-align: 0;
+      }
+    }
+  }
+
+  .af-basic-bottom-remain-area {
+    border-top: 1px solid rgba(229, 231, 236, 1);
+    margin: -4px 16px 4px;
+    background-color: #fff;
+    padding: 4px 16px;
+  }
+}

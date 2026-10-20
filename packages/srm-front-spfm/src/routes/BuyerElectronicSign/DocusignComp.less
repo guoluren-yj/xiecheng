@@ -1,0 +1,22 @@
+@import '~hzero-front/lib/srm-variables';
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~hzero-front/lib/assets/styles/mixins.less';
+@import '~hzero-front/lib/assets/styles/utils.less';
+
+.docusign-comp-basic {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100vh - 218px);
+  width: 384px;
+
+  :global {
+    svg path {
+      // fill: @primary-color;
+      color: @primary-color;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '~hzero-front/lib/srm-variables';
+
+.risk-control-workbench-basic {
+  margin: 16px;
+  height: calc(100vh - 100px);
+  display: flex;
+  overflow: hidden;
+
+  .risk-control-workbench-panel-title {
+    color: #1d2129;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .risk-control-left-tab {
+    background: #fff;
+    // margin-left: 4px;
+    padding: 20px;
+    min-width: 500px;
+    border-left: 1px solid #e5e7ec;
+    // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .risk-control-workbench-right {
+    margin-left: 16px;
+    // min-width: 400px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+.risk-control-workbench-background-common {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}

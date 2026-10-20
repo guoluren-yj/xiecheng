@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/button/demo/basic.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-raised"
+    type="button"
+  >
+    <span>
+      Rasied
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Flat
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-search"
+    />
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/button/demo/button-group.md correctly 1`] = `
+<div>
+  <h4>
+    Basic
+  </h4>
+  <div
+    class="c7n-btn-group"
+  >
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Cancel
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        OK
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+  <div
+    class="c7n-btn-group"
+  >
+    <button
+      class="c7n-btn c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <span>
+        L
+      </span>
+    </button>
+    <button
+      class="c7n-btn c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <span>
+        M
+      </span>
+    </button>
+    <button
+      class="c7n-btn c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <span>
+        R
+      </span>
+    </button>
+  </div>
+  <div
+    class="c7n-btn-group"
+  >
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        L
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        M
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        R
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+  <h4>
+    With Icon
+  </h4>
+  <div
+    class="c7n-btn-group"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-left"
+      />
+      <span>
+        Go back
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Go forward
+      </span>
+      <i
+        class="icon icon-right"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+  <div
+    class="c7n-btn-group"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-cloud"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-cloud-download"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/button/demo/disabled.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-raised"
+    type="button"
+  >
+    <span>
+      Primary
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    disabled=""
+    type="button"
+  >
+    <span>
+      Primary(disabled)
+    </span>
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Default
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    disabled=""
+    type="button"
+  >
+    <span>
+      Default(disabled)
+    </span>
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Ghost
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    disabled=""
+    type="button"
+  >
+    <span>
+      Ghost(disabled)
+    </span>
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-dashed c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Dashed
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-dashed c7n-btn-flat"
+    disabled=""
+    type="button"
+  >
+    <span>
+      Dashed(disabled)
+    </span>
+  </button>
+</div>
+`;
+
+exports[`renders ./components/button/demo/ghost.md correctly 1`] = `
+<div
+  style="background:rgb(190, 200, 200);padding:26px 16px 16px"
+>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-background-ghost c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Primary
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-background-ghost c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Default
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-dashed c7n-btn-background-ghost c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Dashed
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-danger c7n-btn-background-ghost c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      danger
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/button/demo/icon.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-icon-only c7n-btn-raised"
+    type="button"
+  >
+    <i
+      class="icon icon-search"
+    />
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-raised"
+    type="button"
+  >
+    <i
+      class="icon icon-search"
+    />
+    <span>
+      Search
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-search"
+    />
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-search"
+    />
+    <span>
+      Search
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/button/demo/loading.md correctly 1`] = `
+<span>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-loading c7n-btn-flat"
+    type="button"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-small"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+    <span>
+      Loading
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-loading c7n-btn-raised"
+    type="button"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-small"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+    <span>
+      Loading
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Click me!
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-poweroff"
+    />
+    <span>
+      Click me!
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-circle c7n-btn-loading c7n-btn-flat"
+    type="button"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-small"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-loading c7n-btn-flat"
+    type="button"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-small"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</span>
+`;
+
+exports[`renders ./components/button/demo/multiple.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      primary
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      secondary
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-dropdown-trigger c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Actions 
+    </span>
+    <i
+      class="icon icon-down"
+    />
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/button/demo/size.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-radio-group-wrapper"
+  >
+    <div
+      class="c7n-radio-group"
+    >
+      <label
+        class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+      >
+        <span
+          class="c7n-radio-button c7n-radio-button-checked"
+        >
+          <input
+            checked=""
+            class="c7n-radio-button-input"
+            type="radio"
+            value="large"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Large
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="default"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Default
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="small"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Small
+        </span>
+      </label>
+    </div>
+  </div>
+  <br />
+  <br />
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-lg c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      默认
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-lg c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Normal
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-dashed c7n-btn-lg c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Dashed
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-danger c7n-btn-lg c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Danger
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-cloud_queue"
+    />
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-lg c7n-btn-flat"
+    type="button"
+  >
+    <i
+      class="icon icon-cloud_queue"
+    />
+    <span>
+      Download
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <br />
+  <div
+    class="c7n-btn-group c7n-btn-group-lg"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-keyboard_arrow_left"
+      />
+      <span>
+        Backward
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Forward
+      </span>
+      <i
+        class="icon icon-keyboard_arrow_right"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+</div>
+`;

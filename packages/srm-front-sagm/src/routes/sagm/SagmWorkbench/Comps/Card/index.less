@@ -1,0 +1,44 @@
+@import '~hzero-front/lib/srm-variables.less';
+.card-container {
+  :global {
+    .card-header {
+      padding-left: 11px;
+      position: relative;
+      .sagm-card-title {
+        height: 22px;
+        font-size: 14px;
+        color: #000;
+        line-height: 22px;
+        font-weight: 600;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        left: 0;
+        top: 50%;
+        margin-top: -5.5px;
+      }
+    }
+    .sagm-card-tip {
+      color: @text-color-secondary;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 8px;
+    }
+    .card-body {
+      padding: 16px 0;
+    }
+  }
+}
+
+.card-container:last-child {
+  :global {
+    .card-body {
+      padding-bottom: 0;
+    }
+  }
+}

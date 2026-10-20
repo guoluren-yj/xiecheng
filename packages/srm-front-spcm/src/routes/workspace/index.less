@@ -1,0 +1,220 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.content-tabs {
+  :global {
+    .c7n-tabs-bar {
+      display: flex;
+
+      .c7n-tabs-nav-container {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .c7n-tabs-nav {
+      font-size: 14px;
+
+      .c7n-tabs-tab-active {
+        font-weight: bold;
+      }
+
+      & > :not(.c7n-tabs-tab-active) {
+        color: #000;
+      }
+    }
+  }
+}
+
+.action-columns {
+  :global {
+    .c7n-pro-btn + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+      margin-left: 16px;
+    }
+    .c7n-pro-btn-link {
+      margin-top: -4px;
+    }
+  }
+}
+
+.action-content-wide {
+  :global {
+    .c7n-pro-table-search-bar-operator-right {
+      display: flex !important;
+      align-items: center;
+    }
+
+    .double-tabs-bottom-tab {
+      padding-top: 16px !important;
+    }
+
+    .c7n-pro-table-cell-tree-title {
+      line-height: 18px;
+    }
+    // 解决切换分页时，页面出现滚动条
+    .c7n-tabs {
+      overflow-y: hidden !important;
+    }
+  }
+  .action-columns-a {
+    margin-left: 8px;
+    padding-right: 1em;
+  }
+}
+
+.table-cell-height {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: 30px;
+    }
+  }
+}
+
+.aggregation-action-columns {
+  :global {
+    .c7n-pro-btn-link {
+      display: block;
+      height: 0.2rem;
+      margin-bottom: 4px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.row-agent-column-icon {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.search-layout {
+  display: flex;
+
+  :global {
+    div {
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:last-child {
+        margin-left: 8px;
+      }
+
+      .icon {
+        font-size: 16px;
+      }
+    }
+
+    .isActive {
+      color: @primary-color;
+      background-color: #f2f2f2;
+    }
+
+    .isNormal {
+      color: black;
+      background-color: #fff;
+    }
+  }
+}
+
+.new-import {
+  width: 100%;
+  height: 0.4rem;
+  text-align: left;
+  font-weight: 400;
+  padding: 0 16px;
+  justify-content: left;
+  .srm-common-import-button-tag {
+    right: 42px;
+  }
+}
+
+.more-action {
+  & > span {
+    display: flex;
+  }
+}
+
+.more-option {
+  :global {
+    .c7n-pro-btn-wrapper:not(.c7n-pro-btn-disabled) {
+      &:hover span {
+        color: @link-color;
+      }
+    }
+  }
+  span {
+    color: rgba(0, 0, 0, 1);
+    transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+.inter-wysiwyg {
+  display: inline-block;
+  font-size: 0.14rem;
+  margin-left: 0.03rem;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+.fail-status {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  vertical-align: text-bottom;
+  color: rgb(230, 67, 34);
+  background-color: rgba(245, 99, 73, 0.1);
+}
+
+.row-urge-column-icon {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-help {
+  pointer-events: auto;
+  position: relative;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: 8px;
+  margin-right: 0;
+  font-size: 14px;
+  vertical-align: text-top;
+}
+
+
+.menu-btn {
+  display: inherit;
+  padding: 0 16px;
+  height: 0.4rem;
+  margin: 0 !important;
+  :global {
+    .srm-common-import-button-tag {
+      line-height: 1.5;
+    }
+  }
+}

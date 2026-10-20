@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/alert/demo/banner.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-banner"
+  >
+    <i
+      class="icon icon-warning c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Warning text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <br />
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-banner"
+  >
+    <i
+      class="icon icon-warning c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Very long warning text warning text text text text text text text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+    <a
+      class="c7n-alert-close-icon"
+    >
+      <i
+        class="icon icon-close"
+      />
+    </a>
+  </div>
+  <br />
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-no-icon c7n-alert-banner"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Warning text without icon
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <br />
+  <div
+    class="c7n-alert c7n-alert-error c7n-alert-banner"
+  >
+    <i
+      class="icon icon-error c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Error text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-alert c7n-alert-success c7n-alert-no-icon"
+>
+  <span
+    class="c7n-alert-message"
+  >
+    Success Text
+  </span>
+  <span
+    class="c7n-alert-description"
+  />
+</div>
+`;
+
+exports[`renders ./components/alert/demo/closable.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Warning Text Warning Text Warning TextW arning Text Warning Text Warning TextWarning Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+    <a
+      class="c7n-alert-close-icon"
+    >
+      <i
+        class="icon icon-close"
+      />
+    </a>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-error c7n-alert-with-description c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Error Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Error Description Error Description Error Description Error Description Error Description Error Description
+    </span>
+    <a
+      class="c7n-alert-close-icon"
+    >
+      <i
+        class="icon icon-close"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/close-text.md correctly 1`] = `
+<div
+  class="c7n-alert c7n-alert-info c7n-alert-no-icon"
+>
+  <span
+    class="c7n-alert-message"
+  >
+    Info Text
+  </span>
+  <span
+    class="c7n-alert-description"
+  />
+  <a
+    class="c7n-alert-close-icon"
+  >
+    Close Now
+  </a>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/description.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-success c7n-alert-with-description c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Success Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Success Description Success Description Success Description
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-info c7n-alert-with-description c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Info Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Info Description Info Description Info Description Info Description
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-with-description c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Warning Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Warning Description Warning Description Warning Description Warning Description
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-error c7n-alert-with-description c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Error Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Error Description Error Description Error Description Error Description
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/icon.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-success"
+  >
+    <i
+      class="icon icon-check_circle c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Success Tips
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-info"
+  >
+    <i
+      class="icon icon-info c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Informational Notes
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-warning"
+  >
+    <i
+      class="icon icon-warning c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Warning
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-error"
+  >
+    <i
+      class="icon icon-error c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Error
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-success c7n-alert-with-description"
+  >
+    <i
+      class="icon icon-check_circle c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Success Tips
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Detailed description and advices about successful copywriting.
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-info c7n-alert-with-description"
+  >
+    <i
+      class="icon icon-info c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Informational Notes
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      Additional description and informations about copywriting.
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-with-description"
+  >
+    <i
+      class="icon icon-warning c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Warning
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      This is a warning notice about copywriting.
+    </span>
+  </div>
+  <div
+    class="c7n-alert c7n-alert-error c7n-alert-with-description"
+  >
+    <i
+      class="icon icon-error c7n-alert-icon"
+    />
+    <span
+      class="c7n-alert-message"
+    >
+      Error
+    </span>
+    <span
+      class="c7n-alert-description"
+    >
+      This is an error message about copywriting.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/smooth-closed.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-success c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Alert Message Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+    <a
+      class="c7n-alert-close-icon"
+    >
+      <i
+        class="icon icon-close"
+      />
+    </a>
+  </div>
+  <p>
+    placeholder text here
+  </p>
+</div>
+`;
+
+exports[`renders ./components/alert/demo/style.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-alert c7n-alert-success c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Success Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-info c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Info Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-warning c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Warning Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+  <div
+    class="c7n-alert c7n-alert-error c7n-alert-no-icon"
+  >
+    <span
+      class="c7n-alert-message"
+    >
+      Error Text
+    </span>
+    <span
+      class="c7n-alert-description"
+    />
+  </div>
+</div>
+`;

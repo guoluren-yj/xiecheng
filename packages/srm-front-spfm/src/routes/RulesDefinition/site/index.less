@@ -1,0 +1,83 @@
+.rule-definition {
+  :global {
+    background: #f5f5f5;
+    padding: 16px;
+    flex: 1 1;
+    overflow: hidden;
+
+    .rule-definition-content {
+      height: 100%;
+      display: flex;
+
+      .rule-definition-tree {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 300px;
+        max-height: 773px;
+        overflow: hidden;
+        margin-bottom: 4px;
+        box-shadow: 0 0.6px 1.6px 0 rgba(0, 0, 0, 0.133), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.11);
+
+        .ant-tree {
+          overflow: auto;
+        }
+      }
+
+      .rule-definition-form {
+        display: flex;
+        padding: 0 20px;
+        background-color: #fff;
+        flex: 1 1;
+        flex-direction: column;
+        margin-left: 10px;
+        overflow: hidden;
+        max-height: 773px;
+        margin-bottom: 4px;
+        box-shadow: 0 0.6px 1.6px -2px rgba(0, 0, 0, 0.133), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.11);
+
+        .rule-definition-black {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+
+          .blank-pic {
+            background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQwIiBoZWlnaHQ9IjE4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBzdHJva2U9IiMzMjMxMzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNMTEgMTc1aDIyOE0xIDE3NWg1Ii8+PHBhdGggZD0iTTM2IDUwYTIgMiAwIDAxMi0yaDE2OGEyIDIgMCAwMTIgMnYxMTNIMzZWNTB6IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik00OCA3MmgxNDgiIHN0cm9rZT0iI0VBRUFFQSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48ZWxsaXBzZSBjeD0iNTQuMzgiIGN5PSI2Ni40NDMiIHJ4PSIxLjUxNSIgcnk9IjEuNjAxIiBmaWxsPSIjQzRDNEM0Ii8+PGVsbGlwc2UgY3g9IjYwLjQ0IiBjeT0iNjYuNDQzIiByeD0iMS41MTUiIHJ5PSIxLjYwMSIgZmlsbD0iI0M0QzRDNCIvPjxlbGxpcHNlIGN4PSI2Ni40OTgiIGN5PSI2Ni40NDMiIHJ4PSIxLjUxNSIgcnk9IjEuNjAxIiBmaWxsPSIjQzRDNEM0Ii8+PHJlY3QgeD0iNDgiIHk9IjYwIiB3aWR0aD0iMTQ4IiBoZWlnaHQ9IjkxIiByeD0iMiIgc3Ryb2tlPSIjQzhDNkM0IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTIzIDEyN2w0IDkgOC00LTUtOWg4bC0yMS0yMXYzMWw2LTZ6IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xMTAgMTA5bC00IDRtLjUtMTEuNUgxMDBtOC05bC00LTRtMTMgMnYtNm03LjUgMTBsNC00IiBzdHJva2U9IiNDOEM2QzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTI2IDE2M2EyIDIgMCAwMTItMmgxODhhMiAyIDAgMDEyIDJ2MTJIMjZ2LTEyeiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTQ5IDE2NGEyIDIgMCAwMS0yIDJIOTdhMiAyIDAgMDEtMi0ydi0yaDU0djJ6IiBmaWxsPSIjZmZmIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTY5LjkwMiAzNy4wOThsOC4xOTYtMi4xOTZNNzIuOTAyIDMxLjkwMmwyLjE5NiA4LjE5NiIgc3Ryb2tlPSIjQzhDNkM0IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yMjIgNzYuNzU3djguNDg2TTIyNi4yNDMgODFoLTguNDg2IiBzdHJva2U9IiMwNkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTE5Ljg3NyA5Ni44MzhsMy43NDYtNS42NzZNOSA4NWw2LTMiIHN0cm9rZT0iI0M4QzZDNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMzkgMzhIMjhhNSA1IDAgMDAtNSA1djYiIHN0cm9rZT0iI0M4QzhDOCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjI0IDk2bDYtMyIgc3Ryb2tlPSIjQzhDNkM0IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik05MSAyNnY2LjUiIHN0cm9rZT0iIzA2RiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjMgNTZ2Mi41IiBzdHJva2U9IiNDOEM4QzgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzYiIGN5PSI0OCIgcj0iMjUiIGZpbGw9IiMwNkYiLz48cmVjdCB4PSIzNSIgeT0iNDIiIHdpZHRoPSIyIiBoZWlnaHQ9IjEyIiByeD0iMSIgZmlsbD0iI2ZmZiIvPjxyZWN0IHg9IjMwIiB5PSI0OSIgd2lkdGg9IjIiIGhlaWdodD0iMTIiIHJ4PSIxIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgMzAgNDkpIiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMzYiIGN5PSI0OCIgcj0iMTQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+)
+              50% no-repeat;
+            background-size: contain;
+            height: 200px;
+            width: 250px;
+            margin-top: -90px;
+          }
+
+          .blank-title {
+            font-size: 20px;
+            font-weight: 900;
+          }
+
+          .blank-desc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .c7n-spin-nested-loading {
+      height: 100%;
+    }
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+}
+
+:global {
+  .rule-definition-pro-modal-container-remove-visibility {
+    .c7n-pro-table-selection-tips {
+      display: none;
+    }
+  }
+}

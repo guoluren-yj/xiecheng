@@ -1,0 +1,204 @@
+.tenant-lov-modal {
+  margin-top: -0.1rem;
+
+  :global {
+    .c7n-modal-footer {
+      width: 100%;
+      position: fixed;
+      bottom: 25px;
+    }
+
+    .c7n-modal-header {
+      height: 56px !important;
+      min-height: 56px !important;
+    }
+
+    .c7n-modal-body {
+      height: 100vh;
+    }
+  }
+}
+
+.select-item-row {
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-left: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.repeat-item-row {
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-left: 16px;
+  cursor: pointer;
+  color: rgba(255, 165, 0, 0.9);
+  background: rgba(255, 165, 0, 0.1);
+
+  &:hover {
+    background: rgba(255, 165, 0, 0.2);
+    color: rgba(255, 165, 0, 1);
+  }
+}
+
+.add-subscribe-modal {
+  height: calc(100vh - 55px - 20px - 60px - 24px);
+  .c7n-pro-table-expanded-row > .c7n-pro-table-cell {
+    padding: 0 !important;
+    background: #f5f5f5 !important;
+  }
+  .c7n-pro-table-cell-inner {
+    padding: 0 !important;
+
+    // .c7n-pro-table-content {
+    //   // padding-left: 16px !important;
+    // }
+
+    .c7n-pro-table-cell {
+      background: #f5f5f5 !important;
+    }
+
+    .c7n-pro-table-cell-fix-left {
+      span {
+        text-align: right !important;
+      }
+    }
+
+    thead {
+      display: none;
+      .c7n-pro-checkbox-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  :global {
+    .c7n-pro-table-professional-query-bar {
+      align-items: center !important;
+      padding: 0;
+
+      .c7n-pro-table-professional-query-bar-button {
+        // padding: 0 !important;
+        // padding-left: 0.4rem !important;
+      }
+    }
+
+    .c7n-pro-form.c7n-pro-form-float-label {
+      padding-top: 0 !important;
+      margin-left: -5px !important;
+    }
+
+    .c7n-pro-table-professional-query-bar
+      .c7n-pro-form-wrapper.c7n-pro-form.c7n-pro-form-float-label
+      .c7n-pro-field-wrapper {
+      padding: 0 0.05rem !important;
+    }
+  }
+}
+
+.add-business-modal {
+  .add-business-modal-left-panel,
+  .add-business-modal-right-panel {
+    border: 1px solid rgba(201, 205, 212, 1);
+    border-radius: 5px;
+    width: 100%;
+    height: calc(100vh - 240px);
+  }
+
+  .add-business-modal-center-panel {
+    height: calc(100vh - 240px);
+    text-align: center;
+    line-height: calc(100vh - 240px);
+  }
+
+  .add-business-modal-left-panel {
+    .c7n-pro-textarea-wrapper {
+      border-radius: 3px;
+    }
+    textarea {
+      border: none;
+      outline: none;
+      border-radius: 2px;
+      font-size: 14px;
+      padding: 8px 20px;
+    }
+  }
+}
+
+.add-business-modal-panel-title {
+  height: 46px;
+  line-height: 46px;
+  background: #f7f8fa;
+  border-radius: 5px 5px 0 0;
+  font-size: 14px;
+  color: #1d2129;
+  font-weight: 500;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(229, 231, 236, 1);
+}
+
+.business-add-modal-alert-msg {
+  i {
+    font-size: 14px;
+    vertical-align: text-bottom;
+  }
+}
+
+.list-container-box {
+  height: calc(100% - 46px);
+  font-size: 14px;
+  padding: 8px 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.tenant-subscribe-modal-content {
+  display: flex;
+  justify-self: start;
+  // height: 540px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 5px;
+}
+
+.tenant-modal-left-table {
+  width: 660px;
+}
+
+.tenant-modal-select-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 101;
+  width: 300px;
+  height: calc(100vh);
+  // padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background: #fbfbfc;
+  border-left: 0.01rem solid #e0e0e0;
+  overflow-y: scroll;
+}
+
+.tenant-modal-select-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tenant-modal-select-list::-webkit-scrollbar-track {
+  box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.tenant-modal-select-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+}

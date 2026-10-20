@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/divider/demo/horizontal.md correctly 1`] = `
+<div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+  <div
+    class="c7n-divider c7n-divider-horizontal"
+  />
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+  <div
+    class="c7n-divider c7n-divider-horizontal c7n-divider-with-text"
+  >
+    <span
+      class="c7n-divider-inner-text"
+    >
+      With Text
+    </span>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+  <div
+    class="c7n-divider c7n-divider-horizontal c7n-divider-dashed"
+  />
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+  <div
+    class="c7n-divider c7n-divider-horizontal c7n-divider-with-text-left"
+  >
+    <span
+      class="c7n-divider-inner-text"
+    >
+      With Text
+    </span>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+  <div
+    class="c7n-divider c7n-divider-horizontal c7n-divider-with-text-right"
+  >
+    <span
+      class="c7n-divider-inner-text"
+    >
+      With Text
+    </span>
+  </div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.
+  </p>
+</div>
+`;
+
+exports[`renders ./components/divider/demo/vertical.md correctly 1`] = `
+<div>
+  Text
+  <div
+    class="c7n-divider c7n-divider-vertical"
+  />
+  <a
+    href="#"
+  >
+    Link
+  </a>
+  <div
+    class="c7n-divider c7n-divider-vertical"
+  />
+  <a
+    href="#"
+  >
+    Link
+  </a>
+</div>
+`;

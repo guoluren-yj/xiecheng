@@ -1,0 +1,141 @@
+// constant
+@zero: 0;
+@default-distance: 16px;
+@default-font-size: 16px;
+@font-weight-bold: 600;
+
+// common color
+@black-color: #000000;
+@title-left-line-color: #36c2cf;
+.btn-wrapper {
+  margin-bottom: 4px;
+  display: flex;
+}
+.edit-table-wrapper {
+  :global {
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+}
+
+// modal全屏
+.full-modal-wrapper {
+  :global {
+    .ant-modal-header {
+      border-bottom: none;
+    }
+    .c7n-modal {
+      top: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .c7n-modal-header {
+      overflow: hidden;
+    }
+
+    .c7n-modal-title {
+      padding-bottom: 12px;
+    }
+
+    .c7n-modal-body {
+      overflow: auto;
+      min-height: calc(100vh - 65px);
+      max-height: calc(100vh - 65px);
+    }
+  }
+}
+
+// 右侧锚点
+.anchor-wrapper {
+  :global {
+    .c7n-anchor-link {
+      & > .c7n-anchor-link-title {
+        font-size: 13px;
+      }
+
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.purchase-header-number {
+  :global {
+    a {
+      color: #333;
+    }
+    .ant-tag {
+      background-color: #eee !important;
+      color: #333;
+      border-radius: 8px;
+      height: auto !important;
+      line-height: 15px !important;
+      margin-left: 4px !important;
+    }
+  }
+}
+
+.contract-control-upload-files {
+  border: none !important;
+  // padding: 0 !important;
+  margin: 0 !important;
+}
+
+.rfx-card-item-form {
+  // width: 75%;
+  // max-width: 1172px;
+  padding-left: @zero;
+
+  // global override c7n
+  :global {
+    // .defaultAnchor {
+    //   margin-top: 16px;
+    // }
+
+    form input[type='checkbox'] {
+      width: 16px;
+      height: 16px;
+    }
+
+    .td-no-visible {
+      display: none;
+    }
+
+    .c7n-pro {
+      // &-form.c7n-pro-form-float-label > table > tbody > tr:first-child .c7n-pro-field-wrapper {
+      //   margin-top: 7px;
+      // }
+
+      // ui样式整改：表单需要顶部对齐
+      // &-form > table > tbody > tr > td {
+      //   vertical-align: baseline;
+      // }
+
+      &-input {
+        border-radius: 2px;
+      }
+
+      &-field-wrapper {
+        height: 100%;
+        padding-left: @zero;
+      }
+
+      &-select-wrapper {
+        color: @black-color;
+      }
+
+      &-select-suffix {
+        width: 18px;
+      }
+    }
+
+    // .c7n-pro-form-float-label {
+    //   margin-left: @zero; // override ui
+    // }
+  }
+}
+

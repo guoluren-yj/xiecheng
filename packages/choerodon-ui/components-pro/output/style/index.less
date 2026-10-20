@@ -1,0 +1,62 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../text-field/style/mixin';
+@import 'mixin';
+
+@output-prefix-cls: ~'@{c7n-pro-prefix}-output';
+@field-label-prefix-cls: ~'@{c7n-pro-prefix}-field-label';
+
+.@{output-prefix-cls} {
+  font-weight: @output-font-weight;
+  line-height: @output-line-height;
+  white-space: @output-white-space;
+  word-break: @output-word-break;
+
+  &-line {
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+
+  &-invalid {
+    padding: @input-padding-vertical-base @input-padding-horizontal;
+    color: @error-color;
+    background-color: @error-bg-color;
+    border: @border-width-base @border-style-base @error-color;
+    border-radius: @border-radius-base;
+  }
+
+  &-multiple-block {
+    .tag-block;
+    vertical-align: text-top;
+  }
+
+  &:empty::before {
+    display: inline-block;
+    width: 0;
+    content: '';
+  }
+
+  &-highlight {
+    border-color: @input-highlight-border-color;
+  }
+
+  .multi;
+
+  &-float-label {
+    line-height: @float-label-height-base;
+  }
+
+  &-float-label>.@{field-label-prefix-cls}-wrapper>.@{field-label-prefix-cls} {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    color: @label-color;
+    font-weight: @output-font-weight;
+    font-size: @output-float-label-font-size;
+    line-height: @output-float-label-line-height;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

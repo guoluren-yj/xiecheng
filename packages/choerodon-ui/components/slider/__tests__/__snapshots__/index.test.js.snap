@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider should show tooltip when hovering slider handler 1`] = `
+<div>
+  <div
+    class="c7n-tooltip  c7n-tooltip-placement-top "
+  >
+    <div
+      class="c7n-tooltip-content"
+    >
+      <div
+        class="c7n-tooltip-arrow"
+      />
+      <div
+        class="c7n-tooltip-inner"
+      >
+        30
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slider should show tooltip when hovering slider handler 2`] = `
+<div>
+  <div
+    class="c7n-tooltip  c7n-tooltip-placement-top  c7n-tooltip-hidden"
+  >
+    <div
+      class="c7n-tooltip-content"
+    >
+      <div
+        class="c7n-tooltip-arrow"
+      />
+      <div
+        class="c7n-tooltip-inner"
+      >
+        30
+      </div>
+    </div>
+  </div>
+</div>
+`;

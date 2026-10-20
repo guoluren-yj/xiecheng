@@ -1,0 +1,229 @@
+@import '../global';
+
+.menu-left {
+  // height: calc(100% - 68px);
+  height: calc(100% - 36px);
+  //padding: 123px 0 15px;
+  // padding: 42px 0 15px;
+  color: @Blue;
+  box-sizing: border-box;
+  position: relative;
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  .menu-left-query {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 8px;
+    > div {
+      flex: 1;
+      padding: 0 9px 2px 0;
+    }
+
+    // > span {
+    //   // 收起按钮
+    //   height: 30px;
+    //   line-height: 24px;
+    //   cursor: pointer;
+    //   padding-right: 5px;
+    // }
+  }
+
+  // .input {
+  //   position: relative;
+  //   padding: 15px 5px;
+
+  //   :global {
+  //     .icon {
+  //       position: absolute;
+  //       right: 18px;
+  //       top: 18px;
+  //       font-size: 20px;
+  //       z-index: 80;
+  //       cursor: pointer;
+  //     }
+
+  //     //.c7n-pro-input:focus,
+  //     //.c7n-pro-select:focus {
+  //     //  box-shadow: none;
+  //     //  border: 1px solid @Blue;
+  //     //}
+
+  //     .c7n-pro-input-wrapper {
+  //       width: 100%;
+  //     }
+
+  //     .c7n-pro-input,
+  //     .c7n-pro-select {
+  //       width: 100%;
+  //       padding-right: 20px;
+  //       //border: 1px solid @Grey4;
+  //       //border-radius: 0;
+  //     }
+  //   }
+  // }
+
+  .create-new-model {
+    height: 18px;
+    line-height: 18px;
+    margin: 8px 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .search-input-left {
+    width: calc(100% - 135px);
+
+    :global {
+      .c7n-pro-input-suffix {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .master-model-input {
+      width: 290px;
+      max-width: 100%;
+
+      :global {
+        .c7n-pro-input {
+          padding-left: 10px;
+          // border-color: rgb(184, 215, 255);
+        }
+
+        .c7n-pro-input:hover {
+          //background-color: #eff6ff !important;
+          border-color: #b8d7ff !important;
+          box-shadow: 0 0 2px 1px #b8d7ff !important;
+        }
+      }
+    }
+  }
+}
+
+.menu-left-top {
+  position: absolute;
+  top: 75px;
+  padding: 0;
+  display: flex;
+  margin: 0 0 0.1rem;
+
+  li {
+    cursor: pointer;
+    color: @Blue;
+    list-style: none;
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.create-application-contain {
+  // height: 280px;
+  .tree-explain {
+    padding-top: 10px;
+    font-size: 12px;
+    color: @Grey2;
+  }
+  .remark-explain {
+    position: absolute;
+    left: 220px;
+    bottom: 18px;
+    color: #aaadba;
+    width: 60px;
+    text-align: center;
+  }
+  .form-style {
+    // width: 281px;
+    padding-bottom: 28px;
+    :global {
+      .c7n-pro-textarea-wrapper {
+        .c7n-pro-textarea {
+          word-break: break-all;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  .input {
+    :global {
+      .c7n-pro-input,
+      .c7n-pro-select {
+        border-radius: 0;
+      }
+
+      .c7n-pro-input-required,
+      .c7n-pro-select-required {
+        background-color: #eff6ff;
+        label {
+          .c7n-pro-input {
+            background-color: #eff6ff !important;
+            border-color: #b8d7ff;
+          }
+        }
+      }
+
+      .c7n-pro-textarea:focus,
+      .c7n-pro-textarea:hover,
+      .c7n-pro-input:focus,
+      .c7n-pro-select:focus,
+      .c7n-pro-input:hover,
+      .c7n-pro-select:hover {
+        box-shadow: none;
+        border: 1px solid #b8d7ff;
+        border-radius: 2px;
+      }
+
+      .c7n-pro-input-invalid .c7n-pro-input,
+      .c7n-pro-input-invalid label:hover .c7n-pro-input,
+      .c7n-pro-input-invalid .c7n-pro-input:hover {
+        color: #d50000;
+        border-color: #d50000;
+      }
+    }
+  }
+
+  .assign-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    .form-label {
+      display: flex;
+      padding: 10px 0;
+      align-items: center;
+      width: 120px;
+
+      i {
+        margin: 0 4px;
+        color: @red1;
+      }
+    }
+  }
+
+  :global {
+    .c7n-pro-form {
+      padding: 0;
+      td {
+        padding: 0;
+        .c7n-pro-field-label {
+          padding: 0;
+          color: @Grey2;
+        }
+      }
+    }
+  }
+}
+
+.left-menu-list-refresh {
+  cursor: pointer;
+  border-left: 1px solid lightgrey;
+  padding-left: 4px;
+  margin-left: 4px;
+}

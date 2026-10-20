@@ -1,0 +1,120 @@
+@import '../common.less';
+
+.spfp-detail-content-basic-configuration {
+  padding: 0 20px;
+
+  :global {
+    .c7n-collapse {
+      .spfp-collapse();
+    }
+
+    .c7n-pro-form-wrapper {
+      .spfp-form(@formWidth: 75%);
+    }
+
+    .ued-detail-card {
+      .spfp-card();
+    }
+
+    .basic-config {
+      display: flex;
+      span:first-child {
+        flex: 1;
+      }
+      span:last-child {
+        flex: 4;
+        div:first-child {
+          margin-bottom: 10px;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.spfp-basic-config-tabpane-scene {
+  :global {
+    .c7n-tabs-nav-wrap {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 10px;
+    }
+
+    .c7n-tabs-tab {
+      padding: 0 !important;
+      // width: 240px;
+    }
+    .c7n-tabs-bar {
+      width: 220px;
+      max-height: calc(100vh - 148px);
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-top: 20px !important;
+      scrollbar-width: none; // firefox下滚动条不显示
+      -ms-overflow-style: none; // IE下滚动条不显示
+      &::-webkit-scrollbar {
+        // chrome下滚动条不显示
+        display: none;
+      }
+      .c7n-tabs-ink-bar {
+        right: 0.02rem !important;
+      }
+    }
+    .c7n-tabs-content {
+      max-height: calc(100vh - 148px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-top: 20px !important;
+    }
+  }
+}
+.spfp-basic-config-collapse-scene {
+  :global {
+    // height: calc(100vh - 148px);
+    .c7n-collapse-header {
+      padding: 0 !important;
+    }
+  }
+}
+
+.spfp-basic-config-enable-form {
+  :global {
+    .c7n-pro-field-wrapper {
+      display: flex;
+      margin: 0 !important;
+      .c7n-pro-switch-wrapper {
+        line-height: 30px !important;
+        margin: 0 !important;
+        height: 30px !important;
+      }
+      .c7n-pro-switch-float-label {
+        margin: 0 !important;
+        line-height: 30px !important;
+        padding-top: 0 !important;
+      }
+    }
+  }
+}
+
+.spfp-basic-config-scene-tab-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  :global {
+    .scenario-name {
+      width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+    }
+    .scenario-name-disabled {
+      color: #C9CDD4;
+    }
+    .scenario-icon {
+      margin-right: 20px !important;
+    }
+  }
+}

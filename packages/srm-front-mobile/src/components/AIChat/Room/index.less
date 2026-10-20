@@ -1,0 +1,108 @@
+@import "~srm-front-boot/lib/utils/style/basic.less";
+
+.smbl-chat-room-content {
+	width: 100%;
+	height: 100%;
+	background: @primary-color-white;
+
+	.smbl-chat-room-empty {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		padding: 0 15px;
+		color: @srm-primary-color;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.smbl-chat-room-content-wrap {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		position: relative;
+
+		.smbl-chat-room-talk-panel {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			position: relative;
+
+			.smbl-chat-room-announcement-back {
+				position: absolute;
+				background: @primary-color-white;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 20px;
+				z-index: 1;
+			}
+
+			.smbl-chat-room-talk-panel-top {
+				flex-grow: 1;
+				position: relative;
+				overflow: hidden;
+				.smbl-chat-room-back-bottom {
+					position: absolute;
+					bottom: 20px;
+					left: 0;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					cursor: pointer;
+					.smbl-chat-room-back-bottom-content {
+						padding: 0 15px;
+						background: @primary-color-white;
+						line-height: 30px;
+						border-radius: 15px;
+						box-shadow: 0 2.5px 10px 0 rgba(31, 35, 41, .1);
+						font-size: 12px;
+					}
+				}
+				.smbl-chat-room-talk-panel-messages {
+					width: 100%;
+					height: 100%;
+					overflow-y: scroll;
+					overflow-x: hidden;
+					padding-bottom: 20px;
+					.smbl-chat-room-shutup-tip {
+						width: 100%;
+						font-size: 12px;
+						color: #868d9c;
+						text-align: center;
+						line-height: 18px;
+						font-weight: 400;
+						padding: 8px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.smbl-chat-room-unread-num {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 0 20px 20px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: @text-color-dark;
+	padding: 0 15px 0 30px;
+	font-size: 13px;
+	background: @srm-primary-color;
+}
+
+.smbl-chat-room-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	background-color: #fff;
+	padding: 20px;
+	border-bottom: 1px solid @border-color-split;
+}

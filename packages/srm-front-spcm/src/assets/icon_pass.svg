@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>通过</title>
+    <g id="智能合同" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="通过">
+            <rect id="矩形" fill-opacity="0.1" fill="#3BB346" x="0" y="0" width="18" height="18" rx="2"></rect>
+            <g id="Icon/done" transform="translate(2, 2)">
+                <path d="M10.5,4.08333334 L9.6775,3.26083334 L5.97916666,6.95916666 L6.80166666,7.78166666 L10.5,4.08333334 Z M12.9733333,3.26083334 L6.80166666,9.4325 L4.36333334,7 L3.54083334,7.8225 L6.80166666,11.0833333 L13.8016667,4.08333334 L12.9733333,3.26083334 Z M0.239166662,7.8225 L3.5,11.0833333 L4.3225,10.2608333 L1.0675,7 L0.239166662,7.8225 Z" id="icon" fill="#3BB346"></path>
+                <rect id="done_all" x="0" y="0" width="14" height="14"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

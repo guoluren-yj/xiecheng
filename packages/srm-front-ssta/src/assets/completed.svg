@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>已完成</title>
+    <g id="回收♻️" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="已完成">
+            <rect id="矩形备份-3" x="0" y="0" width="14" height="14"></rect>
+            <path d="M7,1 C10.3137085,1 13,3.6862915 13,7 C13,10.3137085 10.3137085,13 7,13 C3.6862915,13 1,10.3137085 1,7 C1,3.6862915 3.6862915,1 7,1 Z M9.91666667,4.45833333 L5.5,8.875 L3.75,7.125 L3.16666667,7.70833333 L5.5,10.0416667 L10.5,5.04166667 L9.91666667,4.45833333 Z" id="形状结合" fill="#47B881" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

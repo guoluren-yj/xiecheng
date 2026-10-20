@@ -1,0 +1,592 @@
+@import '~hzero-front/lib/srm-variables';
+
+@modal-footer-height: 57px;
+@modal-large-width: 1090px;
+@modal-medium-width: 742px;
+@modal-small-width: 380px;
+
+.fixed-form-row {
+  :global {
+    .ant-form-item {
+      margin: 0 16px 16px 16px;
+      text-align: left;
+      line-height: 28px;
+      color: #666;
+    }
+
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 28px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      label {
+        color: #666 !important;
+      }
+    }
+    //只读上下边距修正
+    .margin-read-row {
+      margin-bottom: 16px;
+    }
+
+    // 编辑状态半行
+    .half-row {
+      display: flex;
+      margin-bottom: 16px;
+
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+
+        & > .ant-form-item-label {
+          width: 25%;
+          // margin-right: -6px;
+          float: left;
+          line-height: 28px;
+
+          label {
+            color: #666;
+          }
+        }
+
+        & > .ant-form-item-control-wrapper {
+          width: 75%;
+          float: left;
+          color: #333;
+          line-height: 28px;
+
+          .ant-form-item-control {
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    // 纯展示行
+    .read-row {
+      margin-bottom: 16px;
+      color: #666;
+
+      div {
+        line-height: 20px;
+      }
+
+      & > div:nth-child(2) {
+        color: #333;
+        float: left;
+      }
+
+      & > div:first-child {
+        float: left;
+
+        &::after {
+          content: ':';
+          margin: 0 8px 0 2px;
+          position: relative;
+          top: -0.5px;
+        }
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      text-align: left;
+      line-height: 28px;
+      color: #333;
+
+      & > .ant-form-item-control {
+        line-height: 28px;
+        .ant-form-explain,
+        .ant-form-extra {
+          line-height: 2.5;
+        }
+      }
+    }
+  }
+}
+.fix-col-8-item {
+  margin-left: 16px !important;
+
+  :global {
+    .ant-form-item-control-wrapper::after {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+// custom use
+.headerInfo {
+  :global {
+    .ant-form-item {
+      .ant-form-item-label {
+        text-align: left;
+        line-height: 28px;
+      }
+
+      .ant-form-item-control {
+        line-height: 28px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .ant-form-explain {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.detail-standard {
+  .exclude-content-card {
+    width: calc(100% - 32px);
+    margin: -8px 16px 0;
+    padding: 32px 24px;
+    background: #fff;
+  }
+
+  .collapse-title {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+
+  :global {
+    .ant-form-item-label {
+      line-height: 28px;
+    }
+
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+
+  .m-r-m {
+    margin-right: 10px;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .p-n {
+    padding: 0 !important;
+  }
+}
+
+.margin-top-fix {
+  margin-top: -1.766px;
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
+.btn-icon + span {
+  margin-left: 8px;
+}
+
+.page-content-wrapper-custome {
+  & .page-content-wrap {
+    overflow: visible;
+  }
+}
+
+// XXX 临时框架覆盖
+.hzero-ui-override {
+  .ant-input-number {
+    width: 100% !important;
+  }
+}
+
+// 页面样式自定义，ued
+.page-content-custom {
+  @defaultDistance: 8px;
+  min-height: 280px;
+  padding: 24px;
+
+  &.default-margin-bottom {
+    margin-bottom: @defaultDistance;
+  }
+
+  &.zero-margin-bottom {
+    margin-bottom: 0;
+  }
+
+  :global {
+    margin-bottom: 8px;
+
+    //.ant-tabs-content {
+    //  padding: 0 8px;
+    //}
+
+    .ant-form.writable-row-custom {
+      & .ant-row.ant-form-item {
+        & > .ant-form-item-label {
+          text-align: left;
+          line-height: 28px;
+
+          label {
+            color: #666;
+          }
+        }
+
+        & .ant-form-item-control-wrapper {
+          color: #333;
+          line-height: 28px;
+
+          .ant-form-item-control {
+            line-height: 28px;
+
+            .ant-form-explain {
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-form.read-row-custom {
+      & .ant-row.ant-form-item {
+        margin-bottom: 16px;
+
+        & > .ant-form-item-label {
+          text-align: left;
+          line-height: 28px;
+
+          label {
+            color: #666;
+          }
+        }
+
+        // & > .ant-col-21.ant-form-item-control-wrapper {
+        //   margin-left: -20px;
+        // }
+
+        & > .ant-form-item-control-wrapper {
+          color: #333;
+          line-height: 28px;
+
+          .ant-form-item-control {
+            line-height: 28px;
+
+            .ant-form-explain {
+              margin-top: 2px;
+            }
+          }
+        }
+
+        &.no-text-ellipsis > .ant-col-21.ant-form-item-control-wrapper {
+          white-space: normal;
+
+          & > .ant-form-item-control {
+            white-space: normal;
+          }
+        }
+
+        & .n-m-b {
+          margin-bottom: 0;
+        }
+      }
+
+      & > .ant-row.read-row {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.page-content-custom-supplierQuotation {
+  .page-content-custom;
+  min-height: 0;
+}
+
+.m-r-m {
+  margin-right: 16px;
+}
+
+.display-none {
+  display: none;
+}
+
+.p-n {
+  padding: 0;
+}
+
+.m-n {
+  margin: 0;
+}
+
+// 报价模板
+.template-detail {
+  :global {
+    .ant-drawer-body {
+      padding-top: 16px;
+    }
+  }
+  .text-hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .template-detail-btn {
+    text-align: right;
+    margin-bottom: 16px;
+    button {
+      margin-left: 8px;
+    }
+  }
+}
+.category-modal,
+.copy-template-modal {
+  :global {
+    .ant-modal-body {
+      padding-top: 16px;
+    }
+    .ant-table {
+      .ant-table-content {
+        .ant-table-scroll {
+          .ant-table-body {
+            border-right: 0;
+            border-bottom: solid 1px #e8e8e8;
+          }
+        }
+      }
+    }
+    .ant-modal-footer {
+      border: none;
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+    .ant-form-item-control {
+      line-height: 18px;
+    }
+  }
+}
+
+// <a /> disabled styles
+.disabledElementA {
+  :global {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.commonTop {
+  :global {
+    .page-head {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+    }
+  }
+}
+
+// card样式覆盖
+.ssrc-page-content-c7n-card-cover {
+  display: flex;
+  flex-direction: column;
+  :global {
+    .c7n-card {
+      .c7n-card-head {
+        padding: 0 0.2rem;
+        border-bottom: 0;
+        .c7n-card-head-title {
+          padding-top: 0.2rem;
+        }
+      }
+      .c7n-card-body {
+        padding: 0.2rem;
+        padding-top: 0;
+      }
+    }
+    .c7n-card:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    .c7n-card:last-child {
+      flex-grow: 1;
+    }
+  }
+}
+
+.ssrc-card () {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .c7n-card-body {
+    padding: 0;
+  }
+
+  .c7n-card-head {
+    min-height: 0;
+    border-bottom: none;
+    padding: 0 0 16px 11px;
+
+    &:before {
+      top: 5px;
+      height: 12px;
+    }
+
+    .c7n-card-head-wrapper {
+      flex-direction: column;
+
+      .c7n-card-head-title {
+        font-size: 14px;
+        font-weight: 600;
+        flex: none;
+      }
+
+      .c7n-card-extra {
+        font-size: 12px;
+        line-height: 21px;
+        margin-left: 0;
+        padding: 12px 0 0 0;
+        float: left;
+        text-align: left;
+
+        a:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.ssrc-form (@formWidth: false) {
+  & when not (@formWidth =false) {
+    width: @formWidth;
+  }
+
+  &.c7n-pro-form-float-label {
+    margin: 0 -8px;
+  }
+
+  & > table > tbody > tr {
+    &:last-child {
+      .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c7n-pro-field-label-vertical {
+    max-width: 100%;
+    line-height: 18px;
+    padding: 0;
+  }
+
+  .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+    padding: 4px 16px 16px 0;
+    font-weight: 600;
+    line-height: 18px;
+
+    .c7n-pro-output {
+      line-height: 18px;
+    }
+  }
+  .c7n-pro-field-label-help + .icon-help {
+    font-size: 14px;
+  }
+}
+
+.ssrc-modal (@modalWidth: @modal-large-width, @footerHeight: @modal-footer-height) {
+  width: @modalWidth;
+
+  :global {
+    .c7n-pro-modal-header {
+      padding: 15px 20px;
+    }
+
+    .c7n-pro-modal-body {
+      &:last-child {
+        margin-bottom: @footerHeight;
+      }
+
+      .c7n-tabs-tab {
+        font-size: 14px;
+      }
+
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+
+      .ued-detail-card {
+        .ssrc-card();
+      }
+
+      .c7n-pro-form-wrapper {
+        .ssrc-form();
+      }
+    }
+
+    .c7n-pro-modal-footer {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+    }
+  }
+}
+
+.ssrc-medium-modal {
+  .ssrc-modal(@modal-medium-width);
+}
+.ssrc-large-modal {
+  .ssrc-modal(@modal-large-width);
+}
+
+.ssrc-alert-error {
+  min-height: 36px;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+  border: none;
+  margin: -20px -20px 16px -20px;
+  align-items: center;
+  :global {
+    .icon {
+      font-size: 14px;
+      color: #f56349;
+      margin-top: 3px;
+    }
+  }
+}
+
+.ssrc-search-layout {
+  :global {
+    display: flex !important;
+    div {
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &:last-child {
+        margin-left: 8px;
+      }
+
+      .icon {
+        font-size: 16px;
+      }
+    }
+
+    .isActive {
+      color: @primary-color;
+      background-color: #f2f2f2;
+    }
+
+    .isNormal {
+      color: black;
+      background-color: #fff;
+    }
+  }
+}
+.ssrc-search-bar-table {
+  :global {
+    .c7n-pro-table-search-bar-operator-right {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+}

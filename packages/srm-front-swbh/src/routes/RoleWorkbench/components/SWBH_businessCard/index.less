@@ -1,0 +1,51 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+@color-search: #fff;
+@blue: @primary-color;
+
+.super-form {
+  :global {
+    .c7n-pro-input-focused.c7n-pro-input,
+    .c7n-pro-input:focus {
+      border-color: @blue;
+    }
+  }
+
+  .super-input {
+    position: absolute;
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    width: 32px;
+    line-height: 32px;
+
+    &:hover {
+      color: @blue;
+    }
+  }
+}
+
+.super-tabs-list {
+  margin-top: 10px;
+
+  :global {
+    .c7n-tabs-nav .c7n-tabs-tab:hover,
+    .c7n-tabs-nav .c7n-tabs-tab:hover .c7n-tabs-tab-count,
+    .c7n-tabs-second-nav .c7n-tabs-tab:hover,
+    .c7n-tabs-second-nav .c7n-tabs-tab:hover .c7n-tabs-tab-count {
+      color: @blue;
+    }
+
+    .c7n-tabs-ink-bar {
+      background-color: @blue;
+    }
+
+    .c7n-tabs-tab-active {
+      color: @blue;
+
+      .c7n-tabs-tab-count {
+        color: @blue;
+      }
+    }
+  }
+}

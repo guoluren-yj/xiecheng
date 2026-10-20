@@ -1,0 +1,31 @@
+.label-color-container {
+  :global {
+    .color-container {
+      border-radius: 12.5%;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: transparent;
+        font-size: 16px;
+        transform: translateY(-1px);
+      }
+
+      // 选中标签文本颜色
+      i.label-selected-color {
+        color: #fff;
+      }
+    }
+
+    .multipe-color {
+      margin: 0 16px 0 0;
+    }
+    .single-color {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.content {
+  :global {
+    .add-btn {
+      color: @primary-color;
+      margin-bottom: 14px;
+    }
+    .operate {
+      a {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.bannerForm {
+  :global {
+    .upload-pic {
+      width: 95px;
+      height: 100.83px;
+      background: #f8f8f8;
+      border: 1px dashed #ccc;
+      border-radius: 2px;
+      text-align: center;
+      padding-top: 30px;
+      cursor: pointer;
+    }
+    .img-content {
+      position: relative;
+      .preview-img {
+        width: 95px;
+        height: 100.83px;
+        background: #f8f8f8;
+        border: 1px dashed #ccc;
+        border-radius: 2px;
+      }
+      .mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 95px;
+        height: 100.83px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .delete-icon {
+          display: none;
+        }
+        &:hover {
+          .delete-icon {
+            color: #fff;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

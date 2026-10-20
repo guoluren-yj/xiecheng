@@ -1,0 +1,36 @@
+.container {
+  :global {
+    .item {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      vertical-align: top;
+      margin-right: 15px;
+      position: relative;
+      cursor: pointer;
+    }
+    .item.active {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 5px;
+        transform: rotate(-45deg);
+        background: #fff;
+        left: 8px;
+        top: 11px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        transform: rotate(45deg);
+        background: #fff;
+        left: 13px;
+        top: 7px;
+      }
+    }
+  }
+}

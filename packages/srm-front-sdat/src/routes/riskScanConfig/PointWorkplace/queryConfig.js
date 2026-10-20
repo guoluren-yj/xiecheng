@@ -1,0 +1,90 @@
+// 查询条件配置 静态
+import intl from 'utils/intl';
+
+export const getQueryConfig = () => {
+  return {
+    'SDAT.POINT_WORKPLACE_SEARCH_BAR': {
+      sortedEnabled: 1,
+      mergeFieldList: [],
+      systemFilters: [
+        {
+          defaultFlag: 1,
+          // defaultSortedField: 'lastUpdateTime',
+          // defaultSortedOrder: 'desc',
+          filterName: intl.get('sdat.pointWorkplace.placeholder.defaultSelected').d('默认筛选'),
+          allFields: [
+            {
+              customComparisonSet: ['IN'],
+              fieldAlias: 'dateRange',
+              fieldCode: 'dateRange',
+              fieldEditable: 1,
+              fieldName: intl.get('sdat.pointWorkplace.model.timeRange').d('时间范围'),
+              fieldVisible: 1,
+              modelCode: 'dateRange',
+              proDefaultFlag: 0,
+              showFlag: 0,
+              widget: {
+                dateFormat: 'YYYY-MM-DD',
+                fieldWidget: 'DATE_PICKER',
+                linkNewWindow: 0,
+                multipleFlag: 1,
+              },
+              rank: 4,
+              gridSeq: 6,
+              sortedFlag: 0,
+              usedFlag: 1,
+              fixedFlag: 1,
+            },
+            {
+              customComparisonSet: ['='],
+              fieldAlias: 'serviceId',
+              fieldCode: 'serviceId',
+              fieldEditable: 1,
+              fieldName: intl.get(`sdat.pointWorkplace.model.serviceName`).d(' 服务名称'),
+              fieldVisible: 1,
+              lovInfo: { displayField: 'serviceName', valueField: 'serviceId' },
+              modelCode: 'serviceId',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                fieldWidget: 'LOV',
+                linkNewWindow: 0,
+                lovInfo: { displayField: 'serviceName', valueField: 'serviceId' },
+                sourceCode: 'SDAT.WB2_SERVICE_LIST',
+                queryField: 'serviceName',
+              },
+              gridSeq: 1,
+              sortedFlag: 0,
+              fixedFlag: 1,
+              usedFlag: 1,
+              rank: 2,
+            },
+            {
+              customComparisonSet: ['='],
+              fieldAlias: 'triggerType',
+              fieldCode: 'triggerType',
+              fieldEditable: 1,
+              fieldName: intl.get(`sdat.pointWorkplace.model.triggerType`).d('触发方式'),
+              fieldVisible: 1,
+              lovInfo: { displayField: 'meaning', valueField: 'value' },
+              modelCode: 'triggerType',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                fieldWidget: 'SELECT',
+                linkNewWindow: 0,
+                lovInfo: { displayField: 'meaning', valueField: 'value' },
+                sourceCode: 'SDAT.RISK_TRIGGER_TYPE',
+              },
+              gridSeq: 1,
+              sortedFlag: 0,
+              fixedFlag: 1,
+              usedFlag: 1,
+              rank: 2,
+            },
+          ].filter(Boolean),
+        },
+      ],
+    },
+  };
+};

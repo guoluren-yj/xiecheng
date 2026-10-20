@@ -1,0 +1,155 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.currentCcompany {
+  position: absolute;
+  left: 184px;
+  .currentCcompanytitle {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 400;
+  }
+  :global {
+    .c7n-pro-select-wrapper {
+      vertical-align: initial;
+    }
+    .c7n-pro-select-wrapper .c7n-pro-select {
+      background-color: #fff;
+      border: none;
+      font-weight: 600;
+    }
+    .c7n-pro-select:not(textarea):not(:last-child) {
+      padding-right: 0.32rem;
+    }
+  }
+}
+.disclaimerSignflex {
+  display: flex;
+  // min-height: 500px;
+  // padding: 12px;
+  background-color: #fff;
+  .disclaimerSignLeft {
+    width: 184px;
+    padding: 20px;
+    height: auto;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .disclaimerSignRight {
+    flex: 1;
+    padding: 20px;
+    min-height: 600px; // 解决工作流中出现，iframe高度不高，无限计算的问题
+  }
+  .disclaimerSignLefttitle {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
+  .disclaimerSignNoDsec {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .disclaimerSignList {
+    :global {
+      .ant-btn {
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #d5dae0;
+      }
+    }
+  }
+  .disclaimerSignListItem {
+    background: #fafafa;
+    border: 1px dashed rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    height: 140px;
+    width: 140px;
+    position: relative;
+    & > img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+  .disclaimerSignListWrapper {
+    height: 444px;
+    overflow: hidden;
+  }
+  .disclaimerSignListSelect {
+    border: 2px dashed #01cbe0;
+  }
+}
+
+.mobileModal {
+  :global {
+    .ant-input {
+      width: 65%;
+    }
+    button {
+      margin-left: 15px;
+    }
+  }
+}
+
+.titleConent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .titleConentflex {
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    font-size: 18px;
+    color: #000;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  .tag-pcKindCode {
+    font-size: 12px;
+    color: #f88d10;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 5px;
+    margin-left: 8px;
+    background: rgba(252, 160, 0, 0.1);
+    border-radius: 2px;
+  }
+  .tag-pcTypeName {
+    font-size: 12px;
+    color: #47b881;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 5px;
+    margin-left: 8px;
+    background: rgba(71, 184, 129, 0.1);
+    border-radius: 2px;
+  }
+}
+.infoConent {
+  margin-top: 4px;
+  display: flex;
+  .infoTag {
+    padding-right: 24px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .infoTotal {
+    font-size: 18px;
+    color: #f56349;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .infoTemplate {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px;
+    font-weight: 600;
+  }
+}

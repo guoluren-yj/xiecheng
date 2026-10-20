@@ -1,0 +1,173 @@
+import React, { Component } from 'react';
+import { Modal } from 'hzero-ui';
+import { isPromise } from 'utils/utils';
+
+// eslint-disable-next-line func-names
+const KeyGen = (function* (id) {
+  while (true) {
+    // eslint-disable-next-line
+    yield `modal-${id++}`;
+  }
+})(1);
+
+let containerInstanse;
+
+export function registerContainer(container) {
+  containerInstanse = container;
+}
+
+export default class ModalContainer extends Component {
+  state = {
+    modals: [],
+  };
+
+  open(modal) {
+    const { modals } = this.state;
+    const props = modal;
+    props.visible = true;
+    modals.push(props);
+    this.setState({
+      modals,
+    });
+  }
+
+  confirmLoading(key) {
+    this.setModalProp(key, {
+      confirmLoading: true,
+    });
+  }
+
+  isLoading(key) {
+    const { modals } = this.state;
+    const result = modals.filter((item) => {
+      return item.key === key;
+    });
+    const modal = result[0];
+    return modal && modal.confirmLoading === true;
+  }
+
+  setModalProp(key, props) {
+    const { modals } = this.state;
+    const result = modals.filter((item) => {
+      return item.key === key;
+    });
+    const modal = result[0];
+    if (modal) {
+      const prop = {
+        ...modal,
+        ...props,
+      };
+      modals.splice(modals.indexOf(modal), 1, prop);
+      this.setState({
+        modals,
+      });
+    }
+  }
+
+  close(key) {
+    this.setModalProp(key, {
+      visible: false,
+    });
+  }
+
+  handleAfterClose(p) {
+    const items = this.state.modals.filter((modal) => {
+      return modal.key !== p.key;
+    });
+    this.setState({
+      modals: items,
+    });
+    if (p.afterClose) {
+      p.afterClose();
+    }
+  }
+
+  render() {
+    const { modals } = this.state;
+    const items = modals.map((props, index) => {
+      const { side, children, ...other } = props;
+      let otherProps = other;
+      if (side) {
+        otherProps = {
+          wrapClassName: `ant-modal-sidebar-${side}`,
+          transitionName: `move-${side}`,
+          ...other,
+        };
+      }
+      return (
+        <Modal
+          key={props.key || index}
+          {...otherProps}
+          afterClose={this.handleAfterClose.bind(this, props)}
+          mask
+          destroyOnClose
+        >
+          {children}
+        </Modal>
+      );
+    });
+    return <React.Fragment>{items}</React.Fragment>;
+  }
+}
+
+export function getContainer() {
+  return containerInstanse;
+}
+
+const noop = () => {};
+
+export function open(prop) {
+  let props = prop;
+  const container = getContainer();
+  const key = KeyGen.next().value;
+
+  const { onOk = noop, onCancel = noop, ...otherProps } = prop;
+
+  function close() {
+    container.close(key);
+  }
+
+  const okFn = (fn) => {
+    return async () => {
+      const v = fn();
+      if (isPromise(v)) {
+        try {
+          container.setModalProp(key, {
+            confirmLoading: true,
+          });
+          if ((await v) !== false) {
+            close();
+          }
+        } finally {
+          container.setModalProp(key, {
+            confirmLoading: false,
+          });
+        }
+      } else if (v !== false) {
+        close();
+      }
+    };
+  };
+
+  const cancelFn = (fn) => {
+    return () => {
+      if (fn() !== false && !container.isLoading(key)) {
+        close();
+      }
+    };
+  };
+
+  props = {
+    key,
+    onCancel: cancelFn(onCancel),
+    onOk: okFn(onOk),
+    ...otherProps,
+    close,
+  };
+  container.open(props);
+
+  return {
+    close,
+    props,
+  };
+}

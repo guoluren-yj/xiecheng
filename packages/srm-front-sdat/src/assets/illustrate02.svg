@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="129px" viewBox="0 0 224 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustrate02</title>
+    <defs>
+        <filter x="-2.8%" y="-1.7%" width="105.7%" height="106.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0 125 0 125 100 0 100"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="42%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F7F8FA" offset="0%"></stop>
+            <stop stop-color="#F7F8FA" offset="92.521%"></stop>
+            <stop stop-color="#F7F8FA" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-5" points="0 0 125 0 125 100 0 100"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="27.778%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#F7F8FA" offset="0%"></stop>
+            <stop stop-color="#F7F8FA" offset="92.521%"></stop>
+            <stop stop-color="#F7F8FA" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-8" points="0 0 125 0 125 100 0 100"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关系排查-排查中" transform="translate(-923, -296)">
+            <g id="编组-6" transform="translate(824, 296)">
+                <g id="illustrate02" transform="translate(99, 0)">
+                    <rect id="矩形" x="0" y="0" width="224" height="126"></rect>
+                    <g id="编组-16" filter="url(#filter-1)" transform="translate(42, 8)">
+                        <rect id="矩形" fill="#F2F3F5" x="0" y="0" width="140.8" height="116.43038" rx="3.024"></rect>
+                        <g id="LB0LF1YBGTX7I" transform="translate(8.2, 8.4304)">
+                            <g id="a-link" fill="#FFFFFF" fill-rule="nonzero">
+                                <polygon id="a" points="0 0 125 0 125 100 0 100"></polygon>
+                            </g>
+                            <g id="Clipped">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <g id="a"></g>
+                                <polygon id="路径" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)" points="21.875 0 25 0 25 7.8125 21.875 7.8125"></polygon>
+                            </g>
+                            <g id="Clipped">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="a"></g>
+                                <path d="M21.875,32.8125 L25,32.8125 L25,37.5 L21.875,37.5 L21.875,32.8125 Z M21.875,62.5 L25,62.5 L25,67.1875 L21.875,67.1875 L21.875,62.5 Z" id="形状" fill="url(#linearGradient-7)" fill-rule="nonzero" mask="url(#mask-6)"></path>
+                            </g>
+                            <g id="Clipped">
+                                <mask id="mask-9" fill="white">
+                                    <use xlink:href="#path-8"></use>
+                                </mask>
+                                <g id="a"></g>
+                                <polygon id="路径" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-9)" points="21.875 92.1875 25 92.1875 25 100 21.875 100"></polygon>
+                            </g>
+                            <g id="Clipped" transform="translate(13.5, 10.375)" fill-rule="nonzero">
+                                <g id="编组">
+                                    <path d="M9.93757244,19.8751454 C13.4879252,19.8751454 16.7685866,17.9810548 18.543763,14.9063591 C20.3189394,11.8316634 20.3189394,8.04348207 18.543763,4.96878636 C16.7685866,1.89409065 13.4879252,9.4296249e-08 9.93757244,9.4296249e-08 C4.4492027,9.4296249e-08 0,4.449203 0,9.93757274 C0,15.4259425 4.4492027,19.8751454 9.93757244,19.8751454 L9.93757244,19.8751454 Z M9.93757244,16.5630944 C6.27839787,16.5630944 3.31205079,13.5967473 3.31205079,9.93757274 C3.31205079,6.27839818 6.27839787,3.31205109 9.93757244,3.31205109 C13.596747,3.31205109 16.5630941,6.27839818 16.5630941,9.93757274 C16.5630941,13.5967473 13.596747,16.5630944 9.93757244,16.5630944 L9.93757244,16.5630944 Z" id="形状" fill="#BED8FF"></path>
+                                    <path d="M9.93757244,0 C12.8630624,-0.000402487741 15.6401045,1.28826259 17.5286,3.52255817 C19.4170955,5.75685375 20.2251597,8.70975957 19.7374387,11.5943081 L16.3544051,11.5943081 C16.8669077,9.60984779 16.4321367,7.49991623 15.1768618,5.8797229 C13.9215869,4.25952956 11.9871434,3.31149719 9.93757244,3.31205109 L9.93757244,0 Z" id="路径" fill="#2C81FF"></path>
+                                </g>
+                            </g>
+                            <g id="编组" transform="translate(13, 40)" fill-rule="nonzero">
+                                <path d="M9.93757244,19.8751454 C13.4879252,19.8751454 16.7685866,17.9810548 18.543763,14.9063591 C20.3189394,11.8316634 20.3189394,8.04348207 18.543763,4.96878636 C16.7685866,1.89409065 13.4879252,9.4296249e-08 9.93757244,9.4296249e-08 C4.4492027,9.4296249e-08 0,4.449203 0,9.93757274 C0,15.4259425 4.4492027,19.8751454 9.93757244,19.8751454 L9.93757244,19.8751454 Z M9.93757244,16.5630944 C6.27839787,16.5630944 3.31205079,13.5967473 3.31205079,9.93757274 C3.31205079,6.27839818 6.27839787,3.31205109 9.93757244,3.31205109 C13.596747,3.31205109 16.5630941,6.27839818 16.5630941,9.93757274 C16.5630941,13.5967473 13.596747,16.5630944 9.93757244,16.5630944 L9.93757244,16.5630944 Z" id="形状" fill="#BED8FF"></path>
+                                <path d="M9.93757244,0 C12.8630624,-0.000402487741 15.6401045,1.28826259 17.5286,3.52255817 C19.4170955,5.75685375 20.2251597,8.70975957 19.7374387,11.5943081 L16.3544051,11.5943081 C16.8669077,9.60984779 16.4321367,7.49991623 15.1768618,5.8797229 C13.9215869,4.25952956 11.9871434,3.31149719 9.93757244,3.31205109 L9.93757244,0 Z" id="路径" fill="#2C81FF"></path>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 14.0625)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="56.25" height="6.25" rx="2"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 43.75)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="62.5" height="6.25" rx="2"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 73.4375)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="50" height="6.25" rx="2"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 23.4375)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="35.9375" height="3.125" rx="1"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 53.125)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="46.875" height="3.125" rx="1"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(43.75, 82.8125)" fill="#E8E9EB" fill-rule="nonzero">
+                                <rect id="矩形" x="0" y="0" width="37.5" height="3.125" rx="1"></rect>
+                            </g>
+                            <g id="Clipped" transform="translate(14, 70)" fill-rule="nonzero">
+                                <g id="编组">
+                                    <circle id="椭圆形" fill="#69CE30" cx="9.9375" cy="9.9375" r="9.9375"></circle>
+                                    <path d="M8.08060714,14.7018214 L4.29867857,10.9454464 C4.19238414,10.8370653 4.13539204,10.6897074 4.14109821,10.5380089 C4.14109821,10.3719107 4.193625,10.235625 4.29867857,10.1291518 L5.13626786,9.31427679 C5.23464857,9.19711101 5.3808085,9.13081705 5.53376786,9.13398214 C5.69134821,9.13398214 5.83189286,9.19360714 5.9525625,9.31427679 L8.48804464,11.8511786 L13.9224375,6.41678571 C14.0309761,6.30101404 14.1825385,6.23525136 14.3412321,6.23507143 C14.5002321,6.23507143 14.6322589,6.29469643 14.7387321,6.41678571 L15.5763214,7.23166071 C15.681375,7.33671429 15.7339018,7.473 15.7339018,7.63909821 C15.739608,7.79079664 15.6826159,7.9381546 15.5763214,8.04653571 L8.89548214,14.7046607 C8.79388387,14.8232287 8.64412133,14.8895 8.48804464,14.8849554 C8.33173413,14.8891482 8.18193155,14.8223373 8.08060714,14.7032411 L8.08060714,14.7018214 Z" id="路径" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

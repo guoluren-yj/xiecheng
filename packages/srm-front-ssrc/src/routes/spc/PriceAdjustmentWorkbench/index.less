@@ -1,0 +1,137 @@
+@import '~hzero-front/lib/srm-variables.less';
+// constant
+@zero: 0;
+@default-distance: 16px;
+@default-font-size: 16px;
+@font-weight-bold: 600;
+
+// common color
+@black-color: #000000;
+@red-color: #f56349;
+@title-left-line-color: #36c2cf;
+
+.create-base {
+  color: @black-color;
+  font-size: @default-font-size;
+  font-weight: @font-weight-bold;
+  margin-bottom: @default-distance;
+}
+
+.card-sub-title {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 16px;
+  font-weight: 600;
+
+  &:first-of-type {
+    margin-top: 0px;
+  }
+
+  .card-sub-title-line {
+    display: inline-block;
+    margin-right: 8px;
+    height: 12px;
+    border-left: 3px solid @primary-color;
+  }
+}
+
+.m-b(@distance: 16px) {
+  margin-bottom: @distance;
+}
+
+.more-action {
+  & > span {
+    display: flex;
+  }
+}
+
+.rfx-detail-list-card {
+  position: relative;
+  margin-right: @zero;
+
+  // .custom-page-content:not(:first-child) {
+  //   margin-top: 8px;
+  // }
+
+  .custom-page-content:not(:last-child) {
+    border-bottom: 8px solid #f4f4f4;
+  }
+
+  .custom-page-content {
+    padding: 20px;
+    background-color: #fff;
+    // margin-left: 4px !important;
+    .m-b(@zero);
+  }
+
+  .rfx-card-item-title-line {
+    // todo class will delete
+    display: inline-block;
+    height: 12px;
+    border-left: 3px @title-left-line-color solid;
+    margin-right: @default-distance / 2;
+  }
+
+  .rfx-card-item-title {
+    color: @text-color;
+    font-size: @default-font-size;
+    font-weight: @font-weight-bold;
+    .m-b();
+  }
+
+  .rfx-card-item-title-level-two {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: @font-weight-bold;
+    .m-b();
+  }
+
+  // table
+  :global {
+    .c7n-pro-table {
+      &-thead {
+        color: @black-color;
+        font-weight: bold;
+      }
+
+      &-cell-inner {
+        color: @black-color;
+      }
+    }
+  }
+}
+
+.more-option {
+  :global {
+    .c7n-pro-btn-wrapper:not(.c7n-pro-btn-disabled) {
+      &:hover span {
+        color: @link-color;
+      }
+    }
+  }
+
+  span {
+    color: rgba(0, 0, 0, 1);
+    transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  a {
+    margin-left: 0 !important;
+  }
+}
+
+.create-base {
+  color: @black-color;
+  font-size: @default-font-size;
+  font-weight: @font-weight-bold;
+  margin-bottom: @default-distance;
+}
+
+.update-container {
+  position: relative;
+  // background: #f4f5f7;
+  padding: @zero;
+  height: calc(100% - 76px);
+  overflow-y: scroll;
+}

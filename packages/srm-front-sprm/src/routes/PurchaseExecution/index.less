@@ -1,0 +1,145 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.content-tabs {
+  :global {
+    margin-top: -4px;
+    padding-bottom: 12px;
+    .c7n-tabs-bar {
+      padding-bottom: 12px;
+      display: flex;
+      margin-bottom: 12px;
+      .c7n-tabs-nav-container {
+        display: flex;
+        flex: 1;
+        margin-bottom: 0;
+        align-items: flex-end;
+      }
+      .c7n-tabs-extra-content {
+        line-height: 30px;
+      }
+      .sprm-reconciliation-mode {
+        height: 30px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 2px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        > .c7n-radio-button-wrapper {
+          font-weight: 400px;
+          color: #000;
+          font-size: 14px;
+          padding: 0;
+          cursor: pointer;
+          border: 0 solid #fff !important;
+          > span:last-child {
+            padding: 3px 12px 4px;
+            line-height: 28px;
+          }
+        }
+        .c7n-radio-button-wrapper-checked {
+          box-shadow: none;
+          > span:last-child {
+            background: #fff;
+            font-weight: 600;
+          }
+        }
+
+        .c7n-radio-button-wrapper:not(:first-child)::before {
+          content: none;
+        }
+      }
+    }
+    .tab-number {
+      font-weight: 400;
+      padding: 5px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.65);
+      transition-duration: 0.3s, 0.3s;
+    }
+    .c7n-tabs-nav {
+      height: 30px;
+      font-size: 14px;
+      margin: 0;
+      > .c7n-tabs-tab {
+        padding: 0;
+        line-height: 28px;
+        transition: none;
+      }
+      .c7n-tabs-tab-active {
+        font-weight: bold;
+        color: #36c2cf;
+        transition: none;
+        .tab-number {
+          padding: 5px;
+          font-weight: 700;
+          font-size: 14px;
+          color: #36c2cf;
+        }
+      }
+      & > :not(.c7n-tabs-tab-active) {
+        color: #000;
+      }
+      .c7n-tabs-ink-bar-animated {
+        width: 0 !important;
+      }
+    }
+  }
+}
+
+.batch-all-edit-alert {
+  width: 380px;
+  padding: 0.08rem 0.15rem;
+  margin: -0.24rem 0 0.24rem -0.24rem;
+  background-color: #e6f7ff;
+  border: none;
+  color: #1890ff;
+  .batch-all-edit-alert-message {
+    color: #1890ff;
+    text-align: justify;
+    i {
+      margin-top: -4px;
+      margin-right: 6px;
+    }
+  }
+}
+
+// tag颜色渲染
+.warning-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.notice-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.danger-tag {
+  color: @color-danger !important;
+  background-color: @color-danger-percent10;
+  margin-bottom: 1px;
+}
+
+.success-tag {
+  color: @color-success !important;
+  background-color: @color-success-percent10;
+  margin-bottom: 1px;
+}
+
+.row-agent-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  img {
+    height: 16px;
+    width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '~hzero-front/lib/srm-variables.less';
+.card-container {
+  :global {
+    .card-header {
+      padding-left: 11px;
+      position: relative;
+      .sagm-card-title {
+        height: 22px;
+        font-size: 14px;
+        color: @text-1;
+        line-height: 22px;
+        font-weight: 600;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 3px;
+        height: 14px;
+        background-color: @primary-color;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+    .card-body {
+      padding: 16px 0 0 0;
+    }
+  }
+}
+.card-container:not(:last-child) {
+  margin-bottom: 32px;
+}

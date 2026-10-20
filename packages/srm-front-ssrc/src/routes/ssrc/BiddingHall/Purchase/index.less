@@ -1,0 +1,582 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import './pur-common.less';
+
+:global {
+  // 全屏模式下 覆盖原来的高度 ps: 解决safari浏览器高度撑不满整个屏幕问题
+  .ssrc-bidding-hall-fullscreen {
+    .page-container {
+      height: 100% !important;
+    }
+  }
+}
+
+.text {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  // line-height: 18px;
+  font-weight: 400;
+}
+
+// 带有返回按钮的头
+.bidding-hall-header-wrap {
+  background-color: @fill-1;
+  height: 34px;
+  min-height: 34px;
+  line-height: 34px;
+  :global {
+    .page-head-title {
+      height: 34px;
+      min-height: 34px;
+      line-height: 34px;
+    }
+  }
+  .ssrc-page-head-title-wrapper {
+    .flexCenter();
+    .text();
+    .icon-navigate_before {
+      // 返回icon
+      font-size: 0.16rem;
+      margin-right: 0.04rem;
+    }
+  }
+  .go-back {
+    // 头部返回按钮
+    .flexCenter();
+    cursor: pointer;
+  }
+  .split-line {
+    // 分割线
+    margin: 0 0.115rem 0 0.115rem;
+    border-right: 1px solid @fill-4;
+    height: 0.08rem;
+  }
+}
+.bidding-hall-content-wrapper {
+  // height: 100%;
+  height: calc(100% - 34px);
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container,
+    .c7n-layout {
+      height: 100%;
+    }
+  }
+}
+// 主题内容layout样式
+.bidding-hall-layout {
+  &-header,
+  &-content,
+  &-right-sider {
+    background-color: @bg-color;
+  }
+
+  // 聊天室没有展开，需要编剧调整
+  &-content-no-right {
+    margin-right: 0 !important;
+  }
+
+  .sidebar-hide {
+    // display: none;
+    // right: -200px;
+    // transform: translateX(-100px);
+    width: 0 !important;
+    flex: 0 0 0 !important;
+    min-width: 0 !important;
+    transition: all 0.3s ease-out;
+
+    :global {
+      .ssrc-bidding-hall-chat-room-content {
+        display: none;
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+
+  &-left-sider {
+    width: 2.9rem;
+  }
+  &-right-sider {
+    min-width: 3rem !important;
+    max-width: 4rem !important;
+    // padding: 16px;
+    // padding: 0.2rem;
+
+    .tabs-message-wrap {
+      height: calc(100% - 42px);
+      overflow-y: auto;
+    }
+
+    .tabs-message-wrap::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    .tabs-message-wrap {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    :global {
+      .c7n-tabs > .c7n-tabs-content {
+        height: 100%;
+      }
+
+      .c7n-tabs-bar {
+        padding: 16px 16px 0 16px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &-main-content-wrapper {
+    // 主题内容
+    margin: 0.08rem;
+    height: calc(100% - 60px) !important;
+    .flex();
+    flex-direction: column;
+    overflow: hidden;
+  }
+  &-bidding-step-time {
+    background-color: @bg-color;
+    margin-bottom: 8px;
+    padding: 0.12rem 0.2rem;
+    line-height: 1;
+    height: auto;
+  }
+  &-detail-content-wrapper {
+    // height: calc(100% - 60px) !important;
+    flex: 1;
+    overflow: auto;
+  }
+  &-content {
+    margin: 0 0.08rem;
+  }
+}
+
+// 布局-头
+.bidding-hall-layout-header {
+  .flexCenter();
+  padding: 0 0.16rem;
+  .pur-layout-header {
+    .flexCenter();
+    width: 100%;
+    justify-content: space-between;
+    line-height: 0.32rem;
+    &-left {
+      flex: 1;
+      // 头-左
+      & > span {
+        margin-right: 0.08rem;
+      }
+      .flexCenter();
+      .rfxTitle-rfxNum {
+        font-family: PingFangSC-Semibold, sans-serif;
+        font-size: 0.16rem;
+        color: #1d2129;
+        font-weight: 600;
+        max-width: 2.8rem;
+        display: inline-block;
+        .ellipsis();
+      }
+      .broadcast-wrapper {
+        .flexCenter();
+        width: 4.8rem;
+        // flex: 1;
+        background: #f7f8fa;
+        border-radius: 0.16rem;
+        padding-right: 0.165rem;
+        margin-left: 0.28rem;
+      }
+      .broadcast-svg {
+        padding: 0 0.1283rem 0 0.165rem;
+      }
+      .broadcast-words-loop {
+        width: calc(100% - 0.44rem);
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .broadcast-animate {
+        padding: 0 0.12rem;
+        display: inline-block;
+        white-space: nowrap;
+        animation: wordsLoop 15s linear infinite normal;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+
+      @keyframes wordsLoop {
+        0% {
+          transform: translateX(3.5rem);
+          -webkit-transform: translateX(3.5rem);
+        }
+        100% {
+          transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+        }
+      }
+
+      @-webkit-keyframes wordsLoop {
+        0% {
+          transform: translateX(3.5rem);
+          -webkit-transform: translateX(3.5rem);
+        }
+        100% {
+          transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+        }
+      }
+      :global {
+        // tag标签
+        .c7n-tag {
+          border: none;
+          margin-right: 0.04rem;
+        }
+      }
+    }
+    &-right {
+      // 头-右
+      .header-button {
+        display: inline-flex;
+        font-family: PingFangSC-Semibold, sans-serif;
+        font-size: 0.12rem;
+        color: #000;
+        line-height: 0.18rem;
+        font-weight: 600;
+        &-icon {
+          margin-right: 0.04rem;
+        }
+        &-icon-small {
+          font-size: 14px;
+          height: 14px;
+          line-height: 18px;
+          margin-right: 0.04rem;
+        }
+        &-icon-help {
+          font-size: 14px;
+          height: 14px;
+          line-height: 18px;
+          margin-left: 0.04rem;
+          color: @fill-3;
+        }
+        &-text {
+          max-width: 0.9rem;
+          .ellipsis();
+        }
+      }
+    }
+  }
+}
+
+// 布局-左
+.bidding-hall-layout-left-sider {
+  background-color: #f0f2f5;
+  flex: 0 0 2.9rem !important;
+  max-width: 2.9rem !important;
+  width: 2.9rem !important;
+  :global {
+    .c7n-layout-sider-children {
+      .flex();
+      flex-direction: column;
+    }
+  }
+  .pur-left-sider-top {
+    // 左上
+    background-color: @bg-color;
+    margin-bottom: 0.08rem;
+    padding: 0.2rem;
+    // 标题
+    h3 {
+      font-weight: 600;
+      font-size: 0.16rem;
+      margin-bottom: 0.16rem;
+    }
+    &-rule-form {
+      :global {
+        .c7n-pro-field-label > label {
+          padding-top: 0.04rem;
+          padding-bottom: 0.04rem;
+        }
+        .c7n-pro-field-label > label > span {
+          line-height: 1;
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 12px;
+          color: #868d9c;
+          font-weight: 400;
+        }
+        .c7n-pro-field-output .c7n-pro-output {
+          line-height: 1;
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 12px;
+          color: #1d2129;
+          font-weight: 400;
+        }
+        table > tbody > tr > td {
+          vertical-align: middle;
+        }
+      }
+    }
+    :global {
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+        padding: 0.04rem 0;
+      }
+    }
+  }
+  .pur-left-sider-bottom {
+    // 左下
+    background-color: @bg-color;
+    flex: 1;
+  }
+}
+
+// 布局-中
+.bidding-hall-layout-content {
+  padding: 0.2rem;
+  .flex();
+  flex-direction: column;
+  .pur-main-content-bidding-site {
+    // 竞价现场
+    &-title {
+      padding-bottom: 0.16rem;
+      color: #4e5769;
+      font-family: PingFangSC-Regular, sans-serif;
+      font-size: 0.12rem;
+      font-weight: 400;
+      &-alert {
+        width: 100%;
+        height: 0.32rem;
+        line-height: 0.32rem;
+        background: #f7f8fa;
+        border-radius: 0.16rem;
+        padding: 0 0.16rem;
+        .flexCenter();
+      }
+      &-icon {
+        color: #f06200;
+        font-size: 0.16rem;
+      }
+      &-text {
+        padding: 0 0.12rem;
+        flex: 1;
+        .ellipsis();
+      }
+      &-close {
+        cursor: pointer;
+        :global {
+          .icon {
+            font-size: 0.18rem;
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    &-detail {
+      display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      grid-template-rows: 0.6rem;
+      column-gap: 0.08rem;
+      padding: 0.16rem 0;
+
+      &-column {
+        .flexCenter();
+        justify-content: space-between;
+        border: 0.01rem solid #e5e7ec;
+        border-radius: 0.02rem;
+        padding: 0.16rem;
+        width: 100%;
+      }
+
+      &-label {
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 0.12rem;
+        color: #868d9c;
+        line-height: 0.18rem;
+        font-weight: 400;
+        .ellipsis();
+      }
+
+      &-value {
+        font-family: DIN-Bold, sans-serif;
+        font-size: 0.2rem;
+        color: #1d2129;
+        line-height: 0.18rem;
+        font-weight: 400;
+        .ellipsis();
+        flex: 1 1;
+        padding-left: 4px;
+        text-align: right;
+
+        &-japandutch {
+          font-size: 0.18rem;
+        }
+      }
+    }
+  }
+  // 竞价现场 流程
+  .pur-main-content-bidding-site-process {
+    .flexCenter();
+    justify-content: space-between;
+    &-title {
+      font-family: PingFangSC-Semibold, sans-serif;
+      font-size: 0.16rem;
+      color: #1d2129;
+      font-weight: 600;
+      // max-width: 1.2rem;
+    }
+    &-nodes {
+      margin-right: 8px;
+    }
+    .bidding-site-process-nodes-defer-count-down {
+      .flexCenter();
+      flex: 1;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      min-width: 5rem;
+      .bidding-site-process-nodes-defer-count {
+        min-width: 0.5rem;
+        flex-shrink: 1;
+        max-width: 2rem;
+        line-height: 1;
+        :global {
+          .c7n-tag {
+            width: 100%;
+            .ellipsis();
+          }
+        }
+      }
+    }
+  }
+  .pur-main-content-bidding-list {
+    // 竞价列表
+    flex: 1;
+    .flex();
+    flex-direction: column;
+    // height: 100%;
+    overflow: auto;
+  }
+
+  .pur-main-content-bidding-list-wrapper {
+    flex: 1;
+    .flex();
+    flex-direction: column;
+  }
+
+  .pur-main-content-bidding-list-wrapper-content-main {
+    flex: 1 1;
+    overflow-y: auto;
+  }
+}
+
+// message 全局提示样式
+.ssrc-purchase-message-text {
+  font-size: 0.14rem;
+  color: @text-color;
+  font-weight: 600;
+}
+
+// popover竞价节点样式
+.ssrc-pur-node-item-popover-time {
+  font-size: 0.12rem;
+  color: #4e5769;
+  &-title {
+    font-weight: 600;
+    color: #1d2129;
+  }
+  &-value {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+  &-closed-label {
+    margin-right: 0.08rem;
+    color: #868d9c;
+  }
+}
+
+// 倒计时
+.bidding-hall-process-header-count-down {
+  .flex();
+  align-items: baseline;
+  text-align: right;
+  margin-left: 0.16rem;
+  flex-shrink: 1;
+  min-width: 0.5rem;
+}
+.bidding-hall-process-header-count-down-label {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 0.12rem;
+  color: #4e5769;
+  font-weight: 400;
+  margin-right: 0.08rem;
+  display: inline-block;
+  min-width: 0.5rem;
+}
+.bidding-hall-process-header-count-down-value {
+  font-family: DIN-Bold, sans-serif;
+  font-size: 0.2rem;
+  color: #e64322;
+  font-weight: 400;
+  min-width: 0.5rem;
+  white-space: nowrap;
+}
+
+.anchor-icon {
+  cursor: pointer;
+  width: 12px;
+  height: 56px;
+  position: fixed;
+  right: 310px;
+  top: 50%;
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d8d6d6;
+  border: 1px solid #c0bebe;
+  border-radius: 25px 0 0 25px;
+  z-index: 1;
+}
+
+.anchor-icon-right {
+  right: 6px;
+}
+
+.sidebar-hide-all {
+  display: none;
+}
+
+.anchor-icon-custom-left {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* Internet Explorer */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+}
+
+.ssrc-purchase-bidding-hall-header-section-wrap {
+  line-height: 34px;
+  margin-left: 16px;
+}
+
+.pur-main-content-bidding-site-current-round-wrap {
+  margin-left: 24px;
+}
+
+.pur-main-content-bidding-site-current-round-label {
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 0.12rem;
+  color: #868d9c;
+  font-weight: 400;
+}
+
+.pur-main-content-bidding-site-current-round-value {
+  font-family: DIN-Bold, sans-serif;
+  font-size: 0.16rem;
+  color: #1d2129;
+  font-weight: 400;
+  padding-left: 8px;
+}

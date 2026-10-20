@@ -1,0 +1,22 @@
+.tenant-modal-title {
+  position: relative;
+  margin-bottom: 18px;
+  font-weight: 600;
+
+  &::before {
+    content: ' ';
+    display: inline-block;
+    width: 3px;
+    height: 18px;
+    margin-right: 8px;
+    background-color: #29BEDA;
+    vertical-align: bottom;
+  }
+}
+.edit-form {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+}

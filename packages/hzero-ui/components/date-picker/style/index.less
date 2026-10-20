@@ -1,0 +1,29 @@
+@import "../../style/themes/default";
+@import "../../style/mixins/index";
+
+@calendar-prefix-cls: ~"@{ant-prefix}-calendar";
+@c7n-pro-calendar-picker-prefix-cls: ~"c7n-pro-calendar-picker";
+
+.@{calendar-prefix-cls}-picker {
+  &.@{c7n-pro-calendar-picker-prefix-cls}-wrapper {
+    vertical-align: initial;
+  }
+
+  .@{c7n-pro-calendar-picker-prefix-cls}.@{ant-prefix}-input {
+    border-radius: 4px !important;
+    height: @input-height-base !important;
+    background-color: transparent;
+  }
+
+  &:not(.@{c7n-pro-calendar-picker-prefix-cls}-focused):not(.@{c7n-pro-calendar-picker-prefix-cls}-disabled) .@{c7n-pro-calendar-picker-prefix-cls}.@{ant-prefix}-input:hover {
+    border-color: @input-hover-border-color !important;
+  }
+
+  &-lg .@{c7n-pro-calendar-picker-prefix-cls}.@{ant-prefix}-input {
+    height: @input-height-lg !important;
+  }
+
+  &-sm .@{c7n-pro-calendar-picker-prefix-cls}.@{ant-prefix}-input {
+    height: @input-height-sm !important;
+  }
+}

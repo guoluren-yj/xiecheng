@@ -1,0 +1,145 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.multiLineLabel {
+  color: rgba(0, 0, 0, 0.65);
+  margin-right: 4px;
+}
+
+.ellipsis {
+  line-height: 10px;
+  vertical-align: top;
+}
+
+.over-content {
+  div {
+    margin-bottom: 4px;
+  }
+  :global {
+    .moreContent {
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .companyInfo {
+      display: flex;
+
+      .companyName {
+        color: rgba(0, 0, 0, 0.65);
+        margin-right: 4px;
+        flex: 1;
+      }
+
+      .attachment {
+        margin-left: 8px;
+      }
+
+      .qutationLine {
+        width: 50px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.popoverContent {
+  color: rgba(0, 0, 0, 1);
+}
+// c7n-pro-output c7n-pro-output-wrapper c7n-pro-table-cell-inner
+.wide-display {
+  :global {
+    tbody .c7n-pro-table-cell-inner {
+      padding: 8px !important;
+    }
+    .c7n-pro-table-cell-inner {
+      line-height: 18px;
+      max-height: 70px;
+      overflow: hidden;
+      vertical-align: top;
+      text-overflow: unset;
+      padding: 8px;
+      // display: inline-block !important;
+      div {
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        border: none;
+      }
+    }
+    .c7n-pro-table-selection-column > .c7n-pro-table-cell-inner {
+      height: auto !important;
+      line-height: normal !important;
+      overflow: hidden;
+      vertical-align: top;
+      text-overflow: unset;
+      padding: 8px;
+    }
+  }
+}
+// tag颜色渲染
+.warning-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.notice-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.danger-tag {
+  color: @color-danger !important;
+  background-color: @color-danger-percent10;
+  margin-bottom: 1px;
+}
+
+.success-tag {
+  color: @color-success !important;
+  background-color: @color-success-percent10;
+  margin-bottom: 1px;
+}
+
+.contect-item {
+  :global {
+    .c7n-tabs-bar {
+      padding-top: 16px;
+      // padding-left: 20%;
+      text-align: left;
+      width: 15%;
+      .c7n-tabs-nav-animated > .c7n-tabs-ink-bar-animated {
+        transform: none !important;
+        background-color: transparent !important;
+      }
+      .c7n-tabs-tab {
+        text-align: left !important;
+        width: 100%;
+        margin: 0;
+        height: 36px;
+        span {
+          height: 100%;
+          width: 100%;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+      .c7n-tabs-tab:hover {
+        background: rgba(0, 0, 0, 0.05) !important;
+      }
+    }
+    .c7n-tabs-content {
+      padding: 20px !important;
+      // padding-left: 20px !important;
+    }
+    .c7n-tabs-extra-content > button {
+      display: none;
+    }
+  }
+}

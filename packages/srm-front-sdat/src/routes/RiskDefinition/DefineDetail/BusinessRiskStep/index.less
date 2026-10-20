@@ -1,0 +1,177 @@
+@import '~hzero-front/lib/srm-variables';
+
+.risk-definition-external-risk {
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.risk-definition-external-dynamic-panel {
+  height: calc(100vh - 186px);
+  margin-top: 4px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  :global {
+    .c7n-tag {
+      border: none;
+    }
+
+    .c7n-pro-range-track {
+      position: absolute;
+      height: 0.04rem;
+      background-color: @primary-color;
+      border-radius: 0.02rem;
+      -webkit-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease;
+    }
+
+    .c7n-pro-range-handle {
+      position: absolute;
+      width: 0.14rem;
+      height: 0.14rem;
+      margin-top: -0.05rem;
+      margin-left: -0.07rem;
+      background-color: #fff;
+      border: 0.02rem solid @primary-color;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-transition: border-color 0.3s,
+        -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      transition: border-color 0.3s, -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      transition: border-color 0.3s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      transition: border-color 0.3s, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28),
+        -webkit-transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    .c7n-pro-range-handle:focus {
+      border-color: @primary-color;
+      outline: none;
+      -webkit-box-shadow: 0 0 0 0.01rem fade(@primary-color, 15%);
+      box-shadow: 0 0 0 0.01rem fade(@primary-color, 15%);
+    }
+
+    .c7n-pro-range-handle.c7n-tooltip-open {
+      border-color: @primary-color;
+    }
+    .c7n-pro-range:hover .c7n-pro-range-rail {
+      background-color: #e1e1e1;
+    }
+    .c7n-pro-range:hover .c7n-pro-range-track {
+      background-color: @primary-color;
+    }
+    .c7n-pro-range:hover .c7n-pro-range-handle:not(.c7n-tooltip-open) {
+      border-color: @primary-color;
+    }
+    .c7n-pro-range-mark {
+      position: absolute;
+      top: 0.14rem;
+      left: 0;
+      width: 100%;
+      font-size: 0.13rem;
+    }
+    .c7n-pro-range-mark-text {
+      position: absolute;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.45);
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .c7n-pro-range-mark-text-active {
+      color: #000;
+    }
+    .c7n-pro-range-step {
+      position: absolute;
+      width: 100%;
+      height: 0.04rem;
+      background: transparent;
+    }
+    .c7n-pro-range-dot {
+      position: absolute;
+      top: -0.02rem;
+      width: 0.08rem;
+      height: 0.08rem;
+      margin-left: -0.04rem;
+      vertical-align: middle;
+      background-color: #fff;
+      border: 0.02rem solid #e8e8e8;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .c7n-pro-range-dot:first-child {
+      margin-left: -0.04rem;
+    }
+    .c7n-pro-range-dot:last-child {
+      margin-left: -0.04rem;
+    }
+    .c7n-pro-range-dot-active {
+      border-color: fade(@primary-color, 15%);
+    }
+  }
+}
+
+.risk-definition-external-dynamic-panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.risk-definition-external-dynamic-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.risk-definition-external-dynamic-panel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.dynamic-item-panel-title {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 8px;
+  border-left: 3px solid @primary-color;
+  line-height: 12px;
+  // margin-bottom: 16px;
+
+  a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.dynamic-item-panel-second-title {
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.status-high-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #e64322;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+.status-middle-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #feb936;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+.status-low-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #179454;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}

@@ -1,0 +1,297 @@
+// 数据列表样式
+.ssrc-bid-list {
+  height: auto;
+  :global {
+    .ant-form-item {
+      display: inline-block;
+      margin-bottom: 0 !important;
+    }
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+    .ant-form-explain {
+      text-align: left;
+      padding: 2px;
+    }
+  }
+}
+.openFlagStyle {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+  .openFlagStyle {
+    left: 60%;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1120px) {
+  .openFlagStyle {
+    left: 58%;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1320px) {
+  .openFlagStyle {
+    left: 55%;
+  }
+}
+
+@media (min-width: 1320px) and (max-width: 1520px) {
+  .openFlagStyle {
+    left: 55%;
+  }
+}
+
+@media (min-width: 1520px) and (max-width: 1720px) {
+  .openFlagStyle {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1720px) and (max-width: 1920px) {
+  .openFlagStyle {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1720px) {
+  .openFlagStyle {
+    left: 48%;
+  }
+}
+
+.errorStyle {
+  > div + div > div > span + div {
+    margin-top: 48px;
+  }
+}
+.ellipsis {
+  :global {
+    .ant-form-item-label {
+      padding-right: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+        position: absolute;
+        top: -0.5px;
+        right: 0;
+      }
+    }
+  }
+}
+.item-list-search {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.timeStyle {
+  :global {
+    .ant-form-item-control-wrapper > .ant-form-item-control {
+      line-height: 0 !important;
+    }
+  }
+}
+.headerInfo {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.supplier-record {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.itemList {
+  width: 98%;
+  min-width: 890px;
+  height: 60px;
+  padding: 13px 0 13px 16px;
+  .itemListImg {
+    float: left;
+    width: 8%;
+    height: 70px;
+  }
+  .itemListHeaderInfo {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    width: 100%;
+    .itemListHeader {
+      width: 100%;
+      margin-bottom: 12px;
+      .itemListNum {
+        float: left;
+        // font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* width: 158px; */
+        margin-right: 8px;
+        width: 340px;
+        .itemListNumLeft {
+          max-width: 320px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        .itemListNumRight {
+          width: 20px;
+        }
+      }
+      .itemListTag {
+        float: right;
+      }
+      .taxRate {
+        margin-left: 20px;
+        display: inline-block;
+      }
+      .bidQuantity {
+        background-color: #cde7ff;
+        margin-left: 50px;
+        color: #0687ff;
+        border: none;
+        display: inline-block;
+      }
+      .categoryName {
+        background-color: #fff2cc;
+        color: #ffbc00;
+        border: none;
+        display: inline-block;
+      }
+    }
+    .itemListDes {
+      height: 28px;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .itemListDesItem {
+      margin: 0 2px;
+    }
+  }
+}
+.arrowStyle {
+  :global {
+    .ant-collapse-header .arrow {
+      top: 10px !important;
+      left: auto !important;
+      -webkit-transform: rotate(90deg) !important;
+      transform: rotate(90deg) !important;
+      right: 8px;
+    }
+    .ant-collapse-header[aria-expanded='true'] .arrow {
+      top: 10px !important;
+      left: auto !important;
+      -webkit-transform: rotate(270deg) !important;
+      transform: rotate(270deg) !important;
+      right: 8px;
+    }
+  }
+}
+
+.itemList1 {
+  width: 98%;
+  min-width: 890px;
+  height: 60px;
+  padding: 13px 0 13px 16px;
+  .itemListImg {
+    float: left;
+    width: 8%;
+    height: 70px;
+  }
+  .itemListHeaderInfo {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+    width: 100%;
+    .itemListHeader {
+      width: 100%;
+      margin-bottom: 12px;
+      .itemListNum {
+        float: left;
+        // font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* width: 158px; */
+        margin-right: 8px;
+        width: 340px;
+        .itemListNumLeft {
+          max-width: 320px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        .itemListNumRight {
+          width: 20px;
+        }
+      }
+      .itemListTag {
+        float: right;
+      }
+      .sumScore {
+        background-color: #fcd6d6;
+        color: #f13131;
+        border: none;
+        display: inline-block;
+      }
+      .sumPrice {
+        background-color: #fff2cc;
+        color: #ffbc00;
+        border: none;
+        display: inline-block;
+      }
+    }
+    .itemListDes {
+      height: 28px;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .itemListDesItem {
+      margin: 0 2px;
+    }
+  }
+}

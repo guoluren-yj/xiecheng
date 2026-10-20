@@ -1,0 +1,87 @@
+@import '../../global';
+
+.global-c7n-relation {
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  margin-right: 12px;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .relation-edit-title {
+    position: absolute;
+    padding-top: 18px;
+    top: 0;
+    left: 0;
+    height: 50px;
+    border-bottom: 1px solid @Grey5;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+
+    h4 {
+      padding-bottom: 5px;
+      //margin-left: 15px;
+      color: @Blue;
+      display: inline-block;
+      font-size: 14px;
+      border-bottom: 2px solid @Blue;
+    }
+  }
+
+  .relation-form {
+    margin-bottom: 40px;
+  }
+
+  .relation-field-item {
+    display: flex;
+    overflow: auto;
+
+    > div {
+      flex: 1;
+    }
+
+    :global {
+      .ant-select-selection {
+        //width: 80px;
+        margin: 0;
+      }
+      .ant-form-item-required {
+        white-space: nowrap;
+      }
+    }
+
+    .relation-field-unit {
+      margin-top: 26px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .relation-field-item-del {
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 3px;
+      background-color: @red1;
+    }
+  }
+
+  .relation-edit-button {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background-color: @Blue3;
+    border-top: 1px solid @Grey5;
+    padding: 10px;
+    width: 100%;
+  }
+}

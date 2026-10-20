@@ -1,0 +1,173 @@
+/*
+ * index
+ * @date   : 2018-12-05
+ * @author : HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.purchase-delivery-detail {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+
+  :global {
+    .page-content {
+      .form-collapse {
+        border: none;
+      }
+
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+
+      .ant-tabs.ant-tabs-top.ant-tabs-line.ant-tabs-no-animation {
+        margin-top: 0;
+      }
+
+      .ant-collapse-item {
+        border: none;
+      }
+
+      .ant-collapse-header {
+        height: 48px;
+        line-height: 48px;
+
+        & > i {
+          margin-left: 8px;
+          color: rgb(41, 190, 206);
+          font-weight: bold;
+        }
+
+        & > h3 {
+          text-indent: 16px;
+          line-height: 1.17em;
+          display: inline-block;
+        }
+
+        & > a {
+          margin-left: 16px;
+        }
+      }
+
+      // .ant-collapse-header:hover {
+      //   background: #eee;
+      // }
+      .ant-collapse-content {
+        border: none;
+      }
+
+      .ant-collapse-content-box {
+        padding-bottom: 0;
+      }
+    }
+    .ant-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+
+  .information-item {
+    :global {
+      .item-rows {
+        line-height: 20px;
+        // margin-bottom: 16px;
+      }
+
+      .ant-form-item-label,
+      .ant-form-item-control {
+        line-height: 28px;
+      }
+
+      .ant-col-9,
+      .ant-col-3 {
+        text-align: left;
+        padding-right: 8px;
+        color: #666;
+      }
+
+      .ant-col-15,
+      .ant-col-21 {
+        word-break: break-all;
+        color: #333;
+      }
+    }
+  }
+
+  .logistics {
+    :global {
+      .item-rows {
+        .ant-col-24 {
+          // border-bottom: 1px #dcdcdc dashed;
+          padding-left: 16px;
+          margin-bottom: 16px;
+
+          .ant-row div {
+            &:first-child {
+              width: 12.5%;
+              float: left;
+            }
+
+            &:last-child {
+              width: 87.5%;
+              float: left;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.detail-logistic {
+  padding-left: 16px;
+
+  :global {
+    .ant-row.ant-form-item {
+      .ant-col-9.ant-form-item-label {
+        text-align: left;
+        line-height: 20px;
+
+        label {
+          color: #666;
+        }
+      }
+
+      .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+  }
+}
+.add-logistics {
+  :global {
+    .ant-form-item-label {
+      width: 25%;
+    }
+  }
+}
+
+.textarea-bottom {
+  margin-bottom: 4px;
+}
+
+.add-log-alert {
+  display: flex;
+  .add-log-icon {
+    background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+    margin: 0 8px 0 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 32px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+  }
+}
+.add-log-form {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}

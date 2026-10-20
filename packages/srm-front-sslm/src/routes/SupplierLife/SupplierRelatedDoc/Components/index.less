@@ -1,0 +1,59 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.approvalInfo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.steps {
+  :global {
+    .c7n-steps-item-custom.c7n-steps-item-process .c7n-steps-item-icon {
+      color: #333;
+    }
+
+    .c7n-steps-item-finish {
+      .c7n-steps-item-title {
+        color: #5cae2a;
+      }
+    }
+
+    .icon-check_circle {
+      color: #5cae2a;
+    }
+
+    .icon-brightness_1 {
+      color: #ebebeb;
+    }
+
+    .c7n-steps-item-custom {
+      height: 38px;
+      .c7n-steps-item-tail {
+        left: 7px;
+        padding: 24px 0 10px;
+
+        &::after {
+          height: 300%;
+        }
+      }
+    }
+    .c7n-steps-item-icon {
+      margin-top: -2px;
+    }
+  }
+}
+
+.refuse {
+  :global {
+    .c7n-steps-item-title {
+      color: #f5222d !important;
+    }
+  }
+}
+.approvalPending {
+  :global {
+    .c7n-steps-item-title {
+      color: #000 !important;
+    }
+  }
+}

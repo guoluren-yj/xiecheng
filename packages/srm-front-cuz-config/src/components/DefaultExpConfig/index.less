@@ -1,0 +1,220 @@
+@import "./variable.less";
+
+.@{prefix}-wrapper {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex: 1;
+
+  :global {
+
+    .c7n-pro-field-label-vertical {
+      padding: 0;
+    }
+
+    .c7n-pro-field-label-vertical+.c7n-pro-field-wrapper {
+      padding: 0 0 .1rem;
+    }
+
+    .c7n-pro-input,
+    .c7n-pro-select {
+      border-radius: 0;
+    }
+
+    .ins-level-0,
+    .ins-level-1,
+    .ins-level-2 {
+      word-break: break-word;
+
+      &>p>span {
+        font-weight: bold;
+
+        &::after {
+          content     : ":";
+          display     : inline-block;
+          margin-right: 2px;
+        }
+      }
+    }
+
+    .ins-level-1>p {
+      padding-left: 4px;
+    }
+
+    p.ins-level-2 {
+      padding-left: 8px;
+    }
+
+    .@{prefix}-tree-container {
+      width   : @tree-container-width;
+      overflow: hidden;
+      border-right: 1px solid #E5E7EC;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .c7n-tree-indent-unit {
+        width: @tree-indent;
+      }
+
+      &.active>.@{prefix}-tree,
+      &.active>.@{prefix}-tree-node-ins {
+        height: 50%;
+        padding: 8px 8px 8px 16px;
+      }
+
+      .leaf .c7n-tree-title {
+        list-style: initial;
+        display   : list-item;
+      }
+    }
+
+    .@{prefix}-tree,
+    .@{prefix}-tree-node-ins {
+      width        : @tree-container-width;
+      overflow-y   : auto;
+      border-radius: 0.5px;
+      transition   : all .2s;
+    }
+
+    .@{prefix}-tree {
+      height: 100%;
+      padding: 8px 8px 8px 16px;
+    }
+
+    .@{prefix}-tree-node-ins {
+      padding   : 0;
+      height: 0;
+      border-top: 1px solid #E5E7EC;
+      background-color: #F7F8FA;
+    }
+
+    .@{prefix}-container {
+      position   : relative;
+      padding-top: 20px;
+      width      : 715px;
+      display: flex;
+      flex-direction: column;
+
+      :global {
+        .show-header {
+          width       : @editor-width;
+          margin-left : 17px;
+          margin-right: 17px;
+
+          table {
+            width       : 100%;
+            table-layout: fixed;
+          }
+
+          thead td {
+            padding: 0 2px;
+          }
+
+          td.control {
+            width: 36px;
+          }
+        }
+
+        .c7n-spin-nested-loading,
+        .c7n-spin-container {
+          height: 100%;
+          overflow: hidden;
+        }
+        
+        .@{prefix}-editor {
+          width        : 100%;
+          height       : calc(100% - 18px);;
+          padding-left : 20px;
+          padding-right: 20px;
+          overflow-y   : auto;
+          overflow-x   : hidden;
+
+          .c7n-pro-output-wrapper {
+            height     : @output-line-height;
+            line-height: @output-line-height;
+          }
+
+          &>form {
+            width       : @editor-width;
+            margin-left : -3px;
+            margin-right: -3px;
+            flex: 0;
+          }
+
+          td.control {
+            text-align    : right;
+            width         : 36px;
+            line-height   : 30px;
+            padding-bottom: 8px;
+          }
+
+          td>.c7n-pro-field-wrapper {
+            padding: 0 2px;
+          }
+
+          .c7n-pro-output>span {
+            height: 31px;
+
+            &:nth-child(3n+2) {
+              margin-right: 4px;
+            }
+
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+              margin-right: 0;
+            }
+          }
+        }
+
+        .add-variable {
+          width        : 676px;
+
+          button.c7n-pro-btn {
+            width    : 100%;
+            max-width: unset;
+            border   : 1px solid rgb(217, 217, 217);
+            .c7n-pro-btn-overflow-text {
+              flex-grow: unset;
+              flex-shrink: unset;
+              flex-basis: unset;
+            }
+          }
+        }
+
+        .footer {
+          padding-top  : 10px;
+          padding-right: 20px;
+          padding-bottom: 20px;
+          padding-left : 20px;
+          text-align   : right;
+          flex: 0;
+
+          button {
+            margin-left: @button-offset;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.result {
+  padding-left    : 20px;
+  padding-right   : 20px;
+  background-color: #fff;
+
+  :global {
+
+    td>.c7n-pro-field-label,
+    td>.c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+
+    td.no-label label.c7n-pro-field-label {
+      display: none;
+    }
+  }
+}

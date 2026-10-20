@@ -1,0 +1,22 @@
+@font-face {
+  font-family: JapaneseFont;
+  src: url('../assets/japanese/SourceHanSansJP-Normal.ttf'),
+       url('../assets/japanese/SourceHanSansJP-Normal.eot'),
+       url('../assets/japanese/SourceHanSansJP-Normal.svg'),
+       url('../assets/japanese/SourceHanSansJP-Normal.woff'),
+       url('../assets/japanese/SourceHanSansJP-Normal.woff2');
+}
+
+@Japanese-Font-Family: ""Monospaced Number", "Microsoft YaHei", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif";
+
+body {
+  font-family: @Japanese-Font-Family !important;
+}
+
+.ant-tabs, .ant-table, .ant-form-item, .ant-collapse, .ant-input, .ant-pagination, .ant-select, .ant-modal, .ant-form-item {
+  font-family: @Japanese-Font-Family !important;
+}
+
+input, button, select, optgroup, textarea {
+  font-family: @Japanese-Font-Family !important;
+}

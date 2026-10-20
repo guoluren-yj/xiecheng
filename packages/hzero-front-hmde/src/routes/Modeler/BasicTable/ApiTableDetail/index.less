@@ -1,0 +1,114 @@
+@import '../global';
+.api-table-detail {
+  overflow: hidden;
+  padding-bottom: 0 !important;
+
+  .form-wrapper {
+    width: 100%;
+
+    :global {
+      .c7n-pro-form > table > tbody > tr {
+        & .c7n-pro-field-label {
+          padding: 4px 0 0 !important;
+        }
+        &:last-child .c7n-pro-field-label {
+          padding: 0 !important;
+          & label {
+            line-height: 0.26rem;
+          }
+        }
+
+        & .c7n-pro-field-wrapper {
+          padding: 4px 0 0 !important;
+        }
+        &:last-child .c7n-pro-field-wrapper {
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .api-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      .pre-icon {
+        display: inline-block;
+        height: 20px;
+
+        > div {
+          vertical-align: text-bottom;
+        }
+
+        > img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .api-title-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 16px 0 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      :global {
+        .icon-mode_edit {
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .edit-form-wrapper,
+    .read-form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .button-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  .table-wrapper {
+    position: relative;
+
+    .table-title {
+      display: flex;
+      // position: absolute;
+      height: 28px;
+      line-height: 28px;
+      font-size: 14px;
+      // color: #012492;
+    }
+
+    // 引入样式 更改table表单默认按钮居右
+    .btnFloatRight {
+      :global {
+        .c7n-pro-table-toolbar {
+          padding-bottom: 0.02rem;
+          .c7n-pro-table-toolbar-button-group {
+            float: right;
+          }
+        }
+        .c7n-pro-table {
+          height: calc(100vh - 192px);
+        }
+        .c7n-pro-table .c7n-pro-table-thead > tr > th {
+          // padding: 4px 8px !important;
+          border-right: none !important;
+        }
+        // .c7n-pro-btn {
+        //   color: @Blue;
+        // }
+      }
+    }
+  }
+}

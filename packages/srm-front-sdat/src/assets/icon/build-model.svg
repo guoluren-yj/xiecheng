@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>build-model</title>
+    <desc>Created with Sketch.</desc>
+    <g id="模型" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="基础数据结构-基础表" transform="translate(-288.000000, -273.000000)">
+            <g id="模块操作" transform="translate(276.000000, 258.000000)">
+                <g id="build-model" transform="translate(12.000000, 15.000000)">
+                    <rect id="矩形" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="14" height="14"></rect>
+                    <g id="编组-10" transform="translate(1.500000, 1.000000)">
+                        <path d="M4.97099207,0.329771175 L0.470992073,3.13496598 C0.178044848,3.31758243 -1.95577526e-16,3.63837735 0,3.98358286 L0,8.01641714 C-1.79769122e-16,8.36162265 0.178044848,8.68241757 0.470992073,8.86503402 L4.97099207,11.6702288 C5.29478374,11.872073 5.70521626,11.872073 6.02900793,11.6702288 L10.5290079,8.86503402 C10.8219552,8.68241757 11,8.36162265 11,8.01641714 L11,3.98358286 C11,3.63837735 10.8219552,3.31758243 10.5290079,3.13496598 L6.02900793,0.329771175 C5.70521626,0.127927019 5.29478374,0.127927019 4.97099207,0.329771175 Z" id="路径-16" fill="#5A6677"></path>
+                        <path d="M5.5,8.5 C6.88071187,8.5 8,7.38071187 8,6 C8,4.61928813 6.88071187,3.5 5.5,3.5 C4.43922336,3.5 3.53275414,4.1606686 3.16962074,5.09297743" id="形状" stroke="#FFFFFF"></path>
+                        <polyline id="路径-18" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.860473, 4.215668) rotate(12.000000) translate(-3.860473, -4.215668) " points="4.94143737 4.84410284 3.25166704 4.97267125 2.77950833 3.45866381"></polyline>
+                        <path d="M3,6 C3,7.38071187 4.11928813,8.5 5.5,8.5 L5.5,8.5 C6.88071187,8.5 8,7.38071187 8,6" id="路径" stroke="#FFFFFF" stroke-dasharray="1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

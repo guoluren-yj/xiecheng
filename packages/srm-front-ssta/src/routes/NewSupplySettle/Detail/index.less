@@ -1,0 +1,322 @@
+@import '~hzero-front/lib/srm-variables';
+@import '../../common.less';
+
+:global {
+  :local(.settle-detail-tabs).c7n-tabs-vertical.c7n-tabs-left {
+    .ssta-content-margin({margin-right: 0;});
+
+    height: 100%;
+
+    > .c7n-tabs-bar {
+      padding: 16px 0;
+      background-color: #fff;
+      border-right: none;
+
+      .c7n-tabs-bar-inner {
+        flex-direction: column-reverse;
+        .c7n-tabs-nav-container {
+          padding: 16px 0 0 16px;
+        }
+      }
+
+      .c7n-tabs-ink-bar {
+        z-index: 100; // 会遮住固定金额卡片
+      }
+
+      .c7n-tabs-tab {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 4px;
+      }
+
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+    }
+
+    > .c7n-tabs-content {
+      padding-left: 0;
+      height: 100%;
+      overflow: auto;
+      border-left-style: none;
+      .ssta-detail-splite-content {
+        overflow: visible;
+        .amount-summary-notfix-content-wrapper {
+          .page-content {
+            margin-top: 0 !important;
+            margin-left: 8px;
+          }
+        }
+        .ssta-detail-collapse-content {
+          margin-left: 8px;
+          margin-bottom: 0;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.amount-summary-wrapper {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  :global {
+    .settle-document-type {
+      width: 46px;
+      font-weight: 600;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-right: 16px;
+      writing-mode: vertical-lr;
+      position: relative;
+
+      .document-type-name {
+        left: 50%;
+        top: 50%;
+        cursor: default;
+        max-height: 100%;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transform: translate(-50%, -50%);
+      }
+
+      .push-pin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+      }
+
+      .push_pin_fixed {
+        transform: rotate(45deg);
+      }
+    }
+
+    .amount-sign {
+      display: flex;
+      padding: 0 16px;
+      font-size: 20px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .amount-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .amount-row {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        .amount-card {
+          flex: auto;
+          background: #fff;
+          border: 1px solid #f2f2f2;
+          border-radius: 2px;
+          padding: 0 16px;
+
+          .amount-total {
+            height: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon {
+              margin-top: -5px;
+              font-size: 14px;
+            }
+
+            .expand-card {
+              position: relative;
+
+              .icon-expand_less {
+                position: absolute;
+                right: 0;
+                bottom: 16px;
+                color: @primary-color;
+                background-color: #f2f2f2;
+              }
+            }
+
+            .amount-header {
+              margin: 0 4px;
+              font-size: 14px;
+              color: #000;
+              font-weight: 600;
+            }
+          }
+
+          .amount-card-operation-icon {
+            cursor: pointer;
+            color: @primary-color;
+            margin-left: 4px;
+          }
+
+          .amount-detail {
+            height: 38px;
+            display: flex;
+            border-top: solid 1px #f5f5f5;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #000;
+            align-items: center;
+
+            .amount-detail-noborder {
+              border-top: 0;
+
+              .amount-number {
+                color: #000;
+                // font-weight: 500;
+              }
+            }
+          }
+        }
+
+        .amount-col-3 {
+          flex: 3;
+        }
+
+        .amount-col-2 {
+          flex: 2;
+        }
+      }
+    }
+  }
+}
+
+//操作记录
+.operating {
+  margin-top: 2px;
+
+  :global {
+    .operating-timeline {
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+
+        .process-user {
+          margin-top: -20px;
+          margin-left: 42px;
+        }
+
+        .small-icon {
+          font-size: 16px;
+          margin: -2px 10px 0 0;
+        }
+
+        .revised {
+          margin-left: 5px;
+        }
+
+        .date-time {
+          margin: 5px 0 12px 42px;
+        }
+
+        .status {
+          padding: 0 4px;
+        }
+
+        .gray {
+          font-size: 12px;
+          color: @text-3;
+          line-height: 18px;
+        }
+
+        .orange {
+          color: #f56349;
+        }
+
+        .result {
+          margin-left: 3px;
+        }
+
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.04);
+          margin-left: 42px;
+        }
+
+        .reamks {
+          display: flex;
+          margin: 5px 0 0 42px;
+
+          .comment {
+            flex: 1 1;
+            width: 360px;
+          }
+        }
+
+        .supply {
+          border: 1px solid #3095f2;
+          border-radius: 3px;
+          color: #3095f2;
+          margin-left: 0.12rem;
+        }
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.batch-modify-alert {
+  :global {
+    border: none;
+    color: #1890ff;
+    margin: -20px -20px 16px -20px;
+    line-height: 21px;
+  }
+}
+
+.ssta-settle-attachments-download-modal {
+  :global {
+    .c7n-pro-modal-title {
+      div > div {
+        font-size: 12px !important;
+        font-weight: normal;
+      }
+    }
+
+    // .c7n-pro-modal-footer {
+    //   display: flex;
+    //   .footer-attention {
+    //     flex: 12;
+    //     margin-right: 5%;
+    //     text-align: left;
+    //   }
+    //   .c7n-pro-btn {
+    //     flex: 1;
+    //   }
+    // }
+  }
+}
+
+.ssta-tax-page-content {
+  :global {
+    .page-content {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

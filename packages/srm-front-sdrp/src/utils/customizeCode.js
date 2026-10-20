@@ -1,0 +1,5 @@
+// 个性化编码
+
+// 报表测试
+export const EXPORT_TEST_SEARCHBAR_CODE = 'SDRP.DATA_REPORT_A.SPUC_PO_DATA_REPORT_SEARCH_A'; // 报表测试筛选器编码
+export const EXPORT_TEST_TABLE_CODE = 'SDRP.DATA_REPORT_A.SPUC_PO_DATA_REPORT_A'; // 报表测试表格编码

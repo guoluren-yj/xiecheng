@@ -1,0 +1,29 @@
+.hzero-common-layout-tips {
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  i {
+    margin-right: 10px;
+  }
+  &-text {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+    white-space: pre;
+  }
+  &-warn {
+    background: rgba(242,128,26,0.10);
+    color: #F06200;
+  }
+  &-error {
+    color: #E64322;
+    background: rgba(242,85,53,0.10);
+  }
+}

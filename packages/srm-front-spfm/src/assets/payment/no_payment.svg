@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="156px" height="103px" viewBox="0 0 156 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>无需缴费</title>
+    <defs>
+        <rect id="path-1" x="90" y="15" width="45" height="37.5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="45" height="37.5" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="101.25" y="5" width="45" height="37.5"></rect>
+        <filter x="-44.4%" y="-40.0%" width="180.0%" height="196.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="-1" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.2   0 0 0 0 0.2  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="-2" dy="3" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.2   0 0 0 0 0.2  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M4.06168549,9.09955792 C4.26476977,9.16574029 4.48631625,9.16574029 4.68940052,9.09955792 C6.07515204,8.64765647 6.57580365,8.27744888 6.57580365,8.27744888 C8.01585578,7.34262299 8.02888792,6.11411287 8.02888792,6.11411287 L8.02888792,2.29001318 C8.02888792,2.09973889 7.8659861,1.93738528 7.66724587,1.93014658 C6.64530843,1.8960213 5.13900956,1.1804245 4.58840139,0.901217652 C4.45590791,0.834001189 4.29735013,0.834001189 4.16485665,0.901217652 C3.61424848,1.1804245 2.10794961,1.8960213 1.08601216,1.93014658 C0.887271937,1.93635118 0.724370113,2.09973889 0.724370113,2.29001318 L0.724370113,6.11411287 C0.724370113,6.11411287 0.737402259,7.34262299 2.17745439,8.27744888 C2.17528236,8.27744888 2.67593397,8.64765647 4.06168549,9.09955792 L4.06168549,9.09955792 Z" id="path-5"></path>
+        <path d="M4.37554301,0.85054678 C4.30278019,0.85054678 4.23001738,0.867092371 4.16377063,0.901217652 C3.61316247,1.1804245 2.1068636,1.8960213 1.08492615,1.93014658 C0.886185925,1.93635118 0.723284101,2.09973889 0.723284101,2.29001318 L0.723284101,6.11411287 C0.723284101,6.11411287 0.736316247,7.34262299 2.17636838,8.27744888 C2.17636838,8.27744888 2.67701998,8.64765647 4.0627715,9.09955792 C4.16377063,9.1326491 4.27019983,9.1491947 4.37662902,9.1491947 L4.37662902,0.85054678 L4.37554301,0.85054678 Z" id="path-6"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="无需缴费" transform="translate(-1000, -355)">
+            <g id="编组" transform="translate(930, 308)">
+                <g transform="translate(20, 0)" id="无需缴费">
+                    <g transform="translate(20, 25)">
+                        <g transform="translate(30, 25)">
+                            <path d="M2.5,0 L137.5,0 C138.880712,0 140,1.11928813 140,2.5 L140,97.5 C140,98.8807119 138.880712,100 137.5,100 L2.5,100 C1.11928813,100 0,98.8807119 0,97.5 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 Z" id="矩形" fill="#F1F4F8"></path>
+                            <path d="M2.5,0 L137.5,0 C138.880712,0 140,1.11928813 140,2.5 L140,10 L0,10 L0,2.5 C0,1.11928813 1.11928813,0 2.5,0 Z" id="矩形" fill="#C9CDD4"></path>
+                            <circle id="椭圆形" fill="#FFFFFF" cx="6.875" cy="5" r="1.875"></circle>
+                            <circle id="椭圆形备份" fill="#FFFFFF" cx="14.375" cy="5" r="1.875"></circle>
+                            <circle id="椭圆形备份-2" fill="#FFFFFF" cx="21.875" cy="5" r="1.875"></circle>
+                            <rect id="矩形-2" fill="#FFFFFF" x="40" y="15" width="45" height="37.5"></rect>
+                            <g id="编组" transform="translate(106.25, 10)">
+                                <rect id="矩形-4" fill="#68C671" x="0" y="0" width="15" height="15"></rect>
+                                <g id="check-circle-fill" transform="translate(1.25, 1.25)">
+                                    <path d="M6.25,11.4583333 C3.3734375,11.4583333 1.04166667,9.1265625 1.04166667,6.25 C1.04166667,3.3734375 3.3734375,1.04166667 6.25,1.04166667 C9.1265625,1.04166667 11.4583333,3.3734375 11.4583333,6.25 C11.4583333,9.1265625 9.1265625,11.4583333 6.25,11.4583333 Z M5.73072917,8.33333333 L9.41302083,4.65052083 L8.6765625,3.9140625 L5.73072917,6.86041667 L4.25729167,5.38697917 L3.52083333,6.1234375 L5.73072917,8.33333333 Z" id="形状" fill="#FFFFFF"></path>
+                                    <polygon points="0 0 12.5 0 12.5 12.5 0 12.5"></polygon>
+                                </g>
+                                <rect id="矩形-5" fill="#F2F3F5" x="20" y="2.5" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份" fill="#F2F3F5" x="20" y="8.75" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份-2" fill="#F2F3F5" x="0" y="18.75" width="35" height="3.75"></rect>
+                                <rect id="矩形-5备份-3" fill="#F2F3F5" x="0" y="25" width="35" height="3.75"></rect>
+                            </g>
+                            <rect id="矩形-2备份-4" fill="#FFFFFF" x="5" y="15" width="30" height="80"></rect>
+                            <g id="编组" transform="translate(13.75, 22.5)">
+                                <circle id="椭圆形" fill-opacity="0.1" fill="#F2801A" cx="6.25" cy="6.25" r="6.25"></circle>
+                                <path d="M2.08333333,10.9804167 C2.46625,9.07444444 4.14958333,7.63888889 6.16833333,7.63888889 C8.18701389,7.63888889 9.87041667,9.07444444 10.2532639,10.9804167 C9.15777778,11.9272917 7.72993056,12.5 6.16833333,12.5 C4.60666667,12.5 3.17881944,11.9272917 2.08333333,10.9804167 Z" id="路径" fill-opacity="0.7" fill="#F2801A"></path>
+                                <g transform="translate(3.4722, 2.7778)" fill="#FFFFFF" fill-rule="nonzero" id="椭圆形">
+                                    <circle cx="2.77777778" cy="2.77777778" r="2.77777778"></circle>
+                                </g>
+                            </g>
+                            <use id="矩形-2备份" stroke="#C9CDD4" mask="url(#mask-2)" stroke-width="2.5" stroke-dasharray="1.875,2.5" xlink:href="#path-1"></use>
+                            <g id="矩形-2备份-3">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <rect id="矩形-2备份-2" fill="#FFFFFF" x="40" y="57.5" width="95" height="37.5"></rect>
+                            <rect id="矩形-3" fill="#F2F3F5" x="10" y="40" width="20" height="5"></rect>
+                            <rect id="矩形-3备份" fill="#F2F3F5" x="10" y="50" width="20" height="5"></rect>
+                            <rect id="矩形-3备份-2" fill="#F2F3F5" x="10" y="60" width="20" height="5"></rect>
+                            <rect id="矩形-3备份-3" fill="#F2F3F5" x="10" y="70" width="20" height="5"></rect>
+                            <circle id="椭圆形-2" fill="#74C97B" cx="48.75" cy="66.25" r="2.5"></circle>
+                            <rect id="矩形-3备份-5" fill="#F2F3F5" x="56.25" y="63.75" width="45" height="5"></rect>
+                            <circle id="椭圆形-2备份" fill="#5DA8F9" cx="48.75" cy="76.25" r="2.5"></circle>
+                            <rect id="矩形-3备份-6" fill="#F2F3F5" x="56.25" y="73.75" width="45" height="5"></rect>
+                            <circle id="椭圆形-2备份-2" fill="#F5A55E" cx="48.75" cy="86.25" r="2.5"></circle>
+                            <rect id="矩形-3备份-7" fill="#F2F3F5" x="56.25" y="83.75" width="45" height="5"></rect>
+                            <rect id="矩形-3备份-10" fill="#F2F3F5" x="108.75" y="64.375" width="7.5" height="3.75"></rect>
+                            <rect id="矩形-3备份-9" fill="#F2F3F5" x="108.75" y="74.375" width="7.5" height="3.75"></rect>
+                            <rect id="矩形-3备份-8" fill="#F2F3F5" x="108.75" y="84.375" width="7.5" height="3.75"></rect>
+                            <rect id="矩形-3备份-13" fill="#F2F3F5" x="118.75" y="64.375" width="10" height="3.75"></rect>
+                            <rect id="矩形-3备份-12" fill="#F2F3F5" x="118.75" y="74.375" width="10" height="3.75"></rect>
+                            <rect id="矩形-3备份-11" fill="#F2F3F5" x="118.75" y="84.375" width="10" height="3.75"></rect>
+                            <g id="编组" transform="translate(106.25, 10)">
+                                <rect id="矩形-4" fill="#68C671" x="0" y="0" width="15" height="15"></rect>
+                                <g id="check-circle-fill" transform="translate(1.25, 1.25)">
+                                    <path d="M6.25,11.4583333 C3.3734375,11.4583333 1.04166667,9.1265625 1.04166667,6.25 C1.04166667,3.3734375 3.3734375,1.04166667 6.25,1.04166667 C9.1265625,1.04166667 11.4583333,3.3734375 11.4583333,6.25 C11.4583333,9.1265625 9.1265625,11.4583333 6.25,11.4583333 Z M5.73072917,8.33333333 L9.41302083,4.65052083 L8.6765625,3.9140625 L5.73072917,6.86041667 L4.25729167,5.38697917 L3.52083333,6.1234375 L5.73072917,8.33333333 Z" id="形状" fill="#FFFFFF"></path>
+                                    <polygon points="0 0 12.5 0 12.5 12.5 0 12.5"></polygon>
+                                </g>
+                                <rect id="矩形-5" fill="#F2F3F5" x="20" y="2.5" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份" fill="#F2F3F5" x="20" y="8.75" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份-2" fill="#F2F3F5" x="0" y="18.75" width="35" height="3.75"></rect>
+                                <rect id="矩形-5备份-3" fill="#F2F3F5" x="0" y="25" width="35" height="3.75"></rect>
+                            </g>
+                            <g id="编组备份" transform="translate(45, 19.375)">
+                                <rect id="矩形-4" fill-opacity="0.1" fill="#F5A55E" x="0" y="0" width="15" height="15"></rect>
+                                <g id="编组" transform="translate(3.125, 2.5)" fill-rule="nonzero">
+                                    <g id="路径">
+                                        <path d="M4.00341995,-0.171457492 C4.23575694,-0.289649392 4.51424306,-0.289649392 4.74634267,-0.171578095 C5.42991904,0.175283391 7.37475527,1.10710197 8.55539247,1.03003665 L9.00940374,6.34451152 L9.00908155,6.37113036 C9.00263454,6.58587318 8.89117661,8.04374045 7.15395697,9.17297617 C7.06505726,9.23575132 6.41815719,9.66975063 4.83225828,10.187609 C4.53658134,10.2843895 4.21450467,10.2843895 3.91900181,10.1876659 C2.64102489,9.77035613 1.9739243,9.40807987 1.72096093,9.2538152 L1.64855539,9.20825511 C1.62063027,9.19004274 1.60488135,9.17886872 1.60022743,9.17557375 C-0.15306675,8.03690509 -0.251077943,6.56289564 -0.259388885,6.39394784 L-0.260276332,1.52638382 C1.42943065,1.07293558 3.32584918,0.171294719 4.00341995,-0.171457492 Z" stroke="#FFFFFF" stroke-width="0.520480465" fill="#F5A55E"></path>
+                                        <g>
+                                            <use fill="#F5A55E" xlink:href="#path-5"></use>
+                                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                                        </g>
+                                        <g>
+                                            <use fill="#F5A55E" xlink:href="#path-6"></use>
+                                            <use fill-opacity="0.4" fill="#FFFFFF" xlink:href="#path-6"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                                <rect id="矩形-5" fill="#F2F3F5" x="20" y="2.5" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份" fill="#F2F3F5" x="20" y="8.75" width="15" height="3.75"></rect>
+                                <rect id="矩形-5备份-2" fill="#F2F3F5" x="0" y="18.75" width="35" height="3.75"></rect>
+                                <rect id="矩形-5备份-3" fill="#F2F3F5" x="0" y="25" width="35" height="3.75"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

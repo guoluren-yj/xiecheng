@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>工商信息</title>
+    <g id="v111" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="工商信息">
+            <polygon id="路径" points="0 0 48 0 48 48 0 48"></polygon>
+            <path d="M26,33.876 L26,38 L36,38 L36,42 L12,42 L12,38 L22,38 L22,33.876 C13.9998805,32.8671838 8,26.0634746 8,18 L8,6 L40,6 L40,18 C40,26.0634746 34.0001195,32.8671838 26,33.876 Z M12,10 L12,18 C12,24.627417 17.372583,30 24,30 C30.627417,30 36,24.627417 36,18 L36,10 L12,10 Z M2,10 L6,10 L6,18 L2,18 L2,10 Z M42,10 L46,10 L46,18 L42,18 L42,10 Z" id="形状" fill="#4E5769"></path>
+        </g>
+    </g>
+</svg>

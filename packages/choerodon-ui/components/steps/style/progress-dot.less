@@ -1,0 +1,75 @@
+.@{steps-prefix-cls}-dot {
+  .@{steps-prefix-cls}-item {
+    &-title {
+      line-height: @line-height-base;
+    }
+    &-tail {
+      top: 0.02rem;
+      width: 100%;
+      margin: 0 0 0 @steps-desciption-max-width / 2;
+      padding: 0;
+      &::after {
+        width: ~'calc(100% - .2rem)';
+        height: 0.03rem;
+        margin-left: 0.12rem;
+      }
+    }
+    &:first-child .@{steps-prefix-cls}-icon-dot {
+      left: 0.02rem;
+    }
+    &-icon {
+      width: @steps-dot-size;
+      height: @steps-dot-size;
+      margin-left: 0.67rem;
+      padding-right: 0;
+      line-height: @steps-dot-size;
+      background: transparent;
+      border: 0;
+      .@{steps-prefix-cls}-icon-dot {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        transition: all @animation-duration-slow;
+        /* expand hover area */
+        &::after {
+          position: absolute;
+          top: -0.12rem;
+          left: -0.26rem;
+          width: 0.6rem;
+          height: 0.32rem;
+          background: rgba(0, 0, 0, 0.001);
+          content: '';
+        }
+      }
+    }
+    &-process .@{steps-prefix-cls}-item-icon {
+      width: @steps-current-dot-size;
+      height: @steps-current-dot-size;
+      line-height: @steps-current-dot-size;
+      .@{steps-prefix-cls}-icon-dot {
+        top: -0.01rem;
+      }
+    }
+  }
+}
+
+.@{steps-prefix-cls}-vertical.@{steps-prefix-cls}-dot {
+  .@{steps-prefix-cls}-item-icon {
+    margin-top: 0.08rem;
+    margin-left: 0;
+  }
+  .@{steps-prefix-cls}-item-tail {
+    top: 0.02rem;
+    left: -0.09rem;
+    margin: 0;
+    padding: 0.22rem 0 0.04rem;
+  }
+  .@{steps-prefix-cls}-item:first-child .@{steps-prefix-cls}-icon-dot {
+    left: 0;
+  }
+  .@{steps-prefix-cls}-item-process .@{steps-prefix-cls}-icon-dot {
+    left: -0.02rem;
+  }
+}

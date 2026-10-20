@@ -1,0 +1,62 @@
+/*
+ * index.less - 采购协议审批详情样式
+ * @date: 2019-05-15
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.anchor-wrapper {
+  overflow: inherit;
+  :global {
+    .ant-anchor-link > .ant-anchor-link-title {
+      position: static;
+      font-size: 13px;
+      & > .anticon.anticon-check-circle-o {
+        position: absolute;
+        left: -25px;
+      }
+    }
+  }
+}
+
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0 0;
+    }
+  }
+}
+
+.contract-maintain-spin-wrapper {
+  :global {
+    .ant-card.ued-detail-card > .ant-card-body {
+      padding: 16px 0;
+    }
+  }
+}
+
+:global {
+  .spcm-pub-modal.ant-modal {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .spcm-pub-viewer .react-viewer-canvas > img {
+    position: fixed;
+    top: -30%;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+// 在线沟通组件
+.chatRoom {
+  :global {
+    .c7n-pro-btn-primary {
+      color: #fff !important;
+    }
+  }
+}

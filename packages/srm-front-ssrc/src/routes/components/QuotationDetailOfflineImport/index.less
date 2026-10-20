@@ -1,0 +1,38 @@
+.supplier-box{
+  max-height: 600px;
+  overflow: auto;
+  border-right: .01rem solid #e0e0e0;
+  width: 10%;
+  .supplier-item{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .supplier-name{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 90%;
+    }
+    .supplier-code{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: gray;
+    }
+    .supplier-check-flag{
+      position: absolute;
+      border-right: 3px solid rgb(0, 184, 204);
+      height: 100%;
+      right: 0;
+    }
+  }
+}
+.supplier-box::-webkit-scrollbar{
+  display: none;
+}
+
+.import-box{
+  width: 90%;
+}

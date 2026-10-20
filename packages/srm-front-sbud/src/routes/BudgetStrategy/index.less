@@ -1,0 +1,168 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.config-page-content {
+  padding: 0 !important;
+  height: 100%;
+  overflow: hidden;
+  margin: 8px;
+  background-color: #fff;
+  :global {
+    .full-height-spinning {
+      height: 100%;
+      .c7n-spin-container {
+        height: 100%;
+      }
+    }
+    .config-vertical-tabs {
+      height: 100%;
+      & > .c7n-tabs-content {
+        height: 100%;
+        padding-left: 20px;
+        border-left: 1px solid #e8e8e8 !important;
+        overflow-y: scroll !important;
+      }
+      & > .c7n-tabs-bar {
+        border: none;
+        .c7n-tabs-bar-inner {
+          padding-top: 20px;
+        }
+        .c7n-tabs-nav-container {
+          min-width: 179px;
+          max-width: 219px;
+        }
+
+        .c7n-tabs-tab {
+          // font-size: 14px;
+          // line-height: 22px;
+          text-align: left;
+          margin-bottom: 16px;
+          padding: 0 20px;
+        }
+        // .c7n-tabs-ink-bar {
+        //   height: 22px !important;
+        //   // width: 3px;
+        // }
+      }
+    }
+    .config-top-tabs {
+      & > .c7n-tabs-bar {
+        .c7n-tabs-bar-inner {
+          padding-top: 16px;
+        }
+        .c7n-tabs-tab {
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+    }
+    .config-new-base-content .config-right-content {
+      padding: 20px;
+    }
+    .config-right-content {
+      height: 100%;
+      padding-right: 20px;
+      padding-top: 20px;
+      .config-right-content-one-title {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .config-chunk-content {
+        // margin-top: 16px;
+        padding-bottom: 32px;
+        .config-right-content-two-title {
+          height: auto;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          &-ink {
+            display: inline-block;
+            margin-right: 8px;
+            height: 12px;
+            position: relative;
+            top: -1px;
+            width: 3px;
+            background-color: @primary-color;
+            vertical-align: middle;
+          }
+        }
+      }
+      .config-chunk-content:last-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// .control-config-internal-form {
+//   margin-top: -14px;
+//   :global {
+//     table > tbody {
+//       display: flex;
+//     }
+//     table > tbody > tr > td {
+//       vertical-align: top !important;
+//     }
+//     .c7n-pro-field-wrapper .c7n-badge {
+//       margin-top: 6px;
+//     }
+//   }
+// }
+
+// .control-config-external-form {
+//   margin-top: -14px;
+//   :global {
+//     table > tbody {
+//       display: flex;
+//     }
+//     table > tbody > tr > td {
+//       vertical-align: baseline !important;
+//     }
+//   }
+// }
+
+.tabTitle {
+  // width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-btn:hover {
+  color: @srm-primary-color !important;
+}
+
+.history-item-wrapper {
+  padding: 8px 0;
+  cursor: pointer;
+  .history-content {
+    font-weight: 400;
+    line-height: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    .history-extra {
+      display: flex;
+      grid-gap: 8px;
+      gap: 8px;
+      line-height: 18px;
+      color: #868d9c;
+    }
+  }
+}
+
+.sprm-col-btn {
+  margin-right: 16px;
+  margin-left: 0 !important;
+}
+
+.sprm-col-btn:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,55 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.operate-remark {
+  color: @text-2;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+// 操作记录
+.operate-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .action-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .action-name,
+    .action-destination {
+      font-weight: 500;
+      display: flex;
+      color: @text-1;
+      .action-destination-text {
+        display: inline-block;
+        max-width: 240px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 500;
+      }
+    }
+    .action-type {
+      margin: 0 8px;
+      color: @text-2;
+    }
+  }
+}
+
+.action-link {
+  :global {
+    .c7n-pro-btn+.c7n-pro-btn:not(.c7n-pro-btn-block) {
+      margin-left: 16px;
+    }
+  }
+}
+
+.publish-confirm-modal {
+  :global {
+    .c7n-pro-modal-footer {
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+  }
+}

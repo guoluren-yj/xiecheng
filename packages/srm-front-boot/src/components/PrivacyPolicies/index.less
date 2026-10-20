@@ -1,0 +1,55 @@
+.privacyPolicies {
+  border-radius: 5px;
+  border-top: none;
+  :global {
+    .c7n-pro-modal-content {
+      border-radius: 5px;
+
+      .c7n-pro-modal-header {
+        padding: 0;
+        border-radius: 5px;
+        background-color: currentColor;
+      }
+
+      .c7n-pro-modal-body {
+        padding: 0 30px;
+        position: relative;
+        width: 100%;
+        top: -20px;
+        overflow: hidden;
+      }
+
+      .c7n-pro-modal-footer {
+        border: none;
+      }
+    }
+
+    .privacy-policies-title {
+      padding-top: 32px;
+      background-image: url('../../assets/privacyPoliciesModal.png');
+      background-size: 100%;
+      .title {
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+      }
+      .content {
+        padding: 0 30px 12px;
+        margin-top: 27px;
+        color: #fff;
+        > p {
+          margin-bottom: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .privacy-policies-content {
+      height: calc(100vh - 4.6rem);
+      background-color: #f5f7fa;
+      border-radius: 5px;
+      padding: 20px;
+      overflow: auto;
+    }
+  }
+}

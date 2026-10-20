@@ -1,0 +1,86 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.afs-container {
+  height: 100%;
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container,
+    .afs-wrapper {
+      height: 100%;
+    }
+    .afs-wrapper {
+      display: flex;
+    }
+    .afs-wrapper-left{
+      flex: 1;
+      height: 100%;
+      overflow: auto;
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    .afs-info,
+    .order-info {
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    .afs-info {
+      
+      .afs-imgs {
+        > img {
+          margin-top: 4px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .order-info {
+      width: 347px;
+      flex-shrink: 0;
+      .sku-info {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+        p {
+          margin: 0;
+        }
+        .sku-name {
+          flex: 1;
+          margin-left: 8px;
+          height: 36px;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 18px;
+          font-weight: 600;
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+.card-container {
+  :global {
+    .card-header {
+      color: #000;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 8px;
+      &::before {
+        content: '';
+        display: block;
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
+      }
+    }
+  }
+}

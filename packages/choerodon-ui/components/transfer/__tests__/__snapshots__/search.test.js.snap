@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should show cross icon when input value exists 1`] = `
+<Search
+  placeholder=""
+  value=""
+>
+  <div>
+    <Input
+      border={true}
+      disabled={false}
+      onChange={[Function]}
+      placeholder=""
+      readOnly={false}
+      showLengthInfo={true}
+      showPasswordEye={false}
+      type="text"
+      value=""
+    >
+      <span
+        className="c7n-input-wrapper c7n-input-has-border"
+      >
+        <div
+          className="c7n-input-content"
+        >
+          <div
+            className="c7n-input-rendered-wrapper"
+          >
+            <div
+              className="c7n-input-rendered"
+            >
+              <input
+                className="c7n-input"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                readOnly={false}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </span>
+    </Input>
+    <span
+      className="undefined-action"
+    >
+      <Icon
+        type="search"
+      >
+        <i
+          className="icon icon-search"
+        />
+      </Icon>
+    </span>
+  </div>
+</Search>
+`;
+
+exports[`Search should show cross icon when input value exists 2`] = `
+<Search
+  placeholder=""
+  value="a"
+>
+  <div>
+    <Input
+      border={true}
+      disabled={false}
+      onChange={[Function]}
+      placeholder=""
+      readOnly={false}
+      showLengthInfo={true}
+      showPasswordEye={false}
+      type="text"
+      value="a"
+    >
+      <span
+        className="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+      >
+        <div
+          className="c7n-input-content"
+        >
+          <div
+            className="c7n-input-rendered-wrapper"
+          >
+            <div
+              className="c7n-input-rendered"
+            >
+              <input
+                className="c7n-input"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                readOnly={false}
+                type="text"
+                value="a"
+              />
+            </div>
+          </div>
+        </div>
+      </span>
+    </Input>
+    <a
+      className="undefined-action"
+      href="#"
+      onClick={[Function]}
+    >
+      <Icon
+        type="cross-circle"
+      >
+        <i
+          className="icon icon-cross-circle"
+        />
+      </Icon>
+    </a>
+  </div>
+</Search>
+`;

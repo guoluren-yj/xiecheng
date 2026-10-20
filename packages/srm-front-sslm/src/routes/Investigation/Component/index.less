@@ -1,0 +1,38 @@
+.component-wrapper {
+  > :global(.ant-tabs-bar) {
+    border-right: none !important;
+    margin-right: 0 !important;
+    > :global(.ant-tabs-nav-container) {
+      > :global(.ant-tabs-nav-wrap) {
+        > :global(.ant-tabs-nav-scroll) {
+          > :global(.ant-tabs-nav) {
+            > :global(.ant-tabs-tab-active) {
+              background-color: #dbdef8;
+              color: #5867dd;
+            }
+          }
+        }
+      }
+    }
+  }
+  :global {
+    .ant-tabs-content {
+      .table-list-operator {
+        text-align: right;
+        > .ant-btn-primary {
+          // 覆盖权限集按钮样式
+          background-color: #29bece !important;
+          border-color: #29bece !important;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .compose-form-disabled {
+    .row-disabled {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,1474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/tabs/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 1
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 2
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 3
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-animated"
+    style="margin-left:0%"
+  >
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Content of Tab Pane 1
+    </div>
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/card.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-card c7n-tabs-card c7n-tabs-no-animation"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 1
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 2
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 3
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-no-animated"
+  >
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Content of Tab Pane 1
+    </div>
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/card-top.md correctly 1`] = `
+<div
+  class="card-container"
+>
+  <div
+    class="c7n-tabs c7n-tabs-top c7n-tabs-card c7n-tabs-card c7n-tabs-no-animation"
+  >
+    <div
+      class="c7n-tabs-bar"
+      role="tablist"
+      tabindex="0"
+    >
+      <div
+        class="c7n-tabs-nav-container"
+      >
+        <span
+          class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-next-icon"
+          />
+        </span>
+        <div
+          class="c7n-tabs-nav-wrap"
+        >
+          <div
+            class="c7n-tabs-nav-scroll"
+          >
+            <div
+              class="c7n-tabs-nav c7n-tabs-nav-animated"
+            >
+              <div
+                class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+              />
+              <div
+                aria-disabled="false"
+                aria-selected="true"
+                class="c7n-tabs-tab-active c7n-tabs-tab"
+                role="tab"
+              >
+                Tab Title 1
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab Title 2
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab Title 3
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-tabs-content c7n-tabs-content-no-animated"
+    >
+      <div
+        aria-hidden="false"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+        role="tabpanel"
+      >
+        <p>
+          Content of Tab Pane 1
+        </p>
+        <p>
+          Content of Tab Pane 1
+        </p>
+        <p>
+          Content of Tab Pane 1
+        </p>
+      </div>
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/custom-add-trigger.md correctly 1`] = `
+<div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <button
+      class="c7n-btn c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        ADD
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+  <div
+    class="c7n-tabs c7n-tabs-top c7n-tabs-editable-card c7n-tabs-card c7n-tabs-no-animation"
+  >
+    <div
+      class="c7n-tabs-bar"
+      role="tablist"
+      tabindex="0"
+    >
+      <div
+        class="c7n-tabs-nav-container"
+      >
+        <span
+          class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-next-icon"
+          />
+        </span>
+        <div
+          class="c7n-tabs-nav-wrap"
+        >
+          <div
+            class="c7n-tabs-nav-scroll"
+          >
+            <div
+              class="c7n-tabs-nav c7n-tabs-nav-animated"
+            >
+              <div
+                class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+              />
+              <div
+                aria-disabled="false"
+                aria-selected="true"
+                class="c7n-tabs-tab-active c7n-tabs-tab"
+                role="tab"
+              >
+                <div>
+                  Tab 1
+                  <i
+                    class="icon icon-close"
+                  />
+                </div>
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                <div>
+                  Tab 2
+                  <i
+                    class="icon icon-close"
+                  />
+                </div>
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-tabs-content c7n-tabs-content-no-animated"
+    >
+      <div
+        aria-hidden="false"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+        role="tabpanel"
+      >
+        Content of Tab Pane 1
+      </div>
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/disabled.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 1
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="true"
+              aria-selected="false"
+              class=" c7n-tabs-tab c7n-tabs-tab-disabled"
+              role="tab"
+            >
+              Tab 2
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 3
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-animated"
+    style="margin-left:0%"
+  >
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Tab 1
+    </div>
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/editable-card.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-editable-card c7n-tabs-card c7n-tabs-no-animation"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-extra-content"
+      style="float:right"
+    >
+      <span>
+        <i
+          class="icon icon-plus c7n-tabs-new-tab"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              <div>
+                Tab 1
+                <i
+                  class="icon icon-close"
+                />
+              </div>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              <div>
+                Tab 2
+                <i
+                  class="icon icon-close"
+                />
+              </div>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              <div
+                class="c7n-tabs-tab-unclosable"
+              >
+                Tab 3
+              </div>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-no-animated"
+  >
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Content of Tab 1
+    </div>
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/extra.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-extra-content"
+      style="float:right"
+    >
+      <button
+        class="c7n-btn c7n-btn-flat"
+        type="button"
+      >
+        <span>
+          Extra Action
+        </span>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </div>
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 1
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 2
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              Tab 3
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-animated"
+    style="margin-left:0%"
+  >
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Content of tab 1
+    </div>
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/icon.md correctly 1`] = `
+<div
+  class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+>
+  <div
+    class="c7n-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="c7n-tabs-nav-container"
+    >
+      <span
+        class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="c7n-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="c7n-tabs-nav-wrap"
+      >
+        <div
+          class="c7n-tabs-nav-scroll"
+        >
+          <div
+            class="c7n-tabs-nav c7n-tabs-nav-animated"
+          >
+            <div
+              class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="false"
+              class=" c7n-tabs-tab"
+              role="tab"
+            >
+              <span>
+                <i
+                  class="icon icon-apple"
+                />
+                Tab 1
+              </span>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="c7n-tabs-tab-active c7n-tabs-tab"
+              role="tab"
+            >
+              <span>
+                <i
+                  class="icon icon-android"
+                />
+                Tab 2
+              </span>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs-content c7n-tabs-content-animated"
+    style="margin-left:-100%"
+  >
+    <div
+      aria-hidden="true"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="false"
+      class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      Tab 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/position.md correctly 1`] = `
+<div>
+  <div
+    style="margin-bottom:16px"
+  >
+    Tab position：
+    <div
+      class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="top"
+          >
+            top
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+  >
+    <div
+      class="c7n-tabs-bar"
+      role="tablist"
+      tabindex="0"
+    >
+      <div
+        class="c7n-tabs-nav-container"
+      >
+        <span
+          class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-next-icon"
+          />
+        </span>
+        <div
+          class="c7n-tabs-nav-wrap"
+        >
+          <div
+            class="c7n-tabs-nav-scroll"
+          >
+            <div
+              class="c7n-tabs-nav c7n-tabs-nav-animated"
+            >
+              <div
+                class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+              />
+              <div
+                aria-disabled="false"
+                aria-selected="true"
+                class="c7n-tabs-tab-active c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 1
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 2
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 3
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-tabs-content c7n-tabs-content-animated"
+      style="margin-left:0%"
+    >
+      <div
+        aria-hidden="false"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+        role="tabpanel"
+      >
+        Content of Tab 1
+      </div>
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/size.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-radio-group-wrapper"
+  >
+    <div
+      class="c7n-radio-group"
+      style="margin-bottom:16px"
+    >
+      <label
+        class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+      >
+        <span
+          class="c7n-radio-button c7n-radio-button-checked"
+        >
+          <input
+            checked=""
+            class="c7n-radio-button-input"
+            type="radio"
+            value="small"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Small
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="default"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Default
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="large"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Large
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs c7n-tabs-top c7n-tabs-line c7n-tabs-small"
+  >
+    <div
+      class="c7n-tabs-bar"
+      role="tablist"
+      tabindex="0"
+    >
+      <div
+        class="c7n-tabs-nav-container"
+      >
+        <span
+          class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-next-icon"
+          />
+        </span>
+        <div
+          class="c7n-tabs-nav-wrap"
+        >
+          <div
+            class="c7n-tabs-nav-scroll"
+          >
+            <div
+              class="c7n-tabs-nav c7n-tabs-nav-animated"
+            >
+              <div
+                class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+              />
+              <div
+                aria-disabled="false"
+                aria-selected="true"
+                class="c7n-tabs-tab-active c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 1
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 2
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 3
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-tabs-content c7n-tabs-content-animated"
+      style="margin-left:0%"
+    >
+      <div
+        aria-hidden="false"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+        role="tabpanel"
+      >
+        Content of tab 1
+      </div>
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tabs/demo/slide.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-radio-group-wrapper"
+  >
+    <div
+      class="c7n-radio-group"
+      style="margin-bottom:8px"
+    >
+      <label
+        class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+      >
+        <span
+          class="c7n-radio-button c7n-radio-button-checked"
+        >
+          <input
+            checked=""
+            class="c7n-radio-button-input"
+            type="radio"
+            value="top"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Horizontal
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="left"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Vertical
+        </span>
+      </label>
+    </div>
+  </div>
+  <div
+    class="c7n-tabs c7n-tabs-top c7n-tabs-line"
+    style="height:220px"
+  >
+    <div
+      class="c7n-tabs-bar"
+      role="tablist"
+      tabindex="0"
+    >
+      <div
+        class="c7n-tabs-nav-container"
+      >
+        <span
+          class="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-prev-icon"
+          />
+        </span>
+        <span
+          class="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-tabs-tab-next-icon"
+          />
+        </span>
+        <div
+          class="c7n-tabs-nav-wrap"
+        >
+          <div
+            class="c7n-tabs-nav-scroll"
+          >
+            <div
+              class="c7n-tabs-nav c7n-tabs-nav-animated"
+            >
+              <div
+                class="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+              />
+              <div
+                aria-disabled="false"
+                aria-selected="true"
+                class="c7n-tabs-tab-active c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 1
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 2
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 3
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 4
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 5
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 6
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 7
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 8
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 9
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 10
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                aria-selected="false"
+                class=" c7n-tabs-tab"
+                role="tab"
+              >
+                Tab 11
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-tabs-content c7n-tabs-content-animated"
+      style="margin-left:0%"
+    >
+      <div
+        aria-hidden="false"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+        role="tabpanel"
+      >
+        Content of tab 1
+      </div>
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        class="c7n-tabs-tabpane c7n-tabs-tabpane-inactive"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;

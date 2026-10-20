@@ -1,0 +1,25 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.operate-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .operate-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .operate-name,
+    .operate-text {
+      font-weight: 500;
+      color: @fill-1;
+    }
+    .operate-action {
+      margin: 0 8px;
+      color: @text-2;
+    }
+    .operate-result {
+      display: flex;
+    }
+  }
+}

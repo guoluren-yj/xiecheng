@@ -1,0 +1,18 @@
+.compare-wrapper {
+  :global {
+    .c7n-tabs-nav {
+      display: flex;
+    }
+  }
+  .diff-container {
+    position: relative;
+    height: calc(100vh - 195px);
+    overflow-x: auto;
+    overflow-y: auto;
+    table tr:first-child {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  }
+}

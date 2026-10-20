@@ -1,0 +1,174 @@
+.hot-config-detail {
+  display: flex;
+  height: 100%;
+  :global {
+  .hot-left {
+    width: 850px;
+    height: 100%;
+    .hot-create-container {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 20px;
+      position: fixed;
+      width: 850px;
+      background: #fff;
+      z-index: 1;
+      border-bottom: 1px solid #e5e7ec;
+      border-right: 1px solid #e5e7ec;
+      .hot-point-status {
+        float: right;
+        color: #868D9C;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .status-item{
+          margin-right: 16px;
+          display: flex;
+          line-height: 14px;
+          .status-item-color {
+            width: 14px;
+            height: 14px;
+            margin-right: 8px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .hot-img-content {
+      min-height: calc(100% - 40px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F7F8FA;
+      padding: 20px;
+      border-right: 1px solid #e5e7ec;
+      margin-top: 40px;
+      .hot-img-container {
+        position: relative;
+        user-select: none;
+        .hot-point {
+          box-sizing: content-box;
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-clip: content-box;
+          &:hover {
+            cursor: move;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            top: -30px;
+            left: -30px;
+            background: rgba(29, 33, 41, 0.1);
+            border: 1px dashed rgb(134, 141, 156);
+          }
+        }
+        .hot-point-active {
+          .point-delete {
+            opacity: 0;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: -54px;
+            left: 18px;
+            cursor: pointer;
+          }
+          &::after{
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            background: rgba(0, 184, 204, 0.1);
+            border: 1px dashed rgb(0, 184, 204);
+          }
+          &::before{
+            content: '\e872';
+            font-family: c7nIcon;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: -54px;
+            left: 18px;
+            font-size: 16px;
+            background: #00B8CC;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px 2px 0px 0px;
+          }
+        }
+        .hot-point-error::after{
+          background: rgba(230, 67, 34, 0.1);
+          border: 1px dashed rgb(230, 67, 34);
+        }
+        .point-error {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: 17px;
+          right: -29px;
+          line-height: 22px;
+          text-align: center;
+          background-color: @red-6;
+          border-top-left-radius: 2px;
+          i {
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+        .hot-point-small {
+          width: 8px;
+          height: 8px;
+          &::after {
+            width: 48px;
+            height: 48px;
+            top: -20px;
+            left: -20px;
+          }
+          .point-error {
+            top: 3px;
+            right: -19px;
+          }
+        }
+        .hot-point-small.hot-point-active {
+          .point-delete {
+            top: -44px;
+            left: 4px;
+          }
+
+          &::before{
+            top: -44px;
+            left: 4px;
+          }
+        }
+      }
+    }
+  }
+  .hot-right {
+    padding: 20px;
+    flex: 1;
+    position: fixed;
+    width: 240px;
+    right: 0;
+    height: calc(100% - 112px);
+    overflow-y: scroll;
+    .no-data {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      p {
+        margin-top: 16px;
+        text-align: center;
+        color: #868D9C;
+      }
+    }
+  }
+}
+}

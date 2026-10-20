@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders empty list 1`] = `
+<div
+  class="c7n-list c7n-list-split"
+>
+  <div>
+    <div
+      class="c7n-spin-nested-loading"
+    >
+      <div
+        class="c7n-spin-container"
+      >
+        <div
+          class="c7n-list-empty-text"
+        >
+          No data
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

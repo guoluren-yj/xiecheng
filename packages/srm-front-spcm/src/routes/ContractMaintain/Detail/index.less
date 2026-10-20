@@ -1,0 +1,137 @@
+/*
+ * index.less - 采购协议审批详情样式
+ * @date: 2019-05-15
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+@import '~hzero-front/lib/srm-variables.less';
+
+// 右侧锚点
+.anchor-wrapper {
+  :global {
+    .ant-anchor-link {
+      & > .ant-anchor-link-title {
+        font-size: 13px;
+      }
+
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.alert-wrapper {
+  margin-top: 16px;
+  :global {
+    .c7n-alert-info {
+      background-color: rgba(10, 125, 245, 0.1);
+      border-radius: 2px;
+      border: 0;
+    }
+    .c7n-alert-icon,
+    .c7n-alert-message {
+      display: flex;
+      align-items: center;
+      color: #0161d5;
+      font-size: 12px;
+    }
+    // .c7n-alert-message {
+    //   margin-left: 8px;
+    // }
+
+    .c7n-alert-close-icon .icon-close {
+      color: #0161d5;
+    }
+  }
+
+  .alert-info {
+    white-space: pre-wrap;
+  }
+}
+
+.btn-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  & > button:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0 0;
+    }
+  }
+}
+
+.online-edit-collapse-item.online-edit-collapse-item.online-edit-collapse-item.online-edit-collapse-item {
+  margin-bottom: 0;
+}
+.edit-table-wrapper {
+  :global {
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+}
+// 头wrapper
+.header-wrapper {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 16px;
+}
+
+.full-modal-wrapper {
+  overflow: hidden;
+  :global {
+    .ant-modal {
+      top: 0;
+    }
+
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+
+    .ant-modal-header {
+      overflow: hidden;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.contract-maintain-spin-wrapper {
+  :global {
+    .ant-card.ued-detail-card > .ant-card-body {
+      padding: 16px 0;
+    }
+  }
+}
+
+.purchaseHeaderNumber {
+  :global {
+    a {
+      color: #333;
+      font-weight: 500;
+    }
+    .ant-tag {
+      background-color: #eee !important;
+      color: #333;
+      border-radius: 8px;
+      height: auto !important;
+      line-height: 15px !important;
+      margin-left: 4px !important;
+    }
+  }
+}

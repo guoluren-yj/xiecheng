@@ -1,0 +1,52 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  .hmde,
+  .lowcode-m-modal {
+    // tab栏公共样式
+    .tabs {
+      :global {
+        .c7n-tabs-bar {
+          border: 0;
+          margin: 0;
+        }
+        .c7n-tabs-nav-container {
+          margin-bottom: 0;
+        }
+
+        .c7n-tabs-nav-scroll {
+          font-size: 16px;
+
+          .c7n-tabs-nav-animated {
+            z-index: 95;
+            background-color: white;
+          }
+
+          .c7n-tabs-nav .c7n-tabs-tab {
+            padding-left: 0;
+            padding-right: 0;
+            // color: @Grey2;
+            opacity: 0.9;
+          }
+
+          // .c7n-tabs-tab-active {
+          //   color: @darkblue !important;
+          // }
+
+          .c7n-tabs-ink-bar {
+            // background-color: @darkblue;
+            opacity: 0.9;
+          }
+
+          .c7n-tabs-nav .c7n-tabs-tab:hover {
+            opacity: 1;
+          }
+
+          .c7n-tabs-ink-bar:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

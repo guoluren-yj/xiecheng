@@ -1,0 +1,131 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.content {
+  :global {
+    .no-params {
+      height: 200px;
+      // background: url(../../../../../assets/images/illu_common_nodata_default.svg) no-repeat center;
+      background-size: 13%;
+      text-align: center;
+      position: relative;
+      p {
+        display: block;
+        font-size: 16px;
+        color: #999;
+        position: absolute;
+        bottom: 0;
+        height: 22px;
+        width: 100%;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+    .base-info-title {
+      font-size: 14px;
+      font-weight: 600;
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 16px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+      }
+    }
+    .base-info-item {
+      display: inline-block;
+      width: 50%;
+      font-size: 12px;
+      color: #000;
+      line-height: 18px;
+      span:nth-child(1) {
+        display: inline-block;
+        width: 100px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+    .logistics-info-refresh {
+      cursor: pointer;
+      color: @primary-color;
+      i {
+        font-size: 14px;
+        margin-top: -3px;
+        margin-right: 5px;
+      }
+    }
+    .content-header {
+      background: rgba(0, 0, 0, 0.03);
+      padding: 10px 15px;
+      border-radius: 2px 2px 0 0;
+      > div {
+        display: inline-block;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 18px;
+        margin-right: 30px;
+      }
+      div:nth-of-type(3) {
+        margin-right: 0;
+      }
+    }
+    .content-info {
+      max-height: 100%;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      border-radius: 2px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 16px 15px;
+      .time-line {
+        .logistics-time {
+          display: inline-block;
+          position: relative;
+          top: -5px;
+          margin-right: 10px;
+          width: 120px;
+          text-align: right;
+          color: rgba(0, 0, 0, 0.65);
+          vertical-align: top;
+        }
+        .logistics-desc {
+          display: inline-block;
+        }
+        .c7n-timeline-item-head-blue {
+          color: #47b881 !important;
+          border-color: #47b881 !important;
+        }
+        .c7n-timeline-item-content {
+          width: 500px;
+        }
+        .c7n-timeline-item-last .c7n-timeline-item-content {
+          min-height: 24px;
+        }
+        .c7n-timeline-item-last {
+          padding: 0;
+        }
+      }
+    }
+    .c7n-modal-body {
+      height: 100%;
+    }
+    .content-title {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    .line-item {
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 18px;
+      .line-item-label {
+        width: 94px;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

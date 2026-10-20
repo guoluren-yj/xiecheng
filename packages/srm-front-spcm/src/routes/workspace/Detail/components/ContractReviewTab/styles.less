@@ -1,0 +1,74 @@
+.review-result-wrapper {
+  width: 25%;
+  margin-left: 8px;
+  background-color: #fff;
+  padding: 20px;
+  .review-result-wrapper-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+      align-items: baseline;
+    }
+    i {
+      cursor: pointer;
+    }
+    h3 {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  }
+
+  .review-result-content {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .review-result-noData {
+    min-height: calc(100vh - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.review-result-text-mode {
+  height: calc(100vh - 10px);
+
+  :global {
+    .c7n-tabs-content {
+      height: calc(100vh - 140px);
+      overflow-y: auto;
+    }
+
+    .c7n-card-head-title div {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.review-result-doc-mode {
+  max-height: 1500px;
+
+  :global {
+    .c7n-tabs {
+      height: calc(100% - 40px);
+    }
+
+    .c7n-tabs-content {
+      height: calc(100% - 50px);
+      overflow-y: auto;
+    }
+  }
+}
+
+.review-result-hidden {
+  display: none;
+}

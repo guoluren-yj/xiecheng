@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>model-api</title>
+    <desc>Created with Sketch.</desc>
+    <g id="模型" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="平台/租户级展现" transform="translate(-209.000000, -184.000000)" fill-rule="nonzero">
+            <g id="model-api" transform="translate(209.000000, 184.000000)">
+                <path d="M10.6671049,0 L1.33401692,0 C0.600639765,0 0,0.599524989 0,1.33191163 L0,10.6669491 C0,11.400475 0.600657288,12 1.33401692,12 L10.6671049,12 C11.3994829,12 12,11.400475 12,10.666949 L12,1.33191161 C12,0.599524989 11.3994829,0 10.6671049,0" id="路径" fill="#59CFAA"></path>
+                <path d="M5.38,2.43 L2.63,9.57 L3.79,9.57 L4.46,7.73 L7.53,7.73 L8.2,9.57 L9.37,9.57 L6.62,2.43 L5.38,2.43 Z M4.79,6.83 L5.98,3.6 L6.02,3.6 L7.2,6.83 L4.79,6.83 Z" id="A" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

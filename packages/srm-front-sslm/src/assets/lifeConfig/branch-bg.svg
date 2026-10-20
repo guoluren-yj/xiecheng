@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 24</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4、维护明细-流程设置-节点设置" transform="translate(-1198.000000, -440.000000)">
+            <g id="编组-29" transform="translate(1042.000000, 424.000000)">
+                <g id="编组-28" transform="translate(16.000000, 16.000000)">
+                    <g id="编组-24" transform="translate(140.000000, 0.000000)">
+                        <rect id="矩形" fill="#F46C0E" x="0" y="0" width="36" height="36" rx="4"></rect>
+                        <g id="Icon/call_split_black" transform="translate(6.000000, 6.000000)">
+                            <path d="M14,4 L16.29,6.29 L13.41,9.17 L14.83,10.59 L17.71,7.71 L20,10 L20,4 L14,4 Z M10,4 L4,4 L4,10 L6.29,7.71 L11,12.41 L11,20 L13,20 L13,11.59 L7.71,6.29 L10,4 Z" id="icon" stroke="#FFFFFF" fill="#FFFFFF"></path>
+                            <polygon id="call_split_black" points="0 0 24 0 24 24 0 24"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

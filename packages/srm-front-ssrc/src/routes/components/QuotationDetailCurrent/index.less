@@ -1,0 +1,174 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.quotation-info {
+  border-left: 3px solid @primary-color;
+  height: 12px;
+  line-height: 12px;
+  padding-left: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.page-anchor-container {
+  // background-color: white;
+  // display: flex;
+  // display: -webkit-flex;
+  // align-items: center;
+  // position: fixed;
+  // top: 50%;
+  // right: 32px;
+  // width: 220px;
+  // z-index: 100;
+  // transition: all 0.5s ease-out;
+  // -webkit-transition: all 0.5s ease-out;
+  // -moz-transition: all 0.5s ease-out;
+  // -ms-transition: all 0.5s ease-out;
+
+  position: fixed;
+  bottom: 160px;
+  right: 0;
+  width: 220px;
+  // height: 200px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  .anchor-icon {
+    // position: absolute;
+    // right: 220px;
+    // width: 12px;
+    // line-height: 56px;
+    // background: #d8d6d6;
+    // border: 1px solid #c0bebe;
+    // border-radius: 25px 0 0 25px;
+    // cursor: pointer;
+    // text-align: center;
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+  }
+
+  :global {
+    .c7n-anchor-ink-ball:after {
+      color: @anchor-primary-color;
+    }
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* Internet Explorer */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+  }
+
+  // &.toggle-show {
+  //   right: -220px;
+  // }
+
+  .anchor-content {
+    max-height: 500px;
+    overflow: auto;
+    width: 90%;
+    padding: 8px 0 8px 4px;
+
+    // anchor window fixed, override top
+    :global {
+      div > div {
+        top: unset !important;
+      }
+    }
+  }
+}
+
+.uuid-required-style {
+  &::before {
+    display: inline-block;
+    content: '*';
+    font-size: 12px;
+    color: #f5222d;
+    line-height: 28px;
+  }
+}
+
+.ssrc-supplier-quotation-current-base-form-wrap {
+  margin-bottom: 16px;
+  margin-top: 32px;
+
+  &.ssrc-supplier-quotation-current-base-form-wrap-first {
+    margin-top: 0;
+  }
+}
+
+.modal-content-informationExport {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  > h3 {
+    margin: 0;
+  }
+}
+.modal-content-informationExport-div {
+  color: @link-color;
+  margin-left: 2em;
+}
+
+.modal-content-informationExport-div > text {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-left: 1em;
+  cursor: pointer;
+  color: @link-color;
+}
+
+.modal-content-base-form-wrap {
+  :global {
+    .c7n-pro-field-label {
+      margin-top: 0 !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      .c7n-pro-field-wrapper {
+        .c7n-pro-attachment-wrapper {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+// 报价明细
+.quotation-info-wrap-container {
+  :global {
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper,
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+    .quotation-info-wrap-container .rfx-card-item-title-level-two:first-child {
+      margin-top: 16px;
+    }
+  }
+}
+
+// 报价明细表格-报价明细编码列表头样式(使其与列内容对齐，因为报价明细表格是树，有占位)
+.quotation-detail-header-config-code {
+  padding-left: 36px;
+}

@@ -1,0 +1,49 @@
+@import '~hzero-front/lib/srm-variables';
+.supplier-event-operating-timeline {
+  :global {
+    // margin-top: 20px;
+    .c7n-timeline-item-content {
+      margin: 8px 0 0 24px;
+      padding: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      .icon {
+        font-size: 14px;
+      }
+      .operating-timeline-padding {
+        margin-left: 8px;
+        span {
+          font-weight: 500;
+          color: @text-1;
+        }
+      }
+    }
+
+    .c7n-collapse-item > .c7n-collapse-header {
+      padding: 0 !important;
+    }
+    .c7n-collapse-ghost > .c7n-collapse-item > .c7n-collapse-content > .c7n-collapse-content-box {
+      padding: 0;
+    }
+    .gray {
+      font-size: 12px;
+      display: block;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      margin: 8px 0 0 4px;
+    }
+    .date {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      margin: 8px 0 8px 0;
+      margin-left: 20px;
+    }
+  }
+  .nodata-wrapper {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #000;
+  }
+}

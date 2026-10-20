@@ -1,0 +1,29 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.detail-content {
+  :global {
+    .app-info {
+      position: relative;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        top: 4px;
+        left: -10px;
+      }
+    }
+    .order-base-content {
+      margin-bottom: 16px;
+      .order-base-row {
+        display: flex;
+      }
+    }
+  }
+}

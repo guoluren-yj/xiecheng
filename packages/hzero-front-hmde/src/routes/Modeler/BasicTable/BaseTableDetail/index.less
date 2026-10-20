@@ -1,0 +1,179 @@
+@import '../global.less';
+
+.base-table-detail {
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  .table-header {
+    margin-bottom: 0.1rem;
+    padding: 0.08rem;
+    font-weight: 400;
+    font-size: 0.16rem;
+  }
+
+  .right-header {
+    display: flex;
+    // width: calc(100vw - 385px);
+    width: 100%;
+    .content-header-title {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .content-header-label {
+      height: 36px;
+      line-height: 36px;
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+
+    .content-header-description {
+      width: 90%;
+      margin-top: 10px;
+      .btn-wrapper {
+        height: 36px;
+        line-height: 36px;
+        text-align: right;
+      }
+    }
+
+    .table-type-positive,
+    .table-type-reverse,
+    .table-type-redundant,
+    .table-type-redundant-x {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+      padding: 0 6px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 11px;
+      font-size: 12px;
+      color: #5a6677;
+    }
+
+    .table-type-positive {
+      background: #e1ebff;
+      border: 1px solid #3c64f033;
+    }
+    .table-type-reverse {
+      background: #ebfaff;
+      border: 1px solid #64c8d233;
+    }
+    .table-type-redundant {
+      background: #fff0e6;
+      border: 1px solid #ff783233;
+    }
+    .table-type-redundant-x {
+      background: #ebebff;
+      border: 1px solid #9650dc33;
+    }
+
+    .content-header-span {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+      height: 36px;
+      line-height: 36px;
+      color: @Grey2;
+      overflow: hidden;
+    }
+
+    > div {
+      flex: 1;
+    }
+
+    .right-header-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333435;
+    }
+
+    form {
+      display: flex;
+      height: 36px;
+      align-items: center;
+      :global {
+        .c7n-pro-field-wrapper {
+          padding: 0;
+        }
+
+        .c7n-pro-output {
+          font-size: 14px;
+          color: #5a6677;
+          line-height: 20px;
+        }
+
+        table td:last-child .c7n-pro-field-wrapper {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+
+  .detail-tabs-wrapper {
+    :global {
+      .c7n-tabs-bar {
+        margin-bottom: 0;
+      }
+
+      .c7n-tabs-content {
+        height: calc(100% - 36px);
+        .c7n-tabs-tabpane {
+          overflow-y: auto;
+        }
+        .c7n-tabs-tabpane::-webkit-scrollbar {
+          width: 5px;
+          height: 1px;
+        }
+        .c7n-tabs-tabpane::-webkit-scrollbar-thumb {
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+          background: rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+        }
+        .c7n-tabs-tabpane::-webkit-scrollbar-track {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .tabs {
+    :global {
+      .c7n-tabs-bar {
+        width: 100%;
+        background: #fff;
+        z-index: 100;
+      }
+    }
+  }
+
+  // 引入样式 更改table表单默认按钮居右
+  .btnFloatRight {
+    :global {
+      .c7n-pro-table {
+        &-content::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .c7n-pro-table-toolbar {
+        .c7n-pro-table-toolbar-button-group {
+          float: right;
+        }
+      }
+      // 表头左对齐，标题栏去掉线条
+      .c7n-pro-table .c7n-pro-table-thead > tr > th {
+        border-right: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+/*
+ * style - 配置中心
+ * @date: 2018-11-23
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+/* 配置中心样式 */
+.config-server-content {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  height: 100%;
+  .content {
+    display: flex;
+    height: 100%;
+  }
+  .left-wrapper {
+    width: 150px;
+    min-width: 150px;
+    overflow: auto;
+    background-color: #f5f5f5;
+  }
+  .right-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  :global {
+    /* 内容块的高度配置 */
+    div.page-content {
+      // 优先级比 page-content 高
+      padding: 0;
+      border: 1px solid #e4e4e4;
+      overflow: hidden;
+      height: calc(~'100% - 16px - 8px') !important;
+      .ant-tabs.ant-tabs-top.ant-tabs-line.ant-tabs-no-animation {
+        height: 100%;
+        .ant-tabs-bar {
+          margin: 0;
+        }
+        .ant-tabs-content.ant-tabs-content-no-animated {
+          height: calc(~'100% - 47px');
+          .ant-tabs-tabpane.ant-tabs-tabpane-active {
+            height: 100%;
+          }
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      transition: none;
+    }
+    a:focus {
+      text-decoration: none;
+    }
+    .ant-affix {
+      z-index: 1;
+    }
+    // 锚点样式覆盖
+    .ant-anchor-wrapper {
+      // margin-top: 8px;
+      padding-left: 0;
+      margin-left: 0;
+      background-color: #f5f5f5;
+      overflow: hidden;
+      .ant-anchor {
+        font-size: 14px;
+        padding-left: 0;
+        &-wrapper {
+          margin-left: 0;
+        }
+        &-ink {
+          &:before {
+            display: none;
+          }
+          &-ball {
+            display: none;
+          }
+        }
+        &-link {
+          width: 150px;
+          padding: 0;
+          &-title {
+            padding: 13px 0 13px 32px;
+            display: block;
+            color: #000;
+            line-height: 1;
+            font-size: 14px;
+          }
+          &-active {
+            background-color: #fff;
+          }
+        }
+        &-link-active {
+          .ant-anchor-link-title-active {
+            color: #29bece;
+            // font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+.config-content {
+  font-size: 14px;
+  line-height: 14px;
+  :global {
+    // .ant-checkbox-wrapper {
+    //   .ant-checkbox-checked {
+    //     background-color: #ccc;
+    //   }
+    // }
+    .ant-col-24:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .ant-checkbox-wrapper {
+      font-size: 14px !important;
+    }
+    // tab的主体内容
+    .first-tab-content {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e1e6eb;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .tab-content {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e1e6eb;
+      margin-left: 24px;
+      margin-right: 24px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .last-tab-content {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    // tab项的左侧主体名称
+    .label-col {
+      font-weight: bold;
+      border-left: 2px solid #223252;
+      text-indent: 10px;
+      display: inline-block;
+      line-height: 14px;
+    }
+    // tab中的每个小块
+    .sub-item {
+      padding-top: 48px;
+    }
+    .sub-item-right {
+      padding-right: 80px;
+    }
+    .sub-item-fields {
+      padding-left: 30px;
+    }
+    // 提示文字
+    .sub-message {
+      margin-top: -14px;
+      padding-left: 29px;
+      color: #999;
+      font-size: 12px;
+    }
+    // 提示文字
+    .sub-right-message {
+      margin-top: -14px;
+      padding-left: 14px;
+      color: #999;
+      font-size: 12px;
+    }
+    .sub-item-relate-fields {
+      padding-left: 48px;
+    }
+    .operate-item-link {
+      margin-left: 16px;
+    }
+    .ant-form-item label {
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .write-row {
+      line-height: 29px;
+      margin-top: -4px;
+      .ant-form-item-label {
+        line-height: 28px;
+      }
+      .ant-form-item-control {
+        line-height: 28px;
+        height: 28px;
+      }
+    }
+  }
+}

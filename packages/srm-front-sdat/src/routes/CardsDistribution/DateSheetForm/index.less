@@ -1,0 +1,132 @@
+@import '~hzero-front/lib/srm-variables';
+
+.tab-bar-style {
+  :global {
+    .c7n-tabs-bar {
+      margin: 0 !important;
+    }
+  }
+}
+
+.card-title-header {
+  line-height: 38px;
+  .header-title {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .header-btn-group {
+    float: right;
+  }
+}
+
+.card-scroll-panel {
+  overflow-y: auto;
+  height: calc(100vh - 214px);
+}
+
+.card-scroll-panel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+// 滚动条里面小方块
+.card-scroll-panel::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  background: #53535305;
+}
+
+// 滚动条里面轨道
+.card-scroll-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: #ededed03;
+}
+
+.card-title {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 600;
+  padding-left: 8px;
+  border-left: 3px solid @primary-color;
+}
+
+.primary-tag {
+  background: #fca000;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 3px;
+  margin-left: 5px;
+}
+
+.tag-allocate {
+  background: rgba(71, 184, 129, 0.1);
+  border-radius: 2px;
+  color: #47b881;
+  padding: 2px 5px;
+  font-weight: 500;
+}
+
+.tag-subscribe {
+  padding: 2px 5px;
+  border-radius: 2px;
+  background: rgba(48, 149, 242, 0.1);
+  font-weight: 500;
+  color: #3095f2;
+}
+
+.content-lov-span {
+  width: 0;
+  height: 0;
+  :global {
+    .c7n-pro-select-wrapper {
+      width: 0 !important;
+      height: 0 !important;
+    }
+    .c7n-pro-select {
+      display: none !important;
+    }
+    .c7n-pro-select-suffix-button .c7n-pro-select-suffix {
+      display: none !important;
+    }
+  }
+}
+
+.card-manage-detail-vertical {
+  :global {
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper {
+      padding: 16px 0 0 0;
+    }
+
+    .c7n-pro-form-float-label {
+      padding-top: 16px;
+    }
+    .c7n-pro-field-label-wrapper {
+      .c7n-pro-field-label,
+      .c7n-pro-field-wrapper {
+        padding: 0 !important;
+      }
+    }
+
+    .c7n-pro-output {
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 600;
+    }
+
+    .c7n-pro-field-label-vertical {
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 400;
+    }
+
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+  }
+}

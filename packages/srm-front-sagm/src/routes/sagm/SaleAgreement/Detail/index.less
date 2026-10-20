@@ -1,0 +1,39 @@
+.sagm-detail-container {
+  overflow: auto;
+  :global {
+    .page-content-wrap {
+      &:not(:last-child) {
+        .anchor-content {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .anchor-content {
+      padding: 24px 16px;
+    }
+    .content-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .float-form {
+      .c7n-pro-field-wrapper {
+        padding-right: 16px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.priority-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .priority-icons {
+      display: flex;
+      margin-left: 4px;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

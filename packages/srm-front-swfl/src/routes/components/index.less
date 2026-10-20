@@ -1,0 +1,81 @@
+@import '~hzero-ui/es/style/themes/default.less';
+
+.collapse-items {
+  margin-top: -10px;
+  :global(.ant-collapse-item) {
+    border-bottom: 0 !important;
+  }
+  .collapse-item-title:hover {
+    color: @primary-color;
+  }
+}
+
+.comment-pre {
+  margin-bottom: 0;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.opinion {
+  max-width: 400px;
+}
+
+.table-info-assigneeName-tag {
+  :global {
+    line-height: 18px;
+    height: 18px;
+    border: none;
+    padding: 0 4px;
+    cursor: default;
+    margin-left: 4px;
+    transform: scale(0.84);
+    color: #4e5769;
+  }
+}
+.work-log-button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  & > i {
+    font-size: 14px !important;
+    font-weight: 400;
+  }
+}
+.work-log-content {
+  padding: 0.16rem;
+  z-index: 999;
+  .delegate-record-title {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+  }
+  .delegate-record-label {
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+    font-weight: 400;
+    width: 80px;
+    display: inline-block;
+  }
+  .delegate-record-text {
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: text-top;
+  }
+  .delegate-record-line {
+    background: #e8e8e8;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 0.01rem;
+    margin: 0.16rem 0;
+  }
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0.16rem;
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}

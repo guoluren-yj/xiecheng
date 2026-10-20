@@ -1,0 +1,89 @@
+/**
+ * SheetCreation - 整单引用创建
+ * @date: 2019-02-20
+ * @author: guochaochao <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.header-wrapper {
+  :global {
+    div.ant-row.items-row {
+      line-height: 32px;
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .ant-form-item {
+        margin-bottom: 0;
+        margin-top: -5px;
+      }
+      .item-label {
+        color: #999;
+      }
+    }
+    div.ant-row.items-row:last-child {
+      .ant-form-explain {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+.purchase-application {
+  .purchase-application-line {
+    position: relative;
+    padding: 8px 10px;
+    margin: 15px 0;
+    border: 1px dashed #ccc;
+    :global {
+      .prompt-message {
+        position: absolute;
+        top: -10px;
+        display: inline-block;
+        padding: 0 5px;
+        background-color: #fff;
+      }
+      .ant-row.ant-form-item {
+        width: 300px;
+      }
+    }
+  }
+  .button-group {
+    margin-bottom: 15px;
+    :global {
+      .ant-btn:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+  :global {
+    .ant-table-wrapper .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.headerInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.lastHeaderInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      width: 25%;
+      margin-right: -6px;
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}

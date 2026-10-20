@@ -1,0 +1,29 @@
+{
+  // 创建时间: 2026-04-30 00:00:00
+  // 文件名: tsconfig.json
+  // 文件描述: TypeScript 工程配置文件，统一 tsc 与 IDE 的检查行为
+  // 作者: Felix(LQX5731@163.com)
+  // 版本号: 1.0.0
+  // 最后更新时间: 2026-04-30 03:30:00
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": ["./node_modules/hzero-front/lib/utils/*"],
+      "components/*": ["./node_modules/hzero-front/lib/components/*"],
+      "services/*": ["./node_modules/hzero-front/lib/services/*"],
+      "_utils/*": ["./node_modules/srm-front-boot/lib/utils/*"],
+      "_components/*": ["./node_modules/srm-front-boot/lib/components/*"],
+      "_services/*": ["./node_modules/srm-front-boot/lib/services/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

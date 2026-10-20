@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>司法诉讼</title>
+    <g id="v111" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="司法诉讼">
+            <polygon id="路径" points="0 0 48 0 48 48 0 48"></polygon>
+            <path d="M28,40 L28,44 L4,44 L4,40 L28,40 Z M29.172,1.372 L44.728,16.928 L41.9,19.76 L39.78,19.052 L34.826,24 L46.14,35.314 L43.312,38.142 L32,26.828 L27.192,31.636 L27.758,33.9 L24.928,36.728 L9.372,21.172 L12.202,18.344 L14.462,18.908 L27.05,6.322 L26.344,4.202 L29.172,1.372 Z M30.586,8.444 L16.444,22.584 L23.514,29.656 L37.656,15.516 L30.586,8.444 Z" id="形状" fill="#4E5769"></path>
+        </g>
+    </g>
+</svg>

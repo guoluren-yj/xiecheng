@@ -1,0 +1,71 @@
+@import '~hzero-front/lib/srm-variables';
+.number-select-body {
+  width: 2.8rem;
+  line-height: 1.5;
+  padding: 0.08rem 0.12rem;
+  overflow: hidden;
+}
+
+.number-select-panel {
+  width: 100%;
+  font-size: 0.16rem;
+}
+
+.number-select-cell {
+  height: 0.3rem;
+  padding: 0.03rem 0;
+  text-align: center;
+}
+
+.number-select-cell-inner {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 12px;
+  color: rgb(38, 38, 38);
+  border-radius: 2px;
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 0.22rem;
+  text-align: center;
+  background-color: transparent;
+  border: 0.01rem solid transparent;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: @primary-1;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: @primary-color;
+  }
+}
+
+.number-select-cell-selectd {
+  color: #fff;
+  background-color: @primary-color;
+}
+
+.sbsm-command-menu {
+  :global {
+    .c7n-menu-item {
+      .c7n-pro-btn-primary.c7n-pro-btn-link {
+        color: @text-1;
+      }
+    }
+  }
+}
+
+.sbsm-command-more-icon {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+:global {
+  :local(.sbsm-command-btn) + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,44 @@
+.AISvg {
+  .ai-icon {
+    display: inline-block;
+    height: 16px !important;
+    padding-left: 0 !important;
+    cursor: pointer;
+  }
+  & > svg {
+    cursor: pointer;
+  }
+  & > svg,
+  & > span {
+    vertical-align: middle;
+  }
+
+  & > span {
+    padding-left: 8px;
+  }
+  .icon {
+    color: red;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+}
+
+.InnerAISvg {
+  & > svg {
+    cursor: pointer;
+  }
+}
+
+.RenderAISvg {
+  display: flex;
+  align-items: center;
+  // margin-left: -2px;
+  height: 100%;
+  .inner-ai-icon {
+    display: flex;
+    & > svg {
+      margin-right: 2px;
+      flex-shrink: 0;
+    }
+  }
+}

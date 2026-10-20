@@ -1,0 +1,38 @@
+.content-container {
+  :global {
+    margin-top: 0;
+    padding-top: 0;
+    .content-container-div {
+      height: 100%;
+      min-height: 500px;
+      position: relative;
+      .content-container-div-importDiv {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+      }
+      .content-container-div-queryCode {
+        position: absolute;
+        top: 54px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.tab-bar-import {
+  :global {
+    .c7n-tabs-nav-container {
+      margin-right: 330px;
+    }
+  }
+}
+
+.tab-bar-output {
+  :global {
+    .c7n-tabs-nav-container {
+      margin-right: 260px;
+    }
+  }
+}

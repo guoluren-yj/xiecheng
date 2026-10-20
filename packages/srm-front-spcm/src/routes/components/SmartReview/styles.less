@@ -1,0 +1,153 @@
+// 风险tab头部样式
+.review-risk-tabs-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 16px;
+  .review-risk-tabs-header-left {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  // 选中的风险信息排序
+  .review-risk-tabs-header-right {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+// 风险类型排序
+.spcm-workspace-review-risk-sort-menu {
+  .risk-sort-menu-item {
+    width: 100%;
+    height: 32px !important;
+    display: flex;
+    align-items: center;
+    padding: 0 10px !important;
+    overflow: hidden !important;
+    white-space: nowrap;
+    // text-overflow: ellipsis !important;
+    color: #000 !important;
+  }
+}
+
+// 风险内容折叠面板
+.spcm-contract-review-risk-collapse {
+  margin: 0 16px 16px 16px;
+  max-height: calc(100vh - 285px);
+  // max-height: calc(100vh - 173px);
+  overflow-y: scroll;
+  background-color: #fff;
+  border: 0;
+  :global {
+    .c7n-collapse-item {
+      background-color: rgba(0, 0, 0, 0.04);
+      margin-bottom: 8px;
+      border: 0.01rem solid #e0e0e0;
+      .c7n-collapse-header {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      & > .c7n-collapse-content {
+        & > .c7n-collapse-content-box {
+          & > .c7n-card-type-inner:not(:last-child) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+      // & >.c7n-collapse-content > .c7n-collapse-content-box{
+      //   & > .c7n-card-type-inner:not(:last-child){
+      //     margin-bottom: 12px;
+      //   }
+      // }
+    }
+  }
+  // 折叠面板内部的card
+  .contract-review-risk-card {
+    :global {
+      .c7n-card-head {
+        min-height: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        .c7n-card-head-wrapper {
+          .c7n-card-head-title {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 8px;
+          }
+          .c7n-card-extra {
+            padding: 5px 0 0 0;
+          }
+        }
+      }
+      .c7n-card-body {
+        padding: 12px !important;
+      }
+    }
+    .contract-review-risk-card-form {
+      :global {
+        .c7n-pro-field-label > label {
+          padding-top: 0.08rem;
+        }
+
+        .c7n-pro-field-label > label > span {
+          line-height: 1;
+          font-size: 12px;
+          color: #868d9c;
+          font-weight: 400;
+        }
+
+        .c7n-pro-field-wrapper .c7n-pro-output {
+          line-height: 1;
+          font-size: 12px;
+          color: #1d2129;
+          font-weight: 400;
+        }
+
+        table > tbody > tr > td {
+          .c7n-pro-field-wrapper {
+            padding: 0.04rem 0;
+          }
+        }
+      }
+    }
+    .contract-review-risk-card-icon {
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+  }
+}
+
+// 导出给其他模块使用引用样式
+.spcm-contract-review-wapper {
+  margin: 8px;
+  & > :global(.c7n-collapse) {
+    & > :global(.c7n-collapse-item) {
+      border: 0;
+      & > :global(.c7n-collapse-header) {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 20px 16px 20px;
+      }
+      & > :global(.c7n-collapse-content) {
+        padding: 0;
+        & > :global(.c7n-collapse-content-box) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.spcm-contract-review-workflow {
+  margin: 0;
+  .spcm-contract-review-risk-collapse {
+    margin: 0;
+  }
+}
+
+.spcm-contract-review-approval {
+  margin: 0;
+}

@@ -1,0 +1,116 @@
+/**
+ * Recommend - 开票申请 less
+ * @date: 2018-11-27
+ * @author: YB <bo.yang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+ @import '~hzero-front/lib/srm-variables';
+ @import '~hzero-front/lib/assets/styles/variables.less';
+
+.payable-invoice {
+  // 折叠框
+  :global {
+    .form-collapse,
+    .ant-collapse {
+      border: none;
+      margin-bottom: 24px;
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+      .ant-collapse-item {
+        border-bottom: none;
+        .ant-collapse-header {
+          height: 48px;
+          line-height: 48px;
+          & > i {
+            font-weight: bold;
+            margin-left: 8px;
+            color: @primary-color;
+          }
+          & > h3 {
+            text-indent: 16px;
+            display: inline-block;
+            line-height: 1.17em;
+          }
+          & > a {
+            margin-left: 16px;
+          }
+        }
+        .ant-collapse-content {
+          border-top: none;
+          .ant-collapse-content-box {
+            padding-bottom: 0;
+            .last-form-item {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .table-line {
+      :global {
+        .ant-collapse-content-box {
+          padding: 16px 0;
+        }
+      }
+    }
+  }
+  // form
+  .information-container {
+    .information-item {
+      margin-bottom: 16px;
+      :global {
+        .ant-col-24 > .ant-row > .ant-col-11 {
+          margin-left: 44px;
+        }
+      }
+    }
+    .information-item-edit {
+      line-height: 28px;
+    }
+    .information-item-label {
+      color: #666;
+      &::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+    .item-label-required {
+      color: #666;
+      &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        line-height: 1;
+        content: '*';
+      }
+      &::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+    .information-item-children {
+      color: #333;
+      :global {
+        .ant-form-item-control {
+          line-height: 28px;
+          & > .ant-form-explain {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+}

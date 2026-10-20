@@ -1,0 +1,71 @@
+@import '../../global';
+
+.modal-content {
+  // 第一步
+  .add-base-info {
+    text-align: center;
+    margin: 60px auto 0;
+    width: 503px;
+
+    .assign-wrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 27px;
+      height: 50px;
+
+      .form-label {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        width: 120px;
+
+        i {
+          margin: 0 4px;
+          color: @red1;
+        }
+      }
+    }
+  }
+
+  // 第二步
+  .createModelFieldContain {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    .baseTableField {
+      width: 480px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .moveControl {
+      width: 50px;
+      text-align: center;
+
+      div {
+        position: absolute;
+        top: 50%;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .dataModelField {
+      width: 480px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .dataModelField2 {
+      width: 100%;
+    }
+
+    :global {
+      .c7n-pro-table .c7n-pro-table-content > table {
+        border-right: 1px solid #e8e8e8;
+      }
+    }
+  }
+}

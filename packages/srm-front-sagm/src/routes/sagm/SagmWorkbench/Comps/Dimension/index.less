@@ -1,0 +1,65 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.dimension-container {
+  :global {
+    .dimension-card-wrapper {
+      display: flex;
+      margin-bottom: 16px;
+      .dimension-card {
+        width: 196px;
+        height: 94px;
+        background: #fff;
+        border: 1px solid @table-border-color;
+        border-radius: 2px;
+        margin-right: 16px;
+        padding: 12px;
+        cursor: pointer;
+        i {
+          color: #000;
+          font-size: 16px;
+        }
+        .dimension-card-title {
+          color: #000;
+          font-weight: 600;
+        }
+        .card-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+          color: @text-color;
+          > i {
+            margin-right: 8px;
+          }
+          .dimension-card-title {
+            font-size: 14px;
+          }
+          .card-count {
+            font-size: 14px;
+            color: @text-color-secondary;
+            font-weight: 400;
+            margin-left: 4px;
+          }
+        }
+        .card-text {
+          font-size: 12px;
+          color: @text-2;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      .dimension-card-active {
+        border: 2px solid @primary-color;
+        .card-info {
+          i,
+          .dimension-card-title,
+          .card-count {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+}

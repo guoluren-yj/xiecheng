@@ -1,0 +1,76 @@
+.template-field-modal {
+  width: 600px;
+  :global {
+    .c7n-pro-modal-body {
+      padding: 15px 20px;
+      height: calc(100vh - 2.06rem);
+    }
+    .c7n-tabs {
+      height: 100%;
+    }
+    .c7n-tabs-content {
+      padding-left: 0.08rem !important;
+      height: 100%;
+    }
+    .c7n-tabs-tabpane {
+      height: 100%;
+      overflow: auto;
+    }
+  }
+}
+.field-tree-node {
+  display: inline-flex;
+  cursor: default;
+  & > span {
+    display: inline-block;
+    &:first-of-type {
+      position: relative;
+      top: -1px;
+    }
+  }
+  &-content:hover {
+    background-color: rgba(54, 194, 207, 0.1);
+    color: @primary-color;
+  }
+  &-active > &-content {
+    background-color: rgba(54, 194, 207, 0.1);
+    color: @primary-color;
+  }
+  &-content {
+    cursor: pointer;
+    white-space: pre;
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 8px;
+    user-select: none;
+  }
+  i {
+    margin-left: 8px;
+    height: 14px;
+    cursor: pointer;
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      border: 1px @primary-color solid;
+      border-radius: 50%;
+      color: @primary-color !important;
+    }
+  }
+}
+.variable-select-input {
+  :global {
+    .c7n-pro-input {
+      padding-right: 40px !important;
+    }
+    .c7n-pro-input-suffix {
+      right: 6px !important;
+      flex-direction: row-reverse !important;
+      width: unset !important;
+      .icon:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}

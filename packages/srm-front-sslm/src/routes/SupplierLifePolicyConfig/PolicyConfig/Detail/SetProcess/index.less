@@ -1,0 +1,143 @@
+@import '~hzero-front/lib/srm-variables';
+
+.process {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  max-height: calc(100vh - 234px);
+  background: #f7f8fa;
+  :global {
+    .process-left {
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .drage-wrap {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      margin-top: -12px;
+      background-image: url(@/assets/lifeConfig/drag-icon.svg);
+    }
+    .process-right {
+      flex-grow: 1;
+      border-left: solid 1px #c9cdd4;
+    }
+  }
+}
+
+.process-stage {
+  margin: 16px;
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 600;
+}
+
+// 明细样式
+.process-detail-wrap {
+  display: flex;
+  :global {
+    .process-detail-content {
+      width: 300px;
+      padding: 16px 0 16px 16px;
+      background: #fff;
+      overflow: hidden;
+      border-left: solid 1px #c9cdd4;
+      display: block;
+      .detail-title {
+        font-size: 16px;
+        color: #1d2129;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .detail-content {
+        max-height: 90.5%;
+        width: 290px;
+        overflow-y: scroll;
+        position: absolute;
+        :global {
+          .c7n-collapse.c7n-collapse-icon-position-right {
+            background-color: #fff;
+            border: none;
+            .c7n-collapse-item {
+              border: none;
+              background: #f7f8fa;
+              border-radius: 2px;
+              margin-bottom: 16px;
+              .c7n-collapse-header {
+                padding: 0;
+                margin: 12px 16px;
+                .c7n-collapse-expand-icon-wrapper {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                }
+              }
+              .c7n-collapse-content {
+                padding: 0;
+                margin: 0 16px;
+                background: #f7f8fa;
+                border-top: solid 1px #e5e7ec;
+                .c7n-collapse-content-box {
+                  padding: 12px 0 0;
+                  .detail-item-content {
+                    margin-bottom: 12px;
+                    > div {
+                      margin-bottom: 8px;
+                      &:last-child {
+                        margin-bottom: 0;
+                      }
+                    }
+                    .detail-item-content-label {
+                      color: @text-3;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .detail-item-label {
+          color: #1d2129;
+          font-weight: 500;
+        }
+
+        .detail-rules {
+          margin-left: 8px;
+        }
+        .action-panel-wrap {
+          .c7n-collapse-content {
+            display: none; // 后置动作暂无content，先隐藏
+          }
+        }
+      }
+      .detail-item-title {
+        color: #868d9c;
+        font-weight: 400;
+      }
+    }
+    .process-detail-content-pick {
+      width: 0;
+      padding: 0;
+      display: none;
+    }
+    .process-detail-fold {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      margin-top: -12px;
+      right: 287px;
+      line-height: 56px;
+      border-radius: 25px 0 0 25px;
+      cursor: pointer;
+      text-align: center;
+      background-image: url(@/assets/lifeConfig/pick.svg);
+    }
+    .process-detail-pick {
+      right: 0;
+      background-image: url(@/assets/lifeConfig/expend.svg);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+:global {
+  .individuation-panel {
+    content: '';
+    .ant-tabs-bar
+      > .ant-tabs-nav-container
+      > .ant-tabs-nav-wrap
+      > .ant-tabs-nav-scroll
+      > .ant-tabs-nav
+      .ant-tabs-tab {
+      max-width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px !important;
+    }
+  }
+  .individuation-panel.ant-tabs-vertical.ant-tabs-left > .ant-tabs-content {
+    padding-left: 12px;
+  }
+}

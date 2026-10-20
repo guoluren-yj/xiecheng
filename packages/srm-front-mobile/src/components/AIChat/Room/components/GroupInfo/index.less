@@ -1,0 +1,94 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-chat-room-group-info {
+  flex-shrink: 0;
+  width: 380px;
+  background: @primary-color-white;
+  padding: 20px;
+
+  .smbl-chat-room-group-info-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    border-radius: 2px;
+    color: #868d9c;
+    :global {
+      .icon {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .smbl-chat-room-group-info-title {
+    font-size: 14px;
+    color: #1d2129;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+.smbl-chat-room-group-info-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.smbl-chat-room-group-info-right {
+  position: relative;
+  width: 380px;
+  height: 100%;
+  border-left: 1px solid #e5e7ec;
+}
+
+.smbl-chat-room-group-info-item {
+  display: flex;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  overflow: hidden;
+  .smbl-chat-room-group-info-item-title {
+    font-size: 14px;
+    color: #1d2129;
+    font-weight: 400;
+    margin-right: 12px;
+    flex-shrink: 0;
+    line-height: 20px;
+  }
+  .smbl-chat-room-group-info-item-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    div {
+      font-size: 14px;
+      color: #868d9c;
+      font-weight: 400;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .smbl-chat-room-group-info-item-content-arrow {
+      flex-shrink: 0;
+      font-size: 16px;
+      margin-left: 8px;
+      color: #868d9c;
+      margin-top: 2px;
+    }
+  }
+}
+
+.smbl-chat-room-group-notice-input {
+  height: 100%;
+  label {
+    height: 100%;
+  }
+  :global {
+    label {
+      height: 100%;
+    }
+  }
+}

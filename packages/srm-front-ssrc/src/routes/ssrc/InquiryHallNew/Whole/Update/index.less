@@ -1,0 +1,163 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '../../../common.less';
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.card-title-rfx-info {
+  // max-width: 266px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.card-title-category {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.supplier-content.whole-content {
+  height: calc(100% - 0.48rem);
+  overflow-y: auto;
+
+  .whole-detail-list-card {
+    margin: 8px;
+    min-height: calc(100% - 16px);
+    .ssrc-page-content-c7n-card-cover();
+    :global {
+      .c7n-card-head-title {
+        font-weight: 600;
+      }
+      .page-content-wrap:last-child {
+        > .page-content {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .page-content-wrap > .page-content {
+        margin: 0 !important;
+        margin-bottom: 8px !important;
+      }
+
+      .c7n-pro-output-float-label > .c7n-pro-field-label-wrapper > .c7n-pro-field-label {
+        font-weight: 400;
+        // color: @black-color; #000
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+        zoom: 1;
+      }
+    }
+  }
+
+  :global {
+    .page-content-wrap > .page-content {
+      margin: 8px !important;
+    }
+  }
+}
+
+.whole-detail-list-card {
+  :global {
+    .custom-page-content > .page-content-wrap:last-child {
+      > .page-content {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+// 寻源项目
+.project-info-wrap {
+  :global {
+    .page-content-wrap > .page-content {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.count-down-wrap {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.quotation-table {
+  :global {
+    .c7n-pro-table-wrapper {
+      .c7n-pro-table-footer {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.standard-title {
+  font-size: 14px;
+  color: #000;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.standard-title-modal {
+  .standard-title();
+  margin-bottom: 16px;
+}
+
+.quotation-history-modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-hidden-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.divide-line {
+  margin: 16px -20px !important;
+  width: calc(100% + 40px) !important;
+  background: #ebebeb;
+}
+
+.ssrc-border-left-line {
+  display: inline-block;
+  border-left: 3px solid @primary-color;
+  margin-right: 8px;
+  height: 12px;
+}
+
+.ssrc-whole-supplier-modal-wrap {
+  :global {
+    .ssrc-mobile-wrapper-container > span {
+      height: 0.31rem !important;
+    }
+  }
+}
+
+.ssrc-collapse-form-common-application-scope-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  :global {
+    .c7n-pro-checkbox-float-label-empty {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+// 标题卡片样式
+.ssrc-common-top-section-card {
+  background: #fff;
+  padding: 0.2rem;
+  &:last-child {
+    flex: 1;
+  }
+}

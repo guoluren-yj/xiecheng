@@ -1,0 +1,80 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.issuance-top {
+  line-height: 45px;
+  margin-left: 20px;
+  color: @primary-color;
+
+  span {
+    cursor: pointer;
+  }
+}
+
+.selecteed-count-footer {
+  margin: -25px 0 0 5px;
+
+  span {
+    color: @primary-color;
+  }
+}
+
+.list-c7n-tag {
+  line-height: 20px;
+  background: rgba(37, 37, 37, 0.1);
+  border-radius: 2px;
+  color: #000;
+  border-color: transparent !important;
+}
+
+.count-form-layout {
+  margin: 20px 0 0 20px;
+
+  :global {
+    .c7n-pro-input-number-suffix {
+      line-height: 20px;
+    }
+
+    // 数字框后缀自适应（多语言切换）
+    .count-input {
+      > label {
+        display: flex;
+
+        > .c7n-pro-input-number {
+          padding-right: 0 !important;
+        }
+
+        > .c7n-pro-input-number-suffix {
+          order: 4;
+          position: initial;
+          width: fit-content !important;
+          white-space: nowrap;
+        }
+
+        > .c7n-pro-input-number-inner-button {
+          order: 3;
+          position: initial;
+        }
+      }
+    }
+  }
+}
+
+.count-form-width {
+  width: 355px;
+}
+
+.select-member-table {
+  :global {
+    .c7n-pro-table-filter-bar-merge-field .c7n-pro-input-wrapper {
+      width: 256px !important;
+    }
+    .c7n-pro-table-filter-bar.c7n-pro-table-filter-bar-collpase {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .c7n-pro-table-filter-bar-operator-right {
+      padding-left: 30px;
+    }
+  }
+}

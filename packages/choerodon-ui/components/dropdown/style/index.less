@@ -1,0 +1,226 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@dropdown-prefix-cls: ~'@{c7n-prefix}-dropdown';
+
+.@{dropdown-prefix-cls} {
+  .reset-component;
+  position: absolute;
+  top: -99.99rem;
+  left: -99.99rem;
+  z-index: @zindex-dropdown;
+  display: block;
+
+  &-wrap {
+    position: relative;
+
+    .@{iconfont-css-prefix}-arrow_drop_down::before {
+      transition: transform @animation-duration-base;
+    }
+  }
+
+  &-wrap-open {
+    .@{iconfont-css-prefix}-arrow_drop_down::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-hidden,
+  &-menu-hidden {
+    display: none;
+  }
+
+  &-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+    background-color: @component-background;
+    background-clip: padding-box;
+    border-radius: @border-radius-base;
+    outline: none;
+    box-shadow: @box-shadow-base;
+
+    &-item-group-title {
+      padding: 0.05rem @control-padding-horizontal;
+      color: @text-color-secondary;
+      transition: all @animation-duration-slow;
+    }
+
+    &-submenu-popup {
+      position: absolute;
+      z-index: @zindex-dropdown;
+    }
+
+    &-item,
+    &-submenu-title {
+      clear: both;
+      margin: 0;
+      padding: 0.05rem @control-padding-horizontal;
+      color: @text-color;
+      font-weight: normal;
+      font-size: @font-size-base;
+      line-height: 0.22rem;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all @animation-duration-slow;
+
+      > a {
+        display: block;
+        margin: -0.05rem -@control-padding-horizontal;
+        padding: 0.05rem @control-padding-horizontal;
+        color: @text-color;
+        transition: all @animation-duration-slow;
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      &-selected,
+      &-selected > a {
+        color: @select-primary-color;
+        background-color: @select-primary-hover-color;
+      }
+
+      &:hover {
+        background-color: @item-hover-bg;
+      }
+
+      &-disabled {
+        color: @disabled-color;
+        cursor: not-allowed;
+
+        &:hover {
+          color: @disabled-color;
+          background-color: @component-background;
+          cursor: not-allowed;
+        }
+      }
+
+      &:first-child,
+      &:first-child > a {
+        border-radius: @border-radius-base @border-radius-base 0 0;
+      }
+
+      &:last-child,
+      &:last-child > a {
+        border-radius: 0 0 @border-radius-base @border-radius-base;
+      }
+
+      &:only-child,
+      &:only-child > a {
+        border-radius: @border-radius-base;
+      }
+
+      &-divider {
+        height: 0.01rem;
+        overflow: hidden;
+        line-height: 0;
+        background-color: @border-color-split;
+      }
+    }
+
+    &-submenu-title {
+      padding-right: 0.26rem;
+      &:first-child,
+      &:last-child {
+        border-radius: 0;
+      }
+    }
+
+    &-submenu-vertical {
+      position: relative;
+    }
+
+    &-submenu-vertical > & {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      min-width: 100%;
+      margin-left: 0.04rem;
+      transform-origin: 0 0;
+    }
+    &-submenu:first-child &-submenu-title {
+      border-radius: @border-radius-base @border-radius-base 0 0;
+    }
+
+    &-submenu:last-child &-submenu-title {
+      border-radius: 0 0 @border-radius-base @border-radius-base;
+    }
+  }
+
+  &.slide-down-enter.slide-down-enter-active&-placement-bottomLeft,
+  &.slide-down-appear.slide-down-appear-active&-placement-bottomLeft,
+  &.slide-down-enter.slide-down-enter-active&-placement-bottomCenter,
+  &.slide-down-appear.slide-down-appear-active&-placement-bottomCenter,
+  &.slide-down-enter.slide-down-enter-active&-placement-bottomRight,
+  &.slide-down-appear.slide-down-appear-active&-placement-bottomRight {
+    animation-name: antSlideUpIn;
+  }
+
+  &.slide-up-enter.slide-up-enter-active&-placement-topLeft,
+  &.slide-up-appear.slide-up-appear-active&-placement-topLeft,
+  &.slide-up-enter.slide-up-enter-active&-placement-topCenter,
+  &.slide-up-appear.slide-up-appear-active&-placement-topCenter,
+  &.slide-up-enter.slide-up-enter-active&-placement-topRight,
+  &.slide-up-appear.slide-up-appear-active&-placement-topRight {
+    animation-name: antSlideDownIn;
+  }
+
+  &.slide-down-leave.slide-down-leave-active&-placement-bottomLeft,
+  &.slide-down-leave.slide-down-leave-active&-placement-bottomCenter,
+  &.slide-down-leave.slide-down-leave-active&-placement-bottomRight {
+    animation-name: antSlideUpOut;
+  }
+
+  &.slide-up-leave.slide-up-leave-active&-placement-topLeft,
+  &.slide-up-leave.slide-up-leave-active&-placement-topCenter,
+  &.slide-up-leave.slide-up-leave-active&-placement-topRight {
+    animation-name: antSlideDownOut;
+  }
+
+  .@{c7n-prefix}-btn-flat,
+  .@{c7n-prefix}-btn-link {
+    color: @text-color;
+    background-color: transparent;
+  }
+}
+
+.@{dropdown-prefix-cls}-trigger.@{dropdown-prefix-cls}-link {
+  .@{iconfont-css-prefix}-arrow_drop_down {
+    vertical-align: text-bottom;
+  }
+}
+
+.@{dropdown-prefix-cls}-button {
+  white-space: nowrap;
+
+  &.@{c7n-prefix}-btn-group > .@{c7n-prefix}-btn:last-child:not(:first-child) {
+    padding-right: @padding-xs;
+    padding-left: @padding-xs;
+  }
+}
+.@{dropdown-prefix-cls}-menu-dark {
+  &,
+  .@{dropdown-prefix-cls}-menu {
+    background: @menu-dark-bg;
+  }
+  .@{dropdown-prefix-cls}-menu-item,
+  .@{dropdown-prefix-cls}-menu-submenu-title,
+  .@{dropdown-prefix-cls}-menu-item > a {
+    color: @text-color-secondary-dark;
+    &:hover {
+      color: #fff;
+      background: transparent;
+    }
+  }
+  .@{dropdown-prefix-cls}-menu-item-selected {
+    &,
+    &:hover,
+    > a {
+      color: #fff;
+      background: @select-primary-color;
+    }
+  }
+}

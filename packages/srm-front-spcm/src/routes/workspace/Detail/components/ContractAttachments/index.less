@@ -1,0 +1,66 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.spcm-attachment {
+  display: flex;
+}
+
+.topSectionWrapper {
+  width: 50%;
+}
+
+.spcm-attachmentInfo-divider {
+  :global {
+    width: 0;
+    margin: 0 16px;
+    border-right: 1px dashed rgba(0, 0, 0, 0.16);
+  }
+}
+
+.formWrapper2 {
+  &:not(:last-child) {
+    margin-bottom: 32px !important;
+  }
+  :global {
+    table > tbody > tr:first-child .c7n-pro-field-wrapper {
+      margin-top: 16px !important;
+    }
+  }
+}
+
+.formWrapper,
+.formWrapper2 {
+  :global {
+    // 附件应该占满1/2栅格
+    // .c7n-pro-field-wrapper {
+    //   width: 70%;
+    // }
+
+    .c7n-pro-field-label {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      margin-bottom: 16px !important;
+
+      &::before {
+        content: '';
+        height: 12px;
+        display: inline-block;
+        border-left: 3px solid @primary-color;
+        // vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .noTitle {
+    :global {
+      .c7n-pro-field-label {
+        color: transparent;
+        &::before {
+          border-left: 3px solid transparent;
+        }
+      }
+    }
+  }
+}

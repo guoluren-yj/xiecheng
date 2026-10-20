@@ -1,0 +1,63 @@
+.objectList-div {
+  :global {
+    height: 100%;
+    overflow: hidden;
+    .objectList-div-queryBar {
+      margin-bottom: 20px;
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+      flex: 1 1 auto;
+      .objectList-div-queryBar-select {
+        width: 260px;
+      }
+      .objectList-div-queryBar-copy {
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .objectList-div-queryBar-output {
+        margin-left: 4px;
+      }
+    }
+    .objectList-table-queryBar {
+      display: flex;
+    }
+  }
+}
+
+.objectList-table-columns {
+  :global {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .objectList-table-columns-copy {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      margin-right: 4px;
+      opacity: 0;
+    }
+  }
+}
+
+.objectList-table-columns:hover {
+  :global {
+    .objectList-table-columns-copy {
+      opacity: 1;
+    }
+  }
+}
+
+.objectList-table-input {
+  :global {
+    width: 260px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+  }
+}
+
+.objectList-table-button {
+  :global {
+    margin-left: 20px;
+  }
+}

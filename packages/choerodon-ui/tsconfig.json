@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es7",
+      "es2017.object"
+    ],
+    "paths": {
+      "choerodon-ui/lib/*": [
+        "./components/*"
+      ],
+      "choerodon-ui/pro/lib/*": [
+        "./components-pro/*"
+      ],
+      "choerodon-ui/dataset/*": [
+        "./components-dataset/*"
+      ],
+      "choerodon-ui/shared/*": [
+        "./components-shared/*"
+      ],
+      "choerodon-ui/dataset": [
+        "./components-dataset/index"
+      ],
+      "choerodon-ui/shared": [
+        "./components-shared/index"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "pro",
+    "lib",
+    "es",
+    "dataset",
+    "shared"
+  ]
+}

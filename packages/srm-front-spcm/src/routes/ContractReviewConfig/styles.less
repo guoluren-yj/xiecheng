@@ -1,0 +1,13 @@
+.spcm-contract-review-config-point-form{
+  :global {
+    // 只读页隐藏必填样式
+    .c7n-pro-vertical-form-display {
+      .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+        &:before {
+          display: none;
+          content: '';
+        }
+      }
+    }
+  }
+}

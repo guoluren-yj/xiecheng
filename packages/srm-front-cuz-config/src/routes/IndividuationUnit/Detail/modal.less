@@ -1,0 +1,49 @@
+@title-second-color: @primary-color;
+@title-primary-color: #1e3255;
+.modal-content {
+  :global {
+    .c7n-pro-form-float-label {
+      margin: 0;
+    }
+    .first-card {
+      margin-bottom: 4px;
+    } 
+    .second-card {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 4px;
+    }
+    .first-title {
+      color        : #2f2f2f;
+      font-size    : 14px;
+      font-weight  : 600;
+    }
+
+    .first-title::before {
+      content     : '';
+      display     : inline-block;
+      height      : 12px;
+      border : 2px @title-primary-color solid;
+      border-radius: 2px;
+      margin-right: 8px;
+    }
+
+    .second-title {
+      color        : #696969;
+      display      : inline-flex;
+      align-items  : center;
+      font-size    : 12px;
+      font-weight  : 600;
+    }
+
+    .second-title::before {
+      content: '';
+      display: inline-block;
+      height: 10px;
+      border: 3px #fff solid;
+      border-left: 10px @title-primary-color solid;
+      border-radius: 2px;
+      margin-right: 8px;
+    }
+  }
+}

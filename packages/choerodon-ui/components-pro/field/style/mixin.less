@@ -1,0 +1,170 @@
+@field-prefix-cls: ~'@{c7n-pro-prefix}-field';
+@field-label-prefix-cls: ~'@{field-prefix-cls}-label';
+
+.validation() {
+  &-invalid &,
+  &-invalid label:hover & {
+    border-color: @input-error-border-color !important;
+    opacity: 1;
+  }
+
+  &-invalid&-wrapper {
+    background-color: @input-error-bg;
+  }
+
+  &-invalid &-clear-button {
+    background: linear-gradient(to right,
+    rgba(255, 255, 255, 0),
+    @input-error-bg 20%,
+    @input-error-bg) !important;
+  }
+
+  // &-invalid &:focus {
+  //   box-shadow: 0 0 @outline-blur-size @outline-width fade(@error-color, 20%);
+  // }
+}
+
+.float-label(@prefix-width: @input-icon-width-base) {
+  &-float-label .@{field-label-prefix-cls} {
+    &-wrapper {
+      position: absolute;
+      top: 0;
+      left: @input-padding-horizontal-base;
+      max-width: 98%;
+      height: 0;
+      margin-left: -0.05rem;
+      padding: 0 0.05rem;
+      border-top: 0.02rem @border-style-base @component-background;
+      transform-origin: 0.1rem -230%;
+      transition: all @animation-duration-base @ease-out;
+    }
+
+    &::after {
+      width: 0;
+    }
+
+    padding: 0;
+    overflow: hidden;
+    color: @float-label-color;
+    font-weight: @label-font-weight;
+    line-height: @float-label-line-height;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    transform-origin: inherit;
+    transition: inherit;
+  }
+
+  &-float-label .@{field-label-prefix-cls}.@{field-prefix-cls}-required::after {
+    display: inline-block;
+    width: 0.08rem;
+    margin-left: 0.04rem;
+    color: @label-required-color;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    vertical-align: middle;
+    content: '*';
+  }
+
+  &-float-label&-focused .@{field-label-prefix-cls} {
+    color: @float-label-color;
+  }
+  &-float-label .@{field-label-prefix-cls}-wrapper,
+  &-float-label &:focus + .@{field-label-prefix-cls}-wrapper {
+    transform: scaleX(0.8);
+  }
+  &-float-label &:-webkit-autofill + .@{field-label-prefix-cls}-wrapper {
+    transform: scaleX(0.8);
+  }
+  &-float-label .@{field-label-prefix-cls},
+  &-float-label&-focused .@{field-label-prefix-cls} {
+    font-weight: @float-label-font-weight;
+    font-size: @float-label-font-size;
+    transform: scaleY(0.8);
+  }
+  &-float-label &:-webkit-autofill + .@{field-label-prefix-cls}-wrapper .@{field-label-prefix-cls} {
+    font-weight: @float-label-font-weight;
+    font-size: @float-label-font-size;
+    transform: scaleY(0.8);
+  }
+  &-float-label:not(&-multiple) & {
+    height: @float-label-height-base;
+    border-radius: @input-float-border-radius;
+  }
+  &-float-label & {
+    min-height: @float-label-height-base;
+    border-radius: @input-float-border-radius;
+  }
+  &-float-label&-sm:not(&-multiple) & {
+    height: @float-label-height-sm;
+  }
+  &-float-label&-sm .@{field-label-prefix-cls} {
+    line-height: @float-label-line-height-sm;
+  }
+  &-float-label&-lg:not(&-multiple) & {
+    height: @float-label-height-lg;
+  }
+  &-float-label&-lg .@{field-label-prefix-cls} {
+    line-height: @float-label-line-height-lg;
+  }
+  &-float-label&-lg:not(&-multiple) textarea&,
+  &-float-label&-sm:not(&-multiple) textarea&,
+  &-float-label:not(&-multiple) textarea&,
+  &-float-label textarea& {
+    height: auto;
+  }
+  &-float-label&-required-colors {
+    background-color: @input-float-required-bg;
+  }
+  &-float-label&-invalid {
+    background-color: @input-float-error-bg;
+  }
+  &-float-label&-disabled {
+    background-color: @input-float-disabled-bg;
+  }
+  &-float-label&-required .@{field-label-prefix-cls}::after {
+    width: 0.08rem;
+  }
+  &-empty:not(&-focused) {
+    .@{field-label-prefix-cls} {
+      &-wrapper {
+        border-top-color: transparent;
+        transform: none;
+      }
+
+      font-weight: inherit;
+      font-size: inherit;
+      transform: none;
+      pointer-events: none;
+    }
+  }
+  &-float-label & > ul {
+    margin: @input-float-multiple-margin;
+    padding: @input-float-multiple-padding;
+
+    > li {
+      height: @input-float-tag-height-base;
+      margin-top: @input-float-tag-margin-vertical;
+      margin-bottom: @input-float-tag-margin-vertical;
+      line-height: @input-float-tag-line-height-base;
+    }
+  }
+  &-float-label &-multiple-block {
+    padding: @input-float-tag-padding;
+    border-radius: @input-float-tag-border-radius;
+
+    .@{iconfont-css-prefix} {
+      color: @input-float-tag-close-color;
+      font-size: @input-float-tag-close-font-size;
+      line-height: @input-float-tag-close-line-height;
+      vertical-align: @input-float-tag-close-vertical-align;
+
+      &:hover {
+        color: @input-tag-close-hover-color;
+      }
+    }
+  }
+  &-prefix-button&-float-label .@{field-label-prefix-cls}-wrapper {
+    left: @prefix-width;
+  }
+}

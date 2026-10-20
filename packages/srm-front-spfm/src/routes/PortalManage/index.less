@@ -1,0 +1,160 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+:global {
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    border-radius: 2px;
+    color: #47b881;
+    font-weight: 600;
+  }
+
+  .tag-disable {
+    background: rgba(245, 99, 73, 0.1);
+    color: #f56349;
+  }
+
+  .tag-enable {
+    background: rgba(71, 184, 129, 0.1);
+    color: #47b881;
+  }
+  .no-top-section {
+    .top-section-title {
+      display: none;
+    } 
+  }
+
+  // .c7n-select-selection .c7n-select-selection__rendered {
+  //   height: 36px;
+  //   line-height: 34px;
+  // }
+
+  .template-title {
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    padding-left: 11px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .template-title:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: @primary-color;
+    left: 0;
+    top: 5px;
+  }
+
+  .portal-modal-inviteLevel {
+    margin-bottom: 0;
+    height: 24px;
+  }
+
+  .portal-icon {
+    font-size: 14px;
+    margin-bottom: 1px;
+    color: #000;
+    opacity: 0.65;
+  }
+
+  .layout-lov {
+    flex: 1;
+
+    .c7n-pro-select-suffix {
+      width: 0.5rem;
+      .icon-help {
+        margin-right: 0.05rem;
+      }
+    }
+
+    .c7n-pro-select-clear-button {
+      right: 0.4rem;
+      opacity: 0;
+    }
+
+    &:hover {
+      .c7n-pro-select-clear-button,
+      .c7n-pro-select-allow-clear {
+        opacity: 1 !important;
+      }
+    }
+  }
+  .layout-select {
+    flex: 1;
+
+    .c7n-pro-select-suffix {
+      display: flex;
+      // width: 40px;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .c7n-pro-select-clear-button {
+      right: 0.3rem;
+      opacity: 0;
+    }
+
+    &:hover {
+      .c7n-pro-select-clear-button,
+      .c7n-pro-select-allow-clear {
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .portal-card-assign {
+    .c7n-pro-field-label-useColon + td {
+      width: 138px;
+    }
+
+    .c7n-pro-field-label-useColon:nth-of-type(1) + td {
+      width: 120px;
+    }
+  }
+
+  .action-link-import {
+    position: relative;
+    overflow: hidden;
+
+    .c7n-pro-upload {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.layout-lov-content :global {
+  ul.c7n-pro-select-dropdown-menu {
+    max-height: 3.2rem;
+    padding: 0;
+  }
+}
+
+.add-template {
+  display: block;
+  line-height: 0.4rem;
+  padding-left: 11px;
+  background: #fff;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+
+// 【选择模板】样式
+.choice-template{
+  :global{
+    .top-section-title{
+      display: none;
+    }
+  }
+}

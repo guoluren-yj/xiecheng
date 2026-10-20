@@ -1,0 +1,203 @@
+.fx-condition-link {
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.fx-condition-suffix-link {
+  // margin-right: 20px;
+  .fx-condition-link-button {
+    width: 32px !important;
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    border-left: solid 1px #ccc;
+    margin-right: 8px;
+    span {
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+}
+
+.fx-condition-text-link {
+  margin-left: 8px;
+  span {
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+// type === 'suffix' ? 'fx-condition-suffix-link' : 'fx-condition-text-link'
+
+.fx-condition-editor {
+  :global {
+    .fx-condition-editor-wrapper {
+      // display: flex;
+      // justify-content: space-between;
+      margin-left: 28px;
+      .editor-title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        display: inline-block;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 3px;
+          height: 17px;
+          margin-right: 5px;
+          vertical-align: text-bottom;
+          background-color: #1e3255;
+        }
+      }
+
+      .c7n-pro-field-help {
+        margin-top: 4px;
+      }
+
+      .editor-add {
+        display: flex;
+        line-height: 18px;
+        height: 28px;
+        align-items: center;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+      .editor-tip {
+        color: #a5a5a5;
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 4px;
+      }
+    }
+
+    .fx-condition-editor-icon {
+      height: 16px;
+      cursor: pointer;
+      width: 16px;
+      display: inline-block;
+      text-align: center;
+      line-height: 22px;
+      margin-left: 36px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      padding: 0 12px;
+      border-radius: 3px;
+      transform: rotate(180deg);
+    }
+
+    .fx-editor-form {
+      // margin: 10px 0;
+      .c7n-pro-form-wrapper > table > tbody > tr > td .action-btn {
+        font-size: 14px;
+        vertical-align: middle;
+      }
+
+      .fx-index {
+        font-weight: 600;
+        line-height: 38px;
+      }
+
+      .c7n-pro-select-float-label {
+        width: 100%;
+      }
+      .c7n-pro-input-empty {
+        width: 100%;
+      }
+      .c7n-pro-select-multiple .c7n-pro-select {
+        height: 0.32rem;
+      }
+
+      .action-btn {
+        font-size: 18px !important;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.rule-config {
+  :global {
+    .rule-config-name {
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      font-weight: 400;
+    }
+    .rule-config-list {
+      border: 1px solid rgba(229, 231, 236, 1);
+      border-radius: 2px;
+      .rule-config-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(229, 231, 236, 1);
+        height: 34px;
+        padding: 0 16px;
+        font-size: 12px;
+        color: #1d2129;
+        line-height: 18px;
+        font-weight: 400;
+        .rule-config-index {
+          width: 24px;
+          margin-right: 8px;
+          font-weight: 500;
+        }
+        .rule-config-prev {
+          width: 112px;
+          margin-right: 8px;
+        }
+        .rule-config-compare {
+          width: 40px;
+          color: #868d9c;
+          margin-right: 8px;
+        }
+        .rule-config-next {
+          flex: 1;
+        }
+      }
+      .rule-config-footer {
+        display: flex;
+        align-items: center;
+        height: 34px;
+        background: #f7f8fa;
+        padding: 0 16px;
+        .rule-config-label {
+          font-size: 12px;
+          color: #868d9c;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .rule-config-expression {
+          font-size: 12px;
+          color: #1d2129;
+          line-height: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+    .rule-form-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      .rule-index {
+        font-size: 14px;
+        color: #1d2129;
+        line-height: 22px;
+        font-weight: 600;
+        margin-right: 16px;
+      }
+      .rule-operate {
+        display: flex;
+        width: 44px;
+        height: 32px;
+        align-items: center;
+        margin-left: 8px;
+      }
+    }
+    .rule-img {
+      width: 16px;
+      height: 16px;
+      margin: -8px 0 8px 8px;
+    }
+  }
+}

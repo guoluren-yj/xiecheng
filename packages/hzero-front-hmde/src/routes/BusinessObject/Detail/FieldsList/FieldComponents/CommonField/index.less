@@ -1,0 +1,140 @@
+.test {
+  background-color: #fff;
+}
+
+.default-value-wrap {
+  background: #f9f9f9;
+  border-radius: 2px;
+  margin: 16px 0;
+}
+
+.row-valueList {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 2px;
+  margin: 16px 0;
+  & > * {
+    flex: 1;
+  }
+  &-lov {
+    display: inline-flex;
+    align-items: center;
+  }
+  .valueList-operate {
+    & > a {
+      margin-left: 12px;
+      i {
+        vertical-align: bottom;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.meaning-value-container {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) 1px minmax(120px, 1fr);
+  line-height: 36px;
+  align-items: center;
+  & > span:first-child,
+  span:last-child {
+    padding: 0 16px;
+  }
+  &:not(:first-child) > span:nth-child(2) {
+    width: 1px;
+    height: 20px;
+    background: #d8d8d8;
+  }
+}
+
+.row-custom {
+  background: #f9f9f9;
+  border-radius: 2px;
+  padding: 16px;
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-size: 14px;
+      color: #22242a;
+      font-weight: 600;
+    }
+    a > i {
+      vertical-align: sub;
+      margin-right: 4px;
+    }
+  }
+  &-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    & > p {
+      margin-bottom: 0;
+      margin-right: 16px;
+      color: #a4a4a4;
+    }
+    & > a {
+      height: 28px;
+      line-height: 26px;
+      padding: 0 12px;
+      border: 1px solid #e8e8e8;
+      background-color: #fff;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.lov-value-list-wrap {
+  .meaning {
+    width: 70px;
+    flex: 0 0 70px;
+  }
+  .header-txt {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: left;
+    display: flex;
+  }
+  .line-content {
+    display: flex;
+    align-items: center;
+  }
+  .divide-line {
+    height: 20px;
+    width: 1px;
+    flex: 0 0 1px;
+    background: #d8d8d8;
+    margin: 0 12px;
+  }
+  .form-layout {
+    flex: 1;
+    form {
+      width: 50%;
+    }
+  }
+}
+
+.tip-contain-warn {
+  background: #fef0f1;
+  border-radius: 2px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    font-size: 12px;
+    color: #465476;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin: 0 4px 0 14px;
+    }
+  }
+}

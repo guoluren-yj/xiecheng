@@ -1,0 +1,262 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.tag-red {
+  background-color: #f25535;
+  border-color: #f25535;
+}
+.tag-orange {
+  background-color: #ff7800;
+  border-color: #ff7800;
+}
+.tag-green {
+  background-color: #3ab445;
+  border-color: #3ab445;
+}
+.content-tabs {
+  :global {
+    .c7n-tabs-bar {
+      display: flex;
+
+      .c7n-tabs-nav-container {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .c7n-tabs-nav {
+      font-size: 14px;
+
+      .c7n-tabs-tab-active {
+        font-weight: bold;
+      }
+
+      & > :not(.c7n-tabs-tab-active) {
+        color: #000;
+      }
+    }
+  }
+}
+
+.action-columns {
+  :global {
+    .c7n-pro-table-cell-inner {
+      & > :not(:first-child) {
+        margin-left: 16px;
+      }
+      .c7n-pro-btn-wrapper > span {
+        display: flex;
+      }
+    }
+    .c7n-pro-btn-link {
+      margin-top: -4px;
+      i {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+.render-action {
+  :global {
+    .c7n-pro-btn-link {
+      color: @text-1;
+      & :hover {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.action-content-wide {
+  :global {
+    .c7n-pro-table-search-bar-operator-right {
+      display: flex !important;
+      align-items: center;
+    }
+
+    .double-tabs-bottom-tab {
+      padding-top: 16px !important;
+    }
+
+    .c7n-pro-table-cell-aggregation {
+      padding: 8px 10px;
+    }
+
+    .c7n-pro-table-cell-tree-title {
+      line-height: 18px;
+    }
+  }
+}
+
+.table-cell-height {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: 30px;
+    }
+  }
+}
+
+.aggregation-action-columns {
+  :global {
+    .c7n-pro-btn-link {
+      display: block;
+      height: 0.2rem;
+      margin-bottom: 4px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.row-agent-column-icon {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.search-layout {
+  display: flex;
+  align-items: center;
+  float: right;
+  line-height: 30px;
+  height: 30px;
+
+  .isActive {
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: @primary-color;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .isNormal {
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 8px;
+  }
+
+  .icon-font {
+    font-size: 16px;
+  }
+}
+
+.order-import-button-tag {
+  :global {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    display: inline-block;
+    font-size: 8px;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    padding: 0 2px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+}
+
+.drop-import {
+  :global {
+    .srm-common-import-button-tag {
+      right: -17px;
+    }
+  }
+}
+.drop-group-import {
+  :global {
+    display: flex;
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    .srm-common-import-button-tag {
+      line-height: 20px;
+    }
+  }
+  & > span {
+    width: 100%;
+    text-align: initial;
+  }
+}
+
+.order-footer {
+  :global {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+.approvalInfo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.steps {
+  max-height: 150px;
+  overflow: auto;
+  :global {
+    .c7n-steps-item-custom.c7n-steps-item-process .c7n-steps-item-icon {
+      color: #333;
+    }
+
+    .c7n-steps-item-finish {
+      .c7n-steps-item-title {
+        color: #5cae2a;
+      }
+    }
+
+    .icon-check_circle {
+      color: #5cae2a;
+    }
+
+    .icon-brightness_1 {
+      color: #ebebeb;
+    }
+
+    .c7n-steps-item-custom {
+      height: 38px;
+      .c7n-steps-item-tail {
+        left: 7px;
+        padding: 24px 0 10px;
+
+        &::after {
+          height: 300%;
+        }
+      }
+    }
+    .c7n-steps-item-icon {
+      margin-top: -2px;
+    }
+  }
+}
+.refuse {
+  :global {
+    .c7n-steps-item-title {
+      color: #f5222d !important;
+    }
+  }
+}
+.approvalPending {
+  :global {
+    .c7n-steps-item-title {
+      color: #000 !important;
+    }
+  }
+}

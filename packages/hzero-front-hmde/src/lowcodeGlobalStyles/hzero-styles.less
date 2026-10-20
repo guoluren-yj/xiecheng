@@ -1,0 +1,26 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  html body.style-hmde {
+    .c7n-pro-btn-blue.c7n-pro-btn-raised,
+    .c7n-pro-btn-blue.c7n-pro-btn-raised:enabled:hover,
+    .c7n-pro-btn-blue.c7n-pro-btn-raised:enabled:focus {
+      background-color: @HzeroGreen;
+    }
+
+    button.c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary,
+    button.c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary:hover {
+      background-color: @HzeroGreen;
+      border-color: @HzeroGreen;
+      color: #fff;
+    }
+
+    .c7n-pro-table-tbody .c7n-pro-table-row-current.c7n-pro-table-row-highlight > td {
+      background-color: #e9f8fa !important;
+    }
+
+    .c7n-pro-table-help-icon {
+      color: @HzeroGreen;
+    }
+  }
+}

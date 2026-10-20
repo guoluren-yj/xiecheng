@@ -1,0 +1,64 @@
+/**
+  @date: 2019-4-19
+  @author: zqq <qingqing.zhang@hand-china.com>
+  @version: 0.0.1
+  @copyright Copyright (c) 2018, Hand
+ */
+.right-btn-group {
+  float: right;
+  margin-right: 0 !important;
+  :global {
+    .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > {
+      & > button:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+
+.rightTabs {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-width: 92px;
+  :global {
+    div {
+      padding: 3px 8px;
+      color: rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+    }
+    .active {
+      color: rgba(0, 0, 0, 0.8);
+      background: #fff;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+      font-weight: 600;
+    }
+  }
+}
+}
+
+.rightbtn {
+  :global {
+    .ant-form-item-control-wrapper {
+      float: right;
+    }
+  }
+}
+
+.modal-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: left;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+

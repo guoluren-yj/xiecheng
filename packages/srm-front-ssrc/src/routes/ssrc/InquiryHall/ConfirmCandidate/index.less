@@ -1,0 +1,23 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.link-color {
+  :global {
+    path {
+      fill: @link-color;
+    }
+  }
+}
+
+.badge-item {
+  max-width: 80%;
+  :global {
+    .ant-badge-count {
+      height: 18px;
+      line-height: 18px;
+      border-radius: 10px;
+      padding: 0 4px 0 4px;
+      min-width: 18px;
+      margin-top: 2px;
+    }
+  }
+}

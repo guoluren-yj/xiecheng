@@ -1,0 +1,25 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+:global {
+  .sprm-ai-check-alert {
+    border: none;
+    &.c7n-alert-warning {
+      color: @warning-1;
+    }
+    &.c7n-alert-info {
+      color: #0161d5;
+    }
+    &.c7n-alert-success {
+      color: #179454;
+    }
+    &.c7n-alert-error {
+      color: @error-1;
+    }
+    .c7n-alert-message > .c7n-pro-btn {
+      height: 14px;
+      vertical-align: baseline;
+      text-decoration: underline;
+      margin: 0 2px;
+    }
+  }
+}

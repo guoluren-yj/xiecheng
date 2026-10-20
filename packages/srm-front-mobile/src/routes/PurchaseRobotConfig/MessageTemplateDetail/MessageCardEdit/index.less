@@ -1,0 +1,122 @@
+.message-card-template {
+  display: flex;
+  height: 100%;
+  :global {
+    .card-left {
+      width: 240px;
+      padding: 8px 0;
+      height: 100%;
+      overflow: auto;
+      .card-left-head {
+        padding: 16px 20px;
+        .card-left-head-wrap {
+          width: 100%;
+          cursor: pointer;
+          padding: 10px 0;
+          border: 1px dashed rgba(0, 0, 0, 0.2);
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .card-content {
+      flex: 1;
+      height: 100%;
+      overflow: auto;
+      background-color: #f9f9f9;
+    }
+
+    .card-right {
+      width: 320px;
+      height: 100%;
+      padding-bottom: 100px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      .card-right-head {
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        h3 {
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+      }
+      .card-right-content {
+        padding: 20px 0 8px 0;
+        .card-right-content-title {
+          margin-top: 18px;
+          padding: 0 20px;
+          .sub-content-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .field-title-tag {
+              font-size: 12px;
+              color: #000;
+              line-height: 18px;
+              font-weight: 500;
+              position: relative;
+              margin-left: 12px;
+              margin-bottom: 5px;
+              &::before {
+                content: '';
+                position: absolute;
+                left: -8px;
+                top: 3px;
+                width: 3px;
+                height: 12px;
+                background: #29bece;
+              }
+            }
+          }
+          h3 {
+            font-size: 14px;
+            color: #000;
+            line-height: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+          }
+          .del-icon {
+            font-size: 14px;
+            margin-right: 4px;
+            display: none;
+          }
+          &:hover {
+            .del-icon {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.message-card-empty {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  :global {
+    .empty-tips {
+      font-size: 12px;
+      color: #000;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+    .empty-img {
+      width: 187px;
+      height: 131px;
+    }
+    .empty-button {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+
+.btn-list-content {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .c7n-pro-btn-disabled-wrapper {
+      margin-left: 0 !important;
+    }
+    .c7n-pro-btn {
+      font-weight: 400 !important;
+      height: 0.4rem;
+      color: #000 !important;
+      padding: 0;
+      margin-left: 0 !important;
+      &:hover {
+        color: @primary-color !important;
+        background-color: transparent !important;
+      }
+      > span {
+        font-weight: 400 !important;
+      }
+    }
+    .srm-common-import-button {
+      overflow: visible;
+      width: fit-content;
+      .srm-common-import-button-tag {
+        right: -14px;
+      }
+    }
+  }
+}

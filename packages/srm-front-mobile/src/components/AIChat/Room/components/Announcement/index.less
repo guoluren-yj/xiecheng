@@ -1,0 +1,66 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-chat-room-announcement-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e8f3fe;
+  z-index: 2;
+  overflow: hidden;
+  padding: 8px 0 8px 12px;
+
+  .smbl-chat-room-announcement {
+    width: 100%;
+    font-size: 14px;
+    color: #1d2129;
+    font-weight: 400;
+    overflow: hidden;
+    border-left: #1984f7 solid 3px;
+    padding-left: 8px;
+
+    .smbl-chat-room-announcement-header {
+      padding-right: 12px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .smbl-chat-room-announcement-title {
+        font-size: 12px;
+        color: #868d9c;
+        font-weight: 400;
+      }
+      .smbl-chat-room-announcement-button {
+        color: #1d2129;
+        font-size: 16px;
+      }
+    }
+    .smbl-chat-room-announcement-text {
+      padding-right: 12px;
+      margin-top: 2px;
+      line-height: 17px;
+      font-size: 12px;
+      color: #1d2129;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .smbl-chat-room-announcement-text-open {
+      padding-right: 12px;
+      margin-top: 2px;
+      line-height: 17px;
+      font-size: 12px;
+      color: #1d2129;
+      font-weight: 400;
+      white-space: break-spaces;
+      word-break: break-all;
+      max-height: 125px;
+      overflow-y: auto;
+    }
+  }
+  .smbl-chat-room-announcement-open {
+    cursor: default;
+  }
+}

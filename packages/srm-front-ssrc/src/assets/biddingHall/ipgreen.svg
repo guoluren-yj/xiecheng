@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 56备份 2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18" rx="2.25"></rect>
+    </defs>
+    <g id="【采】竞价大厅（看这个）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-56备份-2">
+            <g id="编组-21">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形" fill-opacity="0.1" fill="#179454" xlink:href="#path-1"></use>
+            </g>
+            <g id="IP" transform="translate(3.375, 4.5)" fill="#179454" fill-rule="nonzero" stroke="#179454" stroke-width="0.5">
+                <polygon id="路径" points="0 0 0 9.639 1.458 9.639 1.458 0"></polygon>
+                <path d="M3.375,0 L3.375,9.639 L4.8465,9.639 L4.8465,5.886 L7.344,5.886 C9.6525,5.886 10.8135,4.9005 10.8135,2.9295 C10.8135,0.972 9.666,0 7.371,0 L3.375,0 Z M4.8465,1.2555 L7.2495,1.2555 C7.965,1.2555 8.4915,1.3905 8.829,1.6605 C9.1665,1.9035 9.342,2.3355 9.342,2.9295 C9.342,3.5235 9.1665,3.9555 8.8425,4.2255 C8.505,4.4955 7.9785,4.6305 7.2495,4.6305 L4.8465,4.6305 L4.8465,1.2555 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

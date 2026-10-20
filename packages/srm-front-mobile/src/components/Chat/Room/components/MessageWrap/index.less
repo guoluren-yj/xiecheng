@@ -1,0 +1,62 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-message-wrap {
+  width: 100%;
+  padding: 8px 0;
+
+  .smbl-message-recall {
+    width: 100%;
+    text-align: center;
+    color: #868d9c;
+    font-size: 12px;
+    .smbl-message-recall-edit {
+      color: @srm-primary-color;
+      margin-left: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .smbl-message-wrap-time {
+    width: 100%;
+    line-height: 17px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #868d9c;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .smbl-message-wrap-user-name {
+    line-height: 18px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #4e5769;
+    font-weight: 400;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 14px 0 20px;
+  }
+
+  .smbl-message-wrap-content {
+    width: 100%;
+    padding: 0 14px 0 20px;
+    display: flex;
+    align-items: flex-end;
+
+    .smbl-message-status {
+      width: 28px;
+      height: 28px;
+      padding: 4px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .smbl-message-status-icon {
+        font-size: 16px;
+        color: @color-danger;
+      }
+    }
+  }
+}

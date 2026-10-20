@@ -1,0 +1,763 @@
+@import '~hzero-front/lib/srm-variables';
+
+.table-list-btn {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  :global {
+    .ant-btn-flat,
+    .c7n-pro-btn-wrapper {
+      margin-left: 8px;
+    }
+  }
+}
+.scoreDetail-list-btn {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supplierKpiIndicator-detail-form {
+  margin-bottom: 40px;
+  :global {
+    .ant-row.ant-form-item {
+      margin-bottom: 16px;
+      .ant-form-item-label,
+      .ant-form-item-control {
+        line-height: 28px;
+        .ant-input-number {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.business-nature {
+  :global {
+    .ant-col-9 {
+      line-height: 28px;
+      width: 23.5%;
+      label {
+        color: #666;
+      }
+    }
+    .ant-col-15 {
+      width: 76.5%;
+      .ant-form-item-control {
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+:global {
+  .question-naire {
+    .ant-col-9.ant-form-item-label {
+      > label {
+        width: 100%;
+        line-height: 28px;
+        // overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .ant-col-12 {
+      .ant-col-9.ant-form-item-label {
+        > label {
+          width: 90%;
+          display: inline-block;
+          // overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .regist-inform {
+    .ant-col-9.ant-form-item-label {
+      > label {
+        width: 100%;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .detail-anchor-wrap {
+    width: 150px;
+    max-height: 200px;
+    overflow: hidden;
+    position: fixed;
+    .detail-anchor {
+      width: 180px;
+      max-height: 200px;
+      overflow-y: scroll;
+      .ant-anchor-wrapper {
+        margin-left: 0;
+        .ant-anchor-link-title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  // 弹性域模块样式
+  .flex-form-warp {
+    .ant-row {
+      .ant-col-8 {
+        .ant-col-9.ant-form-item-label {
+          > label {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+
+  // 企业信息变更（新建企业弹框）
+  .choose-enterprise-modal {
+    .ant-modal-footer {
+      border-top: none;
+      padding: 0 16px 24px;
+    }
+    .choose-enterprise {
+      .ant-row.ant-form-item {
+        margin-bottom: 16px;
+        .ant-col-6.ant-form-item-label {
+          > label {
+            color: #666;
+          }
+          text-align: left;
+          line-height: 28px;
+        }
+        .ant-col-18.ant-form-item-control-wrapper {
+          .ant-form-item-control {
+            line-height: 28px;
+            .ant-form-explain {
+              margin-top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 调查表头部表单样式
+  .investigation-header-wrap {
+    padding-left: 16px;
+    .ant-row.half-row {
+      .ant-row.ant-form-item {
+        width: 100%;
+        .ant-form-item-label {
+          width: 12%;
+        }
+        .ant-form-item-control-wrapper {
+          width: 88%;
+        }
+      }
+    }
+  }
+
+  .form-wrap {
+    .ant-form-explain {
+      margin-top: 0;
+    }
+  }
+
+  .upload-btn {
+    a {
+      color: #333;
+      i {
+        margin-right: 8px;
+      }
+    }
+    .ant-tag {
+      margin-right: 0;
+    }
+  }
+
+  .supplier-inform-compare {
+    .supplier-inform-wrap {
+      padding: 0 12px 0;
+    }
+    .ant-col-12 {
+      .ant-col-9.ant-form-item-label {
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .ant-col-15.ant-form-item-control-wrapper {
+        .ant-form-item-control {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .half-col {
+    .ant-col-9.ant-form-item-label {
+      width: 19%;
+    }
+    .ant-col-15.ant-form-item-control-wrapper {
+      width: 81%;
+      .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+  }
+  .ued-common-form {
+    .ant-col-8 {
+      .ant-col-9.ant-form-item-label {
+        label {
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  // 供应商配额管理
+  .title-wrap {
+    .second-title {
+      font-size: 14px;
+      margin: 0 0 20px 0;
+      color: #666;
+      margin-bottom: 0;
+      .vertical-line {
+        width: 3px;
+        height: 14px;
+        display: inline-block;
+        background-color: #1e3255;
+        vertical-align: middle;
+        margin-right: 12px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  // 调查表部分字段夸整行
+  .ant-row.all-row {
+    .ant-col-8 {
+      width: 100%;
+      .ant-col-9 {
+        width: 11.5%;
+        > label {
+          color: #666;
+        }
+      }
+      .ant-col-15 {
+        width: 79.8%;
+      }
+    }
+  }
+
+  // 处理查询条件个性化后 英文状态下排版错乱
+  .custom-form {
+    .ant-col-8 {
+      .ant-col-9.ant-form-item-label {
+        label {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 39px;
+        }
+      }
+    }
+  }
+
+  // TextField前置标签样式
+  .addon-before-style {
+    .c7n-pro-input-group-before {
+      padding-left: 0;
+      padding-right: 0;
+      border: none;
+      width: 130px;
+    }
+
+    .c7n-pro-input-group-input {
+      flex-grow: 1;
+      flex-basis: 50%;
+      flex-shrink: 0;
+    }
+
+    :global {
+      .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-output::after {
+        content: ':';
+      }
+    }
+  }
+}
+
+.kpi-form-label {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+    .ant-col-16 {
+      padding-left: 8px;
+    }
+  }
+}
+
+// 侧弹详情样式
+.detail-c7n-card {
+  :global {
+    .c7n-card {
+      margin-bottom: 32px;
+      .c7n-card-head {
+        border: none;
+        padding: 0 16px;
+        min-height: 22px;
+        height: 22px;
+        margin-bottom: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 14px;
+          background-color: @primary-color;
+          pointer-events: none;
+        }
+        .c7n-card-head-title {
+          padding-top: 0;
+          font-size: 14px;
+        }
+      }
+      .c7n-card-body {
+        padding: 0;
+      }
+    }
+    .c7n-pro-table-wrapper,
+    .c7n-pro-form-wrapper {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// 个性化标题卡牌样式
+.modal-title-crad-component {
+  :global {
+    .c7n-spin-container {
+      .top-section-title {
+        display: none;
+      }
+    }
+    .top-section-title {
+      display: none;
+    }
+  }
+  :global {
+    .top-section-title {
+      display: none;
+    }
+  }
+}
+// 详情页卡片样式
+.card-wrap {
+  :global {
+    .page-content-wrap {
+      .page-content {
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 0 !important;
+        padding: 20px;
+        .c7n-card-body {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .card-title {
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+}
+
+.wrap-from {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+    .ant-col-5.ant-form-item-label,
+    .ant-col-9.ant-form-item-label {
+      width: 48%;
+      line-height: 20px;
+      > label {
+        color: #666;
+      }
+    }
+    .ant-col-19.ant-form-item-control-wrapper,
+    .ant-col-15.ant-form-item-control-wrapper {
+      width: 52%;
+      .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+    .ant-col-5.ant-form-item-label {
+      width: 22%;
+    }
+    .ant-col-19.ant-form-item-control-wrapper {
+      width: 78%;
+    }
+  }
+  .wrap-from-row {
+    :global {
+      .ant-form-item {
+        margin-bottom: 16px !important;
+      }
+    }
+  }
+}
+
+// 供应商信息变更 固定变更前、后样式
+.supplier-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-top: -24px;
+  background: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+
+.svg-color {
+  color: @primary-color;
+}
+
+.content-wrap {
+  background: #f4f5f7;
+  .customize-wrap {
+    padding: 0;
+    margin: 8px;
+    background: #fff;
+    min-height: calc(100% - 20px) !important;
+    :global {
+      // 折叠栏
+      .c7n-collapse {
+        border: none;
+        background: #f4f5f7;
+        > .c7n-collapse-item {
+          &:last-child {
+            margin-bottom: 0;
+          }
+          margin-bottom: 8px;
+          background: #fff;
+          border: none;
+          .c7n-collapse-header {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            padding: 20px;
+            .c7n-collapse-expand-icon-wrapper {
+              margin-left: 8px;
+            }
+          }
+          .c7n-collapse-content {
+            border: none;
+            padding: 0 20px;
+            .c7n-collapse-content-box {
+              padding-top: 0;
+              padding-bottom: 20px;
+              // margin-top: -4px;
+              .c7n-pro-form-wrapper {
+                .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+                  &:before {
+                    display: none;
+                    content: '';
+                  }
+                }
+              }
+            }
+          }
+        }
+        > .c7n-collapse-item-active {
+          .c7n-collapse-header {
+            padding-bottom: 16px;
+          }
+        }
+      }
+      .no-top-section {
+        // TopSection组件无标题时使用
+        .top-section-title {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+// 工作流单据样式定制
+.af-wrap {
+  background: #f4f5f7;
+  padding: 8px 8px 0;
+  :global {
+    .af-basic-container {
+      margin: 0;
+    }
+    .af-basic-bottom-remain-area {
+      margin: 0;
+      .c7n-pro-btn.c7n-pro-btn-flat {
+        color: #1d2129;
+      }
+    }
+  }
+}
+
+// 省市区table列样式
+.region-td {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: auto !important;
+      background-color: transparent;
+    }
+    .c7n-pro-table-cell-inner.c7n-pro-table-cell-inner-invalid {
+      .c7n-pro-input-wrapper.c7n-pro-input-readonly.c7n-pro-input-border {
+        background-color: #fcebeb;
+        .c7n-pro-input {
+          border-color: #f05434;
+        }
+      }
+    }
+  }
+}
+
+// 单据状态适配主题色
+.success-color {
+  color: @green-6;
+  background-color: @green-3;
+}
+.error-color {
+  color: @red-6;
+  background-color: @red-3;
+}
+.notice-color {
+  color: @blue-6;
+  background-color: @blue-3;
+}
+.warning-color {
+  color: @orange-6;
+  background-color: @orange-3;
+}
+.gray-color {
+  color: @text-2;
+  background-color: @fill-5;
+}
+
+// 供应商信息变更-比对附件样式
+.sslm-attachment-wrap {
+  padding: 0;
+  font-weight: 400;
+}
+
+// 企业信息变更-表格删除行样式
+.sslm-table-field-delete {
+  text-decoration: line-through;
+}
+
+// 长度超出显示...
+.sslm-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 明细对比标红样式
+.sslm-compare-info-style {
+  color: red !important;
+  > a {
+    color: red;
+    :global {
+      .c7n-tag {
+        background-color: red !important;
+        border-color: red !important;
+      }
+    }
+  }
+}
+
+/**
+ * h0组件form表单字段，个性化配置跨列对齐样式
+ * 目的：针对h0组件，className="half-row"时不支持个性化配置跨列，改造成className="writable-row",以支持个性化跨列配置，样式不对齐问题
+ * 【1】（.custom-row-16）跨两列样式，需配合个性化设置（【1】跨列设置：2 ｜【2】标签比例：4，值比例：20）
+ * 【2】（.custom-row-24）跨三列样式，需配合个性化设置（【1】跨列设置：3 ｜【2】标签比例：4，值比例：20）
+ */
+.custom-row-16 {
+  :global {
+    .col-span .ant-form-item .ant-col-4 {
+      width: 17.6%;
+    }
+    .col-span .ant-form-item .ant-col-20 {
+      width: 55.1%;
+    }
+  }
+}
+.custom-row-24 {
+  :global {
+    .col-span .ant-form-item .ant-col-4 {
+      width: 11.5%;
+    }
+    .col-span .ant-form-item .ant-col-20 {
+      width: 88.5%;
+    }
+  }
+}
+
+// 按钮通用的help属性
+.btn-help {
+  pointer-events: auto;
+  position: relative;
+  color: rgba(0, 0, 0, 0.45);
+  margin-left: 8px;
+  margin-right: 0;
+  font-size: 14px;
+  vertical-align: text-top;
+}
+
+// alert组件样式
+.alert-styles {
+  color: @blue-6;
+  border: none;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+      top: 10px;
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+      line-height: 22px;
+    }
+  }
+}
+
+// 弹框下的无数据样式
+.modal-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 154px);
+  svg {
+    color: @primary-color;
+  }
+  span {
+    font-size: 14px;
+    color: #868d9c;
+    margin-top: 16px;
+  }
+}
+
+// 折叠面板无标题样式
+.noHeader {
+  :global {
+    .c7n-collapse-header {
+      padding: 0 !important;
+    }
+  }
+}
+
+// 弹框下的tab样式
+.modal-tab {
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0;
+      .c7n-tabs-vertical.c7n-tabs-left > .c7n-tabs-bar {
+        padding: 16px 0;
+        min-width: 160px;
+        max-width: 220px;
+      }
+      .c7n-tabs-content {
+        padding: 20px;
+        overflow: auto;
+        height: 100%;
+      }
+      .c7n-spin-nested-loading,
+      .c7n-spin-container,
+      .c7n-tabs {
+        height: 100%;
+      }
+      .c7n-tabs-extra-content {
+        display: none !important;
+      }
+    }
+    .c7n-tabs-nav {
+      .c7n-tabs-tab {
+        text-align: left !important;
+      }
+    }
+  }
+}
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+
+// 表格手机号脱敏样式
+.sslm-mobile-phone {
+  :global {
+    .c7n-pro-table-cell-inner {
+      .c7n-pro-output-secret {
+        background-color: transparent;
+        .c7n-pro-output-secret-output {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// 表单手机号组件禁用
+.form-tel-field-disable {
+  :global {
+    .c7n-pro-tel-group-before {
+      .c7n-pro-select-disabled {
+        .c7n-pro-select {
+          border: none !important;
+        }
+      }
+    }
+  }
+}

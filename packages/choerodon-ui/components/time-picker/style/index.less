@@ -1,0 +1,230 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+@import '../../input/style/mixin';
+
+@input-prefix-cls: ~'@{c7n-prefix}-input';
+@timepicker-prefix-cls: ~'@{c7n-prefix}-time-picker';
+@timepicker-item-height: 0.32rem;
+
+.@{timepicker-prefix-cls}-panel {
+  .reset-component;
+  position: absolute;
+  z-index: @zindex-picker;
+
+  &-inner {
+    position: relative;
+    left: -0.02rem;
+    overflow: hidden;
+    font-size: @font-size-base;
+    text-align: left;
+    list-style: none;
+    background-color: @component-background;
+    background-clip: padding-box;
+    border-radius: @border-radius-base;
+    outline: none;
+    box-shadow: @box-shadow-base;
+  }
+
+  &-input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: auto;
+
+    .placeholder;
+
+    &-wrap {
+      position: relative;
+      box-sizing: border-box;
+      padding: 0.07rem 0.02rem 0.07rem @control-padding-horizontal;
+      border-bottom: @border-width-base @border-style-base @border-color-split;
+    }
+
+    &-invalid {
+      border-color: red;
+    }
+  }
+
+  &-clear-btn {
+    position: absolute;
+    top: 0.07rem;
+    right: 0.08rem;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0;
+    overflow: hidden;
+    line-height: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &-clear-btn::after {
+    display: inline-block;
+    width: 0.18rem;
+    height: 0.18rem;
+    color: @disabled-color;
+    font-size: @font-size-base - 0.02rem;
+    line-height: 1;
+    transition: color @animation-duration-slow ease;
+    .iconfont-font('\e62e');
+  }
+
+  &-clear-btn:hover::after {
+    color: @text-color-secondary;
+  }
+
+  &-narrow &-input-wrap {
+    max-width: @time-picker-panel-column-width * 2;
+  }
+
+  &-select {
+    position: relative; // Fix chrome weird render bug
+    float: left;
+    box-sizing: border-box;
+    width: @time-picker-panel-column-width;
+    max-height: @timepicker-item-height * 6;
+    overflow: hidden;
+    font-size: @font-size-base;
+    border-left: @border-width-base @border-style-base @border-color-split;
+
+    &:hover {
+      overflow-y: auto;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      border-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &:only-child {
+      width: 100%;
+    }
+
+    ul {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 0 0 @timepicker-item-height * 5;
+      list-style: none;
+    }
+
+    li {
+      box-sizing: content-box;
+      width: 100%;
+      height: @timepicker-item-height;
+      margin: 0;
+      padding: 0 0 0 @control-padding-horizontal;
+      line-height: @timepicker-item-height;
+      text-align: left;
+      list-style: none;
+      cursor: pointer;
+      transition: background @animation-duration-slow;
+      user-select: none;
+    }
+
+    li:hover {
+      background: @item-hover-bg;
+    }
+
+    li&-option-selected {
+      font-weight: bold;
+      background: @time-picker-selected-bg;
+      &:hover {
+        background: @time-picker-selected-bg;
+      }
+    }
+
+    li&-option-disabled {
+      color: @btn-disable-color;
+      &:hover {
+        background: transparent;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &-combobox {
+    .clearfix;
+  }
+
+  &-addon {
+    padding: 0.08rem;
+    border-top: @border-width-base @border-style-base @border-color-split;
+  }
+
+  &.slide-up-enter.slide-up-enter-active&-placement-topLeft,
+  &.slide-up-enter.slide-up-enter-active&-placement-topRight,
+  &.slide-up-appear.slide-up-appear-active&-placement-topLeft,
+  &.slide-up-appear.slide-up-appear-active&-placement-topRight {
+    animation-name: antSlideDownIn;
+  }
+
+  &.slide-up-enter.slide-up-enter-active&-placement-bottomLeft,
+  &.slide-up-enter.slide-up-enter-active&-placement-bottomRight,
+  &.slide-up-appear.slide-up-appear-active&-placement-bottomLeft,
+  &.slide-up-appear.slide-up-appear-active&-placement-bottomRight {
+    animation-name: antSlideUpIn;
+  }
+
+  &.slide-up-leave.slide-up-leave-active&-placement-topLeft,
+  &.slide-up-leave.slide-up-leave-active&-placement-topRight {
+    animation-name: antSlideDownOut;
+  }
+
+  &.slide-up-leave.slide-up-leave-active&-placement-bottomLeft,
+  &.slide-up-leave.slide-up-leave-active&-placement-bottomRight {
+    animation-name: antSlideUpOut;
+  }
+}
+
+.@{timepicker-prefix-cls} {
+  .reset-component;
+  position: relative;
+  display: inline-block;
+  width: 1.28rem;
+  outline: none;
+  transition: opacity @animation-duration-slow;
+
+  &-input {
+    .input;
+    &[disabled] {
+      .disabled;
+    }
+  }
+
+  &-open {
+    opacity: 0;
+  }
+
+  .@{input-prefix-cls}-suffix {
+    display: block !important;
+    height: 0.18rem;
+  }
+
+  .@{input-prefix-cls}-disabled &-icon {
+    color: @input-disabled-color;
+  }
+
+  &-icon {
+    color: #000;
+    cursor: pointer;
+  }
+
+  &-large &-input {
+    .input-lg;
+  }
+
+  &-small &-input {
+    .input-sm;
+  }
+
+  &-small &-icon {
+    right: @control-padding-horizontal-sm - 0.01rem;
+  }
+}

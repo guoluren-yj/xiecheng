@@ -1,0 +1,319 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+@light-color: @primary-color;
+
+.scrollbar-color {
+  background-color: rgba(21, 35, 60, 0.15);
+}
+
+.common-table {
+  margin-left: -8px;
+  margin-top: 5px;
+
+  :global {
+    thead {
+      display: none;
+    }
+
+    .c7n-spin-nested-loading {
+      max-height: calc(100% - 50px) !important;
+      overflow-y: auto;
+    }
+
+    .c7n-pro-table-thead .c7n-pro-table-cell,
+    .c7n-pro-table {
+      height: calc(100vh - 380px);
+      border: unset !important;
+    }
+
+    .c7n-pro-table-tbody {
+      > tr {
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+
+        > td {
+          > span {
+            display: inline-block;
+            height: 100px !important;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+          }
+        }
+
+        > td:first-child {
+          > span {
+            border-left: 1px solid rgba(0, 0, 0, 0.08);
+          }
+        }
+
+        > td:last-child {
+          // position: relative;
+          // left: -2px;
+          > span {
+            border-right: 1px solid rgba(0, 0, 0, 0.08);
+          }
+        }
+      }
+
+      .c7n-pro-table-cell {
+        padding: 0 5px 0 9px;
+        border: unset !important;
+        background-color: unset !important;
+      }
+
+      .c7n-pro-table-row:hover > td {
+        background-color: unset;
+      }
+    }
+
+    .c7n-pro-table-pagination {
+      margin-top: 50px;
+    }
+
+    .c7n-pro-table-row:hover > td > span {
+      background-color: #eff4ff;
+      opacity: 0.8;
+      -webkit-box-shadow: #e9e9e9 0 5px 5px;
+      -moz-box-shadow: #e9e9e9 0 5px 5px;
+      box-shadow: #e9e9e9 0 5px 5px;
+    }
+
+    .c7n-btn:not(.c7n-btn-disabled-wrapper),
+    .c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper),
+    .c7n-btn-disabled-wrapper > button,
+    .c7n-pro-btn-disabled-wrapper > button {
+      width: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: @light-color;
+      }
+    }
+
+    .c7n-pro-select-wrapper {
+      .c7n-pro-select::selection {
+        color: #000;
+        background: #fff !important;
+      }
+
+      .c7n-pro-select:focus {
+        border-color: @light-color;
+      }
+    }
+
+    .c7n-pro-btn-primary.c7n-pro-btn-raised {
+      background-color: @light-color;
+      border-color: @light-color;
+    }
+
+    .c7n-pro-select-wrapper {
+      background-color: #f9f9f9;
+    }
+
+    .c7n-pro-table-search-bar-left {
+      position: relative;
+      bottom: 20px;
+
+      .c7n-pro-table-search-bar-merge-field {
+        display: none;
+      }
+    }
+  }
+
+  .super-list-container {
+    cursor: pointer;
+    position: relative;
+    left: 16px;
+    top: 9px;
+    height: calc(100% - 20px);
+    width: calc(100% - 32px);
+    display: inline-flex;
+    flex-direction: column;
+
+    &-time {
+      height: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+      font-size: 12px;
+      line-height: 18px;
+
+      > div {
+        height: 30px;
+        // width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        .icon {
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      > div:first-child {
+        flex: 1;
+      }
+
+      > div:last-child {
+        width: 112px;
+        text-align: end;
+      }
+    }
+
+    &-record {
+      height: calc(100% - 30px);
+      width: 100%;
+
+      &-row {
+        height: 50%;
+        width: 100%;
+
+        :global {
+          .c7n-col-4,
+          .c7n-col-4 > div,
+          .c7n-col-4 > span {
+            // width: 33%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          .c7n-col-order-1 {
+            display: flex;
+            width: 40%;
+
+            > span:first-child {
+              display: block;
+              // width: 14px;
+            }
+
+            > span:last-child {
+              max-width: calc(100% - 25px);
+            }
+          }
+
+          .c7n-col-order-2 {
+            width: 30%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            > div {
+              max-width: 100%;
+            }
+          }
+
+          .c7n-col-order-3 {
+            width: 30%;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .super-list-status {
+    margin-left: 8px;
+
+    :global {
+      .c7n-tag:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .super-list-num {
+    > span:nth-child(2) {
+      margin-left: 5px;
+    }
+
+    > span:last-child {
+      margin-left: 5px;
+    }
+  }
+
+  .super-list-right {
+    margin-right: 8px;
+  }
+
+  .super-list-sup {
+    margin-right: 10px;
+  }
+
+  .super-list-left {
+    margin-left: 18px;
+  }
+
+  .super-list-grey {
+    color: #4e5769;
+  }
+
+  .super-list-title {
+    font-weight: 600;
+  }
+
+  .super-list-font {
+    font-weight: 500;
+  }
+
+  .super-list-color {
+    color: #f56349;
+  }
+}
+
+.common-page {
+  position: fixed;
+  right: 25px;
+  bottom: 10px;
+
+  :global {
+    .c7n-pro-table-pagination {
+      margin-top: 90px;
+    }
+
+    .c7n-pro-table-row:hover > td > span {
+      background-color: #eff4ff;
+      opacity: 0.8;
+      -webkit-box-shadow: #e9e9e9 0 5px 5px;
+      -moz-box-shadow: #e9e9e9 0 5px 5px;
+      box-shadow: #e9e9e9 0 5px 5px;
+    }
+
+    .c7n-btn:not(.c7n-btn-disabled-wrapper),
+    .c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper),
+    .c7n-btn-disabled-wrapper > button,
+    .c7n-pro-btn-disabled-wrapper > button {
+      width: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &:hover,
+      &:active,
+      &:visited {
+        color: @light-color;
+      }
+    }
+  }
+}
+
+.super-Skeleton-list {
+  :global {
+    .c7n-skeleton-content {
+      .c7n-skeleton-title {
+        width: 60% !important;
+      }
+    }
+  }
+}

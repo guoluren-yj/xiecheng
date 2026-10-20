@@ -1,0 +1,42 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@menu-prefix-cls: ~"@{c7n-prefix}-menu";
+
+.trigger() {
+  &-popup {
+    border-radius: @border-radius-base;
+    &.slide-up-enter.slide-up-enter-active&-placement-bottomLeft,
+    &.slide-up-enter.slide-up-enter-active&-placement-bottomRight,
+    &.slide-up-appear.slide-up-appear-active&-placement-bottomLeft,
+    &.slide-up-appear.slide-up-appear-active&-placement-bottomRight {
+      animation-name: antSlideUpIn;
+    }
+
+    &.slide-up-enter.slide-up-enter-active&-placement-topLeft,
+    &.slide-up-enter.slide-up-enter-active&-placement-topRight,
+    &.slide-up-appear.slide-up-appear-active&-placement-topLeft,
+    &.slide-up-appear.slide-up-appear-active&-placement-topRight {
+      animation-name: antSlideDownIn;
+    }
+
+    &.slide-up-leave.slide-up-leave-active&-placement-bottomLeft,
+    &.slide-up-leave.slide-up-leave-active&-placement-bottomRight {
+      animation-name: antSlideUpOut;
+    }
+
+    &.slide-up-leave.slide-up-leave-active&-placement-topLeft,
+    &.slide-up-leave.slide-up-leave-active&-placement-topRight {
+      animation-name: antSlideDownOut;
+    }
+
+    .@{menu-prefix-cls}-item-selected {
+      color: @select-primary-color;
+      background-color: @select-primary-hover-color !important;
+
+      a {
+        color: @select-primary-color;
+      }
+    }
+  }
+}

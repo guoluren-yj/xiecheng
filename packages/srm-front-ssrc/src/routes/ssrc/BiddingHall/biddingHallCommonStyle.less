@@ -1,0 +1,146 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+@white: #fff;
+@primary-blue-0: #0161d5;
+@eightPx: 8px;
+@ssrc-primary-color: #e64322;
+@ssrc-primary-color-line: #00b8cc;
+
+// 1D2129
+
+.white-color {
+  color: @white !important;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flex-between-center {
+  .flex();
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-inline {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+
+.flex-inline-between-center {
+  .flex-inline();
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ellipsis-word {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 1D2129 14 400
+.ssrc-bidding-hall-common-title-1 {
+  font-size: 16px;
+  color: @text-color;
+  font-weight: 600;
+}
+
+// 868D9C
+.ssrc-smal-common-text {
+  font-size: 12px;
+  color: @fill-3;
+  font-weight: 400;
+}
+
+// 1D2129 14 400
+.ssrc-bidding-hall-text-2(@size: 14px, @weight: 400) {
+  font-size: @size;
+  color: @text-color;
+  font-weight: @weight;
+}
+
+.ssrc-bidding-hall-common-text-2 {
+  font-size: 14px;
+  color: @text-color;
+  font-weight: 400;
+}
+
+// 868D9C
+.ssrc-bidding-hall-common-text-3 {
+  font-size: 12px;
+  color: @text-3;
+  font-weight: 400;
+}
+
+// E64322
+.ssrc-bidding-hall-common-text-4 {
+  font-size: 14px;
+  color: #e64322;
+  font-weight: 400;
+}
+
+// 4E5769
+.ssrc-bidding-hall-common-text-5 {
+  font-size: 14px;
+  color: @fill-2;
+  font-weight: 400;
+}
+
+//  #C9CDD4
+.ssrc-bidding-hall-common-text-6 {
+  color: @input-placeholder-color;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// 179454
+.ssrc-bidding-hall-common-text-7(@size: 14, @weight: 400) {
+  color: #179454;
+  font-size: @size + 'px';
+  font-weight: @weight;
+}
+
+.divide-line-vertical {
+  border-right: 1px solid @border-3;
+  align-self: center;
+  height: 8px;
+  margin: 0 @eightPx;
+}
+
+.ssrc-bidding-hall-red-text-5 {
+  font-size: 18px;
+  color: @ssrc-primary-color;
+  font-weight: 600;
+}
+
+.text-vertical-middle {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-warning-message-red-1 {
+  color: #e64322;
+  font-size: 12px;
+}
+
+// overrice customize style
+.supplier-bidding-hall-approval-customize-override {
+  :global {
+    .af-basic-container {
+      padding: 0;
+      margin: 4px 0;
+
+      .af-basic-row {
+        padding: 0;
+
+        .tag-fields {
+          .tag-field {
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

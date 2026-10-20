@@ -1,0 +1,84 @@
+.hotdata {
+  margin-top: 24px;
+  .hotdata-title {
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .hotdata-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 9px;
+    // grid-template-columns: repeat(5, 220px);
+    grid-template-columns: repeat(5, 1fr);
+    .hotdata-list-item {
+      // width: 220px;
+      width: auto;
+      height: 154px;
+      padding: 16px;
+      margin-top: 16px;
+      // margin-right: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      &:hover {
+        border: 1px solid #00c5d2;
+      }
+
+      .hotdata-list-item-head {
+        font-size: 14px;
+        color: #000;
+        line-height: 22px;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        .hodata-tag {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          background: rgba(0, 0, 0, 0.06);
+          display: inline-block;
+          line-height: 18px;
+          padding: 0 5px;
+          border-radius: 2px;
+          margin-right: 4px;
+          &.first {
+            background: rgba(245, 99, 73, 0.1);
+            color: #f56349;
+          }
+          &.second {
+            background: rgba(252, 160, 0, 0.1);
+            color: #f88d10;
+          }
+          &.third {
+            background: rgba(71, 184, 129, 0.1);
+            color: #47b881;
+          }
+        }
+      }
+      .hotdata-list-item-count {
+        margin-top: 4px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+      }
+      .hotdata-list-city {
+        margin-top: 16px;
+        .hotdata-list-city-item {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+          margin-top: 4px;
+          .city-count {
+            font-size: 12px;
+            color: #000;
+            line-height: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

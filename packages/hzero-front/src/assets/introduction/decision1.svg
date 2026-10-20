@@ -1,0 +1,37 @@
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>全流程数据监控</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5A95E9" offset="0%"></stop>
+            <stop stop-color="#ABD4FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFB72E" offset="0%"></stop>
+            <stop stop-color="#FFB72E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#5A95E9" offset="0%"></stop>
+            <stop stop-color="#ABD4FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#1EE0F1" offset="0%"></stop>
+            <stop stop-color="#1EE0F1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#5AC7E9" offset="0%"></stop>
+            <stop stop-color="#ABE6FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="全流程数据监控" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-19" transform="translate(2.000000, 1.000000)">
+            <circle id="椭圆形" fill="url(#linearGradient-1)" cx="42" cy="40" r="18"></circle>
+            <path d="M35,37.0000001 L35,46.0000001 L32,46.0000001 L32,37.0000001 L35,37.0000001 Z M43.0000001,38.0000001 L43.0000001,46.0000001 L40.0000001,46.0000001 L40.0000001,38.0000001 L43.0000001,38.0000001 Z M51.0000001,32 L51.0000001,46 L48.0000001,46 L48.0000001,32 L51.0000001,32 Z" id="形状结合" fill="#FFFFFF"></path>
+            <circle id="椭圆形" fill="url(#linearGradient-2)" opacity="0.75" cx="10" cy="60" r="10"></circle>
+            <circle id="椭圆形" fill="url(#linearGradient-3)" opacity="0.6" cx="72" cy="15" r="15"></circle>
+            <circle id="椭圆形" fill="url(#linearGradient-4)" cx="45.5" cy="81.5" r="6.5"></circle>
+            <path d="M42,10 C58.5685425,10 72,23.4314575 72,40 C72,47.0983124 69.5347285,53.6208298 65.4136771,58.7580607 L76.6066017,69.9497475 C78.1686989,71.5118446 78.1686989,74.0445046 76.6066017,75.6066017 C75.0445046,77.1686989 72.5118446,77.1686989 70.9497475,75.6066017 L59.6228884,64.28089 C54.6750832,67.878174 48.5853311,70 42,70 C25.4314575,70 12,56.5685425 12,40 C12,23.4314575 25.4314575,10 42,10 Z M42,17 C29.2974508,17 19,27.2974508 19,40 C19,52.7025492 29.2974508,63 42,63 C54.7025492,63 65,52.7025492 65,40 C65,27.2974508 54.7025492,17 42,17 Z" id="形状结合" fill="url(#linearGradient-5)"></path>
+        </g>
+    </g>
+</svg>

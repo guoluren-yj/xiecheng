@@ -1,0 +1,53 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.detail-content {
+  :global {
+    .app-info {
+      position: relative;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        top: 4px;
+        left: -10px;
+      }
+    }
+    .info-flex {
+      display: flex;
+      .info-content {
+        width: 224px;
+        margin-right: 16px;
+        .info-label {
+          margin-bottom: 16px;
+          .label-title {
+            // color: rgb(0, 0, 0, 0.65)!important;
+            margin-bottom: 4px;
+          }
+          .weight-tag {
+            font-weight: 600;
+            color: rgb(0, 0, 0, 0.65);
+          }
+        }
+      }
+    }
+    .info-label {
+      margin-bottom: 16px;
+      .label-title {
+        // color: rgb(0, 0, 0, 0.65) !important;
+        margin-bottom: 4px;
+      }
+      .weight-tag {
+        font-weight: 600;
+        color: rgb(0, 0, 0, 0.65);
+        max-width: 464px;
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+@import '~hzero-front/lib/srm-variables';
+// 调查表创建及发布样式
+.page-content-wrap {
+  background: #f4f5f7;
+  .purchaser-investigate-all-content {
+    padding: 0;
+    min-height: calc(100% - 24px) !important;
+    .purchaser-investigate-create {
+      background: #f4f5f7;
+      :global {
+        .c7n-card-body {
+          padding: 20px;
+          margin-bottom: 8px;
+        }
+      }
+      .purchaser-investigate-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+// 调查表查询详情
+.purchaser-investigate-detail-content {
+  padding: 0;
+  // min-height: calc(100% - 24px) !important;
+  .purchaser-investigate-detail {
+    background: #f4f5f7;
+    :global {
+      // 个性化卡片
+      .top-section-title {
+        margin: 0;
+      }
+      .c7n-collapse {
+        margin-bottom: 8px;
+        background: #f4f5f7;
+        .c7n-collapse-item {
+          border: 0;
+          background: #fff;
+          .c7n-collapse-header {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 20px 20px 16px 20px;
+          }
+          .c7n-collapse-content {
+            padding: 0 20px;
+            .c7n-collapse-content-box {
+              padding-top: 0;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+    & > div:first-child {
+      display: flex;
+      min-height: calc(100vh - 155px) !important;
+      flex-direction: column;
+    }
+    .purchaser-investigate-detail-line {
+      display: flex;
+      flex: 1 1;
+      background: #fff;
+      :global {
+        .c7n-card {
+          width: 100%;
+          .c7n-card-head {
+            padding: 0 20px;
+            .c7n-card-head-title {
+              font-weight: 600;
+            }
+          }
+          & > .c7n-card-body {
+            height: calc(100% - 57px);
+            padding: 0 20px 0 0;
+            & > .c7n-spin-nested-loading {
+              height: 100%;
+              & > .c7n-spin-container {
+                height: 100%;
+                & > .c7n-tabs-line.c7n-tabs-vertical {
+                  height: 100%;
+                  .c7n-tabs-nav-container-scrolling {
+                    padding: 0;
+                    .c7n-tabs-tab-prev,
+                    .c7n-tabs-tab-next {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-riskProfile {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.action-links {
+  :global {
+    a:not(:first-child),
+    .c7n-pro-btn-link:not(:first-child) {
+      margin: 0 0 0 16px;
+    }
+  }
+}
+
+.c7n-investig-edit-from {
+  :global {
+    .c7n-pro-input-float-label-group {
+      .c7n-pro-input-group-before {
+        padding: 0;
+        border: 0;
+      }
+
+      .c7n-pro-input-group-input {
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+// 预览-覆盖原左边间距样式
+.investigate-create-preview {
+  :global {
+    .c7n-tabs > div:first-child {
+      width: 180px;
+      .c7n-tabs-nav-container {
+        .c7n-tabs-nav {
+          .c7n-tabs-tab {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.investigate-create-preview-banner {
+  margin: 0 -20px 0 -20px;
+  :global {
+    .c7n-alert-message {
+      font-size: 12px;
+      color: #1983f5;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .c7n-alert-close-icon {
+      .icon-close {
+        color: #1983f5;
+      }
+    }
+  }
+}
+
+// 审批表单样式
+.purchaser-investigate-detail-workflow {
+  margin: 0 !important;
+  background: #f4f5f7;
+  padding: 8px;
+  .purchaser-investigate-detail-wf-header {
+    margin-bottom: 8px;
+    :global {
+      .c7n-card-head {
+        padding: 0 20px;
+        .c7n-card-head-title {
+          font-weight: 600;
+        }
+      }
+      .c7n-card-body {
+        padding: 16px 20px 20px !important;
+      }
+    }
+  }
+  .purchaser-investigate-detail {
+    :global {
+      .af-basic-container {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        .tag-field:has(> span) {
+          background-color: transparent;
+        }
+      }
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+        .c7n-pro-btn-wrapper {
+          color: @text-1;
+        }
+      }
+      .af-extra-container {
+        margin: 0;
+      }
+      .top-section-title {
+        margin: 0;
+      }
+    }
+    &-riskProfile {
+      margin-bottom: 8px;
+    }
+    .ai-approve-status {
+      height: 20px;
+      overflow: hidden;
+      margin: -1px -12px 0 -4px;
+      display: inline-block;
+    }
+  }
+  .purchaser-investigate-detail-line {
+    :global {
+      .c7n-card-head {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+// 企业标签样式
+.enterprise-tags-wrap {
+  padding: 16px 20px;
+  background: #fff;
+  margin-bottom: 8px;
+  .enterprise-tags-title {
+    font-size: 16px;
+    color: #1d2129;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+}

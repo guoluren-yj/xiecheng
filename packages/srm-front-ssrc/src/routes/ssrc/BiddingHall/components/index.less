@@ -1,0 +1,640 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '../biddingHallCommonStyle.less';
+
+.bidding-status-tab-warp {
+  max-width: 300px;
+  height: 100%;
+  .flex();
+
+  .bidding-status-tab {
+    display: inline-block;
+    border-radius: 2px;
+    height: 24px;
+    line-height: 24px;
+    width: 44px;
+    max-width: 200px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 2px;
+    font-size: 12px;
+    margin-right: 8px;
+    user-select: none;
+    // -webkit-user-select: none;
+    cursor: pointer;
+    background-color: @item-active-bg;
+    color: @fill-2;
+    .ellipsis-word();
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.bidding-status-checked {
+      color: @primary-color !important;
+      background-color: @primary-1;
+    }
+  }
+}
+
+.line-status-alert-wrap {
+  height: 32px;
+  .flex();
+  justify-content: space-between;
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 400;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 16px;
+  .ellipsis-word();
+
+  .line-status-alert-wrap-left {
+    width: 92%;
+    .ellipsis-word();
+  }
+
+  .line-status-alert-icon {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+
+.bidding-line-collect-wrap {
+  @start-collction-color: #868d9c;
+  color: @start-collction-color;
+  cursor: pointer;
+  display: inline-block;
+
+  &.disabled-collection {
+    cursor: default;
+  }
+}
+
+.list-card-item-wrap {
+  border: 1px solid @item-active-bg;
+  border-radius: 2px;
+  margin-right: 12px;
+
+  &.list-card-item-active {
+    border: 1px solid #00b8cc;
+  }
+
+  .list-card-item {
+    .flex();
+    justify-content: space-between;
+    padding: 8px;
+    background-color: @fill-7;
+  }
+
+  .list-card-item-title {
+    .flex-inline();
+    align-items: center;
+  }
+
+  .list-card-item-title-collection-status-wrap {
+    .flex-inline();
+  }
+
+  .list-card-item-icon-number {
+    margin-right: 8px;
+  }
+
+  .list-card-item-symbol {
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    text-align: center;
+    background: rgba(10, 125, 245, 0.15);
+    border-radius: 2px;
+    color: @primary-blue-0;
+  }
+
+  .list-card-item-code-name-line-wrap {
+    .flex-inline();
+    align-items: center;
+  }
+
+  .list-card-item-code-name {
+    max-width: 136px;
+    .ellipsis-word();
+    .ssrc-bidding-hall-common-text-2();
+    margin-right: 4px;
+  }
+
+  .list-card-item-status {
+    // padding: 0 2px;
+  }
+
+  .list-card-item-content-wrap {
+    .ssrc-smal-common-text();
+    padding: 8px;
+
+    .list-card-item-content-default-render {
+      .flex-inline();
+    }
+
+    .list-card-item-content-detail-data {
+      // .flex-inline();
+      width: 100%;
+    }
+
+    .list-card-item-content-detail-rank {
+      // width: 150px;
+      display: inline-block;
+
+      .list-card-item-content-detail-rank-my {
+        .ssrc-bidding-hall-common-text-4();
+        font-weight: 600;
+        // color: #e64322;
+
+        &.list-card-item-content-detail-rank-my-empty-value {
+          color: @text-color;
+        }
+        &-split-line {
+          .ssrc-bidding-hall-common-text-2();
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .list-card-item-content-detail-rank-all {
+        .ssrc-bidding-hall-common-text-2();
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        max-width: 110px;
+        vertical-align: bottom;
+        .ellipsis-word();
+      }
+    }
+
+    .list-card-item-content-detail-item-price {
+      // border-left: 1px solid @item-active-bg;
+      // padding-left: 12px;
+      display: inline-block;
+
+      .list-card-item-content-detail-item-price-lowest {
+        .ssrc-bidding-hall-common-text-2();
+        font-weight: 600;
+        display: inline-block;
+        max-width: 100px;
+        vertical-align: bottom;
+        .ellipsis-word();
+      }
+    }
+  }
+}
+
+// status
+.quotation-detail-line-status-wrap {
+  height: 56px;
+  .flex();
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  .quotation-detail-line-status-values {
+    width: 56px;
+    height: 56px;
+    // line-height: 56px;
+    // text-align: center;
+
+    .quotation-detail-line-status-values-inner {
+      font-size: 14px;
+      color: @white;
+      text-align: center;
+      letter-spacing: 1px;
+      // line-height: 18px;
+      font-weight: 600;
+      height: 56px;
+      line-height: 1.4;
+      padding: 8px;
+      // padding: 11px;
+      // .ellipsis-word();
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // width: 44px;
+      // padding-top: 11px;
+      // padding-left: 11px;
+    }
+
+    &.not-start {
+      // background-image: linear-gradient(135deg, #BBC1CB 0%, #868D9C 100%);
+      background-image: url('../../../../assets/biddingStautsNotStartClosed.svg');
+    }
+
+    &.in-process {
+      // background-image: linear-gradient(135deg, rgba(1,97,213,0.60) 0%, #0161D5 100%);
+      background-image: url('../../../../assets/biddingStautsProcess.svg');
+    }
+
+    &.has-paused {
+      // background-image: linear-gradient(135deg, #FF9E5B 0%, #F06200 100%);
+      background-image: url('../../../../assets/biddingStautsPaused.svg');
+    }
+
+    &.has-closed {
+      // background-image: linear-gradient(135deg, #BBC1CB 0%, #868D9C 100%);
+      background-image: url('../../../../assets/biddingStautsNotStartClosed.svg');
+    }
+
+    &.has-finished {
+      // background-image: linear-gradient(135deg, #33C68D 0%, #179454 100%);
+      background-image: url('../../../../assets/biddingStatusFinish.svg');
+    }
+  }
+
+  .quotation-detail-line-status-infos {
+    background: @fill-7;
+    width: calc(100% - 56px);
+    .flex();
+    align-items: center;
+    // overflow-x: auto;
+    justify-content: space-between;
+    padding: 8px 16px;
+    .ssrc-bidding-hall-common-text-5();
+
+    .quotation-detail-line-status-infos-left {
+      flex: 1;
+      min-width: 20px;
+    }
+
+    .quotation-detail-line-quotation-supplier-timer-wrap {
+      color: @fill-2;
+      margin-bottom: 1px;
+      width: 100%;
+      .flex();
+      align-items: center;
+
+      .line-date-time-wrap {
+        .flex();
+        align-items: center;
+        min-width: 20px;
+        flex-shrink: 1;
+      }
+
+      .quotation-detail-line-quotation-defer-count {
+        margin-left: 4px;
+        min-width: 20px;
+        flex-shrink: 1;
+        line-height: 1;
+        margin-top: 4px;
+
+        :global {
+          .c7n-tag {
+            width: 100%;
+            .ellipsis-word();
+          }
+        }
+      }
+
+      .line-date-time-wrap-prefix-render-wrap {
+        max-width: 78px;
+        .ellipsis-word();
+        margin-right: 4px;
+      }
+
+      // 倒计时不显示具体label文字，显示icon气泡
+      .bidding-time-line-render-icon-label {
+        line-height: 1;
+        margin-right: 4px;
+      }
+
+      .bidding-time-line-render-label {
+        margin-right: 8px;
+        // max-width: 200px;
+        min-width: 50px;
+        flex-shrink: 1;
+        .ellipsis-word();
+      }
+
+      .bidding-time-line-render-value {
+        .ellipsis-word();
+      }
+
+      // 行时间-只读时间需要特殊样式
+      :global {
+        .bidding-time-line-render-value-read-only-text-wrap {
+          font-weight: 600;
+        }
+
+        .ssrc-bidding-hall-time-line-only-render-time {
+          color: @text-1;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .quotation-detail-line-quotation-supplier-info {
+      .ssrc-bidding-hall-common-text-3();
+
+      .quotation-detail-line-quotation-supplier-info-not-first {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.ssrc-bidding-price-bid-price-component-wrap {
+  @all-width: 240px;
+
+  width: @all-width;
+  height: 40px;
+  // line-height: 40px;
+  .flex();
+  border-radius: 2px;
+
+  &:has(.ssrc-bidding-price-bid-price-component-price-value-read) {
+    height: 30px !important;
+  }
+
+  :global {
+    .c7n-pro-int-number {
+      height: 40px !important;
+    }
+  }
+
+  .ssrc-bidding-price-bid-price-component-price-value {
+    .ssrc-bidding-hall-text-2(14px, 600);
+
+    :global {
+      .c7n-pro-input-number {
+        border-color: @table-border-color;
+      }
+    }
+
+    &.ssrc-bidding-price-bid-price-component-price-value-read {
+      height: 30px !important;
+      .ssrc-bidding-hall-text-2(12px, 600);
+    }
+
+    &.ssrc-bidding-price-bid-price-component-price-value-all-width {
+      width: @all-width;
+    }
+
+    &.ssrc-bidding-price-bid-price-component-price-value-all-width-inner-table {
+      width: 90%;
+    }
+  }
+
+  .ssrc-bidding-price-bid-price-component-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid @table-border-color;
+    color: @fill-3;
+    cursor: pointer;
+
+    &.disabled-icon {
+      cursor: not-allowed;
+      // border-color: @table-border-color;
+    }
+
+    .disabled-icon-only {
+      opacity: 0.5;
+    }
+
+    &.left-icon {
+      border-right: none;
+      border-radius: 2px 0 0 2px;
+    }
+
+    &.right-icon {
+      border-left: none;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}
+
+.bidding-rank-icon-wrap {
+  @icon-size: 24px;
+  display: inline-block;
+  height: @icon-size;
+  width: @icon-size;
+  background-size: @icon-size @icon-size;
+  background-image: url('../../../../assets/rankIcon.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+  color: #b1b1b1;
+  margin-right: 4px;
+  position: relative;
+
+  .bidding-rank-icon-rank-value {
+    font-size: 10px;
+    transform: scale(0.86);
+    transform-origin: 0 0;
+    display: inline-block;
+    // translate: 0 -8px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: -6px;
+    left: 6px;
+  }
+}
+
+// 采购方-历史图表分析
+.purchase-item-history {
+  &-modal-title {
+    width: 95%;
+    .ellipsis-word();
+  }
+  // 弹框中的tabs
+  &-chart-tabs-wrapper {
+    height: 100%;
+    :global {
+      .c7n-tabs-content {
+        height: calc(100% - 60px);
+      }
+    }
+  }
+  &-chart {
+    width: 0.14rem;
+    height: 0.14rem;
+    cursor: pointer;
+  }
+  &-chart-time {
+    .flex();
+    &-text {
+      color: #868d9c;
+      font-weight: 600;
+    }
+    & > span {
+      margin-right: 0.1rem;
+    }
+  }
+}
+
+.quotation-detail-line-quotation-supplier-info-defercount {
+  .ssrc-bidding-hall-common-text-5();
+  margin-right: 4px;
+}
+
+// 趋势图
+// ================================start-趋势图===========================================
+.ssrc-bidding-hall-componnets-item-history-chart-select-wrap {
+  .flex();
+  margin-bottom: 8px;
+
+  .ssrc-bidding-hall-select-item {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .ssrc-bidding-hall-select-item-wrapper {
+    width: 120px;
+  }
+}
+
+.ssrc-bidding-hall-componnets-charts-empty-wrapper {
+  height: 100%;
+  text-align: center;
+  margin-top: 25%;
+
+  .quotation-bidding-chart-content-not-start-image {
+    height: 58px;
+    width: 56px;
+    display: inline-block;
+  }
+
+  .quotation-bidding-chart-content-not-start-warning-text {
+    margin-top: 16px;
+    .ssrc-bidding-hall-common-text-2();
+    font-size: 12px;
+    color: @text-2;
+  }
+}
+
+.ssrc-bidding-hall-chart-max-min-legend {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  color: #868d9c;
+
+  .ssrc-bidding-hall-chart-max-min-item {
+    display: inline-flex;
+    align-items: center;
+
+    &.ssrc-bidding-hall-chart-max-min-item-not-first-item {
+      margin-left: 12px;
+    }
+  }
+
+  .ssrc-bidding-hall-chart-max-min-item-label {
+    margin: 0 8px;
+  }
+}
+
+// 竞价分析组件
+.ssrc-bidding-record-chart-component {
+  cursor: pointer;
+  display: inline-flex;
+  margin-left: 8px;
+  align-items: center;
+
+  .ssrc-bidding-record-chart-component-text {
+    color: @fill-2;
+    font-size: 12px;
+    padding-left: 4px;
+    width: 66px;
+    .ellipsis-word();
+  }
+}
+
+.ssrc-bidding-traffic-light-wrap {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  transform: translate(0, 1px);
+}
+
+.ssrc-bidding-traffic-light {
+  &-red {
+    background-color: #e64322;
+  }
+
+  &-yellow {
+    background-color: #ffc60a;
+  }
+
+  &-green {
+    background-color: #179454;
+  }
+}
+
+// ================================end-趋势图===========================================
+
+// timer
+
+// time line
+
+.bidding-hall-empty-data-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  .bidding-hall-empty-data-wrap-no-data {
+    margin-top: 16px;
+    color: #868d9c;
+  }
+}
+
+.ssrc-bidding-hall-warning-message-wrap {
+  .ssrc-bidding-hall-warning-message-category-title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .ssrc-bidding-hall-warning-message-timeline-item {
+    display: flex;
+    align-items: baseline;
+    margin-left: calc(16px - 0.18rem);
+  }
+
+  .ssrc-bidding-hall-warning-message-timeline-item-conent {
+    width: 100%;
+    margin-left: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 12px;
+
+    .ssrc-bidding-hall-warning-message-timeline-item-conent-title {
+      color: #000;
+      width: 100%;
+      font-weight: 500;
+      margin-bottom: 4px;
+      // .ellipsis-word();
+    }
+
+    .ssrc-bidding-hall-warning-message-timeline-item-conent-remark {
+      color: rgba(35, 32, 32, 0.65);
+      margin-bottom: 4px;
+      width: 100%;
+      .ellipsis-word();
+    }
+
+    .ssrc-bidding-hall-warning-message-timeline-item-conent-time {
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+    }
+  }
+
+  :global {
+    .c7n-collapse-item {
+      border: none;
+    }
+
+    .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header .c7n-collapse-expand-icon {
+      font-size: 0.18rem;
+      line-height: 1.3;
+    }
+  }
+}

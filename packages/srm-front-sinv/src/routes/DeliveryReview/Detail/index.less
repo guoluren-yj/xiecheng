@@ -1,0 +1,130 @@
+/*
+ * style - 订单复审明细
+ * @date: 2018/11/13 16:28:37
+ * @author: FQL <qilin.feng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.detail-form {
+  :global {
+    .approve-header {
+      font-size: 14px;
+      height: 32px;
+      line-height: 32px;
+    }
+    .approve-option {
+      & .ant-form-item {
+        margin-bottom: 24px;
+      }
+      width: 50%;
+    }
+  }
+}
+.attachment-deleted {
+  :global {
+    .ant-upload-list-item:hover .anticon-cross {
+      display: none;
+    }
+  }
+}
+
+.deatil-order-header {
+  :global {
+    div.ant-row.item-row {
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+      }
+    }
+  }
+}
+
+.information-container {
+  width: 30%;
+  margin: 10px 30px 10px 30px;
+  .information-title {
+    font-size: 14px;
+    color: #314659;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+  .information-item {
+    border-bottom: 1px #dcdcdc dashed;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    .information-item-label {
+      color: #999;
+    }
+  }
+}
+
+// 头信息标题
+.description-title {
+  font-size: 14px;
+  color: #314659;
+  margin-bottom: 20px;
+}
+// 头信息列表
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+  .one-line {
+    flex: 0 0 100%;
+  }
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+  .three-col {
+    display: flex;
+    flex: 0 0 75%;
+  }
+  .four-col {
+    display: flex;
+    flex: 0 0 25%;
+  }
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px dashed #dcdcdc;
+    & > :first-child {
+      width: 100px;
+      color: #aaa;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}
+.detail-logistic {
+  padding-left: 16px;
+  :global {
+    .ant-row.ant-form-item {
+      .ant-col-9.ant-form-item-label {
+        text-align: left;
+        line-height: 20px;
+        label {
+          color: #666;
+        }
+      }
+      .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+  }
+}
+.textarea-bottom {
+  margin-bottom: 4px;
+}
+
+.content {
+  :global {
+    .ant-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.card-style {
+  width: 100%;
+  margin: 8px auto;
+  .title-p {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+
+.panel-container {
+  border-bottom: transparent 0 solid !important;
+  padding: 0;
+  margin: 4px 0;
+  div[role='button'] {
+    padding: 0 !important;
+    margin: 10px 0 !important;
+  }
+  div {
+    padding: 0 !important;
+    margin: 2px 0 2px 8px;
+  }
+  .checkbox-container {
+    background-color: #f7f8fa;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 4px;
+    border: 1px solid #c9c9c9;
+    margin: 8px 0 8px -8px;
+    legend {
+      font-size: 1em !important;
+      width: auto !important;
+      display: inline !important;
+      background-color: #fff !important;
+      color: #69707f !important;
+    }
+  }
+}
+
+.fx-icon {
+  height: 15px;
+  width: 15px;
+  background-image: url('@/assets/fx.svg');
+  margin: auto 12px -5px -8px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c7n-pro-table {
+  border: 0 solid transparent;
+}
+.c7n-pro-table-cell {
+  border: 0 solid transparent;
+}
+
+.out-box {
+  height: calc(100vh - 48px - 48px - 35px - 16px - 16px);
+  overflow-y: auto;
+  .no-data-result {
+    color: #9d9d9d;
+    height: calc(68%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 142px;
+    .no-data-icon {
+      font-size: 0.6rem;
+      margin: -36px 0 -64px 0;
+      background: url('@/assets/no_search_result.svg') no-repeat center;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+    }
+    span {
+      color: #9d9d9d;
+      font-size: 14px;
+    }
+  }
+}
+.out-box::-webkit-scrollbar {
+  width: 5px;
+}
+.out-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.out-box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}

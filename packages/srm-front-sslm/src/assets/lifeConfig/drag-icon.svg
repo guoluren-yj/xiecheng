@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 22</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-22">
+            <circle id="椭圆形" stroke="#C9CDD4" fill="#FFFFFF" cx="12" cy="12" r="11.5"></circle>
+            <g id="Icon/baseline-arrow_data" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) translate(2.000000, 2.000000)">
+                <path d="M5.83333334,11.5416667 L10,15.7083333 L14.1666667,11.5416667 L5.83333334,11.5416667 Z M5.83333334,8.41666666 L10,4.25 L14.1666667,8.41666666 L5.83333334,8.41666666 Z" id="icon" fill="#868D9C"></path>
+                <rect id="baseline-arrow_data" x="0" y="0" width="20" height="20"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,128 @@
+// 审查详情页整体样式
+.spcm-workspace-contract-review-wrapper{
+  padding: 0 !important;
+  .spcm-workspace-contract-review-content {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: self-start;
+    // 左侧wps部分样式
+    .contract-review-wps-wrapper {
+      width: 75%;
+      flex: 1;
+      min-height: inherit;
+      background-color: #f4f5f7;
+      padding-right: 8px;
+
+      :global{
+        .c7n-card{
+          min-height: inherit;
+          .c7n-card-body{
+            padding: 16px;
+            overflow: scroll;
+          }
+        }
+      }
+      // wps 头描述
+      .contract-review-wps-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        &-left{
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 600;
+          &-num {
+            font-size: 18px;
+            color: #000;
+            line-height: 28px;
+          }
+          &-code {
+            color: #f88d10;
+            padding: 0 5px;
+            margin-left: 8px;
+            background: rgba(252, 160, 0, 0.1);
+            border-radius: 2px;
+          }
+          &-name {
+            color: #47b881;
+            padding: 0 5px;
+            margin-left: 8px;
+            background: rgba(71, 184, 129, 0.1);
+            border-radius: 2px;
+          }
+        }
+        &-right{
+          &-tag {
+            display: inline-block;
+            padding-right: 24px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 18px;
+            font-weight: 400;
+          }
+          &-amount {
+            font-size: 18px;
+            color: #f56349;
+            line-height: 24px;
+            font-weight: 600;
+          }
+          &-template {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    // 右侧风险监控
+    .contract-review-risk {
+      width: 25%;
+    }
+  }
+}
+
+// 审查等待中间页
+.spcm-contract-review-wait-warpper{
+    display: flex;
+    min-height: calc(100vh - 198px);
+    .review-wait-item{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-help{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #4E5769;
+        &>span:last-child {
+
+          margin-left: 8px;
+          :global{
+            .c7n-tag{
+              font-size: 12px;
+              font-weight: 500;
+            }
+            .c7n-tag-blue{
+              font-weight: 600;
+            }
+          }
+
+        }
+      }
+      &-reviewRule{
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2129;
+      }
+    }
+    // 右边的项目加一个边框分割线
+    .review-wait-item-right{
+      border-left: 1px dashed #E5E7EC;
+    }
+  }

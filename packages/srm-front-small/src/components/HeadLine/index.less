@@ -1,0 +1,17 @@
+@import '~hzero-front/lib/srm-variables';
+.header-line-global {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  &::before {
+    content: '';
+    width: 3px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    background-color:@primary-color;
+  }
+}

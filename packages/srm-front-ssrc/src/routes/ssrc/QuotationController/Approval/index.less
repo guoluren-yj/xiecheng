@@ -1,0 +1,305 @@
+@import '../../..//share/styles/constants.less';
+
+@import '~hzero-front/lib/srm-variables.less';
+
+// constant
+@zero: 0;
+@default-distance: 16px;
+@default-font-size: 16px;
+@font-weight-bold: 600;
+
+// common color
+@black-color: #000000;
+@red-color: #f56349;
+
+.rfx-card-item-title-line {
+  // todo class will delete
+  display: inline-block;
+  height: 12px;
+  border-left: 3px @primary-color solid;
+  margin-right: @default-distance / 2;
+}
+
+.quotationFormContainer {
+  margin-bottom: 32px;
+}
+
+.rfxControlContainer {
+  :global {
+    .c7n-pro-calendar-picker {
+      color: inherit;
+    }
+
+    .c7n-pro-calendar-picker-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.score-element-header {
+  font-size: 12px;
+  font-weight: 600;
+  .m-b();
+}
+
+.default-gap {
+  width: max-content;
+  display: block;
+  clear: both;
+  .m-b();
+}
+
+.page-anchor-container {
+  position: fixed;
+  bottom: 160px;
+  right: 0;
+  width: 220px;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  .anchor-icon {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+  }
+
+  :global {
+    .c7n-anchor-ink-ball:after {
+      color: @anchor-primary-color;
+    }
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+  }
+}
+
+.quotationRuningTime {
+  :global {
+    .c7n-pro-field-wrapper {
+      display: flex;
+    }
+
+    .diffRender {
+      input {
+        color: @red-color;
+      }
+    }
+  }
+}
+
+.redColor {
+  color: @red-color;
+
+  input {
+    color: @red-color;
+  }
+}
+
+.controllerDetailContainer {
+  width: 100%;
+  height: 100%;
+  :global {
+    .c7n-pro-btn-raised:not(.c7n-pro-btn-disabled):not(.c7n-pro-btn-loading):hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      //padding: 0 15px;
+    }
+
+    .compare {
+      width: 100%;
+      display: flex;
+    }
+
+    .halfWrapper {
+      width: 50%;
+      min-width: 50%;
+    }
+
+    .divide {
+      background-color: #f4f5f7;
+      width: 8px;
+      flex-shrink: 0;
+      margin-top: -16px;
+    }
+
+    .green {
+      color: green;
+      font-size: 14px;
+    }
+
+    .currentMode {
+      .green;
+      margin-right: 20px;
+    }
+
+    .currentContainer {
+      display: flex;
+      font-size: 14px;
+      border-bottom: 1px solid #f4f5f7;
+      padding: 20px 0 20px 20px;
+    }
+
+    .historyContainer {
+      border-bottom: 1px solid #f4f5f7;
+    }
+
+    .historyMode {
+      background-color: #fff;
+      font-size: 14px;
+      color: @red-color;
+      border-bottom: 1px solid #f4f5f7;
+      padding: 20px 0 20px 20px;
+    }
+
+    .changeBefore {
+      background: rgba(245, 99, 73, 0.1);
+      border: 1px solid rgb(245, 99, 73);
+
+      :global {
+        .c7n-pro-select {
+          background: rgba(245, 99, 73, 0.1);
+        }
+      }
+    }
+
+    .changeAfter {
+      background: rgba(71, 184, 129, 0.1);
+      border: 1px solid rgba(71, 184, 129, 0.45);
+
+      :global {
+        .c7n-pro-select {
+          background: rgba(71, 184, 129, 0.1);
+        }
+      }
+    }
+
+    .quotationFields {
+      margin: 16px 0;
+    }
+
+    // .page-content-wrap {
+    //   height: 100%;
+    // }
+
+    .page-content {
+      padding: 4px;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .page-content-wrap {
+      // padding: 8px;
+    }
+  }
+
+  .controller-approval-wrapper {
+    height: calc(100% - 48px);
+    overflow: auto;
+  }
+
+  .quotation-controller-approval-content {
+    :global {
+      .page-content {
+        padding: 20px;
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+.contentTitle {
+  margin-bottom: 16px;
+}
+
+.c7nUpload {
+  margin: -24px -24px 0 -8px;
+  // :global{
+  //   .c7n-pro-upload-bkt{
+  //     span:first-child{
+  //       display: none;
+  //     }
+  //   }
+  // }
+}
+
+.current-wrap {
+  :global {
+    .page-content {
+      margin: 0 !important;
+      padding: 20px;
+    }
+  }
+}
+
+.half-wrap {
+  :global {
+    .page-content {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.half-wrapper-content {
+  padding: 0;
+}
+
+.custom-page-content {
+  height: 8px;
+  background-color: #f4f5f7;
+}
+
+// 物品行样式
+.quotation-controller-itemLine {
+  :global {
+    .quotation-controller-itemLine-biddingQuotationRange {
+      height: 0.28rem !important;
+
+      .c7n-pro-table-cell-inner {
+        height: auto !important;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+// 询价要求
+.rfx-quotation-controller-detail-rfxDemand-wrapper {
+  .rfx-quotation-controller-item-content {
+    // 二级标题
+    .rfx-card-item-title-level-two {
+      font-size: 14px;
+      margin: 32px 0 16px;
+    }
+    &:nth-of-type(1) {
+      .rfx-card-item-title-level-two {
+        margin-top: 16px;
+      }
+    }
+  }
+}

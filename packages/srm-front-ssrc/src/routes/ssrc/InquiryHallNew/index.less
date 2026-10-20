@@ -1,0 +1,977 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.inquiryHall {
+  :global {
+    .count {
+      min-width: 24px;
+      display: inline-block;
+    }
+
+    .green {
+      background-color: #ecf7f1;
+      color: #47b881;
+      font-weight: 700;
+      border-color: transparent;
+    }
+
+    .yellow {
+      background-color: #fef4e2;
+      color: #fca000;
+      font-weight: 700;
+      border-color: transparent;
+    }
+
+    .c7n-tag {
+      border-color: transparent;
+    }
+
+    .red {
+      background-color: #feefec;
+      color: #f56349;
+      font-weight: 700;
+      border-color: transparent;
+    }
+
+    .c7n-tabs-nav-container {
+      font-size: 14px;
+    }
+
+    .c7n-tabs-large .c7n-tabs-tab {
+      padding: 0.08rem 0.16rem;
+    }
+
+    .c7n-tabs-tab-active {
+      font-weight: 700;
+    }
+
+    .c7n-rate-star-zero {
+      color: #bfbfbf;
+    }
+
+    .c7n-rate-star-full {
+      color: #47b881;
+    }
+
+    .on-going {
+      display: flex;
+      position: relative;
+    }
+
+    .tab {
+      display: flex;
+    }
+
+    #toBeReleased,
+    #onGoing,
+    #finished,
+    #all {
+      width: 18px;
+    }
+
+    .badge {
+      z-index: 999;
+      position: absolute;
+      min-width: 20px;
+      right: -20px;
+      top: 8px;
+      display: inline-block;
+      padding: 0 6px;
+      border-radius: 10px;
+      font-size: 12px;
+      color: #fff;
+      background-color: red;
+      transform: scale(0.83);
+      -webkit-transform: scale(0.83);
+    }
+
+    // 对进行中特殊处理样式
+    .onGoingTab {
+      :global {
+        .c7n-badge {
+          position: static;
+        }
+      }
+    }
+
+    .search {
+      .disabled {
+        font-size: 16px;
+      }
+
+      .primaryColor {
+        font-size: 16px;
+        color: @primary-color;
+      }
+
+      display: flex;
+      align-items: center;
+      // margin: 0 0 16px 0;
+      float: right;
+      line-height: 30px;
+      height: 30px;
+
+      .c7n-btn-primary {
+        color: #555;
+      }
+
+      .c7n-input-has-border.c7n-input-wrapper::before {
+        border-radius: 0;
+      }
+
+      .c7n-pro-input {
+        border-radius: 2px 0 0 2px;
+      }
+
+      .c7n-pro-btn {
+        border-radius: 0 2px 2px 0;
+      }
+
+      .c7n-pro-select {
+        border-radius: 2px;
+      }
+
+      .search-input {
+        width: 260px;
+        border-radius: 0;
+      }
+
+      .advancedSearch {
+        margin-left: 8px;
+      }
+
+      .changeSort {
+        margin-right: 8px;
+      }
+
+      .c7n-divider-vertical {
+        height: 16px;
+        margin: 0 16px 0 12px;
+        width: 1px;
+      }
+
+      .change-table {
+        text-align: center;
+        // line-height: 22px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 8px;
+      }
+
+      .active {
+        text-align: center;
+        line-height: 24px;
+        // font-size: 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-color: rgba(0, 0, 0, 0.08);
+
+        .icon {
+          color: @primary-color;
+        }
+      }
+    }
+
+    .tableContainer {
+      color: rgba(0, 0, 0, 1);
+
+      :global {
+        .c7n-pro-table-wrapper .c7n-pro-table table .c7n-pro-table-tbody > tr > td {
+          color: rgba(0, 0, 0, 1);
+          // padding: 16px 0;
+        }
+
+        .c7n-pro-table .c7n-pro-table-thead > tr > th {
+          color: #000;
+        }
+
+        .c7n-rate {
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        // .c7n-rate-star-first,
+        // .c7n-rate-star-second {
+        //   color: #bfbfbf;
+        // }
+      }
+    }
+
+    .wideDisplay {
+      // tbody .c7n-pro-table-cell-inner {
+      //   padding: 8px !important;
+      // }
+      .c7n-pro-table-cell-inner {
+        line-height: normal;
+        max-height: 70px;
+        height: 70px;
+        overflow: hidden;
+        text-overflow: unset;
+        padding: 8px;
+
+        div {
+          height: 18px;
+          line-height: 18px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          border: none;
+        }
+      }
+
+      .c7n-pro-table-cell {
+        vertical-align: top;
+      }
+
+      .c7n-pro-table-selection-column {
+        vertical-align: top;
+
+        > span {
+          line-height: 0 !important;
+        }
+      }
+
+      .c7n-pro-table-cell-inner > * {
+        vertical-align: top;
+      }
+
+      .rate-container {
+        :global {
+          .c7n-rate {
+            color: white;
+          }
+
+          .c7n-rate-star {
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    // .flatDisplay {
+    //   .c7n-pro-table-cell-inner {
+    //     line-height: 30px;
+    //     max-height: 60px;
+    //     height: 60px;
+    //     overflow: hidden;
+    //     text-overflow: ellipsis;
+    //     white-space: nowrap;
+    //     div {
+    //       // height: 21px;
+    //       text-overflow: ellipsis;
+    //       overflow: hidden;
+    //       white-space: nowrap;
+    //     }
+    //   }
+    // }
+
+    // .flatView{
+    //   .icon:active{
+    //     color: red;
+    //   }
+    // }
+
+    // .wideView{
+    //   .icon:active{
+    //     color: red;
+    //   }
+    // }
+
+    .multiLineLabel {
+      color: rgba(0, 0, 0, 0.65);
+      margin-right: 4px;
+    }
+
+    .moreDisplay {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .companyInfo {
+      display: flex;
+
+      .companyName {
+        color: rgba(0, 0, 0, 0.65);
+        margin-right: 4px;
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        // margin-right: 8px;
+        // max-width: 125px;
+        // min-width: 125px;
+        width: 125px;
+      }
+
+      .multiLineLabel {
+        color: rgba(0, 0, 0, 0.65);
+        margin-right: 4px;
+      }
+
+      .qutationLine {
+        // width: 50px;
+        flex-shrink: 0;
+      }
+
+      // .attachment {
+      //   margin-left: 8px;
+      // }
+    }
+
+    .statusHeader {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+
+      .needDeal {
+        width: 8px;
+        height: 2px;
+        margin-right: 8px;
+        background-color: #f25f28;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .needfocus {
+        width: 8px;
+        height: 2px;
+        margin-right: 8px;
+        background-color: #ed9f24;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .approval {
+        width: 8px;
+        height: 2px;
+        margin-right: 8px;
+        background-color: @primary-color;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    .statusHeaderAdd {
+      .statusHeader;
+      // margin-top: 16px;
+    }
+
+    // tab显示数量徽标
+    .c7n-tabs-nav-wrap {
+      .c7n-tabs-nav .c7n-tabs-tab {
+        .badgeNumber {
+          padding-left: 4px;
+          color: rgba(0, 0, 0, 0.65);
+          transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        &:hover {
+          .badgeNumber {
+            color: #4fd2db;
+            transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+          }
+        }
+
+        .c7n-badge {
+          position: initial;
+        }
+      }
+
+      .c7n-tabs-nav .c7n-tabs-tab-active {
+        .badgeNumber {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  // 对进行中特殊处理样式
+  .onGoingTab {
+    :global {
+      .inquiry-hall-badge {
+        position: static;
+        display: inline;
+
+        .c7n-badge-count {
+          background-color: #f56349;
+          transform: scale(0.9);
+          top: 0;
+          padding: 0 0.04rem;
+          position: absolute;
+          height: 0.18rem;
+          min-width: 0.18rem;
+          line-height: 0.18rem;
+          right: -0.28rem;
+        }
+      }
+    }
+  }
+}
+
+.onGoingTab {
+  :global {
+    .c7n-badge {
+      display: none;
+    }
+  }
+}
+
+.steps {
+  :global {
+    .c7n-steps-item-custom.c7n-steps-item-process .c7n-steps-item-icon {
+      color: #333;
+    }
+
+    .c7n-steps-item-finish {
+      .c7n-steps-item-title {
+        color: #5cae2a;
+      }
+    }
+
+    .icon-check_circle {
+      color: #5cae2a;
+    }
+
+    .icon-brightness_1 {
+      color: #ebebeb;
+    }
+
+    .c7n-steps-item-custom {
+      height: 38px;
+
+      .c7n-steps-item-tail {
+        left: 7px;
+        padding: 24px 0 10px;
+
+        &::after {
+          height: 300%;
+        }
+      }
+    }
+
+    .c7n-steps-item-icon {
+      margin-top: -2px;
+    }
+  }
+}
+
+.refuse {
+  :global {
+    .c7n-steps-item-title {
+      color: #f5222d !important;
+    }
+  }
+}
+
+.approvalPending {
+  :global {
+    .c7n-steps-item-title {
+      color: #000 !important;
+    }
+  }
+}
+
+.approval-node-flat {
+  :global {
+    display: flex;
+    a {
+      margin-right: 16px;
+    }
+  }
+}
+
+.approval-node-aggregate {
+  display: flex;
+  flex-direction: column;
+}
+
+.overContent {
+  div {
+    margin-bottom: 4px;
+  }
+
+  :global {
+    .multiLineLabel {
+      color: rgba(0, 0, 0, 0.65);
+      margin-right: 4px;
+    }
+
+    .moreContent {
+      height: 0.24rem;
+      padding: 0 0 0.04rem;
+      color: rgba(0, 0, 0, 1);
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .companyInfo {
+      display: flex;
+
+      .companyName {
+        color: rgba(0, 0, 0, 0.65);
+        margin-right: 4px;
+        flex: 1;
+        // text-overflow: ellipsis;
+        // overflow: hidden;
+        // white-space: nowrap;
+        // max-width: 130px;
+      }
+
+      .attachment {
+        margin-left: 8px;
+      }
+
+      .multiLineLabel {
+        color: rgba(0, 0, 0, 0.65);
+        margin-right: 4px;
+      }
+
+      .qutationLine {
+        // width: 50px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+.moreAction {
+  div {
+    margin-bottom: 4px;
+  }
+
+  :global {
+    .c7n-popover {
+      z-index: 998;
+    }
+  }
+}
+
+.moreModal {
+  z-index: 998;
+}
+
+.approvalInfo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.descriptionRender {
+  color: #000;
+
+  :global {
+    .multiLineLabel {
+      color: rgba(0, 0, 0, 0.65);
+      margin-right: 4px;
+    }
+  }
+}
+
+.expand-more-badge {
+  line-height: inherit;
+
+  :global {
+    .c7n-badge-count {
+      margin-top: 12px;
+      margin-left: 4px;
+      background-color: rgb(245, 99, 73);
+      min-width: 0.14rem;
+      height: 0.14rem;
+      line-height: 0.14rem;
+      padding: 0 0.03rem;
+      font-size: 0.1rem;
+    }
+    .icon {
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.inquityHallBadge {
+  :global {
+    .c7n-badge-count {
+      transform: scale(0.83);
+      -webkit-transform: scale(0.83);
+      background-color: red;
+      // margin-left: 0 !important;
+    }
+  }
+}
+
+.inquityHallBadgeRF {
+  margin-top: 7px;
+
+  :global {
+    .c7n-badge-count {
+      transform: scale(0.83);
+      -webkit-transform: scale(0.83);
+      background-color: red;
+    }
+  }
+}
+
+.inquityHallBadgeRFMore {
+  :global {
+    .c7n-badge-count {
+      transform: scale(0.83);
+      -webkit-transform: scale(0.83);
+      background-color: red;
+    }
+  }
+}
+
+.mainInquityHallBadge {
+  color: @primary-color;
+
+  :global {
+    .c7n-badge-count {
+      transform: scale(0.83);
+      -webkit-transform: scale(0.83);
+      background-color: red;
+      // margin-left: 0 !important;
+    }
+  }
+}
+
+.popoverContent {
+  color: rgba(0, 0, 0, 1);
+}
+
+.ssrc-round-quotation-red-color {
+  color: red;
+}
+
+.changeRecordContainer {
+  :global {
+    .title {
+      line-height: 18px;
+      margin-bottom: 16px;
+      margin-top: 32px;
+      font-size: 14px;
+      font-weight: 600;
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .rfx-card-item-title-line {
+        display: inline-block;
+        height: 12px;
+        border-left: 3px @primary-color solid;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  :global {
+    .buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      align-content: center;
+
+      button {
+        margin: 0 8px;
+      }
+
+      .c7n-pro-btn-primary.c7n-pro-btn-raised:not(.c7n-pro-btn-disabled):hover {
+        background-color: #1e3255;
+      }
+
+      .page-head .page-head-operator .c7n-pro-btn-default {
+        position: fixed;
+      }
+    }
+  }
+}
+
+.page-content-wrap {
+  margin-top: 48px;
+}
+
+// 更多操作下拉框中的字体样式
+.dropdownMoreOperate {
+  text-align: left;
+  padding: 0 !important;
+
+  a {
+    display: inline-block;
+    padding: 0 0.16rem;
+    color: rgba(0, 0, 0, 1);
+    :active {
+      color: @primary-color;
+    }
+  }
+}
+
+.dropdownMoreList {
+  :global {
+    .c7n-menu-item-selected {
+      a {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+// 关闭询价单
+.closeInquiryWrapper {
+  :global {
+    .c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper),
+    .ant-btn-disabled-wrapper > button,
+    .c7n-btn-disabled-wrapper > button,
+    .c7n-pro-btn-disabled-wrapper > button {
+      display: inline-block;
+      width: 100%;
+      padding: 0.16rem;
+      text-align: left;
+      border: none;
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    .c7n-pro-btn-default.c7n-pro-btn-raised:disabled,
+    .c7n-pro-btn-default.c7n-pro-btn-raised.c7n-pro-btn-disabled {
+      width: 100%;
+      display: inline-block;
+      padding: 0 0.16rem;
+      border: none;
+
+      button {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// 平铺状态下的关闭询价单
+.flatBtn,
+.more {
+  .closeInquiryWrapper {
+    :global {
+      .c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper),
+      .ant-btn-disabled-wrapper > button,
+      .c7n-btn-disabled-wrapper > button,
+      .c7n-pro-btn-disabled-wrapper > button {
+        padding: 0;
+      }
+
+      .c7n-pro-btn-default.c7n-pro-btn-raised:disabled,
+      .c7n-pro-btn-default.c7n-pro-btn-raised.c7n-pro-btn-disabled {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.action {
+  display: flex;
+  margin-right: 8px;
+
+  .mainAction {
+    display: flex;
+
+    a:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+
+.mainAction {
+  .expand-more-badge {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+// 供应商报价情况
+.supplier-quotation-info-container {
+  font-size: 12px;
+  color: #000;
+  line-height: 18px;
+
+  span {
+    height: 18px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .item-left {
+    width: 120px;
+  }
+
+  .item-right {
+    width: 90px;
+    text-align: right;
+  }
+
+  .supplier-quotation-info-title {
+    display: flex;
+    height: 24px;
+    line-height: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .supplier-quotation-info-content {
+    .item-wrap {
+      display: flex;
+      padding: 7px 0;
+    }
+
+    & > div:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// 询价工作台筛选器左边样式
+.leftSearchBar {
+  height: 32px;
+  padding: 0 0.1rem;
+  line-height: 32px;
+  border: 0.01rem solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border-radius: 2px;
+}
+
+// 头部按钮样式
+.newRfButtons {
+  font-weight: 600;
+  border: none;
+
+  &:focus {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  span {
+    font-weight: 600 !important;
+    color: #000;
+  }
+}
+
+.excelExport {
+  border: none;
+
+  &:hover {
+    border: none !important;
+  }
+}
+
+// 询价工作台RFQ平铺下的更多按钮样式
+.more {
+  display: flex;
+
+  :global {
+    .main {
+      display: flex;
+      margin-right: 16px;
+    }
+
+    .main-btn {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+:global {
+  // 隐藏个性化tab的自定义红色数字
+  .c7n-tabs-customization-group-item-content {
+    .onGoingTab {
+      .c7n-badge-count {
+        display: none;
+      }
+    }
+  }
+}
+
+.mutlSearch {
+  margin-left: 8px;
+  padding-bottom: 4px;
+}
+
+.noRefMutlSearch {
+  padding-bottom: 4px;
+}
+
+.borderLeft {
+  display: inline-block;
+  margin-right: 8px;
+  height: 12px;
+  border-left: 3px solid @primary-color;
+}
+
+// 立项转询价样式
+.source-project-to-inquiry-table {
+  :global {
+    .c7n-pro-table-cell {
+      background-color: @fill-6;
+    }
+  }
+}
+
+// 立项转rfi、rfp样式
+.souce-project-to-rf-bottom-button {
+  width: 100%;
+  border-top: 1px @border-4 solid;
+  position: absolute;
+  margin-left: -20px;
+  padding: 12px 20px;
+  bottom: 0;
+}
+
+.offline-whole-model-form-wrap {
+  font-weight: 400;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+:global {
+  .moreContent {
+    height: 0.24rem;
+    padding: 0 0 0.04rem;
+  }
+}
+
+.collapse-sub-title-wapper {
+  display: inline-block;
+}
+
+.sub-title-collapse-title {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.sub-title-icon {
+  margin-left: 16px;
+}
+
+.ssrc-collapse-panel-wrap {
+  :global {
+    .c7n-collapse-header {
+      display: flex;
+    }
+  }
+}

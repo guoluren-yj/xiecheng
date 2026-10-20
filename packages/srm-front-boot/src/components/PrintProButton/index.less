@@ -1,0 +1,50 @@
+.print-preivew {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+  :global {
+    .c7n-spin-container,
+    .c7n-spin-nested-loading {
+      height: 100%;
+      width: 100%;
+    }
+    .print-content {
+      height: 100%;
+      padding-top: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      margin-top: 16px;
+      width: 100%;
+      height: calc(100% - 40px);
+      border: none;
+      background-color: #e7e7e7;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #c7c7c7;
+      }
+    }
+  }
+}
+
+.print-async-alert {
+  background-color: #fef3e4;
+  border: none;
+  color: #f5a53c;
+  font-weight: 600;
+  line-height: 23px;
+  margin-top: 8px;
+  i {
+    top: 10px;
+    color: #f5a53c !important;
+  }
+  :global {
+    .c7n-alert-message {
+      max-height: unset;
+      -webkit-line-clamp: unset;
+    }
+  }
+}

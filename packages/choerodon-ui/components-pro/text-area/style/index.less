@@ -1,0 +1,42 @@
+@import '../../../components/style/themes/default';
+@import '../../text-field/style/mixin';
+
+@textarea-prefix: ~'@{c7n-pro-prefix}-textarea';
+
+.@{textarea-prefix} {
+  min-height: .3rem;
+  .input;
+
+  &-wrapper {
+    max-width: 100%;
+    label {
+      .@{textarea-prefix} {
+        padding-right: 0.13rem;
+      }
+
+      .@{textarea-prefix}-clear-button {
+        top: 0.07rem;
+        right: 0.03rem;
+        bottom: unset;
+        width: 0.2rem;
+      }
+
+      .@{textarea-prefix}-length-info {
+        right: 0;
+        bottom: -0.2rem;
+      }
+    }
+  }
+
+  &,
+  &-placeholder {
+    padding: .07rem @input-padding-horizontal;
+  }
+
+  &-length-info {
+    top: unset;
+    right: 0.08rem;
+    bottom: 0.04rem;
+    margin: unset;
+  }
+}

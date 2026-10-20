@@ -1,0 +1,41 @@
+.select-field-option {
+  // margin: 0 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f3f4f5;
+  }
+
+  :global {
+    .c7n-pro-calendar-picker-wrapper {
+      width: 0 !important;
+
+      label {
+        width: 1px !important;
+
+        input {
+          width: 1px !important;
+        }
+      }
+    }
+
+    .c7n-pro-calendar-picker {
+      border: unset !important;
+      width: 0 !important;
+    }
+
+    .c7n-pro-calendar-picker-allow-clear {
+      display: none !important;
+      width: 0 !important;
+    }
+
+    .c7n-pro-calendar-picker-clear-button {
+      display: none !important;
+    }
+
+    .c7n-pro-calendar-picker-range-split {
+      display: none !important;
+    }
+  }
+}

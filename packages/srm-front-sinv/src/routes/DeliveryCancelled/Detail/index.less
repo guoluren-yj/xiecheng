@@ -1,0 +1,170 @@
+/*
+ * style - 订单取消明细
+ * @date: 2018/11/13 16:28:37
+ * @author: FQL <qilin.feng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.order-detail {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+
+  :global {
+    .form-collapse,
+    .ant-collapse {
+      border: none;
+      margin-bottom: 16px;
+
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+
+      .ant-collapse-item {
+        border-bottom: none;
+
+        .ant-collapse-header {
+          height: 48px;
+          line-height: 48px;
+          background-color: #fafafa;
+
+          & > i {
+            color: rgb(41, 190, 206);
+            font-weight: bold;
+            margin-left: 8px;
+          }
+
+          & > h3 {
+            text-indent: 16px;
+            display: inline-block;
+          }
+
+          & > a {
+            margin-left: 16px;
+          }
+        }
+
+        .ant-collapse-content {
+          border-top: none;
+        }
+      }
+    }
+    .ant-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+}
+
+.deatil-order-header {
+  :global {
+    div.ant-row.item-row {
+      // border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+
+      .item-label {
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        text-align: right;
+        padding-right: 8px;
+      }
+    }
+
+    div.ant-row.item-row:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.information-container {
+  width: 30%;
+  margin: 10px 30px 10px 30px;
+
+  .information-title {
+    font-size: 14px;
+    color: #314659;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+
+  .information-item {
+    // border-bottom: 1px #dcdcdc dashed;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+
+    .information-item-label {
+      color: #999;
+    }
+  }
+}
+
+// 头信息标题
+.description-title {
+  font-size: 14px;
+  color: #314659;
+  margin-bottom: 20px;
+}
+
+// 头信息列表
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+
+  .one-line {
+    flex: 0 0 100%;
+  }
+
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+
+  .three-col {
+    display: flex;
+    flex: 0 0 75%;
+  }
+
+  .four-col {
+    display: flex;
+    flex: 0 0 25%;
+  }
+
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+
+    // border-bottom: 1px dashed #dcdcdc;
+    & > :first-child {
+      width: 100px;
+      color: #aaa;
+    }
+
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}
+.detail-logistic {
+  padding-left: 16px;
+  :global {
+    .ant-row.ant-form-item {
+      .ant-col-9.ant-form-item-label {
+        text-align: left;
+        line-height: 20px;
+        label {
+          color: #666;
+        }
+      }
+      .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+  }
+}

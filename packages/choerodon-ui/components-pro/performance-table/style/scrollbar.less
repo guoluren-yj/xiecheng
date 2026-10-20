@@ -1,0 +1,195 @@
+&-table {
+  &-scrollbar {
+    background: rgba(45, 45, 45, 0.05);
+    position: absolute;
+
+    &-active {
+      background: rgba(45, 45, 45, 0.1);
+    }
+
+    &-hide {
+      display: none;
+    }
+
+    &-handle {
+      position: absolute;
+      background: rgba(45, 45, 45, 0.5);
+      border-radius: 4px;
+    }
+
+    &-handle-horizontal-fir {
+      position: absolute;
+      color: #a3a3a3;
+      height: 0.2rem;
+      width: 0.2rem;
+      left: -0.2rem;
+      line-height: 0.2rem;
+      transform: rotate(-90deg);
+      background-color: #f1f1f1;
+
+      i {
+        font-size: 0.2rem;
+      }
+
+      &:hover {
+        height: 0.2rem;
+        line-height: 0.2rem;
+        color: #505050;
+      }
+    }
+
+    &-handle-vertical-fir {
+      position: absolute;
+      color: #a3a3a3;
+      height: 0.2rem;
+      width: 0.2rem;
+      top: -0.2rem;
+      line-height: 0.2rem;
+      background-color: #f1f1f1;
+
+      i {
+        font-size: 0.2rem;
+      }
+
+      &:hover {
+        height: 0.2rem;
+        line-height: 0.2rem;
+        color: #505050;
+      }
+    }
+
+    &-handle-vertical-sec {
+      position: absolute;
+      color: #a3a3a3;
+      height: 0.2rem;
+      width: 0.2rem;
+      bottom: -0.2rem;
+      line-height: 0.2rem;
+      transform: rotate(180deg);
+      background-color: #f1f1f1;
+
+      i {
+        font-size: 0.2rem;
+      }
+
+      &:hover {
+        height: 0.2rem;
+        line-height: 0.2rem;
+        color: rgba(45, 45, 45, 0.5);
+      }
+    }
+
+    &-handle-horizontal-sec {
+      position: absolute;
+      color: #a3a3a3;
+      height: 0.2rem;
+      width: 0.2rem;
+      right: -0.2rem;
+      line-height: 0.2rem;
+      transform: rotate(90deg);
+      background-color: #f1f1f1 !important;
+
+      &:hover {
+        height: 0.2rem;
+        line-height: 0.2rem;
+        color: rgba(45, 45, 45, 0.5);
+      }
+    }
+
+    &-horizontal .has-arrow {
+      height: 0.2rem !important;
+    }
+
+    &-vertical .has-arrow {
+      width: 0.2rem !important;
+    }
+
+    &-horizontal &-handle .has-arrow {
+      height: 0.18rem !important;
+    }
+
+    &-vertical &-handle .has-arrow {
+      width: 0.18rem !important;
+    }
+
+    &-horizontal &-pressed,
+    &-horizontal:hover .has-arrow {
+      top: 0.01rem !important;
+      height: 0.2rem !important;
+      background-color: #c1c1c1 !important;
+    }
+
+    &-vertical &-pressed,
+    &-vertical:hover .has-arrow {
+      left: 0.01rem !important;
+      width: 0.2rem !important;
+      background-color: #c1c1c1 !important;
+    }
+
+    &-horizontal &-pressed &-handle,
+    &-horizontal:hover &-handle .has-arrow {
+      top: 0.01rem;
+      height: 0.18rem;
+      background-color: #c1c1c1 !important;
+    }
+
+    &-vertical &-pressed &-handle,
+    &-vertical:hover &-handle .has-arrow {
+      left: 0.01rem;
+      width: 0.18rem;
+      background-color: #c1c1c1 !important;
+    }
+
+    &-horizontal {
+      width: 100%;
+      height: 10px;
+      bottom: 2px;
+
+      &.fixed {
+        position: fixed;
+      }
+    }
+
+    &-horizontal &-handle {
+      height: 8px;
+      left: 0px;
+      top: 1px;
+    }
+
+    &-horizontal &-pressed,
+    &-horizontal:hover {
+      height: 14px;
+      box-shadow: 1px 1px 2px #ddd inset;
+      transform: scaleY(1.3);
+    }
+
+    &-vertical {
+      top: 0;
+      right: 0px;
+      width: 10px;
+      bottom: 2px;
+    }
+
+    &-vertical &-handle {
+      min-height: 20px;
+      width: 8px;
+      top: 0px;
+      left: 1px;
+    }
+
+    &-arrow {
+      background-color: #f1f1f1 !important;
+    }
+
+    &-arrow:hover {
+      box-shadow: none !important;
+    }
+
+    &-vertical &-pressed,
+    &-vertical:hover {
+      width: 14px;
+      box-shadow: 1px 1px 2px #ddd inset;
+      transform: scaleX(1.3);
+    }
+  }
+}

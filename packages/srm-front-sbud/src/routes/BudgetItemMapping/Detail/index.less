@@ -1,0 +1,42 @@
+.new-detail-content {
+  padding-bottom: 8px;
+  overflow-y: auto !important;
+  height: calc(100vh - 128px) !important;
+  :global {
+    .page-content {
+      padding: 20px !important;
+      margin: 8px 16px 0 16px;
+      margin-bottom: 0 !important;
+      background-color: #fff;
+    }
+
+    .content-title {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .page-content-wrap {
+      overflow: initial;
+      .mapping-content {
+        min-height: calc(100vh - 326px) !important;
+      }
+      .mapping--read-content {
+        min-height: calc(100vh - 340px) !important;
+      }
+    }
+    // .notice-content {
+    //   margin: 8px 16px 0 16px;
+    //   padding: 20px;
+    //   background-color: #fff;
+    // }
+
+    // :last-child {
+    //   .notice-content {
+    //     // margin-bottom: 0;
+    //     background-color: red;
+    //   }
+    // }
+  }
+}

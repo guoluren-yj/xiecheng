@@ -1,0 +1,167 @@
+@import '~hzero-front/lib/srm-variables';
+
+.c7n-tabs-style {
+  overflow-y: hidden !important;
+}
+
+.view-search {
+  height: 30px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+
+  .search-config {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+  }
+
+  .active-table-wide {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  :global {
+    .disabled {
+      font-size: 16px;
+    }
+
+    .primaryColor {
+      font-size: 16px;
+      color: @primary-color;
+    }
+  }
+}
+
+.action {
+  display: flex;
+  margin-right: 8px;
+
+  .mainAction {
+    display: flex;
+
+    a:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+
+// 更多操作下拉框中的字体样式
+.dropdownMoreOperate {
+  text-align: left;
+  padding: 0 !important;
+
+  a {
+    display: inline-block;
+    padding: 0 0.16rem;
+    color: rgba(0, 0, 0, 1);
+    :active {
+      color: @primary-color;
+    }
+  }
+}
+
+.quotation-rounds-popover-wrapper {
+  width: 200px;
+  .quotation-rounds-popover {
+    .popover-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+    .popover-wrapper {
+      max-height: 360px;
+      overflow-y: auto;
+      .popover-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 18px;
+        line-height: 18px;
+        margin: 8px 0;
+        &-left {
+          color: #868d9c;
+        }
+
+        &-right {
+          text-align: right;
+          width: 100;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+.quick-ladder-quotation-modal-wrapper {
+  .ladder-sub-title {
+    margin: 32px 0 16px 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    .ladder-sub-title-line {
+      display: inline-block;
+      margin-right: 8px;
+      height: 12px;
+      border-left: 3px solid @primary-color;
+    }
+  }
+
+  .ladder-sub-title:first-child {
+    margin: 0 0 16px 0;
+  }
+}
+
+.quick-inquiry-tabs {
+  :global {
+    .c7n-tabs-bar {
+      margin: 0 0 0.12rem;
+    }
+  }
+}
+
+.display-main-action {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 16px;
+  height: 28px;
+  line-height: 28px;
+  :global {
+    .c7n-pro-btn {
+      height: 28px;
+      line-height: 28px;
+    }
+  }
+}
+
+.quick-inquiry-more-link {
+  height: 28px;
+  line-height: 28px;
+}
+
+// 覆盖btn link 高亮样式
+.quick-inquiry-choose-btn {
+  width: 100%;
+  color: #1d2129 !important;
+  > span {
+    width: 100%;
+    text-align: left;
+  }
+  :global {
+    .c7n-pro-btn-help {
+      color: #1d2129 !important;
+    }
+    .c7n-pro-btn-help:hover {
+      color: @primary-color !important;
+    }
+  }
+}
+
+.quick-inquiry-choose-btn:hover {
+  color: @primary-color !important;
+}

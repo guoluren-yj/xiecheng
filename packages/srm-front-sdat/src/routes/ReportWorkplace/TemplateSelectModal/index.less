@@ -1,0 +1,107 @@
+@import '~hzero-front/lib/srm-variables';
+
+.template-list-panel {
+  height: calc(100vh - 188px);
+  background: #fff;
+  box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.template-list-panel-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  padding: 0 16px;
+
+  .search {
+    display: flex;
+    align-items: center;
+    float: right;
+    line-height: 30px;
+    height: 30px;
+    margin-top: 7px;
+  }
+}
+
+.template-list-panel-search {
+  padding: 0 16px;
+}
+
+.template-box-list {
+  margin-top: 16px;
+  height: calc(100vh - 280px);
+  overflow-y: scroll;
+
+  :global {
+    .c7n-card {
+      margin-bottom: 12px;
+    }
+
+    .c7n-card-head {
+      border: none;
+      min-height: unset;
+      line-height: 38px;
+    }
+
+    .c7n-card-head::before {
+      content: '';
+      display: block !important;
+      position: absolute !important;
+      left: 15px !important;
+      top: 12px !important;
+      width: 3px !important;
+      height: 14px !important;
+      background: @primary-color !important;
+    }
+
+    .c7n-card-head-title {
+      font-size: 14px !important;
+      padding: 0 !important;
+    }
+
+    .c7n-card-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.template-card-panel-parent {
+  padding: 0 24px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f2f3f5;
+  }
+}
+
+.template-card-panel {
+  border-bottom: 1px solid rgba(229, 231, 236, 1);
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.template-list-panel::-webkit-scrollbar,
+.target-box-style::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+// 滚动条里面小方块
+.template-list-panel::-webkit-scrollbar-thumb,
+.target-box-style::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  background: #53535305;
+}
+
+// 滚动条里面轨道
+.template-list-panel::-webkit-scrollbar-track,
+.target-box-style::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: #ededed03;
+}

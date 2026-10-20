@@ -1,0 +1,220 @@
+import React, { Component } from 'react';
+import { Modal, Table, Form, Popover } from 'hzero-ui';
+import { connect } from 'dva';
+import intl from 'utils/intl';
+import { Bind } from 'lodash-decorators';
+import { createPagination } from 'hzero-front/lib/utils/utils';
+
+@connect(({ quotePurchaseRequisition, loading }) => ({
+  quotePurchaseRequisition,
+  loadingPriceList: loading.effects['quotePurchaseRequisition/linePriceList'],
+}))
+@Form.create({ fieldNameProp: null })
+export default class PriceModle extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { dataSource: [], pagination: {}, selectedRowKeys: [], selectedRow: {} };
+  }
+
+  componentDidMount() {
+    const {
+      dispatch,
+      companyId,
+      ouId,
+      priceLibraryId,
+      itemId,
+      supplierCompanyId,
+      supplierId,
+    } = this.props;
+    dispatch({
+      type: 'quotePurchaseRequisition/linePriceList',
+      payload: { supplierCompanyId, companyId, ouId, itemId, localSupplierCompanyId: supplierId },
+    }).then((res) => {
+      if (res) {
+        const index = res.content.findIndex((ele) => ele.priceLibraryId === priceLibraryId);
+        this.setState({
+          dataSource: res.content || res,
+          pagination: createPagination(res),
+          selectedRowKeys: index > -1 ? [index] : [],
+          selectedRow: index > -1 ? res.content[index] : {},
+        });
+      }
+    });
+  }
+
+  /**
+   * 渲染阶梯价格明细
+   * @param {String} value
+   * @param {Object} record
+   * @param {Object} item
+   */
+  renderLadderDetailTable(ladderPriceLibList = []) {
+    const columns = [
+      {
+        title: intl.get(`ssrc.priceLibrary.model.priceLibrary.ladderLineNum`).d('行号'),
+        dataIndex: 'ladderLineNum',
+        width: 80,
+      },
+      {
+        title: intl.get(`ssrc.priceLibrary.model.priceLibrary.numberRange`).d('数量范围'),
+        dataIndex: 'numberRange',
+        width: 120,
+        render: (val, record) => `[${record.ladderFrom},${record.ladderTo})`,
+      },
+      {
+        title: intl.get(`ssrc.priceLibrary.model.priceLibrary.price`).d('价格'),
+        dataIndex: 'ladderPrice',
+        width: 100,
+      },
+      {
+        title: intl.get(`ssrc.priceLibrary.model.priceLibrary.ladderPriceRemark`).d('备注'),
+        dataIndex: 'ladderPriceRemark',
+        width: 120,
+        render: (val) => <Popover content={val}>{val}</Popover>,
+      },
+    ];
+    return (
+      <Table
+        bordered
+        columns={columns}
+        rowKey="ladderPriceLibId"
+        dataSource={ladderPriceLibList}
+        pagination={false}
+      />
+    );
+  }
+
+  @Bind()
+  getColumns() {
+    const defaultColumn = [
+      {
+        title: intl.get(`sodr.common.model.common.excludingTaxPrice`).d('单价（不含税）'),
+        dataIndex: 'unitPrice',
+        width: 80,
+      },
+
+      {
+        title: intl.get(`sodr.common.model.common.uomNames`).d('单位'),
+        dataIndex: 'uomName',
+        width: 80,
+        render: (_, { uomCodeAndName }) => uomCodeAndName,
+      },
+      {
+        title: intl.get(`sodr.common.model.common.currencyName`).d('币种'),
+        dataIndex: 'currencyCode',
+        width: 80,
+      },
+      {
+        title: intl.get(`sodr.common.model.common.taxType`).d('税种'),
+        dataIndex: 'taxCode',
+        width: 80,
+      },
+      {
+        title: intl.get(`sodr.common.model.common.11111`).d('阶梯价格'),
+        dataIndex: 'quantity',
+        width: 80,
+        render: (val, record) =>
+          record.ladderInquiryFlag === 1 ? (
+            <Popover
+              placement="bottomLeft"
+              content={this.renderLadderDetailTable(record.ladderPriceLibList)}
+              arrowPointAtCenter
+            >
+              <a>
+                {`${intl.get(`ssrc.priceLibrary.view.message.button.ladderPrice`).d('阶梯价格')}`}
+              </a>
+            </Popover>
+          ) : null,
+      },
+      {
+        title: intl.get(`sodr.common.model.common.priceSource`).d('价格来源'),
+        dataIndex: 'priceSourceMeaning',
+        width: 80,
+      },
+      {
+        title: intl.get(`sodr.common.model.common.sourceFromNum`).d('价格来源单据号'),
+        dataIndex: 'orderNum',
+        width: 150,
+      },
+    ];
+    return defaultColumn;
+  }
+
+  @Bind()
+  handleListRowSelectChange(val, record) {
+    const { selectedRowKeys } = this.state;
+    if (val === selectedRowKeys) {
+      this.setState({ selectedRowKeys: [], selectedRow: {} });
+    } else {
+      this.setState({ selectedRowKeys: val, selectedRow: record[val] });
+    }
+  }
+
+  @Bind()
+  handleRowClick(val, record) {
+    const { selectedRowKeys } = this.state;
+    if (record === selectedRowKeys[0]) {
+      this.setState({ selectedRowKeys: [], selectedRow: {} });
+    } else {
+      this.setState({ selectedRowKeys: [record], selectedRow: val });
+    }
+  }
+
+  @Bind()
+  handleRowDoubleClick(val) {
+    const { hideModal, onSetPrice } = this.props;
+    onSetPrice(val);
+    hideModal('priceModalVisible', false);
+  }
+
+  @Bind()
+  setPrice() {
+    const {
+      hideModal,
+      // onSetPrice,
+    } = this.props;
+    // const { selectedRow } = this.state;
+    // onSetPrice(selectedRow);
+    hideModal('priceModalVisible', false);
+  }
+
+  render() {
+    const { visible, hideModal, loadingPriceList } = this.props;
+    const { dataSource, pagination } = this.state;
+    const modalProps = {
+      visible,
+      width: 820,
+      onCancel: () => hideModal('priceModalVisible', false),
+      onOk: this.setPrice,
+      bodyStyle: { maxHeight: '600px', overflow: 'auto' },
+      title: intl.get(`sodr.common.modal.referencePrice`).d('物料参考价格'),
+    };
+    const columns = this.getColumns();
+    const tableProps = {
+      columns,
+      dataSource,
+      pagination,
+      loading: loadingPriceList,
+      scroll: { x: scrollX },
+      bordered: true,
+      onChange: this.onTableChange,
+      // rowSelection: {
+      //   type: 'radio',
+      //   selectedRowKeys,
+      //   // onChange: this.handleListRowSelectChange,
+      // },
+      onRow: (record, index) => {
+        return {
+          onDoubleClick: () => this.handleRowDoubleClick(record, index),
+          onClick: () => this.handleRowClick(record, index),
+        };
+      },
+    };
+
+    return (
+      <Modal {...modalProps}>
+        <Table {...tableProps} />
+      </Modal>
+    );
+  }
+}

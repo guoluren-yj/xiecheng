@@ -1,0 +1,154 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+// tag颜色渲染
+
+.forecast-notice-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.forecast-success-tag {
+  color: @color-success !important;
+  background-color: @color-success-percent10;
+  margin-bottom: 1px;
+}
+
+.operating {
+  :global {
+    .c7n-modal-body {
+      padding: 16px;
+    }
+    .c7n-tabs-bar {
+      margin-bottom: 0;
+    }
+
+    .danger-tag {
+      color: #fff;
+      background-color: rgb(245, 102, 73);
+      margin-bottom: 1px;
+      border-radius: 2px;
+      border: none;
+    }
+    .c7n-tag:hover {
+      opacity: 1;
+      cursor: text;
+    }
+
+    .success-tag {
+      color: #fff;
+      background-color: rgb(71, 184, 131);
+      margin-bottom: 1px;
+      border-radius: 2px;
+      border: none;
+    }
+
+    .c7n-timeline-item-content {
+      margin: 0 0 0 24px;
+      padding: 0;
+    }
+    .operating-timeline {
+      margin-top: 20px;
+      .c7n-timeline-item-content {
+        margin: 8px 0 0 24px;
+        padding: 0;
+        top: -4px;
+        display: flex;
+      }
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+        .operator {
+          padding-right: 4px;
+          font-weight: 500;
+        }
+        .operating-timeline-info {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          padding: 0 0 12px 0;
+          width: 100%;
+          margin-left: 8px;
+        }
+        .date {
+          margin: 8px 0 0 0;
+        }
+        .status {
+          padding-right: 4px;
+        }
+        .gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 18px;
+        }
+        .orange {
+          color: #f56349;
+        }
+        .result {
+          font-weight: 500;
+        }
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.04);
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .approve-header {
+      .c7n-collapse-content {
+        padding-left: 0;
+      }
+      .c7n-collapse-header {
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.forecast-table {
+  :global {
+    .c7n-pro-table-row {
+      .c7n-pro-table-cell-prefix {
+        padding-left: 0;
+      }
+    }
+    .c7n-pro-table-row.row-differ-color {
+      background-color: #f9f9f9;
+      .c7n-pro-table-cell-fix-left {
+        background-color: #f9f9f9;
+      }
+      .c7n-pro-table-cell-fix-right {
+        background-color: #f9f9f9;
+      }
+    }
+    .c7n-pro-table-row {
+      .c7n-pro-checkbox-disabled {
+        display: none;
+      }
+    }
+  }
+}
+
+.forecast-menu-button .c7n-pro-btn-wrapper {
+  width: 100%;
+  text-align: left;
+}
+
+.c7n-pro-calendar-cell-color {
+  :after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: @srm-primary-color;
+    border-radius: 50%;
+    margin-left: 9px;
+  }
+}

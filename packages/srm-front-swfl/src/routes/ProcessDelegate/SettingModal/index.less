@@ -1,0 +1,101 @@
+@import '~hzero-front/lib/srm-variables';
+
+.top {
+  height: 46px;
+  :global {
+    .c7n-tabs-nav {
+      margin: 0 20px;
+      .c7n-tabs-tab {
+        height: 46px;
+        font-size: 14px;
+        // color: rgba(0, 0, 0, 0.65);
+      }
+      // .c7n-tabs-tab:hover {
+      //   color: #4fd2db;
+      // }
+      // .c7n-tabs-tab-active {
+      //   color: #29bece;
+      // }
+    }
+  }
+}
+
+.form-button-selected {
+  :global {
+    margin-right: 30px;
+    color: @link-color;
+    cursor: pointer;
+  }
+}
+.auto {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.switch {
+  margin: 0.1rem;
+  margin-right: 20px;
+}
+.form-button-noSelected {
+  :global {
+    margin-right: 30px;
+    color: rgba(0, 0, 0, 0.45);
+    cursor: not-allowed;
+  }
+}
+
+.setting-modal {
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 206px);
+  &-content {
+    height: calc(100vh - 206px);
+    overflow: auto;
+    :global {
+      .c7n-pro-table-search-bar-expand {
+        margin-bottom: 16px;
+      }
+      .c7n-pro-table-search-bar-operator-custom-wrap {
+        .c7n-pro-input-wrapper {
+          margin: 0 !important;
+        }
+      }
+      .c7n-pro-table-search-bar-add-field {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.setting-modal-process {
+  :global {
+    .c7n-pro-table-search-bar-operator-custom-wrap {
+      margin-right: 16px;
+    }
+    .c7n-pro-table-search-bar-operator-custom-wrap + .c7n-divider {
+      display: none;
+    }
+  }
+}
+
+.setting-modal-drawer {
+  :global {
+    .c7n-pro-field-wrapper {
+      .c7n-pro-switch-float-label {
+        margin-top: -8px;
+        padding-top: 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.setting-modal-alert {
+  margin-bottom: 8px;
+  :global {
+    .c7n-alert-icon {
+      top: 10px;
+    }
+  }
+}

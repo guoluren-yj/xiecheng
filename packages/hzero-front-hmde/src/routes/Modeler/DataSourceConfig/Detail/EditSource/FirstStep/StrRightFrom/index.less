@@ -1,0 +1,157 @@
+@import '../../../../../../../lowcodeGlobalColor.less';
+@import '../../../../global.less';
+.model-data-source {
+  .sql-input {
+    :global {
+      .ant-input-disabled {
+        color: #333 !important;
+      }
+    }
+  }
+
+  .relation-fields {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .filter-condition-item {
+    :global {
+      .ant-select-selection-selected-value,
+      .ant-select-selection__placeholder {
+        padding-left: 11px;
+      }
+    }
+  }
+
+  .sort-num {
+    background-color: @Grey5;
+    color: @Grey2;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+
+    i {
+      margin: 0 auto;
+      font-style: normal;
+    }
+  }
+
+  .label-4 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .correlation {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .ant-disabled {
+    :global {
+      .ant-form-item-children {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  :global {
+    .ant-input-number {
+      width: 100%;
+      border: 1px solid #b6bbc6 !important;
+    }
+    // .ant-input-number:hover {
+    //   border: 1px solid @Blue!important;
+    // }
+    // [class$='-required']:not([disabled]):not([class$='-invalid']) input {
+    //   border: none;
+    // }
+
+    //.ant-form-item-required .ant-form-item-children .ant-input:not(.ant-input-disabled):not(:disabled),
+    //.ant-form-item-required .ant-form-item-children .ant-input-number:not(.ant-input-number-disabled),
+    //.ant-form-item-required .ant-form-item-children .ant-cascader-picker:not(.ant-cascader-picker-disabled):not(:disabled),
+    //.ant-form-item-required .ant-form-item-children .ant-time-picker-input:not(:disabled),
+    //.ant-form-item-required .ant-form-item-children :not(.ant-select-disabled) > .ant-select-selection:not(:disabled) {
+    //  border-color: @Blue;
+    //}
+
+    .ant-form-item-label {
+      line-height: 20px !important;
+    }
+
+    .anticon-question-circle-o {
+      font-weight: initial;
+      margin-left: 10px;
+      color: @HzeroGreen;
+      font-size: 16px;
+    }
+
+    // 关闭强关联动画效果
+    .ant-switch:before,
+    .ant-switch:after {
+      transition: all 0.05s;
+    }
+
+    .ant-select-selection__rendered {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.tooltip-contain-override {
+  :global {
+    .ant-tooltip-inner {
+      width: 300px;
+      padding: 0;
+      box-shadow: 0 2px 6px 0 rgba(67, 87, 174, 0.2);
+    }
+    .ant-tooltip-placement-right .ant-tooltip-arrow,
+    .ant-tooltip-placement-rightTop .ant-tooltip-arrow,
+    .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
+      border-right-color: #fff !important;
+    }
+  }
+}
+
+.left-join-img {
+  background: url('../../../../../../../assets/left-join@2x.png') no-repeat;
+}
+
+.inner-join-img {
+  background: url('../../../../../../../assets/inner-join@2x.png') no-repeat;
+}
+
+.right-join-img {
+  background: url('../../../../../../../assets/right-join@2x.png') no-repeat;
+}
+
+.img-contain {
+  background-size: cover;
+  width: 300px;
+  height: 374px;
+}
+
+.filter-condition-collapse {
+  :global {
+    .c7n-collapse-header {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .c7n-collapse-item {
+      border-bottom: none;
+    }
+    .c7n-collapse-content-box {
+      padding-bottom: 0;
+    }
+  }
+}

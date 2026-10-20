@@ -1,0 +1,555 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/checkbox/demo/basic.md correctly 1`] = `
+<label
+  class="c7n-checkbox-wrapper"
+>
+  <span
+    class="c7n-checkbox"
+  >
+    <input
+      class="c7n-checkbox-input"
+      type="checkbox"
+    />
+    <span
+      class="c7n-checkbox-inner"
+    />
+  </span>
+  <span>
+    Checkbox
+  </span>
+</label>
+`;
+
+exports[`renders ./components/checkbox/demo/check-all.md correctly 1`] = `
+<div>
+  <div
+    style="border-bottom:1px solid #E9E9E9"
+  >
+    <label
+      class="c7n-checkbox-wrapper"
+    >
+      <span
+        class="c7n-checkbox c7n-checkbox-indeterminate"
+      >
+        <input
+          class="c7n-checkbox-input"
+          type="checkbox"
+        />
+        <span
+          class="c7n-checkbox-inner"
+        />
+      </span>
+      <span>
+        Check all
+      </span>
+    </label>
+  </div>
+  <br />
+  <div
+    class="c7n-checkbox-group-wrapper"
+  >
+    <div
+      class="c7n-checkbox-group"
+    >
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Apple"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Apple
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Pear"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Pear
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Orange"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Orange
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/checkbox/demo/controller.md correctly 1`] = `
+<div>
+  <p
+    style="margin-bottom:20px"
+  >
+    <label
+      class="c7n-checkbox-wrapper"
+    >
+      <span
+        class="c7n-checkbox c7n-checkbox-checked"
+      >
+        <input
+          checked=""
+          class="c7n-checkbox-input"
+          type="checkbox"
+        />
+        <span
+          class="c7n-checkbox-inner"
+        />
+      </span>
+      <span>
+        Checked-Enabled
+      </span>
+    </label>
+  </p>
+  <p>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Uncheck
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-flat"
+      style="margin-left:10px"
+      type="button"
+    >
+      <span>
+        Disable
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </p>
+</div>
+`;
+
+exports[`renders ./components/checkbox/demo/disabled.md correctly 1`] = `
+<div>
+  <label
+    class="c7n-checkbox-wrapper"
+  >
+    <span
+      class="c7n-checkbox c7n-checkbox-disabled"
+    >
+      <input
+        class="c7n-checkbox-input"
+        disabled=""
+        type="checkbox"
+      />
+      <span
+        class="c7n-checkbox-inner"
+      />
+    </span>
+  </label>
+  <br />
+  <label
+    class="c7n-checkbox-wrapper"
+  >
+    <span
+      class="c7n-checkbox c7n-checkbox-checked c7n-checkbox-disabled"
+    >
+      <input
+        checked=""
+        class="c7n-checkbox-input"
+        disabled=""
+        type="checkbox"
+      />
+      <span
+        class="c7n-checkbox-inner"
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`renders ./components/checkbox/demo/group.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-checkbox-group-wrapper c7n-checkbox-group-has-label"
+  >
+    <span
+      class="c7n-checkbox-group-label"
+    >
+      这是一个label
+    </span>
+    <div
+      class="c7n-checkbox-group"
+    >
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Apple"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Apple
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Pear"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Pear
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Orange"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Orange
+        </span>
+      </label>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    class="c7n-checkbox-group-wrapper"
+  >
+    <div
+      class="c7n-checkbox-group"
+    >
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Apple"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Apple
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Pear"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Pear
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+            value="Orange"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Orange
+        </span>
+      </label>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    class="c7n-checkbox-group-wrapper"
+  >
+    <div
+      class="c7n-checkbox-group"
+    >
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked c7n-checkbox-disabled"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            disabled=""
+            type="checkbox"
+            value="Apple"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Apple
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-disabled"
+        >
+          <input
+            class="c7n-checkbox-input"
+            disabled=""
+            type="checkbox"
+            value="Pear"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Pear
+        </span>
+      </label>
+      <label
+        class="c7n-checkbox-group-item c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-disabled"
+        >
+          <input
+            class="c7n-checkbox-input"
+            disabled=""
+            type="checkbox"
+            value="Orange"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+        <span>
+          Orange
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/checkbox/demo/layout.md correctly 1`] = `
+<div
+  class="c7n-checkbox-group-wrapper"
+>
+  <div
+    class="c7n-checkbox-group"
+    style="width:100%"
+  >
+    <div
+      class="c7n-row"
+    >
+      <div
+        class="c7n-col-8"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+              value="A"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+          <span>
+            A
+          </span>
+        </label>
+      </div>
+      <div
+        class="c7n-col-8"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+              value="B"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+          <span>
+            B
+          </span>
+        </label>
+      </div>
+      <div
+        class="c7n-col-8"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+              value="C"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+          <span>
+            C
+          </span>
+        </label>
+      </div>
+      <div
+        class="c7n-col-8"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+              value="D"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+          <span>
+            D
+          </span>
+        </label>
+      </div>
+      <div
+        class="c7n-col-8"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+              value="E"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+          <span>
+            E
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,66 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+.file-upload-number {
+  padding-left: 4px;
+}
+.file-state {
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  background: #f3f3f3;
+  &:hover {
+    :global {
+      .file-state-del {
+        display: block;
+      }
+    }
+  }
+  :global {
+    .file-state-loading {
+      flex-shrink: 0;
+      // padding-left: 4px;
+      // .c7n-progress-inner {
+      //   width: 14px;
+      //   height: 14px;
+      //   svg {
+      //     line-height: 14px;
+      //     left: 0px;
+      //   }
+      // }
+    }
+    .file-state-photo {
+      flex-shrink: 0;
+      padding-left: 4px;
+      width: 20px;
+      color: @primary-color-yellow;
+      height: 20px;
+    }
+    .file-state-name {
+      flex-grow: 1;
+      padding-left: 4px;
+      color: #333;
+    }
+    .file-state-name-click {
+      flex-grow: 1;
+      padding-left: 4px;
+      color: #333;
+      &:hover {
+        color: @primary-color-cyan;
+      }
+    }
+    .file-state-del {
+      flex-shrink: 0;
+      display: none;
+      padding-right: 4px;
+      font-size: 14px;
+    }
+    .file-state-del-hide {
+      flex-shrink: 0;
+      display: none;
+    }
+  }
+}
+
+.upload-tip {
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 400;
+}

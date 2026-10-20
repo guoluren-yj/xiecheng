@@ -1,0 +1,57 @@
+// form
+.information-container {
+  .information-item {
+    margin-bottom: 16px;
+    :global {
+      .ant-col-24 > .ant-row > .ant-col-9 {
+        margin-left: -13px;
+      }
+    }
+  }
+  .information-item-edit {
+    line-height: 28px;
+  }
+  .information-item-label {
+    color: #666;
+    &::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  .item-label-required {
+    color: #666;
+    &::before {
+      display: inline-block;
+      margin-right: 4px;
+      color: #f5222d;
+      font-size: 14px;
+      line-height: 1;
+      content: '*';
+    }
+    &::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  .information-item-children {
+    color: #333;
+    :global {
+      .ant-form-item-control {
+        line-height: 28px;
+        & > .ant-form-explain {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+}

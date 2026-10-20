@@ -1,0 +1,41 @@
+@import '~hzero-front/lib/srm-variables';
+
+.export-content {
+  :global {
+    .export-content-title {
+      font-size: 14px;
+      display: flex;
+      font-weight: 800;
+      align-items: center;
+      margin-bottom: 16px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 14px;
+        margin-right: 8px;
+        background-color: @primary-color;
+      }
+    }
+  }
+}
+
+.export-btn-treeNode {
+  :global {
+    .c7n-tree-checkbox-checked .c7n-tree-checkbox-inner,
+    .c7n-tree-checkbox-indeterminate .c7n-tree-checkbox-inner {
+      background-color: @tree-primary-color !important;
+      border-color: @tree-primary-color !important;
+    }
+    .c7n-tree-checkbox-checked .c7n-tree-checkbox-inner::after {
+      position: absolute;
+      display: table;
+      border: 0.02rem solid white;
+      border-top: 0;
+      border-left: 0;
+      -webkit-transform: rotate(45deg) scale(1);
+      -ms-transform: rotate(45deg) scale(1);
+      transform: rotate(45deg) scale(1);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.small-banner {
+  :global {
+    .small-banner-detail {
+      position: relative;
+      padding-left: 12px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 14px;
+        background: #29becd;
+        left: 0;
+        top: 4px;
+      }
+    }
+    .ant-form-item-label {
+      text-align: left;
+    }
+    .preview-img-box {
+      width: 100px;
+      position: relative;
+      img {
+        display: inline-block;
+      }
+      .cover {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        line-height: 50px;
+        i {
+          color: #fff;
+        }
+      }
+      &:hover {
+        .cover {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

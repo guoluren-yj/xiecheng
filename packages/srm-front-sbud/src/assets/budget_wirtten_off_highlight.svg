@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/analytics_black_已核销_高亮</title>
+    <defs>
+        <path d="M60,0 L6.66666667,0 C3,0 0,3 0,6.66666667 L0,53.3333333 C0,57 3,60 6.66666667,60 L60,60 C63.6666667,60 66.6666667,57 66.6666667,53.3333333 L66.6666667,6.66666667 C66.6666667,3 63.6666667,0 60,0 Z M26.6666667,46.6666667 L10,46.6666667 L10,40 L26.6666667,40 L26.6666667,46.6666667 Z M26.6666667,33.3333333 L10,33.3333333 L10,26.6666667 L26.6666667,26.6666667 L26.6666667,33.3333333 Z M26.6666667,20 L10,20 L10,13.3333333 L26.6666667,13.3333333 L26.6666667,20 Z M42.7333333,40 L33.3333333,30.5333333 L38.0333333,25.8333333 L42.7333333,30.5666667 L53.3,20 L58.0333333,24.7333333 L42.7333333,40 Z" id="path-1"></path>
+    </defs>
+    <g id="回收♻️" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-542.000000, -441.000000)">
+            <g id="fact_check_black_24dp" transform="translate(542.000000, 441.000000)">
+                <rect id="矩形" x="0" y="0" width="80" height="80"></rect>
+                <g id="color" transform="translate(6.666667, 10.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill-opacity="0.1" fill="#36C2CF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

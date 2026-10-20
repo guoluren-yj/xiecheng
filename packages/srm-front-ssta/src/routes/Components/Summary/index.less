@@ -1,0 +1,116 @@
+@import '~hzero-front/lib/srm-variables';
+.fixed-wrapper {
+  &::after {
+    height: 0 !important;
+  }
+}
+.ssta-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  .ssta-show-title {
+    display: flex;
+    align-items: center;
+    .ssta-form-title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0 !important;
+    }
+    .ssta-show-quanity {
+      margin-left: 10px;
+      background: #e5e7ec;
+      color: @text-2;
+      padding: 6px 4px 2px 4px;
+      border-radius: 2px;
+      font-weight: 600;
+    }
+  }
+
+  .ssta-pin {
+    font-size: 12px;
+    color: #333;
+    font-weight: 500;
+    img {
+      margin: -2px 6px 0 0;
+    }
+  }
+}
+.ssta-header-no-card {
+  margin-bottom: 0;
+}
+.summary {
+  display: flex;
+  height: 84px;
+  .title {
+    width: 46px;
+    background: #47b881;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 12px;
+    writing-mode: vertical-lr;
+    position: relative;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+    .push-pin {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 12px;
+      height: 12px;
+    }
+    .push_pin_fixed {
+      transform: rotate(45deg);
+    }
+  }
+  .detail {
+    min-width: 365px;
+    height: 84px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    padding: 0 16px;
+    .total {
+      height: 44px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px #f5f5f5;
+      align-items: center;
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      .class-icon {
+        color: #fca000;
+        margin-top: -5px;
+      }
+    }
+    .detail-amount {
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #000;
+      align-items: center;
+    }
+  }
+}
+.noamount_summary {
+  height: 58px;
+  .title {
+    padding: 8px 0;
+  }
+  .noamount_detail {
+    height: auto;
+    .total {
+      border-bottom: none;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import '../../common.less';
+
+.card-title {
+  font-weight: 600;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.card-title-category {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ssrc-supplier-container-new-container {
+  margin-bottom: 8px;
+  height: calc(100% - 8px);
+  .supplier-apply-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+:global {
+  .ssrc-supplier-apply-content-wrap {
+    height: 100% !important;
+
+    &.page-content-wrap.page-content {
+      height: 100% !important;
+    }
+  }
+}
+
+.supplier-apply-wrapper {
+  padding: 0;
+  margin: 8px;
+  min-height: calc(100% - 16px);
+  .ssrc-page-content-c7n-card-cover();
+  :global {
+    .c7n-pro-form.c7n-pro-form-float-label {
+      margin-left: 0;
+    }
+  }
+}
+
+.supplier-apply {
+  height: 100% !important;
+
+  &.page-content-wrap.page-content {
+    height: 100% !important;
+  }
+
+  :global {
+    .page-content-wrap.page-content {
+      height: 100% !important;
+    }
+
+    .c7n-pro-btn-wrapper {
+      padding: 0 !important;
+    }
+  }
+}
+
+.supplier-apply-list-wrap {
+  height: calc(100% - .48rem);
+  overflow-y: auto;
+}
+
+.supplier-apply-main-content-wrap {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.supplier-apply-spin-wrapper {
+  height: 100%;
+
+  :global {
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+}
+
+.divide-line {
+  margin: 16px -20px !important;
+  width: calc(100% + 40px) !important;
+  background: #ebebeb;
+}
+
+// 校验弹框的样式
+.ssrc-validate-table-wrapper {
+  :global {
+    .validate-message {
+      span {
+        height: inherit !important;
+        white-space: pre-line;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

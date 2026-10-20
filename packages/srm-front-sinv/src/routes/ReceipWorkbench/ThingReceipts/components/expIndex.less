@@ -1,0 +1,188 @@
+.exp-modal {
+  border: none !important;
+  :global {
+    .exp-table .c7n-pro-table-thead,
+    thead {
+      display: none;
+    }
+    .exp-table {
+      :global {
+        .c7n-pro-table-last-row-bordered .c7n-pro-table-cell {
+          border-bottom-style: none;
+        }
+      }
+    }
+    .c7n-pro-table {
+      border: none;
+    }
+    .c7n-pro-table-tbody .c7n-pro-table-cell {
+      border: none;
+      padding: 0 10px;
+      &.rcvTypeName {
+        padding-left: 20px;
+      }
+    }
+    //覆盖选中行时的样式
+    // .c7n-pro-table-row {
+    //   &:hover {
+    //     background: #fff !important;
+    //   }
+    // }
+    // .c7n-pro-table-row-highlight {
+    //   background: #fff !important;
+    // }
+    .no-data {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: #ccc;
+    }
+    .exp-list {
+      height: 40px;
+      width: 100%;
+      // max-width: 1024px;
+      border-bottom: none;
+      display: flex;
+      // background: #f5f5f5;
+      // text-align: center;
+      margin-bottom: 16px;
+      //   flex: 1;
+      .exp-item {
+        position: relative;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 600;
+        // width: 12.5%;
+        background-color: rgba(0, 0, 0, 0.04);
+        border-right: 0.01rem solid transparent;
+        margin: 0;
+        padding: 5px 10px;
+        line-height: 30px;
+        &.nodeConfigId {
+          width: 150px;
+          text-indent: 30px;
+        }
+        &.displayTrxHeaderAndLineNum {
+          width: 170px;
+        }
+        &.rcvTypeName {
+          width: 130px;
+          padding-left: 20px;
+        }
+        &.returnedFlag {
+          width: 110px;
+        }
+        &.secondaryAmount {
+          width: 120px;
+          text-align: center;
+        }
+        &.amount {
+          width: 120px;
+          text-align: center;
+        }
+        &.receiptsAmount {
+          width: 160px;
+        }
+        &.trxDate {
+          width: 164px;
+        }
+        &.left {
+          text-align: left;
+        }
+        &.center {
+          text-align: center;
+        }
+        &.right {
+          text-align: right;
+        }
+      }
+    }
+    .wrapper {
+      display: flex;
+      // min-height: 50px;
+      // overflow: hidden;
+      .content {
+        width: 90%;
+      }
+      .node {
+        // width: 10%;
+        // min-width: 150px;
+        width: 160px;
+        position: relative;
+        .name {
+          font-size: 12px;
+          font-weight: 700;
+          color: #000;
+          margin-top: 8px;
+          text-align: right;
+          width: 70%;
+        }
+        .percent {
+          opacity: 0.45;
+          font-size: 12px;
+          color: #000;
+          text-align: right;
+          line-height: 18px;
+          width: 70%;
+        }
+        .line {
+          position: absolute;
+          width: 1px;
+          height: calc(100% - 20px);
+          background: #d9d9d9;
+          right: 20px;
+          top: 26px;
+          &.finished {
+            background: #36c2cf;
+          }
+        }
+        .point {
+          position: absolute;
+          top: 6px;
+          right: 10px;
+          .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #d9d9d9;
+            line-height: 16px;
+            text-align: center;
+            vertical-align: baseline;
+            color: #d9d9d9;
+          }
+          i {
+            font-size: 22px;
+            color: #d9d9d9;
+            &.finished {
+              color: #36c2cf;
+            }
+          }
+        }
+      }
+      .less,
+      .more {
+        margin-left: 10px;
+        padding: 4px 0;
+        position: relative;
+        font-weight: 400;
+        // padding-bottom: 20px;
+        .icon {
+          display: inline-block;
+          position: absolute;
+          top: 4px;
+        }
+      }
+      .bottom-line {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.08);
+      }
+    }
+    // .exp-modal-close{
+    //   background: #36C2CF;
+    //   color: #fff;
+    // }
+  }
+}

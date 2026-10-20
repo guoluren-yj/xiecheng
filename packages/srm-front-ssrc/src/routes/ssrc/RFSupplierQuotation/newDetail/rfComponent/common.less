@@ -1,0 +1,198 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+:global {
+  .c7n-spin-nested-loading {
+    height: 100%;
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+  .rf-page-content-warp {
+    padding: 0 8px;
+    height: calc(100% - 56px);
+    overflow: auto;
+  }
+}
+
+.rf-page-content {
+  .rf-card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .card-warp {
+      padding: 16px;
+      margin: 4px 0;
+      background-color: #fff;
+      .card-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+      }
+
+      .card-content {
+        width: 100%;
+        .card-sub-title {
+          margin: 32px 0 16px;
+          .card-sub-title-line {
+            display: inline-block;
+            margin-right: 8px;
+            height: 12px;
+            border-left: 3px solid @primary-color;
+          }
+        }
+        :global {
+          .c7n-steps-rf-custom {
+            .c7n-pro-input-rendered-value {
+              width: 100%;
+              padding: 0 0.1rem 0 0;
+              .c7n-steps-item-process .c7n-steps-item-icon {
+                background-color: #fff;
+              }
+            }
+            .c7n-pro-field-label {
+              margin-left: -12px;
+            }
+            .c7n-steps {
+              margin-top: 6px;
+            }
+          }
+          .c7n-steps-rf-custom::before {
+            border-color: #fff !important;
+          }
+          // 步骤条样式
+          .c7n-steps-item {
+            cursor: pointer;
+          }
+          .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title {
+            color: #46b880;
+          }
+          .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title::after {
+            background-color: #46b880;
+          }
+          .c7n-steps-item-finish .c7n-steps-item-icon {
+            background-color: #46b880;
+          }
+          .c7n-steps-item-process .c7n-steps-item-icon {
+            background-color: #46b880;
+          }
+          form {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .card-warp:first-child {
+      margin-top: 8px;
+    }
+    .card-warp:last-child {
+      flex: 1;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.attachement-wrap {
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0.1rem 0;
+    }
+    .c7n-pro-upload-bkt {
+      padding: 4px 0;
+    }
+  }
+}
+
+.rf-ladder-quotation-modal-wrapper {
+  .ladder-sub-title {
+    margin: 32px 0 16px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    .ladder-sub-title-line {
+      display: inline-block;
+      margin-right: 8px;
+      height: 12px;
+      border-left: 3px solid @primary-color;
+    }
+  }
+
+  .ladder-sub-title:first-child {
+    margin: 0 0 16px 0;
+  }
+}
+
+.page-anchor-container {
+  position: fixed;
+  bottom: 160px;
+  right: 0;
+  width: 220px;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  .anchor-icon {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+  }
+
+  :global {
+    .c7n-anchor-ink-ball:after {
+      color: @anchor-primary-color;
+    }
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* Internet Explorer */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+  }
+}
+
+.rfline-table {
+  :global {
+    .c7n-tag {
+      border: none;
+    }
+    .notSubmitted {
+      color: #f88d10;
+      background-color: rgba(252, 160, 0, 0.1);
+    }
+    .submitted {
+      color: #47b881;
+      background-color: rgba(71, 184, 129, 0.1);
+    }
+    .abandoned {
+      color: rgba(0, 0, 0, 0.65);
+      background-color: rgba(252, 160, 0, 0.1);
+    }
+  }
+}
+
+.rf-top-section-card-wrap {
+  padding: 16px;
+  margin: 4px 0;
+  background-color: #fff;
+}

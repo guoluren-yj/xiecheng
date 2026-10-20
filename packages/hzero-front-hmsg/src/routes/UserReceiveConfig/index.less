@@ -1,0 +1,87 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~hzero-front/lib/assets/styles/mixins.less';
+@import '~hzero-front/lib/assets/styles/utils.less';
+
+.receive {
+  .operation-btn {
+    margin-top: 16px;
+  }
+
+  :global {
+    .msg-options {
+      margin-bottom: 32px;
+
+      .msg-options-title {
+        font-size: 14px;
+        color: #1D2129;
+        line-height: 22px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: '';
+          display: inline-block;
+          margin-right: 8px;
+          background: #29BECE;
+          width: 3px;
+          height: 12px;
+        }
+      }
+
+      .msg-options-help {
+        font-size    : 12px;
+        color        : #868D9C;
+        line-height  : 18px;
+        margin-top   : 4px;
+        margin-bottom: 16px;
+      }
+
+      .msg-options-row {
+        display       : flex;
+        flex-direction: row;
+
+        .msg-option {
+          position     : relative;
+          margin-bottom: 0.08rem;
+          min-width    : 2rem;
+
+          &:not(:last-child) {
+            margin-right: 0.08rem;
+          }
+
+          .c7n-spin {
+            position    : absolute;
+            left        : 0;
+            margin-right: 0.1rem;
+            width       : 0.2rem;
+            height      : 0.2rem;
+
+            .c7n-progress-inner {
+              width : 0.2rem;
+              height: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+    .table-title {
+      font-size: 12px;
+      color: #1D2129;
+      line-height: 22px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.main {
+  &-title {
+    position     : relative;
+    margin-bottom: 17px;
+    font-size    : 16px;
+    font-weight  : normal;
+    color        : #1e3255;
+  }
+}

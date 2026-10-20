@@ -1,0 +1,65 @@
+.preview-warp {
+  .preview-warp-position {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    .setting-preview-img {
+      width: 100%;
+      max-height: calc(100vh - 170px);
+    }
+    .company-area {
+      color: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      left: 658px;
+      top: 2px;
+      margin-bottom: 0;
+      display: flex;
+      span {
+        max-width: 160px;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    .modal-area {
+      width: 340px;
+      position: absolute;
+      top: 30px;
+      left: 660px;
+      background-color: #fff;
+      box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      .modal-area-title {
+        margin: 0;
+        padding: 0 20px;
+        text-align: left;
+        line-height: 54px;
+        font-size: 16px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .modal-area-content {
+        padding: 20px;
+        :global {
+          .c7n-pro-select-disabled {
+            &::before {
+              border-style: solid;
+            }
+            .c7n-pro-select-suffix,
+            input {
+              cursor: default;
+            }
+          }
+        }
+      }
+      .modal-area-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+    }
+  }
+}

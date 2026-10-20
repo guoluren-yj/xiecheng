@@ -1,0 +1,271 @@
+/*!
+    Message - 供应商投标头信息
+    @date 2011-1-29
+    @author: hzl <zili.hou@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+@import '~hzero-front/lib/srm-variables.less';
+
+.ssrc-inquiry-header {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.biddingDetail {
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  min-width: 1045px;
+  .detailLeft {
+    float: left;
+    width: 22%;
+    // min-height: 800px;
+    // min-width: 270px;
+    font-size: 14px;
+    // border-top: 1px solid #e8e8e8;
+    .leftNormalList {
+      //border-bottom: 1px solid #e8e8e8;
+      &:hover {
+        background: #f8f8f8;
+        border-left: 3px solid @primary-color;
+        .itemCodeStyle {
+          margin-left: 10px;
+          width: 80%;
+          color: #20b0bf;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .translation {
+        margin-left: 10px;
+        .listTop {
+          height: 30px;
+          line-height: 30px;
+          .rfxLineItemNumLeft {
+            float: left;
+            margin-left: 10px;
+          }
+          .tagRight {
+            float: right;
+            margin-right: 10px;
+          }
+        }
+        .listBottom {
+          height: 30px;
+          line-height: 30px;
+          .itemCodeStyle {
+            margin-left: 10px;
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            font-weight: bold;
+          }
+          .carLeft {
+            float: left;
+            margin-left: 10px;
+          }
+          .taxRateRight {
+            float: right;
+            margin-right: 10px;
+            font-size: 12px;
+            color: #a3a3a3;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+    .leftNormalListActive {
+      background: #f8f8f8;
+      border-left: 3px solid @primary-color;
+      .leftNormalList;
+    }
+    .leftList {
+      // height: 90px;
+      // border-bottom: 1px solid #e8e8e8;
+      .translation {
+        margin-left: 10px;
+        border-bottom: 1px solid #e8e8e8;
+        .listTop {
+          height: 30px;
+          line-height: 30px;
+          .rfxLineItemNumLeft {
+            float: left;
+            margin-left: 10px;
+          }
+          .tagRight {
+            float: right;
+            margin-right: 10px;
+          }
+        }
+        .listBottom {
+          height: 30px;
+          line-height: 30px;
+          .itemCodeStyle {
+            margin-left: 10px;
+            width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            font-weight: bold;
+          }
+          .carLeft {
+            float: left;
+            margin-left: 10px;
+          }
+          .taxRateRight {
+            float: right;
+            margin-right: 10px;
+            font-size: 12px;
+            color: #a3a3a3;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+  }
+  .detailRight {
+    float: left;
+    width: 77%;
+    margin-left: 10px;
+    // border: 1px solid #e8e8e8;
+    .detailTitle {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e8e8e8;
+      .titleLeft {
+        float: left;
+        font-size: 18px;
+        font-weight: 500;
+        .titleName {
+          margin: 0 15px 0 10px;
+        }
+      }
+      .titleRight {
+        float: right;
+        font-size: 14px;
+        .icon {
+          margin-left: 10px;
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .footerBottom {
+      position: fixed;
+      bottom: 0;
+      left: 236px;
+      text-align: right;
+      right: 32px;
+      z-index: 1;
+      padding: 8px 32px;
+      background: #fff;
+      box-shadow: 0 -0.5px 1px 0 #bbb;
+      .buttonSave {
+        margin-right: 16px;
+      }
+    }
+  }
+  .pagination {
+    margin: 10px 0;
+    float: right;
+    z-index: 3;
+  }
+}
+.priceColorStyle {
+  background: #e6f7ff;
+}
+.detailHover {
+  &:hover {
+    color: #333;
+    background-color: #e8e8e8;
+  }
+}
+
+.leftDefault {
+  &:hover {
+    background: #f8f8f8;
+    border-left: 3px solid @primary-color;
+  }
+}
+
+.leftHover {
+  background: #f8f8f8;
+  border-left: 3px solid @primary-color;
+  .leftDefault;
+}
+
+.changeViewHover {
+  &:hover {
+    // background: blue;
+  }
+}
+
+.contentRightStyle :global {
+  .ant-table {
+    .ant-table-body {
+      // overflow-x: hidden !important;
+    }
+  }
+}
+.labelCol {
+  font-weight: bold;
+  border-left: 2px solid #333;
+  text-indent: 10px;
+  color: #333;
+  display: inline-block;
+  line-height: 14px;
+}
+
+.padding-16 {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 45px;
+  padding-left: 16px;
+}
+
+// .rowNew {
+//   :global {
+//     .ant-col-8 {
+//       margin-bottom: 16px;
+//     }
+//   }
+// }
+
+.edited-from {
+  :global {
+    .ant-form-item-label {
+      line-height: 29.9999px !important;
+      label {
+        color: #666 !important;
+      }
+    }
+    .ant-form-item-control {
+      line-height: 28.9999px !important;
+    }
+  }
+}

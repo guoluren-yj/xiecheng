@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>分组 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="180"></rect>
+    </defs>
+    <g id="配色-紫" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商城_首页备份-2" transform="translate(-390.000000, -714.000000)">
+            <g id="精选热卖" transform="translate(125.000000, 635.000000)">
+                <g id="Group-10备份" transform="translate(240.000000, 64.000000)">
+                    <g id="商品三">
+                        <g id="分组-4" transform="translate(25.000000, 15.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#F5F5F5" xlink:href="#path-1"></use>
+                            <g id="Picture" mask="url(#mask-2)" fill-rule="nonzero">
+                                <g transform="translate(57.000000, 57.000000)">
+                                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="66" height="66"></rect>
+                                    <path d="M11,11 L55,11 C58.6666666,11 60.5,12.8333333 60.5,16.5 L60.5,49.5 C60.5,53.1666667 58.6666667,55 55,55 L11,55 C7.33333337,55 5.49999998,53.1666667 5.49999998,49.5 L5.49999998,16.5 C5.49999998,12.8333333 7.33333333,11 11,11 Z" id="路径" fill="#C6C6C6" opacity="0.3"></path>
+                                    <polygon id="路径" fill="#000000" opacity="0.3" points="11 55 28.875 30.25 46.75 55"></polygon>
+                                    <polygon id="路径" fill-opacity="0.4" fill="#000000" points="30.25 55 42.625 38.5 55 55"></polygon>
+                                    <path d="M46.75,23.375 C46.75,25.6531746 48.5968254,27.5 50.875,27.5 C53.1531746,27.5 55,25.6531746 55,23.375 C55,21.0968254 53.1531746,19.25 50.875,19.25 C48.5968254,19.25 46.75,21.0968254 46.75,23.375 Z" id="路径" fill="#000000" opacity="0.3"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

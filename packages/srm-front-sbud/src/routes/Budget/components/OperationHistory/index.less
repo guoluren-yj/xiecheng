@@ -1,0 +1,126 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+.operating {
+  height: 100%;
+  .operating-content {
+    max-height: calc(100% - 20px - 0.24rem);
+  }
+  :global {
+    .c7n-modal-body {
+      padding: 16px;
+    }
+    .c7n-tabs-bar {
+      margin-bottom: 0;
+    }
+
+    .c7n-timeline-item-content {
+      margin: 0 0 0 24px;
+      padding: 0;
+    }
+    .operating-timeline {
+      // margin-top: 20px;
+      .c7n-timeline-item-content {
+        margin: 8px 0 0 24px;
+        padding: 0;
+        top: -4px;
+        display: flex;
+      }
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+        .operator {
+          padding-right: 4px;
+          font-weight: 500;
+        }
+        .operating-timeline-info {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          padding: 0 0 12px 0;
+          width: 100%;
+          margin-left: 16px;
+
+          &-item-adopt {
+            color: #47b881;
+            font-weight: 500;
+          }
+
+          &-item-reject {
+            color: #f56349;
+            font-weight: 500;
+          }
+        }
+        .date {
+          margin: 8px 0 0 0;
+        }
+        .status {
+          padding-right: 4px;
+        }
+        .gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+        }
+        .orange {
+          color: #f56349;
+        }
+        .result {
+          font-weight: 500;
+        }
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.04);
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .approve-header {
+      .c7n-collapse-content {
+        padding-left: 0;
+      }
+      .c7n-collapse-header {
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.approve-list-new {
+  // margin-top: 20px;
+  :global {
+    .c7n-collapse-header {
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .c7n-collapse-expand-icon-wrapper {
+      .icon-expand_more {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -4px;
+      }
+
+      .icon-navigate_next {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -4px;
+      }
+    }
+  }
+}
+
+.scroll-content {
+  margin-top: 16px;
+  height: calc(100vh - 170px);
+  overflow: auto;
+}

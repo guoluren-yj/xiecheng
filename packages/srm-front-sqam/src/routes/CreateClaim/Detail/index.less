@@ -1,0 +1,55 @@
+.page-content {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-col-24 {
+      & .ant-col-22 {
+        width: 90.6%;
+      }
+      & .ant-col-2 {
+        width: 9.4%;
+      }
+      & .ant-col-3 {
+        width: 13.9%;
+      }
+      & .ant-col-21 {
+        width: 86.1%;
+      }
+      & .ant-col-offset-3 {
+        margin-left: 13.9%;
+      }
+    }
+    textarea.ant-input {
+      overflow-y: hidden;
+    }
+  }
+}
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}

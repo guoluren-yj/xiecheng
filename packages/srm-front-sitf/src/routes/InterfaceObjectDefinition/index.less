@@ -1,0 +1,71 @@
+.contentStyle {
+  padding: 0 16px 0 0;
+
+  :global {
+    .c7n-card {
+      margin-bottom: 8px;
+    }
+    .c7n-tabs-vertical>.c7n-tabs-bar .c7n-tabs-nav-scroll {
+      width: 118px;
+      margin-top: 24px;
+    }
+    .c7n-tabs-content-animated {
+      padding-left: 0px !important;
+    }
+    .titleTag {
+      height: 24px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .titleTag::before {
+      content: '|';
+      background: #36c2cf;
+      color: #36c2cf;
+      margin-right: 8px;
+    }
+    .buttonTag {
+      .c7n-pro-btn {
+        float: right;
+        margin-left: 10px;
+      }
+      height: 28px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.enterStyle {
+  display: flex;
+  justify-content: flex-start;
+  :global {    
+
+    
+    .c7n-tree {
+      background: #f8f8f8;
+      height: calc(100vh - 152px);
+      overflow: scroll;
+    }
+    .c7n-tree .c7n-tree-node-content-wrapper.c7n-tree-node-selected {
+      background-color: transparent;
+    }
+    .c7n-tree-show-line .c7n-tree-switcher {
+      background: transparent;
+    }
+    .c7n-tree .c7n-tree-switcher-leaf-line::after {
+      border-bottom: 1px solid black;
+    }
+    .c7n-tree .c7n-tree-switcher-leaf-line::before {
+      border-left: 1px solid black;
+    }
+  }
+}
+
+.operationStyle {
+  :global {
+    .c7n-tabs-vertical>.c7n-tabs-bar .c7n-tabs-tab {
+      padding: 0;
+      border-bottom: 1px solid rgba(194, 197, 201, .3);
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import '~hzero-front/lib/srm-variables';
+
+.corp-due-dynamic-cards-basic {
+  margin-left: -1px;
+  flex: 4;
+  padding: 12px 16px 16px 16px;
+  background: #fff;
+  border: 1px solid rgba(229, 231, 236, 1);
+  overflow: hidden;
+
+  :global {
+    .c7n-divider-horizontal {
+      margin: 12px 0;
+    }
+  }
+}
+
+.corp-due-dynamic-cards-header {
+  display: flex;
+}
+
+.corp-due-dynamic-cards-header-right {
+  // margin-left: 16px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  overflow: hidden;
+}
+
+.corp-due-dynamic-cards-panel-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 8px;
+  border-left: 3px solid @primary-color;
+  line-height: 12px;
+  margin: 8px 0 16px 0;
+}
+
+.corp-due-dynamic-cards-list {
+  // height: calc(100vh - 252px);
+  height: calc(100vh - 302px);
+  // overflow-x: hidden;
+  // overflow-y: auto;
+  overflow: hidden;
+}
+
+.chart-no-content-message {
+  margin-top: 8px;
+  color: @text-3;
+}
+
+.relation-table-panel {
+  height: 350px;
+  overflow: hidden;
+}
+
+.corp-due-dynamic-cards-panel-noMsg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

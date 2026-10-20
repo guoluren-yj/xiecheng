@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-s</title>
+    <desc>Created with Sketch.</desc>
+    <g id="style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标-1" transform="translate(-222.000000, -775.000000)">
+            <g id="Group" transform="translate(60.000000, 191.000000)">
+                <g id="checkbox-s" transform="translate(162.000000, 584.000000)">
+                    <g id="符号-多选">
+                        <path d="M18.5714286,0 C19.3571429,0 20,0.642857143 20,1.42857143 L20,18.5714286 C20,19.3571429 19.3571429,20 18.5714286,20 L1.42857143,20 C0.642857143,20 0,19.3571429 0,18.5714286 L0,1.42857143 C0,0.642857143 0.642857143,0 1.42857143,0 L18.5714286,0 Z" id="形状" fill="#29BECE" fill-rule="nonzero"></path>
+                        <path d="M14,5.37974684 L7.75,11.7088608 L6,9.93670886 C5.5,9.43037975 4.625,9.43037975 4.125,9.93670886 C3.625,10.443038 3.625,11.3291139 4.125,11.835443 L6.75,14.6202532 C7,14.8734177 7.375,15 7.75,15 C8.125,15 8.375,14.8734177 8.75,14.6202532 L15.875,7.27848101 C16.375,6.7721519 16.375,5.88607595 15.875,5.37974684 C15.375,4.87341772 14.5,4.87341772 14,5.37974684 Z" id="路径-2" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

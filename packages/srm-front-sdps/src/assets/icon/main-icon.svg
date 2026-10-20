@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>主icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="模型" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关系" transform="translate(-477.000000, -217.000000)">
+            <g id="主icon" transform="translate(477.000000, 217.000000)">
+                <circle id="椭圆形" fill="#29bece" cx="7" cy="7" r="7"></circle>
+                <text id="主" font-family="MicrosoftYaHei, Microsoft YaHei" font-size="7.77777778" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="3.11111111" y="9.55555556">主</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

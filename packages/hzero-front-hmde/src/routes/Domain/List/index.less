@@ -1,0 +1,235 @@
+.content-left {
+  background-color: #fff;
+  @search-form-height: 50px;
+  display: block;
+  width: 216px;
+  min-width: 216px;
+  height: 100%;
+  box-sizing: border-box;
+  margin-right: 8px;
+
+  .search-form {
+    height: @search-form-height;
+    box-sizing: border-box;
+    padding: 0 8px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+    .text-filed {
+      height: 100%;
+      flex: 1;
+      margin-right: 4px;
+      display: flex;
+      align-items: center;
+
+      :global {
+        .c7n-pro-input-wrapper {
+          width: 100%;
+        }
+      }
+    }
+
+    .more-action {
+      height: 100%;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      :global {
+        .c7n-pro-btn-icon-only {
+          border-radius: 2px;
+          border: 1px solid #e8e8e8;
+        }
+      }
+    }
+  }
+
+  .list-area {
+    position: relative;
+    width: 100%;
+    height: calc(100% - @search-form-height);
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+
+    :global {
+      .c7n-list-item {
+        border-bottom: none;
+        padding: 0;
+        margin: 2px 0;
+
+        .c7n-list-item-content {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: #386bd719;
+        }
+      }
+    }
+
+    .list-item {
+      width: 100%;
+      padding: 6px 8px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .item-header,
+      .item-content {
+        margin: 2px 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+
+      .item-header {
+        align-items: center;
+        justify-content: space-between;
+        & > span {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 14px;
+          color: #1c1c1c;
+          text-align: left;
+          font-weight: bold;
+          overflow: hidden;
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: ~'clac(100% - 45px)';
+        }
+
+        :global {
+          .c7n-tag {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .item-content {
+        align-items: center;
+
+        & > span {
+          width: ~'calc(100%)';
+          overflow: hidden;
+          display: inline-block;
+          text-overflow: ellipsis;
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 12px;
+          color: #7c859b;
+          text-align: left;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .list-item-active {
+      width: 100%;
+      padding: 6px 8px;
+      background-color: #386bd719;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .item-header,
+      .item-content {
+        margin: 2px 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+
+      .item-header {
+        align-items: center;
+        justify-content: space-between;
+        & > span {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 14px;
+          color: #0840f8;
+          text-align: left;
+          font-weight: bold;
+          overflow: hidden;
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: ~'clac(100% - 45px)';
+        }
+
+        :global {
+          .c7n-tag {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .item-content {
+        align-items: center;
+
+        & > span {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 12px;
+          color: #7c859b;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.content-right {
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 889px;
+  background-color: #fff;
+
+  :global {
+    .page-content {
+      padding: 0;
+      margin: 0;
+
+      overflow: -moz-scrollbars-none;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    }
+  }
+
+  .detail-tab {
+    padding: 0 12px;
+  }
+}
+
+.edit-form {
+  :global {
+    .c7n-pro-input-group-before {
+      padding: 0 3px 0 0;
+      border: 0;
+      background-color: white;
+      width: 120px;
+    }
+    .c7n-pro-input-group-input:not(:first-child) .c7n-pro-input {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+}
+
+.t-loader {
+  height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}

@@ -1,0 +1,141 @@
+import React from 'react';
+import styles from '../index.less';
+
+export default () => {
+  return (
+    <svg width="300px" height="167px" viewBox="0 0 300 167" version="1.1" xmlns="http://www.w3.org/2000/svg" className={styles['smdm-term-no-line-svg']}>
+      <title>未开启付款管控</title>
+      <defs>
+        <rect id="path-1" x="0" y="0" width="108" height="53" rx="2" />
+        <filter x="-4.6%" y="-7.5%" width="109.3%" height="118.9%" filterUnits="objectBoundingBox" id="filter-2">
+          <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+          <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+          <feColorMatrix values="0 0 0 0 0.317647059   0 0 0 0 0.345098039   0 0 0 0 0.454901961  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" />
+        </filter>
+        <rect id="path-3" x="0" y="0" width="120" height="88" rx="2" />
+        <filter x="-16.7%" y="-18.2%" width="133.3%" height="145.5%" filterUnits="objectBoundingBox" id="filter-4">
+          <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1" />
+          <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+          <feColorMatrix values="0 0 0 0 0.317647059   0 0 0 0 0.345098039   0 0 0 0 0.454901961  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+          <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2" />
+          <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter2" result="shadowBlurOuter2" />
+          <feColorMatrix values="0 0 0 0 0.317647059   0 0 0 0 0.345098039   0 0 0 0 0.454901961  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2" />
+          <feMerge>
+            <feMergeNode in="shadowMatrixOuter1" />
+            <feMergeNode in="shadowMatrixOuter2" />
+          </feMerge>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="16" height="8" rx="4" />
+        <rect id="path-6" x="0" y="0" width="16" height="8" rx="4" />
+      </defs>
+      <g id="付款配置" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="06.未启用结构化" transform="translate(-415.000000, -654.000000)">
+          <g id="编组-2备份" transform="translate(58.000000, 526.000000)">
+            <g id="未开启付款管控" transform="translate(357.000000, 130.000000)">
+              <rect id="矩形" x="0" y="0" width="300" height="165" />
+              <g id="编组-60" transform="translate(60.000000, 6.000000)">
+                <g id="编组-2" transform="translate(0.000000, 31.000000)">
+                  <g id="bg/白色底">
+                    <rect id="矩形" fill="#F1F4F8" x="0" y="0" width="180" height="128" rx="2" />
+                    <path d="M2,0 L178,0 C179.104569,-2.02906125e-16 180,0.8954305 180,2 L180,12 L180,12 L0,12 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="矩形备份" fill="#E4E7EB" />
+                    <g id="编组-3" transform="translate(8.000000, 4.000000)" fill="#FFFFFF">
+                      <circle id="椭圆形" cx="2" cy="2" r="2" />
+                      <circle id="椭圆形备份" cx="10" cy="2" r="2" />
+                      <circle id="椭圆形备份-2" cx="18" cy="2" r="2" />
+                    </g>
+                  </g>
+                  <g id="mg/外框/灰色导航" transform="translate(8.000000, 20.000000)">
+                    <rect id="矩形" fill="#FFFFFF" opacity="0.903227307" x="0" y="0" width="164" height="100" rx="2" />
+                    <g id="编组-5">
+                      <path d="M2,0 L40,0 L40,0 L40,100 L2,100 C0.8954305,100 1.3527075e-16,99.1045695 0,98 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="矩形" fill="#EAEEF1" />
+                      <rect id="矩形" fill="#FFFFFF" x="6" y="6" width="6" height="6" rx="1" />
+                      <rect id="矩形" fill="#FFFFFF" x="16" y="7" width="18" height="4" rx="1" />
+                      <rect id="矩形备份-3" fill="#FFFFFF" x="6" y="20" width="24" height="4" rx="1" />
+                      <rect id="矩形备份-4" fill="#FFFFFF" x="6" y="32" width="28" height="4" rx="1" />
+                      <rect id="矩形备份-5" fill="#FFFFFF" x="6" y="44" width="16" height="4" rx="1" />
+                      <rect id="矩形备份-6" fill="#FFFFFF" x="6" y="56" width="28" height="4" rx="1" />
+                    </g>
+                  </g>
+                  <g id="mg/卡片/有导航/三分之一/1" transform="translate(56.000000, 28.000000)">
+                    <rect id="矩形" fill="#F1F4F8" x="0" y="0" width="23" height="23" rx="1" />
+                    <rect id="矩形" fill="#EAEEF1" x="27" y="0" width="24" height="8" rx="1" />
+                    <rect id="矩形备份-3" fill="#EAEEF1" x="27" y="15" width="24" height="8" rx="1" />
+                    <rect id="矩形备份-4" fill="#F1F4F8" x="55" y="15" width="24" height="8" rx="1" />
+                    <rect id="矩形备份-5" fill="#F1F4F8" x="83" y="15" width="25" height="8" rx="1" />
+                    <g id="编组" transform="translate(4.000000, 4.000000)">
+                      <polygon id="路径" points="0 0 15 0 15 15 0 15" />
+                      <path d="M8.38375,3.125 L12.5,3.125 C12.845178,3.125 13.125,3.40482203 13.125,3.75 L13.125,4.375 L1.875,4.375 L1.875,2.5 C1.875,2.15482203 2.15482203,1.875 2.5,1.875 L7.13375,1.875 L8.38375,3.125 Z M1.929375,5.62499994 L13.070625,5.62499994 C13.2454515,5.62492125 13.4123194,5.69807007 13.530728,5.82669246 C13.6491366,5.95531484 13.7082606,6.12765171 13.69375,6.301875 L13.1725,12.551875 C13.1455305,12.8756883 12.8749344,13.1248214 12.55,13.1249999 L2.45,13.1249999 C2.12506557,13.1248214 1.85446951,12.8756883 1.8275,12.551875 L1.30625,6.301875 C1.29173938,6.12765171 1.3508634,5.95531484 1.469272,5.82669246 C1.5876806,5.69807007 1.75454849,5.62492125 1.929375,5.62499994 Z" id="形状" fill="#E4E7EB" fillRule="nonzero" />
+                    </g>
+                  </g>
+                  <g id="mg/卡片/有导航/三分之一/1备份" transform="translate(56.000000, 59.000000)">
+                    <g id="矩形" opacity="0.901739211">
+                      <use fill="black" fillOpacity="1" filter="url(#filter-2)" xlinkHref="#path-1" />
+                      <use fill="#FFFFFF" fillRule="evenodd" xlinkHref="#path-1" />
+                    </g>
+                    <circle id="椭圆形" fill="#DDEDFE" cx="7" cy="7" r="3" />
+                    <circle id="椭圆形备份" fill="#E2F4E3" cx="7" cy="20" r="3" />
+                    <circle id="椭圆形备份-2" fill="#FDE6E1" cx="7" cy="33" r="3" />
+                    <circle id="椭圆形备份-3" fill="#FFEBD9" cx="7" cy="46" r="3" />
+                    <rect id="矩形" fill="#EAEEF1" x="14" y="4" width="48" height="6" rx="1" />
+                    <rect id="矩形备份-6" fill="#EAEEF1" x="68" y="4" width="12" height="6" rx="1" />
+                    <rect id="矩形备份-10" className="term-primary-svg-color-1" x="84" y="4" width="20" height="6" rx="1" />
+                    <rect id="矩形备份-3" fill="#EAEEF1" x="14" y="17" width="48" height="6" rx="1" />
+                    <rect id="矩形备份-7" fill="#EAEEF1" x="68" y="17" width="12" height="6" rx="1" />
+                    <rect id="矩形备份-11" className="term-primary-svg-color-1" x="84" y="17" width="20" height="6" rx="1" />
+                    <rect id="矩形备份-4" fill="#EAEEF1" x="14" y="30" width="48" height="6" rx="1" />
+                    <rect id="矩形备份-8" fill="#EAEEF1" x="68" y="30" width="12" height="6" rx="1" />
+                    <rect id="矩形备份-12" className="term-primary-svg-color-1" x="84" y="30" width="20" height="6" rx="1" />
+                    <rect id="矩形备份-5" fill="#EAEEF1" x="14" y="43" width="48" height="6" rx="1" />
+                    <rect id="矩形备份-9" fill="#EAEEF1" x="68" y="43" width="12" height="6" rx="1" />
+                    <rect id="矩形备份-13" className="term-primary-svg-color-1" x="84" y="43" width="20" height="6" rx="1" />
+                  </g>
+                </g>
+                <g id="fg/商城装修" transform="translate(95.000000, 0.000000)">
+                  <g id="矩形">
+                    <use fill="black" fillOpacity="1" filter="url(#filter-4)" xlinkHref="#path-3" />
+                    <use fill="#FFFFFF" fillRule="evenodd" xlinkHref="#path-3" />
+                  </g>
+                  <g id="编组-19" transform="translate(8.000000, 8.000000)">
+                    <rect id="矩形" fill="#F1F4F8" x="0" y="0" width="104" height="20" rx="1" />
+                    <g id="编组-18" transform="translate(6.000000, 4.000000)">
+                      <rect id="矩形" className="term-primary-svg-color" x="0" y="0" width="12" height="12" rx="1" />
+                      <polyline id="路径" stroke="#FFFFFF" strokeWidth="1.2" strokeLinecap="round" points="3 6.5 5 8.5 9 4" />
+                    </g>
+                    <rect id="矩形" fill="#E4E7EB" x="22" y="4" width="36" height="6" rx="1" />
+                    <rect id="矩形" fill="#E4E7EB" x="22" y="14" width="21" height="2" rx="1" />
+                    <g id="编组-17" transform="translate(82.000000, 6.000000)">
+                      <rect id="矩形" className="term-primary-svg-color" x="0" y="0" width="16" height="8" rx="4" />
+                      <circle id="椭圆形" fill="#FFFFFF" cx="12" cy="4" r="3" />
+                    </g>
+                  </g>
+                  <rect id="矩形" fill="#EAEEF1" x="14" y="38" width="12" height="12" rx="1" />
+                  <rect id="矩形" fill="#EAEEF1" x="30" y="38" width="36" height="6" rx="1" />
+                  <rect id="矩形" fill="#EAEEF1" x="30" y="48" width="21" height="2" rx="1" />
+                  <g id="编组-17" transform="translate(90.000000, 40.000000)">
+                    <g id="矩形">
+                      <use className="term-primary-svg-color-1" xlinkHref="#path-5" />
+                      <use fillOpacity="0" fill="#FFFFFF" xlinkHref="#path-5" />
+                    </g>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="4" cy="4" r="3" />
+                  </g>
+                  <rect id="矩形" fill="#EAEEF1" x="14" y="64" width="12" height="12" rx="1" />
+                  <rect id="矩形" fill="#DBDEE3" x="17" y="41" width="6" height="6" rx="1" />
+                  <rect id="矩形" fill="#EAEEF1" x="30" y="64" width="36" height="6" rx="1" />
+                  <rect id="矩形" fill="#EAEEF1" x="30" y="74" width="21" height="2" rx="1" />
+                  <g id="编组-17" transform="translate(90.000000, 66.000000)">
+                    <g id="矩形">
+                      <use className="term-primary-svg-color-1" xlinkHref="#path-6" />
+                      <use fillOpacity="0" fill="#FFFFFF" xlinkHref="#path-6" />
+                    </g>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="4" cy="4" r="3" />
+                  </g>
+                  <rect id="矩形" fill="#DBDEE3" x="17" y="67" width="6" height="6" rx="1" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+};

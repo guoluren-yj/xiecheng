@@ -1,0 +1,134 @@
+.customize-menu-tree {
+  :global {
+    .c7n-tree-node-content-wrapper {
+      overflow: hidden;
+      word-break: keep-all;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+.doc-tpl {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  :global {
+    .unit-main-container {
+      padding: 8px;
+    }
+    .unit-left-container {
+      margin-right: 0;
+    }
+    .root-dir {
+      padding: 7px;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        color: #29BECE;
+        font-weight: 500;
+      }
+    }
+    .c7n-tree .c7n-tree-node-content-wrapper.c7n-tree-node-selected {
+      font-weight: 600;
+      .icon {
+        font-weight: 400;
+      }
+    }
+    // flex下的直接子元素到满足display为block后代元素间的所有层级，均需要设置overflow:hidden，否则宽度会被下级文本节点撑大
+    .c7n-tree .c7n-tree-node-content-wrapper {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      padding: 0 0 0 4px;
+    }
+    .c7n-tree-title {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      & > * {
+        padding-right: 20px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .c7n-tree-node-selected .c7n-tree-title {
+      border-right: 2px solid #29BECE;
+      color: #29BECE;
+    }
+    .c7n-tree-title:hover {
+      color: #29BECE;
+    }
+    .c7n-tree-show-line .c7n-tree-switcher {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .c7n-tree-node-selected {
+      background-color: #FFFFFF!important;
+    }
+    .operator-wrap > button:not(:first-of-type) {
+      margin-left: 16px;
+    }
+    .menu-tree-container-body .c7n-tree {
+      padding-right: 0;
+    }
+    .c7n-spin-container {
+      height: 100%;
+    }
+    .vertical-split-line {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      background: #e5e7ec;
+      z-index: 1;
+      transition: left 0.3s;
+    }
+    .unit-right-container.shadow {
+      box-shadow: rgba(0, 0, 0, 0.133) 0.8px 0.6px 1.6px 0, rgba(0, 0, 0, 0.11) 0.45px 0.3px 0.9px 0;
+    }
+    .menu-tree-container-body {
+      padding: 0;
+      margin: 8px 0 8px 8px;
+    }
+  }
+}
+
+.doc-left-container-ctrl {
+  width          : 12px;
+  height         : 56px;
+  background     : #EBEBEB;
+  border         : 1px solid rgba(224, 224, 224, 1);
+  border-radius  : 0 25px 25px 0;
+  display        : flex;
+  position       : absolute;
+  top            : 50%;
+  left           : 228px;
+  transform      : translateY(-50%) rotateY(180deg);
+  cursor         : pointer;
+  align-items    : center;
+  justify-content: center;
+  z-index        : 1;
+  transition     : all .3s;
+
+  &::after {
+    content      : '';
+    height       : 0;
+    border-top   : 2.5px solid transparent;
+    border-bottom: 2.5px solid transparent;
+    border-right : none;
+    border-left  : 2.5px solid #000;
+    display      : block;
+  }
+
+  &:global(.collapse) {
+    left     : 0;
+    transform: translateY(-50%) rotateY(0);
+  }
+}

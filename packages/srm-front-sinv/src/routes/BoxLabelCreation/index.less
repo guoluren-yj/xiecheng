@@ -1,0 +1,48 @@
+.execution-content {
+  display: flex;
+  :global {
+    .left-content {
+      width: 15%;
+      .c7n-tree {
+        max-height: calc(100vh - 235px);
+        overflow: auto;
+        font-size: 13px;
+        margin-top: 10px;
+        .tree-node-title {
+          font-weight: bold;
+        }
+      }
+    }
+    .right-content {
+      :global {
+        width: 85%;
+        .process-header {
+          display: flex;
+          align-items: center;
+        }
+        .c7n-divider-horizontal {
+          margin: 10px 0;
+        }
+        .c7n-pro-table-body {
+          max-height: calc(100vh - 370px);
+          overflow-y: overlay;
+        }
+        .c7n-pro-table-fixed-left {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.flex-header-table {
+  :global {
+    .c7n-pro-table-body {
+      max-height: calc(100vh - 420px);
+      overflow-y: overlay;
+    }
+    .c7n-pro-table-fixed-left {
+      display: none;
+    }
+  }
+}

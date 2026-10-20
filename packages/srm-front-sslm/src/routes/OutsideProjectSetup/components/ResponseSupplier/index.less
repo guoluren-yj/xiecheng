@@ -1,0 +1,159 @@
+// Add styles for the new components Modal
+
+.header {
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #c9cdd4;
+  // overflow: auto; /* 创建BFC，包含浮动元素 */
+}
+
+.header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .title {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 600;
+  line-height: 55px;
+  padding-left: 20px;
+}
+
+.header .buttons {
+  float: left;
+  height: 100%;
+  padding-left: 20%;
+}
+
+.header .buttons .button-parent {
+  height: 32px;
+  border-radius: 2px;
+  background: #f2f3f5;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.button-parent::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .buttons .button-parent .page-content-btn-supplier {
+  float: left;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1d2129;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.header .buttons .button-parent .page-content-btn-item {
+  float: right;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1d2129;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.header .buttons .button-parent .active-btn {
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.layout-container {
+  display: flex;
+  height: calc(100vh - 62px - 50px); /* 减去顶部导航栏和底部导航栏的高度 */
+  overflow: hidden;
+}
+
+/* 左侧列 */
+.left-panel {
+  // width: 200px; /* 左侧宽度，可调整 */
+  // overflow-y: auto; /* 超出滚动 */
+  // border-right: 1px solid #e0e0e0; /* 右侧边框作为分隔线 */
+  // box-sizing: border-box; /* 边框包含在宽度内 */
+  flex: 0 0 250px !important; /* 固定宽度200px，不增长不缩小 */
+  padding: 16px 0;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+/* 右侧列 */
+.right-panel {
+  // flex-grow: 1; /* 自适应剩余宽度 */
+  // padding: 20px; /* 右侧内边距，可调整 */
+  // box-sizing: border-box;
+  flex: 1; /* 自适应剩余宽度，等同于flex-grow:1, flex-shrink:1, flex-basis:0 */
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.right-panel .right-panel-content {
+  width: 100%;
+}
+
+/* 左侧列表样式 */
+.left-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-panel li {
+  padding: 8px 16px;
+  // border-bottom: 1px solid #f5f5f5; /* 列表项分隔线 */
+  cursor: pointer; /* 可选：添加指针样式 */
+}
+
+.left-panel li:hover {
+  background-color: #f8f8f8; /* 可选： hover 效果 */
+}
+
+.active {
+  background-color: #f8f8f8;
+}
+
+.supplier-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  box-shadow: none !important;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.supplier-title {
+  font-size: 12px;
+  color: #1d2129;
+  line-height: 18px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  margin-right: 4px;
+}
+
+.supplier-status {
+  font-size: 12px;
+  font-weight: 600;
+  width: 57px;
+  overflow: hidden;
+}

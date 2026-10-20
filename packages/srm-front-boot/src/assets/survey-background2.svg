@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="449px" viewBox="0 0 600 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 19</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="600" height="449"></rect>
+        <linearGradient x1="4.33680869e-15%" y1="25.2807617%" x2="100%" y2="74.7192383%" id="linearGradient-3">
+            <stop stop-color="#F1FEFF" offset="0%"></stop>
+            <stop stop-color="#E9F3FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="640" height="450" rx="8"></rect>
+        <linearGradient x1="10.7536366%" y1="74.7492514%" x2="87.2519782%" y2="25.7769345%" id="linearGradient-6">
+            <stop stop-color="#67F3FF" offset="0%"></stop>
+            <stop stop-color="#637EFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-57.8%" y="-59.9%" width="215.7%" height="219.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="32" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="10.7536366%" y1="74.7492514%" x2="87.0931639%" y2="25.8786034%" id="linearGradient-8">
+            <stop stop-color="#3099FF" offset="0%"></stop>
+            <stop stop-color="#6DF5FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-64.3%" y="-66.6%" width="228.6%" height="233.2%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="24" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="10.7536366%" y1="74.7492514%" x2="87.0931639%" y2="25.8786034%" id="linearGradient-10">
+            <stop stop-color="#3099FF" offset="0%"></stop>
+            <stop stop-color="#6DF5FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50.0%" y="-51.8%" width="200.0%" height="203.6%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="24" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="10.7536366%" y1="74.7492514%" x2="87.0931639%" y2="25.8786034%" id="linearGradient-12">
+            <stop stop-color="#FF5F30" offset="0%"></stop>
+            <stop stop-color="#B46DFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-35.3%" y="-36.5%" width="170.6%" height="173.1%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="24" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-19">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="矩形" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="编组-8" opacity="0.400000006" mask="url(#mask-2)">
+                <g transform="translate(-20.000000, -1.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="矩形" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd" opacity="0.800000012" xlink:href="#path-4"></use>
+                    <g id="编组-9" opacity="0.5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-5)">
+                        <g transform="translate(-33.000000, 20.050505)" opacity="0.200000003">
+                            <ellipse id="椭圆形" fill="url(#linearGradient-6)" filter="url(#filter-7)" cx="249" cy="154.444757" rx="83" ry="80.1182178"></ellipse>
+                            <ellipse id="椭圆形备份" fill="url(#linearGradient-8)" filter="url(#filter-9)" cx="492" cy="54.055665" rx="56" ry="54.055665"></ellipse>
+                            <ellipse id="椭圆形备份-1683" fill="url(#linearGradient-10)" filter="url(#filter-11)" cx="615" cy="242.285213" rx="72" ry="69.5001407"></ellipse>
+                            <ellipse id="椭圆形备份-1683" fill="url(#linearGradient-12)" filter="url(#filter-13)" cx="102.042959" cy="367.285354" rx="102.042959" ry="98.5"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

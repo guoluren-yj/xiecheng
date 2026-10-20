@@ -1,0 +1,39 @@
+.risk-report-download-basic {
+  background-image: url('../../assets/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.risk-report-no-permission {
+  :global {
+    svg path#path-dynamic {
+      fill: @primary-color;
+    }
+  }
+}
+
+.risk-scan-content-search-panel {
+  margin-top: 32px;
+  text-align: center;
+
+  input {
+    font-size: 14px;
+    color: #868d9c;
+    line-height: 22px;
+  }
+
+  button {
+    height: 48px;
+    width: 120px;
+
+    span {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

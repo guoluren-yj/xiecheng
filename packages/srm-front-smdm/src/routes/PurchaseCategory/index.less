@@ -1,0 +1,69 @@
+.buttonStyle {
+  :global {
+    div {
+      width: 100%;
+      span {
+        display: inline-block;
+        width: 100%;
+      }
+      button {
+        float: right;
+      }
+    }
+  }
+}
+
+.menu {
+  li {
+    padding: 0 28px 0 16px !important;
+    button {
+      overflow: visible !important;
+      border: none;
+      padding: 0 !important;
+      i {
+        display: none;
+      }
+    }
+    :global {
+      .srm-common-import-button-tag {
+        top: -3px !important;
+        right: -20px !important;
+      }
+    }
+  }
+}
+
+.srm-common-new-button {
+  position: relative;
+  .srm-common-export-button-tag {
+    display: inline-block;
+    font-size: 8px;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    line-height: 1.5;
+    position: absolute;
+    padding: 0 2px;
+    top: -2px;
+    margin-left: -14px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+}
+// /** /** /** /** /** /** /** /**
+//   @date: 2019-4-19
+//   @author: zqq <qingqing.zhang@hand-china.com>
+//   @version: 0.0.1
+//   @copyright Copyright (c) 2018, Hand
+//  */
+//  .right-btn-group {
+//   float: right;
+//   margin-right: 0 !important;
+//   :global {
+//     .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > {
+//       & > button:not(:first-child) {
+//         margin-left: 8px;
+//       }
+//     }
+//   }
+// }

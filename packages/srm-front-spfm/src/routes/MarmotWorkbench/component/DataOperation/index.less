@@ -1,0 +1,45 @@
+.left-menu {
+  :global {
+    height: calc(80vh - 20px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    .c7n-menu-item {
+      width: 200px;
+    }
+  }
+}
+
+.content-container {
+  :global {
+    display: flex;
+    .content-container-left {
+      width: 200px;
+      height: 70vh;
+      position: relative;
+      .content-container-left-lov {
+        height: 40px;
+        width: 200px;
+      }
+      .content-container-left-fold {
+        position: absolute;
+        right: 0;
+        top: 200px;
+        z-index: 2;
+        cursor: pointer;
+      }
+    }
+    .content-container-right {
+      height: 100%;
+      flex: 1 1 auto;
+      position: relative;
+      overflow: hidden;
+      .content-container-right-unfold {
+        position: absolute;
+        left: 0;
+        top: 200px;
+        z-index: 2;
+        cursor: pointer;
+      }
+    }
+  }
+}

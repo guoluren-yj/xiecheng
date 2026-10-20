@@ -1,0 +1,40 @@
+@import '~hzero-front/lib/srm-variables.less';
+.authority-range {
+  width: 100%;
+  :global {
+    .dimension-range-wrapper {
+      margin-top: 32px;
+      .dimension-range-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        > i.icon-help {
+          font-size: 16px;
+          margin-left: 4px;
+          color: @fill-3;
+        }
+      }
+      .dimension-all-read {
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 8px;
+      }
+      .c7n-pro-table-cell-inner {
+        height: auto !important;
+      }
+      .c7n-pro-select-wrapper {
+        width: 100%;
+      }
+    }
+  }
+  .exclude-user-lov-btn {
+    margin-top: 16px !important;
+    height: 18px !important;
+    font-weight: 600;
+  }
+}

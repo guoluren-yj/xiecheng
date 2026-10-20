@@ -1,0 +1,292 @@
+.edit-page {
+  height: 100%;
+
+  :global {
+    div.page-head {
+      padding: 0;
+
+      .page-head-operator {
+        margin: 0 8px;
+      }
+    }
+    .title > .actions {
+      margin-right: 8px;
+      > i {
+        cursor: pointer;
+      }
+    }
+    .page-content-wrap {
+      > .page-content {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+
+        .workbench {
+          width: 0;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          border-right: 1px solid #d0d0d0;
+
+          .code-editor {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            > .title {
+              height: 32px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0 8px;
+              background-color: #e8e8e8;
+              border-top: 1px solid #d0d0d0;
+              border-bottom: 1px solid #d0d0d0;
+              max-width: none;
+
+              .target-script {
+                margin-left: 12px;
+                color: #666;
+                font-weight: bold;
+              }
+            }
+            .codearea {
+              height: 0;
+              flex-grow: 1;
+              overflow: auto;
+              > label {
+                height: 100%;
+                display: block;
+
+                > .c7n-pro-code-area {
+                  height: 100% !important;
+
+                  .CodeMirror.CodeMirror-wrap {
+                    border-color: #d0d0d0;
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .debugger {
+            border: none;
+            border-radius: 0;
+
+            > .c7n-collapse-item {
+              border-bottom: none;
+            }
+
+            .debugger-collapse-panel:not(.c7n-collapse-item-active) {
+              .title .actions {
+                opacity: 0.5;
+                pointer-events: none;
+                cursor: default;
+                * {
+                  pointer-events: none;
+                  cursor: default;
+                }
+              }
+            }
+
+            .debugger-collapse-panel {
+              .c7n-collapse-header {
+                padding: 4px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                background-color: #e8e8e8 !important;
+                border-top: 1px solid #d0d0d0;
+                border-bottom: 1px solid #d0d0d0;
+                border-radius: 0 0 0 0;
+                > .title {
+                  flex-grow: 1;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  max-width: none;
+                }
+              }
+
+              .c7n-collapse-content {
+                padding: 0;
+                .c7n-collapse-content-box {
+                  padding: 0;
+                  display: flex;
+                  .debugger-part {
+                    flex-grow: 1;
+                    height: 220px;
+                    width: 50%;
+
+                    > .title {
+                      padding: 4px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      max-width: none;
+                    }
+
+                    &.input-json {
+                      border-right: 1px solid #d0d0d0;
+
+                      .CodeMirror.CodeMirror-wrap {
+                        border-color: #d0d0d0;
+                        border-right: none;
+                        border-left: none;
+                      }
+                    }
+                    &.output {
+                      > .title {
+                        .status {
+                          &.fail {
+                            color: #ff4d4f;
+                          }
+                          &.success {
+                            color: #73d13d; //#008528;
+                          }
+                        }
+                      }
+                      .CodeMirror.CodeMirror-wrap {
+                        border-color: #d0d0d0;
+                        border-left: none;
+                        border-right: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .dashboard {
+          width: 25%;
+          height: 100%;
+          overflow-y: auto;
+          position: relative;
+          min-width: 25%;
+          max-width: 75%;
+
+          .resizer {
+            height: 100%;
+            width: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            cursor: ew-resize;
+            &:hover {
+              background-color: #ccc;
+            }
+            &:active {
+              background-color: #999;
+            }
+          }
+
+          .c7n-collapse {
+            border-color: transparent;
+          }
+
+          .params-collapse {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            height: 100%;
+            max-height: 100%;
+            .params-collapse-item.c7n-collapse-item-active {
+              flex-grow: 1;
+              max-height: 100%;
+              overflow-y: auto;
+            }
+            .params-collapse-item {
+              transition: height 1s;
+              border-top: 1px solid #d0d0d0;
+              border-bottom: 1px solid #d0d0d0;
+
+              &.in {
+                .c7n-collapse-expand-icon-wrapper {
+                  display: none;
+                }
+                .params-panel-header {
+                  color: black;
+                  cursor: default;
+                }
+              }
+              &.out {
+                margin-top: auto;
+              }
+              .c7n-collapse-header {
+                background-color: #e8e8e8;
+              }
+            }
+          }
+
+          .c7n-collapse-header {
+            display: flex;
+            padding: 4px;
+            border-radius: 0 0 0 0;
+            .params-panel-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-grow: 1;
+              font-size: 12px;
+              max-width: none;
+            }
+          }
+
+          .c7n-collapse-content {
+            padding: 0;
+            & > .c7n-collapse-content-box {
+              padding: 0;
+
+              .c7n-pro-table-toolbar {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.script-event-modal-import-params {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .codearea {
+      height: 0;
+      flex-grow: 1;
+      overflow: auto;
+      > label {
+        height: 100%;
+        display: block;
+
+        > .c7n-pro-code-area {
+          height: 100% !important;
+
+          > .CodeMirror {
+            border-color: #d0d0d0;
+          }
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .script-event-insert-reference-field-popover {
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 2px 10px 5px rgba(124, 133, 155, 0.1);
+    background-color: white;
+    width: 320px;
+    z-index: 100;
+
+    .c7n-pro-form .c7n-pro-output {
+      word-break: break-all;
+    }
+  }
+}

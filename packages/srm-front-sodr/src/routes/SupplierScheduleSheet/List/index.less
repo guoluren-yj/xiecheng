@@ -1,0 +1,64 @@
+/*
+ * style - 我收到的订单
+ * @date: 2018-10-13
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.button-group {
+  margin-bottom: 16px;
+  :global {
+    .ant-btn:not(:first-child) {
+      margin-left: 14px;
+    }
+  }
+}
+.row-agent-column {
+  display: flex;
+  align-items: center;
+  img {
+    height: 16px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}

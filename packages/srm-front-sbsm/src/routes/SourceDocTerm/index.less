@@ -1,0 +1,235 @@
+@import '../../common.less';
+@import '~hzero-front/lib/srm-variables.less';
+
+.sbsm-detail-content-forest {
+  .sbsm-content-margin();
+  padding: 0 20px;
+  :global {
+    .c7n-collapse {
+      .sbsm-collapse();
+    }
+    .c7n-pro-form-wrapper {
+      .sbsm-form();
+    }
+    .ued-detail-card {
+      .sbsm-card();
+    }
+  }
+}
+
+.sbsm-detail-modal-content-forest {
+  margin: 0;
+  overflow: visible;
+  :global {
+    .sbsm-detail-collapse-content {
+      margin: 8px;
+    }
+    .page-content {
+      margin: 8px;
+    }
+  }
+}
+
+.sbsm-detail-wrapper-fund-plan-forecast {
+  .sbsm-content-margin();
+
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: calc(100% - 48px);
+
+  :global {
+    .c7n-tabs-vertical.c7n-tabs-left {
+      & > .c7n-tabs-content {
+        padding-left: 0;
+        border-left: none;
+        background: #f4f5f7;
+      }
+    }
+    .full-height-spinning {
+      height: 100%;
+      .c7n-spin-container {
+        height: 100%;
+      }
+    }
+    .c7n-tabs-bar-inner {
+      flex-direction: column-reverse !important;
+    }
+    .fund-plan-forecast-tab();
+  }
+  .detail-tab-extra-content {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    border-bottom: solid 1px #f5f6fa;
+    .detail-tips {
+      font-size: 16px;
+      color: #000;
+      font-weight: 600;
+    }
+    .detail-tips-text {
+      font-size: 12px;
+      color: #767d8e;
+    }
+  }
+}
+.strategy-tabs-left(@between: 4px) {
+  height: 100%;
+  .c7n-tabs-bar {
+    width: 240px;
+    padding: 0px 0 16px 0;
+    .c7n-tabs-tab {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 0;
+      padding: 20px 20px 20px 20px;
+      border-bottom: solid 1px #f5f6fa;
+      // color: #000;
+      &:hover {
+        color: @primary-color;
+      }
+      .c7n-text-wrapper {
+        width: 100%;
+        .c7n-text {
+          width: 100%;
+        }
+      }
+    }
+    .c7n-tabs-tab-active {
+      font-weight: 600;
+    }
+  }
+
+  .c7n-tabs-content {
+    padding-left: 0;
+    height: 100%;
+    overflow: auto;
+    .c7n-tabs-tabpane {
+      padding: 16px;
+      height: 100%;
+    }
+  }
+}
+.fund-plan-forecast-tab {
+  .c7n-tabs-left {
+    .strategy-tabs-left(4px);
+  }
+  .c7n-collapse > .c7n-collapse-item:not(:last-child) {
+    padding-bottom: 0px;
+  }
+  .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+    height: 1px !important;
+  }
+  .c7n-tabs-left .c7n-tabs-content .c7n-tabs-tabpane {
+    padding: 0 !important;
+    .page-content-wrap {
+      background: #fff;
+      height: 100%;
+    }
+  }
+  .c7n-tabs-bar-inner {
+    flex-direction: column-reverse !important;
+  }
+  .c7n-tabs-vertical > .c7n-tabs-bar .c7n-tabs-extra-content {
+    text-align: left !important;
+  }
+  .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+    background: #e8e8e8;
+    height: 1px !important;
+  }
+  .c7n-tabs-tab-arrow-show {
+    display: none;
+  }
+  .c7n-tabs-nav-container-scrolling {
+    padding: 0 !important;
+  }
+}
+
+.sbsm-detail-wrapper-fund-plan-forecast-content {
+  height: 100%;
+  :global {
+    .page-content-wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .page-content {
+        height: 100% !important;
+      }
+    }
+    .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+      background: #e8e8e8;
+      height: 1px !important;
+    }
+  }
+}
+.sbsm-fund-plan-detail-header {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  .sbsm-fund-plan-detail {
+    display: flex;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 4px;
+    & > div {
+      min-width: 90px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .active-detail-key {
+      font-weight: 600;
+      background: #fff;
+      border-radius: 2px;
+    }
+  }
+}
+
+.sbsm-modal-warp {
+  .sbsm-detail-wrapper-fund-plan-forecast {
+    height: calc(100vh - 112px) !important;
+    margin: 0;
+  }
+  :global {
+    .c7n-pro-modal-drawer-body {
+      padding: 0 !important;
+    }
+    .style_sub-page-wrapper > div {
+      height: 100% !important;
+    }
+  }
+}
+
+.detail-tab-header {
+  .detail-tab-status {
+    display: flex;
+    justify-content: space-between;
+    :global {
+      .c7n-tag {
+        margin-right: 0;
+      }
+    }
+  }
+  .detail-tab-item-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .detail-tab-title {
+    margin-bottom: 4px;
+    // color: #000;
+    white-space: break-spaces;
+    margin-right: 4px;
+  }
+  .detail-tab-title-active {
+    color: @primary-color;
+  }
+  .detail-tab-document-num {
+    color: #606978;
+    font-weight: normal;
+  }
+}

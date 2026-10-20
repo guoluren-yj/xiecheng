@@ -1,0 +1,244 @@
+@import '~hzero-front/lib/srm-variables';
+
+// 泳道样式
+.supplier-content {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  .droppable-content {
+    flex-direction: column;
+    border-radius: 2px;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+  .droppable-section {
+    width: 274px;
+    min-width: 22em;
+    flex-direction: column;
+    display: flex;
+    padding: 12px 12px 0;
+    background-color: @fill-7;
+    user-select: none;
+    position: relative;
+  }
+  .droppable-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .droppable-top-title {
+    font-size: 14px;
+    color: @text-color;
+    max-width: 208px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  .droppable-top-title-count {
+    font-size: 14px;
+    color: @text-3;
+    font-weight: 600;
+  }
+  .droppable-middle {
+    overflow: auto;
+    height: calc(100vh - 412px);
+    padding: 8px;
+    margin: -8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &-no-supplier {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .droppable-middle::-webkit-scrollbar {
+    display: none;
+  }
+  .droppable-draggable {
+    padding: 12px 12px 4px;
+    margin: 0 0 8px 0;
+    position: relative;
+    border-radius: 4px;
+    background: #fff;
+    &:last-child {
+      margin: 0;
+    }
+    &:hover,
+    &:active,
+    &:visited {
+      box-shadow: 0 8px 16px 0 rgba(29, 33, 41, 0.03), 0 4px 8px 0 rgba(29, 33, 41, 0.05),
+        0 2px 4px 0 rgba(29, 33, 41, 0.1);
+      transition: box-shadow 0.3s ease-out;
+      .droppable-draggable-supplier-name {
+        color: @link-color;
+      }
+      .droppable-draggable-supplier-icon {
+        display: inline-block;
+      }
+    }
+  }
+  .droppable-draggable-supplier {
+    display: flex;
+    align-items: center;
+    &-name {
+      max-width: 156px;
+      overflow: hidden;
+      color: @text-color;
+      font-weight: 500;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &-icon {
+      display: none;
+      margin-left: 8px;
+      :global {
+        svg polygon {
+          fill: @link-color;
+        }
+      }
+    }
+    &-status {
+      margin-left: auto;
+      &-icon {
+        color: @fill-3;
+        font-size: 16px;
+      }
+    }
+  }
+  .droppable-draggable-link {
+    display: inline-block;
+    width: 100%;
+    color: #868d9c;
+    padding: 4px 0 8px;
+  }
+  .droppable-operation-link {
+    padding-top: 4px;
+    border-top: dashed 1px #e5e7ec;
+  }
+  .relegation-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    > span {
+      color: #4e5769;
+      margin-left: 4px;
+      max-width: 36px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .droppable-bottom {
+    .droppable-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin: 5px 0;
+      :global {
+        .c7n-pro-select {
+          height: 20px;
+          padding-right: 22px !important;
+          border: 1px solid rgb(217, 217, 217) !important;
+        }
+        .c7n-pro-pagination-page-info {
+          margin: 0 10px;
+        }
+        .icon {
+          font-size: 16px;
+        }
+        .c7n-pro-btn + .c7n-pro-btn:not(.c7n-pro-btn-block) {
+          width: 24px;
+          margin-left: 0;
+        }
+        .c7n-pro-btn-flat:not(.c7n-pro-btn-disabled):not(.c7n-pro-btn-loading) {
+          &:focus,
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 供应商tab隐藏分割线
+.list-tabs {
+  :global {
+    .c7n-tabs-bar-divider {
+      display: none;
+    }
+  }
+}
+
+.life-cycle-tab {
+  :global {
+    .c7n-pro-table-search-bar.c7n-pro-table-search-bar-expand {
+      .c7n-pro-table-search-bar-left {
+        .c7n-pro-table-search-bar-fields {
+          margin-top: 0;
+          .c7n-pro-table-search-bar-operator-custom-wrap {
+            .c7n-pro-select {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 平铺、聚合icon样式
+.search {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  float: right;
+  .view-wrap {
+    text-align: center;
+    line-height: 22px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px;
+    :global {
+      .icon {
+        font-size: 16px;
+      }
+    }
+  }
+  .view-wrap:first-child {
+    margin-left: 0;
+  }
+  .active {
+    border-radius: 2px;
+    background-color: @primary-1;
+    :global {
+      .icon {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.submit-modal {
+  :global {
+    .c7n-pro-confirm-content {
+      word-break: break-all;
+    }
+  }
+}
+
+.option-btn {
+  display: inline-block;
+  width: 84px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

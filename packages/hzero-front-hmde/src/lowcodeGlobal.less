@@ -1,0 +1,18 @@
+@import './lowcodeGlobalColor.less';
+@import './lowcodeGlobalStyles/button.less';
+@import './lowcodeGlobalStyles/input.less';
+@import './lowcodeGlobalStyles/table.less';
+@import './lowcodeGlobalStyles/main.less';
+@import './lowcodeGlobalStyles/switch.less';
+@import './lowcodeGlobalStyles/tab.less';
+
+:global {
+  .hmde,
+  .lowcode-m-modal {
+    :global {
+      .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header .c7n-collapse-expand-icon {
+        position: static; // 68版本开始，这个变成了absolute
+      }
+    }
+  }
+}

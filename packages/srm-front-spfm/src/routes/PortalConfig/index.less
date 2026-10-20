@@ -1,0 +1,171 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.portal-config-btn {
+  :global { 
+    .c7n-pro-upload {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.portal-config-content-hidden,
+.portal-config-content {
+  :global {
+    background-color: rgb(243, 244, 245);
+    padding: 0 0.06rem;
+    height: inherit !important;
+
+    .ant-card-loading {
+      height: 100%;
+    }
+
+    .ql-container.ql-snow {
+      border: none;
+      font-family: inherit;
+
+      .ql-editor {
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          cursor: pointer;
+
+          &:hover {
+            color: @primary-color;
+          }
+        }
+        &[contenteditable] a {
+          color: @primary-color !important;
+        }
+      }
+    }
+
+    .preview-layout {
+      overflow-x: hidden;
+      margin-top: -20px !important;
+
+      .react-grid-item {
+        cursor: inherit;
+
+        &.itemFooter,
+        &.itemNav {
+          width: calc(100vw) !important;
+          left: -12px;
+          top: -12px;
+          background: #f1f1f1;
+          // transform: translateX(0);
+
+          & > div {
+            background-color: initial;
+          }
+        }
+      }
+    }
+
+    .react-grid-layout {
+      max-width: 12.24rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .react-grid-item {
+      padding: 0.01rem;
+      overflow: hidden;
+      border: none;
+      cursor: move;
+
+      > .icon,
+      .react-resizable-handle {
+        opacity: 0;
+      }
+
+      .index-dragCard {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+
+      &.react-grid-placeholder {
+        background: @primary-color;
+        opacity: 0.2;
+      }
+
+      &.itemLogin .c7n-pro-field-wrapper {
+        padding: 0.04rem 0;
+      }
+
+      &:hover {
+        > .icon {
+          opacity: 1;
+          position: absolute;
+          top: 0.05rem;
+          cursor: pointer;
+          color: #fff;
+        }
+
+        > .settings-iconCard {
+          right: 0.25rem;
+        }
+
+        > .remove-iconCard {
+          right: 0.05rem;
+        }
+
+        .react-resizable-handle {
+          opacity: 1;
+        }
+
+        .index-dragCard {
+          background: rgba(0, 0, 0, 0.35);
+          border: 0.02rem dashed rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    .settings-iconCard,
+    .remove-iconCard,
+    .settings-iconCard,
+    .react-grid-item > .react-resizable-handle {
+      z-index: 100;
+    }
+
+    .c7n-spin-nested-loading,
+    .c7n-spin-container,
+    .react-grid-item > div:first-of-type {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+.portal-config-content-hidden :global {
+  overflow-y: hidden;
+}
+
+.copy-layout-modal :global {
+  .c7n-modal-title {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.layout-lov-content :global {
+  ul.c7n-pro-select-dropdown-menu {
+    max-height: 3.6rem;
+  }
+
+  li.c7n-pro-select-dropdown-menu-item-selected {
+    font-weight: 400 !important;
+    background-color: #fff !important;
+  }
+}

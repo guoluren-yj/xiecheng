@@ -1,0 +1,773 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/grid/demo/basic.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-12"
+    >
+      col-12
+    </div>
+    <div
+      class="c7n-col-12"
+    >
+      col-12
+    </div>
+  </div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-8"
+    >
+      col-8
+    </div>
+    <div
+      class="c7n-col-8"
+    >
+      col-8
+    </div>
+    <div
+      class="c7n-col-8"
+    >
+      col-8
+    </div>
+  </div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-6"
+    >
+      col-6
+    </div>
+    <div
+      class="c7n-col-6"
+    >
+      col-6
+    </div>
+    <div
+      class="c7n-col-6"
+    >
+      col-6
+    </div>
+    <div
+      class="c7n-col-6"
+    >
+      col-6
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/flex.md correctly 1`] = `
+<div>
+  <p>
+    sub-element align left
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-start"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+  </div>
+  <p>
+    sub-element align center
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-center"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+  </div>
+  <p>
+    sub-element align right
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-end"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+  </div>
+  <p>
+    sub-element monospaced arrangement
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-space-between"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+  </div>
+  <p>
+    sub-element align full
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-space-around"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      col-4
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/flex-align.md correctly 1`] = `
+<div>
+  <p>
+    Align Top
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-center c7n-row-flex-top"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-100"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-50"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-120"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-80"
+      >
+        col-4
+      </p>
+    </div>
+  </div>
+  <p>
+    Align Center
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-space-around c7n-row-flex-middle"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-100"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-50"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-120"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-80"
+      >
+        col-4
+      </p>
+    </div>
+  </div>
+  <p>
+    Align Bottom
+  </p>
+  <div
+    class="c7n-row-flex c7n-row-flex-space-between c7n-row-flex-bottom"
+  >
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-100"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-50"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-120"
+      >
+        col-4
+      </p>
+    </div>
+    <div
+      class="c7n-col-4"
+    >
+      <p
+        class="height-80"
+      >
+        col-4
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/flex-order.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-row-flex"
+  >
+    <div
+      class="c7n-col-6 c7n-col-order-4"
+    >
+      1 col-order-4
+    </div>
+    <div
+      class="c7n-col-6 c7n-col-order-3"
+    >
+      2 col-order-3
+    </div>
+    <div
+      class="c7n-col-6 c7n-col-order-2"
+    >
+      3 col-order-2
+    </div>
+    <div
+      class="c7n-col-6 c7n-col-order-1"
+    >
+      4 col-order-1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/gutter.md correctly 1`] = `
+<div
+  class="gutter-example"
+>
+  <div
+    class="c7n-row"
+    style="margin-left:-8px;margin-right:-8px"
+  >
+    <div
+      class="c7n-col-6 gutter-row"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="gutter-box"
+      >
+        col-6
+      </div>
+    </div>
+    <div
+      class="c7n-col-6 gutter-row"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="gutter-box"
+      >
+        col-6
+      </div>
+    </div>
+    <div
+      class="c7n-col-6 gutter-row"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="gutter-box"
+      >
+        col-6
+      </div>
+    </div>
+    <div
+      class="c7n-col-6 gutter-row"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div
+        class="gutter-box"
+      >
+        col-6
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/offset.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-8"
+    >
+      col-8
+    </div>
+    <div
+      class="c7n-col-8 c7n-col-offset-8"
+    >
+      col-8
+    </div>
+  </div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-6 c7n-col-offset-6"
+    >
+      col-6 col-offset-6
+    </div>
+    <div
+      class="c7n-col-6 c7n-col-offset-6"
+    >
+      col-6 col-offset-6
+    </div>
+  </div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-12 c7n-col-offset-6"
+    >
+      col-12 col-offset-6
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/playground.md correctly 1`] = `
+<div>
+  <div
+    style="margin-bottom:16px"
+  >
+    <span
+      style="margin-right:6px"
+    >
+      Gutter (px): 
+    </span>
+    <div
+      style="width:50%"
+    >
+      <div
+        class="c7n-slider c7n-slider-with-marks"
+      >
+        <div
+          class="c7n-slider-rail"
+        />
+        <div
+          class="c7n-slider-track"
+          style="left:0%;width:20%"
+        />
+        <div
+          class="c7n-slider-step"
+        >
+          <span
+            class="c7n-slider-dot c7n-slider-dot-active"
+            style="left:0%"
+          />
+          <span
+            class="c7n-slider-dot c7n-slider-dot-active"
+            style="left:20%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:40%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:60%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:80%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:100%"
+          />
+        </div>
+        <div
+          aria-disabled="false"
+          aria-valuemax="5"
+          aria-valuemin="0"
+          aria-valuenow="1"
+          class="c7n-slider-handle"
+          role="slider"
+          style="left:20%"
+          tabindex="0"
+        />
+        <div
+          class="c7n-slider-mark"
+        >
+          <span
+            class="c7n-slider-mark-text c7n-slider-mark-text-active"
+            style="width:18%;margin-left:-9%;left:0%"
+          >
+            8
+          </span>
+          <span
+            class="c7n-slider-mark-text c7n-slider-mark-text-active"
+            style="width:18%;margin-left:-9%;left:20%"
+          >
+            16
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:40%"
+          >
+            24
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:60%"
+          >
+            32
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:80%"
+          >
+            40
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:100%"
+          >
+            48
+          </span>
+        </div>
+      </div>
+    </div>
+    <span
+      style="margin-right:6px"
+    >
+      Column Count:
+    </span>
+    <div
+      style="width:50%"
+    >
+      <div
+        class="c7n-slider c7n-slider-with-marks"
+      >
+        <div
+          class="c7n-slider-rail"
+        />
+        <div
+          class="c7n-slider-track"
+          style="left:0%;width:40%"
+        />
+        <div
+          class="c7n-slider-step"
+        >
+          <span
+            class="c7n-slider-dot c7n-slider-dot-active"
+            style="left:0%"
+          />
+          <span
+            class="c7n-slider-dot c7n-slider-dot-active"
+            style="left:20%"
+          />
+          <span
+            class="c7n-slider-dot c7n-slider-dot-active"
+            style="left:40%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:60%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:80%"
+          />
+          <span
+            class="c7n-slider-dot"
+            style="left:100%"
+          />
+        </div>
+        <div
+          aria-disabled="false"
+          aria-valuemax="5"
+          aria-valuemin="0"
+          aria-valuenow="2"
+          class="c7n-slider-handle"
+          role="slider"
+          style="left:40%"
+          tabindex="0"
+        />
+        <div
+          class="c7n-slider-mark"
+        >
+          <span
+            class="c7n-slider-mark-text c7n-slider-mark-text-active"
+            style="width:18%;margin-left:-9%;left:0%"
+          >
+            2
+          </span>
+          <span
+            class="c7n-slider-mark-text c7n-slider-mark-text-active"
+            style="width:18%;margin-left:-9%;left:20%"
+          >
+            3
+          </span>
+          <span
+            class="c7n-slider-mark-text c7n-slider-mark-text-active"
+            style="width:18%;margin-left:-9%;left:40%"
+          >
+            4
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:60%"
+          >
+            6
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:80%"
+          >
+            8
+          </span>
+          <span
+            class="c7n-slider-mark-text"
+            style="width:18%;margin-left:-9%;left:100%"
+          >
+            12
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-row"
+    style="margin-left:-8px;margin-right:-8px"
+  >
+    <div
+      class="c7n-col-6"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div>
+        Column
+      </div>
+    </div>
+    <div
+      class="c7n-col-6"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div>
+        Column
+      </div>
+    </div>
+    <div
+      class="c7n-col-6"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div>
+        Column
+      </div>
+    </div>
+    <div
+      class="c7n-col-6"
+      style="padding-left:8px;padding-right:8px"
+    >
+      <div>
+        Column
+      </div>
+    </div>
+  </div>
+  <pre>
+    &lt;Row gutter={16}&gt;
+  &lt;Col span={6} /&gt;
+  &lt;Col span={6} /&gt;
+  &lt;Col span={6} /&gt;
+  &lt;Col span={6} /&gt;
+&lt;/Row&gt;
+  </pre>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/responsive.md correctly 1`] = `
+<div
+  class="c7n-row"
+>
+  <div
+    class="c7n-col-xs-2 c7n-col-sm-4 c7n-col-md-6 c7n-col-lg-8 c7n-col-xl-10"
+  >
+    Col
+  </div>
+  <div
+    class="c7n-col-xs-20 c7n-col-sm-16 c7n-col-md-12 c7n-col-lg-8 c7n-col-xl-4"
+  >
+    Col
+  </div>
+  <div
+    class="c7n-col-xs-2 c7n-col-sm-4 c7n-col-md-6 c7n-col-lg-8 c7n-col-xl-10"
+  >
+    Col
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/responsive-more.md correctly 1`] = `
+<div
+  class="c7n-row"
+>
+  <div
+    class="c7n-col-xs-5 c7n-col-xs-offset-1 c7n-col-lg-6 c7n-col-lg-offset-2"
+  >
+    Col
+  </div>
+  <div
+    class="c7n-col-xs-11 c7n-col-xs-offset-1 c7n-col-lg-6 c7n-col-lg-offset-2"
+  >
+    Col
+  </div>
+  <div
+    class="c7n-col-xs-5 c7n-col-xs-offset-1 c7n-col-lg-6 c7n-col-lg-offset-2"
+  >
+    Col
+  </div>
+</div>
+`;
+
+exports[`renders ./components/grid/demo/sort.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-row"
+  >
+    <div
+      class="c7n-col-18 c7n-col-push-6"
+    >
+      col-18 col-push-6
+    </div>
+    <div
+      class="c7n-col-6 c7n-col-pull-18"
+    >
+      col-6 col-pull-18
+    </div>
+  </div>
+</div>
+`;

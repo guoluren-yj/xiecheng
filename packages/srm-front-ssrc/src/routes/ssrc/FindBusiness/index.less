@@ -1,0 +1,285 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.page-content-wrap {
+  :global {
+    height: calc(100% - .48rem);
+    overflow: auto !important;
+    flex-grow: 1;
+  }
+}
+.business-page-content {
+  :global {
+    // .page-content 
+    // margin: 8px 16px 16px;
+    padding: 16px;
+    height: calc(100% - 32px);
+    background-color: #fff;
+    overflow: auto;
+
+    margin: .08rem;
+    // min-height: calc(100% - 16px);
+    height: auto !important;
+    // overflow: visible;
+
+
+    background-color: #f7f8fa;
+    position: relative;
+    // margin: 0;
+    padding: 0px;
+    // padding-bottom: 60px;
+    .total {
+      z-index: 1;
+      // top: 220px;
+      left: 30px;
+      top: 204px;
+      line-height: 32px;
+      position: absolute;
+      font-size: 12px;
+      color: #4e5769;
+      letter-spacing: 0;
+      font-weight: 400;
+      & .count {
+        color: #00b8cc;
+      }
+    }
+  }
+}
+
+// 筛选器表格
+.business-table-wrapper {
+  :global {
+    color: #000;
+
+    .c7n-pro-table-head {
+      display: none;
+    }
+
+    .c7n-pro-table-row:hover > .c7n-pro-table-cell {
+      background: #fff;
+    }
+
+    .c7n-pro-table-row
+      .c7n-pro-table-cell
+      .c7n-pro-table-cell-inner.c7n-pro-table-cell-inner-bordered {
+      border: none;
+    }
+
+    // .c7n-pro-table-row-current {
+    //   // background: #FFFFFF !important;
+    //   box-shadow: 0 0 5px 0 rgba(30, 58, 103, 0.12);
+    // }
+
+    // 筛选器
+    .c7n-pro-table-sibling:first-child {
+      height: 182px;
+      width: 100%;
+      margin-bottom: 8px;
+      background-image: url('../../../assets/find-business-bg.svg');
+
+      .c7n-pro-table-filter-bar-right {
+        position: absolute;
+        bottom: -72px;
+        right: 20px;
+        z-index: 1;
+      }
+
+      .c7n-pro-table-filter-bar-left .c7n-pro-table-filter-bar-fields {
+        margin-top: 0;
+
+        & > div {
+          width: 100%;
+
+          .c7n-divider,
+          .c7n-pro-table-filter-bar-add-field,
+          .c7n-pro-table-filter-bar-operator-icon {
+            display: none;
+          }
+
+          & > span:first-of-type {
+            margin-left: calc(50% - 440px);
+          }
+
+          & > span {
+            margin-top: 8px;
+          }
+
+          .c7n-pro-table-filter-bar-field-highlight,
+          .c7n-pro-table-filter-bar-field:focus-within,
+          .c7n-pro-table-filter-bar-field:hover {
+            background: none;
+          }
+
+          & > span > span {
+            font-size: 12px;
+            color: #4e5769;
+            line-height: 18px;
+            font-weight: 400;
+            &:hover {
+              background: none;
+            }
+          }
+
+          // 筛选器自定义渲染
+          .c7n-pro-table-filter-bar-operator-custom-wrap {
+            width: 100%;
+
+            .search-title {
+              margin: 20px 0;
+              font-size: 24px;
+              color: #1d2129;
+              letter-spacing: 0;
+              line-height: 34px;
+              font-weight: 600;
+              text-align: center;
+            }
+            .c7n-pro-input-wrapper {
+              margin-left: calc(50% - 440px);
+            }
+
+            // 搜索输入框
+            .c7n-pro-input-wrapper label input {
+              // width: 800px;
+              min-width: 50%;
+              height: 48px;
+              font-size: 14px;
+              // color: #c9cdd4;
+              font-weight: 400;
+            }
+
+            .c7n-pro-btn-wrapper {
+              height: 48px;
+              min-width: 80px;
+              max-width: 100px;
+              cursor: pointer;
+              background-color: @primary-color;
+              opacity: 1;
+              color: #fff;
+              font-size: 16px;
+              line-height: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    // 表格
+    .c7n-spin-nested-loading {
+      // margin-top: 60px;
+      padding-top: 60px;
+      background: #fff;
+      // padding-bottom: 16px;
+      // min-height: 450px;
+      min-height: calc(100vh - 334px - 80px);
+      & .c7n-pro-table {
+        border: none;
+      }
+      & .c7n-pro-table-content .c7n-pro-table-body {
+        height: auto !important;
+      }
+      & .c7n-pro-table-content .c7n-pro-table-body .c7n-pro-table-row .c7n-pro-table-cell {
+        border-bottom: none;
+        padding: 6px 20px;
+        &:first-of-type {
+          padding-top: 0;
+        }
+      }
+    }
+
+    // 分页器
+    .c7n-pro-table-sibling:last-child {
+      background: #fff;
+      position: -webkit-sticky;
+      position: sticky;
+      // bottom: 0.08rem;
+      bottom: 0;
+      right: 0;
+      .c7n-pro-pagination-wrapper {
+        margin: 0.16rem 0;
+        button.c7n-pro-btn-wrapper, span.c7n-pro-btn-wrapper {
+          width: 32px;
+          border-radius: 4px;
+          background-color: #fff;
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+          &.c7n-pro-btn-raised.c7n-pro-btn-primary {
+            color: #29BECE !important;
+            border: 1px solid #29BECE;
+          }
+        }
+
+        .c7n-pro-pagination-size-changer {
+          margin-left: 16px;
+          margin-right: 20px;
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+          margin-bottom: 4px;
+        }
+        .c7n-pro-select-wrapper label input {
+          min-width: 40px;
+        }
+      }
+    }
+  }
+}
+
+.empty-svg {
+  color: @primary-color;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto 0;
+  // width: 300px;
+  width: 295px;
+  height: 164px;
+  color: @text-2;
+  // img {
+  //   margin-bottom: 8px;
+  //   color: @primary-color;
+  // }
+  .empty-desc {
+    margin-top: 8px;
+  };
+}
+
+// 搜索框media适应
+@media screen {
+  .business-table-wrapper {
+    :global {
+      .c7n-pro-input-wrapper {
+        margin-left: calc(50% - 440px);
+      }
+      .c7n-pro-input-wrapper label input {
+        width: 800px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .business-table-wrapper {
+    :global {
+      .c7n-pro-input-wrapper {
+        margin-left: calc(50% - 330px);
+      }
+      .c7n-pro-input-wrapper label input {
+        width: 600px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .business-table-wrapper {
+    :global {
+      .c7n-pro-input-wrapper {
+        margin-left: calc(50% - 220px);
+      }
+      .c7n-pro-input-wrapper label input {
+        width: 400px !important;
+      }
+    }
+  }
+}

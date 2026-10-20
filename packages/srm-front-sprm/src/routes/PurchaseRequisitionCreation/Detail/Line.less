@@ -1,0 +1,38 @@
+/*
+ * Line - 行样式
+ * @date: 2019-01-25
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+  .delBtn {
+    margin-left: 8px;
+  }
+}

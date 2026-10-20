@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>三分斜线单元格</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-1200.000000, -282.000000)">
+            <g id="Dropdown备份-9" transform="translate(1184.000000, 239.000000)">
+                <g id="编组-25" transform="translate(16.000000, 13.000000)">
+                    <g id="编组-22备份" transform="translate(0.000000, 28.000000)">
+                        <g id="三分斜线单元格" transform="translate(0.000000, 2.000000)">
+                            <rect id="bg" opacity="0.0599999987" x="0" y="0" width="14" height="14"></rect>
+                            <g id="编组-73" transform="translate(1.000000, 1.266667)">
+                                <rect id="矩形" fill="#E2E4E8" fill-rule="nonzero" x="5.85507246" y="0.349275362" width="1.04782609" height="11.3514493"></rect>
+                                <rect id="矩形" stroke="#E2E4E8" stroke-width="1.2" x="0.266666667" y="0" width="12.05" height="12.05" rx="0.5"></rect>
+                                <polygon id="矩形" fill="#E2E4E8" fill-rule="nonzero" points="11.9673913 5.5884058 11.9673913 6.63623188 0.615942029 6.63623188 0.615942029 5.5884058"></polygon>
+                                <polygon id="矩形" fill="#464D5A" fill-rule="nonzero" transform="translate(8.418039, 5.997694) rotate(-315.000000) translate(-8.418039, -5.997694) " points="14.8176938 7.03223348 14.8176938 8.08005956 2.0183843 4.96315463 2.0183843 3.91532854"></polygon>
+                                <polygon id="矩形" fill="#464D5A" fill-rule="nonzero" transform="translate(6.105874, 8.105606) rotate(-315.000000) translate(-6.105874, -8.105606) " points="12.6499574 6.01467924 12.6499574 7.06250532 -0.438208951 10.1965332 -0.438208951 9.14870709"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 42</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="56" height="56" rx="4"></rect>
+    </defs>
+    <g id="门户二级页面-v225" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标补全" transform="translate(-40.000000, -163.000000)">
+            <g id="编组-41" transform="translate(40.000000, 163.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形备份-12" fill-opacity="0.1" fill="#00B8CC" xlink:href="#path-1"></use>
+                <circle id="椭圆形" fill-opacity="0.12" fill="#00B8CC" mask="url(#mask-2)" cx="11.9332096" cy="43.755102" r="27.8441558"></circle>
+                <circle id="椭圆形备份" fill-opacity="0.12" fill="#00B8CC" mask="url(#mask-2)" cx="63.6437848" cy="-7.9554731" r="27.8441558"></circle>
+                <path d="M16.9451577,11.7272727 L32.8561039,11.7272727 L40.811577,19.6827458 L40.811577,41.5602968 C40.811577,42.6587488 39.9211607,43.5491651 38.8227087,43.5491651 L16.9451577,43.5491651 C15.8467058,43.5491651 14.9562894,42.6587488 14.9562894,41.5602968 L14.9562894,13.716141 C14.9562894,12.6176891 15.8467058,11.7272727 16.9451577,11.7272727 Z" id="路径" fill="#00B8CC" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <path d="M32.8561039,11.7272727 L40.811577,19.6827458 L34.8449722,19.6827458 C33.7465202,19.6827458 32.8561039,18.7923295 32.8561039,17.6938776 L32.8561039,11.7272727 Z" id="路径" fill="#BCF8FF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                <g id="FILE" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(19.033489, 25.680986)" id="路径">
+                        <polygon points="1.519 4.20583333 1.519 6.615 0 6.615 0 0 4.32016667 0 4.32016667 1.421 1.519 1.421 1.519 2.78483333 4.12416667 2.78483333 4.12416667 4.20583333"></polygon>
+                        <polygon points="6.65583333 0 6.65583333 6.615 5.13683333 6.615 5.13683333 0"></polygon>
+                        <polygon points="9.22016667 0 9.22016667 5.243 12.1765 5.243 12.1765 6.615 7.70116667 6.615 7.70116667 0"></polygon>
+                        <polygon points="14.4468333 3.95266667 14.4468333 5.243 17.4113333 5.243 17.4113333 6.615 12.9278333 6.615 12.9278333 0 17.3133333 0 17.3133333 1.372 14.4468333 1.372 14.4468333 2.58066667 17.1581667 2.58066667 17.1581667 3.95266667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

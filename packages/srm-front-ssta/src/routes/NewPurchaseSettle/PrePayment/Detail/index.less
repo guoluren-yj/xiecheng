@@ -1,0 +1,67 @@
+@import '../../../common.less';
+:global {
+  :local(.settle-detail-tabs).c7n-tabs-vertical.c7n-tabs-left {
+    .ssta-content-margin({margin-right: 0;});
+
+    height: 100%;
+
+    > .c7n-tabs-bar {
+      padding: 16px 0;
+      background-color: #fff;
+      border-right: none;
+
+      .c7n-tabs-bar-inner {
+        flex-direction: column-reverse;
+        .c7n-tabs-nav-container {
+          padding: 16px 0 0 16px;
+        }
+      }
+
+      .c7n-tabs-ink-bar {
+        z-index: 100; // 会遮住固定金额卡片
+      }
+
+      .c7n-tabs-tab {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 4px;
+      }
+
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+    }
+
+    > .c7n-tabs-content {
+      padding-left: 0;
+      height: 100%;
+      overflow: auto;
+      border-left-style: none;
+      .ssta-detail-splite-content {
+        overflow: visible;
+        .amount-summary-notfix-content-wrapper {
+          .page-content {
+            margin-top: 0 !important;
+            margin-left: 8px;
+          }
+        }
+        .ssta-detail-collapse-content {
+          margin-left: 8px;
+          margin-bottom: 0;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.batch-modify-alert {
+  :global {
+    border: none;
+    color: #1890ff;
+    margin: -20px -20px 16px -20px;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,137 @@
+/*!
+    style - 寻源大厅-RFx明细
+    @author LC <chao.li03@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+
+.page-content {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-col-24 {
+      & .ant-col-22 {
+        width: 90.6%;
+      }
+      & .ant-col-2 {
+        width: 9.4%;
+      }
+      & .ant-col-3 {
+        width: 13.9%;
+      }
+      & .ant-col-21 {
+        width: 86.1%;
+      }
+      & .ant-col-offset-3 {
+        margin-left: 13.9%;
+      }
+    }
+  }
+}
+.col-wrapper {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+}
+
+/*!
+    style - 寻源大厅-RFx明细--基本信息
+    @author LC <chao.li03@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+.inquiry-hall-basic-info-form {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.monitorHeader {
+  :global {
+    .ant-collapse-header {
+      padding: 0 0 12px 40px !important;
+    }
+  }
+}
+
+.explainStyle {
+  :global {
+    .ant-form-explain {
+      margin-top: 0 !important;
+    }
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+}
+
+.disabledElementA {
+  :global {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.timeView {
+  .timeViewTitle {
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 16px;
+    height: 32px;
+    line-height: 32px;
+    background-color: rgba(204, 204, 204, 0.6);
+    margin-bottom: 8px;
+  }
+
+  .p-l-m {
+    padding-left: 16px;
+  }
+}
+
+.other-sections {
+  margin-top: 12px;
+  :global {
+    .select-section-switch {
+      display: flex;
+      .select-section-header {
+        margin-left: 16px;
+        margin-bottom: 4px;
+        .select-section-explain {
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+    .checkbox-grops {
+      width: 100%;
+    }
+    .checkbox-line {
+      height: 36px;
+      line-height: 36px;
+      color: #333;
+      margin-left: 12px;
+    }
+  }
+}

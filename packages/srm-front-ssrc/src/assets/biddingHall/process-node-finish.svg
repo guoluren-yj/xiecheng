@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 69</title>
+    <g id="923优化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-69">
+            <circle id="椭圆形" fill="#179454" cx="8" cy="8" r="8"></circle>
+            <g id="Icon/done" transform="translate(2, 2)">
+                <polygon id="icon" fill="#FFFFFF" points="4.83032996 7.55 2.46516517 5.18483521 1.5 6.15000038 4.83032975 9.48033014 11.0954949 3.21516497 10.13033 2.25"></polygon>
+                <rect id="done" x="0" y="0" width="12" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

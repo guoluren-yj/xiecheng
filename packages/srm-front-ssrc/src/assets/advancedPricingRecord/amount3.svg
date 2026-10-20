@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Amount</title>
+    <g id="报表" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="计算明细" transform="translate(-1374, -104)">
+            <g id="编组-18" transform="translate(370, 74)">
+                <g id="编组" transform="translate(1005, 31)">
+                    <rect id="矩形" stroke="#868D9C" stroke-width="1.66666667" x="0" y="2.5" width="15.8333333" height="10.8333333" rx="0.833333333"></rect>
+                    <rect id="矩形" stroke="#868D9C" stroke-width="1.66666667" x="8.33333333" y="5.41666667" width="7.5" height="4.58333333"></rect>
+                    <line x1="15.8333333" y1="4.58333333" x2="15.8333333" y2="10.8333333" id="路径" stroke="#868D9C" stroke-width="1.66666667"></line>
+                    <path d="M11.25,2.5 C11.25,0.416666667 9.79166667,0 9.16666667,0 C7.77779167,0 4.625,0 3.125,0 C1.625,0 1.25,1.19402917 1.25,1.79104167 L1.25,2.5" id="路径" stroke="#868D9C" stroke-width="1.66666667"></path>
+                    <circle id="椭圆形" fill="#868D9C" fill-rule="nonzero" cx="11.875" cy="7.70833333" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

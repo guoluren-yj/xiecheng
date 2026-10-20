@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/switch/demo/basic.md correctly 1`] = `
+<span
+  class="c7n-switch c7n-switch-checked"
+  tabindex="0"
+>
+  <span
+    class="c7n-switch-inner"
+  />
+</span>
+`;
+
+exports[`renders ./components/switch/demo/disabled.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-switch c7n-switch-checked c7n-switch-disabled"
+    tabindex="-1"
+  >
+    <span
+      class="c7n-switch-inner"
+    />
+  </span>
+  <br />
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Toggle disabled
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/switch/demo/loading.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-switch-loading c7n-switch c7n-switch-checked"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    />
+  </span>
+  <br />
+  <span
+    class="c7n-switch-small c7n-switch-loading c7n-switch"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    />
+  </span>
+</div>
+`;
+
+exports[`renders ./components/switch/demo/size.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-switch c7n-switch-checked"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    />
+  </span>
+  <br />
+  <span
+    class="c7n-switch-small c7n-switch c7n-switch-checked"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    />
+  </span>
+</div>
+`;
+
+exports[`renders ./components/switch/demo/text.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-switch c7n-switch-checked"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    >
+      开
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-switch"
+    tabindex="0"
+  >
+    <span
+      class="c7n-switch-inner"
+    >
+      0
+    </span>
+  </span>
+</div>
+`;

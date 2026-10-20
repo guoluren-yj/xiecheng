@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>新闻舆情</title>
+    <g id="v111" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="新闻舆情">
+            <polygon id="路径" points="0 0 48 0 48 48 0 48"></polygon>
+            <path d="M6,37 L6,10 C6,6.6862915 8.6862915,4 12,4 L40,4 C41.1045695,4 42,4.8954305 42,6 L42,42 C42,43.1045695 41.1045695,44 40,44 L13,44 C9.13400675,44 6,40.8659932 6,37 Z M38,40 L38,34 L13,34 C11.3431458,34 10,35.3431458 10,37 C10,38.6568542 11.3431458,40 13,40 L38,40 Z M20,8 L12,8 C10.8954305,8 10,8.8954305 10,10 L10,30.674 C10.9373807,30.2288759 11.9623025,29.9986101 13,30 L38,30 L38,8 L34,8 L34,24 L27,20 L20,24 L20,8 Z" id="形状" fill="#4E5769"></path>
+        </g>
+    </g>
+</svg>

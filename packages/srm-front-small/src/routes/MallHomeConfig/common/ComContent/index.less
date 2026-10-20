@@ -1,0 +1,36 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.mall-home-config-content {
+  margin-bottom: 32px;
+  :global {
+    .mall-home-config-com-title {
+      // font-family: PingFangSC-Medium, sans-serif;
+      font-size: 14px;
+      color: @text-color;
+      line-height: 24px;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+      }
+    }
+    .mall-home-config-com-desc {
+      color: @text-color-secondary;
+      margin-bottom: 16px;
+    }
+    .mall-home-config-com-content {
+      color: @text-color-secondary;
+      .c7n-pro-checkbox-label {
+        color: @text-color;
+      }
+    }
+  }
+}

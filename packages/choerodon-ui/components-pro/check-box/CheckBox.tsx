@@ -1,0 +1,213 @@
+import React, { ReactNode } from 'react';
+import { action, runInAction } from 'mobx';
+import { observer } from 'mobx-react';
+import { ShowHelp } from '../field/enum';
+import { Radio, RadioProps } from '../radio/Radio';
+import Icon from '../icon';
+import { hide, show } from '../tooltip/singleton';
+import { BooleanValue } from '../data-set/enum';
+import autobind from '../_util/autobind';
+
+export interface CheckBoxProps extends RadioProps {
+  /**
+   * 中间状态
+   */
+  indeterminate?: boolean;
+  /**
+   * 未选中时的值
+   */
+  unCheckedValue?: any;
+  /**
+   * 非选中时的内容
+   */
+  unCheckedChildren?: ReactNode;
+  defaultChecked?: boolean;
+}
+
+export class CheckBox<T extends CheckBoxProps> extends Radio<T & CheckBoxProps> {
+  static displayName = 'CheckBox';
+
+  /**
+   * tooltip disable sign
+   */
+  // eslint-disable-next-line camelcase
+  static __PRO_CHECKBOX = true;
+
+  // eslint-disable-next-line camelcase
+  static __IS_IN_CELL_EDITOR = true;
+
+  static defaultProps = {
+    ...Radio.defaultProps,
+    suffixCls: 'checkbox',
+    indeterminate: false,
+  };
+
+  type = 'checkbox';
+
+  get unCheckedValue() {
+    const { unCheckedValue } = this.props;
+    if (unCheckedValue !== undefined) {
+      return unCheckedValue;
+    }
+    const { field } = this;
+    if (field) {
+      return field.get(BooleanValue.falseValue);
+    }
+    return false;
+  }
+
+  get checkedValue() {
+    const { value } = this.props;
+    if (value !== undefined) {
+      return value;
+    }
+    const { field } = this;
+    if (field) {
+      return field.get(BooleanValue.trueValue);
+    }
+    return true;
+  }
+
+  constructor(props, context) {
+    super(props, context);
+    runInAction(() => {
+      this.value = this.props.defaultChecked ? this.checkedValue : this.unCheckedValue;
+    });
+  }
+
+  componentWillUnmount() {
+    super.componentWillUnmount();
+    if (this.showHelp === ShowHelp.tooltip) {
+      hide();
+    }
+  }
+
+  getOmitPropsKeys(): string[] {
+    return super.getOmitPropsKeys().concat([
+      'defaultChecked',
+      'unCheckedValue',
+      'unCheckedChildren',
+      'indeterminate',
+    ]);
+  }
+
+
+  @autobind
+  handleHelpMouseEnter(e) {
+    const { getTooltipTheme, getTooltipPlacement } = this.context;
+    show(e.currentTarget, {
+      title: this.getProp('help'),
+      popupClassName: `${this.getContextConfig('proPrefixCls')}-tooltip-popup-help`,
+      theme: getTooltipTheme('help'),
+      placement: getTooltipPlacement('help'),
+    });
+  }
+
+  handleHelpMouseLeave() {
+    hide();
+  }
+
+  renderTooltipHelp(): ReactNode {
+    const help = this.getProp('help');
+    if (help) {
+      return (
+        <Icon
+          type="help"
+          onMouseEnter={this.handleHelpMouseEnter}
+          onMouseLeave={this.handleHelpMouseLeave}
+        />
+      );
+    }
+  }
+
+  renderInner(): ReactNode {
+    return <i className={`${this.prefixCls}-inner`} />;
+  }
+
+  getChildrenText() {
+    const { children, unCheckedChildren } = this.props;
+    return this.isChecked() ? children : unCheckedChildren || children;
+  }
+
+  getWrapperClassNames(...args) {
+    const {
+      prefixCls,
+      props: { indeterminate },
+    } = this;
+    const help = this.getProp('help');
+    return super.getWrapperClassNames(
+      {
+        [`${prefixCls}-indeterminate`]: indeterminate,
+        [`${prefixCls}-label-help`]: !!help,
+      },
+      ...args,
+    );
+  }
+
+  isChecked() {
+    const { checked, indeterminate } = this.props;
+    if (indeterminate) {
+      return false;
+    }
+    const { name, dataSet, checkedValue } = this;
+    if (!this.isControlled && dataSet && name) {
+      return this.getValues().indexOf(checkedValue) !== -1;
+    }
+    if (checked !== undefined) {
+      return checked;
+    }
+    return this.value === checkedValue;
+  }
+
+  getDataSetValues(): any[] {
+    const values = this.getDataSetValue();
+    if (values === undefined) {
+      return [];
+    }
+    return [].concat(values);
+  }
+
+  @action
+  setValue(value: any, noVaidate?: boolean): void {
+    const { record, checkedValue, multiple } = this;
+    if (record) {
+      let values;
+      if (multiple) {
+        values = this.getValues();
+        if (value === checkedValue) {
+          values.push(value);
+        } else {
+          const index = values.indexOf(checkedValue);
+          if (index !== -1) {
+            values.splice(index, 1);
+          }
+        }
+      } else {
+        values = value;
+      }
+      super.setValue(values, noVaidate);
+    } else {
+      super.setValue(value, noVaidate);
+    }
+  }
+
+  @action
+  setChecked(checked) {
+    this.setValue(checked ? this.checkedValue : this.unCheckedValue);
+  }
+
+  getOldValue() {
+    return this.isChecked() ? this.checkedValue : this.unCheckedValue;
+  }
+}
+
+@observer
+export default class ObserverCheckBox extends CheckBox<CheckBoxProps> {
+  static defaultProps = CheckBox.defaultProps;
+
+  // eslint-disable-next-line camelcase
+  static __PRO_CHECKBOX = true;
+
+  // eslint-disable-next-line camelcase
+  static __IS_IN_CELL_EDITOR = true;
+}

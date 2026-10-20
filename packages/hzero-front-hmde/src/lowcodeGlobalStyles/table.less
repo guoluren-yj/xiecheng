@@ -1,0 +1,118 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  .hmde {
+    :global {
+      /////////////// table样式
+      // 复选框对其
+      .c7n-pro-checkbox-wrapper {
+        vertical-align: text-top;
+      }
+      // 左边复选框
+      // .c7n-pro-checkbox:focus:checked + .c7n-pro-checkbox-inner,
+      // .c7n-pro-checkbox:checked + .c7n-pro-checkbox-inner,
+      // .c7n-pro-checkbox-focus .c7n-pro-checkbox-inner {
+      //   background-color: @darkblue!important;
+      //   border-color: @darkblue;
+      // }
+
+      .c7n-pro-table-help-icon {
+        color: #29bece !important;
+      }
+
+      .c7n-pro-checkbox:disabled + .c7n-pro-checkbox-inner {
+        color: rgba(0, 0, 0, 0.25);
+        background-color: #f5f5f5 !important;
+        border-color: rgba(0, 0, 0, 0.25) !important;
+      }
+
+      // .c7n-pro-checkbox-indeterminate {
+      //   // 选择一半
+      //   .c7n-pro-checkbox-inner,
+      //   .c7n-pro-checkbox:hover + .c7n-pro-checkbox-inner {
+      //     background-color: @darkblue!important;
+      //     border-color: @darkblue;
+      //   }
+      // }
+
+      // .c7n-pro-checkbox:hover + .c7n-pro-checkbox-inner {
+      //   border-color: @darkblue;
+      // }
+
+      .c7n-pro-checkbox:focus + .c7n-pro-checkbox-inner {
+        box-shadow: 0 0 0 0.02rem rgba(1, 36, 146, 0.1);
+        // border-color: @darkblue;
+      }
+
+      // table行上颜色
+      // .c7n-pro-table-row-current.c7n-pro-table-row-highlight > td,
+      // .c7n-pro-table-row-highlight.c7n-pro-table-row:hover > td,
+      // .c7n-pro-table-row-hover > td {
+      //   background-color: @lightblue3 !important;
+      // }
+
+      // 左上角小箭头
+      // .c7n-pro-table-cell-dirty .c7n-pro-table-cell-inner::after {
+      //   border-top: 0.06rem solid @darkblue;
+      // }
+
+      // 设置表格边框
+      .c7n-pro-table-thead th,
+      .c7n-pro-table-tbody > tr > td {
+        border-left: 0 !important;
+      }
+
+      // 设置输入框距离表格的间距
+      .c7n-pro-table-cell,
+      .c7n-pro-table-cell-editable {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+      }
+
+      // table-style
+      // .c7n-pro-table {
+      //   height: 100%;
+      //   overflow: auto !important;
+      // }
+      .c7n-pro-table .c7n-pro-table-thead > tr > th {
+        font-size: 12px;
+        color: #aaadba;
+        background: #fafafa;
+        border-radius: 2px;
+      }
+      .c7n-pro-table-tbody {
+        .c7n-pro-table-row {
+          .c7n-pro-table-expand-icon:focus {
+            color: rgba(0, 0, 0, 0.85) !important;
+          }
+        }
+        .c7n-pro-table-row:hover {
+          background-color: rgba(41, 190, 206, 0.1) !important;
+        }
+
+        .c7n-pro-table-row-highlight.c7n-pro-table-row:hover {
+          > td {
+            background-color: rgba(41, 190, 206, 0.1) !important;
+          }
+        }
+
+        .c7n-pro-table-row-current.c7n-pro-table-row-highlight {
+          > td {
+            background-color: rgba(41, 190, 206, 0.1) !important;
+          }
+        }
+      }
+      .c7n-pro-table-tbody > tr > td {
+        font-size: 12px;
+        color: #5a6677 !important;
+      }
+
+      // .c7n-pro-table-toolbar {
+      //   .c7n-pro-table-toolbar-button-group {
+      //     display: flex;
+      //     justify-content: flex-end;
+      //   }
+      // }
+    }
+  }
+}

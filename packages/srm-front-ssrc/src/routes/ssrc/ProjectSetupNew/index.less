@@ -1,0 +1,455 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.projectHall {
+  :global {
+    .c7n-pro-table-cell-command + .c7n-pro-table-cell-command {
+      margin-left: 0;
+    }
+  }
+
+  .bargeContainer {
+    :global {
+      .c7n-badge {
+        position: static;
+      }
+      .onGoing-badge {
+        position: static;
+        display: inline;
+        .c7n-badge-count {
+          background-color: #f56349;
+          transform: scale(0.9);
+          top: 0;
+          padding: 0 0.04rem;
+          position: absolute;
+          height: 0.18rem;
+          min-width: 0.18rem;
+          line-height: 0.18rem;
+          right: -0.28rem;
+        }
+      }
+    }
+  }
+
+  .filter-container {
+    :global {
+      .search {
+        display: flex;
+        align-items: center;
+        // margin: 0 0 16px 0;
+        float: right;
+        .change-table {
+          text-align: center;
+          // line-height: 22px;
+          width: 24px;
+          height: 30px;
+          line-height: 30px;
+          margin-right: 8px;
+        }
+
+        svg {
+          fill: red;
+        }
+
+        .disabled {
+          font-size: 16px;
+        }
+
+        .primaryColor {
+          font-size: 16px;
+          color: @primary-color;
+        }
+
+        .active {
+          text-align: center;
+          line-height: 24px;
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+          background-color: rgba(0, 0, 0, 0.08);
+          .icon {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+    .customize-search-wrapper {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+
+      .left-search-wrapper {
+        margin-right: 8px;
+      }
+
+      .divider-wrapper {
+        :global {
+          .c7n-divider-vertical {
+            width: 1px;
+            height: 16px;
+            margin: 0 16px 0 12px;
+          }
+        }
+      }
+
+      .right-layout-wrapper {
+        display: flex;
+
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 22px;
+          height: 22px;
+          cursor: pointer;
+
+          i {
+            font-size: 15px;
+          }
+
+          &:enabled,
+          &:focus {
+            background-color: rgba(0, 0, 0, 0.08);
+            box-shadow: none;
+            color: @primary-color;
+          }
+          &-clicked {
+            background-color: rgba(0, 0, 0, 0.08);
+            box-shadow: none;
+            color: @primary-color;
+          }
+        }
+        .icon-container + .icon-container {
+          margin-left: 15px;
+        }
+      }
+      .img-container:first-child {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .wide-layout {
+    :global {
+      // tbody tr td {
+      //   > span {
+      //     height: unset !important;
+      //   }
+      // }
+
+      tbody {
+        .c7n-pro-table-cell {
+          vertical-align: top;
+        }
+        .c7n-pro-table-selection-column {
+          vertical-align: top;
+          > span {
+            line-height: 0 !important;
+          }
+        }
+        .c7n-pro-table-cell-inner {
+          height: unset !important;
+          padding: 8px !important;
+        }
+      }
+      .c7n-pro-table-cell-inner {
+        line-height: normal;
+        // max-height: 108px;
+        // height: 90px;
+        overflow: hidden;
+        text-overflow: unset;
+        padding: 8px;
+        div {
+          height: 18px;
+          line-height: 18px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          border: none;
+        }
+        .c7n-tag-blue {
+          color: #2192ee;
+          font-weight: bold;
+          border: none;
+          background-color: #eaf4fc;
+        }
+      }
+    }
+  }
+
+  .flat-layout {
+    :global {
+      tbody {
+        .c7n-pro-table-cell-inner {
+          height: unset !important;
+        }
+      }
+    }
+  }
+
+  .rate-container {
+    :global {
+      .c7n-rate-star-zero {
+        .icon-star_border {
+          color: #bfbfbf;
+        }
+      }
+      .c7n-rate-star {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .collapse-sub-title-wapper {
+    display: inline-block;
+  }
+
+  .sub-title-collapse-title {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .sub-title-icon {
+    margin-left: 16px;
+  }
+
+  .ssrc-collapse-panel-wrap {
+    :global {
+      .c7n-collapse-header {
+        display: flex;
+      }
+    }
+  }
+
+  .sub-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    span:first-child {
+      display: inline-block;
+      height: 2px;
+      width: 10px;
+      background-color: red;
+      margin-right: 5px;
+    }
+    span + span {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .approving {
+    margin-top: 16px;
+    .sub-title;
+  }
+
+  .bidding-info-container {
+    line-height: 20px;
+    span {
+      color: #000;
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    span + span {
+      padding-left: 2px;
+    }
+    .section-name {
+      width: 30%;
+      color: #747474;
+    }
+    .supplier-name {
+      width: 50%;
+    }
+    .amount {
+      width: 30%;
+    }
+  }
+
+  .no-bindding {
+    display: flex;
+    .supplier-name {
+      flex: 1;
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .amount {
+      display: inline-block;
+    }
+  }
+
+  .more {
+    display: flex;
+    align-items: center;
+  }
+
+  .morePopover {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// 更多操作下拉框中的字体样式
+.dropdown-more-operate {
+  a {
+    color: rgba(0, 0, 0, 1);
+  }
+  :global {
+    .c7n-pro-btn {
+      color: @text-color;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}
+// 头部按钮样式
+.header-btn {
+  font-weight: 600;
+  span {
+    font-weight: 600 !important;
+    color: #000;
+  }
+}
+
+.mainBtn {
+  margin-right: 16px;
+  a {
+    i {
+      padding-bottom: 3px;
+    }
+  }
+}
+
+.createRfx {
+  color: @primary-color;
+}
+
+.menu {
+  max-height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &::-o-scrollbar {
+    width: 0;
+  }
+
+  &::-moz-scrollbar {
+    width: 0;
+  }
+
+  // 兼容IE
+  -ms-scroll-chaining: chained;
+  -ms-overflow-style: none;
+  -ms-content-zooming: zoom;
+  -ms-scroll-rails: none;
+  -ms-content-zoom-limit-min: 100%;
+  -ms-content-zoom-limit-max: 500%;
+  -ms-scroll-snap-type: proximity;
+  -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+}
+
+// 列表菜单按钮操作颜色
+.subMenuOperateColor {
+  :global {
+    .c7n-menu-item,
+    .c7n-menu-item .c7n-pro-btn {
+      color: @text-color;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.bargeContainer {
+  :global {
+    .c7n-badge {
+      display: none;
+    }
+  }
+}
+
+.operate-column {
+  vertical-align: baseline !important;
+}
+
+.steps {
+  :global {
+    .c7n-steps-item-custom.c7n-steps-item-process .c7n-steps-item-icon {
+      color: #333;
+    }
+
+    .c7n-steps-item-finish {
+      .c7n-steps-item-title {
+        color: #5cae2a;
+      }
+    }
+
+    .icon-check_circle {
+      color: #5cae2a;
+    }
+
+    .icon-brightness_1 {
+      color: #ebebeb;
+    }
+
+    .c7n-steps-item-custom {
+      height: 38px;
+      .c7n-steps-item-tail {
+        left: 7px;
+        padding: 24px 0 10px;
+
+        &::after {
+          height: 300%;
+        }
+      }
+    }
+    .c7n-steps-item-icon {
+      margin-top: -2px;
+    }
+  }
+}
+
+.refuse {
+  :global {
+    .c7n-steps-item-title {
+      color: #f5222d !important;
+    }
+  }
+}
+.approvalPending {
+  :global {
+    .c7n-steps-item-title {
+      color: #000 !important;
+    }
+  }
+}
+
+.approvalInfo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.row-agent-column-icon {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+
+  :hover {
+    cursor: pointer;
+  }
+}

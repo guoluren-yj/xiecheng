@@ -1,0 +1,189 @@
+.occupied-or-applied-modal-content {
+  padding-bottom: 0.36rem;
+  &-table {
+    :global {
+      .c7n-pro-table-dynamic-filter-bar-suffix {
+        grid-gap: 0.08rem;
+        gap: 0.08rem;
+        margin-left: 0.1rem;
+        flex-grow: 1;
+        text-align: right;
+      }
+    }
+  }
+  .occupied-or-applied-detail-alert {
+    height: 36px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-radius: 2px;
+    margin-bottom: 16px;
+    &-message {
+      margin-left: 16px;
+      font-size: 12px;
+      line-height: 36px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  .occupied-or-applied-detail-formula {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      display: inline-block;
+      min-width: 232px;
+      height: 78px;
+      background: #fff;
+      border: 1px solid rgba(242, 242, 242, 1);
+      border-radius: 2px;
+      justify-content: space-between;
+      overflow: hidden;
+      cursor: pointer;
+      :global {
+        .formula-item-wrapper {
+          display: flex;
+          justify-content: space-between;
+          .formula-item-right {
+            height: 46px;
+            display: inline-block;
+            margin: 16px 10px 16px 16px;
+            &-title {
+              font-size: 12px;
+              color: rgba(0, 0, 0, 0.65);
+              line-height: 18px;
+              font-weight: 400;
+              margin-bottom: 4px;
+            }
+            &-mount {
+              display: inline-block;
+              font-size: 16px;
+              color: #000;
+              line-height: 24px;
+              font-weight: 600;
+              max-width: 130px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .formula-item-left {
+            position: relative;
+            text-align: right;
+            margin-top: 16px;
+            margin-right: 10px;
+            width: 60px;
+            &-img {
+              width: 80px;
+              height: 80px;
+              position: absolute;
+              top: 8px;
+              left: -10px;
+            }
+            &-detail {
+              height: 18px;
+              font-size: 12px;
+              color: #29bece;
+              text-align: right;
+              line-height: 18px;
+              font-weight: 400;
+              & > i {
+                margin-top: -2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-item-select {
+      border: 2px solid rgba(41, 190, 206, 1) !important;
+    }
+
+    &-item-disabled {
+      cursor: auto !important;
+      border: 1px solid rgba(242, 242, 242, 1) !important;
+    }
+
+    &-symbol {
+      font-size: 26px;
+      line-height: 78px;
+    }
+  }
+}
+
+.occupied-or-applied-detail-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -20px;
+  border-top: 0.01rem solid #e0e0e0;
+  flex-shrink: 0;
+  padding: 0.12rem 0.24rem;
+  text-align: left;
+  border-radius: 0 0 2px 2px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.occupied-or-applied-source-select {
+  width: 120px !important;
+  height: 28px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  :global {
+    .c7n-pro-select {
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      width: 120px !important;
+      height: 28px !important;
+      color: #000;
+    }
+  }
+}
+
+.occupied-or-applied-aggregation-view {
+  width: 100%;
+  white-space: normal;
+  &-control {
+    display: inline-block;
+    line-height: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    i {
+      vertical-align: sub;
+      font-size: 16px;
+      margin-left: 4px;
+      margin-right: 8px;
+    }
+    // &:hover {
+    //   .occupied-or-applied-aggregation-view-expand {
+    //     display: none;
+    //   }
+    // }
+  }
+  &-expand {
+    display: inline-block;
+  }
+}
+
+.occupied-or-applied-aggregation-view-menu {
+  max-width: 240px;
+  max-height: 400px;
+  overflow: auto;
+  background: white;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 2px 1px -2px rgb(0 0 0 / 20%);
+  &-item {
+    width: 100%;
+    height: 32px !important;
+    display: flex;
+    align-items: center;
+    padding: 0 10px !important;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    color: #000 !important;
+  }
+}

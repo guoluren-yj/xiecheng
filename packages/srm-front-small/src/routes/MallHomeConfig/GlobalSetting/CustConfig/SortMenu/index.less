@@ -1,0 +1,65 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.sort-search-content {
+  :global {
+    .hidden-area-line {
+      position: relative;
+      width: 100%;
+      border-top: 1px dashed rgba(0, 0, 0, 0.16);
+      margin-bottom: 26px;
+      margin-top: 8px;
+      span {
+        display: inline-block;
+        position: absolute;
+        left: 24px;
+        left: 12px;
+        padding: 0 12px;
+        color: rgba(0, 0, 0, 0.25);
+        top: -9px;
+        background-color: #fff;
+      }
+    }
+    .sort-search-content-item {
+      width: 213px;
+      // margin-bottom: 16px;
+      margin-right: 16px;
+      background-color: #fff;
+      display: flex;
+      .sort-search-content-item-icon i {
+        color: @text-color-secondary;
+      }
+      .sort-search-content-item-icon-disabled i {
+        color: @table-border-color;
+      }
+      &-icon {
+        display: inline-block;
+        margin-right: 8px;
+        line-height: 32px;
+      }
+      &-name {
+        cursor: pointer;
+        flex: 1;
+        height: 32px;
+        line-height: 30px;
+        border: 1px solid rgba(204, 204, 204, 1);
+        padding: 0 12px;
+        color: #000;
+        &-icon {
+          font-size: 14px;
+          color: @primary-color;
+          line-height: 28px;
+          vertical-align: top;
+          margin-right: 8px;
+          &.empty-icon {
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 30px;
+          }
+        }
+      }
+      &-name.active {
+        line-height: 28px;
+        border: 2px solid @primary-color;
+      }
+    }
+  }
+}

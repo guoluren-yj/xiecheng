@@ -1,0 +1,343 @@
+@import '~hzero-front/lib/srm-variables';
+
+.action-links {
+  :global {
+    a:not(:first-child),
+    .c7n-pro-btn-link:not(:first-child) {
+      margin: 0 0 0 8px;
+    }
+  }
+}
+
+// 模板详情
+.template-config-detail {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  // 头折叠框
+  :global {
+    .c7n-collapse {
+      .c7n-collapse-item {
+        border-bottom: 0;
+        padding: 20px;
+        .c7n-collapse-header {
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0;
+        }
+        .c7n-collapse-content {
+          padding: 0;
+          .c7n-collapse-content-box {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+      .c7n-collapse-item-active {
+        .c7n-collapse-header {
+          padding-bottom: 16px !important;
+        }
+      }
+    }
+  }
+
+  // 模板详情下边卡片
+  .template-config-line {
+    padding: 0;
+    margin: 8px 0 0 0 !important;
+    // height: calc(95vh - 282px) !important;
+    overflow: auto;
+    .template-config-line-title {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 20px 16px 20px;
+      border-bottom: 1px solid #e8e8e8;
+      border-radius: 2px 2px 0 0;
+    }
+    :global {
+      .c7n-tabs.c7n-tabs-left > .c7n-tabs-content {
+        padding-left: 20px !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// 调查表模板详情-页签名称
+.template-tabs-config-name {
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 500;
+}
+
+// 历史版本-覆盖原左边间距样式
+.investigate-history-version {
+  .template-tabs-config-detail > div:first-child {
+    width: 180px;
+    :global {
+      .c7n-tabs-nav-container {
+        .c7n-tabs-nav {
+          .c7n-tabs-tab {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .investigate-history-right {
+    margin-top: -16px;
+    :global {
+      .c7n-tabs.c7n-tabs-left > .c7n-tabs-content {
+        padding-left: 20px !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// 调查表模板tab页详情-左边导航tab
+.template-tabs-config-detail > div:first-child {
+  max-height: calc(100vh - 168px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-width: 180px;
+  max-width: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  :global {
+    .c7n-tabs-nav-container {
+      .c7n-tabs-nav {
+        .c7n-tabs-tab {
+          // height: 42px;
+          // margin-bottom: 16px;
+          text-align: left !important;
+          padding-left: 20px;
+          padding-right: 20px;
+          & > div:first-child {
+            justify-content: space-between;
+          }
+        }
+        .c7n-tabs-tab.c7n-tabs-tab-active {
+          .c7n-text {
+            div {
+              font-weight: 600 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 调查表模板tab页详情-右边内容部分
+.template-tabs-config-detail {
+  padding-right: 20px;
+  .tab-content {
+    :global {
+      .c7n-pro-form {
+        // margin-top: 16px;
+        margin-bottom: 16px;
+        .c7n-pro-switch-wrapper {
+          padding-top: 5px;
+        }
+      }
+    }
+    .link-dot {
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.company-modal-content {
+  height: 100%;
+
+  :global {
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+
+  .company-modal-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 3rem;
+    height: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background: #fbfbfc;
+    border-left: 0.01rem solid #e0e0e0;
+    overflow: scroll;
+
+    .right-item-title {
+      height: 0.18rem;
+      margin-bottom: 0.1rem;
+      padding-right: 0.2rem;
+      padding-left: 0.2rem;
+      color: #868d9c;
+      font-size: 0.12rem;
+      line-height: 0.18rem;
+    }
+
+    .right-item {
+      height: 0.38rem;
+      padding-right: 0.2rem;
+      padding-left: 0.2rem;
+      font-size: 0.14rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      :global {
+        .icon-cancel {
+          width: 0.16rem;
+          color: rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .company-modal-table {
+    width: calc(100% - 3rem);
+    padding: 20px;
+    .company-modal-table-title {
+      font-size: 16px;
+      color: #000;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+}
+
+.c7n-form-field-height {
+  height: 0.28rem;
+  label {
+    height: 100%;
+  }
+  label > input {
+    height: 100% !important;
+  }
+}
+
+.investigate-tempt-create-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.investigte-reference-icon {
+  position: relative;
+  top: 2px;
+  margin-right: 0.05rem;
+}
+// 引用其他模板
+.reference-template-table {
+  :global {
+    .c7n-pro-table-search-bar-expand {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.template-tabs-enable-switch {
+  :global {
+    .c7n-pro-field-label label {
+      padding: 0;
+      color: @text-1;
+      // > span {
+      //   line-height: 24px;
+      // }
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 0 0 8px !important;
+    }
+  }
+}
+
+// 附件tab需要覆盖外层tab的样式
+.template-tabs-attachment {
+  :global {
+    .c7n-tabs-content {
+      padding: 0 !important;
+    }
+  }
+}
+// 列表分配公司
+.template-menus {
+  :global {
+    span {
+      color: #1d2129 !important;
+    }
+  }
+}
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+.history-version-submenu {
+  :global {
+    .c7n-menu-submenu-title {
+      width: 140px;
+      .icon-keyboard_arrow_right {
+        right: initial;
+        margin-left: 8px;
+      }
+    }
+    .c7n-menu.c7n-menu-sub.c7n-menu-vertical {
+      max-height: 400px;
+      overflow-y: auto;
+      .c7n-menu-item {
+        height: auto;
+        line-height: normal;
+        padding: 8px 16px;
+      }
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}

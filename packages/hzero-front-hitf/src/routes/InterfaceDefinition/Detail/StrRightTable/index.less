@@ -1,0 +1,26 @@
+// 表格
+.params-table {
+  padding: 20px;
+  width: calc(100% - 320px);
+  overflow: auto;
+  flex: 0 1 calc(100% - 320px);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  .link-span {
+    cursor: pointer;
+    color: @primary-color;
+  }
+}
+
+// 条件引擎
+.rule-content {
+  margin-top: -0.2rem;
+  :global {
+    .expression-engine-title {
+      opacity: 0;
+      margin-top: -0.1rem;
+    }
+    .expression-engine-buttons {
+      display: none;
+    }
+  }
+}

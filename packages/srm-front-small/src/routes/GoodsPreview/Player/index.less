@@ -1,0 +1,38 @@
+.img-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  :global {
+    .video-react {
+      padding-top: 0 !important;
+    }
+    .video-react.video-react-fluid {
+      height: 100%;
+      position: relative;
+      .video-react-big-play-button {
+        position: absolute;
+        left: 42%;
+        top: 42%;
+        width: 16%;
+        height: 16%;
+        border-radius: 50%;
+      }
+      .video-react-control-bar {
+        .react-volume-menu-button {
+          display: none;
+        }
+        .video-react-progress-control {
+          display: none;
+        }
+        .video-react-time-control {
+          padding: 0;
+        }
+        .video-react-icon-fullscreen {
+          flex: 1;
+          text-align-last: end;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+}

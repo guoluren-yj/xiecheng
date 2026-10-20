@@ -1,0 +1,32 @@
+.ssrc-application-scope-container {
+  height: 100%;
+
+  :global {
+    .c7n-tabs {
+      height: 100%;
+
+      &.c7n-tabs-left {
+        .c7n-tabs-bar {
+          padding-top: 20px;
+          width: 160px;
+
+          .c7n-tabs-tab {
+            text-align: left;
+          }
+        }
+      }
+
+      .c7n-tabs-content {
+        padding: 20px;
+        height: 100%;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .hidden-container {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}

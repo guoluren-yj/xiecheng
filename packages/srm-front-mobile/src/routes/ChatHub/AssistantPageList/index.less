@@ -1,0 +1,32 @@
+.assistant-page-list {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+
+  .hide {
+    z-index: 4;
+  }
+
+  :global {
+    .c7n-spin-spinning {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: 7;
+    }
+
+    iframe {
+      position: absolute;
+      border: none;
+      z-index: 6;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/*
+ * index.less - 采购申请创建详情样式
+ * @date: 2019-03-20
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.purchase-requisition-creation-detail {
+  :global {
+    .line {
+      .ant-collapse-content-box {
+        padding: 16px 0;
+      }
+    }
+  }
+}
+
+.invoice-address {
+  :global {
+    .ant-form-item-control.has-error.ant-form-item-required
+      .lov-suffix:hover
+      .ant-input-suffix
+      > .lov-clear {
+      display: none;
+    }
+    .ant-form-item-required .lov-suffix:hover .ant-input-suffix {
+      background-color: #fffbdf;
+    }
+  }
+}
+
+.lov {
+  width: 100%;
+}

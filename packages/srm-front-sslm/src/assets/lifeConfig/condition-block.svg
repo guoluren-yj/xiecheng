@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 8 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/swap_horiz</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4、维护明细-流程设置-节点设置-判断条件" transform="translate(-941.000000, -414.000000)">
+            <g id="单据/off备份" transform="translate(925.000000, 405.000000)">
+                <g id="Icon/swap_horiz" transform="translate(12.000000, 8.500000)">
+                    <polygon id="icon" fill="#1984F7" points="4.66666667 1.33333333 4.66666667 8.66666667 6.66666667 8.66666667 6.66666667 14.6666667 11.3333333 6.66666667 8.66666667 6.66666667 11.3333333 1.33333333"></polygon>
+                    <polygon id="flash_on" points="0 0 16 0 16 16 0 16"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

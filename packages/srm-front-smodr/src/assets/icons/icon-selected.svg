@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-selected</title>
+    <g id="售后管理(供)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="售后管理-快速通过-有默认地址时" transform="translate(-1092, -129)">
+            <g id="Modal/Draw/Basic/Small" transform="translate(1060, 0)">
+                <g id="编组-4" transform="translate(20, 115)">
+                    <g id="编组-6" transform="translate(12, 12)">
+                        <g id="icon-selected" transform="translate(0, 2)">
+                            <rect id="矩形" x="0" y="0" width="18" height="18"></rect>
+                            <path d="M9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 Z M9,5.25 C7.13603897,5.25 5.625,6.76103897 5.625,8.625 C5.625,9.86764069 6.75,11.4926407 9,13.5 C11.25,11.4926407 12.375,9.86764069 12.375,8.625 C12.375,6.76103897 10.863961,5.25 9,5.25 Z M9,7.125 C9.82842712,7.125 10.5,7.79657288 10.5,8.625 C10.5,9.45342712 9.82842712,10.125 9,10.125 C8.17157288,10.125 7.5,9.45342712 7.5,8.625 C7.5,7.79657288 8.17157288,7.125 9,7.125 Z" id="形状结合" fill="currentColor"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

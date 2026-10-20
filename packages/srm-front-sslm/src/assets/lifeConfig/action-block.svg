@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/swap_horiz</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/swap_horiz" transform="translate(-2.000000, -3.000000)">
+            <path d="M4.66,7.33333333 L2,10 L4.66,12.6666667 L4.66,10.6666667 L9.33333333,10.6666667 L9.33333333,9.33333333 L4.66,9.33333333 L4.66,7.33333333 Z M14,6 L11.34,3.33333333 L11.34,5.33333333 L6.66666667,5.33333333 L6.66666667,6.66666667 L11.34,6.66666667 L11.34,8.66666667 L14,6 Z" id="icon" fill="#3E4EB3"></path>
+            <rect id="swap_horiz" x="0" y="0" width="16" height="16"></rect>
+        </g>
+    </g>
+</svg>

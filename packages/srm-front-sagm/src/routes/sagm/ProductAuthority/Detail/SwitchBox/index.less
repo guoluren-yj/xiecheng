@@ -1,0 +1,51 @@
+@import '~hzero-front/lib/srm-variables.less';
+.switch-box-container {
+  display: flex;
+  :global {
+    .switch-box-option {
+      min-width: 100px;
+      height: 32px;
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px 26px;
+      position: relative;
+      margin-right: 16px;
+      cursor: pointer;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      .switch-box-option-text {
+        font-weight: 500;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        color: #000;
+      }
+    }
+    .switch-box-option-disabled {
+      cursor: not-allowed;
+    }
+    .switch-box-option-selected {
+      border: 2px solid @primary-color;
+      .switch-box-option-check {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 16px solid @primary-color;
+        border-left: 16px solid transparent;
+      }
+      i {
+        color: #fff;
+        position: absolute;
+        bottom: -2px;
+        right: -1px;
+        font-size: 12px;
+      }
+    }
+  }
+}

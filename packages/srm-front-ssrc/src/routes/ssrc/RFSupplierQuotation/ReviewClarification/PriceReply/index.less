@@ -1,0 +1,39 @@
+@zero: 0;
+
+.ssrc-price-clarification-form {
+  width: 75%;
+  max-width: 576px;
+  padding-left: @zero;
+
+  :global {
+    .c7n-pro-form-float-label {
+      margin-left: @zero; // override ui
+    }
+
+    .c7n-pro-form {
+      :global {
+        .c7n-pro-field-wrapper {
+          padding-right: 16px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+.ssrc-supplier-quote-table {
+  :global {
+    .c7n-collapse-item {
+      // border-bottom: none;
+
+      .c7n-collapse-header {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.ssrc-table-pagination {
+  text-align: right;
+  margin-top: 16px;
+}

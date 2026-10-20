@@ -1,0 +1,87 @@
+.field-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  :global {
+    .c7n-spin-nested-loading {
+      flex: 1;
+      overflow: hidden;
+    }
+    .c7n-spin-container {
+      overflow: hidden;
+      height: 100%;
+    }
+  }
+  .c7n-row,
+  .col-8,
+  .col-16 {
+    height: 100%;
+  }
+  .col-8 {
+    & > div {
+      width: fit-content;
+    }
+  }
+  // chrome & safari 浏览器
+  // 滚动条整体部分,必须要设置
+  .col-8::-webkit-scrollbar {
+    width: 6px;
+  }
+  // 滚动条的滑块按钮
+  .col-8::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(108, 108, 108, 0.3);
+  }
+  // 滚动条的上下两端的按钮
+  .col-8::-webkit-scrollbar-button {
+    height: 0;
+  }
+
+  //  chrome & safari 浏览器
+  // 滚动条整体部分,必须要设置
+  .col-16::-webkit-scrollbar {
+    width: 6px;
+  }
+  // 滚动条的滑块按钮
+  .col-16::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(108, 108, 108, 0.3);
+  }
+  // 滚动条的上下两端的按钮
+  .col-16::-webkit-scrollbar-button {
+    height: 0;
+  }
+
+  // :global {
+  //   .c7n-row {
+  //     flex: 1;
+  //     overflow: hidden;
+  //     margin-right: 0 !important;
+  //     margin-left: 0 !important;
+  //   }
+  // }
+
+  .col-8,
+  .col-16 {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .col-8 {
+    padding-left: 20px !important;
+    padding-right: 16px !important;
+    padding-top: 20px;
+    background: #f8f8f8;
+
+    // :global {
+    //   .c7n-spin-nested-loading {
+    //     height: 100%;
+    //   }
+    // }
+  }
+  .col-16 {
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+  }
+}

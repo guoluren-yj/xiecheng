@@ -1,0 +1,58 @@
+export default {
+  lang: {
+    firLeadLink: '一级导航',
+    secLeadLink: '二级导航',
+    thrLeadLink: '三级导航',
+    thrLeadLinkWrap: '三级导航(长度测试长度测试长度测试)',
+    menuSearch: '菜单搜索',
+    workbench: '工作台',
+    menuTab: '导航菜单',
+    primaryBtn: '主按钮',
+    no: '编号',
+    orderInfo: '订单基础信息',
+    lineData: '明细行',
+    orderNo: '订单编号',
+    name: '名称',
+    orderName: '订单名称',
+    desc: '描述',
+    orderType: '订单类型',
+    amountTax: '金额（含税',
+    amountNoTax: '金额（不含税',
+    localAmountTax: '本币金额（含税',
+    localAmountNoTax: '本币金额（不含税）',
+    remark: '备注',
+    total: '总数量',
+    commitBy: '提交者',
+    op: '操作',
+    edit: '编辑',
+    more: '更多',
+  },
+  demoData: {
+    "zh_CN": {
+      headerData: {
+        orderNo: "PO20230314000017", orderName: '物资类采购订单', orderType: 'FO', amountTax: '12,345.00',
+        amountNoTax: '12,345.00', localAmountTax: '12,345.00', localAmountNoTax: '12,345.00',
+        remark: '这是一段备注，字符很多很多很多 很多很多', total: '1000',
+      },
+      lineData: [
+        { no: 'O2022001001', name: '办公用品订单', desc: '企业周期性办公用品采购-20221001', commitBy: '甄小云' },
+        { no: 'O2022001001', name: '办公用品订单', desc: '企业周期性办公用品采购-20221001', commitBy: '甄小云' },
+        { no: 'O2022001001', name: '办公用品订单', desc: '企业周期性办公用品采购-20221001', commitBy: '甄小云' },
+        { no: 'O2022001001', name: '办公用品订单', desc: '企业周期性办公用品采购-20221001', commitBy: '甄小云' },
+      ],
+    },
+    "en_US": {
+      headerData: {
+        orderNo: "PO20230314000017", orderName: 'Material Purchase Order', orderType: 'FO', amountTax: '12,345.00',
+        amountNoTax: '12,345.00', localAmountTax: '12,345.00', localAmountNoTax: '12,345.00',
+        remark: '', total: '1000',
+      },
+      lineData: [
+        { no: 'O2022001001', name: 'Office Supplies Order', desc: 'Periodic office supplies procurement-20221001', commitBy: 'Jack' },
+        { no: 'O2022001001', name: 'Office Supplies Order', desc: 'Periodic office supplies procurement-20221001', commitBy: 'Jack' },
+        { no: 'O2022001001', name: 'Office Supplies Order', desc: 'Periodic office supplies procurement-20221001', commitBy: 'Jack' },
+        { no: 'O2022001001', name: 'Office Supplies Order', desc: 'Periodic office supplies procurement-20221001', commitBy: 'Jack' },
+      ],
+    },
+  },
+};

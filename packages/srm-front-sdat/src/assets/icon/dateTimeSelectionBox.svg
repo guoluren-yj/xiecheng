@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>time</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-589.000000, -179.000000)">
+            <g id="time" transform="translate(589.000000, 179.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形备份-28" fill-opacity="0.01" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M7,2 C7.55228475,2 8,2.44771525 8,3 L8,4 L12,4 L12,3 C12,2.44771525 12.4477153,2 13,2 L14,2 C14.5522847,2 15,2.44771525 15,3 L15,4 L17,4 C17.5522847,4 18,4.44771525 18,5 L18,17 C18,17.5522847 17.5522847,18 17,18 L3,18 C2.44771525,18 2,17.5522847 2,17 L2,5 C2,4.44771525 2.44771525,4 3,4 L5,4 L5,3 C5,2.44771525 5.44771525,2 6,2 L7,2 Z M5,5 L3,5 L3,17 L17,17 L17,5 L15,5 L15,6 C15,6.55228475 14.5522847,7 14,7 L13,7 C12.4477153,7 12,6.55228475 12,6 L12,5 L8,5 L8,6 C8,6.55228475 7.55228475,7 7,7 L6,7 C5.44771525,7 5,6.55228475 5,6 L5,5 Z M8.5,8 C8.77614237,8 9,8.22385763 9,8.5 L9,13 L13.5,13 C13.7761424,13 14,13.2238576 14,13.5 C14,13.7761424 13.7761424,14 13.5,14 L8.5,14 L8.5,14 C8.22385763,14 8,13.7761424 8,13.5 L8,8.5 C8,8.22385763 8.22385763,8 8.5,8 Z M7,3 L6,3 L6,6 L7,6 L7,3 Z M14,3 L13,3 L13,6 L14,6 L14,3 Z" id="矩形备份-27" fill="#0840F8" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

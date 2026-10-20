@@ -1,0 +1,204 @@
+/**
+ * riskAssessment -风险评估报告 查询页
+ * @date: 2019-12-3
+ * @author guozhiqiang <zhiqiang.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2019, Hand
+ */
+import React, { PureComponent } from 'react';
+import { Form, Button, Row, Col, Select, Input, DatePicker } from 'hzero-ui';
+import { Bind } from 'lodash-decorators';
+import moment from 'moment';
+
+import intl from 'utils/intl';
+import Lov from 'components/Lov';
+
+const { YearPicker } = DatePicker;
+
+const formLayout = {
+  labelCol: { span: 10 },
+  wrapperCol: { span: 14 },
+};
+const commonPrompt = 'hzero.common';
+const promptCode = 'sqam.incomingInspectionQuery';
+
+@Form.create({ fieldNameProp: null })
+export default class FilterForm extends PureComponent {
+  state = {
+    display: false,
+  };
+
+  componentDidMount() {
+    const { bindForm, form } = this.props;
+    bindForm(form);
+  }
+
+  /**
+   * 收起打开
+   */
+  @Bind()
+  toggleForm() {
+    this.setState((prevState) => ({
+      display: !prevState.display,
+    }));
+  }
+
+  /**
+   * 重置
+   */
+  @Bind()
+  handleFormReset() {
+    this.props.form.resetFields();
+  }
+
+  /**
+   * render
+   * @returns React.element
+   */
+  render() {
+    const { handleSearch, form, enumMap, organizationId } = this.props;
+    const { getFieldDecorator } = form;
+    const { display } = this.state;
+    const { status = [] } = enumMap;
+    return (
+      <Form layout="inline" className="more-fields-form">
+        <Row gutter={12}>
+          <Col span={18}>
+            <Row gutter={12}>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl.get(`sodr.common.model.common.invOrganizationName`).d('库存组织')}
+                >
+                  {getFieldDecorator('invOrganizationName')(<Input />)}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.company.tag`).d('公司')}>
+                  {getFieldDecorator('companyName')(<Input />)}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.item.tag`).d('物料')}>
+                  {getFieldDecorator('itemName')(<Input />)}
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={12} style={{ display: display ? 'block' : 'none' }}>
+              <Col span={8}>
+                <Form.Item
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastYearFrom`)
+                    .d('预测年份从')}
+                  {...formLayout}
+                >
+                  {getFieldDecorator('forecastYearFrom')(
+                    <YearPicker
+                      disabledDate={(currentDate) => {
+                        if (!form.getFieldValue('forecastYearTo')) {
+                          return false;
+                        }
+                        return (
+                          moment(currentDate).format('YYYY') >
+                          moment(form.getFieldValue('forecastYearTo')).format('YYYY')
+                        );
+                      }}
+                      placeholder={intl
+                        .get(`${promptCode}.view.message.model.selectYear`)
+                        .d('请选择年份')}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastYearTo`)
+                    .d('预测年份至')}
+                  {...formLayout}
+                >
+                  {getFieldDecorator('forecastYearTo')(
+                    <YearPicker
+                      placeholder={intl
+                        .get(`${promptCode}.view.message.model.selectYear`)
+                        .d('请选择年份')}
+                      disabledDate={(currentDate) => {
+                        if (!form.getFieldValue('forecastYearFrom')) {
+                          return false;
+                        }
+                        return (
+                          moment(currentDate).format('YYYY') <
+                          moment(form.getFieldValue('forecastYearFrom')).format('YYYY')
+                        );
+                      }}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.categoryName`)
+                    .d('物料类别')}
+                >
+                  {getFieldDecorator('categoryName')(<Input />)}
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={12} style={{ display: display ? 'block' : 'none' }}>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.supplier.tag`).d('供应商')}>
+                  {getFieldDecorator('supplierCompanyId')(
+                    <Lov
+                      code="SPRM.SUPPLIER"
+                      queryParams={{ tenantId: organizationId }}
+                      // textField="supplierCompanyName"
+                      lovOptions={{
+                        valueField: 'supplierCompanyId',
+                        displayField: 'supplierCompanyName',
+                      }}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastStatus`)
+                    .d('反馈状态')}
+                >
+                  {getFieldDecorator('forecastStatus')(
+                    <Select allowClear>
+                      {status.map(({ meaning, value }) => (
+                        <Select.Option key={value} value={value}>
+                          {meaning}
+                        </Select.Option>
+                      ))}
+                    </Select>
+                  )}
+                </Form.Item>
+              </Col>
+            </Row>
+          </Col>
+          <Col span={6} className="search-btn-more">
+            <Form.Item>
+              <Button onClick={this.toggleForm}>
+                {display
+                  ? intl.get(`${commonPrompt}.button.collected`).d('收起查询')
+                  : intl.get(`${commonPrompt}.button.viewMore`).d('更多查询')}
+              </Button>
+              <Button onClick={this.handleFormReset}>
+                {intl.get(`${commonPrompt}.button.reset`).d('重置')}
+              </Button>
+              <Button type="primary" htmlType="submit" onClick={() => handleSearch(form)}>
+                {intl.get(`${commonPrompt}.button.search`).d('查询')}
+              </Button>
+            </Form.Item>
+          </Col>
+        </Row>
+      </Form>
+    );
+  }
+}

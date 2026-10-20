@@ -1,0 +1,76 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.ssrc-history-price-scroll-table {
+  .overflowEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-wrapper {
+    width: 100%;
+  }
+  &-header {
+    display: flex;
+    height: 30px;
+    border-top: 1px solid @table-border-color;
+    background-color: @table-header-bg;
+    .header-left {
+      width: 155px;
+      padding-left: 18px;
+      border-right: 1px solid @table-border-color;
+      height: 100%;
+      line-height: 30px;
+      .quoteInfo-config-icon {
+        margin-left: 8px;
+        cursor: pointer;
+        :global {
+          svg {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+    .header-right {
+      width: calc(100% - 155px);
+      text-align: center;
+      line-height: 30px;
+      .overflowEllipsis();
+    }
+  }
+  &-content {
+    display: flex;
+    margin-bottom: 17px;
+    // 左侧固定头表格
+    :global {
+      .left-table {
+        .c7n-pro-table.c7n-pro-table-bordered {
+          border-left: none;
+        }
+      }
+    }
+    :global {
+      // 右侧内容表格滚动条样式
+      .c7n-pro-table-content.c7n-pro-table-content-overflow {
+        &::-webkit-scrollbar {
+          // 滚动条整体样式
+          width: 4px; // 高宽分别对应横竖滚动条的尺寸
+          height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+          // 滚动条里面小方块
+          border-radius: 10px;
+          box-shadow: inset 0 0 5px rgba(97, 184, 179, 0.1);
+          background: @fill-4;
+        }
+        &::-webkit-scrollbar-track {
+          // 滚动条里面轨道
+          box-shadow: inset 0 0 5px rgba(87, 175, 187, 0.1);
+          border-radius: 10px;
+          background: #ededed;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/*!
+    HeaderInfoForm - 送货单创建明细-头form
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.sinv-delivery-creation-header-form {
+  :global {
+    div.ant-row.items-row {
+      // border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-bottom: 0;
+        margin-top: -5px;
+      }
+      .item-label {
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: bold;
+        text-align: right;
+        padding-right: 8px;
+      }
+    }
+    div.ant-row.items-row:last-child {
+      border-bottom: none;
+      .ant-form-explain {
+        margin-top: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.transfer-modal {
+  :global {
+    .ant-modal-content {
+      width: 100%;
+      min-height: 660px;
+    }
+  }
+  .transfer-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    // button:first-child {
+    //   display: block;
+    //   margin: 15px auto;
+    // }
+  }
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+}
+.transfer-page {
+  :global {
+    .ant-table-pagination {
+      position: relative;
+      .ant-pagination-total-text {
+        position: absolute;
+        right: 0;
+        top: 32px;
+      }
+    }
+  }
+}
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mT {
+  margin-top: -12px !important;
+}
+.ellipsisInput {
+  :global {
+    input {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+.cate-button {
+  margin-left: 20px;
+}
+.cate-name {
+  float: left;
+  width: max-content;
+  max-width: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}

@@ -1,0 +1,83 @@
+.overflow-ellips {
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sku-evaluate-manage {
+  :global {
+    .c7n-pro-table-tbody .c7n-pro-table-cell {
+      vertical-align: top;
+    }
+    .evaluate-wrapper {
+      width: 100%;
+    }
+    .action-link {
+      a {
+        word-break: normal;
+      }
+    }
+  }
+}
+
+.scores-wrapper {
+  :global {
+    .rate-wrapper {
+      display: flex;
+      align-items: center;
+      .rate-label {
+        color: #fa6400;
+        margin-right: 8px;
+        line-height: 20px;
+        margin-bottom: -2px;
+      }
+      .rate-list {
+        color: #fa6400;
+        font-size: 16px;
+        line-height: 20px;
+        vertical-align: top;
+      }
+    }
+    .evaluate-text {
+      margin: 0;
+      color: #000;
+      line-height: 18px;
+      font-weight: 400;
+      width: 100%;
+      // height: 36px;
+      text-align: left;
+      // display: -webkit-box !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      // -webkit-line-clamp: 2;
+      // -webkit-box-orient: vertical;
+    }
+  }
+}
+
+.unit-line {
+  display: block;
+  width: 100%;
+  .overflow-ellips;
+}
+
+.sku-info {
+  display: flex;
+  width: 100%;
+  :global {
+    .sku-img {
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.append-comment {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

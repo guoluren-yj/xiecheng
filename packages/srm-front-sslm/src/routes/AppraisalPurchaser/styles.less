@@ -1,0 +1,130 @@
+@import '~hzero-front/lib/srm-variables';
+
+.no-top-section {
+  :global {
+    .top-section-title {
+      display: none;
+    }
+    .c7n-pro-form-wrapper.c7n-pro-vertical-form-display.c7n-pro-form {
+      .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-vertical {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .section-wrap {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// 执行单据弹框样式
+.execution-document-modal {
+  :global {
+    .c7n-pro-modal-drawer-content {
+      .c7n-pro-modal-drawer-body {
+        padding: 0;
+        .c7n-tabs-bar {
+          padding: 16px 0;
+          min-width: 180px;
+          max-width: 220px;
+          height: calc(100vh - 112px);
+          .c7n-tabs-bar-inner {
+            .c7n-tabs-nav-container {
+              .c7n-tabs-nav-wrap {
+                .c7n-tabs-tab {
+                  text-align: left;
+                  display: flex;
+                  padding-right: 20px;
+                  .c7n-text-wrapper {
+                    flex: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .c7n-tabs-content {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+// 工作流统计图样式
+.chart-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+  background: #f4f5f7;
+  :global {
+    .pie-chart-wrap {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      position: relative;
+      padding: 20px;
+      background: #fff;
+      flex-grow: 1;
+      .pie-chart-title {
+        font-size: 16px;
+        color: #1d2129;
+        font-weight: 600;
+        margin-bottom: 8px;
+        width: 270px;
+        .indicator-title {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .pie-chart-total {
+        position: absolute;
+        top: 96px;
+        left: 218px;
+        text-align: center;
+        > div {
+          &:first-child {
+            font-size: 14px;
+            color: #1d2129;
+            font-weight: 600;
+          }
+          &:last-child {
+            color: #868d9c;
+          }
+        }
+      }
+    }
+  }
+}
+
+.supplier-alert {
+  color: @blue-6;
+  border: none;
+  margin-top: -8px;
+  margin-bottom: 16px;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+// 信息补录
+.supplement-wrap {
+  :global {
+    .top-section-title {
+      display: none;
+    }
+    .c7n-pro-form-wrapper.c7n-pro-form {
+      margin-bottom: 32px;
+    }
+  }
+}

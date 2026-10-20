@@ -1,0 +1,24 @@
+.sticky-panel {
+  top: 0;
+  z-index: 99;
+  position: sticky !important;
+  background-color: #fff;
+}
+
+.header-hidden-panel {
+  :global {
+    .c7n-collapse-header {
+      display: none;
+    }
+  }
+}
+
+.summary-panel-extra {
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  &-icon {
+    margin: -2px 6px 0 0;
+  }
+}

@@ -1,0 +1,107 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+// 修改组件内样式，目的逐级传递高度100%，防止在最低级组件无法获取高度
+.executable-code-area-page {
+  background: #263238;
+  width: 100%;
+  height: 100%;
+}
+.executable-code-area-spin {
+  width: 100%;
+  height: 100%;
+  .c7n-spin-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+.executable-code-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+
+  .executable-code-area-container {
+    width: 100%;
+    height: 100%;
+    border-right-width: 1px;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-right-style: solid;
+    flex-shrink: 0;
+    transition: width 0.15s ease-out;
+    .code-area {
+      height: 100%;
+    }
+    .c7n-pro-code-area {
+      height: 100% !important;
+    }
+
+    .executable-code-area-input {
+      width: 100%;
+      height: calc(100% - 41px);
+    }
+
+    .executable-code-area-top {
+      width: 100%;
+      height: 40px;
+      border-bottom-width: 1px;
+      border-bottom-color: rgba(255, 255, 255, 0.2);
+      border-bottom-style: solid;
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 0 16px;
+      .executable-code-area-top-version {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .executable-code-area-debug {
+    width: 30%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    .debug-buttons {
+      width: 36px;
+      flex-shrink: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border-right-width: 1px;
+      border-right-color: rgba(255, 255, 255, 0.2);
+      border-right-style: solid;
+
+      .debug-button-line-view {
+        width: 100%;
+        margin: 40px 0 24px 0;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(255, 255, 255, 0.2);
+        border-bottom-style: solid;
+      }
+    }
+    .debug-content {
+      flex-grow: 1;
+      max-width: calc(100% - 36px);
+
+      .c7n-tabs-tab {
+        color: white;
+      }
+      .c7n-tabs-tab-active {
+        color: @primary-color-cyan;
+      }
+
+      // 需要确定请求参数输入框的高度，逐级设置高度
+      .c7n-tabs-content {
+        height: calc(100% - 58px);
+        .debug-code-area {
+          height: 100%;
+        }
+        .c7n-pro-code-area {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

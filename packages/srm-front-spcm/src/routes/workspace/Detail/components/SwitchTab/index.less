@@ -1,0 +1,54 @@
+/**
+  *按行/按单切换
+*/
+.switch-tab-wrapper {
+  order: 100;
+  flex-grow: 1;
+  height: 32px;
+  .toggle-key {
+    // display: inline-block;
+    display: flex;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    padding: 4px;
+    // overflow: hidden;
+    cursor: pointer;
+    .toggle-key-btn,
+    .activity {
+      // float: left;
+      // width: 40px;
+      height: 24px;
+      padding: 0 8px;
+      text-align: center;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      span {
+        margin: 0 4px;
+      }
+    }
+    .activity {
+      background: #fff;
+      font-weight: 600;
+    }
+  }
+  :global {
+    .c7n-spin-nested-loading {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      .c7n-spin-container {
+        max-width: 95%;
+      }
+      .c7n-progress-loading.c7n-spin-dot {
+        .c7n-progress-inner {
+          vertical-align: initial;
+        }
+      }
+    }
+  }
+}

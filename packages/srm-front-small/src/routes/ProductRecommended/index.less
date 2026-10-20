@@ -1,0 +1,19 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+
+.content {
+  :global {
+    .page-head-operator {
+      flex-direction: row;
+    }
+    .operate-btns {
+      flex: 1;
+      text-align: right;
+    }
+    .c7n-pro-btn-primary.c7n-pro-btn-raised:not(.c7n-pro-btn-disabled).add-btn {
+      background-color: @hzero-primary-color;
+      &:hover {
+        background-color: @hzero-primary-color;
+      }
+    }
+  }
+}

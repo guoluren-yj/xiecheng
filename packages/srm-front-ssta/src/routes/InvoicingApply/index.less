@@ -1,0 +1,90 @@
+@import '~hzero-front/lib/srm-variables';
+@import '../common.less';
+
+.ssta-detail-wrapper-invoicingApply {
+  :global {
+    .c7n-tabs-vertical.c7n-tabs-left {
+      & > .c7n-tabs-content {
+        padding-left: 0;
+        border-left: none;
+        background: #f4f5f7;
+      }
+    }
+  }
+}
+
+.ssta-detail-content-invoicingApply {
+  padding: 0 20px;
+
+  :global {
+    .c7n-collapse {
+      .ssta-collapse();
+    }
+
+    .c7n-pro-form-wrapper {
+      .ssta-form();
+    }
+
+    .ued-detail-card {
+      .ssta-card();
+    }
+    .c7n-pro-switch-wrapper {
+      line-height: 2.3;
+    }
+  }
+}
+.ssta-detail-wrapper-invoicingApply-not-modal {
+  overflow: auto;
+}
+.ssta-detail-wrapper-invoicingApply-has-tabs {
+  :global {
+    .page-content {
+      margin-top: 0;
+    }
+    .c7n-tabs-bar-inner {
+      flex-direction: column-reverse !important;
+    }
+    .c7n-tabs-extra-vertical-content {
+      font-size: 12px;
+      color: #767d8e;
+      margin-bottom: 8px;
+    }
+  }
+}
+.ssta-detail-wrapper-invoicingApply-header {
+  padding: 8px 16px;
+  .tips {
+    color: #f00;
+    position: relative;
+    top: -8px;
+  }
+  :global {
+    .c7n-card-head {
+      border-bottom: none;
+      color: #1d2129;
+      .c7n-card-head-title {
+        font-weight: 600;
+      }
+    }
+    .c7n-card-head::before {
+      background-color: #fff !important;
+    }
+    .c7n-card-body {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+.custom-basic-render {
+  display: flex;
+  gap: 4px;
+}
+
+
+.operation-item-extra {
+  display: flex;
+  color: @text-2;
+}
+.operation-item-remark {
+  flex: 1;
+}

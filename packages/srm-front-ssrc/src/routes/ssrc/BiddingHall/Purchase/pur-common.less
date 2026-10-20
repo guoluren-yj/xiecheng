@@ -1,0 +1,45 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+@bg-color: #fff;
+
+@txt-color: #fff;
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flexCenter {
+  .flex();
+  align-items: center;
+}
+
+.flex-inline-between-center {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ellipsis {
+  // 省略号
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.font-family {
+  font-family: PingFangSC-Medium, sans-serif;
+}
+
+*:focus {
+  // 解决safari浏览器点击会出现蓝色区域框的问题
+  outline: none !important;
+}
+
+// 水平垂直居中
+.centeredHorizontallyAndVertically {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

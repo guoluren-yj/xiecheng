@@ -1,0 +1,174 @@
+/*!
+    index - 订单确认
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+
+.comfirm-order {
+  :global {
+    .ant-upload-list-item:hover .anticon-cross {
+      display: none;
+    }
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+    .font-red-color {
+      color: red;
+    }
+  }
+}
+
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}
+
+// 签章Modal
+.sealModal {
+  :global {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    button.ant-btn,
+    span.ant-btn {
+      width: 32px;
+      height: 200px;
+      line-height: 200px;
+      border: 1px solid #d5dae0;
+      float: left;
+      padding: 0;
+      z-index: 2;
+    }
+    .img-box {
+      overflow: hidden;
+      width: 448px;
+      height: 100%;
+      .img-box-wrap {
+        transition-duration: 0.3s;
+        transform: translate3d(0, 0, 0);
+        display: flex;
+        div {
+          margin: 0 0 0 16px;
+          flex-shrink: 0;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transition-property: transform;
+          border: 1px solid #d5dae0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 5px;
+            // border: 1px solid #d5dae0;
+          }
+          i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            font-size: 14px;
+            top: -1px;
+            right: -1px;
+            color: #29bece;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-table-wrapper {
+  :global {
+    a {
+      color: rgb(16, 142, 233) !important;
+    }
+  }
+}
+
+.noSealImg {
+  :global {
+    p {
+      // width: 90px;
+      line-height: 18px;
+      font-size: 12px;
+      margin-left: 16px;
+      margin-bottom: 16px;
+      text-align: left;
+      text-indent: 2em;
+      strong {
+        cursor: pointer;
+        color: #29bece;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.ant-table-wrapper {
+  :global {
+    a {
+      color: rgb(16, 142, 233) !important;
+    }
+  }
+}
+
+.preveiw-modal-content {
+  :global {
+    .preview-icon {
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 6px;
+      cursor: pointer;
+      color: rgb(41, 190, 206);
+    }
+  }
+}
+
+.ant-modal-wrap {
+  :global {
+    .ant-modal-content {
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}

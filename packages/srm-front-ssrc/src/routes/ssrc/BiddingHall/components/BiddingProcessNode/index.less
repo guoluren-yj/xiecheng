@@ -1,0 +1,121 @@
+// popover竞价节点样式
+.ssrc-pur-node-item-popover-time {
+  font-size: 0.12rem;
+  color: #4e5769;
+  &-title {
+    font-weight: 600;
+    color: #1d2129;
+  }
+  &-value {
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem;
+  }
+  &-closed-label {
+    margin-right: 0.08rem;
+    color: #868d9c;
+  }
+}
+
+// node 节点样式
+.bidding-process-node-steps {
+  :global {
+    .c7n-steps-item {
+      // 去掉组件icon默认背景色
+      .c7n-steps-item-icon {
+        background: none;
+      }
+      // 覆盖组件title字体样式
+      .c7n-steps-item-title {
+        font-size: 0.12rem;
+        color: #4e5769;
+        font-weight: 400;
+      }
+      .c7n-steps-item-content {
+        max-width: 1.6rem;
+      }
+    }
+  }
+
+  // 节点数字icon通用样式
+  .node-icon {
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 50%;
+    line-height: 0.16rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.12rem;
+  }
+  // 当前节点
+  .process-node-item-current {
+    :global {
+      .node-item-icon-current {
+        .node-icon();
+        background: rgba(71, 184, 131, 0.1);
+        color: #179454;
+      }
+      .c7n-steps-item-title {
+        color: #179454;
+        // 进行中title字重为600
+        font-weight: 600;
+      }
+    }
+    &-closed {
+      :global {
+        .c7n-steps-item-title {
+          color: #4e5769;
+        }
+      }
+    }
+    &-paused {
+      :global {
+        .c7n-steps-item-title {
+          color: #f06200;
+        }
+      }
+    }
+  }
+  // 完成节点
+  .process-node-item-finished {
+    :global {
+      .c7n-steps-item-title:after {
+        background: #179454;
+      }
+      .c7n-steps-item-title {
+        color: #179454;
+      }
+    }
+  }
+  // 等待节点
+  .process-node-item-wait {
+    :global {
+      .node-item-icon-paused {
+        .node-icon();
+        background: #f2f3f5;
+        color: #868d9c;
+      }
+    }
+  }
+  // 暂停于节点之间，则等待线变暂停颜色
+  .process-node-item-line-current-paused {
+    :global {
+      .c7n-steps-item-title:after {
+        background: #f06200;
+      }
+    }
+  }
+  // 流程进行到节点间，只有等待线变当前颜色
+  .process-node-item-line-current {
+    :global {
+      .c7n-steps-item-title:after {
+        background: #179454;
+      }
+    }
+  }
+  // 运行时间
+  .process-node-time-title-running {
+    margin-left: 4px;
+    color: #868d9c;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,120 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../text-field/style/mixin';
+@import '../../trigger-field/style/mixin';
+@import '../../../components/select/style/mixin';
+
+@table-prefix-cls: ~'@{c7n-pro-prefix}-table';
+@table-border: @border-width-base @border-style-base @border-color-base;
+
+.@{table-prefix-cls} {
+  &-filter-select {
+    .input(0.5rem, 0.65rem);
+    padding-right: 0.65rem !important;
+    padding-left: 0.46rem !important;
+    line-height: 0.35rem;
+    border: none !important;
+    border-top: @table-border !important;
+
+    &-wrapper {
+      width: 100%;
+
+      .@{c7n-pro-prefix}-btn-flat {
+        color: @text-color;
+      }
+    }
+
+    .@{table-prefix-cls}-filter-select-inner-editor {
+      height: @input-height-base - 0.08rem;
+      padding: @input-padding-vertical-base 0;
+      background-color: transparent !important;
+      border: none !important;
+    }
+
+    &-select-field {
+      padding-left: 0.08rem;
+      vertical-align: middle;
+    }
+
+    &-multiple-block {
+      display: inline-block;
+      max-width: 99%;
+      height: 0.2rem !important;
+      margin: 0 0.02rem;
+      padding: 0 0 0 0.08rem;
+      overflow: hidden;
+      color: @tag-default-color;
+      line-height: 0.2rem !important;
+      white-space: nowrap;
+      background-color: @tag-default-bg;
+      border-radius: 0.12rem;
+      > div {
+        display: inline-block;
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        vertical-align: top;
+
+        &:not(:last-child) {
+          max-width: ~'calc(100% - .24rem)';
+        }
+      }
+      &-invalid {
+        background-color: @error-color;
+      }
+      &-disabled {
+        padding-right: 0.1rem;
+        background-color: @disabled-color;
+        cursor: not-allowed;
+      }
+
+      cursor: default;
+
+      .@{iconfont-css-prefix} {
+        height: 100%;
+        margin-right: 0.02rem;
+        margin-left: 0.08rem;
+        color: @tag-multiple-color;
+        font-size: 0.16rem;
+        line-height: 0.2rem;
+        vertical-align: top;
+        cursor: pointer;
+      }
+    }
+
+    &-multiple-input {
+      // 筛选条 range 类型
+      & > label > span {
+        display: flex;
+        align-items: center;
+        & > span {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &[class*="-range "], &[class$="-range"] {
+        width: auto;
+      }
+      // 筛选条 multiple 类型
+      & .@{table-prefix-cls}-filter-select-inner-editor ul {
+        margin-top: -3px;
+      }
+      // DatePicker 组件 hover 显示样式
+      .@{c7n-pro-prefix}-calendar-picker-hover-value {
+        width: auto;
+      }
+    }
+
+    ul li {
+      height: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      span {
+        height: auto;
+      }
+    }
+  }
+}

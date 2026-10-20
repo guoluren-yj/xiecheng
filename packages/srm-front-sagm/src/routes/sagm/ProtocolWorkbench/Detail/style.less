@@ -1,0 +1,75 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+
+.sub-content-container {
+  padding: 20px;
+
+  :global {
+    .sub-content-header {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-top: 1px;
+      }
+    }
+
+    .sub-content-body {
+      padding-top: 16px;
+    }
+  }
+}
+
+.sagm-workbench-detail {
+  overflow: auto;
+  padding: 0 !important;
+  :global {
+    .price-hidden-column {
+      .tag {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 8px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.content-divide {
+  height: 8px;
+  background-color: #f4f5f7;
+}
+
+.protocol-history-list {
+  font-size: 12px;
+  color: #868d9c;
+
+  :global {
+    .c7n-menu-item {
+      height: 54px;
+      padding: 7px 15px;
+
+      div {
+        line-height: 18px;
+      }
+
+      .version {
+        margin-bottom: 4px;
+      }
+
+      .operate {
+        color: #868d9c;
+
+        & span + span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "swbh-iconfont"; /* Project id 3477540 */
+  src: url('iconfont.woff2?t=1663845895468') format('woff2'),
+       url('iconfont.woff?t=1663845895468') format('woff'),
+       url('iconfont.ttf?t=1663845895468') format('truetype');
+}
+
+.iconfont {
+  font-family: "swbh-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sqam-o:before {
+  content: "\e691";
+}
+
+.icon-sodr-o:before {
+  content: "\e688";
+}
+
+.icon-small-o:before {
+  content: "\e689";
+}
+
+.icon-sslm-o:before {
+  content: "\e68a";
+}
+
+.icon-ssta-o:before {
+  content: "\e68b";
+}
+
+.icon-spcm-o:before {
+  content: "\e68c";
+}
+
+.icon-sinv-o:before {
+  content: "\e68d";
+}
+
+.icon-sprm-o:before {
+  content: "\e68e";
+}
+
+.icon-ssrc-o:before {
+  content: "\e68f";
+}
+
+.icon-small:before {
+  content: "\e687";
+}
+
+.icon-sodr:before {
+  content: "\e67e";
+}
+
+.icon-sinv:before {
+  content: "\e67f";
+}
+
+.icon-ssta:before {
+  content: "\e680";
+}
+
+.icon-spcm:before {
+  content: "\e681";
+}
+
+.icon-sprm:before {
+  content: "\e682";
+}
+
+.icon-sslm:before {
+  content: "\e683";
+}
+
+.icon-all:before {
+  content: "\e684";
+}
+
+.icon-sqam:before {
+  content: "\e685";
+}
+
+.icon-ssrc:before {
+  content: "\e686";
+}
+
+.icon-wuliao:before {
+  content: "\e67d";
+}
+
+.icon-baobiao:before {
+  content: "\e678";
+}
+
+.icon-jujiaomoshi:before {
+  content: "\e679";
+}
+
+.icon-morenmoshi:before {
+  content: "\e67a";
+}
+
+.icon-keyboard_arrow_down:before {
+  content: "\e67b";
+}
+
+.icon-a-bianzu23:before {
+  content: "\e67c";
+}
+
+.icon-daiyuedu:before {
+  content: "\e677";
+}
+
+.icon-daizhuandan:before {
+  content: "\e675";
+}
+
+.icon-caogaoxiang:before {
+  content: "\e670";
+}
+
+.icon-daichuli:before {
+  content: "\e671";
+}
+
+.icon-shougongjian:before {
+  content: "\e672";
+}
+
+.icon-wofaqi:before {
+  content: "\e673";
+}
+
+.icon-wojingban:before {
+  content: "\e674";
+}
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="133px" viewBox="0 0 186 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>插图</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="跳转第三方网站" transform="translate(-627, -258)">
+            <g id="编组-4" transform="translate(465, 258)">
+                <g id="插图" transform="translate(162, 0)">
+                    <g id="编组-7">
+                        <path d="M3.32142857,0 L182.678571,0 C184.512946,0 186,1.48865321 186,3.325 L186,129.675 C186,131.511347 184.512946,133 182.678571,133 L3.32142857,133 C1.48705422,133 0,131.511347 0,129.675 L0,3.325 C0,1.48865321 1.48705422,0 3.32142857,0 Z" id="矩形备份-2" fill="#F1F4F8"></path>
+                        <g id="编组-5备份">
+                            <path d="M3.32142857,0 L182.678571,0 C184.512946,0 186,1.56700338 186,3.5 L186,14 L0,14 L0,3.5 C0,1.56700338 1.48705422,0 3.32142857,0 Z" id="矩形" fill="#DBDEE3"></path>
+                            <circle id="椭圆形" fill="#FFFFFF" cx="11" cy="7" r="3"></circle>
+                            <circle id="椭圆形备份" fill="#FFFFFF" cx="23" cy="7" r="3"></circle>
+                            <circle id="椭圆形备份-2" fill="#FFFFFF" cx="35" cy="7" r="3"></circle>
+                        </g>
+                        <rect id="矩形" fill="#FFFFFF" x="4" y="18" width="178" height="111" rx="4"></rect>
+                        <rect id="矩形" fill="#F2F3F5" x="4" y="40" width="178" height="1"></rect>
+                        <rect id="矩形" fill="#FC8800" x="83" y="54" width="20" height="20" rx="10"></rect>
+                        <circle id="椭圆形" fill="#F2F3F5" cx="16" cy="30" r="4"></circle>
+                        <rect id="矩形" fill="#F2F3F5" x="28" y="26" width="32" height="6" rx="3"></rect>
+                        <rect id="矩形备份-3" fill="#F2F3F5" x="68" y="26" width="32" height="6" rx="3"></rect>
+                        <g id="编组-9" transform="translate(43, 82)">
+                            <rect id="矩形备份-6" fill="#E5E7EC" x="0" y="0" width="100" height="6" rx="3"></rect>
+                            <rect id="矩形备份-7" fill="#F2F3F5" x="0" y="10" width="44" height="6" rx="3"></rect>
+                            <rect id="矩形备份-8" fill="#F2F3F5" x="56" y="10" width="44" height="6" rx="3"></rect>
+                            <rect id="矩形" fill="#00B8CC" x="54" y="22" width="32" height="12" rx="3"></rect>
+                            <rect id="矩形" fill="#FFFFFF" x="62" y="26" width="16" height="4" rx="2"></rect>
+                            <rect id="矩形备份-9" fill="#F2F3F5" x="14" y="22" width="32" height="12" rx="3"></rect>
+                            <rect id="矩形" fill="#FFFFFF" x="22" y="26" width="16" height="4" rx="2"></rect>
+                        </g>
+                        <rect id="矩形备份-4" fill="#F2F3F5" x="108" y="26" width="32" height="6" rx="3"></rect>
+                    </g>
+                    <g id="编组-11" transform="translate(91.5, 58)" fill="#FFFFFF">
+                        <path d="M1.5,0 C2.27826687,-1.42965305e-16 2.90917683,0.630909958 2.90917683,1.40917683 C2.90917683,1.43849893 2.90826163,1.46781388 2.90643257,1.49707887 L2.56237829,7.00194742 C2.5273156,7.56295039 2.06209761,8 1.5,8 C0.937902395,8 0.472684399,7.56295039 0.437621714,7.00194742 L0.0935674292,1.49707887 C0.0450204755,0.720327607 0.635346704,0.0512912151 1.41209796,0.00274426128 C1.44136296,0.000915199331 1.47067791,5.38638123e-18 1.5,0 Z" id="矩形"></path>
+                        <rect id="矩形" x="0.5" y="10" width="2" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

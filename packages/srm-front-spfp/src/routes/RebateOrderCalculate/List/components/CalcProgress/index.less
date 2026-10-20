@@ -1,0 +1,61 @@
+@import '~hzero-front/lib/srm-variables';
+
+.spfp-rebateCalcFormula-warpper {
+  :global {
+    .spfp-rebateCalcFormula-formula-warpper {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2px;
+      border: 1px solid @fill-5;
+      .spfp-rebateCalcFormula-formula-divider {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        height: 1px;
+        margin: 12px 0;
+        border-top: 1px dashed @border-4;
+      }
+      .spfp-rebateCalcFormula-formula-calc {
+        .spfp-rebateCalcFormula-formula {
+          &:not(:first-child) {
+            margin-top: 12px;
+          }
+        }
+      }
+      .spfp-rebateCalcFormula-formula-allo {
+        .spfp-rebateCalcFormula-formula {
+          &:not(:first-child) {
+            margin-top: 8px;
+          }
+        }
+      }
+      .spfp-rebateCalcFormula-formula {
+        &-content {
+          display: flex;
+        }
+        &-condition {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 8px;
+          display: flex;
+          &-sign {
+            color: @primary-color;
+          }
+          span:not(:first-child) {
+            margin-left: 8px;
+          }
+        }
+        &-value {
+          font-size: 16px;
+          line-height: 22px;
+          margin-left: 4px;
+        }
+      }
+    }
+    .spfp-rebateCalcFormula-variable-warpper {
+      margin-top: 8px;
+      color: @text-3;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/baseline-arrow_right</title>
+    <defs>
+        <polygon id="path-1" points="0.374999994 0 4.12500001 3.74999999 0.374999994 7.50000001"></polygon>
+    </defs>
+    <g id="寻源项目查询0907" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="多标段展开" transform="translate(-282.000000, -630.000000)">
+            <g id="编组-5" transform="translate(226.000000, 197.000000)">
+                <g id="baseline-arrow_right" transform="translate(65.000000, 442.000000) rotate(180.000000) translate(-65.000000, -442.000000) translate(56.000000, 433.000000)">
+                    <rect id="矩形" fill-rule="nonzero" x="0" y="0" width="18" height="18"></rect>
+                    <g id="color" transform="translate(6.750000, 5.625000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

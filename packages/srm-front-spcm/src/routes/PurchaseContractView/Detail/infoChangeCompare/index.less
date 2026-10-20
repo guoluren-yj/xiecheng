@@ -1,0 +1,61 @@
+.catelog-wrapper {
+  display: flex;
+  margin-top: 10px;
+  .collapse-wrapper {
+    flex: 1;
+    overflow: scroll;
+    border-radius: 3px;
+    h3 {
+      display: inline-block;
+      margin: 0;
+      margin-left: 10px;
+    }
+    .table-row-line-through td {
+      color: #999;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-1px) scaleY(0.5);
+        height: 1px;
+        width: 100%;
+        background: #999;
+      }
+    }
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
+  }
+}
+
+.not-found-content {
+  color: #999;
+  text-align: center;
+  line-height: 1;
+}
+
+.changed {
+  color: red;
+  a {
+    color: red;
+  }
+  // 处理勾选框，复选框这种是否渲染
+  :global {
+    .ant-badge-status-text {
+      color: red;
+    }
+  }
+}
+
+.compare-drawer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: left;
+  background: #fff;
+}

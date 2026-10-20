@@ -1,0 +1,152 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  .hmde,
+  .lowcode-m-modal {
+    :global {
+      // 所有输入框
+      .c7n-pro-input-number,
+      .c7n-pro-color-picker,
+      .c7n-pro-calendar-picker,
+      .c7n-pro-input,
+      .c7n-pro-select,
+      .c7n-pro-textarea,
+      .c7n-pro-icon-picker,
+      .c7n-pro-password,
+      .c7n-pro-checkbox,
+      .c7n-pro-textarea {
+        // border-color: @lightblue2;
+        border-radius: 2px;
+
+        // &:focus,
+        // &:hover {
+        //   border-color: @lightblue2;
+        //   box-shadow: 0 0 2px 1px @lightblue2;
+        // }
+      }
+
+      // 行内输入框
+      .c7n-pro-output {
+        border-radius: 2px;
+      }
+
+      // 必填项的 light blue
+      :not([disabled]):not([class*='-invalid'])[class*='-required'] {
+        input,
+        .c7n-pro-select,
+        .c7n-pro-textarea,
+        .c7n-pro-input-number,
+        .c7n-pro-color-picker,
+        .c7n-pro-calendar-picker,
+        .c7n-pro-input,
+        .c7n-pro-icon-picker,
+        .c7n-pro-password,
+        .c7n-pro-checkbox,
+        .c7n-pro-textarea {
+          // background-color: @lightblue1;
+          // border-color: @lightblue2;
+          border-radius: 2px;
+
+          // &:focus,
+          // &:hover {
+          //   background-color: @lightblue1;
+          //   border-color: @lightblue2;
+          //   box-shadow: 0 0 2px 1px @lightblue2;
+          // }
+        }
+      }
+
+      // 行内必填
+      :not([disabled]):not([class*='-invalid'])[class*='-required'] {
+        &.c7n-pro-table-cell-editable {
+          .c7n-pro-output {
+            // background-color: @lightblue1;
+            // border-color: @lightblue2;
+            border-radius: 2px;
+
+            // &:focus,
+            // &:hover {
+            //   background-color: @lightblue1;
+            //   border-color: @lightblue2;
+            //   box-shadow: 0 0 2px 1px @lightblue2;
+            // }
+          }
+        }
+      }
+
+      // 校验不通过的 red
+      [class*='-invalid'] {
+        .c7n-pro-select,
+        .c7n-pro-input-number,
+        .c7n-pro-color-picker,
+        .c7n-pro-calendar-picker,
+        .c7n-pro-input,
+        .c7n-pro-icon-picker,
+        .c7n-pro-password,
+        .c7n-pro-textarea {
+          background-color: @c7npink !important;
+          border-color: @c7nred !important;
+          border-radius: 2px;
+
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 2px 1px @c7nred !important;
+            background-color: @c7npink !important;
+            border-color: @c7nred !important;
+          }
+        }
+      }
+      // 行内校验出错
+      .c7n-pro-output-invalid {
+        background-color: @c7npink !important;
+        border-color: @c7nred !important;
+        border-radius: 2px;
+
+        &:focus,
+        &:hover {
+          box-shadow: 0 0 2px 1px @c7nred !important;
+          background-color: @c7npink !important;
+          border-color: @c7nred !important;
+        }
+      }
+
+      ///// ant
+      // .c7n-pro-select-disabled .c7n-pro-select {
+      //   background-color: @lightblue3 !important;
+      // }
+
+      // .ant-form-item-required .ant-input,
+      // .ant-form-item-required .ant-select-selection {
+      //   background-color: @lightblue3 !important;
+      // }
+
+      .ant-input,
+      .ant-select-selection {
+        // border-color: @lightblue2 !important;
+        border-radius: 2px !important;
+
+        // &:focus,
+        // &:hover {
+        //   border-color: @lightblue2;
+        //   box-shadow: 0 0 2px 1px @lightblue2;
+        // }
+      }
+      // 校验出错
+      .has-error {
+        .ant-select-selection,
+        .ant-input {
+          background-color: @c7npink !important;
+          border-color: @c7nred !important;
+          border-radius: 2px;
+
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 2px 1px @c7nred !important;
+            background-color: @c7npink !important;
+            border-color: @c7nred !important;
+          }
+        }
+      }
+    }
+  }
+}

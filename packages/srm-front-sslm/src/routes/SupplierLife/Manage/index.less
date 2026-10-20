@@ -1,0 +1,130 @@
+.supplier-content {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  margin-top: 20px;
+  // height: calc(80vh);
+
+  .droppable-content {
+    // height: 100%;
+    flex-direction: column;
+    border-radius: 2px;
+
+    &:not(:last-child) {
+      margin-right: 1%;
+    }
+  }
+  .droppable-section {
+    min-width: 22em;
+    // width: 15.7vw;
+    width: 288px;
+    flex-direction: column;
+    display: flex;
+    padding: 8px;
+    background-color: #f8f8f8;
+    user-select: none;
+    position: relative;
+  }
+  .droppable-top {
+    padding: 8px;
+    // height: 5vh;
+  }
+  .droppable-top-title {
+    display: inline-flex;
+    font-size: 14px;
+    color: #666;
+  }
+  .droppable-top-link {
+    float: right;
+  }
+  .droppable-middle {
+    overflow: auto;
+    height: 60vh;
+    padding: 8px;
+  }
+  .droppable-bottom {
+    padding-top: 1vh;
+  }
+  .droppable-pagination {
+    :global {
+      .ant-pagination-prev,
+      .ant-pagination-next,
+      .ant-pagination-item {
+        min-width: 18px;
+        height: 18px;
+        line-height: 18px;
+      }
+      .ant-pagination-prev .ant-pagination-item-link:after,
+      .ant-pagination-next .ant-pagination-item-link:after {
+        height: 18px;
+        line-height: 18px;
+      }
+      .ant-select-sm .ant-select-selection--single {
+        height: 20px;
+      }
+      .ant-select-selection__rendered {
+        line-height: 18px;
+      }
+    }
+  }
+
+  .droppable-draggable {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 12px;
+    margin: 0 0 8px 0;
+    position: relative;
+  }
+  .droppable-draggable-link {
+    color: #29bece;
+    line-height: 24px;
+  }
+  .droppable-draggable-name {
+    color: rgba(102, 102, 102, 1);
+  }
+  .droppable-flag {
+    float: left;
+    padding-top: 16px;
+    margin-right: 12px;
+    & > span,
+    & > span::after {
+      width: 8px;
+      height: 10px;
+      border-top: 2px solid #999;
+      border-bottom: 2px solid #999;
+      background-color: #999;
+      padding: 2px 0;
+      background-clip: content-box;
+      display: inline-block;
+    }
+    & > span::after {
+      content: '';
+      position: relative;
+      top: -4px;
+    }
+  }
+  .icon-common {
+    font-size: 16px;
+    width: 1.75em;
+    height: 1.75em;
+    line-height: 1.75em;
+    border-radius: 50%;
+    position: absolute;
+    right: 7%;
+    top: 30%;
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  .upgrade-icon {
+    background-color: #d4f0c6;
+    color: rgb(13, 106, 76);
+  }
+  .down-icon {
+    background-color: #fbcfcc;
+    color: #f04134;
+  }
+}

@@ -1,0 +1,100 @@
+/*!
+    index - 我收到的订单
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.sodr-send-order-detail {
+  :global {
+    .page-content-wrap {
+      .page-content {
+        padding: 0;
+      }
+    }
+
+    .detail-list {
+      tr.ant-table-row {
+        td.status {
+          img {
+            height: 16px;
+            width: 12px;
+            min-width: 12px;
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.headerInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.lastHeaderInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      width: 25%;
+      margin-right: -6px;
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.ant-table-wrapper {
+  :global {
+    a {
+      color: rgb(16, 142, 233) !important;
+    }
+  }
+}
+.ant-modal-wrap {
+  :global {
+    .ant-modal-content {
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}
+
+.operate-table-container {
+  :global {
+    min-height: 360px;
+  }
+}
+
+.comment-tip {
+  :global {
+    .ant-tooltip-inner {
+      max-height: 300px;
+      overflow: auto;
+    }
+  }
+}

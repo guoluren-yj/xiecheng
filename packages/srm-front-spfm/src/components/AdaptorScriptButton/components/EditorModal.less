@@ -1,0 +1,117 @@
+.adaptorEditor {
+  height: 800px;
+  :global {
+    .adaptor-editor-test {
+      text-align: center;
+    }
+    .adaptor-editor-content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      .editor-left {
+        margin-top: 60px;
+        height: 100%;
+        .editor-left-scriptContent {
+          height: 100%;
+          .version-span {
+            position: absolute;
+            right: -6px;
+            top: -17px;
+            z-index: 100;
+          }
+          .c7n-card-body {
+            padding: 0;
+          }
+          .edit-left-scriptContent-codeArea-img {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: 0;
+            max-height: 100%;
+            opacity: 0.2;
+          }
+        }
+      }
+      .edit-action-button {
+        width: 5%;
+        text-align: center;
+        position: relative;
+        .edit-action-button-menu {
+          position: absolute;
+          top: -244px;
+          right: 0;
+          .edit-action-button-ladder-shaped {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+            align-items: center;
+            width: 25px;
+            height: 40px;
+            border-left: 3px solid #dcdcdc;
+          }
+          .edit-action-button-ladder-shaped::before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 30px;
+            border-top: 3px solid #dcdcdc;
+            transform: skewY(-30deg);
+            top: -8px;
+            right: 0;
+          }
+          .edit-action-button-ladder-shaped::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 30px;
+            border-top: 3px solid #dcdcdc;
+            transform: skewY(30deg);
+            top: 46px;
+            right: 0;
+          }
+        }
+      }
+      .edit-right-resize {
+        margin-top: 90px;
+        width: 8px;
+        height: calc(100% - 20px);
+        background-color: #dcdcdc;
+        cursor: ew-resize;
+      }
+      .edit-right-line {
+        margin-top: 60px;
+        width: 0;
+        height: 100%;
+        border: 1px solid #dcdcdc;
+      }
+    }
+  }
+}
+// 该样式是为了解决在 modal 弹框效果下,代码编写框错误警告提示被遮罩的问题，如果影响全局请联系平台组进行修改
+:global {
+  .CodeMirror-lint-tooltip {
+    z-index: 10000 !important;
+  }
+}
+// 解决日志输出框换行时会扩大宽度的问题，强行换行
+.editor-right-outputLog :global {
+  .CodeMirror-wrap pre.CodeMirror-line,
+  .CodeMirror-wrap pre.CodeMirror-line-like {
+    word-break: break-word;
+  }
+  .CodeMirror-lint-markers {
+    width: 0;
+  }
+}
+
+.button-debug-animation {
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

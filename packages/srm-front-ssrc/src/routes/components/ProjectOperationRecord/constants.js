@@ -1,0 +1,115 @@
+const defaultType = 'check';
+
+const processOperationIconMap = {
+  CREATE: 'add', // 新建
+  CANCEL: 'cancel', // 取消
+  CLOSED: 'cancel', // 关闭
+  CANCELED: 'cancel', // 取消
+  ISSUE: 'publish2', // 发布
+  RELEASE: 'publish2', // 发布
+  CHECK: 'publish2', // 确定供应商
+  SUBMIT: 'check', // 提交
+  REJECT: 'authorize', // 发布审批拒绝
+  APPROVE: 'authorize', // 发布审批通过
+  PAUSE: defaultType, // 暂停
+  PAUSE_START: defaultType, // 启用
+  ROUND: defaultType, // 再次询价
+  CLOSE: defaultType, // 关闭
+  ADJUST_TIME: 'mode_edit', // 时间调整
+  ALTER: 'mode_edit', // 变更
+  ADJUST_ATTACHMENT: 'mode_edit', // 附件调整
+  ADD_SUPPLIER: defaultType, // 增加供应商
+  FINISH: defaultType, // 完成
+  OPEN: 'mode_edit', // 开标
+  PRETRIAL_SUBMIT: 'check', // 初审提交
+  PRETRIAL_DELIVER: defaultType, // 初审转交
+  BACK_PRETRIAL: defaultType, // 退回至初审
+  SCORING: defaultType, // 下发专家评分
+  BEGIN_PRETRIAL: defaultType, // 开始初审
+  BEGIN_CHECK: defaultType, // 开始核价
+  SUBMIT_SCORE: defaultType, // 提交评分
+  RFX_EVALUATION_PENDING: defaultType, // 评分汇总
+  EVALUATE_SUMMARY: defaultType, // 评分汇总
+  PRE_EVALUATION_PENDING: defaultType, // 推荐候选人
+  RESCORING: defaultType, // 重新评分
+  START_QUOTATION: defaultType, // 发布多轮报价
+  BARGAIN_START: 'monetization_on', // 发起线上议价
+  BARGAIN_FINISH: 'monetization_on', // 完成线下议价
+  ROLL_BACK: defaultType, // 退回至核价
+  HAND_SCORE: defaultType, // 下发专家评分
+  QUOTATION_END: defaultType, // 结束报价
+  EVALUATE_FINISH: defaultType, // 评分完成
+  BID_EVALUATION_PENDING: defaultType, // 评分汇总
+  OPEN_DELIVER: defaultType, // 开标员转交
+  EVALUATE_DELIVER: defaultType, // 评分员转交
+  SEND_RFX_NOTICE: defaultType, // 发布中标公告
+  QUOTATION_NED: defaultType, // 结束报价
+  RELEASE_REVOKE: 'reply', // 发布审批撤回
+  CHECK_REVOKE: 'reply', // 确定供应商审批撤回
+  RELEASE_APPROVED: 'authorize', // 发布审批通过
+  RELEASE_REFUSED: 'authorize', // 发布审批拒绝
+  CHECK_APPROVED: 'authorize', // 确定供应商通过
+  CHECK_REFUSED: 'authorize', // 确定供应商审批拒绝
+  ALTER_REJECT: 'authorize', // 变更审批拒绝
+  ALTER_APPROVE: 'authorize', // 变更审批通过
+  ADJUST_CONF_RULE: 'mode_edit', // 规则配置调整
+  ADJUST_ADD_SUPPLIER: 'mode_edit', // 新增供应商
+  ADJUST_ADD_MEMBER: 'mode_edit', // 新增寻源小组成员
+  ADJUST_UPDATE_PUR: 'mode_edit', // 修改采购员
+  DOC_DELIVER: 'call_missed_outgoing', // 转交
+  DEFAULT: defaultType, // 默认
+  BARGAIN_CLOSE: 'monetization_on', // 结束线上议价
+  EXTERNAL_APPROVE: 'authorize', // 外部审批通过
+  EXTERNAL_REJECT: 'authorize', // 外部审批拒绝
+};
+
+const defaultDesc = 'operation';
+const processOperationDescMap = {
+  CREATE: defaultDesc, // 新建
+  ISSUE: 'operation', // 发布
+  REJECT: 'approval', // 发布审批拒绝
+  APPROVE: 'approval', // 发布审批通过
+  PAUSE: defaultDesc, // 暂停
+  PAUSE_START: defaultDesc, // 启用
+  ROUND: defaultDesc, // 再次询价
+  CLOSE: defaultDesc, // 关闭
+  ADJUST_TIME: 'operation', // 时间调整
+  ADJUST_ATTACHMENT: 'operation', // 附件调整
+  ADD_SUPPLIER: 'operation', // 增加供应商
+  SUBMIT: 'operation', // 核价提交
+  FINISH: defaultDesc, // 完成
+  OPEN: defaultDesc, // 开标
+  PRETRIAL_SUBMIT: defaultDesc, // 初审提交
+  PRETRIAL_DELIVER: defaultDesc, // 初审转交
+  BACK_PRETRIAL: defaultDesc, // 退回至初审
+  SCORING: defaultDesc, // 下发专家评分
+  BEGIN_PRETRIAL: defaultDesc, // 开始初审
+  BEGIN_CHECK: defaultDesc, // 开始核价
+  SUBMIT_SCORE: defaultDesc, // 提交评分
+  RFX_EVALUATION_PENDING: defaultDesc, // 评分汇总
+  PRE_EVALUATION_PENDING: defaultDesc, // 推荐候选人
+  RESCORING: defaultDesc, // 重新评分
+  START_QUOTATION: defaultDesc, // 发布多轮报价
+  BARGAIN_START: defaultDesc, // 发起线上议价
+  BARGAIN_FINISH: defaultDesc, // 完成线下议价
+  ROLL_BACK: defaultDesc, // 退回至核价
+  HAND_SCORE: defaultDesc, // 下发专家评分
+  QUOTATION_END: defaultDesc, // 结束报价
+  EVALUATE_FINISH: defaultDesc, // 评分完成
+  BID_EVALUATION_PENDING: defaultDesc, // 评分汇总
+  OPEN_DELIVER: defaultDesc, // 开标员转交
+  EVALUATE_DELIVER: defaultDesc, // 评分员转交
+  CANCELED: defaultDesc, // 取消
+  SEND_RFX_NOTICE: defaultDesc, // 发布中标公告
+  QUOTATION_NED: defaultDesc, // 结束报价
+  DEFAULT: defaultDesc, // 默认
+  BARGAIN_CLOSE: defaultDesc, // 结束线上议价
+  EXTERNAL_APPROVE: 'externalApproval', // 外部审批通过
+  EXTERNAL_REJECT: 'externalApproval', // 外部审批拒绝
+  CUX_CANCEL: defaultDesc, //  /** ********* 万国数据采购员点击【作废】按钮-勿动!!! *********** */
+  CUX_RETURNED: defaultDesc, // /** ********* 万国数据技术人员点击【退回Return to Purchaser】-勿动!!! *********** */
+  CUX_UPGRADE: defaultDesc, // /** ********* 万国数据升版动作记录-勿动!!! *********** */
+  CUX_CHANGE: defaultDesc, // /** ********* 万国数据变更动作记录-勿动!!! *********** */
+};
+
+export { processOperationIconMap, processOperationDescMap };

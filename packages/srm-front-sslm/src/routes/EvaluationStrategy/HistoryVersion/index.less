@@ -1,0 +1,66 @@
+@import '~hzero-front/lib/srm-variables';
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+.history-version-submenu {
+  :global {
+    .c7n-menu-submenu-title {
+      width: 140px;
+    }
+    .c7n-menu.c7n-menu-sub.c7n-menu-vertical {
+      max-height: 400px;
+      overflow-y: auto;
+      .c7n-menu-item {
+        height: auto;
+        line-height: normal;
+        padding: 8px 16px;
+      }
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}

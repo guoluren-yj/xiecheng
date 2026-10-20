@@ -1,0 +1,458 @@
+@import '~hzero-front/lib/srm-variables';
+
+.form-alert {
+  margin: -20px -20px 20px -20px;
+  :global {
+    .c7n-alert-message {
+      font-size: 12px;
+      color: #1983f5;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .c7n-alert-close-icon {
+      .icon-close {
+        color: #1983f5;
+      }
+    }
+  }
+}
+.modal-c7n-card {
+  :global {
+    .c7n-card {
+      margin-bottom: 32px;
+      .c7n-card-head {
+        border: none;
+        padding: 0 16px;
+        min-height: 22px;
+        height: 22px;
+        margin-bottom: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 14px;
+          background-color: @primary-color;
+          pointer-events: none;
+        }
+        .c7n-card-head-title {
+          padding-top: 0;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+      .c7n-card-body {
+        padding: 0;
+        .c7n-pro-input-group-before {
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          width: 130px;
+        }
+        .c7n-pro-input-group-input {
+          margin-left: -0.01rem;
+        }
+      }
+    }
+  }
+  .card-invite-form {
+    margin-top: 16px;
+  }
+}
+// 图片预览
+.upload-img-style {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  background-color: #fff;
+  width: 180px !important;
+  height: 180px !important;
+  margin: 0;
+  :global {
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .img-btn {
+    display: none;
+  }
+  &:hover .img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    font-size: 18px;
+    color: #fff;
+    a {
+      color: #fff;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+.view-img-no-model {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+.legal-basic-form {
+  display: flex;
+  :global {
+    & form:first-child {
+      flex-basis: 70%;
+    }
+  }
+  .legal-basic-form-second {
+    flex-basis: 30%;
+  }
+}
+
+// 认证详情
+.invite-certification-work-detail {
+  background-color: #f2f3f5;
+  margin: 0 0 8px !important ;
+  padding: 0;
+  border: 0 !important;
+  :global {
+    .card-titile {
+      padding: 20px 20px 0;
+      margin-bottom: 16px !important;
+      font-weight: 700;
+    }
+    .af-basic-bottom-remain-area {
+      margin: 0 8px;
+    }
+    .c7n-pro-form {
+      padding: 16px 20px 20px 20px;
+      .c7n-pro-field-label-vertical {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+      .c7n-pro-field-wrapper {
+        .c7n-pro-field {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .page-content-wrap {
+      .page-content {
+        margin: 8px 8px 0 8px !important;
+        padding: 16px 0;
+        .c7n-card-body {
+          padding: 0;
+          & > div:first-child {
+            font-size: 16px;
+            color: #000;
+            line-height: 24px;
+            margin-bottom: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .c7n-pro-btn-flat {
+      color: #000 !important;
+    }
+    .manual-review {
+      margin: 8px 8px 0;
+      .card-titile {
+        font-weight: 600 !important;
+        font-size: 16px;
+      }
+      .c7n-pro-form {
+        padding: 0 20px 20px 20px;
+      }
+    }
+    .certification-review {
+      margin: 8px 8px 0;
+    }
+    .enterprise-information {
+      margin: 8px;
+      .c7n-card-head-title {
+        margin: 0;
+        padding: 0;
+        .card-titile {
+          padding: 20px 20px 16px;
+          font-weight: 600 !important;
+          font-size: 16px;
+          margin: 0 !important;
+        }
+      }
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+      .c7n-tabs-tabpane {
+        padding: 0 !important;
+      }
+      .c7n-spin-nested-loading {
+        padding: 0 !important;
+      }
+      .c7n-tabs-tab {
+        font-weight: 400;
+        padding: 8px 20px;
+        margin: 0 0 16px 0;
+      }
+      .c7n-tabs-nav {
+        padding: 16px 0;
+      }
+      .c7n-tabs-content {
+        padding: 0;
+      }
+      .c7n-pro-form {
+        .c7n-pro-field-label-vertical {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .c7n-pro-field-wrapper {
+          .c7n-pro-field {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+      .c7n-pro-table-empty-text-wrapper {
+        font-weight: 400;
+      }
+      .c7n-pro-table {
+        margin: 20px 20px 20px 20px;
+      }
+    }
+    .invest-info {
+      margin: 8px;
+      .c7n-card-head-title {
+        margin: 0;
+        padding: 0;
+        .card-titile {
+          padding: 20px 20px 16px;
+          font-weight: 600 !important;
+          font-size: 16px;
+          margin: 0 !important;
+        }
+      }
+
+      .c7n-tabs-tabpane {
+        padding: 0 !important;
+      }
+      .c7n-tabs-bar {
+        padding: 16px 0;
+        max-width: 180px;
+        width: auto;
+      }
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+      .c7n-tabs-tab {
+        font-weight: 400;
+        padding: 8px 20px;
+        margin: 0 0 16px 0 !important;
+      }
+      .c7n-tabs-content {
+        padding: 0 !important;
+      }
+      .c7n-pro-form {
+        padding: 16px 20px 20px 20px;
+        .c7n-pro-field-label-vertical {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .c7n-pro-field-wrapper {
+          .c7n-pro-field {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+      .c7n-pro-table-empty-text-wrapper {
+        font-weight: 400;
+      }
+      .c7n-pro-table {
+        margin: 20px 20px 20px 20px;
+      }
+    }
+    .page-content-wrap {
+      background-color: #f2f3f5;
+    }
+    .af-basic-container {
+      margin: 8px 8px 0 8px !important;
+      border-bottom: 0.01rem solid #e5e5e5 !important;
+    }
+    .af-basic-button-card {
+      margin: 0 8px;
+      .c7n-card-body {
+        padding: 12px !important;
+      }
+    }
+    .c7n-card-head {
+      padding: 0 0 !important;
+    }
+    .c7n-tabs-tab {
+      text-align: left !important;
+      margin: 0 0 16px 0;
+    }
+    .c7n-pro-vertical-form-display {
+      .c7n-pro-field-label-vertical.c7n-pro-field-required.c7n-pro-field-label:before {
+        display: none;
+      }
+    }
+  }
+  .card-invite-investigate-form {
+    margin-bottom: 32px;
+  }
+  .appeal-title-tips {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .detail-cuz-card {
+    margin: 8px 8px 0 8px !important;
+    :global {
+      .top-section-title {
+        margin-bottom: 0;
+      }
+      .second-section-title {
+        margin-top: 8px;
+        margin-bottom: 0;
+        padding: 16px 16px 0;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        background-color: #fff;
+        &::before {
+          display: none;
+        }
+      }
+      .c7n-card {
+        .c7n-card-head {
+          padding: 0 16px !important;
+        }
+      }
+    }
+    .cuz-card-second-card {
+      background-color: #fff;
+      padding: 16px 16px 0 16px;
+    }
+  }
+}
+
+.invite-query-search-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-width: 136px;
+  :global {
+    div {
+      padding: 3px 8px;
+      color: rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: rgba(0, 0, 0, 0.8);
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    font-weight: 500;
+  }
+}
+
+.certification-page-content-card {
+  padding: 16px 20px 0 !important;
+  :global {
+    .c7n-spin-container {
+      .c7n-card.c7n-card-wider-padding {
+        margin-bottom: 0;
+        .c7n-card-head {
+          padding: 0 16px !important;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.certification-wf-modal-c7n-card {
+  :global {
+    .c7n-card {
+      margin-bottom: 32px;
+      .c7n-card-head {
+        border: none;
+        padding: 0 16px;
+        min-height: 22px;
+        height: 22px;
+        margin-bottom: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 14px;
+          background-color: @primary-color;
+          pointer-events: none;
+        }
+        .c7n-card-head-title {
+          padding-top: 0;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+      .c7n-card-body {
+        padding: 0;
+        .c7n-pro-input-group-before {
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          width: 130px;
+        }
+        .c7n-pro-input-group-input {
+          margin-left: -0.01rem;
+        }
+      }
+    }
+  }
+}
+
+// 企业标签样式
+.enterprise-tags-wrap {
+  margin: 8px;
+  padding: 20px;
+  background-color: #fff;
+  .enterprise-tags-title {
+    font-size: 16px;
+    color: #1d2129;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+}

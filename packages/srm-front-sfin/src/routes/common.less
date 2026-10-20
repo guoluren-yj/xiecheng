@@ -1,0 +1,234 @@
+@modal-footer-height: 57px;
+@modal-large-width: 1090px;
+@modal-medium-width: 742px;
+@modal-small-width: 380px;
+
+.modal-item-info-Table {
+  :global {
+    .ant-table-tbody {
+      .ant-form-item {
+        margin-bottom: 0;
+
+        .ant-form-item-control-wrapper {
+          .ant-form-item-control {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.tabpane-style {
+  :global {
+    .ant-scroll-number {
+      left: 3px;
+    }
+  }
+}
+
+.sfin-form (@formWidth: false) {
+  & when not (@formWidth =false) {
+    width: @formWidth;
+  }
+
+  &.c7n-pro-form-float-label {
+    margin: 0 -8px;
+  }
+
+  & > table > tbody > tr {
+    &:last-child {
+      .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c7n-pro-field-label-vertical {
+    max-width: 100%;
+    line-height: 18px;
+    padding: 0;
+  }
+
+  .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+    padding: 4px 16px 16px 0;
+    font-weight: 600;
+    line-height: 18px;
+
+    .c7n-pro-output {
+      line-height: 18px;
+    }
+  }
+  .c7n-pro-field-label-help + .icon-help {
+    font-size: 14px;
+  }
+}
+
+.sfin-card () {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .c7n-card-body {
+    padding: 0;
+  }
+
+  .c7n-card-head {
+    min-height: 0;
+    border-bottom: none;
+    padding: 0 0 16px 11px;
+
+    &:before {
+      top: 5px;
+      height: 12px;
+    }
+
+    .c7n-card-head-wrapper {
+      flex-direction: column;
+
+      .c7n-card-head-title {
+        font-size: 14px;
+        font-weight: 600;
+        flex: none;
+      }
+
+      .c7n-card-extra {
+        font-size: 12px;
+        line-height: 21px;
+        margin-left: 0;
+        padding: 12px 0 0 0;
+        float: left;
+        text-align: left;
+
+        a:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.sfin-modal (@modalWidth: @modal-large-width, @footerHeight: @modal-footer-height) {
+  width: @modalWidth;
+
+  :global {
+    .c7n-pro-modal-header {
+      padding: 15px 20px;
+    }
+
+    .c7n-pro-modal-body {
+      &:last-child {
+        margin-bottom: @footerHeight;
+
+        .sfin-body-footer {
+          height: @footerHeight;
+          width: @modalWidth;
+          position: fixed;
+          bottom: 0;
+          text-align: left;
+          margin-left: -0.2rem;
+          padding: 0.12rem 0.2rem;
+          border-radius: 0 0 2px 2px;
+          background-color: #fff;
+          border-top: 0.01rem solid #e0e0e0;
+          z-index: 99;
+        }
+      }
+
+      .c7n-tabs-tab {
+        font-size: 14px;
+      }
+
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+
+      .ued-detail-card {
+        .sfin-card();
+      }
+
+      .c7n-pro-form-wrapper {
+        .sfin-form();
+      }
+    }
+
+    .c7n-pro-modal-footer {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+    }
+  }
+}
+
+.sfin-large-modal {
+  .sfin-modal(@modal-large-width);
+}
+
+.sfin-medium-modal {
+  .sfin-modal(@modal-medium-width);
+}
+
+.sfin-small-modal {
+  .sfin-modal(@modal-small-width);
+}
+
+.sfin-collapse () {
+  & > .c7n-collapse-item {
+    overflow: visible; // 覆盖overflow默认值以完全显示伪元素分隔符
+
+    & > .c7n-collapse-header {
+      padding: 20px 0;
+      font-size: 16px;
+      font-weight: 600;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+
+    & > .c7n-collapse-content {
+      padding: 0 0 20px 0;
+
+      & > .c7n-collapse-content-box {
+        padding: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      position: relative;
+      padding-bottom: 8px;
+
+      &::after {
+        content: '';
+        bottom: 0;
+        height: 8px;
+        left: -20px;
+        right: -20px;
+        position: absolute;
+        background-color: #f4f5f7;
+      }
+    }
+  }
+
+  & > .c7n-collapse-item-active {
+    & > .c7n-collapse-header {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.sfin-detail-modal-content {
+  margin: 0;
+  // 确保子元素的 position: sticky 生效)
+  overflow: visible;
+
+  :global {
+    .ssta-detail-collapse-content {
+      margin: 8px;
+    }
+    .page-content {
+      margin: 8px;
+    }
+  }
+}

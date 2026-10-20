@@ -1,0 +1,127 @@
+@import '../../../global';
+
+.second-parts {
+  display: flex;
+  padding-bottom: 12px;
+  // overflow: auto;
+  height: 100%;
+  .navigate-next {
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    margin: 10px 10px 6px 10px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    // background-color: @Blue;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .navigate-before {
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    margin: 0 10px 10px 10px;
+    display: block;
+    text-align: center;
+  }
+  :global {
+    .c7n-spin-nested-loading {
+      height: auto;
+    }
+  }
+}
+
+.second-table {
+  //
+  // overflow: scroll;
+  // overflow-x: auto;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  &.second-table-see {
+    // height: calc(100vh - 230px);
+  }
+
+  &.second-table-edit {
+    // height: calc(100vh - 290px);
+  }
+
+  // & > div:first-child {
+  //   position: absolute;
+  //   top: -35px;
+  //   z-index: 99;
+  //   right: 0;
+  // }
+
+  .search-input-left {
+    width: calc(100% - 144px);
+
+    .master-model-input {
+      width: 290px;
+      //background-color: #eff6ff;
+      margin-top: 4px;
+      max-width: 100%;
+
+      :global {
+        .c7n-pro-input {
+          padding-left: 10px;
+          border-color: rgb(184, 215, 255);
+        }
+
+        .c7n-pro-input:hover {
+          //background-color: #eff6ff !important;
+          border-color: #b8d7ff !important;
+          box-shadow: 0 0 2px 1px #b8d7ff !important;
+        }
+      }
+    }
+  }
+  .search-input-right {
+    width: calc(100% - 250px);
+
+    .master-model-input {
+      width: 290px;
+      //background-color: #eff6ff;
+      margin-top: 4px;
+      max-width: 100%;
+
+      :global {
+        .c7n-pro-input {
+          padding-left: 10px;
+          border-color: rgb(184, 215, 255);
+        }
+
+        .c7n-pro-input:hover {
+          //background-color: #eff6ff !important;
+          border-color: #b8d7ff !important;
+          box-shadow: 0 0 2px 1px #b8d7ff !important;
+        }
+      }
+    }
+  }
+
+  :global {
+    // 隐藏纵向滚动条
+    .c7n-pro-table {
+      -ms-overflow-style: none; // 兼容IE10+
+      overflow: -moz-scrollbars-none; // 兼容Firefox
+      &::-webkit-scrollbar {
+        width: 0 !important; // 兼容Chrome Safari
+      }
+    }
+    .c7n-pro-table-body {
+      height: calc(62vh - 105px) !important;
+    }
+    // 解决字段勾选框上下左右居中
+    .c7n-pro-table-cell-inner > label {
+      vertical-align: middle !important;
+    }
+  }
+}

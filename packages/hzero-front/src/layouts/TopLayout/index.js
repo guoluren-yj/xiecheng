@@ -1,0 +1,210 @@
+import React from 'react';
+import DocumentTitle from 'react-document-title';
+import { Icon } from 'hzero-ui';
+import { connect } from 'dva';
+import dynamic from 'dva/dynamic';
+import { Bind } from 'lodash-decorators';
+import { isEqual } from 'lodash';
+import classnames from 'classnames';
+
+import LoadingBar from 'components/NProgress/LoadingBar';
+import { tabListen } from 'utils/menuTab';
+import { getEnvConfig } from 'utils/iocUtils';
+import { getCurrentOrganizationId } from 'utils/utils';
+
+import DefaultListenWebSocket from '../components/DefaultListenWebSocket';
+import DefaultHeaderLogo from '../components/DefaultHeaderLogo';
+import DefaultMenuTabs from '../components/DefaultMenuTabs';
+import DefaultHeaderRight from '../components/DefaultHeaderRight';
+import DefaultLicenseTip from '../components/DefaultLicenseTip';
+import DefaultListenFavicon from '../components/DefaultListenFavicon';
+import IM from '../components/IM';
+
+import Menu from './Menus';
+import MainMenu from './Menus/MainMenu';
+import MenuProvider from './Menus/MenuProvider';
+import MenuConsumer from './Menus/MenuConsumer';
+
+import HeaderSearch from './HeaderSearch';
+
+import trialInfo from '../../assets/trial-info.png';
+import './styles.less';
+import { getStyle } from './utils';
+
+class TopLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapsed: false,
+    };
+    this.config = getEnvConfig();
+  }
+
+  componentDidMount() {
+    // 清除首屏loading
+    const loader = document.querySelector('#loader-wrapper');
+    if (loader) {
+      loader.parentNode.removeChild(loader);
+      // 设置默认页面加载动画
+      dynamic.setDefaultLoadingComponent(() => <LoadingBar />);
+    }
+    this.init();
+
+    const currentUser = this.props.currentUser;
+    if (currentUser && currentUser.themeConfigVO && currentUser.themeConfigVO.pageStyleLineFeed) {
+      this.setState({
+        menuLineWrap: true,
+      })
+    }
+  }
+
+  init() {
+    const { dispatch, currentUser = {} } = this.props;
+    const { language, tenantId, tenantNum } = currentUser;
+    dispatch({
+      type: 'global/baseLazyInit',
+      payload: {
+        language,
+      },
+    }).then(() => {
+      // 初始化菜单成功后 调用 tabListen 来触发手动输入的网址
+      tabListen();
+      dispatch({
+        type: 'global/initActiveTabMenuId',
+      });
+      dispatch({
+        type: 'global/changeLayoutCollapsed',
+        payload: { collapsed: false },
+      });
+      // 进入工作台读取业务规则中的日历开关
+      dispatch({ type: 'global/queryGlobalCalendarEnable' });
+      // 进入工作台查询配置表
+      dispatch({ type: 'global/queryAmount10CalTax', payload: { tenantId, tenantNum } });
+      // 查询证书信息
+      dispatch({ type: 'global/fetchLicenseStatus' });
+      // 查询消息未读数量
+      dispatch({ type: 'global/fetchCount' });
+    });
+    dispatch({
+      type: 'user/queryDataHierarchies',
+      payload: { organizationId: getCurrentOrganizationId() },
+    });
+  }
+
+  @Bind()
+  toggleCollapse() {
+    const { collapsed = false } = this.state;
+    this.setState({
+      collapsed: !collapsed,
+    });
+    const { dispatch } = this.props;
+    dispatch({
+      type: 'global/changeLayoutCollapsed',
+      payload: { collapsed: !collapsed },
+    });
+  }
+
+  render() {
+    const { currentUser = {} } = this.props;
+    return <DocumentTitle title={currentUser.title || ''}>{this.renderLayout()}</DocumentTitle>;
+  }
+
+  renderLayout() {
+    const { currentUser = {}, extraHeaderRight, dispatch, showLicenseTip } = this.props;
+    const { collapsed = false, menuLineWrap } = this.state;
+    const { IM_ENABLE, ENV_SIGN } = this.config;
+    const logoStyles = {
+      logo: !isEqual(ENV_SIGN, 'undefined')
+        ? getStyle('header-logo-sign')
+        : getStyle('header-logo'),
+      title: getStyle('header-title'),
+      // collapsed: getStyle('header-collapsed'), //  布局不需要组件内部 collapsed, 全部使用外部的 layout-collapsed 控制
+      'icon-icon': getStyle('header-icon-icon'),
+      'icon-img': getStyle('header-icon-img'),
+    };
+    let imEnable = false;
+    try {
+      imEnable = JSON.parse(IM_ENABLE);
+    } catch (e) {
+      imEnable = false;
+    }
+    return (
+      <MenuProvider>
+        <div
+          className={classnames(getStyle('layout'), {
+            [getStyle('layout-collapsed')]: collapsed,
+            [getStyle('layout-has-tip')]: showLicenseTip,
+          })}
+        >
+          <div className={getStyle('header')}>
+            <div className={getStyle('header-left')}>
+              {!isEqual(ENV_SIGN, 'undefined') && (
+                <div className={getStyle('header-sign')}>
+                  <img
+                    src={trialInfo}
+                    alt="trial-info"
+                    className={getStyle('header-trail-img-icon')}
+                  />
+                  <span className={getStyle('header-sign-title')}>{ENV_SIGN}</span>
+                </div>
+              )}
+              <DefaultHeaderLogo
+                collapsed={collapsed}
+                logo={currentUser.logo}
+                title={currentUser.title}
+                styles={logoStyles}
+              />
+            </div>
+            <div className={getStyle('header-content')}>
+              <Icon
+                className={getStyle('menu-trigger')}
+                type={collapsed ? 'menu-unfold' : 'menu-fold'}
+                onClick={this.toggleCollapse}
+              />
+              <MenuConsumer>
+                <MainMenu
+                  extraRight={
+                    <div className={getStyle('header-right')}>
+                      <HeaderSearch className={getStyle('search')} />
+                      <DefaultHeaderRight extraHeaderRight={extraHeaderRight} dispatch={dispatch} />
+                    </div>
+                  }
+                />
+              </MenuConsumer>
+            </div>
+          </div>
+          {showLicenseTip && <DefaultLicenseTip />}
+          <DefaultListenWebSocket />
+          <div className={getStyle('content')}>
+            <div className={[getStyle('menu'), menuLineWrap && "menu-line-wrap"].filter(Boolean).join(" ")}>
+              <MenuConsumer>
+                <Menu menuLineWrap={menuLineWrap} />
+              </MenuConsumer>
+            </div>
+            <div className={getStyle('page')}>
+              <DefaultMenuTabs />
+              {imEnable && <IM />}
+            </div>
+          </div>
+        </div>
+        <DefaultListenFavicon />
+      </MenuProvider>
+    );
+  }
+}
+
+export default connect(({ user = {}, global = {} }) => {
+  const { currentUser = {} } = user || {};
+  return {
+    menu: global.menu, // 菜单
+    menuLoad: global.menuLoad, // 菜单
+    routerData: global.routerData, // 路由配置
+    currentUser: user.currentUser, // 当前用户
+    activeTabKey: global.activeTabKey, // 当前路由
+    tabs: global.tabs, // 所有 tab 页
+    language: global.language, // 当前语言
+    showLicenseTip: global.showLicenseTip,
+    // count: global.count, // 当前消息计数
+    menuLineWrap: !!currentUser.themeConfigVO && currentUser.themeConfigVO.pageStyleLineFeed,
+  };
+})(TopLayout);

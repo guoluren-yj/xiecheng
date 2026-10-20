@@ -1,0 +1,28 @@
+@import '~hzero-front/lib/srm-variables';
+
+.create-left-tabs-payDoc:global(.c7n-tabs-vertical):global(.c7n-tabs-left) {
+  height: 100%;
+  :global {
+    .c7n-tabs-bar {
+      padding: 20px 0;
+      .c7n-tabs-bar-inner {
+        flex-direction: column-reverse;
+        gap: 16px;
+        .c7n-tabs-extra-content {
+          align-items: flex-start;
+        }
+      }
+    }
+    .c7n-tabs-tab {
+      padding-left: 0;
+    }
+  }
+  .tab-bar-extra-title {
+    color: @text-3;
+  }
+  .checkbox-outter-label {
+    padding-right: 8px;
+    padding-left: 8px;
+    vertical-align: middle;
+  }
+}

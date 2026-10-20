@@ -1,0 +1,86 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.tabs {
+  :global {
+    .c7n-tabs-tab {
+      // padding: 10px 15px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.overflow-detail-content {
+  overflow-y: auto !important;
+  height: calc(100vh - 136px) !important;
+}
+
+.new-detail-content {
+  padding-bottom: 16px;
+  :global {
+    .page-content {
+      padding: 20px !important;
+      margin: 8px 8px 0 8px !important;
+      margin-bottom: 0 !important;
+      background-color: #fff;
+    }
+
+    .content-title {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+    // .notice-content {
+    //   margin: 8px 16px 0 16px;
+    //   padding: 20px;
+    //   background-color: #fff;
+    // }
+
+    // :not(:last-child) {
+    //   .notice-content {
+    //     margin-bottom: 0;
+    //   }
+    // }
+
+    .detail-list {
+      tr.ant-table-row {
+        td.status {
+          img {
+            height: 16px;
+            width: 12px;
+            min-width: 12px;
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.sbdm-lov-search {
+  :global {
+    .c7n-pro-select {
+      border: 1px solid #d9d9d9;
+    }
+  }
+}

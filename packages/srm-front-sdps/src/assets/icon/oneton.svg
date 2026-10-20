@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="11px" viewBox="0 0 27 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>n</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-组合详情" transform="translate(-716.000000, -177.000000)">
+            <g id="编组-8" transform="translate(716.000000, 173.000000)">
+                <g id="n" transform="translate(0.000000, 4.000000)">
+                    <rect id="矩形" fill="#5A6677" x="0" y="5" width="27" height="1"></rect>
+                    <circle id="椭圆形" fill="#5A6677" cx="13.5" cy="5.5" r="5.5"></circle>
+                    <polygon id="N" fill="#FFFFFF" fill-rule="nonzero" points="11.0574675 2.65701746 11.9934675 2.65701746 14.8174675 6.77701746 14.8494675 6.77701746 14.8494675 2.65701746 15.7934675 2.65701746 15.7934675 8.36901746 14.8814675 8.36901746 12.0254675 4.19301746 11.9934675 4.19301746 11.9934675 8.36901746 11.0574675 8.36901746"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

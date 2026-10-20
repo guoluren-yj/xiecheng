@@ -1,0 +1,92 @@
+/*!
+    index - 角色管理
+    @date 2018-6-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.hiam-role-list {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.auth-row-hover {
+  background: #f0f4ff !important;
+}
+
+.permssion-modal {
+  .content-container {
+    height: 100%;
+    display: flex;
+    &-left {
+      padding: 20px;
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      &-title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+      }
+      &-table {
+        flex: 1;
+        overflow: auto;
+      }
+      &-footer {
+        margin-top: 20px;
+        height: auto;
+        button {
+          margin-right: 8px;
+        }
+      }
+    }
+    &-right {
+      padding: 20px;
+      width: 300px;
+      background: #fbfbfc;
+      border-left: 0.01rem solid #e0e0e0;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      &-title {
+        height: 18px;
+        & > div {
+          display: inline-block;
+          width: calc(100% - 18px);
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 12px;
+          line-height: 18px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        i {
+          float: right;
+        }
+      }
+      &-list {
+        margin-top: 16px;
+        overflow: auto;
+        flex: 1;
+      }
+    }
+  }
+  :global {
+    .ant-drawer-body {
+      height: 100%;
+      padding: 0;
+      overflow: hidden;
+    }
+    .ant-input {
+      padding-left: 28px !important;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import '~hzero-front/lib/srm-variables';
+
+.corp-due-left-menu-basic {
+  min-width: 200px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(229, 231, 236, 1);
+  flex: 1;
+
+  :global {
+    .c7n-pro-btn-icon-only {
+      border-radius: 2px;
+    }
+  }
+}
+
+.corp-due-left-menu-list-panel {
+  // padding: 0 16px;
+  margin-top: 8px;
+  height: calc(100vh - 226px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.corp-due-left-menu-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+  :global {
+    .c7n-tag {
+      border: none;
+    }
+  }
+}
+
+.item-selected {
+  font-weight: 600;
+  color: @primary-color;
+  border-right: 3px solid @primary-color;
+}
+
+.item-normal {
+  color: #4e5769;
+  font-weight: 400;
+  border: none;
+}
+
+.chart-no-content-message {
+  margin-top: 8px;
+  color: @text-3;
+}
+
+.tag-scan {
+  background: rgba(10, 125, 245, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #0161D5;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.tag-shell {
+  background: rgba(10, 125, 245, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #0161D5;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.tag-risk-scan {
+  background: rgba(242, 128, 26, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #F06200;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.tag-relation-mining {
+  background: #E5E7EC;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #4E5769;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.tag-diligence {
+  background: rgba(10, 125, 245, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #0161D5;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.tag-decision {
+  background: rgba(71, 184, 131, 0.15);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #179454;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 1px 4px;
+}

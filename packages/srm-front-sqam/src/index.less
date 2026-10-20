@@ -1,0 +1,43 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+.header-link {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+:global {
+  .hzero-leaf-menu-item {
+    line-height: 20px !important;
+  }
+
+  .hzero-sub-menu-item-content {
+    height: 40px !important;
+  }
+
+  .hzero-leaf-menu-item-wrap-line {
+    margin: 9.5px !important;
+  }
+
+  // 修复c7n 弹框样式
+  .c7n-pro-modal-container {
+    & > div:last-child {
+      position: fixed;
+      overflow: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      word-break: break-all;
+      left: 0;
+      z-index: 1000;
+      -webkit-overflow-scrolling: touch;
+      outline: 0;
+
+      .c7n-pro-modal-center:not(.c7n-pro-modal-fullscreen) {
+        padding-top: 1rem;
+        position: static;
+        padding-bottom: 24px;
+      }
+    }
+  }
+}

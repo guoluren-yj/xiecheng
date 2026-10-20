@@ -1,0 +1,176 @@
+// 查询条件配置 静态
+import intl from 'utils/intl';
+import { SRM_PLATFORM } from '_utils/config.js';
+import { getCurrentOrganizationId } from 'utils/utils';
+
+const organizationId = getCurrentOrganizationId();
+
+export const getQueryConfig = (type) => {
+  return {
+    'AMKT.SUPPLIER_INVOIC_FILTER': {
+      sortedEnabled: 1,
+      mergeFieldList: [
+        {
+          fieldAlias: 'paymentNo',
+          fieldCode: 'paymentNo',
+          fieldEditable: 1,
+          fieldName: intl.get('spfm.supplierInvoic.model.paymentNo').d('缴费编号'),
+          fieldVisible: 1,
+          gridSeq: 0,
+          showFlag: 0,
+          sortedFlag: 0,
+          customComparisonSet: ['LIKE'],
+          widget: {
+            fieldWidget: 'INPUT',
+            linkNewWindow: 0,
+            multipleFlag: 0,
+          },
+        },
+      ],
+      systemFilters: [
+        {
+          defaultFlag: 1,
+          defaultSortedField: 'paymentDate',
+          defaultSortedOrder: 'asc',
+          filterName: intl.get('spfm.supplierInvoic.placeholder.defaultSelected').d('默认筛选'),
+          allFields: [
+            // {
+            //   customComparisonSet: ['='],
+            //   fieldAlias: 'paymentNo',
+            //   fieldCode: 'paymentNo',
+            //   fieldEditable: 1,
+            //   fieldName: intl.get('spfm.supplierInvoic.fileld.paymentNo').d('缴费编号'),
+            //   fieldVisible: 1, // 是否显示
+            //   modelCode: 'paymentNo',
+            //   proDefaultFlag: 0,
+            //   showFlag: 1,
+            //   widget: {
+            //     fieldWidget: 'INPUT',
+            //     linkNewWindow: 0,
+            //     multipleFlag: 0,
+            //   },
+            //   rank: 1, // 保存的字段
+            //   gridSeq: 1, // 排序规则
+            //   sortedFlag: 1, // 是否可以排序
+            //   fixedFlag: 1, // 是否锁定在外部显示 不能删除
+            //   usedFlag: 1, // 添加筛选在外部显示
+            // },
+            type === 'supplier' && {
+              customComparisonSet: ['='],
+              fieldAlias: 'ticketState',
+              fieldCode: 'ticketState',
+              fieldEditable: 1,
+              fieldName: intl.get('spfm.supplierInvoic.model.ticketState').d('开票状态'),
+              fieldVisible: 1,
+              lovInfo: { displayField: 'meaning', valueField: 'value' },
+              modelCode: 'ticketState',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                fieldWidget: 'SELECT',
+                linkNewWindow: 0,
+                lovInfo: { displayField: 'meaning', valueField: 'value' },
+                sourceCode: 'SPFM.TICKET_STATUS',
+                // lookupUrl: `${SRM_PLATFORM}/v1/${organizationId}/supplier-payment/queryAmktLov?lovCode=AMKT.TICKET_STATUS`,
+              },
+              gridSeq: 1,
+              sortedFlag: 0,
+              fixedFlag: 1,
+              usedFlag: 1,
+            },
+            type === 'buyer' && {
+              customComparisonSet: ['='],
+              fieldAlias: 'supplierTenantCode',
+              fieldCode: 'supplierTenantCode',
+              fieldEditable: 1,
+              fieldName: intl.get('spfm.supplierInvoic.model.supplierObj').d('供应商'),
+              fieldVisible: 1,
+              lovInfo: { displayField: 'supplierTenantName', valueField: 'supplierTenantCode' },
+              modelCode: 'supplierTenantCode',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              usedFlag: 1,
+              widget: {
+                fieldWidget: 'LOV',
+                linkNewWindow: 0,
+                lovInfo: { displayField: 'supplierTenantName', valueField: 'supplierTenantCode' },
+                sourceCode: 'SPFM.PAYMENT_SUPPLIER_LIST',
+                axiosConfig: {
+                  method: 'GET',
+                  url: `${SRM_PLATFORM}/v1/${organizationId}/supplier-payment/supplier-list`,
+                },
+                queryField: 'searchName',
+              },
+              rank: 3,
+              gridSeq: 3,
+              sortedFlag: 0,
+              fixedFlag: 1,
+            },
+            {
+              customComparisonSet: ['IN'],
+              fieldAlias: 'paymentDate',
+              fieldCode: 'paymentDate',
+              fieldEditable: 1,
+              fieldName: intl.get('spfm.supplierInvoic.model.paymentDate').d('缴费时间'),
+              fieldVisible: 1,
+              modelCode: 'paymentDate',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                dateFormat: 'YYYY-MM-DD',
+                fieldWidget: 'DATE_PICKER',
+                linkNewWindow: 0,
+                multipleFlag: 0,
+              },
+              rank: 4,
+              gridSeq: 6,
+              sortedFlag: 1,
+              usedFlag: 1,
+              fixedFlag: 1,
+            },
+            {
+              customComparisonSet: ['IN'],
+              fieldAlias: 'startDate',
+              fieldCode: 'startDate',
+              fieldEditable: 1,
+              fieldName: intl.get('spfm.supplierInvoic.model.startDate').d('有效期从'),
+              fieldVisible: 1,
+              modelCode: 'startDate',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                dateFormat: 'YYYY-MM-DD',
+                fieldWidget: 'DATE_PICKER',
+                linkNewWindow: 0,
+                multipleFlag: 0,
+              },
+              gridSeq: 7,
+              sortedFlag: 0,
+              usedFlag: 0,
+            },
+            {
+              customComparisonSet: ['IN'],
+              fieldAlias: 'endDate',
+              fieldCode: 'endDate',
+              fieldEditable: 1,
+              fieldName: intl.get('spfm.supplierInvoic.model.endDate').d('有效期至'),
+              fieldVisible: 1,
+              modelCode: 'endDate',
+              proDefaultFlag: 0,
+              showFlag: 1,
+              widget: {
+                dateFormat: 'YYYY-MM-DD',
+                fieldWidget: 'DATE_PICKER',
+                linkNewWindow: 0,
+                multipleFlag: 0,
+              },
+              gridSeq: 8,
+              sortedFlag: 0,
+              usedFlag: 0,
+            },
+          ].filter(Boolean),
+        },
+      ],
+    },
+  };
+};

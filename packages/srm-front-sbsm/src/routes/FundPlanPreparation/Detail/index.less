@@ -1,0 +1,189 @@
+@import '../../../common.less';
+@import '~hzero-front/lib/srm-variables.less';
+.sbsm-detail-wrapper-fund-plan-content {
+  height: 100%;
+  :global {
+    .c7n-spin-nested-loading {
+      height: 100%;
+      .c7n-spin-container {
+        height: 100%;
+        .sbsm-detail-collapse-content {
+          // height: calc(100% - 16px);
+        }
+      }
+    }
+  }
+}
+
+.amount-summary-wrapper {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  :global {
+    .settle-document-type {
+      width: 46px;
+      font-weight: 600;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-right: 16px;
+      writing-mode: vertical-lr;
+      position: relative;
+
+      .document-type-name {
+        left: 50%;
+        top: 50%;
+        cursor: default;
+        max-height: 100%;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transform: translate(-50%, -50%);
+      }
+
+      .push-pin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+      }
+
+      .push_pin_fixed {
+        transform: rotate(45deg);
+      }
+    }
+
+    .amount-sign {
+      display: flex;
+      padding: 0 16px;
+      font-size: 20px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .amount-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .amount-row {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        .amount-card {
+          flex: auto;
+          background: #fff;
+          border: 1px solid #f2f2f2;
+          border-radius: 2px;
+          padding: 0 16px;
+
+          .amount-total {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon {
+              margin-top: -5px;
+              font-size: 14px;
+            }
+
+            .expand-card {
+              position: relative;
+
+              .icon-expand_less {
+                position: absolute;
+                right: 0;
+                bottom: 16px;
+                color: @primary-color;
+                background-color: #f2f2f2;
+              }
+            }
+
+            .amount-header {
+              margin: 0 4px;
+              font-size: 14px;
+              color: #000;
+              font-weight: 600;
+            }
+          }
+
+          .amount-card-operation-icon {
+            cursor: pointer;
+            color: @primary-color;
+            margin-left: 4px;
+          }
+
+          .amount-detail {
+            height: 38px;
+            display: flex;
+            border-top: solid 1px #f5f5f5;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #000;
+            align-items: center;
+          }
+
+          .amount-detail-noborder {
+            border-top: 0;
+
+            .amount-number {
+              color: #000;
+              // font-weight: 500;
+            }
+          }
+        }
+
+        .amount-col-3 {
+          flex: 3;
+        }
+
+        .amount-col-2 {
+          flex: 2;
+        }
+      }
+    }
+  }
+}
+.children_table {
+  :global {
+    thead tr th:nth-child(2) {
+      .c7n-pro-table-cell-inner {
+        padding-left: 22px !important;
+      }
+    }
+    .c7n-pro-table-cell-prefix {
+      padding-left: 0;
+      position: relative;
+      left: -7px;
+    }
+    .c7n-pro-table-cell-prefix + .c7n-pro-table-cell-inner:not(.c7n-pro-table-cell-inner-editable) {
+      left: -9px;
+    }
+  }
+}
+
+.children_table_td {
+  thead tr th:nth-child(2) {
+    .c7n-pro-table-cell-inner {
+      padding-left: 0 !important;
+    }
+  }
+  :global {
+    thead tr th:nth-child(1) {
+      .c7n-pro-table-cell-inner {
+        padding-left: 22px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import '~hzero-front/lib/srm-variables';
+
+// 操作记录样式
+.operation-warp {
+  :global {
+    .c7n-timeline-item {
+      padding: 6px 0 0.12rem;
+    }
+    .c7n-timeline-item-content {
+      padding: 0 0 0 0.24rem;
+    }
+  }
+  .operation-item-warp {
+    display: flex;
+    align-items: baseline;
+    margin-left: calc(16px - 0.18rem);
+    .operation-icon {
+      color: rgba(0, 0, 0, 0.85);
+      & > i {
+        font-size: 14px;
+      }
+    }
+    .operation-content {
+      width: 100%;
+      margin-left: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      &-desc {
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+        &-item {
+          color: #000;
+          font-weight: bold;
+          &-supplier {
+            display: inline-block;
+            min-width: 16px;
+            line-height: 16px;
+            text-align: center;
+            font-weight: 600;
+            -webkit-transform: scale(0.83);
+            transform: scale(0.83);
+            border: 1px solid #3095f2;
+            border-radius: 3px;
+            color: #3095f2;
+            margin-right: 4px;
+          }
+        }
+      }
+      &-remark {
+        margin-bottom: 4px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+      }
+      &-time {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+      }
+    }
+  }
+}
+// 审批记录样式
+.approve-warp {
+  margin-bottom: 4px;
+  :global {
+    .c7n-collapse-header {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0 0 16px !important;
+    }
+    .c7n-collapse-content {
+      padding: 0;
+    }
+    .c7n-collapse-content-box {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+// 无数据样式
+.no-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 214px);
+  svg {
+    margin-bottom: 16px;
+    color: @primary-color;
+  }
+  span {
+    font-size: 14px;
+    color: #868d9c;
+  }
+}

@@ -1,0 +1,40 @@
+/**
+ * SheetCreation - 整单引用创建
+ * @date: 2019-02-20
+ * @author: guochaochao <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.purchase-application {
+  .purchase-application-line {
+    position: relative;
+    padding: 8px 10px;
+    margin: 15px 0;
+    border: 1px dashed #ccc;
+    :global {
+      .prompt-message {
+        position: absolute;
+        top: -10px;
+        display: inline-block;
+        padding: 0 5px;
+        background-color: #fff;
+      }
+      .ant-row.ant-form-item {
+        width: 300px;
+      }
+    }
+  }
+  .button-group {
+    margin-bottom: 15px;
+    :global {
+      .ant-btn:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+  :global {
+    .ant-table-wrapper .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

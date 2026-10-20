@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>增加小数位数 </title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-511.000000, -94.000000)">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(54.000000, 1.000000)">
+                        <g id="编组-34" transform="translate(141.000000, 0.000000)">
+                            <g id="增加小数位数-" transform="translate(96.000000, 3.000000)">
+                                <rect id="Rectangle" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                                <g id="编组-10" transform="translate(10.000000, 9.666667) rotate(-270.000000) translate(-10.000000, -9.666667) translate(3.625000, 3.791667)">
+                                    <rect id="矩形复制-11" stroke="#464D5A" transform="translate(3.500000, 5.500000) rotate(-90.000000) translate(-3.500000, -5.500000) " x="1.5" y="2" width="4" height="7" rx="2"></rect>
+                                    <circle id="椭圆形复制-2" fill="#464D5A" fill-rule="nonzero" transform="translate(6.083333, 10.000000) rotate(-90.000000) translate(-6.083333, -10.000000) " cx="6.08333333" cy="10" r="1"></circle>
+                                    <polygon id="形状结合" fill="#464D5A" fill-rule="nonzero" transform="translate(10.666667, 5.875000) rotate(-360.000000) translate(-10.666667, -5.875000) " points="10.6666667 0 12.75 3.33333333 11.2075 3.3325 11.2083333 11.75 10.125 11.75 10.1241667 3.3325 8.58333333 3.33333333"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

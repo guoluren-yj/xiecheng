@@ -1,0 +1,488 @@
+/*
+ * index.less - 发票查验明细样式
+ * @date: 2019-07-24
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+// @normal-table-border: 1px solid rgb(232, 232, 232);
+// @table-bottom-bold-border: 1px solid rgb(232, 232, 232);
+@normal-table-border: 1px solid #c29b4a;
+@table-bottom-bold-border: 1px solid #c29b4a;
+@invoice-color: #c29b4a;
+@invoice-data-color: #425ed9;
+.invoice-verification-detail {
+  :global {
+    .ant-table-footer {
+      padding: 0;
+      background-color: #fff;
+    }
+    .commodityName {
+      white-space: normal !important;
+    }
+    .ant-table.ant-table-bordered .ant-table-title {
+      padding: 0;
+    }
+
+    .bold-bottom {
+      // border-bottom: @table-bottom-bold-border !important;
+      z-index: 1;
+    }
+
+    .ant-table-placeholder {
+      .bold-bottom;
+    }
+
+    .ant-col-9.ant-form-item-label {
+      line-height: 20px;
+      text-align: left;
+
+      & > label {
+        color: #666;
+      }
+    }
+
+    .blue-color {
+      color: @invoice-data-color;
+    }
+
+    .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+      line-height: 20px;
+    }
+
+    .table-below-line {
+      padding: 0 16px;
+      margin: 50px 0 24px 0;
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+      }
+      .table-below-line-label label {
+        color: black !important;
+      }
+    }
+    .table-below-line-first {
+      .table-below-line();
+      margin-top: 12px;
+      div label {
+        color: @invoice-color !important;
+      }
+      .ant-form-item-children {
+        color: @invoice-data-color !important;
+      }
+      .ant-form-item-label {
+        width: 30.5%;
+      }
+      .ant-form-item-control-wrapper {
+        width: 69.5%;
+      }
+    }
+    .ant-row.ant-form-item {
+      margin-bottom: 16px;
+      label {
+        color: @invoice-color;
+      }
+      .ant-form-item-control {
+        color: @invoice-data-color;
+      }
+    }
+
+    .ant-table-body {
+      overflow-x: hidden !important;
+    }
+    // 电子发票底部最后一行
+    .footer-last-row {
+      display: flex;
+      border-top: @normal-table-border;
+      border-right: @normal-table-border;
+      border-bottom: @normal-table-border;
+      & > div {
+        padding: 0 16px;
+        color: @invoice-color;
+        // min-width: 100px;
+        & > p {
+          height: 20px;
+          line-height: 20px;
+          margin-bottom: 4px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          & > span:first-child {
+            min-width: 100px;
+            display: inline-block;
+          }
+          & > span:last-child {
+            color: @invoice-data-color;
+          }
+        }
+      }
+
+      & > div:not(:last-child) {
+        border-right: @normal-table-border;
+      }
+
+      & > div:first-child {
+        // width: 110px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        border-left: @normal-table-border;
+      }
+
+      & > div:nth-child(2) {
+        padding: 10px 16px;
+        // width: calc(100% - 485px);
+        width: 565px;
+      }
+
+      & > div:nth-child(3) {
+        width: 45px;
+        display: flex;
+        align-items: center;
+      }
+
+      & > div:nth-child(4) {
+        padding: 10px 16px;
+        // width: 395px;
+        width: 405px;
+      }
+      // & > div:last-child {
+      //   border-right: @normal-table-border;
+      // }
+    }
+    .border-bottom {
+      border-top: none;
+      border-bottom: @normal-table-border;
+    }
+    // 电子发票表格底部行-改
+    .invoice-footer-first-row {
+      display: flex;
+      justify-content: flex-start;
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      & > span {
+        border-right: @normal-table-border;
+        border-bottom: @normal-table-border;
+      }
+      .one {
+        border-left: @normal-table-border;
+        width: 174px;
+      }
+      .two {
+        width: 148px;
+      }
+      .three {
+        width: 123px;
+      }
+      .four {
+        width: 123px;
+      }
+      .five {
+        width: 124px;
+      }
+      .six {
+        width: 124px;
+        text-align: right;
+        padding-right: 16px;
+      }
+      .seven {
+        width: 124px;
+      }
+      .eight {
+        width: 125px;
+        text-align: right;
+        padding-right: 16px;
+      }
+
+      .footer-one {
+        width: 244px;
+        border-left: @normal-table-border;
+      }
+      .footer-two {
+        width: 386px;
+        padding: 0 27px;
+        text-align: left;
+        border-right: none;
+      }
+      .footer-three {
+        text-align: right;
+        width: calc(100% - 322px);
+        padding: 0 128px;
+      }
+
+      .bold-bottom {
+        border-bottom: @normal-table-border !important;
+      }
+    }
+
+    // 增值税应税货物或劳务销货清单表格底部
+
+    .list-of-good-last-line {
+      & > span {
+        border-bottom: @normal-table-border;
+      }
+    }
+
+    .list-of-goods-footer-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 40px;
+      height: 40px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #d5dae0;
+      }
+
+      .one {
+        width: 72px;
+        text-align: center;
+        border-right: 1px solid rgb(232, 232, 232);
+      }
+      .two {
+        width: calc(100% - 1080px);
+      }
+      .three {
+        width: 580px;
+      }
+      .four {
+        width: 180px;
+      }
+      .five {
+        width: 80px;
+      }
+      .six {
+        width: 180px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .header-row {
+    padding: 0 16px 16px;
+  }
+  .special-msg {
+    margin-bottom: 20px;
+    color: red;
+  }
+  .qr-code {
+    width: 100px;
+    height: 100px;
+  }
+  .invoiceCode {
+    white-space: pre-wrap !important;
+  }
+  .table-with-no-border-bottom {
+    :global {
+      .ant-table .ant-table-tbody tr > td {
+        border-bottom: none;
+        color: @invoice-data-color;
+      }
+      .ant-table-body table th {
+        color: @invoice-color !important;
+        border-bottom: @table-bottom-bold-border;
+      }
+      .ant-table-body td,
+      .ant-table-body th {
+        border-left: 1px solid #c29b4a;
+        &:last-child {
+          border-right: 1px solid #c29b4a;
+        }
+      }
+      .ant-table .ant-table-tbody tr {
+        &:nth-last-child(3):hover > td {
+          background: rgb(255, 255, 255);
+        }
+        &:nth-last-child(2):hover > td {
+          background: rgb(255, 255, 255);
+        }
+        &:last-child:hover > td {
+          background: rgb(255, 255, 255);
+        }
+      }
+      .ant-table-wrapper,
+      .ant-spin-nested-loading,
+      .ant-spin-container,
+      .ant-table,
+      .ant-table-content,
+      .ant-table-scroll,
+      .ant-table-body,
+      .ant-table-fixed,
+      .ant-table-tbody {
+        height: 100%;
+      }
+      .tbody.ant-table-tbody > tr > td {
+        border: @normal-table-border;
+      }
+      .ant-table .ant-table-tbody tr {
+        &:last-child > td {
+          border-bottom: @normal-table-border;
+          &:nth-child(1) {
+            text-align: center;
+            color: @invoice-color;
+          }
+          &:nth-child(2),
+          &:nth-last-child(2) {
+            // color: #29bece;
+            color: @invoice-data-color;
+            text-align: center;
+          }
+        }
+        &:nth-last-child(2) > td {
+          // color: #29bece;
+          color: @invoice-data-color;
+          &:nth-child(1) {
+            text-align: center;
+            color: @invoice-color;
+          }
+        }
+        &:nth-last-child(3) {
+          height: 100%;
+        }
+      }
+    }
+    height: 316px;
+  }
+  // ListOfGoods 增值税应税货物或劳务销货清单的table
+  .table-with-no-border-bottom-bom {
+    :global {
+      .ant-table .ant-table-tbody tr > td {
+        border-bottom: none;
+      }
+
+      .ant-table-wrapper,
+      .ant-spin-nested-loading,
+      .ant-spin-container,
+      .ant-table,
+      .ant-table-content,
+      .ant-table-scroll,
+      .ant-table-body,
+      .ant-table-body > table,
+      .ant-table-fixed,
+      .ant-table-tbody {
+        height: 100%;
+      }
+      .ant-table .ant-table-tbody tr {
+        &:nth-last-child(3) {
+          height: 100%;
+          &:hover > td {
+            background: rgb(255, 255, 255);
+          }
+        }
+
+        &:last-child > td {
+          border-bottom: 1px solid rgb(232, 232, 232);
+          &:last-child,
+          &:nth-last-child(3) {
+            // color: #29bece;
+            color: @invoice-data-color;
+          }
+        }
+        &:nth-last-child(2) > td {
+          &:last-child,
+          &:nth-last-child(3) {
+            // color: #29bece;
+            color: @invoice-data-color;
+          }
+        }
+
+        &:last-child:hover > td,
+        &:nth-last-child(2):hover > td {
+          background: rgb(255, 255, 255);
+        }
+      }
+    }
+    height: 898px;
+  }
+  // 电子发票样式
+  .electronic-invoice {
+    :global {
+      .header-information-row {
+        display: flex;
+        justify-content: space-between;
+
+        .ant-form-item-control {
+          color: @invoice-data-color;
+        }
+        & > div:first-child {
+          min-width: 25%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 16px;
+        }
+
+        & > div:nth-child(2) {
+          font-size: 22px;
+          display: flex;
+          align-items: center;
+
+          p {
+            // border-bottom: 1px solid #333;
+            line-height: 22px;
+            color: @invoice-color;
+
+            &::before {
+              content: '';
+              width: 100%;
+              height: 1px;
+              display: block;
+              background: @invoice-color;
+              transform: translate(0, 33px);
+            }
+
+            &::after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              display: block;
+              background: @invoice-color;
+              transform: translate(0, 6px);
+            }
+          }
+        }
+
+        & > div:last-child {
+          min-width: 25%;
+        }
+      }
+    }
+  }
+  .list-of-goods {
+    :global {
+      .ant-row.read-row {
+        padding: 0 16px;
+        div {
+          white-space: pre-wrap !important;
+        }
+        .ant-form-item .ant-form-item-label label {
+          color: black;
+        }
+      }
+      .title {
+        // height: 46px;
+        height: 102px;
+        // background-color: #fafafa;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        p {
+          font-size: 22px;
+          line-height: 30px;
+          margin-bottom: 0;
+        }
+      }
+      .list-last-row {
+        display: flex;
+        justify-content: space-between;
+        & > div {
+          width: 25%;
+        }
+      }
+    }
+  }
+}

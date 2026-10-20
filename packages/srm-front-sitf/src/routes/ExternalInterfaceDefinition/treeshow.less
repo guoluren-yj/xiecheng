@@ -1,0 +1,73 @@
+.treeNameStyle {
+  background-color: #d9d9d9;
+  width: 270px;
+  :global {
+    .c7n-tree-node-selected .boxContent {
+      border: 1px solid #29BEDB;
+    }
+    .c7n-tree-treenode-selected .boxContent {
+      border: 1px solid #29BEDB;
+    }
+    .boxContent {
+      width: 179px;
+      height: 66px;
+      position: relative;
+      border: 1px solid #d9d9d9;
+      background-color: #fff;
+      color: #7c859b;
+      padding: 9px 15px;
+      margin-top: 10px;
+      transition: transform 0.2s ease-in-out;
+      .boxContent-text {
+        display: inline-block;
+        width: 86%;
+        overflow: hidden;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    .boxContent:hover {
+      border: 1px solid #29BEDB;
+      transform: translateY(-8px) scale(1);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+    .boxContent_children {
+      margin-top: 28px;
+      margin-left: 35px;
+    }
+  }
+}
+
+.optionNewStyle {
+  :global {
+    .c7n-pro-btn-flat  {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.buttonsUploadStyle {
+  display: inline-block;
+  :global {
+    .c7n-pro-upload-select > .c7n-pro-btn-default {
+          padding: 0;
+    }
+    .c7n-pro-btn-default {
+      border: none;
+      .icon-insert_drive_file {
+        display: none;
+      }
+    }
+  }
+}
+
+.valueMethodMeansLov{
+  :global {
+    .c7n-pro-table-cell-inner-row-height-fixed {
+      height: auto !important;
+    }
+  }
+  
+}

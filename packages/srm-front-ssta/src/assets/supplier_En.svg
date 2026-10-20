@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>badge/supplier_En</title>
+    <g id="操作/审批记录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="操作记录" transform="translate(-845.000000, -582.000000)" fill="#3095F2">
+            <g id="Modal/Sidebar/Small" transform="translate(698.000000, 0.000000)">
+                <g id="编组-7" transform="translate(24.000000, 131.000000)">
+                    <g id="编组-11" transform="translate(25.000000, 0.000000)">
+                        <g id="编组-3备份" transform="translate(0.000000, 449.000000)">
+                            <g id="badge/supplier_En" transform="translate(99.000000, 3.000000)">
+                                <rect id="矩形" stroke="#3095F2" fill-opacity="0.1" x="0" y="0" width="12" height="12" rx="2"></rect>
+                                <text id="S" font-family="Helvetica" font-size="10" font-weight="normal">
+                                    <tspan x="3" y="11">S</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

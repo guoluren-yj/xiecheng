@@ -1,0 +1,17 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@popup-prefix-cls: ~'@{c7n-pro-prefix}-popup';
+
+.@{popup-prefix-cls} {
+  position: absolute;
+  background-color: @popover-bg;
+  box-shadow: @box-shadow-base;
+  &-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: @zindex-popup-container;
+    width: 100%;
+  }
+}

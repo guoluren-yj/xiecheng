@@ -1,0 +1,193 @@
+// 控制tab高度为父元素100%
+:global {
+  .page-content-wrap {
+    div.authority-content {
+      height: -webkit-fill-available !important;
+
+      & > .c7n-spin-nested-loading {
+        height: 100%;
+
+        & > .c7n-spin-container {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.authority-step {
+  :global {
+    .page-content-wrap {
+      height: fit-content !important;
+      min-height: fit-content !important;
+      margin-bottom: 0;
+
+      > .page-content {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.authority-range {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: auto !important;
+    }
+
+    .c7n-pro-table-tbody .c7n-pro-select-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// 路由页step
+.authority-step-wrapper {
+  height: 100%; // 步骤条固定
+
+  :global {
+    .authority-step {
+      padding: 20px;
+    }
+
+    .divider {
+      height: 8px;
+      width: 100%;
+      background-color: #f4f5f7;
+    }
+
+    .authority-step-content {
+      // 步骤条固定
+      overflow: auto;
+      max-height: calc(100% - 76px);
+
+      :global {
+        .page-content-wrap .page-content {
+          margin: 0 !important;
+        }
+
+        .dimension-range-wrapper {
+          .c7n-pro-table .c7n-pro-table-cell .c7n-pro-input-number-wrapper {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 弹窗step
+.authority-step-modal {
+  :global {
+    .authority-step {
+      padding: 20px 0 20px 0 !important;
+      // 步骤条固定
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 999999;
+    }
+
+    .authority-step-content {
+      // overflow: auto;
+      // max-height: calc(100vh - 200px);
+
+      & > .page-content-wrap .page-content {
+        form.c7n-pro-form-wrapper.c7n-pro-form {
+          // width: 100%;
+          margin: 0;
+        }
+
+        .c7n-pro-form.c7n-pro-form-float-label > table > tbody > tr {
+          td:nth-child(3n) {
+            .c7n-pro-field-wrapper {
+              padding-right: 0;
+            }
+          }
+
+          td:first-child {
+            .c7n-pro-field-wrapper {
+              padding-left: 0;
+            }
+          }
+        }
+
+        :global {
+          .sub-content-container {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 编辑tab
+.authority-tab-content {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+
+  :global {
+    .c7n-tabs {
+      height: 100%;
+
+      .c7n-tabs-bar {
+        min-width: 180px;
+        max-width: 220px;
+        padding: 20px 0 12px 20px;
+      }
+
+      .c7n-tabs-content {
+        padding-left: 0;
+        overflow: auto;
+        max-height: 100%;
+      }
+
+      .c7n-tabs-bar .c7n-tabs-tab {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .c7n-tabs-nav .c7n-tabs-tab {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+
+    .dimension-range-wrapper {
+      .c7n-pro-table .c7n-pro-table-cell .c7n-pro-input-number-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// 弹窗tab
+.authority-tab-modal {
+  height: calc(100vh - 112px);
+  margin-top: -20px;
+  margin-bottom: -20px;
+
+  :global {
+    .c7n-tabs-bar {
+      padding: 20px 0 0 0 !important;
+    }
+
+    .c7n-tabs {
+      .c7n-tabs-content {
+        padding-top: 20px;
+        padding-right: 20px;
+
+        .c7n-tabs-tabpane {
+          padding-left: 20px;
+          padding-bottom: 20px;
+
+          // form.c7n-pro-form-wrapper.c7n-pro-form {
+          //   width: 100%;
+          // }
+        }
+      }
+    }
+  }
+}

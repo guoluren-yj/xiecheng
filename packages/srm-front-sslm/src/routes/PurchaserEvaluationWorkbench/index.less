@@ -1,0 +1,429 @@
+@import '~hzero-front/lib/srm-variables';
+
+.scoreTitle {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 0 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+  span {
+    display: inline-block;
+    // background: rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    font-size: 12px;
+    // color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    font-weight: 600;
+    margin-left: 8px;
+    padding: 0 6px;
+    color: @text-2;
+    background-color: @fill-5;
+  }
+}
+
+.detailContent {
+  margin: 0 !important;
+  padding: 0;
+  // padding: 8px 8px 12px 8px;
+  background-color: rgba(0, 0, 0, 0);
+  max-height: 100%;
+  overflow: hidden !important;
+
+  // .detailPanel {
+  //   box-sizing: border-box;
+  //   border-bottom: 0.08rem solid rgba(0, 0, 0, 0.05);
+  //   :global {
+  //     .c7n-collapse-header {
+  //       font-size: 16px;
+  //       font-weight: 600;
+  //       padding: 20px 20px 16px;
+  //     }
+
+  //     .c7n-collapse-content {
+  //       padding: 0 20px;
+  //     }
+
+  //     .c7n-collapse-content-box {
+  //       padding: 0 0 20px !important;
+  //     }
+
+  //     .c7n-collapse-header > .compact-left {
+  //       color: #1d2129 !important;
+  //       cursor: pointer;
+  //     }
+  //   }
+
+  //   // :global {
+  //   //   .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+  //   //     padding: 0;
+  //   //     line-height: 1.5;
+  //   //     margin-bottom: 4px;
+  //   //     margin-top: 16px;
+  //   //   }
+  //   //   .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+  //   //     padding: 0;
+  //   //   }
+  //   //   .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+  //   //     line-height: 1.5;
+  //   //   }
+  //   // }
+  // }
+
+  .scoreContent {
+    padding: 0;
+    margin: 8px 8px 0 8px;
+    .scoreContentTitle {
+      padding: 20px;
+      font-size: 16px;
+      // color: #1d2129;
+      font-weight: 600;
+    }
+    .scoreInfoContentTitle {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 20px;
+      border-bottom: 1px solid #ebebeb;
+      span {
+        display: inline-block;
+        // background: rgba(0, 0, 0, 0.06);
+        border-radius: 2px;
+        font-size: 12px;
+        // color: rgba(0, 0, 0, 0.65);
+        line-height: 18px;
+        font-weight: 600;
+        margin-left: 8px;
+        padding: 0 6px;
+        color: @text-2;
+        background-color: @fill-5;
+      }
+    }
+  }
+
+  // .detailSpin {
+  //   max-height: 100% !important;
+  //   height: calc(100vh - 150px) !important;
+  // }
+  .scoreDetailsSpin {
+    max-height: 100% !important;
+    height: calc(100vh - 132px) !important;
+    :global {
+      .c7n-spin-container {
+        overflow: auto !important;
+      }
+    }
+  }
+
+  :global {
+    .c7n-spin-container {
+      max-height: 100% !important;
+      height: auto !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+
+    .c7n-spin-container > .page-content-wrap {
+      flex: 1 1 auto;
+      flex-shrink: 0;
+      margin-bottom: 8px;
+    }
+
+    .c7n-collapse {
+      overflow: auto;
+    }
+
+    // .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+    //   padding: 0;
+    //   line-height: 1.5;
+    //   margin-bottom: 4px;
+    //   margin-top: 16px;
+    // }
+    // .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+    //   padding: 0;
+    // }
+    // .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+    //   line-height: 1.5;
+    // }
+  }
+}
+
+// TextField前置标签样式
+.addon-before-style {
+  .c7n-pro-input-group-before {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    width: 130px;
+  }
+  :global {
+    .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-output::after {
+      content: ':';
+    }
+  }
+}
+
+// 处理表单，使用FormField时，只读页面不展示必填*标识
+// .c7n-pro-readOnly-style {
+//   table > tbody > tr:first-child > td > label {
+//     margin-top: 0 !important;
+//   }
+//   :global {
+//     .c7n-pro-field-label-vertical.c7n-pro-field-required.c7n-pro-field-label:before,
+//     .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-useColon label > span:before,
+//     .c7n-pro-field-row .c7n-pro-field-required.c7n-pro-field-label-useColon:before {
+//       display: none;
+//       content: '';
+//     }
+//     .c7n-pro-attachment-required:after {
+//       display: none;
+//       content: '';
+//     }
+//   }
+// }
+
+// 联系人信息-联系电话样式
+.LineForm {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    // .c7n-pro-select,
+    // .c7n-pro-input {
+    //   border-color: #fca000;
+    //   background-color: #fffbef;
+    // }
+    .c7n-pro-select:focus,
+    .c7n-pro-input:focus {
+      background-color: #fff !important;
+    }
+  }
+}
+
+.attTitle {
+  margin-bottom: 16px;
+  p {
+    margin: 0;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    color: #868d9c;
+    font-weight: 400;
+    margin-top: 8px;
+  }
+}
+
+// ”评估进度“样式
+.progress-steps {
+  :global {
+    .c7n-steps-item {
+      .c7n-steps-item-tail {
+        left: 8px;
+      }
+      .c7n-steps-item-icon {
+        margin-right: 8px;
+      }
+      .c7n-steps-item-content {
+        .c7n-steps-item-title {
+          margin-top: 2px;
+        }
+        .c7n-steps-item-description {
+          color: #4e5769;
+        }
+      }
+      &:last-child {
+        .c7n-steps-item-content {
+          min-height: 24px;
+        }
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-process,
+    .c7n-steps-item.c7n-steps-item-finish {
+      .c7n-steps-item-icon,
+      .c7n-steps-item-title {
+        color: #179454;
+        font-weight: 400;
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-wait {
+      .c7n-steps-item-icon {
+        color: #c9cdd4;
+      }
+      .c7n-steps-item-title {
+        color: #868d9c;
+      }
+    }
+  }
+}
+
+// 步骤条样式
+.stepContent {
+  margin: 8px;
+  background: #fff;
+  padding: 16px;
+  .steps {
+    :global {
+      .c7n-steps-item-title {
+        font-size: 14px;
+      }
+      // .c7n-steps-item-icon {
+      //   width: 26px;
+      //   height: 26px;
+      //   display: inline-flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   color: #fff;
+      // }
+      // .c7n-steps-item-finish .c7n-steps-item-icon,
+      // .c7n-steps-item-process .c7n-steps-item-icon {
+      //   background: #47b881;
+      //   border-color: #47b881;
+      // }
+      // .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title {
+      //   color: @text-2;
+      // }
+      // .c7n-steps-item-process > .c7n-steps-item-content > .c7n-steps-item-title {
+      //   color: @text-1;
+      //   font-weight: bold;
+      // }
+      // .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title:after {
+      //   background: #47b881;
+      // }
+      // .c7n-steps-item-process > .c7n-steps-item-content > .c7n-steps-item-title:after,
+      // .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title:after {
+      //   // background: rgba(0, 0, 0, 0.08);
+      //   background: #c9cdd4;
+      // }
+      // .c7n-steps-item-wait .c7n-steps-item-icon {
+      //   // background: rgba(0, 0, 0, 0.08);
+      //   background: #c9cdd4;
+      //   border: 0;
+      // }
+      // .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title {
+      //   color: @text-3;
+      // }
+    }
+  }
+}
+
+.indicator-status-popover {
+  :global {
+    .c7n-popover-content {
+      width: 680px;
+    }
+  }
+}
+
+.noHeader {
+  :global {
+    .c7n-collapse-header {
+      padding: 0 !important;
+    }
+  }
+}
+
+// 修复评分信息-评分人输入框被遮挡问题
+.eval-resps-td {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: auto !important;
+    }
+  }
+}
+
+// 附件宽300px
+.all-attachment {
+  :global {
+    .c7n-row {
+      .c7n-pro-attachment-list {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.dropdown-wrap {
+  :global {
+    .c7n-menu-item-selected {
+      .c7n-pro-btn.c7n-pro-btn-flat {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+.score-number-form {
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      border: 0;
+    }
+    .c7n-pro-form-wrapper.c7n-pro-form td {
+      padding: 0;
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-field-wrapper {
+      .c7n-row {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// 附件样式
+.all-attachment-wrap {
+  .att-title {
+    margin-bottom: 16px;
+    p {
+      margin: 0;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .tooltip {
+      font-size: 12px;
+      color: #868d9c;
+      font-weight: 400;
+      margin-top: 8px;
+    }
+  }
+
+  .all-attachment-single {
+    display: block;
+
+    .attachment {
+      width: 50%;
+    }
+  }
+
+  .all-attachment-mutil {
+    display: flex;
+
+    .left-attachment {
+      flex: 1 1 0%;
+      padding-right: 20px;
+    }
+    .right-attachment {
+      padding-left: 16px;
+      border-left: 1px dashed rgba(0, 0, 0, 0.16);
+      flex: 1 1 0%;
+    }
+  }
+}
+
+.chart-box {
+  :global {
+    .ant-drawer-body {
+      padding: 20px;
+    }
+  }
+}

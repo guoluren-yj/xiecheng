@@ -1,0 +1,138 @@
+@dialog-prefix-cls: ~'@{c7n-prefix}-modal';
+
+.@{dialog-prefix-cls} {
+  .reset-component;
+  position: relative;
+  top: 1rem;
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 0.24rem;
+
+  &-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @zindex-modal;
+    overflow: auto;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &-title {
+    margin: 0;
+    color: @modal-title-color;
+    font-weight: @modal-title-font-weight;
+    font-size: @modal-title-font-size-base;
+    line-height: @modal-title-line-height;
+    letter-spacing: 0;
+  }
+
+  &-content {
+    position: relative;
+    padding: 0.24rem;
+    background-color: @component-background;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: @border-radius-base;
+    box-shadow: @modal-content-shadow;
+  }
+
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    color: @text-color-secondary;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color @animation-duration-slow;
+
+    &-x.icon {
+      display: block;
+      width: 0.56rem;
+      height: 0.56rem;
+      font-style: normal;
+      line-height: 0.56rem;
+      text-align: center;
+      text-transform: none;
+      vertical-align: baseline;
+      text-rendering: auto;
+    }
+
+    &:focus,
+    &:hover {
+      color: #444;
+      text-decoration: none;
+    }
+  }
+
+  &-header {
+    color: @text-color;
+    background: @component-background;
+  }
+
+  &-body {
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    word-wrap: break-word;
+  }
+
+  &-footer {
+    margin-bottom: -0.24rem;
+    padding: 0.12rem 0;
+    text-align: right;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
+    button + button {
+      margin-bottom: 0;
+      margin-left: 0.08rem;
+    }
+  }
+
+  &.zoom-enter,
+  &.zoom-appear {
+    transform: none; // reset scale avoid mousePosition bug
+    opacity: 0;
+    animation-duration: @animation-duration-slow;
+  }
+
+  &-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @zindex-modal-mask;
+    height: 100%;
+    background-color: #373737;
+    background-color: @modal-mask-bg; // lesshint duplicateProperty: false
+    filter: ~'alpha(opacity=50)';
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  &-open {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: @screen-md) {
+  .@{dialog-prefix-cls} {
+    width: auto !important;
+    margin: 0.1rem;
+  }
+  .vertical-center-modal {
+    .@{dialog-prefix-cls} {
+      flex: 1;
+    }
+  }
+}

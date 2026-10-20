@@ -1,0 +1,195 @@
+@import '~hzero-front/lib/srm-variables';
+@between: 1px;
+@refund-progress-bar-height: 42px;
+
+.refund-progress-tabs-left() {
+  height: 100%;
+
+  :global {
+    .c7n-tabs-bar {
+      .c7n-tabs-nav-container {
+        padding: 12px 0;
+      }
+
+      .c7n-tabs-nav-container-scrolling {
+        padding: 20px 0;
+
+        .c7n-tabs-tab-arrow-show {
+          height: 20px;
+          line-height: 1;
+        }
+      }
+
+      .c7n-tabs-tab {
+        font-size: 12px;
+        text-align: left;
+        padding: 0 10px 0 12px;
+        margin-bottom: 8px;
+
+        &:not(.c7n-tabs-tab-active) {
+          color: @text-3;
+        }
+      }
+
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+    }
+
+    .c7n-tabs-content {
+      height: 100%;
+      padding-left: 0;
+      background: #f4f5f7;
+
+      .c7n-tabs-tabpane {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.refund-progress-warpper {
+  height: 167px;
+  width: 300px;
+
+  :global {
+    .c7n-tabs-left {
+      .refund-progress-tabs-left();
+    }
+
+    .refund-progress-bar {
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: @refund-progress-bar-height;
+      border-bottom: @between solid #e8e8e8;
+      background-color: #fff;
+
+      :global {
+        .refund-progress-bar-left {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          .refund-progress-bar-icon {
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+            line-height: 12px;
+            border-radius: 2px;
+          }
+
+          .refund-progress-bar-icon-finish {
+            color: #fff;
+            background-color: @success-0;
+          }
+
+          .refund-progress-bar-icon-progress {
+            color: #fff;
+            background-color: @warning-0;
+          }
+
+          .refund-progress-bar-title {
+            width: 100%;
+            margin-left: 6px;
+            vertical-align: middle;
+          }
+        }
+
+        .refund-progress-bar-right {
+          .c7n-pro-output {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .refund-progress-panel-wrapper {
+      height: calc(100% - @refund-progress-bar-height - @between);
+      padding: 12px;
+      overflow: auto;
+      margin-left: 0;
+      background-color: #fff;
+      box-sizing: border-box;
+
+      :global {
+        .c7n-steps-vertical {
+          .c7n-steps-item {
+            .c7n-steps-item-tail {
+              top: 0;
+              left: 8.5px;
+              padding: 20px 0 4px;
+            }
+
+            .c7n-steps-item-icon {
+              margin-right: 8px;
+
+              .c7n-steps-icon {
+                width: 18px;
+                height: 18px;
+                font-size: 18px;
+                line-height: 18px;
+              }
+            }
+
+            .c7n-steps-item-content {
+              min-height: 38px;
+
+              .c7n-steps-item-title {
+                line-height: 18px;
+              }
+            }
+
+            &:last-child {
+              .c7n-steps-item-content {
+                min-height: 0;
+              }
+            }
+          }
+
+          .c7n-steps-item-finish {
+            .c7n-steps-item-icon {
+              color: @success-0;
+            }
+
+            .c7n-steps-item-title {
+              color: @text-2;
+            }
+          }
+
+          .c7n-steps-item-process {
+            .c7n-steps-item-icon {
+              color: @warning-0;
+            }
+
+            .c7n-steps-item-title {
+              color: @text-1;
+            }
+          }
+
+          .c7n-steps-item-wait {
+            .c7n-steps-item-icon {
+              color: @text-4;
+            }
+
+            .c7n-steps-item-title {
+              color: @text-3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ssta-refund-popover-sourcingCost {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0;
+    }
+  }
+}

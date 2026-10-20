@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="285px" height="168px" viewBox="0 0 285 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 36</title>
+    <defs>
+        <rect id="path-1" x="66.5" y="72.68" width="25.3333333" height="6.32" rx="1.58333333"></rect>
+        <ellipse id="path-2" cx="53.8333333" cy="139.04" rx="19" ry="18.96"></ellipse>
+        <filter x="-28.9%" y="-21.1%" width="157.9%" height="160.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <ellipse id="path-4" cx="53.8333333" cy="139.04" rx="12.6666667" ry="12.64"></ellipse>
+        <ellipse id="path-5" cx="53.8333333" cy="139.04" rx="9.5" ry="9.48"></ellipse>
+        <ellipse id="path-6" cx="53.8333333" cy="139.04" rx="6.33333333" ry="6.32"></ellipse>
+        <ellipse id="path-7" cx="53.8333333" cy="139.04" rx="3.16666667" ry="3.16"></ellipse>
+        <rect id="path-8" x="100.541667" y="72.68" width="1.58333333" height="6.32" rx="0.791666667"></rect>
+        <rect id="path-9" x="174.166667" y="37.92" width="79.1666667" height="31.6" rx="1.58333333"></rect>
+        <filter x="-55.6%" y="-98.1%" width="211.2%" height="378.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="13" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M1.32935036,8.0025974 L0.383147842,9.60806359 C0.324299816,9.70791459 0.32478724,9.83253806 0.383886259,9.93174079 L0.387913017,9.9383161 C0.429761039,10.0048133 0.517992909,10.0388216 0.652608627,10.0403408 L0.662208388,10.0403941 L1.12211735,10.0403941 C1.25979251,10.0403941 1.39698752,10.0238682 1.5308611,9.99115866 L9.66964286,8.0025974 L1.32935036,8.0025974 Z" id="path-11"></path>
+        <path d="M3.33452706,4.94590237 L19,4.94590237 L0.516775502,0.0135404874 C0.321395881,-0.0385978648 0.118569038,0.0637877273 0.0407012581,0.252659698 L0.0379084291,0.259608112 C-0.0326729257,0.439808061 -0.00336964137,0.644653024 0.114766318,0.796884343 L3.33452706,4.94590237 Z" id="path-12"></path>
+        <polygon id="path-13" points="19 4.94590237 3.33564269 4.94590237 1.3359375 8.0025974 5.66863208 8.0025974"></polygon>
+        <path d="M19,4.94590237 L9.99898146,13.4367219 C9.85296156,13.5074787 9.74192686,13.5428571 9.66587736,13.5428571 C9.58982785,13.5428571 9.4811957,13.5074787 9.3399809,13.4367219 L4.84307546,7.32333184 C4.82228339,7.0761382 4.84077306,6.91327225 4.89854446,6.83473399 C4.95631585,6.75619574 5.10437824,6.69263983 5.34273162,6.64406628 L19,4.94590237 Z" id="path-14"></path>
+    </defs>
+    <g id="核价审批&amp;预览-v715" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-36">
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="285" height="158"></rect>
+            <g id="画面画板" transform="translate(53.8333, 28.44)">
+                <g id="编组" transform="translate(-0, 0)">
+                    <path d="M3.16666667,0 L174.166667,0 C175.915568,0 177.333333,1.41478019 177.333333,3.16 L177.333333,126.4 C177.333333,128.14522 175.915568,129.56 174.166667,129.56 L3.16666667,129.56 C1.41776496,129.56 0,128.14522 0,126.4 L0,3.16 C0,1.41478019 1.41776496,0 3.16666667,0 Z" id="矩形" fill="#F1F4F8"></path>
+                    <path d="M3.16666667,0 L174.166667,0 C175.915568,0 177.333333,1.41478019 177.333333,3.16 L177.333333,12.64 L0,12.64 L0,3.16 C0,1.41478019 1.41776496,0 3.16666667,0 Z" id="矩形" fill="#DBDEE3"></path>
+                    <ellipse id="椭圆形" fill="#FFFFFF" cx="9.5" cy="6.32" rx="3.16666667" ry="3.16"></ellipse>
+                    <ellipse id="椭圆形备份" fill="#FFFFFF" cx="22.1666667" cy="6.32" rx="3.16666667" ry="3.16"></ellipse>
+                    <ellipse id="椭圆形备份-2" fill="#FFFFFF" cx="34.8333333" cy="6.32" rx="3.16666667" ry="3.16"></ellipse>
+                </g>
+            </g>
+            <rect id="矩形备份" fill="#FFFFFF" x="60.1666667" y="47.4" width="164.666667" height="104.28" rx="3.16666667"></rect>
+            <rect id="矩形" fill="#E9ECF0" x="66.5" y="53.72" width="15.8333333" height="6.32" rx="1.58333333"></rect>
+            <g id="矩形备份-2">
+                <use fill="currentColor" xlink:href="#path-1"></use>
+                <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+            <rect id="矩形备份-3" fill="#F1F4F8" x="66.5" y="85.32" width="25.3333333" height="6.32" rx="1.58333333"></rect>
+            <rect id="矩形备份-6" fill="#F1F4F8" x="107.666667" y="72.68" width="110.833333" height="12.64" rx="1.58333333"></rect>
+            <rect id="矩形备份-9" fill="#F1F4F8" x="107.666667" y="104.28" width="110.833333" height="28.44" rx="1.58333333"></rect>
+            <rect id="矩形备份-7" fill="#F1F4F8" x="107.666667" y="91.64" width="1.58333333" height="6.32" rx="0.791666667"></rect>
+            <rect id="矩形备份-10" fill="#F1F4F8" x="107.666667" y="139.04" width="1.58333333" height="6.32" rx="0.791666667"></rect>
+            <rect id="矩形备份-8" fill="#F1F4F8" x="112.416667" y="91.64" width="12.6666667" height="6.32" rx="1.58333333"></rect>
+            <rect id="矩形备份-11" fill="#F1F4F8" x="112.416667" y="139.04" width="12.6666667" height="6.32" rx="1.58333333"></rect>
+            <rect id="矩形备份-4" fill="#F1F4F8" x="66.5" y="97.96" width="25.3333333" height="6.32" rx="1.58333333"></rect>
+            <rect id="矩形备份-5" fill="#F1F4F8" x="66.5" y="110.6" width="25.3333333" height="6.32" rx="1.58333333"></rect>
+            <line x1="60.1666667" y1="66.36" x2="224.833333" y2="66.36" id="路径-8" stroke="#E9ECF0" stroke-width="0.791666667"></line>
+            <line x1="101.333333" y1="66.36" x2="101.333333" y2="151.68" id="路径-9" stroke="#E9ECF0" stroke-width="0.791666667"></line>
+            <g id="椭圆形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="椭圆形">
+                <use fill="currentColor" xlink:href="#path-4"></use>
+                <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-4"></use>
+            </g>
+            <g id="椭圆形">
+                <use fill="currentColor" xlink:href="#path-5"></use>
+                <use fill-opacity="0.4" fill="#FFFFFF" xlink:href="#path-5"></use>
+            </g>
+            <g id="椭圆形">
+                <use fill="currentColor" xlink:href="#path-6"></use>
+                <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-6"></use>
+            </g>
+            <g id="椭圆形">
+                <use fill="currentColor" xlink:href="#path-7"></use>
+                <use fill-opacity="0.4" fill="#FFFFFF" xlink:href="#path-7"></use>
+            </g>
+            <path d="M42.1863042,127.627988 C42.4926312,127.316668 42.9938659,127.312097 43.3058432,127.617779 L54.3879875,138.476304 C54.6999648,138.781986 54.7045452,139.282166 54.3982182,139.593486 C54.0918912,139.904807 53.5906565,139.909378 53.2786792,139.603696 L42.1965349,128.74517 C41.8845576,128.439488 41.8799772,127.939309 42.1863042,127.627988 Z" id="路径-49" fill="currentColor" fill-rule="nonzero"></path>
+            <polygon id="路径-50" fill="currentColor" points="44.3333333 126.4 44.3333333 129.56 47.5 132.72 47.5 126.4"></polygon>
+            <polygon id="路径-50" fill="currentColor" transform="translate(44.3333, 131.14) scale(-1, 1) rotate(90) translate(-44.3333, -131.14)" points="42.7533333 127.973333 42.7533333 131.14 45.9133333 134.306667 45.9133333 127.973333"></polygon>
+            <g id="矩形">
+                <use fill="currentColor" xlink:href="#path-8"></use>
+                <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-8"></use>
+            </g>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+            </g>
+            <rect id="矩形" fill="currentColor" x="180.5" y="44.24" width="19" height="18.96" rx="1.58333333"></rect>
+            <path d="M190,57.7339084 L191.151515,57.7339084 L191.151515,50.4468015 L194.832852,51.9828371 C195.044558,52.071168 195.181818,52.2738221 195.181818,52.4980572 L195.181818,57.7339084 L196.333333,57.7339084 L196.333333,58.855 L183.666667,58.855 L183.666667,57.7339084 L184.818182,57.7339084 L184.818182,50.2505375 C184.818182,50.0290154 184.952178,49.8282728 185.160101,49.7383052 L189.595185,47.8192261 C189.740506,47.7563609 189.910642,47.8200613 189.975185,47.961515 C189.991536,47.9973507 190,48.0361293 190,48.0753451 L190,57.7339084 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <rect id="矩形" fill="#E9ECF0" x="205.833333" y="44.24" width="15.8333333" height="6.32" rx="1.58333333"></rect>
+            <rect id="矩形备份-12" fill="#F1F4F8" x="205.833333" y="53.72" width="41.1666667" height="3.16" rx="1.58"></rect>
+            <rect id="矩形备份-13" fill="#F1F4F8" x="205.833333" y="60.04" width="41.1666667" height="3.16" rx="1.58"></rect>
+            <g id="元素/纸飞机/主色备份-2" transform="translate(161.5, 11.85)">
+                <g id="路径-14">
+                    <use fill="currentColor" xlink:href="#path-11"></use>
+                    <use fill-opacity="0.4" fill="#FFFFFF" xlink:href="#path-11"></use>
+                </g>
+                <g id="路径-5">
+                    <use fill="currentColor" xlink:href="#path-12"></use>
+                    <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-12"></use>
+                </g>
+                <g id="路径-12">
+                    <use fill="currentColor" xlink:href="#path-13"></use>
+                    <use fill-opacity="0.2" fill="#000000" xlink:href="#path-13"></use>
+                </g>
+                <g id="路径-13">
+                    <use fill="currentColor" xlink:href="#path-14"></use>
+                    <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-14"></use>
+                </g>
+            </g>
+            <path d="M160.208701,23.1274083 C150.875819,25.3928571 150.302452,44.1831401 156.692893,46.501306 C163.083333,48.8194719 168.664943,39.9451232 161.033788,38.9088973 C153.402633,37.8726713 155.902545,56.88 173.365939,56.88" id="路径-2" stroke="currentColor" stroke-width="0.791666667" stroke-dasharray="2.375,2.375"></path>
+        </g>
+    </g>
+</svg>

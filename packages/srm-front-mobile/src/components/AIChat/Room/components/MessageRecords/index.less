@@ -1,0 +1,58 @@
+@import "~srm-front-boot/lib/utils/style/basic.less";
+
+.smbl-chat-room-history {
+	flex-shrink: 0;
+	background: @primary-color-white;
+
+	.smbl-chat-room-history-close-btn {
+		position: absolute;
+		top: 15px;
+		right: 14px;
+		border-radius: 2px;
+		color: #868d9c;
+		:global {
+			.icon {
+				margin-right: 0;
+			}
+		}
+	}
+	.smbl-chat-room-history-title {
+		font-size: 16px;
+		color: #1d2129;
+		font-weight: 500;
+		line-height: 22px;
+		padding: 20px;
+		border-bottom: 1px solid #e5e7ec;
+	}
+
+	.smbl-chat-room-history-search {
+		width: 100%;
+		padding: 16px 20px 16px 20px;
+	}
+
+	.smbl-chat-room-history-content {
+		width: 100%;
+		height: calc(100% - 42px - 82px);
+	}
+}
+
+.smbl-chat-room-history-cover {
+	position: absolute;
+	width: 100%;
+	height: calc(100vh - 62px);
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+.smbl-chat-room-history-right {
+	position: relative;
+	width: 380px;
+	height: 100%;
+	border-left: 1px solid #e5e7ec;
+}
+
+.smbl-chat-room-history-main {
+	flex: 1;
+	border-left: none;
+}

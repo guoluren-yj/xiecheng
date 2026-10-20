@@ -1,0 +1,351 @@
+@import '../../../../lowcodeGlobalColor.less';
+@import '../global.less';
+
+.model-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  &-base {
+    h3 {
+      margin: 0;
+      line-height: 28px;
+      font-weight: bold;
+      font-size: 16px;
+      color: @Grey;
+    }
+    p {
+      margin: 16px 0 0;
+      line-height: 1.5;
+      font-size: 12px;
+    }
+  }
+  &-label {
+    color: @Grey2;
+  }
+
+  &-desc {
+    color: #5a6677;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs-style {
+    flex: 1;
+    :global {
+      .c7n-tabs-tab {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  // 把数据上移end
+  :global {
+    .c7n-tabs-bar {
+      border: 0;
+      padding: 0 16px;
+    }
+
+    .c7n-tabs-nav-scroll {
+      font-size: 16px;
+
+      .c7n-tabs-nav-animated {
+        z-index: 95;
+        background-color: white;
+      }
+
+      .c7n-tabs-nav .c7n-tabs-tab {
+        padding-left: 0;
+        padding-right: 0;
+        // color: @Grey;
+        opacity: 0.9;
+        font-size: 16px;
+      }
+
+      // .c7n-tabs-tab-active {
+      //   color: @Blue !important;
+      // }
+
+      .c7n-tabs-ink-bar {
+        // background-color: @Blue;
+        opacity: 0.9;
+      }
+
+      .c7n-tabs-nav .c7n-tabs-tab:hover {
+        opacity: 1;
+      }
+
+      .c7n-tabs-ink-bar:hover {
+        opacity: 1;
+      }
+    }
+
+    .c7n-tabs-content {
+      height: calc(100% - 57px);
+      .c7n-tabs-tabpane {
+        overflow: auto;
+      }
+    }
+  }
+
+  .create-step-content {
+    width: 433px;
+    margin: auto;
+
+    .assign-wrapper {
+      display: flex;
+      align-items: center;
+      height: 50px;
+
+      .form-label {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        width: 120px;
+
+        i {
+          margin: 0 4px;
+          color: @red1;
+        }
+      }
+    }
+  }
+
+  .see-source-content {
+    flex: 1;
+    margin-bottom: 10px;
+    .see-source-right {
+      border-left: 1px solid #eee;
+      padding-left: 25px;
+      background-color: #fff;
+      position: relative;
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      :global {
+        .c7n-collapse-item {
+          border-bottom: none;
+          .c7n-collapse-header {
+            padding: 0 0 12px;
+            font-weight: bold;
+            font-size: 16px;
+            user-select: none;
+          }
+          .c7n-collapse-content {
+            padding: 0 4px;
+            &-box {
+              padding: 0 0 10px;
+              .c7n-pro-table-toolbar {
+                padding-bottom: 2px;
+              }
+            }
+          }
+        }
+        .c7n-spin-nested-loading {
+          height: calc(100% - 40px);
+        }
+      }
+
+      &-collapse {
+        background: transparent;
+      }
+    }
+  }
+
+  .edit-source-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-bottom: 10px;
+    .edit-icon {
+      display: inline-block;
+      margin: 0 5px 2px 0;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      background-image: url('../../../../assets/icon/file-edit.svg');
+      background-repeat: no-repeat;
+      background-size: 16px;
+    }
+  }
+
+  .global-pro {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 16px;
+    :global {
+      // btn
+      .c7n-pro-btn-default:focus {
+        border-color: @Grey5;
+        color: #000;
+      }
+
+      // 进度条
+      .c7n-steps-item-title {
+        font-weight: bold;
+      }
+
+      // .c7n-steps-item-finish .c7n-steps-item-icon,
+      // .c7n-steps-item-process .c7n-steps-item-icon {
+      //   background-color: @Blue !important;
+      // }
+
+      .c7n-steps-item-process .c7n-steps-item-title {
+        color: @HzeroGreen;
+      }
+
+      // tab样式覆盖
+      .c7n-tabs-bar {
+        // border-bottom: none !important;
+        margin-bottom: 0.01rem !important;
+
+        // .c7n-tabs-nav .c7n-tabs-tab-active,
+        // .c7n-tabs-nav .c7n-tabs-tab:hover {
+        //   color: #012492 !important;
+        // }
+
+        // .c7n-tabs-ink-bar {
+        //   background-color: #012492 !important;
+        // }
+
+        // .c7n-tabs-nav-scroll {
+        //   text-align: center;
+        // }
+      }
+
+      // .ant-radio-inner {
+      //   border-color: #012492 !important;
+      // }
+      // .ant-radio-inner:after {
+      //   background-color: #012492 !important;
+      // }
+    }
+  }
+}
+
+// 数据对象授权租户
+.source-authorization {
+  display: flex;
+  flex-flow: column;
+  padding: 16px;
+  height: 100%;
+
+  :global {
+    .c7n-pro-table-wrapper {
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .c7n-spin-nested-loading {
+        height: auto;
+        // overflow: auto;
+
+        .c7n-spin-container {
+          height: auto !important;
+        }
+      }
+    }
+  }
+
+  .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .source-authority-table {
+    overflow-y: auto;
+
+    :global {
+      .c7n-spin-nested-loading {
+        height: auto;
+      }
+
+      .c7n-pro-table-toolbar {
+        width: 100%;
+
+        .c7n-pro-table-toolbar-button-group {
+          display: inline-block;
+          width: 100%;
+
+          .c7n-pro-btn-flat {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  .source-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    span {
+      display: flex;
+      margin-left: 14px;
+      padding: 0 6px;
+      height: 18px;
+      align-items: center;
+      font-size: 12px;
+      background: #e1ebff;
+      border-radius: 15px;
+      color: #5a6677;
+      font-weight: normal;
+    }
+  }
+
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+
+    .form-label {
+      padding: 10px 0;
+      width: 76px;
+
+      i {
+        margin: 0 4px;
+        color: @red1;
+      }
+    }
+
+    :global {
+      .c7n-pro-form {
+        width: 400px;
+      }
+    }
+  }
+
+  .table-title {
+    float: left;
+    margin-bottom: 0;
+    width: 58px;
+    // margin-bottom: -30px;
+    font-size: 14px;
+    color: @HzeroGreen;
+    font-weight: bold;
+    border-bottom: 2px solid @HzeroGreen;
+  }
+
+  .article-text {
+    margin-bottom: 24px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #5a6677;
+  }
+}

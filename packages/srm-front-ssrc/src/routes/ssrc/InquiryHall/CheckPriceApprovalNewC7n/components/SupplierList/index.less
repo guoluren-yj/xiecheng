@@ -1,0 +1,33 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.content-list {
+  overflow: scroll;
+  .content-table-content {
+    :global {
+      .page-content {
+        margin: 0;
+      }
+    }
+    .content-table-body-content {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      .content-table-title-line {
+        display: inline-block;
+        height: 12px;
+        border-left: 3px @primary-color solid;
+        margin-right: 8px;
+      }
+      .content-table-title {
+        font-size: 16px;
+        color: #1d2129;
+        font-weight: 600;
+      }
+      .content-table-title-second {
+        font-size: 14px;
+        margin: 32px 0 16px 0;
+        font-weight: 600;
+      }
+    }
+  }
+}

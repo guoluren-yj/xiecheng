@@ -1,0 +1,56 @@
+.assistant-open {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+
+  .assistant-open-inner {
+    width: 420px;
+    margin-top: 140px;
+
+    .assistant-open-info {
+      position: relative;
+      justify-content: space-between;
+      padding-bottom: 20px;
+
+      :global {
+        img {
+          height: 52px;
+          width: 52px;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e5e7ec;
+      }
+
+      .assistant-open-info-left {
+        justify-content: space-between;
+
+        :global {
+          span {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+          }
+
+          .c7n-tag {
+            border: none;
+            width: fit-content;
+          }
+        }
+      }
+    }
+
+    .assistant-open-desc {
+      margin: 20px 0 40px 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

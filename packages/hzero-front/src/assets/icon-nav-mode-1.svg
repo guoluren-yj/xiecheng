@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="23px" viewBox="0 0 34 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 21</title>
+    <g id="菜单" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="导航模式1-取消固定菜单" transform="translate(-1338.000000, -273.000000)">
+            <g id="编组-8" transform="translate(1209.000000, 48.000000)">
+                <g id="价格库备份" transform="translate(0.000000, 217.000000)">
+                    <g id="编组-26备份-5" transform="translate(130.000000, 9.000000)">
+                        <rect id="矩形" stroke="#EFF2F5" stroke-width="2" fill="#FFFFFF" x="0" y="0" width="31.3513333" height="21" rx="2"></rect>
+                        <path d="M2,0 L8.47333333,0 L8.47333333,0 L8.47333333,21 L2,21 C0.8954305,21 1.3527075e-16,20.1045695 0,19 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="矩形" fill="#001529" opacity="0.7"></path>
+                        <rect id="矩形备份-5" fill="#A9B0B7" x="8.21913333" y="0" width="14.4046667" height="21"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/File/file_word</title>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/File/Word">
+            <rect id="矩形" x="0" y="0" width="54" height="54"></rect>
+            <g id="编组-22" transform="translate(5.13, 0)" fill-rule="nonzero">
+                <path d="M30.375,0 L43.875,13.5 L43.875,50.625 C43.875,52.4890125 42.3640125,54 40.5,54 L3.375,54 C1.5109875,54 0,52.4890125 0,50.625 L0,3.375 C0,1.5109875 1.5109875,0 3.375,0 L30.375,0 Z M12.1689,18.9 L8.2485,18.9 L14.337,40.1058 L18.0495,40.1058 L22.2075,24.1569 L22.3263,24.1569 L26.4546,40.1058 L30.1374,40.1058 L36.2556,18.9 L32.3352,18.9 L28.3554,35.0271 L28.2366,35.0271 L24.0489,18.9 L20.4552,18.9 L16.2675,35.0271 L16.1487,35.0271 L12.1689,18.9 Z" id="形状结合" fill="#3F5BB5"></path>
+                <path d="M30.375,0 L43.875,13.5 L33.75,13.5 C31.8859875,13.5 30.375,11.9890125 30.375,10.125 L30.375,0 Z" id="路径" fill="#B5C8FC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

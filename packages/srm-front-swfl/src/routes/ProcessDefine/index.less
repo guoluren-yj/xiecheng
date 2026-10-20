@@ -1,0 +1,106 @@
+.content {
+  margin: 8px 16px 16px;
+  padding: 16px;
+  height: calc(100% - 32px);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  flex: 1;
+  overflow: hidden;
+  :global {
+    .ant-table-wrapper,
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}
+.export-btn {
+  position: relative;
+  &-icon {
+    font-size: 0.14rem;
+    margin-right: 0.05rem;
+    font-weight: 400;
+    margin-top: -0.01rem;
+  }
+  &-tag {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    display: inline-block;
+    font-size: 8px;
+    transform: scale(0.5);
+    line-height: 1.5;
+    padding: 0 2px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+  :global {
+    .c7n-pro-btn-raised:not(.c7n-pro-btn-loading):focus {
+      color: rgba(29, 33, 41);
+    }
+  }
+}
+.export-basic-btn {
+  :global {
+    .srm-common-export-button-tag {
+      display: none;
+    }
+  }
+}
+:global {
+  button {
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.alert-title {
+  :global {
+    .ant-alert-icon {
+      top: 8px;
+    }
+  }
+}
+.push-msg-type-select {
+  :global {
+    .ant-select-selection__choice__remove {
+      display: none;
+    }
+  }
+}
+
+.push-msg-help {
+  p {
+    margin-bottom: 0;
+  }
+  :global {
+    .ant-tooltip-content {
+      width: 350px;
+    }
+  }
+}
+
+.label-with-help {
+  max-width: 100px;
+}
+
+.deploy-record {
+  :global {
+    .ant-row > div:first-child {
+      color: #666;
+    }
+    .ant-row > div:last-child {
+      font-weight: 600;
+    }
+    .c7n-text-wrapper {
+      max-width: calc(100% - 4px);
+    }
+  }
+}

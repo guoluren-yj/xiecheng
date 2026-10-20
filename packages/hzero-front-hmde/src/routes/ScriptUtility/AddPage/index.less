@@ -1,0 +1,45 @@
+.edit-page {
+  height: 100%;
+
+  .edit-content {
+    width: 100%;
+    padding: 12px 8px 0 16px;
+    position: relative;
+    .edit-content-title {
+      font-size: 14px;
+      color: #1e1e1e;
+      margin: 7px 0 15px;
+      cursor: pointer;
+    }
+    .edit-content-anchor {
+      position: fixed;
+    }
+  }
+
+  :global {
+    div.page-head {
+      padding: 0;
+
+      .page-head-operator {
+        margin: 0 8px;
+      }
+    }
+    .title > .actions {
+      margin-right: 8px;
+      > i {
+        cursor: pointer;
+      }
+    }
+    .page-content-wrap {
+      > .page-content {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    }
+    // .c7n-pro-field-label {
+    //   text-align: left !important;
+    // }
+  }
+}

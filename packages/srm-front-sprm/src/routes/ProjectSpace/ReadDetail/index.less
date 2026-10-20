@@ -1,0 +1,63 @@
+.sprm-project-detail {
+  overflow-x: auto;
+  background: #fff;
+  margin: 8px;
+  height: 100%;
+  padding-left: 0;
+  :global {
+    .content-padding {
+      padding: 20px !important;
+      height: 100%;
+      margin: 0;
+      .c7n-pro-table-filter-bar-fields {
+        margin-top: 0;
+      }
+    }
+    .project-workspace-attachment {
+      display: flex;
+      justify-content: space-between;
+    }
+    .sprm-likexcutelist-search-buttons {
+      height: 'calc(100vh - 252px)';
+    }
+    .content-title {
+      color: #1d2129;
+      line-height: 24px;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .divider-width {
+      width: 100%;
+      background: #f2f3f5;
+    }
+    .tab-padding {
+      height: 100%;
+      .c7n-tabs-content {
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+      }
+      .c7n-tabs-nav {
+        padding-right: 20px;
+        > .c7n-tabs-tab:not(:first-child) {
+          text-align: left;
+        }
+      }
+      .c7n-tabs-nav-container {
+        padding-top: 12px;
+      }
+    }
+    .tree-table-project {
+      :global {
+        .c7n-pro-table-content {
+          > table {
+            > thead > tr > th:nth-child(1) {
+              padding-left: 45px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

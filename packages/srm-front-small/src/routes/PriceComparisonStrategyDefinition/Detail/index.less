@@ -1,0 +1,121 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~hzero-front/lib/srm-variables';
+.price-comparison-def {
+  padding-bottom: 4px;
+  :global {
+    .ruleList-output{
+        .c7n-pro-output{
+         font-weight: 400;
+        }
+    }
+    .condition-config {
+      .c7n-pro-validation-message {
+        margin-bottom: -20px;
+      }
+
+    }
+
+    .c7n-pro-field-label {
+      font-weight: 400;
+    }
+    .c7n-pro-output {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper,
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+    .c7n-pro-field-wrapper {
+      .c7n-pro-select-box {
+        min-height: 14px;
+        .icon {
+          margin: 0 16px 0 0;
+          padding-bottom: 2px;
+        }
+      }
+      .c7n-pro-select-box {
+        .c7n-pro-checkbox-label {
+          margin: 0 16px 0 0;
+          line-height: 14px;
+        }
+      }
+    }
+    .template-info {
+      padding-left: 4px;
+      padding-top: 4px;
+      padding-bottom: 20px;
+      .c7n-pro-field-label {
+        font-weight: 400;//表单中的label不加粗
+      }
+    }
+    .template-info-title {
+      height: 20px;
+      font-size: 16px;
+      color: @text-1;
+      line-height: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .mall-home-config-com-title {
+      line-height: 22px;
+      color: @text-1;
+    }
+    .mall-home-config-com-content {
+      .rule-form-wrapper {
+        display: flex;
+        margin-bottom: 16px;
+      }
+      .rule-index {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 32px;
+      }
+      .rule-operate {
+        display: flex;
+        width: 44px;
+        height: 32px;
+        align-items: center;
+        margin-left: 8px;
+      }
+      .rule-img {
+        width: 16px;
+        height: 16px;
+        margin: 0px 0px 16px 8px;
+      }
+    }
+    .invide {
+      margin: 0 -16px;
+      height: 8px;
+      background-color: #f4f5f7;
+    }
+    .template-rule {
+      margin-top: 20px;
+      padding-left: 4px;
+      .c7n-pro-output-float-label {
+        .c7n-pro-field-label {
+          color: rgba(0, 0, 0, 0.45);
+          font-weight: 400;
+        }
+      }
+    }
+    .mall-home-config-com-desc {
+      margin-bottom: 16px;
+      color: @text-color-secondary;
+    }
+    .form-wrapper-def {
+      margin-bottom: 32px;
+      .form-wrapper-compare{
+        .icon{
+          font-size: 14px;
+          margin-left: 4px;
+          margin-right: 0;
+        }
+      }
+    }
+    .form-wrapper-select-icon{
+      margin: 0 0 0 4px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.popover-content {
+  width: 600px !important;
+}
+
+.view-select-no-border {
+  :global {
+    .c7n-select-has-border.c7n-select::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      border: none;
+      border-radius: 0.04rem;
+      content: ' ';
+    }
+    .c7n-select-selection__rendered {
+      border: none;
+      color: @primary-color;
+    }
+  }
+}

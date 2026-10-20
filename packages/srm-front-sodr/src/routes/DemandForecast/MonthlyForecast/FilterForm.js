@@ -1,0 +1,237 @@
+/**
+ * riskAssessment -风险评估报告 查询页
+ * @date: 2019-12-3
+ * @author guozhiqiang <zhiqiang.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2019, Hand
+ */
+import React, { PureComponent } from 'react';
+import { Form, Button, Row, Col, DatePicker, Select, Input } from 'hzero-ui';
+import { Bind } from 'lodash-decorators';
+import moment from 'moment';
+import { isEmpty } from 'lodash';
+
+import intl from 'utils/intl';
+import Lov from 'components/Lov';
+// import { getCurrentOrganizationId } from 'utils/utils';
+const promptCode = 'sodr.demandForecast';
+
+// const organizationId = getCurrentOrganizationId();
+const { MonthPicker } = DatePicker;
+const formLayout = {
+  labelCol: { span: 10 },
+  wrapperCol: { span: 14 },
+};
+const commonPrompt = 'hzero.common';
+// const promptCode = 'sqam.incomingInspectionQuery';
+
+@Form.create({ fieldNameProp: null })
+export default class FilterForm extends PureComponent {
+  state = {
+    display: false,
+    forecastMonthFrom: null,
+    forecastMonthTo: null,
+  };
+
+  componentDidMount() {
+    const { bindForm, form } = this.props;
+    bindForm(form, 'monthlyForecast');
+  }
+
+  /**
+   * 收起打开
+   */
+  @Bind()
+  toggleForm() {
+    this.setState(prevState => ({
+      display: !prevState.display,
+    }));
+  }
+
+  /**
+   * 重置
+   */
+  @Bind()
+  handleFormReset() {
+    this.props.form.resetFields();
+    this.setState({
+      forecastMonthFrom: null,
+      forecastMonthTo: null,
+    });
+  }
+
+  /**
+   * render
+   * @returns React.element
+   */
+  render() {
+    const { handleSearch, form, enumMap, organizationId } = this.props;
+    const { getFieldDecorator } = form;
+    const { display, forecastMonthFrom, forecastMonthTo } = this.state;
+    const { status = [], flag = [] } = enumMap;
+    return (
+      <Form layout="inline" className="more-fields-form">
+        <Row gutter={12}>
+          <Col span={18}>
+            <Row gutter={12}>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl.get(`sodr.common.model.common.invOrganizationName`).d('库存组织')}
+                >
+                  {getFieldDecorator('invOrganizationName')(<Input />)}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.company.tag`).d('公司')}>
+                  {getFieldDecorator('companyName')(<Input />)}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.item.tag`).d('物料')}>
+                  {getFieldDecorator('itemName')(<Input />)}
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={12} style={{ display: display ? 'block' : 'none' }}>
+              <Col span={8}>
+                <Form.Item
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastMonthFrom`)
+                    .d('预测起始月从')}
+                  {...formLayout}
+                >
+                  {getFieldDecorator('forecastMonthFrom')(
+                    <MonthPicker
+                      placeholder={intl
+                        .get(`${promptCode}.view.message.model.selectMonth`)
+                        .d('请选择月份')}
+                      disabledDate={currentDate => {
+                        if (isEmpty(forecastMonthTo)) {
+                          return false;
+                        }
+                        return (
+                          moment(currentDate).format('YYYYMMDD') >
+                          moment(forecastMonthTo).format('YYYYMMDD')
+                        );
+                      }}
+                      onChange={date => {
+                        this.setState({ forecastMonthFrom: date });
+                      }}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastMonthTo`)
+                    .d('预测起始月至')}
+                  {...formLayout}
+                >
+                  {getFieldDecorator('forecastMonthTo')(
+                    <MonthPicker
+                      placeholder={intl
+                        .get(`${promptCode}.view.message.model.selectMonth`)
+                        .d('请选择月份')}
+                      disabledDate={currentDate => {
+                        if (isEmpty(forecastMonthFrom)) {
+                          return false;
+                        }
+                        return (
+                          moment(currentDate).format('YYYYMMDD') <
+                          moment(forecastMonthFrom).format('YYYYMMDD')
+                        );
+                      }}
+                      onChange={date => {
+                        this.setState({ forecastMonthTo: date });
+                      }}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.categoryName`)
+                    .d('物料类别')}
+                >
+                  {getFieldDecorator('categoryName')(<Input />)}
+                </Form.Item>
+              </Col>
+            </Row>
+            <Row gutter={12} style={{ display: display ? 'block' : 'none' }}>
+              <Col span={8}>
+                <Form.Item {...formLayout} label={intl.get(`entity.supplier.tag`).d('供应商')}>
+                  {getFieldDecorator('supplierCompanyId')(
+                    <Lov
+                      code="SPRM.SUPPLIER"
+                      // textField="supplierCompanyName"
+                      lovOptions={{
+                        valueField: 'supplierCompanyId',
+                        displayField: 'supplierCompanyName',
+                      }}
+                      queryParams={{ tenantId: organizationId }}
+                    />
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.forecastStatus`)
+                    .d('反馈状态')}
+                >
+                  {getFieldDecorator('forecastStatus')(
+                    <Select allowClear>
+                      {status.map(({ meaning, value }) => (
+                        <Select.Option key={value} value={value}>
+                          {meaning}
+                        </Select.Option>
+                      ))}
+                    </Select>
+                  )}
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item
+                  {...formLayout}
+                  label={intl
+                    .get(`${promptCode}.view.message.model.demandForecast.enoughFlag`)
+                    .d('是否满足')}
+                >
+                  {getFieldDecorator('enoughFlag')(
+                    <Select allowClear>
+                      {flag.map(({ meaning, value }) => (
+                        <Select.Option key={value} value={value}>
+                          {meaning}
+                        </Select.Option>
+                      ))}
+                    </Select>
+                  )}
+                </Form.Item>
+              </Col>
+            </Row>
+          </Col>
+          <Col span={6} className="search-btn-more">
+            <Form.Item>
+              <Button onClick={this.toggleForm}>
+                {display
+                  ? intl.get(`${commonPrompt}.button.collected`).d('收起查询')
+                  : intl.get(`${commonPrompt}.button.viewMore`).d('更多查询')}
+              </Button>
+              <Button onClick={this.handleFormReset}>
+                {intl.get(`${commonPrompt}.button.reset`).d('重置')}
+              </Button>
+              <Button type="primary" htmlType="submit" onClick={() => handleSearch(form)}>
+                {intl.get(`${commonPrompt}.button.search`).d('查询')}
+              </Button>
+            </Form.Item>
+          </Col>
+        </Row>
+      </Form>
+    );
+  }
+}

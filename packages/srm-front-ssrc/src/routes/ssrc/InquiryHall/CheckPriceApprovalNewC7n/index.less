@@ -1,0 +1,69 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.basic-box {
+  :global {
+    .af-basic-container {
+      margin: 8px;
+      border-bottom: 1px solid @border-4;
+    }
+    .af-basic-bottom-remain-area {
+      margin: -8px 8px 0;
+      border-top: 0;
+    }
+    .content-bottom-render {
+      .c7n-pro-btn-wrapper {
+        color: @text-1;
+      }
+    }
+  }
+}
+
+.basic-box-right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 25px;
+  .basic-box-right-total-price-label {
+    color: #8f94a2;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+  .basic-box-right-total-price {
+    display: flex;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+}
+
+.basic-afextra {
+  :global {
+    .af-extra-container {
+      margin: 8px 8px 0;
+    }
+  }
+  .basic-afextra-label-box {
+    display: flex;
+    align-items: center;
+    .basic-afextra-label-node {
+      margin-right: 4px;
+    }
+  }
+  .basic-afextra-value-box {
+    :global {
+      .af-extra-fields-value-wrap:nth-last-child(2)::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.attachment-title {
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

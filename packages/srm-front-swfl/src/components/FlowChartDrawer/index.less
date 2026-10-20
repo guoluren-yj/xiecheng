@@ -1,0 +1,27 @@
+.modal-drawer {
+  :global {
+    .c7n-modal-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .c7n-pro-btn-primary {
+      color: #fff !important;
+      background-color: #29bece !important;
+      border-color: #29bece !important;
+    }
+    .c7n-modal-header {
+      border-bottom: unset !important;
+    }
+    .c7n-modal-body {
+      padding-top: 0 !important;
+      .ant-spin-nested-loading {
+        width: 100%;
+        height: 100%;
+        .ant-spin-container {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

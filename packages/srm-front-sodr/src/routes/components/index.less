@@ -1,0 +1,51 @@
+.sodrOrderRemark {
+  :global {
+    .ant-form-explain {
+      margin-top: 2px;
+    }
+  }
+}
+
+.expandIcon {
+  :global {
+    display: inline;
+    float: left;
+    width: 3px;
+    height: 14px;
+    background: #36c2cf;
+    margin-top: 4px;
+    margin-right: 12px;
+  }
+}
+
+.batch-submit-modal {
+  :global {
+    .c7n-pro-modal-content {
+      padding: 0.24rem;
+      padding-bottom: 0;
+      padding-right: 0.15rem;
+      .c7n-pro-modal-body {
+        padding: 0;
+        white-space: pre-line;
+        max-height: 140px;
+      }
+      .c7n-pro-confirm-title {
+        font-size: 14px;
+        line-height: 0.28rem;
+      }
+    }
+  }
+}
+
+.submit-tip {
+  word-break: break-all;
+}
+
+// 表格内容超长换行
+.break-line-column {
+  word-break: break-all;
+  > span {
+    height: auto !important;
+    white-space: normal;
+  }
+}

@@ -1,0 +1,41 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.card-list-item {
+  padding: 8px 20px;
+  cursor: pointer;
+  &.active {
+    background-color: @primary-1;
+    .card-list-item-title {
+      color: @primary-color;
+      font-weight: 500;
+    }
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  :global {
+    .card-list-item-title {
+      font-size: 14px;
+      color: #000;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .card-list-item-name {
+        width: 85%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .card-list-item-desc {
+      font-size: 12px;
+      margin-top: 2px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

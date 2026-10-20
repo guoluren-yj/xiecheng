@@ -1,0 +1,45 @@
+/*!
+    index - 事务接收维护
+    @date: 2019-1-28
+    @author: lixiaolong <xiaolong.li02@hand-china.com>
+    @version: 0.0.1
+    @copyright: Copyright (c) 2019, Hand
+*/
+.purchase-reception-detail {
+  :global {
+    .inclusion-row {
+      margin-bottom: 16px;
+
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+      .ant-col-8 {
+        .ant-row {
+          .ant-col-9 {
+            text-align: left;
+            line-height: 28px;
+            color: #666;
+
+            label {
+              color: #666;
+            }
+          }
+
+          .ant-col-15 {
+            line-height: 28px;
+            .ant-form-item-control {
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+    .table-control-group {
+      text-align: right;
+      margin-bottom: 16px;
+      & > button:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// .avatar-uploader {
+// }
+.yulan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+  margin-left: 54px;
+  > p {
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+  }
+  > p:first-child {
+    font-size: 16px;
+  }
+}
+.cropper-box {
+  margin: 20px 0 0 20px;
+  :global {
+    .top-area {
+      display: flex;
+    }
+  }
+}
+
+:global {
+  .avatar-uploader-Modal {
+    .ant-modal-header {
+      border-bottom: none;
+    }
+    .ant-modal-footer {
+      border-top: none;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+    }
+    .ant-modal-body {
+      height: 346px;
+    }
+  }
+
+  .img-preview {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+}

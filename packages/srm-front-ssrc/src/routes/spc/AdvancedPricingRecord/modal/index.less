@@ -1,0 +1,60 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.card-sub-title {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 16px;
+  font-weight: 600;
+
+  &:first-of-type {
+    margin-top: 16px;
+  }
+
+  .card-sub-title-line {
+    display: inline-block;
+    margin-right: 8px;
+    height: 12px;
+    border-left: 3px solid @primary-color;
+  }
+}
+
+.calc-detail-header {
+  display: flex;
+
+  .header-item {
+    // 减去后面2个margin 40px然后分成3份
+    width: calc((100% - 40px)*0.33);
+    ;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    display: flex;
+    padding: 16px;
+    border: 1px solid #E5E7EC;
+    border-radius: 2px;
+
+    .item-amount {
+      flex: 1;
+      font-size: 12px;
+      color: @text-3;
+      font-weight: 400;
+
+      .amount {
+        font-size: 16px;
+        color: @text-1;
+        font-weight: 600;
+      }
+    }
+
+    .item-icon {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background: #F7F8FA;
+      border-radius: 2px;
+      text-align: center;
+    }
+  }
+}

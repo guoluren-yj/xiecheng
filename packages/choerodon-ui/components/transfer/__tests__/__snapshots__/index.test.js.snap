@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transfer should render correctly 1`] = `
+<div
+  class="c7n-transfer"
+>
+  <div
+    class="c7n-transfer-list"
+  >
+    <div
+      class="c7n-transfer-list-header"
+    >
+      <label
+        class="c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox c7n-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="c7n-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+      </label>
+      <span
+        class="c7n-transfer-list-header-selected"
+      >
+        <span>
+          1/2 items
+        </span>
+        <span
+          class="c7n-transfer-list-header-title"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-transfer-list-body"
+    >
+      <ul
+        class="c7n-transfer-list-content"
+      >
+        <li
+          class="c7n-transfer-list-content-item"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox c7n-checkbox-checked"
+            >
+              <input
+                checked=""
+                class="c7n-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span />
+        </li>
+        <li
+          class="c7n-transfer-list-content-item c7n-transfer-list-content-item-disabled"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox c7n-checkbox-disabled"
+            >
+              <input
+                class="c7n-checkbox-input"
+                disabled=""
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span />
+        </li>
+      </ul>
+      <div
+        class="c7n-transfer-list-body-not-found"
+      >
+        Not Found
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-transfer-operation"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <i
+        class="icon icon-keyboard_arrow_left"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-keyboard_arrow_right"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+  <div
+    class="c7n-transfer-list"
+  >
+    <div
+      class="c7n-transfer-list-header"
+    >
+      <label
+        class="c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+      </label>
+      <span
+        class="c7n-transfer-list-header-selected"
+      >
+        <span>
+          1 item
+        </span>
+        <span
+          class="c7n-transfer-list-header-title"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-transfer-list-body"
+    >
+      <ul
+        class="c7n-transfer-list-content"
+      >
+        <li
+          class="c7n-transfer-list-content-item"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span />
+        </li>
+      </ul>
+      <div
+        class="c7n-transfer-list-body-not-found"
+      >
+        Not Found
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Transfer should show sorted targetkey 1`] = `
+<div
+  class="c7n-transfer"
+>
+  <div
+    class="c7n-transfer-list"
+  >
+    <div
+      class="c7n-transfer-list-header"
+    >
+      <label
+        class="c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+      </label>
+      <span
+        class="c7n-transfer-list-header-selected"
+      >
+        <span>
+          1 item
+        </span>
+        <span
+          class="c7n-transfer-list-header-title"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-transfer-list-body"
+    >
+      <ul
+        class="c7n-transfer-list-content"
+      >
+        <li
+          class="c7n-transfer-list-content-item"
+          title="a"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span>
+            a
+          </span>
+        </li>
+      </ul>
+      <div
+        class="c7n-transfer-list-body-not-found"
+      >
+        Not Found
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-transfer-operation"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <i
+        class="icon icon-keyboard_arrow_left"
+      />
+    </button>
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <i
+        class="icon icon-keyboard_arrow_right"
+      />
+    </button>
+  </div>
+  <div
+    class="c7n-transfer-list"
+  >
+    <div
+      class="c7n-transfer-list-header"
+    >
+      <label
+        class="c7n-checkbox-wrapper"
+      >
+        <span
+          class="c7n-checkbox"
+        >
+          <input
+            class="c7n-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="c7n-checkbox-inner"
+          />
+        </span>
+      </label>
+      <span
+        class="c7n-transfer-list-header-selected"
+      >
+        <span>
+          2 items
+        </span>
+        <span
+          class="c7n-transfer-list-header-title"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-transfer-list-body"
+    >
+      <ul
+        class="c7n-transfer-list-content"
+      >
+        <li
+          class="c7n-transfer-list-content-item"
+          title="c"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span>
+            c
+          </span>
+        </li>
+        <li
+          class="c7n-transfer-list-content-item"
+          title="b"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+          </label>
+          <span>
+            b
+          </span>
+        </li>
+      </ul>
+      <div
+        class="c7n-transfer-list-body-not-found"
+      >
+        Not Found
+      </div>
+    </div>
+  </div>
+</div>
+`;

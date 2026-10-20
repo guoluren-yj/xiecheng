@@ -1,0 +1,83 @@
+@import '../../style/mixins/index';
+
+@confirm-prefix-cls: ~'@{c7n-prefix}-confirm';
+
+.@{confirm-prefix-cls} {
+  .@{c7n-prefix}-modal-header {
+    display: none;
+  }
+
+  .@{c7n-prefix}-modal-close {
+    display: none;
+  }
+
+  .@{c7n-prefix}-modal-body {
+    padding: 0.24rem;
+  }
+
+  .@{c7n-prefix}-modal-content {
+    padding: 0;
+  }
+
+  &-body-wrapper {
+    .clearfix();
+  }
+
+  &-body {
+    .@{confirm-prefix-cls}-title {
+      display: block;
+      // create BFC to avoid
+      // https://user-images.githubusercontent.com/507615/37702510-ba844e06-2d2d-11e8-9b67-8e19be57f445.png
+      overflow: auto;
+      color: @modal-confirm-title-color;
+      font-weight: @modal-confirm-title-font-weight;
+      font-size: @modal-confirm-title-font-size-base;
+      line-height: @modal-confirm-title-line-height;
+    }
+
+    .@{confirm-prefix-cls}-content {
+      margin-top: 0.08rem;
+      color: @text-color;
+      font-size: @font-size-base;
+    }
+
+    i + span + .@{confirm-prefix-cls}-content {
+      margin-left: 0.4rem;
+    }
+
+    > .@{iconfont-css-prefix} {
+      float: left;
+      margin-right: 0.16rem;
+      font-size: 0.24rem;
+      line-height: 0.32rem;
+    }
+  }
+
+  .@{confirm-prefix-cls}-btns {
+    margin-bottom: -0.24rem;
+    padding: 0.12rem 0;
+    text-align: right;
+
+    button + button {
+      margin-bottom: 0;
+      margin-left: 0.08rem;
+    }
+  }
+
+  &-error &-body > .@{iconfont-css-prefix} {
+    color: @error-color;
+  }
+
+  &-warning &-body > .@{iconfont-css-prefix},
+  &-confirm &-body > .@{iconfont-css-prefix} {
+    color: @warning-color;
+  }
+
+  &-info &-body > .@{iconfont-css-prefix} {
+    color: @info-color;
+  }
+
+  &-success &-body > .@{iconfont-css-prefix} {
+    color: @success-color;
+  }
+}

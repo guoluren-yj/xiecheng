@@ -1,0 +1,54 @@
+/*!
+    Message - 阶梯报价
+    @date 2011-3-25
+    @author: hzl <zili.hou@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+
+@import '~hzero-front/lib/srm-variables.less';
+
+.ssrc-ladder-level-header {
+  :global {
+    .ant-form-item {
+      margin: 5px 0 12px;
+    }
+    .ant-modal-body {
+      padding: 0 24px 24px;
+    }
+  }
+}
+.ladder-lever {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+// 报价信息中表格上的操作按钮
+.operate-btn {
+  margin-bottom: 4px;
+  :global {
+    .c7n-pro-btn {
+      color: @primary-color;
+      > .icon {
+        margin-right: 0.05rem;
+        font-weight: 400;
+        font-size: 0.14rem;
+      }
+    }
+  }
+}

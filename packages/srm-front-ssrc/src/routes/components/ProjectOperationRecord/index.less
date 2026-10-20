@@ -1,0 +1,168 @@
+.a-as-btn {
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  cursor: pointer;
+}
+
+.common-record-timeline-wrap {
+  margin-left: calc(40px - 0.18rem);
+
+  .approve-record-timeline-title {
+    display: flex;
+    align-items: baseline;
+
+    h4 {
+      margin-right: 8px;
+    }
+  }
+}
+
+.common-list-wrap {
+  :global {
+    .c7n-collapse-header {
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+
+// (@defaultFontFamily: PingFangSC-Regular)
+.operation-list-wrap {
+  padding-top: 10px;
+
+  :global {
+    .c7n-timeline-item-content {
+      padding: 0 0 0 0.24rem;
+    }
+  }
+
+  .operation-record-item {
+    display: flex;
+    align-items: baseline;
+    margin-left: calc(16px - 0.18rem);
+
+    &-icon {
+      color: rgba(0, 0, 0, 0.85);
+
+      i {
+        font-size: 14px;
+      }
+    }
+
+    &-conent {
+      width: 100%;
+      margin-left: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      &-desc {
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+
+        span:first-child {
+          font-weight: 500;
+          color: #1d2129;
+        }
+
+        span:nth-child(3) {
+          font-weight: 500;
+          color: #1d2129;
+        }
+
+        &-name {
+          font-size: 12px;
+          color: #000;
+        }
+
+        &-title {
+          font-size: 12px;
+          color: #000;
+        }
+
+        &-approve {
+          margin-right: 6px;
+
+          font-size: 12px;
+          color: #47b881;
+
+          &-text {
+            color: #47b881;
+          }
+        }
+
+        &-reject {
+          font-size: 12px;
+          color: #f56349;
+
+          &-text {
+            color: #f56349;
+          }
+        }
+      }
+
+      &-remark {
+        margin-bottom: 4px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+
+        &-value {
+          margin-left: 26px;
+          font-size: 12px;
+          color: #000;
+        }
+      }
+
+      &-time {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.approval-list-wrap {
+  margin-top: -0.16rem;
+
+  :global {
+    .empty-wrapper {
+      text-align: center;
+      margin-top: 0.2rem;
+    }
+
+    .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header,
+    .c7n-collapse-content {
+      padding-left: 0;
+    }
+  }
+}
+
+.operation-wrapper:not(:first-child) {
+  margin-top: 4px;
+}
+
+.operation-record {
+  font-size: 14px;
+  color: #000;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.operation-icon {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 8px;
+  margin-top: -4px;
+}
+
+.operation-content {
+  margin-top: 16px;
+  height: 100%;
+}
+
+.operation-content-closed {
+  margin-top: 16px;
+  height: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,113 @@
+@import '~hzero-front/lib/srm-variables';
+
+.risk-manager-modal {
+  display: flex;
+  height: calc(100vh - 79px);
+  overflow: hidden;
+
+  :global {
+    .c7n-pro-table-selection-tips {
+      display: none !important;
+    }
+  }
+}
+
+.risk-manager-modal-left {
+  padding: 0 20px 0 0;
+  box-shadow: 0 6px 16px -8px rgba(29, 33, 41, 0.08);
+  box-shadow: 0 9px 28px 0 rgba(29, 33, 41, 0.05);
+  box-shadow: 0 12px 48px 16px rgba(29, 33, 41, 0.03);
+}
+
+.risk-manager-modal-left-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.risk-manager-modal-left-searc {
+  line-height: 33px;
+}
+
+.risk-manager-modal-left-tree-panel {
+  height: calc(100vh - 180px);
+  margin-top: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  :global {
+    .c7n-tree .c7n-tree-treenode {
+      width: 100%;
+    }
+
+    .c7n-tree .c7n-tree-node-content-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// .risk-manager-modal-left-tree-panel::-webkit-scrollbar {
+//   width: 4px;
+// }
+
+// .risk-manager-modal-left-tree-panel::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+//   border-radius: 10px;
+// }
+
+// .risk-manager-modal-left-tree-panel::-webkit-scrollbar-thumb {
+//   border-radius: 10px;
+//   background: rgba(0, 0, 0, 0.1);
+//   -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+// }
+
+.risk-manager-modal-right {
+  width: 300px;
+  height: calc(100vh - 108px);
+  background-color: #f7f8fa;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+// .risk-manager-modal-right::-webkit-scrollbar {
+//   width: 4px;
+// }
+
+// .risk-manager-modal-right::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+//   border-radius: 10px;
+// }
+
+// .risk-manager-modal-right::-webkit-scrollbar-thumb {
+//   border-radius: 10px;
+//   background: rgba(0, 0, 0, 0.1);
+//   -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+// }
+
+.risk-manager-selected-item {
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+
+  &:hover {
+    background: #e5e7ec;
+  }
+}
+
+.risk-manager-collect-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  :global {
+    .c7n-rate {
+      color: @primary-color;
+    }
+
+    i {
+      margin-top: -6px;
+    }
+  }
+}

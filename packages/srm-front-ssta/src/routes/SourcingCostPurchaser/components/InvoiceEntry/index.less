@@ -1,0 +1,80 @@
+@import '~hzero-front/lib/srm-variables';
+
+.ssta-operation-record-invoice {
+  margin-top: 8px;
+
+  :global {
+    .invoice-record-empty {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+
+    .invoice-record-timeline {
+      .c7n-timeline-item {
+        padding: 0 0;
+
+        .c7n-timeline-item-content {
+          padding: 0 0 0 0.24rem;
+        }
+
+        .invoice-record-action-icon {
+          margin-right: 8px;
+        }
+
+        .invoice-record-action-operator {
+          margin-left: 0.06rem;
+          font-weight: 500;
+          color: @text-1;
+        }
+
+        .invoice-record-action-text {
+          padding: 0 4px;
+          font-size: 12px;
+          color: @text-2;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .invoice-record-action-remark {
+          display: flex;
+          margin: 5px 0 0 28px;
+
+          .record-action-remark-label {
+            padding: 0 4px;
+            font-size: 12px;
+            color: @text-2;
+            line-height: 18px;
+          }
+
+          .record-action-remark-value {
+            flex: 1 1;
+            width: 360px;
+            font-weight: 500;
+          }
+        }
+
+        .invoice-record-action-time {
+          margin: 5px 0 12px 32px;
+          font-size: 12px;
+          color: @text-2;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .invoice-record-action-doc {
+          font-weight: 500;
+          color: @text-1;
+        }
+
+        .invoice-record-action-divide {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.08);
+          margin: 0 0 15px 34px;
+        }
+      }
+    }
+  }
+}

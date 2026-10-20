@@ -1,0 +1,48 @@
+.overflow-point {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.label-preview-container {
+  display: inline-block;
+  border-radius: 2px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  border-width: 1px;
+  padding: 0 5px;
+  border-style: solid;
+  box-sizing: border-box;
+  span {
+    width: 56px;
+    cursor: grab;
+    display: inline-block;
+    .overflow-point;
+  }
+  i {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: -6px;
+    display: inline-block;
+    cursor: 'pointer';
+  }
+}
+
+.label-auto-wrapper {
+  .overflow-point;
+}
+
+.label-auto-container {
+  display: inline;
+  border-radius: 2px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  border-width: 1px;
+  padding: 0 5px;
+  border-style: solid;
+  box-sizing: border-box;
+  // .overflow-point;
+}

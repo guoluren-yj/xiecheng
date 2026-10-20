@@ -1,0 +1,316 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/srm-variables';
+
+.layout-setting-modal :global {
+  .c7n-pro-upload {
+    margin-top: -0.12rem;
+  }
+} 
+
+.setting-checkbox :global {
+  margin-right: 0.1rem;
+  margin-bottom: 0.05rem;
+  margin-left: 0 !important;
+
+  .c7n-pro-checkbox-inner {
+    border: 0.01rem solid rgba(0, 0, 0, 0.65);
+  }
+}
+
+.template-title {
+  :global {
+    font-size: 0.14rem;
+    color: #000;
+    line-height: 0.22rem;
+    font-weight: 600;
+    padding-left: 0.1rem;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 0.16rem;
+
+    .icon-language {
+      font-size: 0.14rem;
+      opacity: 0.8;
+      margin-left: 0.03rem;
+      margin-top: -0.02rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.template-title:before {
+  :global {
+    content: '';
+    position: absolute;
+    width: 0.03rem;
+    height: 0.12rem;
+    background: @primary-color;
+    left: 0;
+    top: 0.05rem;
+  }
+}
+
+.banner-table-content :global,
+.link-table-content :global,
+.login-table-content :global {
+  .c7n-pro-field-label-wrapper {
+    display: none;
+  }
+
+  .c7n-pro-field-label {
+    line-height: 0.28rem;
+  }
+
+  .c7n-pro-select-float-label {
+    &::before {
+      border-color: white;
+    }
+  }
+
+  .c7n-pro-select-float-label:hover {
+    &::before {
+      border-color: @primary-color !important;
+    }
+  }
+}
+
+.formatter-from-modal :global {
+  width: 100%;
+
+  .c7n-pro-upload,
+  .c7n-pro-upload-list-item img {
+    width: 80%;
+  }
+}
+
+.footer-content {
+  :global {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-item {
+      position: relative;
+
+      .ql-snow a {
+        color: @primary-color;
+      }
+
+      .footer-rich-viewer::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 0.14rem);
+        height: calc(100% - 0.15rem);
+        background: rgba(0, 0, 0, 0.35);
+        left: -0.01rem;
+        top: -0.01rem;
+        display: none;
+      }
+
+      &:hover {
+        .close-icon,
+        .edit-icon {
+          display: block;
+          color: #fff;
+        }
+
+        .footer-rich-viewer {
+          border-color: #fff;
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .close-icon,
+    .edit-icon {
+      display: none;
+      position: absolute;
+      right: 0.19rem;
+      top: 0.05rem;
+      cursor: pointer;
+      color: #999;
+    }
+
+    .edit-icon {
+      right: 0.4rem;
+    }
+
+    .footer-rich-viewer {
+      width: 1.38rem;
+      height: 1.42rem;
+      box-sizing: border-box;
+      margin-bottom: 0.16rem;
+      margin-right: 0.16rem;
+      line-height: 0.24rem;
+      font-size: 0.14rem;
+      color: #555;
+      overflow: auto;
+
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .footer-add {
+      width: 1.38rem;
+      height: 1.42rem;
+      box-sizing: border-box;
+      border: 0.01rem dashed rgba(0, 0, 0, 0.26);
+      margin-bottom: 0.16rem;
+      text-align: center;
+      font-size: 0.14rem;
+      cursor: pointer;
+
+      .add-icon {
+        font-size: 0.3rem;
+        color: #555;
+        margin-top: 0.25rem;
+        margin-bottom: 0.05rem;
+      }
+    }
+  }
+}
+
+.item-tip :global {
+  color: @text-3;
+  font-size: 0.12rem;
+  display: block;
+  font-weight: 400;
+}
+
+.card-setting-drawer :global {
+  .ql-tooltip {
+    left: -0.1rem !important;
+  }
+
+  .ql-container.ql-snow {
+    font-family: inherit;
+
+    .ql-editor[contenteditable] {
+      a {
+        color: @primary-color !important;
+      }
+    }
+  }
+}
+
+.ql-image-custom :global {
+  margin-top: -0.02rem;
+  position: relative;
+  overflow: hidden;
+
+  .c7n-pro-upload {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+}
+
+:global {
+  .ril-outer .ril__image {
+    transform: inherit !important;
+    max-width: 70%;
+    max-height: 70%;
+  }
+}
+
+// 【模板设置】样式
+.template-setting-section{
+  :global{
+    .top-section-title{
+      display: none;
+    }
+    .second-section-title-tip {
+      color: @text-3;
+      font-size: 0.12rem;
+      display: block;
+      font-weight: 400;
+      margin-top: -8px;
+      margin-bottom: 16px;
+    }
+    .second-section-content{
+      margin-bottom: 32px;
+    }
+    .checkable-tag-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+    
+      .c7n-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0.32rem;
+        margin-bottom: 0.08rem;
+        overflow: hidden;
+        padding: 0 0.15rem;
+        border: 0.01rem solid #ccc;
+        background: #fff;
+        font-weight: 400;
+    
+        &.c7n-tag-checkable-checked {
+          background: #fff;
+          color: #111;
+          border: 0.02rem solid @primary-color;
+          border-radius: 0.02rem;
+          position: relative;
+          font-weight: 600;
+          .icon-done {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            font-size: 0.12rem;
+            background: @primary-color;
+            font-weight: bold;
+            border-bottom-left-radius: 0.02rem;
+          }
+        }
+      }
+    
+      .add-tag {
+        width: 0.32rem;
+        height: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.01rem;
+        font-size: 0.14rem;
+        color: #555;
+        background: rgba(0, 0, 0, 0.04);
+        border: 0.01rem dashed rgba(0, 0, 0, 0.26);
+        border-radius: 0.02rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// 【卡片设置】样式
+.card-setting-wrap{
+  :global{
+    .top-section-title{
+      display: none;
+    }
+  }
+}
+
+// 标题-图标样式
+.icon-picker{
+  :global{
+    .c7n-tabs{
+      .c7n-tabs-bar{
+        padding: 16px 16px 0 16px;
+      }
+      .c7n-tabs-content{
+        padding-top: 16px;
+      }
+    }
+  }
+}

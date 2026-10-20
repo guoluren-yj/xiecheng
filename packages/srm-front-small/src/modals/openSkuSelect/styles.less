@@ -1,0 +1,67 @@
+.sku-select {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  :global {
+    .sku-table-wrapper {
+      padding: 16px 20px;
+      width: 742px;
+      flex: 1;
+      .sku-select-title {
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+    }
+    .selected-data {
+      background: #f7f8fa;
+      padding: 20px 0;
+      width: 300px;
+      flex: 1;
+      .selected-data-count {
+        font-size: 12px;
+        color: #868d9c;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .selected-data-content {
+        overflow: auto;
+      }
+      .selected-data-item {
+        display: flex;
+        align-items: center;
+        height: 38px;
+        padding: 0 20px;
+        justify-content: space-between;
+        .selected-data-text {
+            width: 222px;
+        }
+        .selected-data-remove {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          border-radius: 50%;
+          background: #c9cdd4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: #fff;
+            font-size: 14px;
+          }
+        }
+        &:hover {
+          background: #e5e7ec;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

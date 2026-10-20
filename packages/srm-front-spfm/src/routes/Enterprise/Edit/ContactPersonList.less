@@ -1,0 +1,82 @@
+@import '~hzero-front/lib/assets/styles/utils.less';
+
+// 加标签的原因 是为了 让 优先级 比 antd 高
+
+.avatar-icon:global(.ant-avatar.ant-avatar-icon) {
+  font-size: 32px;
+}
+
+.avatar-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  line-height: 40px;
+  font-size: 32px;
+  border-radius: 50%;
+}
+
+.text-overflow {
+  .textOverflow();
+}
+
+.clear-fix {
+  .clearfix();
+}
+
+.tuple {
+  width: 240px;
+  height: 16px;
+  margin-bottom: 8px;
+  line-height: 16px;
+}
+
+.tuple-title {
+  color: #888;
+  width: 65px;
+  float: left;
+  text-align: right;
+  margin-right: 12px;
+}
+.tuple-value {
+  float: left;
+  color: #333;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact-card {
+  margin-right: 12px;
+  margin-top: 12px;
+  width: 300px;
+  .avatar-wrapper {
+    display: flex;
+    padding: 24px;
+    color: #fff;
+    background: ~"url('hzero-front/lib/assets/org-type-icon.png')";
+    background-color: #374B5A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .user-info-wrap {
+      flex: auto;
+      margin-left: 12px;
+      .name {
+        display: flex;
+        justify-content: space-between;
+        .default {
+          line-height: 24px;
+          font-size: 12px;
+        }
+      }
+      .mail {
+        text-align: left;
+        margin-top: 6px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}

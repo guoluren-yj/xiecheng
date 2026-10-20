@@ -1,0 +1,44 @@
+@import '../../../../lowcodeGlobalColor.less';
+
+.head-left {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  width: 260px;
+
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+    .c7n-pro-select {
+      box-shadow: none !important;
+    }
+    // .c7n-pro-select:hover,
+    // .c7n-pro-select:focus,
+    // label:hover .c7n-pro-select {
+    //   // border-color: @darkblue !important;
+    // }
+    .c7n-pro-select-expand {
+      .c7n-pro-select-suffix img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .select-content {
+    :global {
+      .c7n-pro-select {
+        width: 84px;
+        font-size: 16px;
+        color: #333;
+        border: none !important;
+      }
+      .c7n-pro-select-suffix {
+        line-height: 18px;
+        img {
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

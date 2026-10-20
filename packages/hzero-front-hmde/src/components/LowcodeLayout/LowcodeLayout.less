@@ -1,0 +1,204 @@
+@import '../../lowcodeGlobalColor.less';
+
+.layoutSpin {
+  height: 100vh !important;
+
+  :global {
+    .c7n-spin-container {
+      height: 100% !important;
+    }
+  }
+}
+
+.lowcodeLayout {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+
+  :global {
+    .c7n-spin-nested-loading {
+      height: 100%;
+
+      .c7n-spin-container {
+        height: 100%;
+      }
+    }
+  }
+
+  // left nav bar
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    min-width: 52px;
+    background: white; // todo 后续再改成全局颜色，全局样式文件被hzero删了
+    border-right: 1px solid #ddd;
+    .logo {
+      // margin: 12px 14px;
+      margin: 24px 14px;
+      height: 30px;
+      width: 24px;
+      cursor: pointer;
+
+      img {
+        height: 26px;
+      }
+    }
+
+    .menus {
+      margin-top: 50px;
+
+      .menuItem {
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        margin: 6px 0;
+        height: 32px;
+        line-height: 32px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .bgColor {
+          opacity: 0.1;
+          background-image: linear-gradient(270deg, rgba(1, 36, 146, 0) 0%, #012492 100%);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
+
+        .bgBar {
+          width: 3px;
+          height: 100%;
+          background: @darkblue;
+          position: absolute;
+        }
+
+        .menumark {
+          position: absolute;
+          right: 8px;
+          bottom: 6px;
+        }
+      }
+
+      .active {
+        background-image: linear-gradient(
+          270deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.4) 100%
+        );
+      }
+
+      .active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        border-left: 3px solid #fff;
+      }
+    }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 140px;
+
+      div {
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .avatar {
+        position: relative;
+
+        .avatarImg {
+          height: 32px;
+          width: 32px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+        }
+
+        .avatartMarkImg {
+          width: 4px !important;
+          height: 4px !important;
+          position: absolute;
+          bottom: 0;
+          right: 4px;
+        }
+      }
+
+      .notices {
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      .menuopen {
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  // right content
+  .lowcodePageContainer {
+    //padding: 8px 12px;
+    overflow: auto;
+    :global {
+      .page-head {
+        height: 48px !important;
+        min-height: 48px !important;
+        border-bottom: none !important;
+
+        .page-head-title {
+          width: 239px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #000;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .page-content-wrap {
+        height: 100%;
+        .page-content {
+          margin: 0 !important;
+          padding: 24px 8px 16px 16px;
+          min-height: calc(100% - 4px) !important;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .no-permission {
+    text-align: center;
+
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+
+    > img {
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    > span {
+      font-size: 16px;
+      color: #5a6677;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.supplier-detail-header {
+  display: flex;
+  margin-bottom: 32px;
+  .right-wapper {
+    margin-left: 12px;
+    .first-line {
+      display: flex;
+      align-items: center;
+      .company-name {
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        margin: 0 8px 0 0;
+      }
+    }
+    .second-line {
+      margin: 8px 0;
+      span {
+        color: rgb(0, 0, 0);
+        background-color: rgb(240, 240, 240);
+        margin-right: 8px;
+        font-weight: 400;
+        display: inline-block;
+        padding: 2px 5px;
+        border-radius: 2px;
+      }
+    }
+    .third-line {
+      margin-bottom: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.supplier-detail-content {
+  table {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    tr {
+      height: 33px;
+      td:first-child {
+        width: 30%;
+        background: rgba(0, 0, 0, 0.03);
+      }
+      td {
+        padding-left: 12px;
+      }
+      .td-item {
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

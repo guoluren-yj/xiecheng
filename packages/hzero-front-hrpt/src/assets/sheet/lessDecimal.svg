@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下拉-减少小数位数 </title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-436.000000, -162.000000)">
+            <g id="Dropdown备份-8" transform="translate(420.000000, 119.000000)">
+                <g id="编组-25" transform="translate(16.000000, 13.000000)">
+                    <g id="编组-22备份" transform="translate(0.000000, 28.000000)">
+                        <g id="下拉-减少小数位数-" transform="translate(0.000000, 2.000000)">
+                            <rect id="Rectangle" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                            <g id="编组-10" transform="translate(6.962500, 7.494853) rotate(-270.000000) translate(-6.962500, -7.494853) translate(1.000000, 2.000000)">
+                                <path d="M3.27352941,1.87058824 C4.30662677,1.87058824 5.14411765,2.70807912 5.14411765,3.74117647 L5.14411765,6.54705882 C5.14411765,7.58015618 4.30662677,8.41764706 3.27352941,8.41764706 C2.24043206,8.41764706 1.40294118,7.58015618 1.40294118,6.54705882 L1.40294118,3.74117647 C1.40294118,2.70807912 2.24043206,1.87058824 3.27352941,1.87058824 Z" id="矩形复制-11" stroke="#000000" transform="translate(3.273529, 5.144118) rotate(-90.000000) translate(-3.273529, -5.144118) "></path>
+                                <circle id="椭圆形复制-2" fill="#000000" fill-rule="nonzero" transform="translate(5.689706, 9.352941) rotate(-90.000000) translate(-5.689706, -9.352941) " cx="5.68970588" cy="9.35294118" r="1"></circle>
+                                <polygon id="形状结合" fill="#000000" fill-rule="nonzero" transform="translate(9.976471, 5.494853) scale(-1, -1) rotate(-360.000000) translate(-9.976471, -5.494853) " points="9.97647059 0 11.925 3.11764706 10.4823088 3.11686765 10.4830882 10.9897059 9.46985294 10.9897059 9.46907353 3.11686765 8.02794118 3.11764706"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

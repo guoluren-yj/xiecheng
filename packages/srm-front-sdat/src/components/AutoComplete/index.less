@@ -1,0 +1,74 @@
+.auto-complete {
+  position: relative;
+  display: inline-block;
+
+  .c7n-pro-input:not(textarea):not(:last-child) {
+    padding-right: 0.5rem;
+  }
+
+  input {
+    height: 46px;
+    font-size: 14px;
+    padding-left: 20px !important;
+    // padding-left: 50px !important;
+  }
+
+  i {
+    font-size: 25px;
+  }
+
+  .c7n-pro-input-suffix,
+  .c7n-pro-input-inner-button {
+    right: 0.1rem !important;
+  }
+
+  .c7n-pro-input-suffix-button .c7n-pro-input-suffix {
+    cursor: default;
+  }
+
+  .c7n-pro-input-prefix {
+    margin: 11px 15px !important;
+  }
+}
+
+.auto-complete-labels {
+  text-align: left;
+  margin-top: 8px;
+  span {
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+    font-weight: 500;
+    margin-right: 24px;
+    cursor: pointer;
+  }
+}
+
+.dropdown-ul {
+  position: absolute;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  max-height: 321px;
+  overflow-y: scroll;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  z-index: 100;
+  cursor: pointer;
+
+  .is-active {
+    background: rgba(54, 194, 207, 0.2) !important;
+    color: #000 !important;
+  }
+
+  .dropdown-li {
+    list-style: none;
+    line-height: 32px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .dropdown-li:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+}

@@ -1,0 +1,187 @@
+/**
+ * less 合作伙伴处理
+ * @date: 2018-8-14
+ * @author: YB <bo.yang02@hand-china.com>
+ * @version: 0.0.2
+ * @copyright Copyright (c) 2018, Hand
+ */
+// 供应商、采购方邀约
+.content {
+  width: 1000px;
+  .title {
+    color: #999;
+    margin-bottom: 40px;
+    .company {
+      color: #000;
+    }
+  }
+  .form {
+    .button {
+      margin-left: 8px;
+    }
+  }
+}
+
+// 合作邀约上部分
+.agree-top {
+  // margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  > div:nth-child(2) {
+    position: absolute;
+    right: 0;
+  }
+  .agree-word {
+    width: 90%;
+    z-index: 1;
+    // margin-right: 66px;
+  }
+  .company {
+    color: #4371ef;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+  .tag {
+    padding-right: 3px;
+  }
+  .close {
+    padding: 0 20px 40px 20px;
+  }
+  // .agree-success {
+  //   color: #4caf50;
+  // }
+  // .agree-error {
+  //   color: #f50;
+  // }
+  // .agree-info {
+  //   color: #4371ef;
+  // }
+}
+.tabs {
+  padding: 0 20px 40px 20px;
+}
+
+// 企业信息容器
+.information-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .information-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: solid 1px #e5e5e5;
+    .vertical-line {
+      width: 3px;
+      height: 14px;
+      display: inline-block;
+      background-color: #1e3255;
+      vertical-align: middle;
+      margin-right: 12px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .information-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .information-item {
+    // border-bottom: 1px #dcdcdc dashed;
+    // padding-bottom: 4px;
+    margin-bottom: 16px;
+    .information-item-label {
+      color: #666;
+    }
+    .ainformation-item-children {
+      padding-left: 6px !important;
+    }
+  }
+}
+// 企业信息行信息
+.information-content-container {
+  display: flex;
+  border-bottom: 1px #dcdcdc dashed;
+  padding-bottom: 4px;
+  justify-content: space-between;
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    & > :first-child {
+      width: 80px;
+      color: #999;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}
+.one-col {
+  & > div:first-child {
+    width: 100% !important;
+    :global(.ant-form-item-label) {
+      width: 16.66666667% !important;
+    }
+    :global(.ant-form-item-control-wrapper) {
+      width: 30.33333333% !important;
+    }
+  }
+}
+// 头信息标题
+// .description-title {
+//   font-size: 14px;
+//   color: #314659;
+//   margin-bottom: 20px;
+// }
+// 头信息列表
+// .description-list {
+//   display: flex;
+//   flex-flow: row wrap;
+//   margin-bottom: 40px;
+//   .one-line {
+//     flex: 0 0 100%;
+//   }
+//   .two-col {
+//     display: flex;
+//     flex: 0 0 66.64%;
+//   }
+//   .three-col {
+//     display: flex;
+//     flex: 0 0 75%;
+//   }
+//   .four-col {
+//     display: flex;
+//     flex: 0 0 25%;
+//   }
+//   & > div {
+//     display: flex;
+//     flex: 0 0 33.33%;
+//     padding: 10px 0 5px 0;
+//     border-bottom: 1px dashed #dcdcdc;
+//     & > :first-child {
+//       //width: 100px;
+//       color: #666;
+//     }
+//     & > :nth-child(2) {
+//       flex: auto;
+//     }
+//   }
+// }
+.invite-header-form {
+  :global {
+    .ant-row {
+      .ant-form-item {
+        .ant-form-item-label {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

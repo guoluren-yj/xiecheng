@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1198px" height="200px" viewBox="0 0 1198 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4c735294dfe02341d7bdf13f1163a79f备份</title>
+    <defs>
+        <path d="M0.583333338,10.5758333 L9.91666666,10.5758333 L9.91666666,11.9583333 L0.583333338,11.9583333 L0.583333338,10.5758333 Z M3.24566666,0.291666662 L3.24566666,4.40533334 L0.583333338,4.40533334 L5.25,9.1945 L9.91666666,4.40533334 L7.25433334,4.40533334 L7.25433334,0.291666662 L3.24566666,0.291666662 Z" id="path-1"></path>
+        <path d="M7.29166666,6.41666666 L6.83083334,6.41666666 L6.6675,6.25916666 C7.25892536,5.57317939 7.58397635,4.69740508 7.58333334,3.79166666 C7.58333333,1.69758699 5.88574634,1.36719791e-08 3.79166667,1.36719791e-08 C1.697587,1.36719791e-08 1.36718796e-08,1.697587 1.36718796e-08,3.79166667 C1.36718796e-08,5.88574634 1.69758699,7.58333333 3.79166666,7.58333334 C4.73083332,7.58333334 5.59416666,7.23916668 6.25916666,6.6675 L6.41666666,6.83083334 L6.41666666,7.29166666 L9.33333334,10.2025 L10.2025,9.33333334 L7.29166666,6.41666666 Z M3.79166666,6.41666666 C2.33916666,6.41666666 1.16666666,5.24416666 1.16666666,3.79166666 C1.16666666,2.33916666 2.33916666,1.16666666 3.79166666,1.16666666 C5.24416666,1.16666666 6.41666666,2.33916666 6.41666666,3.79166666 C6.41666666,5.24416666 5.24416666,6.41666666 3.79166666,6.41666666 Z" id="path-3"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4c735294dfe02341d7bdf13f1163a79f备份">
+            <g id="编组-28">
+                <rect id="Rectangle备份-4" stroke="#EBEBEB" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="1197" height="199"></rect>
+                <g id="form" transform="translate(16.000000, 72.000000)">
+                    <g id="技术附件" fill="#000000" fill-opacity="0.65" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal">
+                        <text>
+                            <tspan x="0" y="13">技术附件</tspan>
+                        </text>
+                    </g>
+                    <g id="Upload/File" transform="translate(0.000000, 22.000000)">
+                        <rect id="Rectangle-6" fill="#F3F3F3" fill-rule="nonzero" x="0" y="0" width="128" height="30" rx="2"></rect>
+                        <g id="修改意见.txt" transform="translate(47.000000, 6.000000)" fill="#000000" fill-opacity="0.85" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal">
+                            <text id="技术附件.txt">
+                                <tspan x="0" y="13">技术附件.txt</tspan>
+                            </text>
+                        </g>
+                        <g id="get_app" transform="translate(10.000000, 8.000000)">
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                            <g id="编组-Clipped" transform="translate(1.750000, 0.875000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="path-5"></g>
+                                <g id="编组" mask="url(#mask-2)">
+                                    <g transform="translate(-2.000000, -1.000000)" id="color">
+                                        <g transform="translate(0.250000, 0.125000)">
+                                            <rect id="矩形" fill="#000000" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="search" transform="translate(28.000000, 8.000000)">
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                            <g id="编组-Clipped" transform="translate(1.750000, 1.750000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="path-7"></g>
+                                <g id="编组" mask="url(#mask-4)">
+                                    <g transform="translate(-2.000000, -2.000000)" id="color">
+                                        <g transform="translate(0.250000, 0.250000)">
+                                            <rect id="矩形" fill="#000000" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="编组-8" transform="translate(16.000000, 24.000000)" fill="#000000" fill-opacity="0.85" fill-rule="nonzero" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal">
+                    <g id="附件">
+                        <text>
+                            <tspan x="0" y="17">附件</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <rect id="Rectangle备份-4" fill-opacity="0.7" fill="#FFFFFF" fill-rule="nonzero" x="1" y="0" width="1196" height="199"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,394 @@
+// ==========================================
+// 智能采购助手工作台 - 样式
+// ==========================================
+@import '~hzero-front/lib/srm-variables';
+
+@white: #fff;
+@border-radius: 6px;
+@card-gap: 16px;
+
+.ai-workbench-container {
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+
+  :global {
+    .ai-workbench {
+
+      // ==================== Banner ====================
+      &-banner {
+        position: relative;
+        height: 68px;
+        border-radius: @border-radius;
+        overflow: hidden;
+        margin-bottom: @card-gap;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(11px);
+        -webkit-backdrop-filter: blur(11px);
+        border: 0.5px solid #fff;
+
+        &-content {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+          padding: 10px 20px;
+        }
+
+        &-left {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+        }
+
+        &-icon {
+          flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+        }
+
+        &-text {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        &-title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1;
+          margin-bottom: 2px;
+        }
+
+        &-desc {
+          font-size: 12px;
+          color: @text-3;
+          margin: 0;
+          line-height: 1;
+        }
+      }
+
+      // ==================== 统计卡片 ====================
+
+      &-stat {
+        &-row {
+          display: flex;
+          gap: @card-gap;
+          margin-bottom: @card-gap;
+        }
+
+        &-card {
+          flex: 1;
+          background: @white;
+          border-radius: @border-radius;
+          border: 0.5px solid @border-4;
+          padding: 16px;
+          height: 121px;
+          box-sizing: border-box;
+
+          &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+          }
+
+          &-title {
+            font-size: 14px;
+            color: @text-2;
+          }
+
+          &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          &-value-row {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+          }
+
+          &-value {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.1;
+          }
+
+          &-unit {
+            font-size: 13px;
+            color: @text-3;
+            font-weight: 400;
+          }
+
+          &-change {
+            display: flex;
+            align-items: center;
+            gap: 0;
+
+            &-label {
+              font-size: 12px;
+              color: @text-3;
+              margin-right: 4px;
+            }
+
+            &-value {
+              font-size: 12px;
+              font-weight: 400;
+              color: #3bb346;
+            }
+          }
+        }
+      }
+
+      // ==================== 区域通用 ====================
+      &-section {
+        background: @white;
+        border-radius: @border-radius;
+        border: 0.5px solid @border-4;
+        padding: 20px;
+        margin-bottom: @card-gap;
+
+        &-header {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 16px;
+        }
+
+        &-title {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        &-count {
+          font-size: 16px;
+          font-weight: 400;
+          color: @text-3;
+        }
+      }
+
+      // ==================== 助手卡片网格 ====================
+      &-assistant-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: @card-gap;
+      }
+
+      &-assistant-card {
+        background: @fill-7;
+        border-radius: @border-radius;
+        border: 0.5px solid @border-4;
+        padding: 12px 16px;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+        position: relative;
+
+        &:hover {
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        &-status {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        &-header {
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+          padding-bottom: 12px;
+          border-bottom: 0.5px solid @border-4;
+          margin-bottom: 0;
+        }
+
+        &-icon {
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+
+          img {
+            width: 40px;
+            height: 40px;
+            display: block;
+          }
+        }
+
+        &-info {
+          flex: 1;
+          min-width: 0;
+        }
+
+        &-name-row {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 6px;
+        }
+
+        &-name {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        &-desc {
+          font-size: 12px;
+          color: @text-3;
+          margin: 0;
+          line-height: 1.4;
+        }
+
+        &-stats {
+          display: flex;
+          padding-top: 12px;
+        }
+
+        &-stat-item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        &-stat-label {
+          font-size: 12px;
+          color: @text-3;
+        }
+
+        &-stat-value {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+
+      // 助手图标样式（fallback）
+      &-assistant-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: @fill-5;
+      }
+
+      // ==================== 底部两栏 ====================
+      &-bottom {
+        display: flex;
+        gap: @card-gap;
+
+        &-left {
+          flex: 3;
+          min-width: 0;
+        }
+
+        &-right {
+          flex: 0 0 327px;
+          min-width: 327px;
+        }
+      }
+
+      // ==================== 待处理任务表格 ====================
+      &-pending-task {
+        background: @white;
+        border-radius: @border-radius;
+        border: 0.5px solid @border-4;
+        padding: 20px;
+      }
+
+      // ==================== 异常任务统计 ====================
+      &-exception-stats {
+        background: @white;
+        border-radius: @border-radius;
+        border: 0.5px solid @border-4;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+
+        &-more {
+          display: flex;
+          align-items: center;
+          font-size: 13px;
+          color: #1d62f5;
+          cursor: pointer;
+          margin-left: auto;
+        }
+
+        &-body {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          padding-top: 12px;
+        }
+      }
+
+      &-exception-chart {
+        flex-shrink: 0;
+      }
+
+      &-exception-legend {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        &-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        &-label {
+          font-size: 13px;
+          white-space: nowrap;
+        }
+
+        &-value {
+          font-size: 13px;
+          color: @text-2;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        &-pct {
+          font-weight: 400;
+          color: @text-3;
+        }
+      }
+
+      // ==================== 浮动按钮 ====================
+      &-floating-btn {
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        width: 68px;
+        height: 68px;
+        background: @white;
+        border-radius: 50%;
+        box-shadow: 0 9px 28px rgba(78, 87, 105, 0.05), 0 12px 48px 16px rgba(78, 87, 105, 0.03),
+          0 6px 16px -8px rgba(78, 87, 105, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 100;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

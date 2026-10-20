@@ -1,0 +1,778 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../field/style/mixin';
+
+// size mixins for input
+.input-lg() {
+  &-lg & {
+    height: @input-height-lg;
+    padding: @input-padding-vertical-lg @input-padding-horizontal;
+  }
+}
+
+.input-sm() {
+  &-sm & {
+    height: @input-height-sm;
+    padding: @input-padding-vertical-sm @input-padding-horizontal;
+  }
+}
+
+// input status
+// == when focus or actived
+.active(@color: @input-focus-border-color) {
+  color: @input-active-color;
+  border-color: @color;
+  outline: 0;
+  box-shadow: @input-active-box-shadow;
+}
+
+// == when hoverd
+.hover(@color: @input-hover-border-color) {
+  border-color: @color;
+}
+
+.disabled() {
+  color: @input-disabled-color;
+  background-color: @input-disabled-bg;
+  border: @border-width-base @input-disabled-border-style @disabled-color !important;
+  cursor: not-allowed;
+  opacity: 1;
+  &::before {
+    border-color: transparent;
+  }
+}
+
+// Placeholder text
+.placeholder(@color: @input-placeholder-color) {
+  // Firefox
+  &::-moz-placeholder {
+    color: @color;
+    text-align: left;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    color: @color;
+    text-align: left;
+  }
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    color: @color;
+    text-align: left;
+  }
+}
+
+// Basic style for input
+.input(@prefix-width: @input-prefix-width-base, @suffix-width: @input-suffix-width-base) {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: @input-height-base;
+  padding: @input-padding-vertical-base @input-padding-horizontal;
+  color: @input-color;
+  font-size: @input-font-size-base;
+  line-height: @input-line-height-base;
+  text-overflow: ellipsis;
+  background-color: transparent;
+  background-image: none;
+  border: @border-width-base none @input-border-color;
+  border-radius: @input-border-radius;
+  outline: 0;
+  cursor: text;
+  transition-duration: @animation-duration-slow;
+  transition-property: opacity, color, background-color, border;
+
+  &-compact:not(:last-child) {
+    margin-right: -@border-width-base;
+    border-right-width: @border-width-base;
+  }
+
+  &-compact:not(:first-child) & {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-compact:not(:last-child) & {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-compact:hover &-wrapper,
+  &-compact:focus &-wrapper {
+    z-index: 3;
+  }
+
+  &-compact &-focused {
+    z-index: 3;
+  }
+
+  &-compact &-invalid {
+    z-index: 2;
+  }
+
+  &-border &,
+  &-border&-float-label::before {
+    border-style: @border-style-base;
+  }
+
+  &-wrapper {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    background-color: @input-wrapper-bg;
+
+    label {
+      position: relative;
+      z-index: 1;
+      display: flex;
+    }
+
+    .@{field-label-prefix-cls} {
+      z-index: -1;
+    }
+  }
+
+  .placeholder;
+
+  &-required-colors {
+    background-color: @input-required-bg;
+  }
+
+  &-required-colors & {
+    border-color: @input-required-border-color;
+  }
+
+  &-highlight & {
+    border-color: @input-highlight-border-color;
+  }
+
+  &-wrapper:not(&-required-colors) label:not(&-required-colors):hover &,
+  &-wrapper:not(&-required-colors) &:not(&-required-colors):hover {
+    .hover;
+  }
+
+  &-required-colors label:hover &,
+  &-required-colors &:hover {
+    .hover(@input-required-hover-border-color);
+  }
+
+  &-wrapper:not(&-required-colors) &:focus,
+  &-focused:not(&-required-colors) & {
+    .active;
+  }
+
+  &-disabled {
+    background-color: @input-disabled-bg;
+
+    i {
+      color: @input-disabled-icon-color;
+    }
+  }
+
+  &-disabled &,
+  &:disabled {
+    .disabled;
+  }
+
+  &-disabled &-prefix,
+  &-disabled &-suffix,
+  &-disabled&-prefix-button &-prefix,
+  &-disabled&-suffix-button &-suffix,
+  &-disabled &-inner-button,
+  &-disabled input {
+    cursor: not-allowed;
+  }
+
+  &-not-editable & {
+    cursor: default;
+  }
+
+  &-placeholder,
+  &-rendered-value {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: @input-height-base;
+    margin: auto 0;
+    padding: 0 @input-padding-horizontal;
+    line-height: @input-height-base;
+    white-space: pre;
+    border: @border-width-base @border-style-base transparent;
+    transition: all @animation-duration-slow;
+
+    &-inner {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &-placeholder {
+    color: @input-placeholder-color;
+    white-space: nowrap;
+    opacity: 0;
+  }
+
+  &-disabled &-rendered-value {
+    z-index: 2;
+    color: @input-disabled-color;
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    max-width: 100%; // prevent textearea resize from coming out of its container
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  // Size
+  .input-lg;
+  .input-sm;
+
+  &-prefix,
+  &-suffix,
+  &-inner-button {
+    position: absolute;
+    top: 0.01rem;
+    bottom: 0.01rem;
+    z-index: 1;
+    height: 0.2rem;
+    margin: auto 0;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &-prefix,
+  &-suffix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-prefix {
+    left: 0.01rem;
+    width: @prefix-width;
+  }
+
+  &-suffix {
+    width: @suffix-width;
+  }
+
+  &-suffix,
+  &-inner-button {
+    right: 0.01rem;
+  }
+
+  &-prefix-button &-placeholder,
+  &-prefix-button &-rendered-value {
+    padding-left: @prefix-width;
+  }
+
+  &-suffix-button &-placeholder,
+  &-suffix-button &-rendered-value {
+    padding-right: @suffix-width;
+  }
+
+  &-suffix-button &-suffix {
+    cursor: pointer;
+  }
+
+  &:not(textarea):not(:last-child) {
+    padding-right: @suffix-width;
+  }
+
+  &:not(textarea):not(:first-child) {
+    padding-left: @prefix-width;
+  }
+
+  &-inner-button {
+    z-index: 1;
+    width: @input-button-width;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity @animation-duration-slow;
+  }
+
+  &-wrapper:hover &-inner-button,
+  &-focused &-inner-button {
+    z-index: 2;
+    opacity: 1;
+  }
+
+  &-wrapper:not(&-empty):hover &-allow-clear,
+  &-focused:not(&-empty) &-allow-clear {
+    opacity: 0;
+  }
+
+  &-suffix-button &-suffix:not(&-allow-clear) + &-clear-button {
+    right: @suffix-width + 0.01rem;
+  }
+
+  &-clear-button {
+    background: transparent;
+
+    &:hover {
+      color: @input-hover-border-color;
+    }
+
+    &:active {
+      color: @input-focus-border-color;
+    }
+  }
+
+  &-empty &-clear-button {
+    display: none;
+
+    & + * {
+      opacity: 1 !important;
+    }
+  }
+  &-empty &-placeholder {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 1;
+  }
+
+  > ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin: @input-multiple-margin;
+    padding: @input-multiple-padding;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    > li, span {
+      display: inline-block;
+      max-width: 99%;
+      height: @input-tag-height-base;
+      margin-top: @input-tag-margin-vertical;
+      margin-bottom: @input-tag-margin-vertical;
+      line-height: @input-tag-line-height-base;
+      vertical-align: middle;
+    }
+  }
+
+  &-multiple {
+    &-value {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding: 0;
+      border: none;
+      visibility: hidden;
+    }
+
+    &-input {
+      width: 0.05rem;
+      max-width: 100%;
+      height: 100%;
+      margin-left: 0.04rem;
+      padding: 0;
+      background-color: transparent !important;
+      border: none;
+      outline: 0;
+    }
+  }
+
+  &-multiple & {
+    height: @input-multiple-height-base;
+    min-height: @input-height-base;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  &-multiple&-lg & {
+    height: @input-multiple-height-lg;
+    min-height: @input-height-lg;
+  }
+
+  &-multiple&-sm & {
+    height: @input-multiple-height-sm;
+    min-height: @input-height-sm;
+  }
+
+  &-multiple&-lov &:not(:last-child) {
+    padding-right: @suffix-width * 2;
+  }
+
+  &-multiple:not(&-suffix-button) &:not(:last-child) {
+    padding-right: @suffix-width;
+  }
+
+  &-multiple-block {
+    .tag-block;
+    cursor: default;
+
+    .@{iconfont-css-prefix} {
+      height: 100%;
+      margin-left: 0.08rem;
+      color: @input-tag-close-color;
+      line-height: inherit;
+      cursor: pointer;
+
+      &:hover {
+        color: @input-tag-close-hover-color;
+      }
+    }
+  }
+
+  &-range {
+    &-text {
+      position: relative;
+      display: block;
+      height: 100%;
+      white-space: nowrap;
+    }
+
+    &-start,
+    &-end,
+    &-split,
+    &-input {
+      display: inline-block;
+      height: 100%;
+      line-height: 0.26rem;
+      vertical-align: middle;
+    }
+
+    &-start-rendered-value,
+    &-end-rendered-value,
+    &-start,
+    &-end,
+    &-input {
+      width: ~'calc(50% - .1rem)';
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      outline: 0;
+    }
+
+    &-split {
+      width: 0.2rem;
+      text-align: center;
+    }
+
+    &-input {
+      position: absolute;
+      color: @input-primary-color;
+      font-weight: bold;
+      opacity: 0;
+    }
+
+    &-start-rendered-value {
+      left: 0;
+      padding: 0 !important;
+    }
+
+    &-end-rendered-value {
+      right: 0;
+      padding: 0 !important;
+    }
+  }
+  &-focused &-range-input {
+    opacity: 1;
+  }
+
+  &-group {
+    display: flex;
+
+    &-wrapper {
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    &-before,
+    &-input,
+    &-after,
+    &-help {
+      display: flex;
+      align-items: center;
+    }
+
+    &-before,
+    &-after,
+    &-help {
+      padding-right: 0.05rem;
+      padding-left: 0.05rem;
+      word-break: keep-all;
+      background-color: @input-addon-bg;
+      border: 0.01rem solid @input-border-color;
+      border-radius: @input-border-radius;
+    }
+
+    &-before,
+    &-after {
+      color: @input-color;
+    }
+
+    &-before {
+      border-right: none;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+
+    &-after,
+    &-help {
+      border-left: none;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+
+    &-help:not(:last-child) {
+      border-radius: 0 !important;
+    }
+
+    &-help .icon-help {
+      color: @field-icon-help-color;
+      font-size: @icon-font-size-sm;
+    }
+
+    &-input {
+      flex: 1;
+      max-width: calc(100% - 0.28rem);
+    }
+  }
+
+  &-group-input:not(:last-child) & {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-group-input:not(:first-child) & {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-group-input &-wrapper {
+    width: 100%;
+  }
+
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 10rem @input-wrapper-bg inset;
+  }
+
+  .validation;
+  .input-underline;
+  .float-label(@prefix-width);
+  .float-label-input(@prefix-width);
+
+  // transform
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &::placeholder {
+    text-transform: none;
+  }
+
+  &-focused &-hover-value {
+    color: @gray-6;
+  }
+
+  &-selection-transparent {
+    color: transparent !important;
+  }
+  
+  &-selection-transparent::selection {
+    color: transparent;
+    background: transparent;
+  }
+}
+
+.float-label-input(@prefix-width) {
+  &-float-label & {
+    border: none;
+  }
+
+  &-float-label::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border: @border-width-base none @input-float-border-color;
+    border-radius: @input-float-border-radius;
+    content: ' ';
+  }
+  &-float-label&-required-colors::before {
+    border-color: @input-float-required-border-color;
+  }
+
+  &-float-label&-highlight::before {
+    border-color: @input-float-highlight-border-color;
+  }
+
+  &-float-label&-focused::before,
+  &-float-label&-invalid::before {
+    border-width: @input-float-border-active-width;
+  }
+  &-float-label:hover:not(&-disabled):not(&-focused):not(&-invalid):not(&-required-colors)::before {
+    border-color: @input-float-hover-border-color;
+  }
+  &-float-label&-required-colors:hover:not(&-disabled):not(&-invalid)::before {
+    border-color: @input-float-required-border-color;
+  }
+
+  &-float-label&-focused:not(&-disabled):not(&-invalid):not(&-required-colors)::before {
+    border-color: @input-float-focus-border-color;
+  }
+  &-float-label&-invalid::before {
+    border-color: @input-error-border-color;
+  }
+
+  &-float-label&-disabled i {
+    color: @input-disabled-icon-color;
+  }
+
+  &-float-label&-disabled::before {
+    border-style: dashed;
+  }
+
+  &-group-input:not(:last-child) &-float-label::before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-group-input:not(:first-child) &-float-label::before {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-float-label-group &-group-before,
+  &-float-label-group &-group-after,
+  &-float-label-group &-group-help {
+    border-radius: @input-float-border-radius;
+  }
+  &-float-label &:-webkit-autofill {
+    height: @float-label-height-base - @float-label-autofill-margin * 2;
+    margin: @float-label-autofill-margin;
+    padding-left: @input-padding-horizontal - @float-label-autofill-margin;
+    border-radius: @input-float-border-radius;
+  }
+  &-float-label&-sm &:-webkit-autofill {
+    height: @float-label-height-sm - @float-label-autofill-margin * 2;
+  }
+  &-float-label&-lg &:-webkit-autofill {
+    height: @float-label-height-lg - @float-label-autofill-margin * 2;
+  }
+
+  &-float-label textarea&:-webkit-autofill {
+    height: auto;
+  }
+
+  &-prefix-button&-float-label &:-webkit-autofill {
+    padding-left: @prefix-width - 0.02rem;
+  }
+
+  &-float-label&-empty:not(&-focused):not(&-label-empty) &::placeholder {
+    opacity: 0;
+  }
+}
+
+.input-underline() {
+  // underline
+  //default underline
+  /* stylelint-disable */
+  &-underline {
+    position: absolute;
+    bottom: -@border-width-base;
+    width: 100%;
+    height: 0;
+    border-bottom: @border-width-base @border-style-base @input-baseline-color;
+  }
+
+  &-ripple {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 0.02rem @border-style-base @input-primary-color;
+    transform: scaleX(0.5);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: border-color 300ms cubic-bezier(0.55, 0, 0.55, 0.2);
+  }
+  //disabled underline
+  &-disabled &-underline {
+    border-bottom: @border-width-base dotted rgba(0, 0, 0, 0.42);
+  }
+  // focused underline
+  &-focused &-underline &-ripple {
+    transform: scaleX(1);
+    opacity: 1;
+    transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    opacity 100ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-color 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  &-invalid &-underline {
+    border-color: @error-color;
+  }
+
+  &-length-info {
+    position: absolute;
+    top: 0.01rem;
+    right: 0.03rem;
+    bottom: 0.01rem;
+    height: 0.2rem;
+    margin: auto 0;
+    color: @input-info-color;
+    font-size: 0.12rem;
+    line-height: 0.2rem;
+    letter-spacing: 0.02rem;
+  }
+}
+
+.tag-block() {
+  display: inline-block;
+  max-width: 99%;
+  margin: @tag-margin;
+  padding: @tag-padding;
+  overflow: hidden;
+  color: @input-tag-default-color;
+  line-height: @line-height-base;
+  white-space: nowrap;
+  background-color: @input-tag-default-bg;
+  border-radius: @input-tag-border-radius;
+  > div {
+    display: inline-block;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      max-width: ~'calc(100% - .24rem)';
+    }
+  }
+  &-invalid {
+    color: @input-tag-error-color;
+    background-color: @input-tag-error-bg;
+  }
+  &-disabled {
+    padding-right: 0.1rem;
+    color: @input-tag-disabled-color;
+    background-color: @input-tag-disabled-bg;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="36px" viewBox="0 0 44 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <g id="泳道" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="供应商生命周期管理工作台-供应商-无数据" transform="translate(-652.000000, -472.000000)" fill="#E9ECF0" fill-rule="nonzero">
+            <g id="编组-4" transform="translate(244.000000, 220.000000)">
+                <g id="编组-3" transform="translate(0.000000, 4.000000)">
+                    <g id="编组-5" transform="translate(400.000000, 242.000000)">
+                        <g id="编组" transform="translate(6.000000, 0.000000)">
+                            <path d="M28,6 C29.1045695,6 30,6.8954305 30,8 L30,38 L34,38 L34,18 L40,18 C41.1045695,18 42,18.8954305 42,20 L42,38 L46,38 L46,42 L2,42 L2,38 L6,38 L6,8 C6,6.8954305 6.8954305,6 8,6 L28,6 Z M22,29 L14,29 L14,33 L22,33 L22,29 Z M14,20 L14,24 L22,24 L22,20 L14,20 Z M14,11 L14,15 L22,15 L22,11 L14,11 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

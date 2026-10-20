@@ -1,0 +1,35 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.container {
+  margin: 8px 16px 16px;
+  padding: 24px;
+
+  .title {
+    color: #8080809e;
+  }
+  .ssrc-round-quotation-red-color {
+    color: red;
+  }
+
+  .sub-title {
+    width: 65%;
+
+    & > h3 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .vertical-line {
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+      }
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+  .sub-title + .sub-title {
+    margin-top: 50px;
+  }
+}

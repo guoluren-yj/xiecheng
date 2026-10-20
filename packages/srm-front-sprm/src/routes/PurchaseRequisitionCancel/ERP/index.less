@@ -1,0 +1,113 @@
+/*!
+    index - 送货单创建
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.purchase-cancel-erp {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  :global {
+    .form-collapse {
+      border: 1px solid #e8e8e8;
+      .ant-collapse-item {
+        border-bottom: 0;
+      }
+      .ant-collapse-header {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 8px;
+        background: #f5f5f5;
+        i {
+          font-size: 16px;
+          color: #5867dd;
+          font-weight: bold;
+          padding: 12px;
+          border-radius: 28px;
+          -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+          &:hover {
+            color: #4666cc;
+            background: #e6e9ed;
+          }
+        }
+        h3 {
+          margin: 0 0 0 12px;
+          display: inline;
+        }
+      }
+      .ant-collapse-header:hover {
+        background: #eee;
+      }
+      .ant-collapse-content {
+        border-top: 1px solid #e8e8e8;
+      }
+
+      .ant-row,
+      .ant-col-8,
+      .ant-col-10,
+      .ant-col-14 {
+        height: 48px;
+      }
+      .ant-row {
+        border-bottom: 1px #dcdcdc dashed;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+      }
+      .ant-col-10,
+      .ant-col-3 {
+        color: #999;
+      }
+      .ant-col-10,
+      .ant-col-14 {
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+.erp-list-bgc {
+  background: #ff5252;
+}
+
+.line-panel-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0;
+    }
+  }
+}
+
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}

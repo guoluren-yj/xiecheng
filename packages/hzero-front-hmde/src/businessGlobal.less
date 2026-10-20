@@ -1,0 +1,38 @@
+// 与飞搭模型无关的全局样式覆盖
+@testdarkblue: #29bece;
+
+// 示例代码，无实际用处
+:global {
+  .hmde-business,
+  .business-test-modal {
+    :global {
+      .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header .c7n-collapse-expand-icon {
+        position: static;
+      }
+    }
+  }
+}
+
+.business-spin-height {
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+  :global {
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+}
+
+:global {
+  .bo-enable-render {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .c7n-pro-table-cell-inner {
+    .bo-enable-render {
+      justify-content: center;
+    }
+  }
+}

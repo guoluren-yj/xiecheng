@@ -1,0 +1,49 @@
+@import '~hzero-front/lib/srm-variables';
+
+.event-update-summary-left-menu {
+  // width: 242px;
+  // overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(229, 231, 236, 1);
+  flex: 1;
+
+  :global {
+    .c7n-pro-btn-icon-only {
+      border-radius: 2px;
+    }
+  }
+}
+
+.event-update-summary-left-menu-list {
+  margin-top: 8px;
+  height: calc(100vh - 226px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.event-update-summary-menu-item {
+  display: flex;
+  // flex-direction: column;
+  padding: 8px 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+.item-selected {
+  font-weight: 600;
+  color: @primary-color;
+  border-right: 3px solid @primary-color;
+}
+
+.item-normal {
+  color: #4e5769;
+  font-weight: 400;
+  border: none;
+}
+
+.chart-no-content-message {
+  margin-top: 8px;
+  color: @text-3;
+}

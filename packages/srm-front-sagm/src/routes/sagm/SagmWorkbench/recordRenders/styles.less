@@ -1,0 +1,167 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+@import '~hzero-front/lib/srm-variables.less';
+
+.color-red {
+  color: @red-6 !important;
+  border-color: @red-6 !important;
+}
+.color-green {
+  color: @green-6 !important;
+  border-color: @green-6 !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.sku-record-timeline {
+  :global {
+    .c7n-timeline-item-content {
+      padding-left: 24px;
+      top: -4px;
+    }
+    .c7n-timeline-item:last-child {
+      padding-bottom: 0 !important;
+    }
+  }
+}
+
+.timeline-container {
+  width: 100%;
+  display: flex;
+  :global {
+    .timeline-icon .icon {
+      position: relative;
+      top: -1px;
+      font-size: 14px;
+      margin-right: 16px;
+      color: @text-color;
+    }
+    .timeline-content {
+      border-bottom: 1px solid @table-border-color;
+      padding-bottom: 12px;
+      color: rgba(0, 0, 0, 0.65);
+      flex: 1;
+      .timeline-header {
+        margin-bottom: 8px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+      }
+      .timeline-footer {
+        margin-top: 8px;
+        color: @text-color-secondary;
+      }
+    }
+  }
+}
+
+.timeline-load-more-divider {
+  margin: 0 !important;
+  .timeline-load-more {
+    font-size: 12px;
+    color: @text-1;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.record-text {
+  display: inline-block;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+// 操作记录
+.operate-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .operate-wrapper {
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+
+    .operate-name,
+    .operate-text {
+      font-weight: 500;
+      display: flex;
+      .record-text {
+        .record-text;
+      }
+    }
+    .operate-action {
+      margin: 0 8px;
+      color: @text-2;
+    }
+    .operate-text-result-prefix {
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .operate-text-result-more {
+      .record-text;
+    }
+    .operate-result {
+      color: rgba(0, 0, 0, 0.65);
+      display: flex;
+      .record-text {
+        .record-text;
+      }
+    }
+  }
+}
+
+.price-record-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 价格记录
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  :global {
+    .sku-name {
+      .record-text;
+      color: @text-color;
+      margin-right: 4px;
+    }
+    .price-action {
+      color: @text-2;
+      margin: 0 4px;
+    }
+    .price-show {
+      font-weight: 500;
+      max-width: 125px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .price-init {
+      color: @orange-6;
+    }
+    .price-up {
+      color: @red-6;
+    }
+    .price-down {
+      color: @green-6;
+    }
+    .price-tag {
+      display: inline-block;
+      padding: 0 6px;
+      margin-left: 16px;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+    .price-tag.price-up {
+      background-color: @red-1;
+    }
+    .price-tag.price-down {
+      background-color: @green-1;
+    }
+  }
+}

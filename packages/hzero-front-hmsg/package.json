@@ -1,0 +1,127 @@
+{
+  "name": "hzero-front-hmsg",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "7.2.2",
+    "babel-loader": "8.0.5",
+    "conventional-changelog-cli": "^2.0.12",
+    "standard-version": "^5.0.2",
+    "yarn": "^1.13.0"
+  },
+  "dependencies": {
+    "srm-front-boot": "1.28.0",
+    "react-markdown": "4.3.1",
+    "react-markdown-editor-lite": "1.2.1"
+  },
+  "resolutions": {
+    "react": "16.12.0",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-dom": "16.12.0",
+    "mini-css-extract-plugin": "0.4.1",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "url-loader": "1.1.2",
+    "css-loader": "1.0.0",
+    "file-loader": "2.0.0",
+    "conventional-changelog": "~3.0.6",
+    "browserslist": "4.6.0",
+    "caniuse-lite": "1.0.30000971",
+    "less": "~3.9.0",
+    "@hzero-front-ui/c7n-ui": "^2.0.18",
+    "@hzero-front-ui/cfg": "^2.0.18",
+    "@hzero-front-ui/hzero-ui": "^2.0.18",
+    "choerodon-ui": "1.5.4-zhenyun.18"
+  },
+  "description": "hzero-front-hmsg",
+  "author": "",
+  "version": "1.69.0",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PROFILE=development hzero-cli start",
+    "build": "cross-env NODE_PROFILE=production BUILD_DIST_PATH=./srm-dist BUILD_SKIP_PARENT=true hzero-cli build --only-build-micro",
+    "build:ext": "cross-env NODE_PROFILE=production hzero-cli build --build-micro-without-parent",
+    "lint": "eslint 'src/**/*.{js,jsx,tsx,ts}' && npm run lint:style && tsc --noEmit --emitDeclarationOnly false",
+    "lint:fix": "eslint --quiet --fix 'src/**/*.{js,jsx,tsx,ts}' && npm run lint:style",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "lint-staged": "lint-staged",
+    "transpile": "cross-env NODE_ENV=production BABEL_ENV=production npx babel src --out-dir lib --copy-files --delete-dir-on-start --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "test": "hzero-cli test",
+    "changelog": "node node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "prettier": "prettier --write ./src/**/**/**/*",
+    "tree": "tree -I node_modules -L 3",
+    "release": "standard-version",
+    "commit": "git-cz",
+    "codeScan": "hzero codeScan"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.going-link.com/repository/zhenyun-npm-source/"
+  },
+  "files": [
+    "lib",
+    "config/routers.js",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,tsx,ts}": "eslint --quiet --fix",
+    "src/**/*.less": "stylelint --syntax less",
+    "src/**/*.{js,jsx,ts,tsx,less}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

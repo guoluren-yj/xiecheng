@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="319px" viewBox="0 0 208 319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>有指标-附件类型</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="208" height="319" rx="4"></rect>
+    </defs>
+    <g id="v1102-附件导出" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="有指标-附件类型">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="path-1"></g>
+            <path d="M4,0 L204,0 C206.209139,-4.05812251e-16 208,1.790861 208,4 L208,315 C208,317.209139 206.209139,319 204,319 L4,319 C1.790861,319 1.3527075e-16,317.209139 0,315 L0,4 C-2.705415e-16,1.790861 1.790861,2.705415e-16 4,0 Z" id="path-1" stroke="#C9CDD4" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" stroke-dasharray="4" mask="url(#mask-2)"></path>
+            <text id="评估单据1" mask="url(#mask-2)" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18" fill="#1D2129">
+                <tspan x="112" y="65">评估单据1</tspan>
+            </text>
+            <path d="M92.2837196,60.8171906 L90,66.9069597 L100.90696,66.9069597 L102.938081,61.4904856 C103.17315,60.8636351 102.709754,60.1949845 102.040355,60.1949845 L93.1814463,60.1949845 C92.7817739,60.1949845 92.4240421,60.4429613 92.2837196,60.8171906 Z M100.90696,59.3559876 C100.90696,58.4292572 100.155696,57.6779938 99.2289659,57.6779938 L95.6521423,57.6779938 C95.5249826,57.6780143 95.4030235,57.6275169 95.3130977,57.5376116 L94.0564002,56.2809141 C93.8765731,56.1010487 93.6326519,56 93.3783109,56 L90.9588536,56 C90.4292934,56 90,56.4292934 90,56.9588536 L90,66.9069597 L91.5110933,60.1068898 C91.6085682,59.6681351 91.9977222,59.3559649 92.4471742,59.3559876 L100.90696,59.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            <rect id="baseline-arrow_drop_down" mask="url(#mask-2)" x="64" y="53" width="16" height="16"></rect>
+            <polygon id="icon" fill="#1D2129" fill-rule="nonzero" mask="url(#mask-2)" points="68.6666667 59.6666667 72 63 75.3333333 59.6666667"></polygon>
+            <polyline id="路径-2" stroke="#D9D9D9" mask="url(#mask-2)" points="48 40 48 43.524553 48 61 60 61"></polyline>
+            <polyline id="路径-2" stroke="#D9D9D9" mask="url(#mask-2)" points="48 40 48 60.8116463 48 164 60 164"></polyline>
+            <g id="编组-30" mask="url(#mask-2)">
+                <g transform="translate(48, 239)">
+                    <text id="评估单据2" stroke="none" fill="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="64" y="25" fill="#1D2129">评估单据2</tspan>
+                    </text>
+                    <path d="M44.2837196,20.8171906 L42,26.9069597 L52.9069597,26.9069597 L54.9380813,21.4904856 C55.1731503,20.8636351 54.7097543,20.1949845 54.0403546,20.1949845 L45.1814463,20.1949845 C44.7817739,20.1949845 44.4240421,20.4429613 44.2837196,20.8171906 Z M52.9069597,19.3559876 C52.9069597,18.4292572 52.1556963,17.6779938 51.2289659,17.6779938 L47.6521423,17.6779938 C47.5249826,17.6780143 47.4030235,17.6275169 47.3130977,17.5376116 L46.0564002,16.2809141 C45.8765732,16.1010487 45.6326519,16 45.3783109,16 L42.9588536,16 C42.4292934,16 42,16.4292934 42,16.9588536 L42,26.9069597 L43.5110934,20.1068898 C43.6085682,19.6681351 43.9977222,19.3559648 44.4471742,19.3559876 L52.9069597,19.3559876 Z" id="icon" stroke="none" fill="currentColor" fill-rule="nonzero"></path>
+                    <polygon id="icon" stroke="none" fill="#1D2129" fill-rule="nonzero" points="22.6666667 19.6666667 26 23 29.3333333 19.6666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" stroke="none" fill="none" x="18" y="13" width="16" height="16"></rect>
+                    <polyline id="路径-2" stroke="#D9D9D9" stroke-width="1" fill="none" points="0 0 0 3.524553 0 21 12 21"></polyline>
+                </g>
+            </g>
+            <polygon id="folder_open" mask="url(#mask-2)" points="88 53 104 53 104 69 88 69"></polygon>
+            <g id="编组-25" mask="url(#mask-2)">
+                <g transform="translate(96, 74)">
+                    <text id="指标A" stroke="none" fill="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="64" y="26" fill="#1D2129">指标A</tspan>
+                    </text>
+                    <polygon id="folder_open" stroke="none" fill="none" points="40 14 56 14 56 30 40 30"></polygon>
+                    <path d="M44.2837196,21.8171906 L42,27.9069597 L52.9069597,27.9069597 L54.9380813,22.4904856 C55.1731503,21.8636351 54.7097543,21.1949845 54.0403546,21.1949845 L45.1814463,21.1949845 C44.7817739,21.1949845 44.4240421,21.4429613 44.2837196,21.8171906 Z M52.9069597,20.3559876 C52.9069597,19.4292572 52.1556963,18.6779938 51.2289659,18.6779938 L47.6521423,18.6779938 C47.5249826,18.6780143 47.4030235,18.6275169 47.3130977,18.5376116 L46.0564002,17.2809141 C45.8765732,17.1010487 45.6326519,17 45.3783109,17 L42.9588536,17 C42.4292934,17 42,17.4292934 42,17.9588536 L42,27.9069597 L43.5110934,21.1068898 C43.6085682,20.6681351 43.9977222,20.3559648 44.4471742,20.3559876 L52.9069597,20.3559876 Z" id="icon" stroke="none" fill="currentColor" fill-rule="nonzero"></path>
+                    <rect id="baseline-arrow_drop_down" stroke="none" fill="none" x="16" y="14" width="16" height="16"></rect>
+                    <polyline id="路径-2" stroke="#D9D9D9" stroke-width="1" fill="none" points="0 0 0 3.524553 0 21 12 21"></polyline>
+                    <polygon id="icon" stroke="none" fill="#1D2129" fill-rule="nonzero" points="20.6666667 20.6666667 24 24 27.3333333 20.6666667"></polygon>
+                </g>
+            </g>
+            <text id="供应商自评附件" mask="url(#mask-2)" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18" fill="#1D2129">
+                <tspan x="64" y="31">供应商自评附件</tspan>
+            </text>
+            <polygon id="folder_open" mask="url(#mask-2)" points="40 19 56 19 56 35 40 35"></polygon>
+            <path d="M44.2837196,26.8171906 L42,32.9069597 L52.9069597,32.9069597 L54.9380813,27.4904856 C55.1731503,26.8636351 54.7097543,26.1949845 54.0403546,26.1949845 L45.1814463,26.1949845 C44.7817739,26.1949845 44.4240421,26.4429613 44.2837196,26.8171906 Z M52.9069597,25.3559876 C52.9069597,24.4292572 52.1556963,23.6779938 51.2289659,23.6779938 L47.6521423,23.6779938 C47.5249826,23.6780143 47.4030235,23.6275169 47.3130977,23.5376116 L46.0564002,22.2809141 C45.8765731,22.1010487 45.6326519,22 45.3783109,22 L42.9588536,22 C42.4292934,22 42,22.4292934 42,22.9588536 L42,32.9069597 L43.5110934,26.1068898 C43.6085682,25.6681351 43.9977222,25.3559649 44.4471742,25.3559876 L52.9069597,25.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            <polygon id="icon" fill="#1D2129" fill-rule="nonzero" mask="url(#mask-2)" points="20.6666667 25.6666667 24 29 27.3333333 25.6666667"></polygon>
+            <rect id="baseline-arrow_drop_down" mask="url(#mask-2)" x="16" y="19" width="16" height="16"></rect>
+            <g id="编组-28" mask="url(#mask-2)">
+                <g transform="translate(16, 185)">
+                    <text id="汇总评分人附件" fill="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="48" y="13" fill="#1D2129">汇总评分人附件</tspan>
+                    </text>
+                    <polygon id="folder_open" fill="none" points="24 1 40 1 40 17 24 17"></polygon>
+                    <path d="M28.2837196,8.81719059 L26,14.9069597 L36.9069597,14.9069597 L38.9380813,9.49048561 C39.1731503,8.86363507 38.7097543,8.1949845 38.0403546,8.1949845 L29.1814463,8.1949845 C28.7817739,8.1949845 28.4240421,8.44296126 28.2837196,8.81719059 Z M36.9069597,7.3559876 C36.9069597,6.42925721 36.1556963,5.6779938 35.2289659,5.6779938 L31.6521423,5.6779938 C31.5249826,5.67801433 31.4030235,5.6275169 31.3130977,5.53761164 L30.0564002,4.28091414 C29.8765731,4.10104868 29.6326519,4 29.3783109,4 L26.9588536,4 C26.4292934,4 26,4.42929338 26,4.9588536 L26,14.9069597 L27.5110934,8.10688983 C27.6085682,7.66813509 27.9977222,7.35596485 28.4471742,7.3559876 L36.9069597,7.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                    <rect id="baseline-arrow_drop_down" fill="none" transform="translate(8, 9) scale(-1, 1) rotate(90) translate(-8, -9)" x="0" y="1" width="16" height="16"></rect>
+                </g>
+            </g>
+            <polygon id="icon" fill="#1D2129" fill-rule="nonzero" mask="url(#mask-2)" transform="translate(24.3333, 194) scale(-1, 1) rotate(90) translate(-24.3333, -194)" points="21 192.333333 24.3333334 195.666667 27.6666667 192.333333"></polygon>
+            <g id="编组-29" mask="url(#mask-2)">
+                <g transform="translate(16, 217)">
+                    <text id="审查结果附件" fill="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="48" y="13" fill="#1D2129">审查结果附件</tspan>
+                    </text>
+                    <polygon id="folder_open" fill="none" points="24 1 40 1 40 17 24 17"></polygon>
+                    <path d="M28.2837196,8.81719059 L26,14.9069597 L36.9069597,14.9069597 L38.9380813,9.49048561 C39.1731503,8.86363507 38.7097543,8.1949845 38.0403546,8.1949845 L29.1814463,8.1949845 C28.7817739,8.1949845 28.4240421,8.44296126 28.2837196,8.81719059 Z M36.9069597,7.3559876 C36.9069597,6.42925721 36.1556963,5.6779938 35.2289659,5.6779938 L31.6521423,5.6779938 C31.5249826,5.67801433 31.4030235,5.6275169 31.3130977,5.53761164 L30.0564002,4.28091414 C29.8765731,4.10104868 29.6326519,4 29.3783109,4 L26.9588536,4 C26.4292934,4 26,4.42929338 26,4.9588536 L26,14.9069597 L27.5110934,8.10688983 C27.6085682,7.66813509 27.9977222,7.35596485 28.4471742,7.3559876 L36.9069597,7.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" transform="translate(8.3333, 9) scale(-1, 1) rotate(90) translate(-8.3333, -9)" points="5.00000002 7.33333332 8.33333335 10.6666666 11.6666667 7.33333332"></polygon>
+                    <rect id="baseline-arrow_drop_down" fill="none" transform="translate(8, 9) scale(-1, 1) rotate(90) translate(-8, -9)" x="0" y="1" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="编组-27" mask="url(#mask-2)">
+                <g transform="translate(64, 153)">
+                    <text id="评估单据2" fill="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="48" y="13" fill="#1D2129">评估单据2</tspan>
+                    </text>
+                    <polygon id="folder_open" fill="none" points="24 1 40 1 40 17 24 17"></polygon>
+                    <path d="M28.2837196,8.81719059 L26,14.9069597 L36.9069597,14.9069597 L38.9380813,9.49048561 C39.1731503,8.86363507 38.7097543,8.1949845 38.0403546,8.1949845 L29.1814463,8.1949845 C28.7817739,8.1949845 28.4240421,8.44296126 28.2837196,8.81719059 Z M36.9069597,7.3559876 C36.9069597,6.42925721 36.1556963,5.6779938 35.2289659,5.6779938 L31.6521423,5.6779938 C31.5249826,5.67801433 31.4030235,5.6275169 31.3130977,5.53761164 L30.0564002,4.28091414 C29.8765731,4.10104868 29.6326519,4 29.3783109,4 L26.9588536,4 C26.4292934,4 26,4.42929338 26,4.9588536 L26,14.9069597 L27.5110934,8.10688983 C27.6085682,7.66813509 27.9977222,7.35596485 28.4471742,7.3559876 L36.9069597,7.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" transform="translate(8.3333, 9) rotate(-90) translate(-8.3333, -9)" points="5.00000002 7.33333335 8.33333335 10.6666667 11.6666667 7.33333335"></polygon>
+                    <rect id="baseline-arrow_drop_down" fill="none" transform="translate(8, 9) rotate(-90) translate(-8, -9)" x="0" y="1" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="编组-26" mask="url(#mask-2)">
+                <g transform="translate(144, 109)">
+                    <polyline id="路径-2" stroke="#D9D9D9" stroke-width="1" points="0 0 0 3.524553 0 21 12 21"></polyline>
+                    <text id="附件1" stroke="none" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                        <tspan x="16" y="25" fill="#4E5769">附件1</tspan>
+                    </text>
+                </g>
+            </g>
+            <polyline id="路径-2" stroke="#D9D9D9" mask="url(#mask-2)" points="96 273 96 276.524553 96 294 108 294"></polyline>
+            <text id="附件2" mask="url(#mask-2)" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18" fill="#4E5769">
+                <tspan x="112" y="298">附件2</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

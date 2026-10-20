@@ -1,0 +1,561 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+@import '~hzero-front/lib/srm-variables';
+
+.operating {
+  :global {
+    .c7n-modal-body {
+      padding: 16px;
+    }
+    .c7n-tabs-bar {
+      margin-bottom: 0;
+    }
+
+    .c7n-timeline-item-content {
+      margin: 0 0 0 24px;
+      padding: 0;
+    }
+    .operating-timeline {
+      // margin-top: 20px;
+      .c7n-timeline-item-content {
+        margin: 8px 0 0 24px;
+        padding: 0;
+        top: -4px;
+        display: flex;
+      }
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+        .operator {
+          padding-right: 4px;
+          font-weight: 500;
+        }
+        .operating-timeline-info {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          padding: 0 0 12px 0;
+          width: 100%;
+          margin-left: 8px;
+        }
+        .date {
+          margin: 8px 0 0 0;
+        }
+        .status {
+          padding-right: 4px;
+        }
+        .gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 18px;
+        }
+        .orange {
+          color: #f56349;
+        }
+        .result {
+          font-weight: 500;
+        }
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.04);
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .approve-header {
+      .c7n-collapse-content {
+        padding-left: 0;
+      }
+      .c7n-collapse-header {
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.forecast-table {
+  :global {
+    .c7n-pro-table-row {
+      .c7n-pro-table-cell-prefix {
+        padding-left: 0;
+      }
+    }
+    .c7n-pro-table-row {
+      .c7n-pro-checkbox-disabled {
+        display: none;
+      }
+    }
+    .c7n-pro-table-row.row-differ-color {
+      background-color: #f9f9f9;
+      .c7n-pro-table-cell-fix-left {
+        background-color: #f9f9f9;
+      }
+      .c7n-pro-table-cell-fix-right {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::after {
+  content: 'clear';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.icon-open {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-off {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.tab-date {
+  :global {
+    .c7n-tabs-bar {
+      margin: 0 !important;
+    }
+  }
+}
+
+.workbench-menu {
+  float: left;
+  background-color: #fff;
+  height: calc(100vh - 152px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /**
+  *搜索展开
+  */
+  .menu-title-open {
+    width: 220px;
+    height: 64px;
+    // padding: 16px 16px 0 16px; // TODO
+    padding: 16px; // TODO
+    border-bottom: 1px solid #e8e8e8;
+    .search-text-field {
+      width: 188px;
+      height: 32px;
+    }
+  }
+
+  /**
+  *搜索收起
+  */
+  .menu-title-off {
+    width: 52px;
+    height: 52px;
+    padding: 18px;
+    border-bottom: 1px solid #e8e8e8;
+    .search-text-field {
+      width: 188px;
+      height: 32px;
+    }
+    .menu-title-search {
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      line-height: 16px;
+      text-align: center;
+      // background-color: #d8d6d6;
+      .menu-search-a {
+        width: 100%;
+        height: 100%;
+        color: #6f6f6f;
+        .search-icon {
+          font-size: 16px;
+        }
+      }
+      .menu-search-a:hover {
+        color: @text-3;
+      }
+    }
+  }
+
+  /**
+  *菜单展开
+  */
+  .menu-sub-open {
+    width: 220px;
+    // height: 89%; // 查询框存在的高度
+    height: 100%; // 查询框不存在的高度
+    scrollbar-width: none; /* firefox */ // 隐藏滚动条
+    -ms-overflow-style: none; /* IE 10+ */ // 隐藏滚动条
+    // transition: width 1s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .menu-text {
+      overflow-x: hidden;
+      .text-style {
+        :global {
+          .icon-instance {
+            margin-right: 4px !important;
+          }
+        }
+        // 菜单标题字体
+        height: 18px;
+        font-size: 14px !important;
+        line-height: 22px !important;
+        font-weight: 400 !important;
+        .text-icon {
+          float: left;
+          margin-right: 8px;
+        }
+        .text-style-span {
+          float: left;
+          font-size: 14px !important;
+          line-height: 22px !important;
+          .text-style-tilte {
+            width: 200px !important;
+            font-weight: 600 !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .text-style-text {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px !important;
+            font-weight: 400 !important;
+          }
+        }
+        .text-style-span-click {
+          width: 100%;
+          float: left;
+          font-size: 14px !important;
+          line-height: 22px !important;
+          .text-style-tilte {
+            width: 200px !important;
+            font-weight: 600 !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .text-style-text {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px !important;
+            font-weight: 400 !important;
+          }
+        }
+      }
+      .text-style::after {
+        content: 'clear';
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      .menu-instructions {
+        // 菜单中间字体
+        width: 192px;
+        padding-top: 4px;
+        // height: 18px;
+        height: auto;
+        margin: 8px 0 2px 0;
+        color: rgba(0, 0, 0, 0.65);
+        white-space: normal; // 超出部分副标题换行
+        text-align: justify;
+        overflow: hidden;
+      }
+      :global {
+        .c7n-menu {
+          .c7n-menu-item {
+            border-left: 2px solid #fff;
+          }
+        }
+        .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-active {
+          border-left: 2px solid rgba(0, 0, 0, 0.01);
+        }
+        .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-selected {
+          // background-color: #eaf8fa;
+          background-color: #fff;
+          /* 自右向左 起始颜色开始渐变 */
+          // background-image: linear-gradient(to left, #94d8df, #daf2f5 5px, #fff);
+          border-right: 3px solid @primary-color !important;
+        }
+        .c7n-layout-sider {
+          width: 220px !important;
+          min-width: 220px !important;
+          max-width: 220px !important;
+          .c7n-menu-inline {
+            // 展开菜单
+            border: none; // 删除菜单组件自带边框
+            .c7n-menu-item {
+              height: auto !important; // 单个菜单的高度调整样式
+              line-height: 18px !important;
+              padding: 24px 0 20px 16px !important; // 强制覆盖单个菜单样式
+              border-bottom: 1px solid #e8e8e8; // 🧍‍♂️节点（策略菜单的下边框）
+              .c7n-menu-item-selected {
+                .icon {
+                  width: 16px;
+                  height: 16px;
+                  line-height: 22px;
+                  text-align: center;
+                  font-size: 16px;
+                  margin-right: 4px !important;
+                  color: @text-3 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /**
+  *隐藏滚动条
+  */
+  .menu-sub-open::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+  /**
+  *菜单收起
+  */
+  .menu-sub-off {
+    width: 52px;
+    // height: 89%; // 查询框存在的高度
+    height: 100%; // 查询框不存在的高度
+    // transition: width 1s ease-in-out;
+    overflow-y: scroll;
+    .menu-text {
+      overflow-x: hidden;
+      :global {
+        .c7n-menu {
+          .c7n-menu-item {
+            border-left: 2px solid #fff;
+          }
+        }
+        .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-active {
+          border-left: 2px solid rgba(0, 0, 0, 0.01);
+        }
+        .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-selected {
+          // background-color: #eaf8fa;
+          background-color: #fff;
+          /* 自右向左 起始颜色开始渐变 */
+          // background-image: linear-gradient(to left, #94d8df, #daf2f5 5px, #fff);
+          // border-left: 2px solid #29bece;
+          border-right: 3px solid @primary-color !important;
+        }
+        .c7n-layout-sider {
+          width: 52px !important;
+          min-width: 52px !important;
+          max-width: 52px !important;
+          .c7n-menu {
+            width: 100%;
+          }
+          .c7n-menu-vertical {
+            // 收缩菜单
+            border: none; // 删除菜单组件自带边框
+            .c7n-menu-item {
+              width: 52px;
+              height: 52px;
+              padding: 5px 16px !important; // 强制覆盖单个菜单样式
+              border-bottom: 1px solid #e8e8e8;
+              .icon {
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**
+  *隐藏滚动条
+  */
+.menu-sub-off::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+/**
+  *右侧页面-(菜单展开)
+  */
+.workbench-page-open {
+  width: calc(100% - 220px);
+  height: 100%;
+  float: left;
+  padding-top: 16px; // 控制右侧距离顶部高度
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  border-left: 1px solid #e8e8e8;
+  position: relative;
+  .menu-icon {
+    width: 5px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .menu-icon-a {
+    width: 12px;
+    height: 55px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(180deg);
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid #cfcdcd;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+      color: #000;
+    }
+  }
+}
+
+/**
+  *右侧页面-(菜单收起)
+  */
+.workbench-page-off {
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding-top: 16px; // 控制右侧距离顶部高度
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  border-left: 1px solid #e8e8e8;
+  position: relative;
+  .menu-icon {
+    width: 12px;
+    height: 55px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid #cfcdcd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+      color: #000;
+    }
+  }
+  .menu-icon-a {
+    width: 5px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(180deg);
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+/**
+  *按行/按单切换
+*/
+.toggle-key {
+  // width: 86px;
+  // width: 131px;
+  height: 26px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  padding: 2px 3px;
+  overflow: auto;
+  cursor: pointer;
+  .toggle-key-btn {
+    float: left;
+    width: 40px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .activity {
+    float: left;
+    width: 40px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);   //  此处未知
+    border-radius: 2px;
+  }
+  .toggle-key-btn-date {
+    float: left;
+    width: 45px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .activity-date {
+    float: left;
+    width: 45px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);   //  此处未知
+    border-radius: 2px;
+  }
+}

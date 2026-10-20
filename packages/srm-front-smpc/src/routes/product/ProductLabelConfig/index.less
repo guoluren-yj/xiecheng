@@ -1,0 +1,25 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+.label-config-container {
+  :global {
+    .action-link-btns {
+      :global {
+        .c7n-pro-btn-link + .c7n-pro-btn-link {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}
+
+.drop-down-link-btn-wrapper {
+  padding: 0 16px;
+  height: 40px;
+  text-align: center;
+  button {
+    height: 0.4rem;
+    color: #000 !important;
+    &:hover {
+      color: @primary-color !important;
+    }
+  }
+}

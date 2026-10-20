@@ -1,0 +1,73 @@
+@import "~hzero-front/lib/srm-variables";
+
+.risk-incident-detail-basic {
+	:global {
+		.page-content {
+			padding: 20px;
+		}
+
+		.c7n-pro-attachment-header {
+			line-height: 34px;
+		}
+	}
+}
+
+.risk-incident-detail-modal-basic-info {
+	height: calc(100vh - 152px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 8px;
+	display: flex;
+	flex-direction: column;
+
+	:global {
+		.c7n-pro-output-float-label > .c7n-pro-field-label-wrapper > .c7n-pro-field-label {
+			color: #868d9c !important;
+			font-weight: 400;
+		}
+
+		.c7n-pro-output-float-label {
+			line-height: 22px;
+			margin-top: 8px;
+		}
+
+		.c7n-pro-output {
+			color: #1d2129;
+			font-weight: 400;
+			line-height: 18px;
+		}
+	}
+}
+
+.risk-incident-detail-modal-basic-info::-webkit-scrollbar {
+	width: 4px;
+}
+
+.risk-incident-detail-modal-basic-info::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset006pxrgba(0, 0, 0, .3);
+	border-radius: 10px;
+}
+
+.risk-incident-detail-modal-basic-info::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(0, 0, 0, .1);
+	-webkit-box-shadow: inset006pxrgba(0, 0, 0, .5);
+}
+
+.risk-incident-detail-modal-basic {
+	font-size: 16px;
+	font-weight: 600;
+	// padding-left: 10px;
+	// border-left: 3px solid @primary-color;
+	// line-height: 12px;
+	margin-bottom: 4px;
+}
+
+.risk-incident-detail-modal-supplier-panel {
+	:global {
+		.c7n-pro-form.c7n-pro-form-float-label > table > tbody > tr:not(:first-child)
+		.c7n-pro-field-wrapper {
+			margin-top: 0 !important;
+		}
+	}
+}

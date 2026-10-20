@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="18px" viewBox="0 0 42 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>connect</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我发出的订单-关联单据" transform="translate(-809.000000, -243.000000)">
+            <g id="connect" transform="translate(809.000000, 243.000000)">
+                <path d="M39,9 C39,13.9705627 34.9705627,18 30,18 L12,18 C7.02943725,18 3,13.9705627 3,9 C3,8.44771525 3.44771525,8 4,8 C4.55228475,8 5,8.44771525 5,9 C5,12.8659932 8.13400675,16 12,16 L30,16 C33.8659932,16 37,12.8659932 37,9 C37,8.44771525 37.4477153,8 38,8 C38.5522847,8 39,8.44771525 39,9 Z M15,0 L27,0 L27,2 L15,2 L15,0 Z" id="Rectangle" fill="#D5DAE0" fill-rule="nonzero"></path>
+                <circle id="Oval" stroke="#D5DAE0" stroke-width="2" cx="4" cy="9" r="3"></circle>
+                <circle id="Oval" stroke="#D5DAE0" stroke-width="2" cx="38" cy="9" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

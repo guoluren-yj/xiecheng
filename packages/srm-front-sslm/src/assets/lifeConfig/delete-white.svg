@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/visibility</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-52" transform="translate(-45.000000, -11.000000)">
+            <g id="Icon/visibility" transform="translate(42.000000, 9.629333)">
+                <path d="M4,12.6666667 C4,13.4 4.6,14 5.33333333,14 L10.6666667,14 C11.4,14 12,13.4 12,12.6666667 L12,4.66666667 L4,4.66666667 L4,12.6666667 Z M10.3333333,2.66666667 L9.66666667,2 L6.33333333,2 L5.66666667,2.66666667 L3.33333333,2.66666667 L3.33333333,4 L12.6666667,4 L12.6666667,2.66666667 L10.3333333,2.66666667 Z" id="icon" fill="#FFFFFF"></path>
+                <rect id="delete" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

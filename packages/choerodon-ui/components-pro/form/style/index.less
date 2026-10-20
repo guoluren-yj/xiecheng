@@ -1,0 +1,79 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+
+@form-prefix-cls: ~'@{c7n-pro-prefix}-form';
+@field-prefix-cls: ~'@{c7n-pro-prefix}-field';
+@validation-prefix-cls: ~'@{c7n-pro-prefix}-validation-message';
+
+.@{form-prefix-cls} {
+  &-header {
+    margin-bottom: 0.1rem;
+    padding: 0.08rem;
+    font-weight: 400;
+    font-size: 0.16rem;
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+  }
+
+  > table {
+    width: 100%;
+    table-layout: fixed;
+
+    &.auto-width {
+      table-layout: auto;
+
+      .@{field-prefix-cls}-label label > span,
+      .@{field-prefix-cls}-label-vertical {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  > table > tbody > tr > td {
+    vertical-align: top;
+  }
+
+  &-float-label {
+    margin: 0 -0.05rem;
+
+    .@{form-prefix-cls}-header {
+      margin-right: 0.05rem;
+      margin-left: 0.05rem;
+    }
+
+    .@{field-prefix-cls}-wrapper {
+      margin-top: @float-form-item-margin-top;
+      margin-bottom: @float-form-item-margin-bottom;
+      padding-top: @float-form-item-wrapper-padding-vertical;
+      padding-bottom: @float-form-item-wrapper-padding-vertical;
+      // position: relative;
+    }
+
+    // .@{field-prefix-cls}-help,
+    // .@{validation-prefix-cls} {
+    //   position: absolute;
+    // }
+    .@{validation-prefix-cls} + .@{field-prefix-cls}-help {
+      display: none;
+    }
+  }
+
+  &-item-group {
+    display: flex;
+    box-sizing: border-box;
+
+    &-item {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 0.05rem;
+    }
+
+    &-compact {
+      & .@{form-prefix-cls}-item-group-item:not(:last-child) {
+        margin-right: -0.01rem;
+      }
+    }
+  }
+}

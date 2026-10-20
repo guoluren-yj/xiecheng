@@ -1,0 +1,169 @@
+.datadict-page-content {
+  // height: 100%;
+  overflow: hidden;
+
+  .datadict-left-panel {
+    margin: 8px 0 8px 16px;
+    width: 260px;
+    height: calc(100vh - 148px);
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid rgba(235, 235, 235, 1);
+
+    .c7n-tabs {
+      height: calc(100% - 16px);
+    }
+
+    .c7n-tabs-bar {
+      margin: 0;
+    }
+
+    .c7n-tabs-nav-wrap {
+      padding: 0 10px;
+    }
+
+    .c7n-tabs-content {
+      height: calc(100% - 48px);
+    }
+
+    .c7n-tabs-nav {
+      width: 237px;
+    }
+
+    .c7n-tabs-nav .c7n-tabs-tab,
+    .c7n-tabs-second-nav .c7n-tabs-tab {
+      min-width: 79px;
+      margin: 0;
+      padding: 12px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+
+  .dictionary-right-box {
+    overflow: auto;
+    height: calc(100vh - 148px);
+    margin: 8px 16px 0 0;
+  }
+
+  // 滚动条整体样式
+  .dictionary-right-box::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  // 滚动条里面小方块
+  .dictionary-right-box::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #53535305;
+  }
+
+  // 滚动条里面轨道
+  .dictionary-right-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: #ededed03;
+  }
+
+  .page-right-center {
+    float: right;
+    min-height: calc(100vh - 148px);
+    width: calc(100vw - 520px);
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid rgba(235, 235, 235, 1);
+
+    .top-form {
+      .card-form {
+        .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+          padding: 0;
+        }
+
+        .c7n-pro-field-label,
+        .c7n-pro-field-wrapper {
+          padding: 16px 0 0 0;
+        }
+
+        .c7n-pro-form-float-label {
+          padding-top: 16px;
+        }
+        .c7n-pro-field-label-wrapper {
+          .c7n-pro-field-label,
+          .c7n-pro-field-wrapper {
+            padding: 0 !important;
+          }
+        }
+
+        .c7n-pro-output {
+          line-height: 1.5;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 600;
+        }
+
+        .c7n-pro-field-label-vertical {
+          line-height: 1.5;
+          color: rgba(0, 0, 0, 0.65);
+          font-weight: 400;
+        }
+      }
+    }
+
+    .bottom-table {
+      margin-top: 32px;
+
+      .card-table {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.primary-tag {
+  background: #fca000;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 3px;
+  margin-left: 5px;
+}
+
+.org-lov-content-span {
+  width: 0;
+  height: 0;
+  .c7n-pro-select-wrapper {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .c7n-pro-select {
+    display: none !important;
+  }
+
+  .c7n-pro-select-suffix-button .c7n-pro-select-suffix {
+    display: none !important;
+  }
+}
+
+.tab-bar-style-org {
+  .c7n-tabs-bar {
+    margin: 0 !important;
+  }
+}
+
+.pending-modal-style {
+  height: 122px;
+  width: 410px;
+  z-index: 1001;
+  .c7n-pro-modal-header {
+    height: 0 !important;
+  }
+
+  .c7n-pro-modal-body {
+    padding: 20px;
+  }
+}

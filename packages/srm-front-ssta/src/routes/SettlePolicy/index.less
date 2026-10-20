@@ -1,0 +1,177 @@
+@import '../common.less';
+
+//混合
+.commonStyle {
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 18px;
+  font-weight: 400;
+}
+
+//操作记录
+.operating {
+  margin-top: 5.99px;
+  :global {
+    .operating-timeline {
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+
+        .c7n-timeline-item-content {
+          padding: 0 0 0 24px;
+        }
+
+        .small-icon {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+
+        .operator {
+          margin-left: 12px;
+          font-weight: 500;
+          color: #000;
+        }
+
+        .date {
+          margin: 5px 0 12px 30px;
+        }
+
+        .status {
+          padding: 0 4px;
+        }
+
+        .gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 18px;
+        }
+
+        .orange {
+          padding: 0 4px;
+          color: #f56349;
+        }
+
+        .result {
+          font-weight: 500;
+        }
+
+        .accountStatement {
+          color: #000;
+        }
+
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.08);
+          margin-left: 30px;
+        }
+
+        .reamks {
+          display: flex;
+          // padding: 0.1rem 0.3rem;
+          margin: 5px 0 0 28px;
+
+          .comment {
+            flex: 1 1;
+            width: 360px;
+          }
+        }
+
+        .supply {
+          display: inline-block;
+          min-width: 16px;
+          line-height: 16px;
+          text-align: center;
+          font-weight: 600;
+          transform: scale(0.83);
+          border: 1px solid #3095f2;
+          border-radius: 3px;
+          color: #3095f2;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.quote-plat-strategy {
+  width: @modal-large-width;
+
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0 20px;
+    }
+
+    .c7n-card {
+      height: 136px;
+      border-width: 0 0 1px 0;
+
+      &:last-child {
+        border-width: 0;
+      }
+
+      .c7n-card-body {
+        display: flex;
+        padding: 16px 0;
+
+        .c7n-pro-picture {
+          width: 180px;
+          height: 100px;
+        }
+
+        .plat-strategy-content {
+          flex: 1;
+          display: flex;
+          height: 100px;
+          margin-left: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          flex-direction: column;
+
+          .plat-strategy-header {
+            display: flex;
+
+            & + span {
+              margin-bottom: 2px;
+            }
+
+            .plat-strategy-name {
+              flex: 1;
+              font-size: 14px;
+              font-weight: 600;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.strategy-detail-modal {
+  width: @modal-large-width;
+
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0;
+      background-color: #f4f5f7;
+    }
+  }
+}
+
+.ssta-menu-upload {
+  :global {
+    .c7n-menu-item {
+      .c7n-upload {
+        height: 100%;
+        padding: 0;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.manual-entry-modal {
+  // height: calc(100vh - 120px) !important;
+  // overflow: hidden;
+
+  :global {
+    .c7n-modal-footer {
+      width: 100%;
+      position: fixed;
+      bottom: 25px;
+    }
+
+    .c7n-modal-header {
+      height: 56px !important;
+      min-height: 56px !important;
+    }
+
+    .c7n-modal-body {
+      height: 100vh;
+      padding: 0 !important;
+    }
+
+    label.c7n-pro-field-label-vertical {
+      padding: 0 !important;
+    }
+
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+
+    .c7n-pro-form-float-label {
+      margin: 0 !important;
+    }
+
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+  }
+}
+
+.manual-entry-modal-content {
+  padding: 16px 20px;
+  // height: calc(100vh - 165px) !important;
+  overflow: scroll;
+}
+
+.manual-entry-modal-content::-webkit-scrollbar {
+  width: 3px;
+}
+.manual-entry-modal-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.manual-entry-modal-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}

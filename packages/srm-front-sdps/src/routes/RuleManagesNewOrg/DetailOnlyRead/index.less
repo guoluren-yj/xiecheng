@@ -1,0 +1,61 @@
+.rule-manage-readonly-basic {
+  display: flex;
+  margin: 8px;
+  background-color: #fff;
+  height: calc(100vh - 154px);
+
+  :global {
+    .c7n-tabs-vertical > .c7n-tabs-bar .c7n-tabs-tab {
+      padding: 0.08rem 0.48rem 0.08rem 0;
+    }
+  }
+}
+
+.calculate-modal-basic {
+  :global {
+    .c7n-alert-success {
+      background-color: rgba(25, 132, 247, 0.1);
+      border: none;
+    }
+
+    .icon-help:before,
+    .icon-close:before {
+      color: #0161d5;
+    }
+
+    .c7n-alert-message {
+      color: #0161d5;
+    }
+  }
+}
+
+.calculate-result-panel {
+  padding: 0 20px 20px 20px;
+  :global {
+    .ant-btn:not(.ant-btn-disabled-wrapper),
+    .c7n-btn:not(.c7n-btn-disabled-wrapper),
+    .c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper),
+    .ant-btn-disabled-wrapper > button,
+    .c7n-btn-disabled-wrapper > button,
+    .c7n-pro-btn-disabled-wrapper > button {
+      max-width: unset;
+    }
+  }
+}
+
+.calculated-result-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rule-manage-readonly-form-basic {
+  border-right: 1px solid rgba(229, 231, 236, 1);
+  padding: 20px 0 20px 20px;
+  flex: 1;
+
+  :global {
+    .c7n-tabs-vertical > .c7n-tabs-bar .c7n-tabs-tab {
+      padding: 0.08rem 0.48rem 0.08rem 0;
+    }
+  }
+}

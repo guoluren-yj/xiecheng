@@ -1,0 +1,25 @@
+.filter-bar-table {
+  :global {
+    .c7n-pro-table-dynamic-filter-bar .c7n-pro-table-filter-wrapper {
+      // padding: 10px 15px;
+      background: none;
+    }
+    .c7n-pro-table-dynamic-filter-single-wrapper .c7n-pro-table-filter-wrapper {
+      width: auto;
+    }
+    .c7n-pro-table-dynamic-filter-single-wrapper .c7n-pro-table-dynamic-filter-bar-single-action {
+      background: none;
+    }
+    .c7n-pro-table-dynamic-filter-bar
+      > .c7n-pro-table-filter-menu
+      > .c7n-pro-table-dynamic-filter-bar-prefix {
+      display: inline-block;
+      & + .c7n-pro-table-filter-search-divide {
+        display: none;
+        & + .c7n-pro-table-filter-search {
+          display: none;
+        }
+      }
+    }
+  }
+}

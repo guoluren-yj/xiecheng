@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下拉-左侧</title>
+    <defs>
+        <polygon id="path-1" points="0.583333338 5.25 1.40583334 6.0725 4.66666666 2.8175 4.66666666 9.91666666 5.83333334 9.91666666 5.83333334 2.8175 9.08833334 6.07833334 9.91666666 5.25 5.25 0.583333338"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-设置单元格&amp;图片、显示标尺&amp;打印线" transform="translate(-540.000000, -691.000000)">
+            <g id="编组-37" transform="translate(342.000000, 526.000000)">
+                <g id="Dropdown备份-5" transform="translate(180.000000, 92.000000)">
+                    <g id="编组-25" transform="translate(16.000000, 13.000000)">
+                        <g id="编组-22备份-2" transform="translate(0.000000, 56.000000)">
+                            <g id="编组" transform="translate(0.000000, 2.000000)">
+                                <g id="arrow_upward" transform="translate(7.000000, 7.000000) rotate(-90.000000) translate(-7.000000, -7.000000) ">
+                                    <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                                    <g id="color" transform="translate(1.750000, 1.750000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="蒙版" fill-rule="nonzero"></g>
+                                        <g id="编组" mask="url(#mask-2)" fill-opacity="0.85">
+                                            <g transform="translate(-1.750000, -1.750000)" id="color">
+                                                <rect id="矩形" fill="#000000" x="0" y="0" width="14" height="14"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

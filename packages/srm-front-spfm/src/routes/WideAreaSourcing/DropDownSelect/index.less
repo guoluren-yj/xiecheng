@@ -1,0 +1,38 @@
+.wide-area-dropdown {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 1px;
+
+  .ant-dropdown-menu {
+    height: 200px !important;
+    overflow-y: scroll;
+  }
+
+  .wide-area-dropdown-clear {
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    display: none;
+
+    i {
+      font-size: 12px;
+      border-radius: 50%;
+      color: #fff;
+      padding: 1px;
+      background-color: rgba(0, 0, 0, 0.25);
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.08);
+    & > .wide-area-dropdown-clear {
+      display: inline-block;
+    }
+  }
+}

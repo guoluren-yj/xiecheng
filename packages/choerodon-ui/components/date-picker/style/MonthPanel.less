@@ -1,0 +1,76 @@
+.@{calendar-prefix-cls}-month-panel {
+  position: absolute;
+  top: 0.01rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: @component-background;
+  border-radius: @border-radius-base;
+  outline: none;
+
+  > div {
+    // TODO: this is a useless wrapper, and we need to remove it in rc-calendar
+    height: 100%;
+  }
+}
+
+.@{calendar-prefix-cls}-month-panel-hidden {
+  display: none;
+}
+
+.@{calendar-prefix-cls}-month-panel-header {
+  .calendarPanelHeader(~'@{calendar-prefix-cls}-month-panel');
+}
+
+.@{calendar-prefix-cls}-month-panel-body {
+  height: ~'calc(100% - .4rem)';
+}
+
+.@{calendar-prefix-cls}-month-panel-table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+.@{calendar-prefix-cls}-month-panel-selected-cell .@{calendar-prefix-cls}-month-panel-month {
+  color: #fff;
+  background: @date-primary-color;
+
+  &:hover {
+    color: #fff;
+    background: @date-primary-color;
+  }
+}
+
+.@{calendar-prefix-cls}-month-panel-cell {
+  text-align: center;
+
+  &-disabled .@{calendar-prefix-cls}-month-panel-month {
+    &,
+    &:hover {
+      color: #bcbcbc;
+      background: @disabled-bg;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.@{calendar-prefix-cls}-month-panel-month {
+  display: inline-block;
+  height: 0.24rem;
+  margin: 0 auto;
+  padding: 0 0.08rem;
+  color: @text-color;
+  line-height: 0.24rem;
+  text-align: center;
+  background: transparent;
+  border-radius: @border-radius-sm;
+  transition: background @animation-duration-slow ease;
+
+  &:hover {
+    background: @item-hover-bg;
+    cursor: pointer;
+  }
+}

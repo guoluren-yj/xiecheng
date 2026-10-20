@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="221px" height="101px" viewBox="0 0 221 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustrator_notice</title>
+    <defs>
+        <polygon id="path-1" points="11.5 6.57142858 6.57142858 6.57142858 6.57142858 11.5 4.92857142 11.5 4.92857142 6.57142858 0 6.57142858 0 4.92857142 4.92857142 4.92857142 4.92857142 0 6.57142858 0 6.57142858 4.92857142 11.5 4.92857142"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组合业务对象_ER图" transform="translate(-1186.000000, -483.000000)">
+            <g id="Tips/Bottom/White/Basic/Left备份" transform="translate(1176.000000, 473.386880)">
+                <g id="illustrator_notice" transform="translate(10.500000, 10.000000)">
+                    <rect id="矩形" fill="#F2F3F5" x="0" y="0" width="220" height="100"></rect>
+                    <g id="编组-10" transform="translate(47.500000, 29.000000)">
+                        <g id="编组-8" transform="translate(95.000000, 0.000000)">
+                            <path d="M26,16.9228511 L26,28.9228511 C26,36.1025529 20.1797017,41.9228511 13,41.9228511 C5.82029825,41.9228511 8.79259876e-16,36.1025529 0,28.9228511 L0,16.9228511 L11.424,16.922 L11.4245355,17.510247 L14.4245355,17.510247 L14.424,16.922 L26,16.9228511 Z M11.4246873,0.017329587 L11.424,13.922 L0,13.9228511 L0,12.9228511 C-8.13960345e-16,6.27636051 4.9878941,0.794854985 11.4246873,0.017329587 Z M26,12.9228511 L26,13.9228511 L14.424,13.922 L14.4244681,-5.05220865e-14 C20.9340116,0.709436441 26,6.22453128 26,12.9228511 Z" id="形状结合" fill="#C9CDD4"></path>
+                            <rect id="矩形" stroke="#EFF1F4" stroke-width="3" fill="#FF9341" x="8.16666667" y="9.42285112" width="9.666667" height="13.7692313" rx="4.8333335"></rect>
+                        </g>
+                        <g id="编组-9" transform="translate(0.000000, 2.922851)">
+                            <rect id="矩形" stroke-opacity="0.1" stroke="#000000" fill="#FFFFFF" x="0" y="0" width="56" height="36" rx="2"></rect>
+                            <text id="Ctrl" font-family="PingFangSC-Semibold, PingFang SC" font-size="14" font-weight="500" fill="#000000" fill-opacity="0.85">
+                                <tspan x="16" y="26">Ctrl</tspan>
+                            </text>
+                        </g>
+                        <g id="add" transform="translate(66.000000, 12.922851)">
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                            <g id="color" transform="translate(2.250000, 2.250000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="蒙版" fill-rule="nonzero"></g>
+                                <g mask="url(#mask-2)" fill="#000000" fill-opacity="0.5" id="矩形">
+                                    <g transform="translate(-2.555556, -2.555556)">
+                                        <rect x="0" y="0" width="17.5238095" height="17.5238095"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

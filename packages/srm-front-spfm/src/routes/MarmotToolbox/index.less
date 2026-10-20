@@ -1,0 +1,40 @@
+/**
+ * MarmotPlatform/index.less
+ * 土拨鼠开发平台
+ * @date: 2021-11-1
+ * @author: zhangjinxin <jinxin.zhang@going-link.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2021, zhenyun
+ */
+.left-menu {
+  :global {
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: right;
+    .c7n-menu-item {
+      width: 150px;
+    }
+  }
+}
+
+.pic-right {
+  :global {
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    right: 200px;
+    height: 530px;
+    pointer-events: none;
+    .pic-right-item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.left-right {
+  :global {
+    display: flex;
+  }
+}

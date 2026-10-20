@@ -1,0 +1,919 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/select/demo/automatic-tokenization.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-enabled c7n-select-tags c7n-select-has-border"
+  style="width:100%"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--multiple"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <ul>
+        <li
+          class="c7n-select-search c7n-select-search--inline"
+        >
+          <div
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-select-search__field"
+              value=""
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+               
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/basic.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-select c7n-select-has-label c7n-select-enabled c7n-select-allow-clear c7n-select-has-border"
+    style="width:200px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="0"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+        />
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+      <div
+        class="c7n-select-label-wrapper"
+      >
+        <div
+          class="c7n-select-label"
+        >
+          Please Select
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-disabled c7n-select-allow-clear c7n-select-has-border"
+    style="width:200px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="-1"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+          title="Lucy"
+        >
+          Lucy
+        </div>
+        <button
+          class="c7n-btn c7n-select-clear c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+          style="user-select:none;-webkit-user-select:none"
+          type="button"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-close"
+          />
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </button>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/combobox.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-combobox c7n-select-enabled c7n-select-has-border"
+  style="width:200px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-search c7n-select-search--inline"
+        style="display:inline-block"
+      >
+        <div
+          class="c7n-select-search__field__wrap"
+        >
+          <input
+            autocomplete="off"
+            class="c7n-select-search__field"
+            value=""
+          />
+          <span
+            class="c7n-select-search__field__mirror"
+          >
+             
+          </span>
+        </div>
+      </div>
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+    <div
+      class="c7n-select-label-wrapper"
+    >
+      <div
+        class="c7n-select-label"
+      >
+        Enter the account name
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/coordinate.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    style="width:90px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="0"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+          title="Zhejiang"
+        >
+          Zhejiang
+        </div>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    style="width:90px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="0"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+          title="Hangzhou"
+        >
+          Hangzhou
+        </div>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/iconselect.md correctly 1`] = `
+<div
+  class="c7n-icon-select c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection-selected-value"
+        style="opacity:1"
+        title="root"
+      >
+        <span>
+          <i
+            class="icon icon-root"
+          />
+           root
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/label-in-value.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+  style="width:120px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection-selected-value"
+        style="opacity:1"
+        title="Lucy (101)"
+      >
+        Lucy (101)
+      </div>
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/multiple.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-label c7n-select-enabled c7n-select-allow-clear c7n-select-multiple c7n-select-has-border"
+  style="width:100%"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--multiple"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <ul>
+        <li
+          class="c7n-select-search c7n-select-search--inline"
+        >
+          <div
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-select-search__field"
+              value=""
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+               
+            </span>
+          </div>
+        </li>
+      </ul>
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+    <div
+      class="c7n-select-label-wrapper"
+    >
+      <div
+        class="c7n-select-label"
+      >
+        多选用例
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/optgroup.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+  style="width:200px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection-selected-value"
+        style="opacity:1"
+        title="Lucy"
+      >
+        Lucy
+      </div>
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/search.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-enabled c7n-select-has-border"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection-selected-value"
+        style="opacity:1"
+      />
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+    <div
+      class="c7n-select-label-wrapper"
+    >
+      <div
+        class="c7n-select-label"
+      >
+        Select a person
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/search-box.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-combobox c7n-select-enabled c7n-select-has-border"
+  style="width:200px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-search c7n-select-search--inline"
+        style="display:inline-block"
+      >
+        <div
+          class="c7n-select-search__field__wrap"
+        >
+          <input
+            autocomplete="off"
+            class="c7n-select-search__field"
+            value=""
+          />
+          <span
+            class="c7n-select-search__field__mirror"
+          >
+             
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-select-label-wrapper"
+    >
+      <div
+        class="c7n-select-label"
+      >
+        input search text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/size.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-radio-group-wrapper"
+  >
+    <div
+      class="c7n-radio-group"
+    >
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="large"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Large
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+      >
+        <span
+          class="c7n-radio-button c7n-radio-button-checked"
+        >
+          <input
+            checked=""
+            class="c7n-radio-button-input"
+            type="radio"
+            value="default"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Default
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="small"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Small
+        </span>
+      </label>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    style="width:200px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="0"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+          title="a1"
+        >
+          a1
+        </div>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-combobox c7n-select-enabled c7n-select-has-border"
+    style="width:200px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-search c7n-select-search--inline"
+          style="display:inline-block"
+        >
+          <div
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-select-search__field"
+              value="a1"
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+              a1 
+            </span>
+          </div>
+        </div>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-multiple c7n-select-has-border"
+    style="width:100%"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--multiple"
+      role="combobox"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <ul>
+          <li
+            class="c7n-select-selection__choice"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <div
+              class="c7n-select-selection__choice__content"
+            >
+              a10
+            </div>
+            <span
+              class="c7n-select-selection__choice__remove"
+            >
+              <i
+                class="icon icon-cancel"
+              />
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </li>
+          <li
+            class="c7n-select-selection__choice"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <div
+              class="c7n-select-selection__choice__content"
+            >
+              c12
+            </div>
+            <span
+              class="c7n-select-selection__choice__remove"
+            >
+              <i
+                class="icon icon-cancel"
+              />
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </li>
+          <li
+            class="c7n-select-search c7n-select-search--inline"
+          >
+            <div
+              class="c7n-select-search__field__wrap"
+            >
+              <input
+                autocomplete="off"
+                class="c7n-select-search__field"
+                value=""
+              />
+              <span
+                class="c7n-select-search__field__mirror"
+              >
+                 
+              </span>
+            </div>
+          </li>
+        </ul>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-tags c7n-select-has-border"
+    style="width:100%"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--multiple"
+      role="combobox"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <ul>
+          <li
+            class="c7n-select-selection__choice"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <div
+              class="c7n-select-selection__choice__content"
+            >
+              a10
+            </div>
+            <span
+              class="c7n-select-selection__choice__remove"
+            >
+              <i
+                class="icon icon-cancel"
+              />
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </li>
+          <li
+            class="c7n-select-selection__choice"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <div
+              class="c7n-select-selection__choice__content"
+            >
+              c12
+            </div>
+            <span
+              class="c7n-select-selection__choice__remove"
+            >
+              <i
+                class="icon icon-cancel"
+              />
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </li>
+          <li
+            class="c7n-select-search c7n-select-search--inline"
+          >
+            <div
+              class="c7n-select-search__field__wrap"
+            >
+              <input
+                autocomplete="off"
+                class="c7n-select-search__field"
+                value=""
+              />
+              <span
+                class="c7n-select-search__field__mirror"
+              >
+                 
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/select/demo/tags.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-label c7n-select-enabled c7n-select-allow-clear c7n-select-tags c7n-select-has-border"
+  style="width:100%"
+>
+  <div
+    aria-autocomplete="list"
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--multiple"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <ul>
+        <li
+          class="c7n-select-search c7n-select-search--inline"
+        >
+          <div
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              autocomplete="off"
+              class="c7n-select-search__field"
+              value=""
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+               
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7n-select-label-wrapper"
+    >
+      <div
+        class="c7n-select-label"
+      >
+        tags
+      </div>
+    </div>
+  </div>
+</div>
+`;

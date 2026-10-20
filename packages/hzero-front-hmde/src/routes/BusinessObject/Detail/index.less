@@ -1,0 +1,243 @@
+@title: #1e1e1e;
+
+.panel-layout-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 8px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid @primary-color;
+  text-indent: 10px;
+  line-height: 14px;
+}
+
+.head-title {
+  color: #595959;
+}
+
+.head-bo:hover,
+.head-title-hover:hover {
+  cursor: pointer;
+  color: @primary-color;
+}
+
+.head-title-last {
+  color: #262626;
+}
+
+.business-object-container {
+  height: calc(100% - 48px);
+  overflow: hidden;
+  flex: 1 1;
+  margin: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+  .detail-tabs {
+    height: 100%;
+    :global {
+      .c7n-tabs-bar:not(.c7n-tabs-tabpane .c7n-tabs-bar) {
+        min-width: 180px;
+        max-width: 220px;
+        padding: 20px 0 12px 20px;
+        .c7n-tabs-tab {
+          text-align: left !important;
+          padding-left: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      .c7n-tabs-content:not(.c7n-tabs-tabpane .c7n-tabs-content) {
+        height: 100%;
+        overflow: auto;
+        padding: 20px !important;
+      }
+    }
+  }
+}
+
+.config-detail {
+  position: relative;
+  padding: 16px 16px 12px;
+  background: #f9f9f9;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 142px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #f9f9f9;
+  }
+}
+
+.option-query-fields {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.option-columns {
+  padding-bottom: 16px;
+  background-color: #fff;
+
+  .option-columns-fields {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6px 12px;
+    border: 1px solid #dbe1f1;
+    border-width: 1px 0;
+  }
+}
+
+.option-field {
+  display: inline-flex;
+  align-items: center;
+  line-height: 18px;
+  font-size: 12px;
+  color: #0840f8;
+  background-color: #e6ebfe;
+  border: 1px solid #9cb3fc;
+  border-radius: 2px;
+  padding: 0 4px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.option-condition,
+.template-params,
+.script-params {
+  display: grid;
+  grid-template-columns: repeat(4, min(16px) 1fr) min(32px);
+  align-items: center;
+  color: #465476;
+
+  &:not(:last-child) {
+    padding-bottom: 12px;
+  }
+
+  &:not(:first-child) > span:nth-child(2n) {
+    color: #1c1c1c;
+  }
+
+  .condition-line {
+    width: 1px;
+    height: 75%;
+    margin: auto;
+    background-color: #d8d8d8;
+    border-radius: 1px;
+  }
+}
+
+.template-params {
+  grid-template-columns: repeat(3, 1fr min(16px)) min(256px);
+}
+
+.script-params {
+  grid-template-columns: repeat(4, 1fr min(16px)) min(64px);
+}
+
+.reset-tabs-style {
+  :global {
+    .c7n-tabs-nav .c7n-tabs-tab-active {
+      border-right: none !important;
+    }
+  }
+}
+
+.more-property-contain {
+  .mode-expression {
+    margin: 14px 0 8px 0;
+    font-size: 12px;
+    color: #333;
+  }
+
+  .tip-contain {
+    background: #fef0f1;
+    border-radius: 2px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      font-size: 12px;
+      color: #465476;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin: 0 4px 0 14px;
+      }
+    }
+  }
+
+  .tip-contain-warn {
+    background: #fef8f0;
+    border-radius: 2px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > div {
+      font-size: 12px;
+      color: #465476;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin: 0 4px 0 14px;
+      }
+    }
+  }
+
+  .property-message {
+    margin-bottom: 13px;
+    font-size: 12px;
+    color: #686868;
+    font-weight: 400;
+  }
+
+  .info-title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+}
+
+.help-icon {
+  margin-left: 4px;
+  font-size: 14px;
+  color: @primary-color;
+  vertical-align: text-bottom;
+}
+
+.overflow-hidden-tabpane {
+  overflow: hidden;
+  height: 100%;
+}
+
+.field-edit-modal {
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0;
+    }
+  }
+}

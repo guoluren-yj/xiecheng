@@ -1,0 +1,148 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.order-workspace-detail-container {
+  :global {
+    overflow-y: auto;
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+
+    .content-title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    :not(:last-child) {
+      .page-content {
+        margin-bottom: 0 !important;
+      }
+    }
+    .c7n-radio-group {
+      padding: 0;
+      .c7n-radio-button-wrapper {
+        height: 22px;
+        line-height: 22px;
+      }
+    }
+
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        padding: 20px;
+        background-color: #fff;
+        margin: 8px 16px 0 16px;
+        overflow: initial;
+        & > .c7n-collapse-header {
+          padding: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        & > .c7n-collapse-content {
+          padding: 0;
+          & > .c7n-collapse-content-box {
+            padding: 0;
+          }
+        }
+        // &:not(:last-child) {
+        //   position: relative;
+        //   padding-bottom: 8px;
+        //   &::after {
+        //     content: '';
+        //     bottom: 0;
+        //     height: 8px;
+        //     left: -20px;
+        //     right: -20px;
+        //     position: absolute;
+        //     background-color: #f4f5f7;
+        //   }
+        // }
+      }
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+:global {
+  // 重置在新主题下对折叠面板的margin修改
+  .srm-layout-content-container {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        margin: 8px 8px 0 8px !important;
+      }
+    }
+  }
+}
+
+.order-workspace-detail-content {
+  padding: 20px;
+}
+
+.approval-radio-group {
+  :global {
+    .c7n-pro-form > table {
+      font-size: 14px;
+      font-weight: 400;
+      width: unset !important;
+      .c7n-pro-field-wrapper {
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.05);
+        .c7n-pro-select-box {
+          display: flex;
+          .c7n-pro-radio-wrapper {
+            margin-right: 0 !important;
+            padding: 3px 8px;
+            background-color: #f2f3f5;
+
+            .c7n-pro-radio-inner {
+              border: none;
+            }
+            .c7n-pro-radio-label {
+              color: rgba(0, 0, 0, 0.45);
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+      .c7n-pro-radio:checked + .c7n-pro-radio-inner {
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        background: #fff;
+      }
+      .c7n-pro-radio:checked + .c7n-pro-radio-inner + .c7n-pro-radio-label {
+        color: #000;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.order-top-title-alert {
+  :global {
+    width: calc(100% + 40px);
+    margin: -20px -20px 20px;
+    background-color: @blue-1;
+    border: none;
+    color: @blue-6;
+    vertical-align: middle;
+    line-height: 21px;
+    .c7n-alert-content {
+      margin-top: 2px;
+    }
+    .c7n-alert-close-wrapper {
+      i {
+        color: @blue-6;
+      }
+    }
+    div {
+      i {
+        margin-top: -4px;
+        margin-right: 6px;
+      }
+    }
+  }
+}

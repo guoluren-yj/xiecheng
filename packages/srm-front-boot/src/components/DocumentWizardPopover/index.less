@@ -1,0 +1,46 @@
+@import '~choerodon-ui/lib/style/themes/default';
+
+.document-wizard-popover {
+  padding-bottom: 13px;
+  max-width: 280px;
+  min-width: 180px;
+  :global {
+    .@{c7n-prefix}-popover {
+      &-inner {
+        position: relative;
+        border-radius: 4px;
+
+        &-content {
+          padding-top: 0;
+          line-height: 1;
+        }
+      }
+
+      &-title {
+        border-bottom: none;
+        padding-top: 12px;
+        padding-bottom: 0;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      &-arrow {
+        width: sqrt(10px * 10px * 2);
+        height: sqrt(10px * 10px * 2);
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.document-wizard-popover-border {
+  position: absolute;
+  border-radius: 5px 0 0 5px;
+  border-left: 2px solid @input-highlight-border-color;
+  border-top: 2px solid @input-highlight-border-color;
+  border-bottom: 2px solid @input-highlight-border-color;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+}

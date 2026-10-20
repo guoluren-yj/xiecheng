@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 9</title>
+    <g id="【采】竞价大厅（看这个）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="【采】并行-竞价-关闭" transform="translate(-600, -167)">
+            <g id="编组-4" transform="translate(306, 90)">
+                <g id="编组-11" transform="translate(20, 30)">
+                    <g id="编组-114" transform="translate(80, 46.5)">
+                        <g id="编组-113" transform="translate(194, 0)">
+                            <g id="编组-9" transform="translate(0, 0.5)">
+                                <circle id="椭圆形备份-2" fill="#C9CDD4" cx="8" cy="8" r="8"></circle>
+                                <g id="编组" transform="translate(4, 4)" fill="#FFFFFF" fill-rule="nonzero">
+                                    <path d="M4,8 C1.79086,8 0,6.20912 0,4 C0,1.79086 1.79086,0 4,0 C6.20912,0 8,1.79086 8,4 C8,6.20912 6.20912,8 4,8 Z M4,3.43432 L2.868628,2.302944 L2.302944,2.868628 L3.43432,4 L2.302944,5.13136 L2.868628,5.69704 L4,4.56568 L5.13136,5.69704 L5.69704,5.13136 L4.56568,4 L5.69704,2.868628 L5.13136,2.302944 L4,3.43432 Z" id="形状"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

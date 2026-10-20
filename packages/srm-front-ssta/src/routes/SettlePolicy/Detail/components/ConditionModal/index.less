@@ -1,0 +1,112 @@
+@import '~hzero-front/lib/srm-variables';
+.condition-link-badge {
+  display: inline;
+  line-height: inherit;
+}
+
+.fx-condition-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 70px);
+  :global {
+    .empty_img {
+      width: 234px;
+
+      .ssta-svg-primary-color {
+        fill: @primary-color;
+      }
+    }
+    .empty_text {
+      font-size: 12px;
+      color: @text-3;
+      margin-top: 8px;
+    }
+  }
+}
+
+.condition-editor-form-wrapper {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.rules-definition-editor {
+  :global {
+    .rules-definition-editor-header {
+      .editor-title {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        & > i {
+          margin-left: 5px;
+        }
+      }
+    }
+    .content-title {
+      font-size: 14px;
+      font-weight: 600;
+      height: 22px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 14px;
+        margin-right: 8px;
+        background-color: @primary-color;
+      }
+    }
+    .rules-definition-editor-wrapper {
+      .editor-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 24px 0;
+        display: flex;
+
+        & > i {
+          margin-left: 5px;
+        }
+      }
+
+      .rule-editor-form {
+        margin: 10px 0;
+        .c7n-pro-form-wrapper > table > tbody > tr > td:first-child,
+        .c7n-pro-form-wrapper > table > tbody > tr > td:last-child {
+          font-size: 14px;
+          vertical-align: sub;
+        }
+        .c7n-pro-select-float-label {
+          width: 100%;
+        }
+        .c7n-pro-input-empty {
+          width: 100%;
+        }
+        .c7n-pro-select-multiple .c7n-pro-select {
+          height: 0.36rem;
+        }
+      }
+
+      .rules-definition-control-point {
+        height: 36px;
+        width: 100%;
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        &:hover {
+          cursor: pointer;
+          border-color: #000;
+        }
+      }
+    }
+  }
+}

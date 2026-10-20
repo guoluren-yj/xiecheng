@@ -1,0 +1,46 @@
+.record-text {
+  display: inline-block;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+// 操作记录
+.operate-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .operate-wrapper {
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+
+    .operate-name,
+    .operate-text {
+      font-weight: 500;
+      display: flex;
+      .record-text {
+        .record-text;
+      }
+    }
+    .operate-action {
+      margin: 0 8px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .operate-result {
+      color: rgba(0, 0, 0, 0.65);
+      display: flex;
+      .record-text {
+        .record-text;
+      }
+    }
+  }
+}
+.operate-content {
+  .operate-content-reason {
+    color: rgba(0, 0, 0, 0.45);
+  }
+}

@@ -1,0 +1,86 @@
+@import '~hzero-front/lib/srm-variables';
+
+.relationship-mining-basic {
+  .page-content-wrap .page-content {
+    height: calc(100vh - 155px) !important;
+    overflow: hidden;
+  }
+}
+
+.relationship-mining-company-basic {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.relationship-mining-company-list-panel {
+  font-size: 14px;
+  color: #1d2129;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 8px;
+  // width: 300px;
+  // border-left: 3px solid @primary-color;
+  // padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.relationship-scroll-panel {
+  max-height: 360px;
+  min-height: 50px;
+  padding-right: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.relation-mining-map {
+  background-color: #f7f8fa;
+}
+
+.popup-tooltip-card {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      max-width: unset !important;
+      max-height: unset !important;
+      padding: 0 !important;
+    }
+
+    .c7n-pro-tooltip-popup-inner:not(.c7n-pro-tooltip-popup-inner-show-img) img {
+      display: block;
+    }
+  }
+}
+
+.relation-mining-btn-span {
+  text-align: center;
+  margin-top: 16px;
+  button {
+    max-width: 320px !important;
+  }
+}
+
+.company-list {
+  :global {
+    // .c7n-pro-checkbox:checked + .c7n-pro-checkbox-inner,
+    // .c7n-pro-checkbox-indeterminate .c7n-pro-checkbox-inner {
+    //   background-color: rgba(0, 184, 204, 0.35) !important;
+    //   border-color: rgba(0, 184, 204, 0) !important;
+    // }
+  }
+}

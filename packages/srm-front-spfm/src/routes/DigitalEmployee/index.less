@@ -1,0 +1,160 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.list {
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  &-empty {
+    flex: 1;
+    justify-content: center;
+    padding-top: 100px;
+  }
+}
+
+.item {
+  &-wrapper {
+    width: 25%;
+    padding-right: 16px;
+    height: 117px;
+    overflow: hidden;
+  }
+  &-create {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    row-gap: 8px;
+    border-radius: 4px;
+    border: 1px dashed #dadfe6;
+    & i {
+      color: @primary-color;
+      font-size: 24px;
+    }
+    & span {
+      font-size: 12px;
+      line-height: 18px;
+      color: #868d9c;
+    }
+  }
+  position: relative;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #f2f3f5;
+  background-color: #f8f9fb;
+  cursor: pointer;
+  &-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #1d62f5;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #1d62f5;
+    font-size: 10px;
+    padding: 1px 4px;
+    &-pre {
+      color: #fc7700;
+      border-color: #fc7700;
+    }
+  }
+  &-base {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 8px;
+  }
+  &-main {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &-operators {
+    display: flex;
+  }
+  &-text {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+  }
+  &-icon {
+    width: 40px;
+    height: 40px;
+  }
+  &-title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0c0e12;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-desc {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #868d9c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-others {
+    padding-top: 8px;
+    border-top: 1px solid #e5e7ec;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #868d9c;
+    position: relative;
+  }
+  &-dot {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.card-container {
+  .card-header {
+    padding-left: 11px;
+    position: relative;
+    .card-title {
+      // height: 22px;
+      font-size: 14px;
+      color: @text-1;
+      // line-height: 22px;
+      font-weight: 600;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 3px;
+      height: 12px;
+      background-color: @primary-color;
+      left: 0;
+      top: 55%;
+      margin-top: -7px;
+    }
+  }
+  .card-body {
+    padding: 16px 0 0 0;
+  }
+}
+.card-container:not(:last-child) {
+  margin-bottom: 32px;
+}

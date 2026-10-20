@@ -1,0 +1,204 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+@import '../../tree/style/index';
+@import '../../checkbox/style/mixin';
+
+@tree-select-prefix-cls: ~'@{c7n-prefix}-tree-select';
+@select-tree-prefix-cls: ~'@{c7n-prefix}-select-tree';
+@select-prefix-cls: ~'@{c7n-prefix}-select';
+@select-tree-checkbox-prefix-cls: ~'@{select-tree-prefix-cls}-checkbox';
+
+.antCheckboxFn(@select-tree-checkbox-prefix-cls);
+.antTreeFn(@select-tree-prefix-cls);
+
+
+// ========================== Tree ==========================
+
+
+.@{select-tree-prefix-cls} {
+  // >>> Switcher
+  & &-switcher {
+    .antTreeSwitcherIcon();
+    flex: none;
+
+    width: @tree-title-height;
+    height: @tree-title-height;
+    margin: 0;
+    line-height: @tree-title-height;
+    text-align: center;
+    cursor: pointer;
+
+    &-noop {
+      cursor: default;
+    }
+
+    &_close .@{iconfont-css-prefix}-arrow_drop_down {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .reset-component;
+  .checked(@select-tree-checkbox-prefix-cls, @tree-primary-color);
+  margin: 0;
+  margin-top: -0.04rem;
+  padding: 0 0.04rem;
+  li {
+    margin: 0.08rem 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style: none;
+    outline: 0;
+    &.filter-node {
+      > span {
+        font-weight: 500;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 0.18rem;
+    }
+    .@{select-tree-prefix-cls}-node-content-wrapper {
+      display: inline-block;
+      width: ~'calc(100% - .24rem)';
+      margin: 0;
+      padding: 0.03rem 0.05rem;
+      color: @text-color;
+      text-decoration: none;
+      border-radius: 0.02rem;
+      cursor: pointer;
+      transition: all @animation-duration-slow;
+      &:hover {
+        background-color: @item-hover-bg;
+      }
+      &.@{select-tree-prefix-cls}-node-selected {
+        background-color: @tree-node-selected-bg;
+      }
+    }
+    span {
+      &.@{select-tree-prefix-cls}-checkbox {
+        margin: 0 0.04rem 0 0;
+        + .@{select-tree-prefix-cls}-node-content-wrapper {
+          width: ~'calc(100% - .46rem)';
+        }
+      }
+      &.@{select-tree-prefix-cls}-switcher,
+      &.@{select-tree-prefix-cls}-iconEle {
+        display: inline-block;
+        width: 0.24rem;
+        height: 0.24rem;
+        margin: 0;
+        line-height: 0.22rem;
+        text-align: center;
+        vertical-align: middle;
+        border: 0 none;
+        outline: none;
+        cursor: pointer;
+      }
+      &.@{select-tree-prefix-cls}-icon_loading {
+        &::after {
+          display: inline-block;
+          color: @tree-directory-selected-bg;
+          animation: loadingCircle 1s infinite linear;
+          .iconfont-font('\e6ae');
+        }
+      }
+      &.@{select-tree-prefix-cls}-switcher {
+        width: 0.22rem;
+        height: 0.22rem;
+        line-height: 1;
+        vertical-align: top;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        &-expanded {
+          vertical-align: top;
+          transform: rotate(0);
+        }
+        &.@{select-tree-prefix-cls}-switcher-noop {
+          cursor: default;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &-child-tree {
+    display: none;
+    &-open {
+      display: block;
+    }
+  }
+  li&-treenode-disabled {
+    > span:not(.@{select-tree-prefix-cls}-switcher),
+    > .@{select-tree-prefix-cls}-node-content-wrapper,
+    > .@{select-tree-prefix-cls}-node-content-wrapper span {
+      color: @disabled-color;
+      cursor: not-allowed;
+    }
+    > .@{select-tree-prefix-cls}-node-content-wrapper:hover {
+      background: transparent;
+    }
+  }
+  &-icon__open {
+    margin-right: 0.02rem;
+    vertical-align: top;
+  }
+  &-icon__close {
+    margin-right: 0.02rem;
+    vertical-align: top;
+  }
+
+  &-dropdown {
+    .reset-component;
+    .@{select-prefix-cls}-dropdown-search {
+      display: block;
+      padding: 0.04rem;
+      .@{select-prefix-cls}-search__field__wrap {
+        width: 100%;
+      }
+      .@{select-prefix-cls}-search__field {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.04rem 0.07rem;
+        border: @border-width-base @border-style-base @border-color-base;
+        border-radius: 0.04rem;
+        outline: none;
+      }
+      &.@{select-prefix-cls}-search--hide {
+        display: none;
+      }
+    }
+    .@{select-prefix-cls}-not-found {
+      display: block;
+      padding: 0.07rem 0.16rem;
+      color: @disabled-color;
+      cursor: not-allowed;
+    }
+    padding: @padding-xs (@padding-xs / 2) 0;
+    &-rtl {
+      direction: rtl;
+    }
+    // ======================== Tree ========================
+    .@{select-tree-prefix-cls} {
+      border-radius: 0;
+
+      &-list-holder-inner {
+        align-items: stretch;
+
+        .@{select-tree-prefix-cls}-treenode {
+          padding-bottom: @padding-xs;
+          .@{select-tree-prefix-cls}-node-content-wrapper {
+            flex: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.@{select-prefix-cls} {
+  &-search__field__placeholder {
+    top:25%;
+  }
+}

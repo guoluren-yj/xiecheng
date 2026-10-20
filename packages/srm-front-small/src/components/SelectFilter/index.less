@@ -1,0 +1,218 @@
+.filter-condition {
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  line-height: 32px;
+  padding: 0 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  margin-right: 12px;
+  margin-bottom: 4px;
+
+  &-title {
+    font-weight: 400;
+    margin-right: 4px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  &-value {
+    font-weight: 500;
+  }
+
+  &-icon {
+    // margin: 0 4px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  &-datePicker {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 360px;
+
+    :global {
+      .c7n-pro-calendar-picker-wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  :global {
+    .c7n-pro-select-wrapper {
+      background-color: transparent !important;
+      // background: #f2f2f2;
+    }
+    .c7n-pro-select {
+      border: none !important;
+      background-color: transparent;
+    }
+    .c7n-pro-select.focused {
+      border: none;
+    }
+    // .c7n-pro-select-focused{
+    //   background: black;
+    // }
+    .c7n-pro-form-float-label {
+      margin: 0 !important;
+    }
+
+    .c7n-pro-form-float-label .c7n-pro-field-wrapper {
+      margin: 0 16px 16px 0 !important;
+      max-width: 300px;
+    }
+
+    .c7n-pro-form.c7n-pro-form-float-label > table > tbody .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0 0.05rem 0.1rem 0.05rem;
+    }
+
+    // 高级检索样式
+    // lov
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper {
+      padding: 0 0 0.1rem 0;
+    }
+
+    .c7n-pro-field-wrapper .c7n-pro-select {
+      border: none !important;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .c7n-pro-select-wrapper .c7n-pro-select {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    // datepicker
+    .c7n-pro-calendar-picker {
+      border: none;
+      // background-color: #fff;
+      box-shadow: 0 0.02rem 0.08rem rgba(0, 0, 0, 0.12);
+    }
+
+    .c7n-pro-calendar-picker-suffix .icon {
+      display: none;
+    }
+
+    // 单个查询样式
+    .c7n-pro-input-wrapper {
+      .c7n-pro-input-prefix {
+        margin-left: 5px;
+        margin-top: 6px;
+      }
+
+      .c7n-pro-input {
+        padding-left: 0.34rem;
+      }
+    }
+
+    // 下拉不显示箭头
+    .c7n-pro-select-trigger {
+      display: none;
+    }
+  }
+}
+
+.filter-condition {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.filter-condition-focus {
+  height: 32px;
+  // background-color: rgba(0, 0, 0, 0.05);
+
+  :global {
+    .c7n-pro-select-empty {
+      .c7n-pro-select-multiple-value {
+        width: 0 !important;
+      }
+
+      label .c7n-pro-select {
+        width: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.sort-condition {
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  line-height: 32px;
+  padding: 0 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-left: auto;
+
+  > span {
+    :global {
+      .icon-expand_more {
+        margin-top: -2px;
+      }
+    }
+  }
+}
+
+.tool {
+  display: flex;
+  height: 32px;
+  line-height: 32px;
+
+  &-filter {
+    margin: 0 8px;
+    cursor: default;
+
+    > span {
+      margin-left: 4px;
+      font-weight: 600;
+    }
+
+    :global {
+      .icon {
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .vertical-divider {
+    margin: 0 0.02rem;
+    color: rgba(204, 204, 204);
+  }
+
+  .action-icon {
+    height: 24px;
+    cursor: pointer;
+    width: 26px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 4px;
+    margin-left: 8px;
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+
+  .action-icon:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  :global {
+    .c7n-pro-btn {
+      height: 24px;
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px !important;
+      margin: 4px 8px 4px 0;
+    }
+  }
+}

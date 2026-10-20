@@ -1,0 +1,38 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.portal-basic-container :global {
+  width: 3.18rem;
+  height: 1.98rem;
+  background-color: #fff;
+  padding: 0.16rem;
+  border: 0.0084rem solid #ebebeb;
+
+  .basic-header {
+    box-sizing: border-box;
+    font-size: 0.12rem;
+    display: flex;
+    align-items: center;
+    line-height: 0.18rem;
+    margin-bottom: 0.16rem;
+
+    > .icon {
+      font-size: 0.14rem;
+      color: rgba(0, 0, 0, 0.8);
+      margin-right: 0.05rem;
+      font-weight: 500;
+    }
+
+    > div {
+      font-weight: 600;
+      font-size: 0.14rem;
+    }
+  }
+
+  .basic-rich-text {
+    height: calc(100% - 0.32rem);
+  }
+
+  .ql-container.ql-snow .ql-editor a {
+    color: @primary-color !important;
+  }
+}

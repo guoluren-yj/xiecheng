@@ -1,0 +1,83 @@
+:global {
+  .ssrc-tab-panels {
+    margin-top: 16px;
+
+    .ant-collapse .ant-collapse-item {
+      background-color: transparent;
+    }
+
+    .ssrc-customer-component .ant-collapse .ant-collapse-item .ant-collapse-header {
+      line-height: inherit;
+    }
+
+    .ant-collapse .ant-collapse-content .ant-collapse-content-box {
+      padding: 0;
+    }
+
+    .ssrc-round-quotation-number {
+      max-width: 90px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      background: rgba(6, 135, 255, 0.1);
+      color: #0687ff;
+      border-radius: 2px;
+    }
+
+    .ssrc-text-ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .m-b-ms {
+      margin-bottom: 2px;
+    }
+
+    .h3 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+    }
+
+    .ssrc-text-red-color {
+      color: red;
+    }
+
+    .price-style {
+      max-width: 90px;
+      overflow: hidden;
+      white-space: nowrap; /* 不换行 */
+      text-overflow: ellipsis;
+    }
+
+    .score {
+      line-height: 24px;
+    }
+  }
+}
+
+.pagination {
+  margin: 16px 0;
+  float: right;
+  z-index: 3;
+}
+
+.supplier-collapse-header {
+  > div {
+    overflow: hidden;
+  }
+  :global {
+    .ant-collapse-header {
+      height: auto !important;
+    }
+  }
+}
+
+.round-quotation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 24px;
+}

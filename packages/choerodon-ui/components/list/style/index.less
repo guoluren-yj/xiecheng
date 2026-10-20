@@ -1,0 +1,207 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@list-prefix-cls: ~'@{c7n-prefix}-list';
+
+.@{list-prefix-cls} {
+  .reset-component;
+  position: relative;
+  * {
+    outline: none;
+  }
+  &-pagination {
+    margin-top: 0.24rem;
+    text-align: right;
+  }
+  &-more {
+    margin-top: 0.12rem;
+    text-align: center;
+    button {
+      padding-right: 0.32rem;
+      padding-left: 0.32rem;
+    }
+  }
+  &-spin {
+    min-height: 0.4rem;
+    text-align: center;
+  }
+  &-empty-text {
+    padding: 0.16rem;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    text-align: center;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    padding-top: 0.12rem;
+    padding-bottom: 0.12rem;
+    &-meta {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+
+      &-avatar {
+        margin-right: 0.16rem;
+      }
+      &-content {
+        flex: 1 0;
+      }
+      &-title {
+        margin-bottom: 0.04rem;
+        color: @text-color;
+        font-size: @font-size-base;
+        line-height: 0.22rem;
+        > a {
+          color: @text-color;
+          transition: all @animation-duration-slow;
+          &:hover {
+            color: @primary-color;
+          }
+        }
+      }
+      &-description {
+        color: @text-color-secondary;
+        font-size: @font-size-base;
+        line-height: 0.22rem;
+      }
+    }
+    &-content {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+    }
+    &-content-single {
+      justify-content: flex-start;
+    }
+    &-action {
+      flex: 0 0 auto;
+      margin-left: 0.48rem;
+      padding: 0;
+      font-size: 0;
+      list-style: none;
+      & > li {
+        position: relative;
+        display: inline-block;
+        padding: 0 0.08rem;
+        color: @text-color-secondary;
+        font-size: @font-size-base;
+        line-height: 0.22rem;
+        text-align: center;
+        cursor: pointer;
+      }
+      & > li:first-child {
+        padding-left: 0;
+      }
+      &-split {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 0.01rem;
+        height: 0.14rem;
+        margin-top: -0.07rem;
+        background-color: @border-color-split;
+      }
+    }
+    &-main {
+      display: flex;
+      flex: 1;
+    }
+  }
+
+  &-header,
+  &-footer {
+    padding-top: 0.12rem;
+    padding-bottom: 0.12rem;
+  }
+
+  &-empty {
+    padding: 0.16rem 0;
+    color: @text-color-secondary;
+    font-size: 0.12rem;
+    text-align: center;
+  }
+
+  &-split &-item {
+    border-bottom: 0.01rem solid @border-color-split;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-split &-header {
+    border-bottom: 0.01rem solid @border-color-split;
+  }
+
+  &-loading &-spin-nested-loading {
+    min-height: 0.32rem;
+  }
+
+  &-something-after-last-item &-item:last-child {
+    border-bottom: 0.01rem solid @border-color-split;
+  }
+
+  &-lg &-item {
+    padding-top: 0.16rem;
+    padding-bottom: 0.16rem;
+  }
+
+  &-sm &-item {
+    padding-top: 0.08rem;
+    padding-bottom: 0.08rem;
+  }
+
+  &-vertical &-item {
+    display: block;
+    &-extra-wrap {
+      display: flex;
+    }
+    &-main {
+      display: block;
+      flex: 1;
+    }
+    &-extra {
+      margin-left: 0.58rem;
+    }
+    &-meta {
+      margin-bottom: 0.16rem;
+      &-avatar {
+        display: none;
+      }
+      &-title {
+        margin-bottom: 0.12rem;
+        color: @heading-color;
+        font-size: @font-size-lg;
+        line-height: 0.24rem;
+      }
+    }
+    &-content {
+      display: block;
+      margin-bottom: 0.16rem;
+      color: @text-color;
+      font-size: @font-size-base;
+    }
+    &-action {
+      margin-left: auto;
+      > li {
+        padding: 0 0.16rem;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  &-grid &-item {
+    margin-bottom: 0.2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    &-content {
+      display: block;
+    }
+  }
+}
+
+@import './bordered';
+@import './responsive';

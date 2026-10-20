@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>索赔失焦</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="索赔失焦" stroke="#6D7A80">
+            <path d="M5,0 L5,4 L7.11940767,2.88466735 L9,4 L9,0" id="路径" fill="#A0A8AC"></path>
+            <rect id="矩形" x="1.5" y="0.5" width="11" height="13"></rect>
+            <g id="编组-6" transform="translate(7.000000, 7.000000)" fill="#A0A8AC">
+                <circle id="椭圆形" cx="2.09971828" cy="2.09971828" r="1.59971828"></circle>
+                <line x1="3.4814935" y1="3.48595229" x2="4.419804" y2="4.53461004" id="路径-4"></line>
+            </g>
+            <rect id="矩形" x="3.5" y="6.5" width="3" height="1" rx="0.5"></rect>
+            <rect id="矩形备份-4" x="3.5" y="9.5" width="2" height="1" rx="0.5"></rect>
+            <rect id="矩形" x="0.5" y="0.5" width="13" height="1"></rect>
+        </g>
+    </g>
+</svg>

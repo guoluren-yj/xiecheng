@@ -1,0 +1,366 @@
+.disclaimerSignflex {
+  display: flex;
+  // height: 100%;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #fff;
+
+  .disclaimerSignLeft {
+    width: 204px;
+    padding: 16px 20px 16px 4px;
+    height: auto;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .disclaimerSignRight {
+    flex: 1;
+    padding: 16px 20px;
+    max-width: 100%;
+  }
+
+  .disclaimerSignLefttitle {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+    font-weight: 500;
+    padding: 4px 0 16px;
+  }
+
+  .disclaimerSignNoDsec {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .disclaimerSignList {
+    :global {
+      .ant-btn {
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #d5dae0;
+      }
+    }
+  }
+
+  .disclaimerSignListItem {
+    background: #fafafa;
+    border: 1px dashed rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+    height: 140px;
+    width: 140px;
+    position: relative;
+
+    & > img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
+
+  .disclaimerSignListWrapper {
+    height: 444px;
+    overflow: hidden;
+  }
+
+  .disclaimerSignListSelect {
+    border: 2px dashed #01cbe0;
+  }
+}
+
+.titleConent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .titleConentflex {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #000;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  .tag-pcKindCode {
+    font-size: 12px;
+    color: #f88d10;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 5px;
+    margin-left: 8px;
+    background: rgba(252, 160, 0, 0.1);
+    border-radius: 2px;
+  }
+
+  .tag-pcTypeName {
+    font-size: 12px;
+    color: #47b881;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 5px;
+    margin-left: 8px;
+    background: rgba(71, 184, 129, 0.1);
+    border-radius: 2px;
+  }
+}
+
+.infoConent {
+  margin-top: 4px;
+  display: flex;
+
+  .infoTag {
+    padding-right: 24px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .infoTotal {
+    font-size: 18px;
+    color: #f56349;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .infoTemplate {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+.chooseEditArea {
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    &::before {
+      content: '';
+      height: 14px;
+      display: inline-block;
+      border-left: 3px solid @primary-color;
+      // vertical-align: middle;
+      margin-right: 8px;
+    }
+    .title {
+      display: inline-block;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #333;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .hintWrapper {
+    margin: 10px 0 32px 0;
+
+    .hint {
+      // font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #1984f7;
+      font-weight: 400;
+    }
+  }
+}
+
+.modeHeader {
+  border-top: 1px solid #e5e7ec;
+  .compareSelect {
+    margin: 16px 0;
+  }
+  :global {
+    .c7n-card.ued-detail-card > .c7n-card-body {
+      padding: 0;
+    }
+
+    .c7n-card-head-wrapper {
+      align-items: center;
+    }
+
+    .c7n-card.ued-detail-card > .c7n-card-head {
+      padding-left: 13px;
+      padding-right: 0;
+    }
+
+    .c7n-card-head {
+      border-bottom: none;
+    }
+
+    .c7n-card.ued-detail-card-table > .c7n-card-head:before,
+    .c7n-card.ued-detail-card > .c7n-card-head:before {
+      top: 50%;
+      margin-top: -7px;
+    }
+
+    .c7n-card-extra {
+      float: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+
+  .leftContent {
+    // padding-right: 16px;
+    // border-right: 1px solid #e5e7ec;
+  }
+
+  .rightContent {
+    padding-left: 20px;
+    padding-right: -4px;
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .subTitleWrapper {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 0 5px;
+    background: rgba(71, 184, 129, 0.1);
+    border-radius: 2px;
+
+    .subTitle {
+      font-size: 12px;
+      color: #47b881;
+      text-align: justify;
+      line-height: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .rightHeader.subTitleWrapper {
+    background: rgba(242, 85, 53, 0.1);
+
+    .subTitle {
+      color: #f25535;
+    }
+  }
+
+  .dropdownMenu {
+    .menuTitle {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.editMode {
+  // min-height: calc(100% - 130px);
+  .leftContent {
+    // border-right: 1px solid #e5e7ec;
+    // padding-right: 20px;
+  }
+
+  .rightContent {
+    padding-left: 20px;
+  }
+}
+
+.editMode,
+.compareMode {
+  // height: calc(100% - 130px);
+  height: calc(100vh - 265px);
+}
+
+.compareMode {
+  :global .css-1n5o7vh-diff-container pre {
+    white-space: normal; // 解决字符过长，不换行问题
+    word-break: break-word;
+  }
+}
+
+.modeHeaderMenu {
+  width: 240px;
+  padding: 11px 30px 11px 15px;
+  background: #fff;
+  box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05), 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+
+  .menuItem {
+    margin-top: 14px;
+    font-size: 12px;
+    color: #1d2129;
+    line-height: 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.anchorIcon {
+  position: absolute;
+  display: flex;
+  // right: 16px;
+  right: 0;
+  top: calc(50vh - 136px); // 去除菜单栏和头部导航高度
+  width: 12px;
+  height: 56px;
+  margin-top: -28px;
+  justify-content: center;
+  align-items: center;
+  background: #e5e7ec;
+  border-radius: 25px 0 0 25px;
+  cursor: pointer;
+}
+
+.leftAnchor.anchorIcon {
+  // left: 16px;
+  left: 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.popverCard {
+  width: 250px;
+  height: 134px;
+
+  :global {
+    .c7n-popover-inner-content {
+      padding: 16px 20px 16px 16px;
+      background: #fff;
+      box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12),
+        0 5px 12px 4px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .content {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #000;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .btn {
+    margin-top: 12px;
+    text-align: right;
+  }
+}

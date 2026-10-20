@@ -1,0 +1,122 @@
+// 智能摘要内容样式
+.spcm-smart-contract-wrap {
+  height: 100%;
+  &-generationTime {
+    margin-bottom: 16px;
+    color: #868d9c;
+    font-size: 12px;
+    font-weight: 400;
+    :global {
+      .c7n-pro-form {
+        .c7n-pro-field-label-output label {
+          padding: 0;
+          span {
+            line-height: 1.5;
+          }
+        }
+        .c7n-pro-field-output {
+          padding: 0;
+          .c7n-pro-output-wrapper.c7n-pro-output {
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    height: calc(100% - 34px);
+    :global {
+      .ql-toolbar {
+        background-color: #f8f9fb;
+      }
+    }
+  }
+  .hidden-ql-toolbar {
+    :global {
+      .ql-toolbar.ql-snow {
+        display: none;
+      }
+    }
+  }
+  // loading样式
+  &-svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    opacity: 0.8;
+  }
+  &-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: 80px;
+    z-index: 100;
+    // text-align: center;
+  }
+
+  &-loadingText {
+    font-size: 12px;
+    color: #868d9c;
+    font-weight: 400;
+  }
+}
+// 智能摘要折叠面板样式
+.spcm-smart-abstract-collapse {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  :global {
+    // background: #f4f5f7;
+    .c7n-collapse-item {
+      border: 0;
+      background: #fff;
+      .c7n-collapse-header {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 20px 16px 20px;
+      }
+      .c7n-collapse-content {
+        padding: 0 20px;
+        .c7n-collapse-content-box {
+          padding-top: 0;
+          padding-bottom: 20px;
+          .c7n-pro-rich-text-wrapper {
+            background-color: #f8f9fb;
+            border: 0;
+            .ql-container {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 智能摘要c7n覆盖卡片样式
+.spcm-smart-abstract-c7n-style {
+  margin: 8px 0 8px 0;
+}
+// 智能摘要h0覆盖卡片样式
+.spcm-smart-abstract-h0-style {
+  margin: 0;
+  :global {
+    .c7n-collapse-item {
+      .c7n-collapse-header {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 0;
+      }
+      .c7n-collapse-content {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+/*
+ * 我收到的订单详情样式
+ * @date: 2019-04-22
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.received-send-order-detail {
+  :global {
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+  }
+}
+.headerInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.lastHeaderInfo {
+  :global {
+    padding-left: 16px;
+    .ant-form-item-label {
+      width: 25%;
+      margin-right: -6px;
+      text-align: left;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.ant-table-wrapper {
+  :global {
+    a {
+      color: rgb(16, 142, 233) !important;
+    }
+  }
+}
+
+.ant-modal-wrap {
+  :global {
+    .ant-modal-content {
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}
+
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

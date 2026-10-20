@@ -1,0 +1,84 @@
+.price-model-wrapper {
+  height: 100%;
+  overflow: auto;
+  padding: 0 8px;
+  :global {
+    .card-wrapper {
+      margin-bottom: 8px;
+      background-color: #fff;
+      .card-content {
+        padding: 20px;
+        &-title {
+          margin-bottom: 16px;
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 24px;
+          font-weight: 500;
+        }
+        &-form {
+          width: 75%;
+          max-width: 1172px;
+        }
+      }
+    }
+    .card-wrapper:first-child {
+      margin-top: 8px;
+    }
+    .card-wrapper:last-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  .count-formula {
+    border: 1px solid #e5e7ec;
+
+    .formula-wrapper {
+      display: flex;
+      border-top: 1px solid #e5e7ec;
+      background: #f7f8fa;
+
+      &-left {
+        padding: 14px 16px;
+        width: 15%;
+        border-right: 1px solid #e5e7ec;
+
+        div {
+          margin-bottom: 6px;
+          color: #868d9c;
+          font-size: 14px;
+        }
+
+        .btn-wrapper {
+          height: 151px;
+          overflow: auto;
+
+          &-item {
+            text-align: left;
+            padding: 0;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &-right {
+        padding: 14px 16px;
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        color: #868d9c;
+
+        div {
+          margin-bottom: 8px;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .formula-editor {
+      height: 24px;
+      width: 100%;
+    }
+  }
+}

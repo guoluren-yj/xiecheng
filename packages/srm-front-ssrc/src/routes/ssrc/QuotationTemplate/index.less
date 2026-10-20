@@ -1,0 +1,158 @@
+// 数据列表样式
+.ssrc-bid-list {
+  height: auto;
+  :global {
+    .ant-form-item {
+      display: inline-block;
+      margin-bottom: 0 !important;
+    }
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+    .ant-form-explain {
+      text-align: left;
+      padding: 2px;
+    }
+  }
+}
+.openFlagStyle {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  line-height: 10px;
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+  .openFlagStyle {
+    left: 60%;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1120px) {
+  .openFlagStyle {
+    left: 58%;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1320px) {
+  .openFlagStyle {
+    left: 55%;
+  }
+}
+
+@media (min-width: 1320px) and (max-width: 1520px) {
+  .openFlagStyle {
+    left: 55%;
+  }
+}
+
+@media (min-width: 1520px) and (max-width: 1720px) {
+  .openFlagStyle {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1720px) and (max-width: 1920px) {
+  .openFlagStyle {
+    left: 50%;
+  }
+}
+
+@media (min-width: 1720px) {
+  .openFlagStyle {
+    left: 48%;
+  }
+}
+
+.errorStyle {
+  > div + div > div > span + div {
+    margin-top: 28px;
+  }
+}
+.ellipsis {
+  :global {
+    .ant-form-item-label {
+      padding-right: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+        position: absolute;
+        top: -0.5px;
+        right: 0;
+      }
+    }
+  }
+}
+.item-list-search {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.timeStyle {
+  :global {
+    .ant-form-item-control-wrapper > .ant-form-item-control {
+      line-height: 0 !important;
+    }
+  }
+}
+.headerInfo {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+  }
+}
+.supplier-record {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    .ant-form-item {
+      .ant-form-item-label {
+        text-align: left;
+        line-height: 28px;
+      }
+
+      .ant-form-item-control {
+        line-height: 28px;
+
+        .ant-form-explain {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.configCode-td {
+  position: absolute !important;
+  padding-right: 57px !important;
+  bottom: 8px !important;
+}
+
+.configCode-child-td {
+  position: absolute !important;
+  padding-right: 77px !important;
+  bottom: 8px !important;
+}

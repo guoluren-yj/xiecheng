@@ -1,0 +1,112 @@
+.common-range-price-content {
+  padding: 16px 0;
+  margin-top: 16px;
+  display: flex;
+  :global {
+    .range-price-type {
+      vertical-align: top;
+      display: inline-block;
+      width: 48px;
+      margin: 8px 23px 0 23px;
+      height: 22px;
+      font-size: 12px;
+      text-align: center;
+      color: #999;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .range-price-display {
+      vertical-align: top;
+      width: 490px;
+      display: flex;
+      position: relative;
+      .price-prev {
+        z-index: 48;
+        position: absolute;
+        top: 24px;
+        background: #999;
+        opacity: 0.3;
+        border: 1px solid #eee;
+        &:hover {
+          background: #e9cb85;
+          opacity: 0.3;
+        }
+        i {
+          color: white;
+        }
+      }
+      .price-next {
+        z-index: 48;
+        position: absolute;
+        left: 472px;
+        top: 24px;
+        background: #999;
+        opacity: 0.3;
+        border: 1px solid #eee;
+        &:hover {
+          background: #e9cb85;
+          opacity: 0.3;
+        }
+        i {
+          color: white;
+        }
+      }
+      .swiper-button-disabled {
+        background: #ccc;
+        opacity: 0.3;
+        color: white;
+        border-radius: 2px;
+        &:hover {
+          background: #ccc;
+        }
+      }
+      .swiper-container {
+        border: 1px solid #eee;
+        .swiper-wrapper {
+          width: 490px;
+          height: 75px;
+          margin: 0;
+          .swiper-slide {
+            padding-left: 24px;
+            cursor: pointer;
+            &:hover {
+              .price {
+                color: #d0521e;
+                font-weight: bold;
+              }
+            }
+          }
+          .price-selected {
+            background: #fdf5e9;
+            .price {
+              color: #d0521e;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .price {
+      font-size: 18px;
+      height: 30px;
+      color: rgba(208, 82, 30, 0.7);
+      letter-spacing: 0;
+      font-family: PingFangSC-Regular, sans-serif;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .price-selected {
+      color: #d0521e;
+      font-family: PingFangSC-Semibold, sans-serif;
+    }
+    .number {
+      font-family: MicrosoftYaHei, sans-serif;
+      font-size: 12px;
+      color: #333;
+      letter-spacing: 0;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}

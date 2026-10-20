@@ -1,0 +1,368 @@
+.fixed-form-row {
+  :global {
+    .ant-form-item {
+      margin: 0 0 16px;
+      text-align: left;
+      line-height: 28px;
+      color: #666;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 28px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      label {
+        color: #666 !important;
+      }
+    }
+    //只读上下边距修正
+    .margin-read-row {
+      margin-bottom: 16px;
+    }
+
+    // 编辑状态半行
+    .half-row {
+      display: flex;
+      margin-bottom: 16px;
+
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+
+        & > .ant-form-item-label {
+          width: 25%;
+          margin-right: -6px;
+          float: left;
+          line-height: 28px;
+
+          label {
+            color: #666;
+          }
+        }
+
+        & > .ant-form-item-control-wrapper {
+          width: 75%;
+          float: left;
+          color: #333;
+          line-height: 28px;
+
+          .ant-form-item-control {
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    // 纯展示行
+    .read-row {
+      color: #666;
+
+      div {
+        line-height: 20px;
+      }
+
+      & > div:nth-child(2) {
+        color: #333;
+        float: left;
+      }
+
+      & > div:first-child {
+        float: left;
+
+        &::after {
+          content: ':';
+          margin: 0 8px 0 2px;
+          position: relative;
+          top: -0.5px;
+        }
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      text-align: left;
+      line-height: 28px;
+      color: #333;
+
+      & > .ant-form-item-control {
+        line-height: 28px;
+      }
+    }
+  }
+}
+.fix-col-8-item {
+  margin-left: 16px !important;
+
+  :global {
+    .ant-form-item-control-wrapper::after {
+      content: '';
+      display: none;
+    }
+  }
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
+.btn-icon + span {
+  margin-left: 8px;
+}
+
+.headerInfo {
+  :global {
+    .ant-form-item {
+      .ant-form-item-label {
+        text-align: left;
+        line-height: 28px;
+      }
+
+      .ant-form-item-control {
+        line-height: 28px;
+
+        .ant-form-explain {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.radius-button-group {
+  .radius-button-item {
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    color: #666;
+    padding: 6px 10px;
+
+    &:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.detail-standard {
+  .exclude-content-card {
+    width: calc(100% - 32px);
+    margin: -8px 16px 0;
+    padding: 32px 24px;
+    background: #fff;
+
+    &.p-t-n {
+      padding-top: 0;
+    }
+  }
+
+  .collapse-title {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+
+  :global {
+    .ant-form-item-label {
+      line-height: 28px;
+    }
+
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+
+  .m-r-m {
+    margin-right: 10px;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .p-n {
+    padding: 0 !important;
+  }
+}
+
+// 页面样式自定义，ued
+.page-content-custom {
+  @defaultDistance: 8px;
+  min-height: 280px;
+  padding: 24px;
+
+  &.form-collapse-include {
+    min-height: auto;
+  }
+
+  &.default-margin-bottom {
+    margin-bottom: @defaultDistance;
+  }
+
+  &.zero-margin-bottom {
+    margin-bottom: 0;
+  }
+
+  :global {
+    margin-bottom: 8px;
+
+    .ant-tabs-content {
+      padding: 0 8px;
+    }
+
+    .ant-form.writable-row-custom {
+      & .ant-row.ant-form-item {
+        & > .ant-form-item-label {
+          text-align: left;
+          line-height: 28px;
+
+          label {
+            color: #666;
+          }
+        }
+
+        & .ant-form-item-control-wrapper {
+          color: #333;
+          line-height: 28px;
+
+          .ant-form-item-control {
+            line-height: 28px;
+
+            &.has-error {
+              .ant-form-explain {
+                margin-top: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ant-form.read-row-custom {
+      & .ant-row.ant-form-item {
+        margin-bottom: 16px;
+
+        .ant-form-item-label {
+          text-align: left;
+          height: 20px;
+          line-height: 20px;
+        }
+
+        & > .ant-form-item-control-wrapper {
+          color: #333;
+          line-height: 20px !important;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+          & > .ant-form-item-control {
+            line-height: 20px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+
+      & > .ant-row.read-row {
+        margin-bottom: 16px;
+      }
+    }
+
+    .ant-collapse {
+      .ant-collapse-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .ssrc-text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.m-r-m {
+  margin-right: 16px;
+}
+
+.display-none {
+  display: none;
+}
+
+.p-n {
+  padding: 0;
+}
+
+.m-n {
+  margin: 0;
+}
+
+// 公告
+.accept-notice {
+  padding: 48px 20px;
+  .notice-title {
+    color: #333;
+    text-align: center;
+    font-size: 20px;
+    .notice-time {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+  .notice-item-wrap {
+    margin-top: 32px;
+    .notice-item-title {
+      color: #333;
+      padding-left: 13px;
+      font-size: 16px;
+      line-height: 16px;
+      border-left: solid 3px #29bece;
+    }
+    .notice-item {
+      margin: 25px 16px 8px;
+      .notice-attachment {
+        font-size: 14px;
+      }
+      :global {
+        .ant-form-item-label {
+          text-align: left;
+          line-height: 14px;
+          label {
+            color: #666;
+          }
+        }
+        .ant-form-item-control {
+          line-height: 14px;
+        }
+        .ant-form-item {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .purchase-demand {
+      margin: 24px 16px;
+      .section-title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #333;
+      }
+    }
+    .other-item {
+      color: #333;
+      font-size: 16px;
+      margin: 24px 16px;
+      line-height: 24px;
+    }
+  }
+  :global {
+    .ant-divider-horizontal {
+      margin: 14px 0 0;
+    }
+  }
+}

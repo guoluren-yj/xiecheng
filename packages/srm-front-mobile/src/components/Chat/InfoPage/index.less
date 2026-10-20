@@ -1,0 +1,37 @@
+.info-page {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+
+  .info-inner {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #180a30;
+
+    :global {
+      span {
+        font-weight: bold;
+        letter-spacing: 0;
+      }
+      span:first-child {
+        color: #1d3255;
+        font-size: 26px;
+        margin: 25px;
+      }
+      span:last-child {
+        color: #5f6d84;
+        font-size: 14px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

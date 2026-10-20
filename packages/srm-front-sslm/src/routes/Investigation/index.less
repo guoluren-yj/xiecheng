@@ -1,0 +1,51 @@
+.table {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+.filter-form {
+  height: auto;
+}
+.filter-form-fields {
+  width: 75%;
+  margin: 0;
+  display: inline-table;
+
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+  }
+}
+.filter-form-option {
+  width: 20%;
+  margin-left: 2%;
+  display: inline-table;
+}
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10px 15px 10px;
+  .one-line {
+    flex: 0 0 100%;
+  }
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px dashed #dcdcdc;
+    & > :first-child {
+      width: 100px;
+      color: #aaa;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}

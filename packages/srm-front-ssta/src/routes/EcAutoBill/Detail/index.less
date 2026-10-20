@@ -1,0 +1,66 @@
+@import '~hzero-front/lib/srm-variables';
+.ssta-ecauto-content {
+  .ssta-ecauto-tables {
+    display: flex;
+    gap: 16px;
+    max-height: 430px;
+    overflow-y: auto;
+    &-item {
+      flex: auto;
+      position: relative;
+      width: calc((100% - 32px) / 3);
+    }
+    &-arrow {
+      width: 48px;
+      height: 26px;
+      position: absolute;
+      left: -31px;
+      top: -5px;
+      z-index: 10;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.ssta-ecauto-cell-red {
+  color: red !important;
+  &:hover {
+    color: red !important;
+  }
+}
+.ssta-ecauto-cell-green {
+  color: green !important;
+  &:hover {
+    color: green !important;
+  }
+}
+.ssta-autobill-multi-text-filter {
+  :global {
+    .c7n-pro-input-prefix {
+      .icon {
+        font-size: 14px !important;
+      }
+    }
+    .c7n-pro-input-placeholder-inner {
+      font-size: 13px !important;
+    }
+  }
+}
+
+.ssta-ecauto-price-line {
+  :global {
+    .ssta-ecauto-mark-style {
+      color: @red-6;
+      font-weight: bold !important;
+      margin-left: 5px !important;
+      font-size: 15px !important;
+      vertical-align: middle !important;
+    }
+  }
+}
+
+.ssta-ecauto-price-warn {
+  color: @red-6;
+  font-weight: bold;
+  margin-left: 2px;
+}

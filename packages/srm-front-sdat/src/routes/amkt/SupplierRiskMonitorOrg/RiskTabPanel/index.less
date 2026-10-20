@@ -1,0 +1,28 @@
+.canvas-box {
+  :global {
+    height: calc(50vh - 89.5px - 40px - 22px);
+    width: calc(50vw - 134px);
+  }
+}
+
+.no-data-result {
+  color: #9d9d9d;
+  height: calc(50vh - 89.5px - 40px - 22px);
+  width: calc(50vw - 134px);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  .no-data-icon {
+    font-size: 0.6rem;
+    margin: -36px 0 -64px 0;
+    background: url('@/assets/no_search_result.svg') no-repeat center;
+    width: 50px;
+    height: 50px;
+  }
+  span {
+    color: #9d9d9d;
+    font-size: 14px;
+  }
+}

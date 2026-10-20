@@ -1,0 +1,62 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+@import '~hzero-front/lib/srm-variables.less';
+
+.record-text {
+  display: inline-block;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+// 操作记录
+.operate-action {
+  display: flex;
+  align-items: center;
+  :global {
+    .operate-wrapper {
+      display: flex;
+      align-items: center;
+      // color: #000;
+    }
+
+    .operate-name,
+    .operate-text {
+      font-weight: 500;
+      display: flex;
+      color: @text-1;
+      .record-text {
+        .record-text;
+      }
+    }
+    .operate-action {
+      margin: 0 8px;
+      color: @text-2;
+    }
+    .operate-result {
+      color: @text-2;
+      display: flex;
+      .record-text {
+        .record-text;
+      }
+    }
+    .operate-text-result-prefix {
+      color: @text-2;
+    }
+    .operate-text-result-more {
+      .record-text;
+    }
+  }
+}
+
+.color-green {
+  color: @green-6 !important;
+}
+
+.color-red {
+  color: @red-6 !important;
+}
+.pointer {
+  cursor: pointer;
+}

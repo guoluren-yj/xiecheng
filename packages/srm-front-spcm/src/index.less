@@ -1,0 +1,55 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+.header-link {
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.editor-online-mount-wps {
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+:global {
+  .hzero-leaf-menu-item {
+    line-height: 20px !important;
+  }
+
+  .hzero-sub-menu-item-content {
+    height: 40px !important;
+  }
+
+  .hzero-leaf-menu-item-wrap-line {
+    margin: 9.5px !important;
+  }
+
+  // 修复c7n 弹框样式
+  .c7n-pro-modal-container .c7n-pro-table-content {
+    border-right: 1px solid #e8e8e8;
+  }
+}
+
+.empty-wrapper {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #000;
+}
+
+.row-agent-column-icon {
+  font-size: 12px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+  &:hover {
+    cursor: pointer;
+  }
+}

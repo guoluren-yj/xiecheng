@@ -1,0 +1,1532 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/date-picker/demo/basic.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select month
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select week
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/date-render.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/disabled.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input c7n-input-disabled"
+              disabled=""
+              readonly=""
+              type="text"
+              value="2015-06-06"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input c7n-input-disabled"
+              disabled=""
+              readonly=""
+              type="text"
+              value="2015-06"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    tabindex="-1"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-disabled c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input c7n-input-disabled"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          disabled=""
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value="2015-06-06"
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          disabled=""
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value="2015-06-06"
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/disabled-date.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select month
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    style="width:350px"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/extra-footer.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+    style="width:350px"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select month
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/format.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value="2015/01/01"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <button
+                class="c7n-btn c7n-calendar-picker-clear c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+                type="button"
+              >
+                <i
+                  class="icon icon-close"
+                />
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </button>
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value="2015/01"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <button
+                class="c7n-btn c7n-calendar-picker-clear c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+                type="button"
+              >
+                <i
+                  class="icon icon-close"
+                />
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </button>
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value="2015/01/01"
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value="2015/01/01"
+        />
+        <button
+          class="c7n-btn c7n-calendar-picker-clear c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+          type="button"
+        >
+          <i
+            class="icon icon-close"
+          />
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </button>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/mode.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start month"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End month"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/presetted-ranges.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    style="width:350px"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/size.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-radio-group-wrapper"
+  >
+    <div
+      class="c7n-radio-group"
+    >
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="large"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Large
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+      >
+        <span
+          class="c7n-radio-button c7n-radio-button-checked"
+        >
+          <input
+            checked=""
+            class="c7n-radio-button-input"
+            type="radio"
+            value="default"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Default
+        </span>
+      </label>
+      <label
+        class="c7n-radio-button-wrapper"
+      >
+        <span
+          class="c7n-radio-button"
+        >
+          <input
+            class="c7n-radio-button-input"
+            type="radio"
+            value="small"
+          />
+          <span
+            class="c7n-radio-button-inner"
+          />
+        </span>
+        <span>
+          Small
+        </span>
+      </label>
+    </div>
+  </div>
+  <br />
+  <br />
+  <span
+    class="c7n-calendar-picker c7n-calendar-picker-default"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select date
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker c7n-calendar-picker-default"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select Month
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker c7n-calendar-picker-default"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End date"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker c7n-calendar-picker-default"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select Week
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/start-end.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Start
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                End
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/date-picker/demo/time.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-calendar-picker"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-calendar-picker-input c7n-input"
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select Time
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <span
+              class="c7n-calendar-picker-icon-wrapper"
+            >
+              <i
+                class="icon icon-date_range c7n-calendar-picker-icon"
+              />
+            </span>
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <br />
+  <span
+    class="c7n-calendar-picker"
+    style="width:350px"
+    tabindex="0"
+  >
+    <span
+      class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+    >
+      <span
+        class="c7n-calendar-picker-input c7n-input"
+      >
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="Start Time"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-calendar-range-picker-separator"
+        >
+           ~ 
+        </span>
+        <input
+          class="c7n-calendar-range-picker-input"
+          placeholder="End Time"
+          readonly=""
+          tabindex="-1"
+          value=""
+        />
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-date_range c7n-calendar-picker-icon"
+          />
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+`;

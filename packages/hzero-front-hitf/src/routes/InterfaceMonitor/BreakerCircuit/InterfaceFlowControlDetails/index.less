@@ -1,0 +1,92 @@
+.contentStyle {
+  :global {
+    .c7n-card {
+      margin-bottom: 8px;
+    }
+    .subTitleTag {
+      margin-left: 10px;
+      margin-bottom: 20px;
+
+      .subTitleTag_title {
+        font-weight: 600;
+      }
+      .subTitleTag_title::before {
+        content: '|';
+        background: #36c2cf;
+        color: #36c2cf;
+        margin-right: 8px;
+      }
+    }
+    .titleTag {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+
+      .titleTagMessage {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        margin: 8px 0;
+      }
+
+      .titleTagRight {
+        float: right;
+        // display: inline-block;
+        .titleButton {
+          height: 25px;
+          font-size: 12px;
+        }
+      }
+    }
+    .titleTag::before {
+      content: '|';
+      background: #36c2cf;
+      color: #36c2cf;
+      margin-right: 8px;
+    }
+    .buttonTag {
+      .c7n-pro-btn {
+        float: right;
+        margin-left: 10px;
+      }
+      height: 28px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.tentRestrictionRight {
+  margin-top: 22px;
+  height: calc(100vh - 230px);
+  margin-left: -16px;
+  :global {
+    .tentRestrictionRight_left {
+      width: 200px;
+      height: 100%;
+      overflow-y: auto;
+      float: left;
+      .c7n-menu-item {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menuText {
+          display: inline-block;
+          width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .tenantRestrictionRight_lov {
+      border: none;
+      background-color: white;
+      color: #29becd;
+      display: inline-block;
+    }
+    .tenantRestrictionRight_right {
+      margin-left: 200px;
+      display: flow-root;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.portal-purchase-container :global {
+  width: 3.9rem;
+  height: 2.4rem;
+  background-color: #fff;
+  padding: 0.16rem;
+  border: 0.0084rem solid #ebebeb;
+  overflow: hidden;
+
+  .purchase-header {
+    box-sizing: border-box;
+    font-size: 0.12rem;
+    display: flex;
+    align-items: center;
+    line-height: 0.18rem;
+    margin-bottom: 0.16rem;
+    position: relative;
+
+    > .icon {
+      font-size: 0.14rem;
+      color: rgba(0, 0, 0, 0.8);
+      margin-right: 0.05rem;
+    }
+
+    .purchase-more-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 0.12rem;
+      font-weight: 500;
+    }
+
+    > div {
+      font-weight: 600;
+      font-size: 0.14rem;
+    }
+  }
+
+  .purchase-collapse-container {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .purchase-collapse-parent {
+    & > .c7n-collapse-item {
+      .c7n-collapse > .c7n-collapse-item {
+        border-bottom: none;
+
+        .purchase-name {
+          color: @text-color-secondary;
+          cursor: default;
+        }
+
+        .purchase-name:hover {
+          color: @primary-color;
+        }
+      }
+    }
+
+    .c7n-collapse-header {
+      padding: 0.05rem 0.12rem;
+      font-size: 0.14rem;
+      font-weight: 500;
+
+      .icon-navigate_next {
+        transform: translateY(-2px);
+      }
+    }
+
+    .c7n-collapse-item-active > .c7n-collapse-header {
+      color: @primary-color;
+
+      .icon-navigate_next {
+        transform: translateY(-2px) rotateZ(90deg);
+      }
+    }
+  }
+
+  .purchase-wrapper.purchase-empty {
+    height: calc(100% - 0.34rem);
+    width: calc(100% + 0.32rem);
+    margin-left: -0.16rem;
+    margin-top: -0.08rem;
+    overflow: auto;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+      max-height: calc(100% - 18px);
+      max-width: 200px;
+    }
+  }
+
+  .source-empty-text {
+    font-size: 12px;
+    color: #868d9c;
+    font-weight: 400;
+    text-align: center;
+  }
+}

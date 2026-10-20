@@ -1,0 +1,53 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.sort-item {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  .sort-item-checkbox {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid @fill-4;
+    display: inline-block;
+    text-align: center;
+    line-height: 12px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .sort-item-checkbox-defalut {
+    color: transparent !important;
+  }
+  .sort-item-checkbox:hover {
+    border-color: @primary-color;
+  }
+  .sort-item-checkbox-active {
+    color: #fff !important;
+    background-color: @primary-color;
+    border-color: transparent;
+    font-weight: 500;
+  }
+  span {
+    color: @text-1;
+  }
+}
+.sort-item:not(:last-child) {
+  margin-right: 24px;
+}
+.sort-wrap {
+  display: flex;
+}
+.first-tip {
+  margin: 0;
+  color: @text-2;
+  line-height: 18px;
+}
+.second-tip {
+  color: @text-3;
+  line-height: 18px;
+  margin: 16px 0 4px 0;
+}
+.elem-value {
+  color: @text-1;
+  margin-bottom: 0;
+}

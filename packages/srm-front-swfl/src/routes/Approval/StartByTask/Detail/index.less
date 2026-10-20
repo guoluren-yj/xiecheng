@@ -1,0 +1,163 @@
+/*!
+    index - 我参与的流程页面
+    @date 2018-8-31
+    @author LZY <zhuyan.luo@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.header-form {
+  :global {
+    .ant-input-number {
+      width: 100%;
+    }
+    .ant-col-8 {
+      height: 48px;
+    }
+  }
+}
+
+.content {
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+  .content-body {
+    padding: 20px;
+    height: auto;
+  }
+  :global {
+    .c7n-tabs {
+      .c7n-tabs-bar {
+        margin-bottom: 0;
+      }
+      .c7n-tabs-tab {
+        padding-top: 0.12rem;
+      }
+      .c7n-tabs-nav .c7n-tabs-tab-active {
+        // color: @primary-color;
+        font-weight: 600;
+      }
+      .c7n-tabs-content > .c7n-tabs-tabpane {
+        padding: 0 0 0 0.12rem;
+      }
+      .c7n-tabs-content > .c7n-tabs-tabpane:first-child {
+        padding: 0;
+      }
+    }
+  }
+  .approve-merge-title {
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    &::before {
+      content: '';
+      width: 3px;
+      height: 14px;
+      background: #29bece;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .graph-link {
+      margin-left: 16px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      > i {
+        margin-right: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.content-table {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  width: 100%;
+  color: #333;
+  td {
+    padding: 8px;
+    border: 1px solid #e8e8e8;
+  }
+}
+.td-title {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  font-weight: bold;
+  width: '20%';
+}
+.label-col {
+  font-weight: bold;
+  font-size: 14px;
+  border-left: 3px solid @primary-color;
+  text-indent: 8px;
+  display: inline-block;
+  line-height: 14px;
+  margin-bottom: 12px;
+}
+
+//详情页锚点样式
+.anchor-point {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  .anchor-point-left {
+    display: inline-block;
+    width: 32px;
+    height: 160px;
+    float: left;
+    padding: 42px 0;
+    margin-right: -16px;
+
+    .anchor-point-icon {
+      width: 32px;
+      height: 60px;
+      line-height: 60px;
+      z-index: 1000;
+      // background: #e0e0e0;
+      // border-radius: 35%;
+      cursor: pointer;
+    }
+  }
+
+  .anchor-point-content {
+    display: inline-block;
+    width: 156px;
+    height: 160px;
+    background: #fff;
+    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.12);
+    padding: 16px;
+
+    :global {
+      .c7n-timeline-item-tail {
+        top: 0;
+        height: 130%;
+      }
+      .c7n-timeline-item-head-blue {
+        display: none;
+      }
+    }
+    .anchor-point-selected {
+      :global {
+        .c7n-timeline-item-head-blue {
+          display: block;
+        }
+        .c7n-timeline-item-content {
+          color: #29bece;
+        }
+      }
+    }
+  }
+}
+
+.workflow-graph-modal {
+  :global {
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}

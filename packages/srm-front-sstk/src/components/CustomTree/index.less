@@ -1,0 +1,59 @@
+@import '~hzero-front/lib/srm-variables.less';
+.custom-tree-container {
+  :global {
+    .custom-tree-form {
+      width: 100%;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      .c7n-pro-input-prefix,
+      .c7n-pro-input-suffix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+      }
+
+      .c7n-pro-input-suffix {
+        width: auto;
+        min-width: 0.24rem;
+        padding-right: 4px;
+      }
+
+      .custom-tree-arrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          font-size: 16px;
+        }
+        .has-pointer {
+          cursor: pointer;
+          &:focus {
+            background: #eee;
+          }
+        }
+        .arrow-disible {
+          color: #eee;
+        }
+      }
+    }
+    .custom-tree-check-all {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      .c7n-pro-checkbox-label {
+        padding-left: 12px;
+      }
+    }
+    .c7n-tree-list {
+      .c7n-tree-list-holder {
+        height: calc(100vh - 1.68rem - 56px);
+        overflow-y: auto;
+      }
+    }
+  }
+}
+.primary-color {
+  color: @primary-color;
+}

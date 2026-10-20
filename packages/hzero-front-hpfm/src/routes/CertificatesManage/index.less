@@ -1,0 +1,79 @@
+.content {
+  height: calc(100% - 48px);
+  overflow: auto !important;
+  flex-grow: 1;
+}
+.card {
+  margin: 8px 16px;
+  padding: 16px;
+  background-color: #fff;
+}
+.card-title {
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.edit-form {
+  margin: 16px 0 0 !important;
+  :global {
+    label.c7n-pro-field-label-vertical {
+      line-height: 1;
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-output {
+      max-height: 122px;
+      overflow: auto;
+    }
+  }
+}
+.edit-form-btn {
+  margin-top: 8px;
+  width: 50%;
+  display: flex;
+}
+.card-label-item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 32px;
+  margin-left: 100px;
+  flex: 1;
+  text-align: right;
+}
+.display-form {
+  margin-top: 16px;
+  :global {
+    .c7n-tag {
+      border-color: transparent;
+    }
+  }
+}
+.orange-tips {
+  background: rgba(242, 128, 26, 0.1);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #f06200;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  i {
+    margin-right: 10px;
+  }
+}
+.red-tips {
+  background: rgba(242, 85, 53, 0.1);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #e64322;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  i {
+    margin-right: 10px;
+  }
+}

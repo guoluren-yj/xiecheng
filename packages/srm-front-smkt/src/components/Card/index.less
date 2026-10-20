@@ -1,0 +1,35 @@
+.card-container {
+  :global {
+    .card-header {
+      height: 22px;
+      font-size: 14px;
+      color: rgba(0, 0, 0);
+      line-height: 22px;
+      font-weight: 600;
+      position: relative;
+      padding: 0 8px;
+      &::before {
+        content: '';
+        width: 3px;
+        height: 14px;
+        background: #29bece;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+      .card-header-dot {
+        width: 5px;
+        height: 5px;
+        background-color: #f56349;
+        border-radius: 50%;
+        margin-left: 6px;
+        margin-bottom: 3px;
+        display: inline-block;
+      }
+    }
+    .card-body {
+      padding-top: 16px;
+    }
+  }
+}

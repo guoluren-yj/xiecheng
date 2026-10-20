@@ -1,0 +1,50 @@
+@import '~hzero-front/lib/srm-variables';
+
+.version-wrapper {
+  max-height: 600px;
+  overflow: auto;
+  padding: 4px 0;
+  .version-item {
+    .version-item-wrapper {
+      padding: 8px 15px;
+      cursor: pointer;
+      &:hover {
+        .version-number {
+          color: @primary-color;
+        }
+      }
+      .version-item-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        :global {
+          .c7n-pro-output {
+            line-height: 18px;
+            background-color: transparent;
+          }
+        }
+        .version-item-extra {
+          display: flex;
+          gap: 4px;
+          color: @text-3;
+          span {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty-operation-wrapper,
+.empty-approval-wrapper {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.empty-version-wrapper {
+  padding: 8px 15px;
+  color: @text-3;
+}

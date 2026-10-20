@@ -1,0 +1,33 @@
+.triangle-up-validateResult {
+  position: relative;
+  margin-top: 5px;
+
+  .triangle {
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  .triangle:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 11px solid transparent;
+    bottom: 2px;
+    margin-bottom: -5px;
+    border-top-width: 0;
+    border-bottom-width: 22px;
+    border-bottom-color: rgba(255, 177, 0, 0.12);
+  }
+
+  .validateFailCount {
+    position: absolute;
+    left: 7.5px;
+    bottom: -1px;
+    color: rgb(255, 177, 0);
+  }
+}

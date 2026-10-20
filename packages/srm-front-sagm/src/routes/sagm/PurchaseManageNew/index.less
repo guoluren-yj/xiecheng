@@ -1,0 +1,53 @@
+@import '~hzero-front/lib/srm-variables.less';
+.purchase-setting-page-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.purchase-setting-wrap {
+  text-align: center;
+  width: 90%;
+  .purchase-setting-title {
+    color: @text-1;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .purchase-setting-title-info {
+    font-size: 16px;
+    color: @text-2;
+  }
+  .purchase-setting-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+  }
+}
+.purchase-setting-confirm-modal {
+  .title {
+    color: @text-1;
+    margin-bottom: 16px;
+  }
+}
+.setting-preview-img {
+  width: auto;
+  // height: 580px;
+  max-height: calc(100vh - 170px);
+}
+
+.purchase-manage-table {
+  // 展开图标左对齐
+  :global {
+    .c7n-pro-table-thead .c7n-pro-table-cell[data-index='enabledFlag'] .c7n-pro-table-cell-inner {
+      padding-left: 20px;
+    }
+    table .c7n-pro-table-tbody .c7n-pro-table-row td[data-index='enabledFlag'] {
+      padding-left: 0 !important;
+      .c7n-pro-table-cell-prefix {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}

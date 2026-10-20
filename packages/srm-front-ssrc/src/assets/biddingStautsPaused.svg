@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 131</title>
+    <defs>
+        <linearGradient x1="1.18655086e-13%" y1="-1.60288449e-13%" x2="98.6888112%" y2="98.6888112%" id="linearGradient-1">
+            <stop stop-color="#FF9E5B" offset="0%"></stop>
+            <stop stop-color="#F06200" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="56" height="56"></rect>
+        <linearGradient x1="86.1627894%" y1="18.9261729%" x2="24.4868939%" y2="74.7067402%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.12" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.08" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="66.4737019%" y1="34.3861234%" x2="13.925863%" y2="83.5692043%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.12" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="【供】竞价大厅3.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标补全" transform="translate(-108.000000, -433.000000)">
+            <g id="编组-131" transform="translate(108.000000, 433.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="矩形" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <circle id="椭圆形" fill="url(#linearGradient-4)" mask="url(#mask-3)" cx="14" cy="42" r="28"></circle>
+                <circle id="椭圆形备份-4" fill="url(#linearGradient-5)" mask="url(#mask-3)" cx="51.3333333" cy="4.66666667" r="14"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

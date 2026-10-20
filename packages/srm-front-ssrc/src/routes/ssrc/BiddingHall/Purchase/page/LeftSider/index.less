@@ -1,0 +1,173 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '../../pur-common.less';
+
+// 供应商列表样式
+.pur-left-sider-bottom-virtual {
+  &-header {
+    // 标题
+    padding: 0.2rem 0.2rem 0.16rem;
+    margin-bottom: 0;
+    font-family: PingFangSC-Medium, sans-serif;
+    font-size: 0.16rem;
+    color: #1d2129;
+    font-weight: 600;
+    span {
+      font-size: 0.12rem;
+      color: #4e5769;
+      font-weight: 400;
+      padding-left: 0.08rem;
+    }
+  }
+  .ReactVirtualized__Grid__innerScrollContainer,
+  .ReactVirtualized__Grid {
+    &:focus-visible {
+      outline: none !important;
+    }
+  }
+
+  .flex();
+  flex-direction: column;
+  &-list {
+    flex: 1;
+    padding-bottom: 0.2rem;
+    &-item {
+      padding: 0.08rem 0.2rem;
+      margin-bottom: 0.08rem;
+      width: 100%;
+      // cursor: pointer;
+      &-supplier {
+        .flexCenter();
+        &-info {
+          width: calc(100% - 0.18rem);
+          .flexCenter();
+          flex: 1;
+          -webkit-box-flex: 1;
+          & > span:not(:first-child) {
+            margin-right: 0.04rem;
+          }
+          & > img {
+            margin-right: 0.04rem;
+          }
+        }
+        img {
+          width: 0.16rem;
+          height: 0.16rem;
+        }
+      }
+      &-supplier-name {
+        font-family: PingFangSC-Semibold, sans-serif;
+        font-size: 0.12rem;
+        color: #1d2129;
+        line-height: 0.18rem;
+        font-weight: 600;
+        margin-right: 0.04rem;
+        display: inline-block;
+        flex-shrink: 1;
+        .ellipsis();
+      }
+      &-online,
+      &-offline {
+        display: inline-block;
+        height: 0.16rem;
+        border-radius: 0.02rem;
+        font-family: PingFangSC-Medium, sans-serif;
+        font-size: 0.12rem;
+        text-align: justify;
+        line-height: 0.16rem;
+        font-weight: 600;
+        transform: scale(0.83);
+        padding: 0 2px;
+      }
+      &-online {
+        background-color: rgba(71, 184, 131, 0.15);
+        color: #179454;
+      }
+      &-offline {
+        background-color: #e5e7ec;
+        color: #4e5769;
+      }
+      // 联系方式
+      &-contact {
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 0.12rem;
+        color: #868d9c;
+        font-weight: 400;
+        margin-top: 0.04rem;
+        .ellipsis();
+        & > span {
+          margin-right: 0.08rem;
+        }
+      }
+    }
+    &-item:hover {
+      // hover背景
+      background-color: #f7f8fa;
+    }
+    // 供应商列表为空，图片占位
+    .list-empty-supplier-occupied {
+      .centeredHorizontallyAndVertically();
+      text-align: center;
+      &-text {
+        color: @text-2;
+        margin-top: 0.08rem;
+        font-size: 0.12rem;
+      }
+    }
+    // 总价竞价物料列表 -------- 开始 ---------
+    .pur-left-sider-bottom-virtual-list-item-total-price {
+      .item-first-row {
+        .item-name {
+          .flexCenter();
+          max-width: calc(100% - 0.9rem);
+        }
+        .item-name-svg {
+          margin-right: 0.08rem;
+        }
+        .item-name-text {
+          font-family: PingFangSC-Semibold, sans-serif;
+          font-size: 0.12rem;
+          color: #1d2129;
+          line-height: 0.18rem;
+          font-weight: 600;
+          .ellipsis();
+        }
+        .item-quantity {
+          .flexCenter();
+          max-width: 0.8rem;
+        }
+        .item-quantity-icon {
+          width: 0.16rem;
+          height: 0.16rem;
+          margin-right: 0.08rem;
+          color: @fill-3;
+        }
+        .item-quantity-text {
+          font-family: PingFangSC-Semibold, sans-serif;
+          font-size: 0.12rem;
+          color: #4e5769;
+          font-weight: 600;
+          .ellipsis();
+        }
+      }
+      .item-second-row {
+        margin-top: 0.05rem;
+        .item-specs-text {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 0.12rem;
+          color: #868d9c;
+          font-weight: 400;
+          .ellipsis();
+        }
+      }
+      :global {
+        .c7n-row-flex {
+          margin-left: 0 !important;
+          & > div {
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+    // 总价竞价物料列表 -------- 结束 ---------
+  }
+}

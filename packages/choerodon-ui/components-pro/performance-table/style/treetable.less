@@ -1,0 +1,22 @@
+//treeTable
+
+&-table-cell-expanded &-table-cell-expand-icon {
+  transform: rotate(90deg);
+  &::after {
+    content: "\E969";
+  }
+}
+
+&-table-cell-expand-icon {
+  cursor: pointer;
+  outline: none;
+  &::after {
+    content: "\E969";
+  }
+}
+
+&-table-cell-expand-wrapper {
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}

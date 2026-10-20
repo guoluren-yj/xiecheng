@@ -1,0 +1,178 @@
+.tip {
+  margin-left: 4px;
+  margin-right: 4px;
+  color: red;
+}
+
+.pageWrap {
+  margin-bottom: 16px;
+}
+.pageTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.wrap {
+  margin-bottom: 8;
+  padding: 20;
+  overflow: auto;
+}
+
+.pageWrapperOne {
+  background-color: #fff;
+  padding: 16px;
+  margin: 8px 16px 8px 16px;
+}
+.pageWrapperTwo {
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 16px 8px 16px;
+}
+.pageWrapperThree {
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 16px 10px 16px;
+}
+
+.pageContent {
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.attachment {
+  margin-top: 0;
+  margin-bottom: 8;
+  padding: 20;
+}
+
+.footer-form {
+  :global {
+    display: flex;
+    width: 100%;
+    .c7n-pro-field-label {
+      height: 0;
+      padding: 0;
+    }
+    .c7n-pro-form-wrapper {
+      table {
+        tr {
+          td {
+            max-height: 10%;
+            overflow-y: auto;
+            .c7n-pro-field-wrapper {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.logistics-title {
+  font-size: 14px;
+  position: relative;
+  padding: 0 16px 16px;
+  &::before {
+    content: '';
+    width: 3px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    background: #29bece;
+  }
+}
+.logistics-basic {
+  padding: 0 16px;
+  .ant-form-item-label {
+    text-align: left;
+  }
+}
+
+.rule-definition {
+  :global {
+    background: #f5f5f5;
+    padding: 16px;
+    flex: 1 1;
+    overflow: hidden;
+
+    .rule-definition-content {
+      height: 100%;
+      display: flex;
+      flex: 1 1;
+      .rule-definition-info {
+        display: flex;
+        padding: 0 20px;
+        background-color: #fff;
+        flex: 1 1;
+        flex-direction: column;
+        margin-left: 10px;
+        overflow: hidden;
+        max-height: 773px;
+        margin-bottom: 4px;
+        box-shadow: 0 0.6px 1.6px -2px rgba(0, 0, 0, 0.133), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.11);
+      }
+
+      .collapse-box {
+        :global {
+          .collapse-box-wrapper {
+            position: relative;
+            height: 100%;
+
+            .collapse-box-content {
+              display: flex;
+              flex-direction: column;
+              overflow: hidden;
+              margin-bottom: 4px;
+              box-shadow: 0 0.6px 1.6px 0 rgba(0, 0, 0, 0.133), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.11);
+              height: 100%;
+              background-color: #fff;
+              transition: width 1s ease-in-out;
+
+              .ant-tree {
+                overflow: auto;
+              }
+            }
+            .collapse-box-hide {
+              width: 0;
+            }
+            .collapse-box-show {
+              width: 270px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 新修改样式
+.rule-search-tree {
+  width: 440px;
+  float: left;
+}
+.rule-search-table {
+  width: calc(100% - 440px);
+  float: left;
+  // 设置左边框
+  border-width: 0 0 0 1px;
+  border-color: #e5e7ec;
+  border-style: solid;
+  border-radius: 1px;
+}
+
+.tabs-btm {
+  padding: 16px 16px 0 16px;
+  :global {
+    .c7n-tabs-bar {
+      margin: 0 !important;
+    }
+  }
+}

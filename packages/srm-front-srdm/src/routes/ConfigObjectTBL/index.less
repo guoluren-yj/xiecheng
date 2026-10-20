@@ -1,0 +1,27 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+:global {
+  .modal-form-title {
+    font-size: 0.14rem;
+    line-height: 0.22rem;
+    font-weight: 600;
+    padding-left: 0.1rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0.03rem;
+      height: 0.12rem;
+      background: @primary-color;
+      left: 0;
+      top: 0.05rem;
+    }
+
+    a {
+      float: right;
+      font-weight: 400;
+      font-size: 0.12rem;
+    }
+  }
+}

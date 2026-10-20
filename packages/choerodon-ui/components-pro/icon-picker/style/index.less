@@ -1,0 +1,74 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../trigger-field/style/mixin';
+
+@icon-picker-prefix: ~'@{c7n-pro-prefix}-icon-picker';
+
+.@{icon-picker-prefix} {
+  .trigger-field;
+
+  &-item-selected div {
+    color: #fff;
+    background-color: @primary-color;
+  }
+
+  &-popup {
+    width: 7rem;
+    ul {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      list-style: none;
+    }
+    li {
+      float: left;
+      width: 20%;
+      padding: 0.05rem;
+      text-align: center;
+      div {
+        padding: 0.05rem;
+        border-radius: @border-radius-base;
+        cursor: pointer;
+        &:hover {
+          background-color: @item-hover-bg;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  &-tab,
+  &-single-tab {
+    height: 2.5rem;
+  }
+
+  &-tab {
+    margin-top: -0.16rem;
+  }
+
+  &-category {
+    height: 100%;
+  }
+
+  &-pagination {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    + ul {
+      padding-bottom: 0.36rem;
+    }
+  }
+}

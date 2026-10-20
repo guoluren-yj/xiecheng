@@ -1,0 +1,81 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.new-detail-content {
+  padding-bottom: 8px;
+  overflow-y: auto !important;
+  height: calc(100vh - 128px) !important;
+  :global {
+    .page-content {
+      padding: 20px !important;
+      margin: 8px 16px 0 16px;
+      margin-bottom: 0 !important;
+      background-color: #fff;
+    }
+
+    .content-title {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .page-content-wrap {
+      overflow: initial;
+      .dimension-group-content {
+        min-height: calc(100vh - 326px) !important;
+      }
+      .dimension-read-group-content {
+        min-height: calc(100vh - 402px) !important;
+      }
+    }
+    // .notice-content {
+    //   margin: 8px 16px 0 16px;
+    //   padding: 20px;
+    //   background-color: #fff;
+    // }
+
+    // :last-child {
+    //   .notice-content {
+    //     // margin-bottom: 0;
+    //     background-color: red;
+    //   }
+    // }
+  }
+}
+
+.sprm-col-btn {
+  margin-right: 16px;
+  margin-left: 0 !important;
+}
+.sprm-col-btn:last-child {
+  margin-right: 0;
+}
+
+.mould-col-btn {
+  > .c7n-pro-btn {
+    vertical-align: 30px !important;
+  }
+}
+
+.history-btn:hover {
+  color: @srm-primary-color !important;
+}
+
+.history-item-wrapper {
+  padding: 8px 0;
+  cursor: pointer;
+  .history-content {
+    font-weight: 400;
+    line-height: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    .history-extra {
+      display: flex;
+      grid-gap: 8px;
+      gap: 8px;
+      line-height: 18px;
+      color: #868d9c;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.content {
+  font-family: 'PT Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #242e42;
+
+  pre {
+    color: #b7c4d1;
+    font-weight: 600;
+    line-height: 20px;
+    height: calc(100vh - 245px);
+    overflow: hidden;
+    &:hover {
+      overflow: auto;
+    }
+
+    strong {
+      color: #f5a623;
+    }
+  }
+
+  &-auto-wrap {
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+  }
+}
+
+.operations {
+  margin-bottom: 5px;
+
+  &-left {
+    position: absolute;
+    top: 8px;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}

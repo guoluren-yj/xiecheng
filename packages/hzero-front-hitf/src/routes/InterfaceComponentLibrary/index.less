@@ -1,0 +1,56 @@
+// 表格
+.link-span {
+  cursor: pointer;
+  color: @primary-color;
+}
+
+// 弹窗
+.interface-component-modal {
+  width: 7.42rem;
+  .interface-component-content {
+    .basic-content {
+      margin-bottom: 32px;
+    }
+    .content-header {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .content-second-header {
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+      margin: 16px 0;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      &-border {
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        margin: 0 8px 0 0;
+      }
+    }
+    .form-col {
+      margin-right: 16px;
+    }
+    .form-col:last-child {
+      :global {
+        .c7n-pro-textarea-wrapper {
+          width: calc(100% + 16px) !important;
+          max-width: calc(100% + 16px);
+        }
+      }
+    }
+  }
+}
+
+.interface-component {
+  margin: 8px 16px 16px;
+  padding: 8px 16px 16px;
+  background-color: #fff;
+  height: calc(100% - 76px);
+  overflow: visible;
+}

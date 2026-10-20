@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>redo@v4.0</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="消息通知" transform="translate(-440.000000, -112.000000)">
+            <g id="编组-10" transform="translate(384.000000, 94.000000)">
+                <g id="redo" transform="translate(64.000000, 26.000000) scale(-1, 1) translate(-64.000000, -26.000000) translate(56.000000, 18.000000)">
+                    <rect id="矩形" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="16" height="16"></rect>
+                    <g id="编组-24" transform="translate(2.006024, 1.637143)" stroke="#5A6677" stroke-linecap="round">
+                        <path d="M1,2.36285678 L6.49397588,2.36285678 C9.53154201,2.36285678 11.9939759,4.60143303 11.9939759,7.36285678 C11.9939759,10.1242805 9.53154201,12.3628568 6.49397588,12.3628568 L6.2789214,12.3628568" id="路径"></path>
+                        <polyline id="路径-14" stroke-linejoin="round" points="2.98266875 4.95053071 7.10542736e-15 2.36285678 2.98266875 -1.77635684e-15"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

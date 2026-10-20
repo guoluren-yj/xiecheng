@@ -1,0 +1,52 @@
+.page-wrapper {
+  width: 100%;
+  color: #333;
+  :global {
+    .c7n-pro-pagination {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-top: 8px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 6px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.12), transparent);
+      }
+
+      .c7n-pro-select-wrapper {
+        width: 0.8rem;
+        flex: unset;
+        margin-right: auto;
+        .c7n-pro-select {
+          box-shadow: none !important;
+          border: none !important;
+          padding-right: 0.2rem !important;
+        }
+        .c7n-pro-select-suffix {
+          width: 0.2rem;
+          .c7n-pro-select-trigger {
+            right: 0;
+            &.icon-baseline-arrow_drop_down::before {
+              color: #5a5a5a;
+            }
+          }
+        }
+      }
+
+      .c7n-pro-pagination-page-info {
+        margin: 0 0 0 5px;
+      }
+
+      .c7n-pro-btn-icon-only {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

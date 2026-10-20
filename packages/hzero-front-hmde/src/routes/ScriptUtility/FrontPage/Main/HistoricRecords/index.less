@@ -1,0 +1,50 @@
+.historic-records {
+  font-size: 12px;
+  .historic-records-item {
+    div {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .historic-records-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .historic-records-time {
+        color: #1c1c1c;
+      }
+      .historic-records-type {
+        border-radius: 2px;
+        padding: 0 8px;
+        color: #7756f2;
+        background-color: #f1eefe;
+        &.script {
+          color: #f6854d;
+          background: #fef2ed;
+        }
+        // &.flow {
+        //   color: #7756f2;
+        //   background-color: #f1eefe;
+        // }
+        &.version {
+          color: #7c859b;
+          background: #f6f6f8;
+        }
+      }
+    }
+    .historic-records-name {
+      color: #686868;
+    }
+    .historic-records-code {
+      color: #a4a4a4;
+    }
+    .historic-records-version {
+      background: #f6f6f8;
+      border-radius: 2px;
+      color: #7c859b;
+      display: inline-block;
+      padding: 0 8px;
+    }
+  }
+}

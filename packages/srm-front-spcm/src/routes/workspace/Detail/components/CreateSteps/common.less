@@ -1,0 +1,74 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+// :global {
+//   .rf-page-content-warp {
+//     padding: 0 16px;
+//     height: 100%;
+//     overflow: auto;
+//   }
+// }
+
+.rf-card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .card-warp {
+      padding: 16px; // src-27383 ui整改建议占满
+      // padding: 16px 30%; // 暂时改小，保证居中
+      // margin: 4px 0;
+      background-color: #fff;
+    }
+
+    // .card-warp:first-child {
+    //   margin-top: 8px;
+    // }
+
+    .card-warp:last-child {
+      flex: 1;
+      margin-bottom: 8px;
+    }
+  }
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    // font-weight: 500;
+    // color: #000;
+  }
+
+  .card-content {
+    width: 100%;
+
+    .card-sub-title {
+      margin: 32px 0 16px;
+
+      .card-sub-title-line {
+        display: inline-block;
+        margin-right: 8px;
+        height: 12px;
+        border-left: 3px solid @primary-color;
+      }
+    }
+
+    .current-title {
+      color: @text-1;
+      font-weight: 600;
+    }
+
+    :global {
+      .c7n-steps-item-description {
+        height: 0.22rem;
+        line-height: 0.22rem;
+        .c7n-text-wrapper {
+          color: @error-color;
+          // display: initial;
+          position: absolute;
+          width: 96%;
+        }
+      }
+    }
+  }
+}

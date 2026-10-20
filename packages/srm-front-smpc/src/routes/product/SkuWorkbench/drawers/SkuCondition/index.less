@@ -1,0 +1,87 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.ec-operate-progress {
+  p {
+    margin-bottom: 0;
+  }
+  width: 340px;
+  height: 284px;
+  padding: 0 20px;
+  background: #f7f8fa;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  :global {
+    .progress-info {
+      margin-top: 16px;
+      text-align: center;
+      .progress-status {
+        font-size: 16px;
+        color: @text-1;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      .execute {
+        font-size: 12px;
+        color: @text-3;
+      }
+      .executed-success .success-last-time {
+        color: @primary-color;
+      }
+      .execute-operate {
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
+        .btn {
+          width: fit-content;
+          // line-height: 32px;
+          cursor: pointer;
+        }
+        .btn > .icon {
+          font-size: 14px;
+          margin-right: 4px;
+        }
+      }
+      .executed-error {
+        .error-count-wrap {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 4px;
+        }
+        .count-field {
+          &:first-child {
+            margin-right: 16px;
+          }
+          .count-field-success {
+            color: green;
+            font-weight: 600;
+          }
+          .count-field-error {
+            color: red;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.preview-condition-form {
+  :global {
+    .c7n-pro-select-box label.c7n-pro-radio-wrapper {
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+:global {
+  .condition-reExecute-tooltip {
+    .c7n-pro-tooltip-popup-inner {
+      max-width: 280px !important;
+    }
+  }
+}

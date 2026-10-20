@@ -1,0 +1,65 @@
+@import '~hzero-front/lib/srm-variables';
+
+.operation-record-modal-basic-panel {
+  :global {
+    .c7n-timeline-item:last-child {
+      .c7n-timeline-item-tail {
+        display: none;
+      }
+    }
+  }
+}
+
+.operation-modal-lov {
+  :global {
+    button {
+      border: none;
+    }
+
+    .c7n-pro-btn-default.c7n-pro-btn-flat,
+    .c7n-pro-btn-default.c7n-pro-btn-link {
+      color: #000;
+    }
+
+    .c7n-pro-calendar-picker {
+      border: none;
+    }
+
+    .c7n-pro-calendar-picker-range-split {
+      min-width: 0;
+      width: unset;
+      max-width: 10px;
+    }
+
+    .c7n-pro-calendar-picker:not(textarea):not(:last-child) {
+      padding: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.operation-record-modal-basic {
+  width: 100%;
+  max-height: 54px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.operation-record-modal-basic:hover {
+  text-overflow: clip;
+  white-space: normal;
+  display: block;
+}
+
+.chart-no-content-message {
+  margin-top: 8px;
+  color: @text-3;
+}
+
+.operation-record-modal-basic-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

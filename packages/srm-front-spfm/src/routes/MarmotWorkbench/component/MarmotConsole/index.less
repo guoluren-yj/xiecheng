@@ -1,0 +1,54 @@
+/**
+ * AdaptorConsole/index.less
+ * 适配器控制台页面样式
+ * @date: 2021-08-13
+ * @author: zhangjinxin <jinxin.zhang@going-link.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.left-menu {
+  :global {
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .c7n-menu-item {
+      width: 200px;
+    }
+  }
+}
+
+.content-container {
+  :global {
+    display: flex;
+    .content-container-left {
+      width: 200px;
+      height: 70vh;
+      position: relative;
+      .content-container-left-fold {
+        position: absolute;
+        right: 0;
+        top: 200px;
+        z-index: 2;
+        cursor: pointer;
+      }
+    }
+    .content-container-right {
+      flex: 1 1 auto;
+      position: relative;
+      overflow: hidden;
+      .content-container-right-unfold {
+        position: absolute;
+        left: 0;
+        top: 200px;
+        z-index: 2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.left-item-group :global {
+  .c7n-menu-item-group-title {
+    padding: 0;
+  }
+}

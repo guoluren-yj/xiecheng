@@ -1,0 +1,86 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.notice-content {
+  margin: 8px 16px 0 16px;
+  padding: 16px;
+  background-color: @primary-color-white;
+}
+
+.filter-select-field {
+  line-height: 36px;
+}
+
+.task-tag-frameless {
+  border: 0;
+}
+
+.task-rule-statement {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+
+  .task-rule-statement-content {
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .task-rule-statement-edit-button {
+    margin-left: 4px;
+    flex-shrink: 0;
+  }
+}
+
+.task-filter-object-source {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  .task-filter-object-source-icon {
+    width: 3px;
+    height: 10px;
+    background: @primary-color-cyan;
+  }
+  .task-filter-object-source-title {
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.task-filter-object-custom {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  padding-top: 32px;
+  .task-filter-object-custom-icon {
+    width: 3px;
+    height: 10px;
+    background: @primary-color-cyan;
+  }
+  .task-filter-object-custom-title {
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.task-source-rule-param-def {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  padding-top: 32px;
+
+  .task-source-rule-param-def-icon {
+    width: 3px;
+    height: 10px;
+    background: @primary-color-cyan;
+  }
+  .task-source-rule-param-def-title {
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,212 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+@SWBN_card-width: 1397px;
+@SWBN_card-height: 80px;
+@SWBN_BusinessCard-width: 451px;
+@SWBN_BusinessCard-height: 257px;
+@card-margin: 16px;
+
+@hzero-normal-header-container-height: 48px;
+@nav-height: 36px;
+
+// .cardContainer {
+//   // min-width: calc(@SWBN_card-width + @card-margin + @SWBN_BusinessCard-width);
+//   min-width: 1048px;
+//   height: 100% !important;
+//   :global {
+//     .boxShadow {
+//       border-radius: unset;
+//       &:hover {
+//         box-shadow: 0 1px 3px rgba(0, 34, 77, 0.1);
+//       }
+//     }
+//   }
+// }
+
+// .SWBH_businessCard {
+//   width: calc(100% - ((100% - @card-margin*3) * 0.75) - @card-margin*3) !important;
+//   height: @SWBN_BusinessCard-height !important;
+//   transform: unset !important;
+//   left: calc((100% - (@card-margin*3)) * 0.75 + 2 * @card-margin);
+//   top: @card-margin;
+// }
+// .SRM_Message {
+//   width: calc((100% - (@card-margin*3)) * 0.25) !important;
+//   min-height: calc(
+//     100vh - @hzero-normal-header-container-height - @nav-height - @SWBN_BusinessCard-height - (@card-margin*4)
+//   );
+//   transform: unset !important;
+//   left: calc((100% - (@card-margin*3)) * 0.75 + 2 * @card-margin);
+//   top: calc(@SWBN_BusinessCard-height + 2 * @card-margin);
+// }
+
+// .SWBH_card {
+//   width: calc((100% - (@card-margin*3)) * 0.75) !important;
+//   height: @SWBN_card-height !important;
+//   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12);
+//   z-index: 2;
+// }
+// .SWBH_documentList {
+//   width: calc((100% - (@card-margin*3)) * 0.75) !important;
+//   min-height: calc(100vh - @hzero-normal-header-container-height - @nav-height - @SWBN_card-height - (@card-margin*3));
+//   // top: -20px;
+//   transform: unset !important;
+//   top: calc(@SWBN_card-height + @card-margin);
+//   left: @card-margin;
+// }
+
+// .carouselIsAll {
+//   .SWBH_businessCard {
+//     display: none;
+//   }
+//   .SRM_Message {
+//     // width: calc((100% - (@card-margin*3)) * 0.25) !important;
+//     min-height: calc(100vh - @hzero-normal-header-container-height - @nav-height - (@card-margin*3));
+//     // transform: unset !important;
+//     left: calc((100% - (@card-margin*3)) * 0.75 + 2 * @card-margin);
+//     top: @card-margin;
+//   }
+// }
+
+// @media screen and (min-width: 1920px) {
+//   .SWBH_card,
+//   .SWBH_documentList {
+//     width: 1367px !important;
+//   }
+//   .SRM_Message,
+//   .SWBH_businessCard {
+//     width: calc(100% - 1367px - 3 * @card-margin) !important;
+//     left: calc(1367px + 2 * @card-margin) !important;
+//   }
+// }
+
+// .focusMode {
+//   justify-content: center;
+//   .leftCard {
+//     transition: all 1s ease;
+//     width: 100% !important;
+//     min-width: 960px;
+//     max-width: 1360px;
+//   }
+//   .rightCard {
+//     transition: all 1s ease;
+//     // display: none;
+//     width: 0 !important;
+//     min-width: unset;
+//   }
+// }
+
+.main {
+  height: 100%;
+  width: 100%;
+  > div,
+  > div > div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.swbhContainer {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  .leftCard {
+    transition: width 0.2s;
+    height: 100%;
+    width: calc(100% * 0.7);
+    min-width: 790px;
+    .card {
+      height: calc(100% - 2 * @card-margin);
+
+      :global {
+        .c7n-card-body {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      :global {
+        .swbnDocumentListContainer {
+          flex: 1;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+  .rightCard {
+    // transition: all 0.2s ease;
+
+    transition: all 0.2s ease-out;
+    opacity: 1;
+    // height: calc(100vh - @hzero-normal-header-container-height - @nav-height);
+    height: 100%;
+    width: calc(100% * 0.3);
+    min-width: 263px;
+    display: flex;
+    flex-direction: column;
+    .card {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    .srmMessagehContainer {
+      margin-bottom: 16px;
+      // height: 1;
+      flex: 1;
+      overflow-y: auto;
+      :global {
+        .c7n-card-body {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .swbhContainer {
+    .leftCard {
+      width: 1367px !important;
+    }
+    .rightCard {
+      width: calc(100% - 1367px) !important;
+    }
+  }
+}
+.card {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  // height: 100%;
+  margin: 16px;
+  border: unset;
+  // padding: 0;
+  :global {
+    .c7n-card-body {
+      padding: 0;
+    }
+  }
+}
+
+.carouselIsAll {
+  .rightCard {
+    .card:first-child {
+      display: none;
+    }
+  }
+}
+
+.focusMode {
+  justify-content: center;
+  .leftCard {
+    // transition: all 0.2s ease-in-out;
+    width: 100% !important;
+    min-width: 960px;
+    max-width: 1360px;
+  }
+  .rightCard {
+    transition: all 0.2s ease-out;
+    // display: none;
+    opacity: 0 !important;
+    width: 0 !important;
+    min-width: unset;
+    overflow: hidden;
+  }
+}

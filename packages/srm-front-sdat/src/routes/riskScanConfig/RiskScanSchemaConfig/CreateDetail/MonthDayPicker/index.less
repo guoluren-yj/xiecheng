@@ -1,0 +1,43 @@
+.month-day-picker {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.month-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 10px;
+}
+
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
+}
+
+.weekday {
+	padding: 10px;
+	font-weight: bold;
+}
+
+.calendar-day {
+	padding: 10px;
+	color: #000;
+	cursor: pointer;
+}
+
+.calendar-day.empty {
+	background-color: #f9f9f9;
+	cursor: default;
+}
+
+.calendar-day.selected {
+	background-color: #36c2cf;
+	color: white;
+	border-radius: 2px;
+}
+
+.selected-dates {
+	margin-top: 20px;
+}

@@ -1,0 +1,541 @@
+@import '~hzero-front/lib/srm-variables';
+.doc-flow-info-modal {
+  :global {
+    .doc-overview-tabPane,
+    .doc-process-tabPane,
+    .doc-action-tabPane {
+      .doc-flow-modal-panel-title {
+        float: left;
+        font-size: 14px;
+        font-weight: 500;
+        padding-bottom: 8px !important;
+
+        .action-panel-title {
+          border-radius: 2px;
+          font-size: 12px;
+          padding: 0 4px;
+          margin: 0 8px;
+        }
+        .action-panel-title-green {
+          background: rgba(71, 184, 129, 0.1);
+          color: #47b881;
+        }
+        .action-panel-title-yellow {
+          background: rgba(71, 184, 129, 0.1);
+          color: #f88d10;
+        }
+        .action-panel-title-blue {
+          background: rgba(71, 184, 129, 0.1);
+          color: #3095f2;
+        }
+      }
+
+      .parent-level-step {
+        .step-title {
+          float: left;
+        }
+
+        .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title {
+          margin-bottom: 16px;
+
+          .c7n-collapse-content {
+            padding: 0;
+          }
+        }
+
+        .operator,
+        .action-description,
+        .doc-type {
+          margin-right: 8px;
+          font-weight: 500;
+          font-size: 12px;
+        }
+
+        .action-description {
+          color: rgba(0, 0, 0, 0.65);
+          font-weight: 400;
+        }
+
+        .step-date {
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 12px;
+          clear: both;
+          margin-bottom: 8px;
+        }
+
+        .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header {
+          padding: 0;
+        }
+
+        .step-content {
+          margin-bottom: 5px;
+          > span {
+            font-size: 12px;
+          }
+
+          .span-keywords {
+            padding: 0 8px;
+            color: rgba(0, 0, 0, 0.65);
+          }
+        }
+
+        .c7n-collapse .c7n-collapse-item-disabled > .c7n-collapse-header,
+        .c7n-collapse .c7n-collapse-item-disabled > .c7n-collapse-header > .arrow {
+          color: unset;
+          cursor: default;
+        }
+      }
+      .action-content {
+        > div {
+          margin-bottom: 8px;
+        }
+        &-title {
+          color: rgba(0, 0, 0, 0.65);
+        }
+        &-description {
+          font-weight: 500;
+          margin-left: 8px;
+        }
+        &-rule-desc {
+          display: flex;
+        }
+      }
+      .c7n-collapse-content {
+        padding: 0 0.12rem;
+      }
+
+      .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header .c7n-collapse-expand-icon:before {
+        content: '\E313';
+      }
+      .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header .c7n-collapse-expand-icon {
+        transform: rotate(-180deg);
+      }
+      .c7n-collapse
+        > .c7n-collapse-item
+        > .c7n-collapse-header
+        .c7n-collapse-expand-icon.c7n-collapse-expanded {
+        transform: rotate(0deg);
+      }
+    }
+    .doc-process-tabPane {
+      .c7n-collapse-borderless > .c7n-collapse-item {
+        border-bottom: unset;
+      }
+      .c7n-timeline-item {
+        padding: 0;
+      }
+      .c7n-collapse-borderless
+        > .c7n-collapse-item
+        > .c7n-collapse-content
+        > .c7n-collapse-content-box {
+        padding-bottom: 0;
+      }
+    }
+
+    // new
+    .modal-group-head-title {
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 16px;
+
+      &::before {
+        content: '';
+        height: 14px;
+        display: inline-block;
+        border-left: 3px solid @primary-color;
+        // // vertical-align: middle;
+        // vertical-align: text-bottom;
+        vertical-align: -2px;
+        vertical-align: text-bottom;
+        margin-right: 8px;
+      }
+
+      .icon-expand_more {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0 8px;
+        transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      }
+    }
+    .doc-flow-info-modal-overView {
+      .overview-expand {
+        cursor: pointer;
+      }
+      .overview-noExpand {
+        cursor: default;
+      }
+      .c7n-pro-vertical-form-display {
+        margin-bottom: 24px;
+      }
+      .modal-group-head-title-overview {
+        .icon-expand_more {
+          display: inline-block;
+          transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+          transform: rotate(0deg);
+        }
+
+        &-expand {
+          .icon-expand_more {
+            vertical-align: middle;
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      .overView-table {
+        margin: 0 0 32px 0;
+      }
+    }
+    .doc-flow-info-modal-progress {
+      margin-bottom: 32px;
+
+      .progress-table-header {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        background-color: rgba(0, 0, 0, 0.04);
+        line-height: 30px;
+        padding: 5px 0;
+
+        > span {
+          display: inline-block;
+          color: rgba(0, 0, 0, 0.85);
+          padding-left: 12px;
+          font-weight: 700;
+
+          &:first-child {
+            width: 30%;
+          }
+          &:nth-child(2) {
+            width: 50%;
+          }
+          &:last-child {
+            width: 20%;
+          }
+        }
+      }
+
+      .progress-table-empty {
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+        border-bottom: 1px solid #ebebeb;
+        color: #000;
+      }
+
+      .progress-table {
+        display: flex;
+        margin-top: 10px;
+        border: 1px solid #ebebeb;
+        .progress-table-right {
+          width: 70%;
+        }
+        &-left {
+          width: 30%;
+          border-right: 1px solid #ebebeb;
+          padding: 16px 0 0 12px;
+          font-size: 12px;
+          font-weight: 700;
+        }
+        &-right-row {
+          display: flex;
+          border-bottom: 1px solid #ebebeb;
+          padding: 8px 0;
+
+          &:last-child {
+            border: none;
+          }
+
+          &-content {
+            width: 100%;
+            display: flex;
+
+            .content-icon {
+              width: 30px;
+              height: 30px;
+              margin: 0 8px 0 12px;
+              border-radius: 30px;
+              color: #fff;
+
+              > i {
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+              }
+            }
+            .content-info {
+              .info-title {
+                &-deadline {
+                  background-color: rgba(245, 99, 73, 0.1);
+                  border-radius: 2px;
+                  font-size: 10px;
+                  color: rgba(245, 99, 73, 1);
+                  transform: scale(0.9);
+                  display: inline-block;
+                  line-height: 18px;
+                  padding: 2px 4px;
+                  font-weight: 500;
+                  > i {
+                    padding-right: 4px;
+                  }
+                }
+              }
+              .info-content {
+                color: rgba(0, 0, 0, 0.65);
+                > span {
+                  margin-right: 4px;
+                }
+              }
+            }
+          }
+          &-date {
+            width: 36%;
+            margin-left: 12px;
+          }
+        }
+      }
+
+      .progress-table-yellow {
+        border-left: 2px solid #f88d10;
+      }
+      .progress-table-blue {
+        border-left: 2px solid #3095f2;
+      }
+      .progress-table-green {
+        border-left: 2px solid #47b881;
+      }
+      .progress-table-grey {
+        border-left: 2px solid #d3d3d3;
+      }
+    }
+    .doc-flow-info-modal-action {
+      .action-table {
+        .action-type-desc {
+          margin: 0 6px;
+          padding: 2px 0;
+          font-weight: 500;
+        }
+        .action-type-desc-yellow {
+          background: rgba(71, 184, 129, 0.1);
+          color: #f88d10;
+        }
+        .action-type-desc-blue {
+          background: rgba(71, 184, 129, 0.1);
+          color: #3095f2;
+        }
+        .action-type-desc-green {
+          background: rgba(71, 184, 129, 0.1);
+          color: #47b881;
+        }
+      }
+      .action-table-cnfActionInfo {
+        &-content {
+          &-cnfName {
+            font-weight: 500;
+            color: #000;
+          }
+        }
+        &-content-cnfDescription {
+          color: rgba(0, 0, 0, 0.45);
+          font-weight: 400;
+        }
+      }
+      .action-table-cnfActionDesc {
+        &-objDesc {
+          > span {
+            &:first-child {
+              font-weight: 400;
+            }
+            &:last-child {
+              color: rgba(0, 0, 0, 0.45);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .doc-flow-chart {
+    margin: 19px;
+    min-height: 1920px;
+    .g6-component-tooltip {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px;
+      box-shadow: rgb(174, 174, 174) 0 0 10px;
+
+      ol,
+      ul,
+      dl {
+        margin: 0;
+      }
+    }
+    background-image: linear-gradient(rgba(221, 221, 221, 0.3) 1px, transparent 0),
+      linear-gradient(90deg, rgba(221, 221, 221, 0.3) 1px, transparent 0);
+    background-size: 25px 25px, 25px 25px;
+    border: 1px solid #ddd;
+  }
+}
+
+.docFlow-modal-wrapper {
+  :global {
+    .c7n-tabs-bar {
+      margin: 0;
+    }
+    .docFlow-modal-wrapper-tabs {
+      .c7n-tabs-nav-scroll:first-child {
+        padding-left: 20px;
+        // .c7n-tabs-nav .c7n-tabs-nav-animated{
+        //   padding-left: 20px;
+        // }
+      }
+    }
+    .c7n-pro-modal-body {
+      padding: 20px 0 0 0;
+      .c7n-tabs {
+        height: 100%;
+        .c7n-tabs-content {
+          height: 100%;
+          .c7n-tabs-tabpane {
+            height: 100%;
+            .c7n-spin-nested-loading,
+            .c7n-spin-container {
+              height: 100%;
+            }
+            .doc-flow-relation-table {
+              // height: 100%;
+              .doc-flow-relation-tab {
+                :global {
+                  .c7n-tabs-nav-scroll {
+                    padding-left: 0;
+                    .c7n-tabs-nav {
+                      min-width: 180px;
+                      max-width: 220px;
+                      width: 100%;
+                    }
+                  }
+                  .c7n-tabs-content {
+                    padding: 20px;
+                  }
+                }
+              }
+              height: calc(100% - 40px);
+              .doc-flow-relation-emptyText {
+                text-align: center;
+                margin-top: 120px;
+              }
+              .c7n-tabs-bar {
+                height: 100%;
+                margin-top: 20px;
+              }
+              .c7n-tabs-tabpane {
+                .c7n-table-wrapper {
+                  padding: 0.16rem 0.24rem 0 0;
+                }
+              }
+              .c7n-table-pagination.c7n-pagination {
+                display: flex;
+                align-items: baseline;
+              }
+              .c7n-pagination-tiny .c7n-pagination-options {
+                display: flex;
+                align-items: baseline;
+                .c7n-select-selection__rendered {
+                  border: none;
+                }
+              }
+              .c7n-pagination-options-quick-jumper {
+                margin-left: 10px;
+                display: none;
+              }
+              .c7n-table-tbody > tr > td,
+              .c7n-table-thead > tr > th {
+                padding: 5px 10px;
+                height: 0.4rem;
+              }
+              .c7n-table-thead > tr > th {
+                font-weight: 600;
+              }
+              .c7n-tabs-vertical.c7n-tabs-left > .c7n-tabs-content {
+                overflow: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .docFlow-g6-component-toolbar-legend {
+      width: 150px;
+      position: absolute;
+      list-style: none;
+      text-align: left;
+      color: #000;
+      padding: 0;
+      margin: 0;
+      user-select: none;
+      top: 75% !important;
+      > li {
+        .legend-color-circular {
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          display: inline-block;
+          margin-right: 14px;
+        }
+      }
+    }
+    .docFlow-g6-component-toolbar-docFlow-explain {
+      user-select: none;
+      .no-reminder:hover {
+        color: #000 !important;
+      }
+      &::before {
+        width: 10px;
+        content: '';
+        display: block;
+        height: 10px;
+        background: #fff;
+        transform: rotate(45deg);
+        position: relative;
+        float: right;
+        margin-top: -12px;
+        margin-right: 14px;
+        overflow: hidden;
+        border-left: 1px solid #e2e2e2;
+        border-top: 1px solid #e2e2e2;
+      }
+    }
+    .docFlow-g6-component-toolbar-docFlow-zoomToolbar {
+      > li {
+        width: 36px;
+        line-height: 22px;
+        color: #000;
+      }
+      .zoom-percent {
+        width: 40px;
+        input[type='number'] {
+          -moz-appearance: textfield;
+        }
+      }
+      .zoom-input {
+        width: 24px;
+        border: none;
+        height: 24px;
+        line-height: 24px;
+        outline: none;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        &:focus,
+        &:hover,
+        &:active， &:visited {
+          border: none;
+        }
+        &::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+          appearance: none;
+        }
+      }
+    }
+  }
+}

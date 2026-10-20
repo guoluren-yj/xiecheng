@@ -1,0 +1,57 @@
+.page-content {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-col-24 {
+      & .ant-col-22 {
+        width: 90.6%;
+      }
+      & .ant-col-2 {
+        width: 9.4%;
+      }
+      & .ant-col-3 {
+        width: 13.9%;
+      }
+      & .ant-col-21 {
+        width: 86.1%;
+      }
+      & .ant-col-offset-3 {
+        margin-left: 13.9%;
+      }
+    }
+  }
+}
+.col-wrapper {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+}
+.inquiry-hall-basic-info-form {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+        margin: 0;
+      }
+    }
+  }
+}

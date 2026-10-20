@@ -1,0 +1,77 @@
+.select-tree-row {
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  box-shadow: 0 9px 28px 8px rgba(29, 33, 41, 0.05), 0 3px 6px -4px rgba(29, 33, 41, 0.12), 0 6px 16px 0 rgba(29, 33, 41, 0.08);
+  border-radius: 2px;
+
+  .select-type-col {
+    width: 100px;
+    height: 120px;
+    border-right: 1px solid #e5e7ec;
+  }
+
+  .select-company-col {
+    width: 120px;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid #e5e7ec;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: #c0bebc;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #c0bebc;
+      }
+    }
+  }
+
+  .select-user-col {
+    width: 100px;
+    height: 120px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid #e5e7ec;
+    flex: 1 1 auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: #c0bebc;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #c0bebc;
+      }
+    }
+  }
+}
+
+.select-item-style {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #101319;
+  cursor: pointer;
+}
+
+.select-item-active {
+  background: #f2f3f5;
+}

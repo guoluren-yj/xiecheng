@@ -1,0 +1,87 @@
+@import '../../button/style/mixin';
+
+.@{calendar-prefix-cls}-picker-container {
+  .reset-component;
+  position: absolute;
+  z-index: @zindex-picker;
+
+  &.slide-up-enter.slide-up-enter-active&-placement-topLeft,
+  &.slide-up-enter.slide-up-enter-active&-placement-topRight,
+  &.slide-up-appear.slide-up-appear-active&-placement-topLeft,
+  &.slide-up-appear.slide-up-appear-active&-placement-topRight {
+    animation-name: antSlideDownIn;
+  }
+
+  &.slide-up-enter.slide-up-enter-active&-placement-bottomLeft,
+  &.slide-up-enter.slide-up-enter-active&-placement-bottomRight,
+  &.slide-up-appear.slide-up-appear-active&-placement-bottomLeft,
+  &.slide-up-appear.slide-up-appear-active&-placement-bottomRight {
+    animation-name: antSlideUpIn;
+  }
+
+  &.slide-up-leave.slide-up-leave-active&-placement-topLeft,
+  &.slide-up-leave.slide-up-leave-active&-placement-topRight {
+    animation-name: antSlideDownOut;
+  }
+
+  &.slide-up-leave.slide-up-leave-active&-placement-bottomLeft,
+  &.slide-up-leave.slide-up-leave-active&-placement-bottomRight {
+    animation-name: antSlideUpOut;
+  }
+}
+
+.@{calendar-prefix-cls}-picker {
+  .reset-component;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  transition: opacity @animation-duration-slow;
+
+  &-input {
+    display: block;
+    outline: none;
+  }
+
+  &:hover &-input:not(.@{c7n-prefix}-input-disabled) {
+    border-color: @date-primary-color;
+  }
+
+  &:focus &-input:not(.@{c7n-prefix}-input-disabled) {
+    .active();
+  }
+
+  .@{input-prefix-cls}-disabled &-icon {
+    color: @input-disabled-color;
+    cursor: not-allowed;
+  }
+
+  &-icon {
+    color: #000;
+    cursor: pointer;
+    &-wrapper {
+      display: inline-block;
+      min-width: 0.18rem;
+    }
+  }
+
+  &-clear {
+    position: absolute !important;
+    top: 0;
+    right: 0.2rem;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover &-clear {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &-small &-clear,
+  &-small &-icon {
+    right: @control-padding-horizontal-sm;
+  }
+}

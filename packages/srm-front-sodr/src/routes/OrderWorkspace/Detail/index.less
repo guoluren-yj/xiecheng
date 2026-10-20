@@ -1,0 +1,401 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.order-workspace-detail-container {
+  :global {
+    overflow-y: auto;
+
+    .c7n-tabs-bar {
+      margin-top: 8px;
+    }
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+
+    .content-title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .approval-line-title {
+      margin-bottom: 0;
+    }
+
+    :not(:last-child) {
+      .page-content {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    // .c7n-pro-vertical-form-display {
+    //   .c7n-pro-input {
+    //     border: none;
+    //     padding: 0 24px 0 0;
+    //     height: auto;
+    //   }
+    // }
+    // .c7n-radio-group {
+    //   padding: 0;
+    //   .c7n-radio-button-wrapper {
+    //     height: 22px;
+    //     line-height: 22px;
+    //   }
+    // }
+
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        padding: 20px;
+        background-color: #fff;
+        margin: 8px 16px 0 16px;
+        overflow: initial;
+        & > .c7n-collapse-header {
+          padding: 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        & > .c7n-collapse-content {
+          padding: 0;
+          & > .c7n-collapse-content-box {
+            padding: 0;
+          }
+        }
+        // &:not(:last-child) {
+        //   position: relative;
+        //   padding-bottom: 8px;
+        //   &::after {
+        //     content: '';
+        //     bottom: 0;
+        //     height: 8px;
+        //     left: -20px;
+        //     right: -20px;
+        //     position: absolute;
+        //     background-color: #f4f5f7;
+        //   }
+        // }
+      }
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  // 重置在新主题下对折叠面板的margin修改
+  .srm-layout-content-container {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        margin: 8px 8px 0 8px !important;
+      }
+    }
+  }
+}
+
+.order-workspace-detail-content {
+  // & > div:not(:last-child) {
+  //   margin-bottom: 32px;
+  // }
+
+  padding: 20px;
+}
+
+.order-top-title {
+  // & span {
+  //   background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+  //   margin: 0 8px 0 12px;
+  //   width: 16px;
+  //   height: 16px;
+  //   line-height: 32px;
+  //   display: inline-flex;
+  //   vertical-align: text-bottom;
+  // }
+
+  // :global {
+  //   font-size: 14px;
+  //   margin: 0 0 20px 0;
+  //   border: #dcf3d1;
+  //   background: #edf9e8;
+  //   line-height: 32px;
+  // }
+  :global {
+    margin-bottom: 16px !important;
+    border: none;
+    color: rgba(48, 149, 242);
+    background-color: rgba(48, 149, 242, 0.1) !important;
+
+    .c7n-alert-icon {
+      color: rgba(48, 149, 242);
+    }
+  }
+}
+
+.line-display {
+  :global {
+    .c7n-pro-form-wrapper {
+      .c7n-pro-switch-label {
+        margin-top: 0.05rem;
+      }
+    }
+  }
+}
+
+.red-tip {
+  :global {
+    .ant-badge-status-text {
+      color: red;
+    }
+  }
+}
+
+.change-tip-tooltip {
+  :global {
+    .ant-tooltip-inner {
+      max-width: 250px;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+    .c7n-pro-tooltip-popup-inner {
+      max-width: 250px;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.approval-line-tab-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.approval-radio-group {
+  :global {
+    font-weight: 400;
+    font-size: 14px;
+    background: #f2f3f5;
+    border-radius: 2px;
+    color: #1d2129;
+    text-align: center;
+    padding: 2px;
+    border: none;
+    height: 31px;
+    display: block;
+    .c7n-radio-button-wrapper {
+      border: none;
+      padding: 3px 8px;
+      height: 27px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .c7n-radio-button-wrapper-checked {
+      color: #000;
+      font-weight: 600;
+      background: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15) !important;
+      border-radius: 2px;
+    }
+  }
+}
+
+.approval-form-display {
+  :global {
+    .c7n-pro-field-label label span {
+      max-width: 80px;
+    }
+  }
+}
+
+.change-line-tip {
+  :global {
+    left: 415px !important;
+  }
+}
+
+// 签章Modal
+.sealModal {
+  :global {
+    width: 200px;
+    .eachPic {
+      & > i {
+        position: absolute;
+        font-size: 14px;
+        top: -1px;
+        right: -1px;
+        color: @primary-color;
+      }
+      border: 1px solid @primary-color;
+    }
+  }
+  & > div {
+    position: relative;
+    border: 1px solid #d5dae0;
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+    & > img {
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+      object-fit: contain;
+    }
+  }
+}
+
+.noSealImg {
+  :global {
+    p {
+      // width: 90px;
+      line-height: 18px;
+      font-size: 12px;
+      margin-left: 16px;
+      margin-bottom: 16px;
+      text-align: left;
+      text-indent: 2em;
+
+      strong {
+        cursor: pointer;
+        color: #29bece;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.preveiw-modal-content {
+  :global {
+    .preview-icon {
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 6px;
+      cursor: pointer;
+      color: rgb(41, 190, 206);
+    }
+  }
+}
+
+.order-top-title-alert {
+  :global {
+    width: 380px;
+    margin: -20px -20px 20px;
+    background-color: #e6f7ff;
+    border: none;
+    color: #1890ff;
+    vertical-align: middle;
+    line-height: 21px;
+
+    .c7n-alert-close-icon {
+      top: 0.1rem;
+      color: #1890ff;
+    }
+
+    div {
+      i {
+        margin-top: -4px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.order-workspace-detail-left {
+  .order-workspace-detail-describe {
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: fixed;
+    width: 170px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin-top: 10px;
+    height: 50px;
+    border-bottom: 1px solid #ebebeb;
+
+    h3 {
+      font-size: 14px;
+      color: #000;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    &:first-child {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      font-weight: 400;
+    }
+  }
+
+  :global {
+    .c7n-tabs-bar {
+      border: 1px solid #fff;
+      background-color: #fff;
+      position: fixed;
+      margin-top: 62px;
+    }
+
+    .c7n-tabs-vertical.c7n-tabs-left > .c7n-tabs-content {
+      padding-left: 160px;
+    }
+  }
+}
+
+.order-change-line-filter {
+  :global {
+    .c7n-pro-table-search-bar-expand {
+      margin-bottom: 16px !important;
+    }
+  }
+}
+
+//订单工作台- 提交按钮弱校验弹框样式
+.batch-submit-modal {
+  :global {
+    .c7n-pro-modal-content {
+      padding: 0.24rem;
+      padding-bottom: 0;
+      padding-right: 0.15rem;
+      .c7n-pro-modal-body {
+        padding: 0;
+        white-space: pre-line;
+        max-height: 140px;
+      }
+      .c7n-pro-confirm-title {
+        font-size: 16px;
+        line-height: 0.28rem;
+      }
+    }
+  }
+}
+
+.submit-tip {
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.detail-save-confirm-modal {
+  :global {
+    .c7n-pro-confirm-content {
+      white-space: pre-line;
+      max-height: 140px;
+      overflow: auto;
+    }
+  }
+}
+
+// 在线沟通组件
+.chatRoom {
+  :global {
+    .c7n-pro-btn-primary {
+      color: #fff !important;
+    }
+  }
+}

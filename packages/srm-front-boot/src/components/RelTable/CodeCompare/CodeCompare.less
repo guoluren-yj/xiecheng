@@ -1,0 +1,59 @@
+/**
+ * CodeCompare.less
+ * 代码比对组件样式文件
+ * @date: 2021-09-07
+ * @author: Zepeng Huang <Zepeng.Huang@going-link.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2021, Zhenyun
+ */
+.codeCompare {
+  :global {
+    .outBox {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      .title {
+        width: 48%;
+        display: inline-block;
+        border-left: 10px solid rgb(41, 190, 206);
+        font-size: 17px;
+        padding-left: 10px;
+        margin: 7px 0;
+      }
+      .codeArea {
+        width: 48%;
+        overflow-x: auto;
+        overflow-y: auto;
+        background-color: #454545;
+        [type='delete'] {
+          background-color: #ff7077b3;
+          color: #ffe4e4;
+        }
+        [type='add'] {
+          background-color: #4ce6448c;
+          color: #e5f8e5;
+        }
+        [type='normal'] {
+          color: #dcdcdc;
+        }
+        .codeLine {
+          display: inline;
+          height: 16px;
+          white-space: pre;
+          .lineIndex {
+            display: inline-block;
+            width: 30px;
+            text-align: right;
+            border-right: 1px solid rgb(146, 146, 146);
+            color: rgb(109, 91, 91);
+            font-weight: bold;
+            padding: 0 2px;
+            margin-right: 2px;
+            background-color: rgb(223, 221, 221);
+          }
+        }
+      }
+    }
+  }
+}

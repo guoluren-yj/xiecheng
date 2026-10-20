@@ -1,0 +1,41 @@
+.page-left-content {
+  width: 260px;
+  height: 100%;
+  float: left;
+  background-color: #fff;
+  border: 1px solid rgba(235, 235, 235, 1);
+
+  .left-list-panel {
+    height: calc(100% - 80px);
+    overflow-y: auto;
+
+    .left-list-item {
+      padding: 0 16px;
+      line-height: 32px;
+      height: 32px;
+      overflow: hidden;
+      word-wrap: nowrap;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(54, 194, 207, 0.1);
+        color: rgba(54, 194, 207, 1);
+        font-weight: 500;
+      }
+    }
+
+    .selected-item {
+      background: rgba(54, 194, 207, 0.1);
+      color: rgba(54, 194, 207, 1);
+      font-weight: 500;
+    }
+
+    .left-list-load-more {
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: rgba(54, 194, 207, 1);
+      cursor: pointer;
+    }
+  }
+}

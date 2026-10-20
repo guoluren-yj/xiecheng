@@ -1,0 +1,253 @@
+/*
+ * index.less - 采购协议审批详情样式
+ * @date: 2019-05-15
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0 0;
+    }
+  }
+}
+
+.contract-maintain-spin-wrapper {
+  :global {
+    .ant-card.ued-detail-card > .ant-card-body {
+      padding: 16px 0;
+    }
+  }
+}
+.reject-modal {
+  :global {
+    .ant-form-explain,
+    .ant-form-extra {
+      margin-top: 0;
+    }
+    .ant-col-4.ant-form-item-label {
+      line-height: 18px;
+    }
+  }
+}
+
+.signet {
+  :global {
+    width: 100%;
+    overflow: hidden;
+    .ant-btn {
+      height: 32px;
+      float: right;
+      line-height: 32px;
+      border: 1px solid #d5dae0;
+    }
+    i {
+      font-size: 14px;
+      width: 17px;
+      height: 17px;
+    }
+    .img-box {
+      overflow: hidden;
+      width: 100%;
+      p {
+        margin: 16px 0 0 0;
+        width: 80%;
+        float: right;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          padding: 5px;
+          border: 1px solid #d5dae0;
+        }
+        i {
+          color: #d5dae0;
+          position: absolute;
+          font-size: 14px;
+          top: -1px;
+          right: -1px;
+        }
+        .focusImg {
+          color: #29bece;
+        }
+      }
+    }
+  }
+}
+.noSealImg {
+  :global {
+    width: 90px;
+    line-height: 18px;
+    font-size: 12px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    text-align: left;
+    text-indent: 2em;
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+.mobileModal {
+  :global {
+    .ant-input {
+      width: 65%;
+    }
+    button {
+      margin-left: 15px;
+    }
+  }
+}
+.text-area {
+  overflow: hidden;
+}
+
+:global {
+  .spcm-pub-modal.ant-modal {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .spcm-pub-viewer .react-viewer-canvas > img {
+    position: fixed;
+    top: -30%;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+.sealModal {
+  :global {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    button.ant-btn,
+    span.ant-btn {
+      width: 32px;
+      height: 200px;
+      line-height: 200px;
+      border: 1px solid #d5dae0;
+      float: left;
+      padding: 0;
+      z-index: 2;
+    }
+    .img-box {
+      overflow: hidden;
+      width: 448px;
+      height: 100%;
+      .img-box-wrap {
+        transition-duration: 0.3s;
+        transform: translate3d(0, 0, 0);
+        display: flex;
+        div {
+          margin: 0 0 0 16px;
+          flex-shrink: 0;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transition-property: transform;
+          border: 1px solid #d5dae0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 5px;
+          }
+          i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            font-size: 14px;
+            top: -1px;
+            right: -1px;
+            color: #29bece;
+          }
+        }
+      }
+    }
+  }
+}
+
+.theme-config-protocol :global {
+  width: 6rem;
+  background-color: #fff;
+  background-image: url(../../../assets/agreement-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  border-radius: 0.05rem;
+  padding: 0;
+
+  .ant-modal-header,
+  .ant-modal-footer {
+    display: none;
+  }
+
+  .ant-modal-content {
+    background: initial;
+  }
+
+  .protocol-title {
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 0.36rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.08rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .protocol-please {
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 0.18rem;
+    font-weight: 600;
+
+    p {
+      margin-bottom: 0.08rem;
+    }
+  }
+
+  .protocol-content {
+    width: 5.4rem;
+    margin: 0.22rem auto 0;
+    padding: 0.2rem;
+    background: #f5f7fa;
+    box-shadow: 0 0.01rem 0.02rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.05rem;
+    font-size: 0.14rem;
+
+    p:first-of-type {
+      margin-bottom: 0.16rem;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .protocol-footer {
+    margin-top: 0.36rem;
+    text-align: right;
+
+    .c7n-pro-btn {
+      margin-left: 0.08rem;
+    }
+  }
+}
+
+// 在线沟通组件
+.chatRoom {
+  :global {
+    .c7n-pro-btn-primary {
+      color: #fff !important;
+    }
+  }
+}

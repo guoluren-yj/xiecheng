@@ -1,0 +1,73 @@
+// 基础样式文件
+@import '~choerodon-ui/lib/style/themes/default.less';
+@import '~hzero-ui/lib/style/themes/default.less';
+
+// 主色
+@primary-color-red: #f56349;
+@primary-color-red-hover: #e85e45;
+@primary-color-yellow: #fca000;
+@primary-color-yellow-hover: #f09800;
+@primary-color-green: #47b881;
+@primary-color-green-hover: #42ab78;
+@primary-color-cyan: #29bece;
+@primary-color-cyan-hover: #33b6c2;
+@primary-color-blue: #3095f2;
+@primary-color-blue-hover: #2e8ee6;
+@primary-color-purple: #3f5bb5;
+@primary-color-purple-hover: #3b55a8;
+@primary-color-black: #000000;
+@primary-color-white: #ffffff;
+
+// 补充色
+@color-danger: #f56649;
+@color-danger-percent10: #ffeeeb;
+@color-danger-percent5: #feefea;
+@color-waning: #fca400;
+@color-waning-percent10: #fef4e2;
+@color-waning-percent5: #fdf5e9;
+@color-success: #47b883;
+@color-success-percent10: #ebf7f1;
+@color-success-percent5: #eff7ea;
+@color-notice: #3091f2;
+@color-notice-percent10: #e6f2fd;
+@color-notice-percent5: #ecf8fb;
+
+// 填充色
+@color-fill-dark-percent85: fade(@primary-color-black, 85%);
+@color-fill-dark-percent50: fade(@primary-color-black, 50%);
+@color-fill-dark-percent25: fade(@primary-color-black, 25%);
+@color-fill-base: fade(@primary-color-black, 8%);
+@color-fill-light: fade(@primary-color-black, 3%);
+
+// 字体样式
+@basic-font-size: 12px;
+@basic-font-color: @primary-color-black;
+@basic-font-weight-regular: 400;
+@basic-font-weight-bold: 600;
+// 场景:badge、label
+@text-1-size: 10px;
+@text-1-line-hight: 16px;
+// 场景:正文(评论、弹窗等)、default size 按钮 、输入(lable、value、占位符)、tips、 topbar、sidebar、筛选(内容、标签)、表格(value & 表头)、下拉框(lable & item)、分⻚、小商品卡片(名称、价格) 、首⻚目录
+@text-2-size: @basic-font-size;
+@text-2-line-hight: 18px;
+// 场景:二级标题 (tab、评论标题)面包屑、form表单、空态文字
+@title-1-size: 14px;
+@title-1-line-hight: 22px;
+// 场景:一级标题(model标题、模块标题(非首⻚))；全 局CTA button
+@title-2-size: 16px;
+@title-2-line-hight: 24px;
+// 场景:大标题、全局性提示
+@title-3-size: 24px;
+@title-3-line-hight: 36px;
+
+// 边框
+@color-border-base: fade(@primary-color-black, 25%);
+@color-border-light: fade(@primary-color-black, 8%);
+
+// 推荐使用
+@srm-primary-color: @primary-color;
+@srm-primary-color-hover: #33b6c2;
+@srm-info-color: @info-color;
+@srm-success-color: @success-color;
+@srm-error-color: @error-color;
+@srm-warning-color: @warning-color;

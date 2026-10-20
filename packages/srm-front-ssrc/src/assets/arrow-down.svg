@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5 7.68048012 0.123236337 2.89238489 0.908910539 2.12099568 5.00284025 6.13491308 9.05160734 2.15975994 9.83728155 2.93114915"></polygon>
+    </defs>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我发出的订单" transform="translate(-742.000000, -185.000000)">
+            <g id="分组-10" transform="translate(252.000000, 176.000000)">
+                <g id="arrow-down" transform="translate(490.000000, 9.000000)">
+                    <rect id="Rectangle" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="10" height="10"></rect>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Path-2" fill="#333333" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

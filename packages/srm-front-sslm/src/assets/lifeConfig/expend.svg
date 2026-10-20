@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 59</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5、供应商工作台-有正在升降级单据-适用策略" transform="translate(-1416.000000, -385.000000)">
+            <g id="编组-59" transform="translate(1416.000000, 385.000000)">
+                <path d="M23.5,0.5 L23.5,23.5 L12,23.5 C8.82436269,23.5 5.94936269,22.2128187 3.86827202,20.131728 C1.78718134,18.0506373 0.5,15.1756373 0.5,12 C0.5,8.82436269 1.78718134,5.94936269 3.86827202,3.86827202 C5.94936269,1.78718134 8.82436269,0.5 12,0.5 L23.5,0.5 Z" id="矩形" stroke="#C9CDD4" fill="#FFFFFF"></path>
+                <g id="编组-57" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) translate(8.000000, 9.000000)" stroke="#868D9C" stroke-linecap="square" stroke-width="2">
+                    <polyline id="路径expend-1" transform="translate(1.500000, 3.000000) scale(-1, 1) translate(-1.500000, -3.000000) " points="3 6 0 3 3 0"></polyline>
+                    <polyline id="路径expend-2" transform="translate(6.500000, 3.000000) scale(-1, 1) translate(-6.500000, -3.000000) " points="8 6 5 3 8 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

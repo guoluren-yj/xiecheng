@@ -1,0 +1,194 @@
+{
+  "name": "srm-front-boot",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "7.17.5",
+    "@babel/runtime": "7.17.2",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/plugin-syntax-decorators": "^7.17.0",
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint-plugin-import": "2.22.1",
+    "commitizen": "^3.1.1",
+    "conventional-changelog-cli": "^2.0.12",
+    "cz-conventional-changelog": "^2.1.0",
+    "standard-version": "^5.0.2",
+    "wget": "^0.0.1",
+    "yarn": "^1.13.0",
+    "react-syntax-highlighter": "15.5.0"
+  },
+  "dependencies": {
+    "@antv/data-set": "0.10.2",
+    "@antv/g6": "4.0.4",
+    "@hzero-front-ui/c7n-ui": "^2.0.18",
+    "@hzero-front-ui/cfg": "^2.0.18",
+    "@hzero-front-ui/hzero-ui": "^2.0.18",
+    "bizcharts": "3.5.5",
+    "choerodon-ui": "1.5.4-webpack5-12",
+    "choerodon-ui-font": "0.2.9",
+    "crypto-js": "4.0.0",
+    "driver.js": ">=1.0.12",
+    "hzero-boot": "3.0.0-zhenyun.14",
+    "hzero-cli": "3.0.0-zhenyun.11",
+    "hzero-front": "1.5.8-webpack5-3",
+    "hzero-ui": "2.0.0-webpack5",
+    "hzero-webpack-scripts": "3.0.0-zhenyun.10",
+    "is-promise": "4.0.0",
+    "jquery": "3.5.1",
+    "json3": "^3.3.3",
+    "json-bigint": "0.4.0",
+    "load-script": "^1.0.0",
+    "mathjs": "^7.0.1",
+    "react": "16.12.0",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "16.12.0",
+    "react-image-crop": "^8.2.0",
+    "react-infinite-scroller": "^1.2.4",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "spark-md5": "3.0.2",
+    "webuploader": "0.1.8",
+    "static-eval": "^2.1.0"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "^7.17.2"
+  },
+  "resolutions": {
+    "@babel/types": "7.17.10",
+    "@babel/cli": "7.17.6",
+    "@babel/core": "7.17.5",
+    "@babel/preset-env": "7.17.10",
+    "@babel/preset-react": "7.16.7",
+    "@hzero-front-ui/cfg": "^2.0.18",
+    "@hzero-front-ui/c7n-ui": "^2.0.18",
+    "@hzero-front-ui/hzero-ui": "^2.0.18",
+    "@svgr/webpack": "^5.5.0",
+    "colors": "1.4.0",
+    "react-markdown": "4.3.1",
+    "sockjs-client": "^1.5.2",
+    "mobx": "4.7.0",
+    "conventional-changelog": "~3.0.6",
+    "browserslist": "4.19.1",
+    "caniuse-lite": "1.0.30001338",
+    "typescript": "^3.8.2"
+  },
+  "description": "srm-front-boot",
+  "author": "",
+  "version": "1.28.0-webpack5",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.going-link.com/repository/zhenyun-npm-source/"
+  },
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--max_old_space_size=8192 NODE_PROFILE=development hzero-cli start",
+    "start:mock": "cross-env NODE_PROFILE=mock hzero-cli start",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=10240 NODE_PROFILE=production BUILD_DIST_PATH=./srm-dist BUILD_SKIP_PARENT=true hzero-cli build --only-build-micro",
+    "transpile": "tsc && cross-env NODE_ENV=production BABEL_ENV=production npx babel -x .js,.ts,.jsx,.tsx src --out-dir lib --copy-files --ignore 'src/**/*.spec.js','src/**/*.test.js'",
+    "lint": "npm run lint:script && npm run lint:style && tsc --noEmit --emitDeclarationOnly false",
+    "lint:script": "eslint src/**/*.{js,jsx,tsx,ts}",
+    "lint:fix": "npm run lint:script:fix && npm run lint:style",
+    "lint:script:fix": "eslint --quiet --fix src/**/*.{js,jsx,tsx,ts}",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "lint-staged": "lint-staged",
+    "test": "hzero-cli test",
+    "changelog": "node node_modules/.bin/conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "prettier": "prettier --write ./src/**/**/**/*",
+    "tree": "tree -I node_modules -L 3",
+    "release": "standard-version",
+    "tsc": "tsc",
+    "commit": "git-cz",
+    "codeScan": "hzero codeScan",
+    "downIcon": "node scripts/icon.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "files": [
+    "lib/assets",
+    "lib/config/theme.js",
+    "lib/components",
+    "lib/models/",
+    "lib/services/",
+    "lib/utils/",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged",
+      "post-merge": "git submodule update",
+      "post-checkout": "git submodule update",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "optionalDependencies": {
+    "puppeteer": "^1.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "<rootDir>/node_modules/jest-watch-typeahead/filename.js",
+      "<rootDir>/node_modules/jest-watch-typeahead/testname.js"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint --quiet --fix --ext .js",
+    "src/**/*.less": "stylelint --syntax less",
+    "src/**/*.{js,jsx,less}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

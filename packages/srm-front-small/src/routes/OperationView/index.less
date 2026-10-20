@@ -1,0 +1,108 @@
+.price-savings-content-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .section-wrapper {
+      background: #fff;
+      margin: 8px;
+      padding: 16px;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        margin-top: 0;
+      }
+
+      .c7n-pro-table-filter-bar {
+        margin-bottom: 0;
+      }
+    }
+
+    .table-card-wrapper {
+      flex: 1;
+    }
+
+    .card-area {
+      margin: 4px;
+
+      .c7n-pro-form {
+        gap: 8px;
+
+        .c7n-pro-field-wrapper {
+          padding: 4px;
+        }
+      }
+      .c7n-pro-form>table>tbody>tr>td {
+        padding: 0;
+      }
+    }
+
+    .card-block {
+      padding: 16px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-block-title {
+      font-size: 14px;
+      color: #868D9C;
+      margin-bottom: 8px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-left: 4px;
+      }
+    }
+
+    .card-block-body {
+      display: flex;
+      align-items: center;
+    }
+
+    .table-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .metric-value {
+      display: block;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .metric-with-help {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .help-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      background: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      &:hover {
+        background: #5365ea;
+      }
+    }
+  }
+
+}

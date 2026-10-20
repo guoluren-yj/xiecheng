@@ -1,0 +1,43 @@
+.credits-config {
+  &::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  :global {
+    .sub-item-fields {
+      margin-bottom: 10px;
+      .ant-checkbox-wrapper {
+        font-size: 14px;
+      }
+    }
+    .sub-message {
+      color: #999;
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+    .ant-row{
+      .ant-col-6{
+        padding-top: 6px;
+        margin-bottom: 2px;
+      }
+      .ant-col-18{
+        .ant-form-item {
+          margin-bottom: 0;
+          .ant-form-item-label{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.extra-componnet{
+  :global{
+    .ant-row.ant-form-item{
+      margin-bottom: 0;
+    }
+  }
+}

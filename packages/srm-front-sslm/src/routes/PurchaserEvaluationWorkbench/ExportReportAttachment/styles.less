@@ -1,0 +1,43 @@
+@import '~hzero-front/lib/srm-variables';
+
+.export-report-attachment {
+  :global {
+    .top-section-title {
+      display: none;
+    }
+    .c7n-pro-select-box-wrapper {
+      display: block;
+      .c7n-pro-select-box {
+        display: block;
+        .c7n-pro-checkbox-wrapper {
+          width: 48%;
+          margin-bottom: 16px;
+        }
+        .c7n-pro-radio-wrapper {
+          width: 48%;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  .download-dimension-legend {
+    display: flex;
+    .download-dimension-legend-item-wrap {
+      width: 50%;
+      .download-dimension-legend-item {
+        width: 208px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg {
+          color: @primary-color;
+        }
+        span {
+          color: #868d9c;
+          margin-top: 4px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

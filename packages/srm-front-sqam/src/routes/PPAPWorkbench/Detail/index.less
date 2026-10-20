@@ -1,0 +1,523 @@
+@import '../../common.less';
+@import '~hzero-front/lib/srm-variables.less';
+.sqam-detail-form () {
+  &.c7n-pro-form-float-label {
+    margin: 0 -8px;
+  }
+
+  & > table > tbody > tr {
+    &:last-child {
+      .c7n-pro-field-label-vertical + .c7n-pro-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c7n-pro-field-label-vertical {
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    padding: 0;
+  }
+
+  .c7n-pro-field-label-vertical + .c7n-pro-field-wrapper {
+    padding: 4px 16px 16px 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 18px;
+
+    .c7n-pro-output {
+      line-height: 18px;
+    }
+  }
+}
+
+.sqam-detail-card () {
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  &:last-child {
+    .c7n-card-body {
+      padding-bottom: 0;
+    }
+  }
+
+  .c7n-card-head {
+    min-height: 0;
+    border-bottom: none;
+    padding: 0 10px !important;
+
+    &:before {
+      top: 4px;
+    }
+
+    .c7n-card-head-wrapper {
+      flex-direction: column;
+
+      .c7n-card-head-title {
+        font-size: 14px;
+        font-weight: 600;
+        flex: none;
+      }
+
+      .c7n-card-extra {
+        font-size: 12px;
+        line-height: 21px;
+        margin-left: 0;
+        padding: 12px 0 0 0;
+        float: left;
+        text-align: left;
+
+        a:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+.sqam-detail-content-ppapWorkbench {
+  padding: 0 20px;
+  :global {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        overflow: visible;
+        & > .c7n-collapse-header {
+          padding: 20px 0;
+          font-size: 16px;
+          font-weight: 600;
+          overflow: hidden;
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+
+        & > .c7n-collapse-content {
+          overflow: hidden;
+          padding: 0 0 20px 0;
+
+          & > .c7n-collapse-content-box {
+            padding: 0;
+
+            .c7n-pro-form-float-label {
+              padding-top: 4px;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          position: relative;
+          padding-bottom: 8px;
+
+          &::after {
+            content: '';
+            bottom: 0;
+            height: 8px;
+            left: -20px;
+            right: -20px;
+            position: absolute;
+            background-color: #f4f5f7;
+          }
+        }
+      }
+
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+    .c7n-pro-form-wrapper {
+      .sqam-detail-form();
+    }
+    .ued-detail-card {
+      .sqam-detail-card();
+    }
+  }
+  .sqam-detail-content-ppapWorkbench-info {
+    width: 50%;
+  }
+  .sqam-detail-content-ppapWorkbench-attachment {
+    :global {
+      // .c7n-pro-btn-link {
+      //   color: @text-3;
+      // }
+      .c7n-pro-attachment-required:after {
+        content: '';
+      }
+      .c7n-pro-field-label {
+        font-weight: 400;
+      }
+      .c7n-pro-attachment-header-buttons {
+        margin-top: -1px;
+      }
+    }
+  }
+}
+
+.sqam-detail-content-ppapWorkbench-panel {
+  :global {
+    .c7n-collapse-header {
+      font-size: 14px !important;
+      padding-left: 10px !important;
+      padding-top: 0 !important;
+      h3 {
+        font-size: 14px !important;
+      }
+    }
+    .c7n-collapse-header::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 3px;
+      height: 12px;
+      background-color: @primary-color;
+      pointer-events: none;
+    }
+  }
+}
+
+.sqam-ppap-detail-auto {
+  overflow: auto;
+}
+
+.sqam-document-modal {
+  .sqam-large-modal;
+  :global {
+    .page-content {
+      margin: 0;
+    }
+    .c7n-pro-modal-body {
+      padding: 20px 0;
+    }
+    .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+      height: 0;
+    }
+  }
+}
+
+.sqam-ppap-detail {
+  display: flex;
+  // margin: auto;
+  position: absolute;
+  right: 44%;
+  background: #f2f3f5;
+  padding: 2px;
+  & > div {
+    min-width: 90px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .active-detail-key {
+    font-weight: 600;
+    background: #fff;
+  }
+}
+
+.strategy-tabs-left(@between: 4px) {
+  height: 100%;
+  .c7n-tabs-bar {
+    width: 240px;
+    padding: 20px 0 16px 0;
+    .c7n-tabs-tab {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 0;
+      padding: 20px 20px 20px 20px;
+      border-bottom: solid 1px #f5f6fa;
+      color: #000;
+      &:hover {
+        color: @primary-color;
+      }
+      .c7n-text-wrapper {
+        width: 100%;
+        .c7n-text {
+          width: 100%;
+        }
+      }
+    }
+    .c7n-tabs-tab-active {
+      font-weight: 600;
+    }
+  }
+
+  .c7n-tabs-content {
+    padding-left: 0;
+    height: 100%;
+    overflow: auto;
+    .c7n-tabs-tabpane {
+      padding: 16px;
+      height: 100%;
+    }
+  }
+}
+
+.sqam-ppap-detail-tab {
+  height: 100%;
+  :global {
+    .page-content-wrap {
+      height: 100%;
+      display: flex;
+      .page-content {
+        // height: calc(100% - 32px) !important;
+        padding: 0;
+        .c7n-spin-nested-loading {
+          height: 100%;
+          .c7n-spin-container {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .document-detail {
+    height: 100%;
+    :global {
+      .c7n-tabs-left {
+        .strategy-tabs-left(4px);
+      }
+      .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+        height: 1px !important;
+      }
+      .c7n-tabs-left .c7n-tabs-content .c7n-tabs-tabpane {
+        padding: 0 !important;
+      }
+      .c7n-tabs-bar-inner {
+        flex-direction: column-reverse !important;
+      }
+      .c7n-tabs-vertical > .c7n-tabs-bar .c7n-tabs-extra-content {
+        text-align: left !important;
+      }
+      .c7n-collapse > .c7n-collapse-item:not(:last-child)::after {
+        background: #e8e8e8;
+      }
+      .c7n-tabs-tab-arrow-show {
+        display: none;
+      }
+      .c7n-tabs-nav-container-scrolling {
+        padding: 0 !important;
+      }
+    }
+    .detail-tab-extra-content {
+      width: 100%;
+      text-align: left;
+      padding-bottom: 20px;
+      padding-left: 16px;
+      border-bottom: solid 1px #f5f6fa;
+      .detail-tips {
+        font-size: 16px;
+        color: #000;
+        font-weight: 600;
+      }
+      .detail-tips-text {
+        font-size: 12px;
+        color: #767d8e;
+      }
+    }
+  }
+}
+
+.sqam-ppap-detail-tab-create {
+  height: 100%;
+  :global {
+    .page-content-wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .page-content {
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.sqam-operation-record {
+  // margin-top: 20px;
+
+  :global {
+    .record-empty {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+
+    .record-timeline {
+      .c7n-timeline-item {
+        padding: 0 0;
+
+        .c7n-timeline-item-content {
+          padding: 0 0 0.15rem 0.24rem;
+        }
+
+        .record-action-icon {
+          margin-right: 10px;
+        }
+
+        .record-action-operator {
+          margin-left: 0.06rem;
+          font-weight: 500;
+          color: #000;
+        }
+
+        .record-action-text {
+          padding: 0 4px;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .reamks {
+          margin: 5px 0 0 22px;
+          .operator {
+            margin-left: 0;
+          }
+          .gray_remarks {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 18px;
+            font-weight: 400;
+          }
+          .result {
+            font-weight: 500;
+          }
+        }
+        .remarks_attachment {
+          display: flex;
+          align-items: center;
+          margin-top: 0;
+          .c7n-pro-attachment-list-wrapper {
+            max-width: 70% !important;
+          }
+        }
+
+        .record-action-time {
+          margin: 5px 0 12px 22px;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .record-action-doc {
+          font-weight: 500;
+          color: #000;
+        }
+        .gray {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 18px;
+        }
+        .orange {
+          color: #f56349;
+        }
+        .completed {
+          color: #47b881;
+        }
+        .result {
+          font-weight: 500;
+        }
+        .record-action-divide {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.08);
+          margin: 0 0 0 22px;
+        }
+        .record-icon {
+          font-size: 16px;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}
+
+.detail-tab-header {
+  .detail-tab-status {
+    display: flex;
+    justify-content: space-between;
+    :global {
+      .c7n-tag {
+        margin-right: 0;
+      }
+    }
+  }
+  .detail-tab-title {
+    margin-bottom: 4px;
+    // color: #000;
+    white-space: break-spaces;
+    margin-right: 4px;
+  }
+  .detail-tab-title-active {
+    color: @primary-color;
+  }
+  .detail-tab-document-num {
+    color: #606978;
+    font-weight: normal;
+  }
+}
+
+.ppap-page-content {
+  height: 100%;
+  :global {
+    .page-content-wrap {
+      height: 100%;
+      .page-content {
+        height: calc(100% - 24px) !important;
+        margin: 8px;
+      }
+    }
+  }
+}
+
+.apporval-wrapper {
+  :global {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        font-size: 14px;
+
+        & > .c7n-collapse-header {
+          font-weight: 600;
+          padding: 16px 0;
+
+          .icon {
+            margin-top: -2px;
+          }
+        }
+
+        & > .c7n-collapse-content {
+          padding: 0;
+
+          .c7n-collapse-content-box {
+            padding: 0;
+          }
+        }
+
+        &:first-child {
+          & > .c7n-collapse-header {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sqam-alert-top {
+  margin: -20px -20px 16px;
+  :global {
+    background-color: #fff6e6;
+    border: none;
+    color: #f16f15;
+    .c7n-alert-icon {
+      color: inherit;
+    }
+  }
+}

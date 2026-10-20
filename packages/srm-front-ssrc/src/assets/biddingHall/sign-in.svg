@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 35</title>
+    <g id="【采】竞价大厅3.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标补全" transform="translate(-107.000000, -226.000000)">
+            <g id="编组-35" transform="translate(107.000000, 226.000000)">
+                <rect id="矩形" fill-opacity="0.15" fill="#47B883" x="0" y="0" width="16" height="16" rx="2"></rect>
+                <g id="编组" transform="translate(3.500000, 3.000000)" fill="#179454" fill-rule="nonzero">
+                    <path d="M9,1.11022302e-16 C1.5,1.11022302e-16 0.5,7.00001 0,10 C0.333335,10 0.666375,10 0.99912,10 C1.332105,8.33346 2.16573,7.41676 3.5,7.25001 C5.5,7.00001 7,5.25001 7.5,3.75 L6.75,3.25 C6.91665,3.083335 7.08335,2.91667 7.25,2.75 C7.75,2.25 8.2521,1.5 9,1.11022302e-16 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+.point-workplace-basic {
+	overflow: hidden;
+}
+
+.point-workplace-content {
+	height: calc(100vh - 292px);
+	background: #fff;
+	margin: 8px;
+	padding: 16px;
+
+	:global {
+		.c7n-pro-table-small .c7n-pro-table-cell {
+			padding: 10px !important;
+		}
+	}
+}
+
+.content-top-card {
+	padding: 16px;
+	background: #fff;
+	&-alert {
+		:global {
+			.c7n-alert-info {
+				border: none;
+				background: rgba(25, 132, 247, .10);
+				color: #0161d5;
+			}
+		}
+	}
+
+	&-points {
+		margin-top: 16px;
+		display: flex;
+		align-items: center;
+
+		&-item {
+			flex: 1;
+			padding: 16px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #1d2129;
+			font-weight: 600;
+			border: 1px solid #e5e7ec;
+			border-radius: 2px;
+			span {
+				font-size: 16px;
+			}
+
+			&-average {
+				:global {
+					svg path {
+						fill: #45a976;
+					}
+				}
+			}
+		}
+	}
+}

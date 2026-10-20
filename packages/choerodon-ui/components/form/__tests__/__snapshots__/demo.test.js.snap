@@ -1,0 +1,4285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/form/demo/advanced-search.md correctly 1`] = `
+<div>
+  <form
+    class="c7n-form c7n-form-horizontal c7n-advanced-search-form"
+  >
+    <div
+      class="c7n-row"
+      style="margin-left:-12px;margin-right:-12px"
+    >
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-1"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-2"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-3"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-4"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:block"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-5"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:none"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-6"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:none"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-7"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:none"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-8"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-col-8"
+        style="padding-left:12px;padding-right:12px;display:none"
+      >
+        <div
+          class="c7n-form-item"
+        >
+          <div
+            class="c7n-form-item-control-wrapper"
+          >
+            <div
+              class="c7n-form-item-control"
+            >
+              <span
+                class="c7n-form-item-children"
+              >
+                <span
+                  class="c7n-input-wrapper c7n-input-has-border"
+                >
+                  <div
+                    class="c7n-input-content"
+                  >
+                    <div
+                      class="c7n-input-rendered-wrapper"
+                    >
+                      <div
+                        class="c7n-input-rendered"
+                      >
+                        <input
+                          class="c7n-input"
+                          data-__field="[object Object]"
+                          data-__meta="[object Object]"
+                          id="field-9"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          class="c7n-input-label-wrapper"
+                        >
+                          <div
+                            class="c7n-input-label"
+                          >
+                            placeholder
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-row"
+    >
+      <div
+        class="c7n-col-24"
+        style="text-align:right"
+      >
+        <button
+          class="c7n-btn c7n-btn-primary c7n-btn-flat"
+          type="submit"
+        >
+          <span>
+            Search
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </button>
+        <button
+          class="c7n-btn c7n-btn-flat"
+          style="margin-left:8px"
+          type="button"
+        >
+          <span>
+            Clear
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </button>
+        <a
+          style="margin-left:8px;font-size:12px"
+        >
+          Collapse 
+          <i
+            class="icon icon-down"
+          />
+        </a>
+      </div>
+    </div>
+  </form>
+  <div
+    class="search-result-list"
+  >
+    Search Result List
+  </div>
+</div>
+`;
+
+exports[`renders ./components/form/demo/coordinated.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="note"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-has-border"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <div
+                  class="c7n-select-selection-selected-value"
+                  style="opacity:1"
+                />
+                <span
+                  class="c7n-select-arrow"
+                  style="user-select:none;-webkit-user-select:none"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-arrow_drop_down"
+                  />
+                  <b />
+                </span>
+              </div>
+              <div
+                class="c7n-select-label-wrapper"
+              >
+                <div
+                  class="c7n-select-label"
+                >
+                  Select a option and change input text above
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Submit
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/customized-form-controls.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-inline"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span>
+            <span
+              class="c7n-input-wrapper c7n-input-has-border"
+              style="width:65%;margin-right:3%;line-height:1.7"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input"
+                      type="text"
+                      value="0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </span>
+            <div
+              class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+              style="width:32%"
+            >
+              <div
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="c7n-select-selection
+            c7n-select-selection--single"
+                role="combobox"
+                tabindex="0"
+              >
+                <div
+                  class="c7n-select-selection__rendered"
+                >
+                  <div
+                    class="c7n-select-selection-selected-value"
+                    style="opacity:1"
+                    title="RMB"
+                  >
+                    RMB
+                  </div>
+                  <span
+                    class="c7n-select-arrow"
+                    style="user-select:none;-webkit-user-select:none"
+                    unselectable="unselectable"
+                  >
+                    <i
+                      class="icon icon-arrow_drop_down"
+                    />
+                    <b />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Submit
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/dynamic-form-item.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-dashed c7n-btn-flat"
+            style="width:60%"
+            type="button"
+          >
+            <i
+              class="icon icon-plus"
+            />
+            <span>
+               Add field
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Submit
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/dynamic-rule.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="username"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Please input your name
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="nickname"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Please input your nickname
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                type="checkbox"
+                value="false"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+            <span>
+              Nickname is required
+            </span>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="button"
+          >
+            <span>
+              Check
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/form/demo/form-in-modal.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      New Collection
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/form/demo/global-state.md correctly 1`] = `
+<div>
+  <form
+    class="c7n-form c7n-form-inline"
+  >
+    <div
+      class="c7n-form-item"
+    >
+      <div
+        class="c7n-form-item-control-wrapper is-required"
+      >
+        <div
+          class="c7n-form-item-control has-success"
+        >
+          <span
+            class="c7n-form-item-children"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-value c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input"
+                      data-__field="[object Object]"
+                      data-__meta="[object Object]"
+                      id="username"
+                      type="text"
+                      value="benjycui"
+                    />
+                  </div>
+                </div>
+              </div>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </form>
+  <pre
+    class="language-bash"
+  >
+    {
+  "username": {
+    "value": "benjycui"
+  }
+}
+  </pre>
+</div>
+`;
+
+exports[`renders ./components/form/demo/horizontal-login.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-inline"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-prefix c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <span
+                  class="c7n-input-prefix"
+                >
+                  <i
+                    class="icon icon-person_outline"
+                    style="color:rgba(0,0,0,.25)"
+                  />
+                </span>
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="userName"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Username
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-prefix c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <span
+                  class="c7n-input-prefix"
+                >
+                  <i
+                    class="icon icon-lock_outline"
+                    style="color:rgba(0,0,0,.25)"
+                  />
+                </span>
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="password"
+                    type="password"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Password
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Log in
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/layout.md correctly 1`] = `
+<div>
+  <form
+    class="c7n-form c7n-form-horizontal"
+  >
+    <div
+      class="c7n-form-item"
+    >
+      <div
+        class="c7n-form-item-control-wrapper"
+      >
+        <div
+          class="c7n-form-item-control"
+        >
+          <span
+            class="c7n-form-item-children"
+          >
+            <div
+              class="c7n-radio-group-wrapper"
+            >
+              <div
+                class="c7n-radio-group"
+              >
+                <label
+                  class="c7n-radio-button-wrapper c7n-radio-button-wrapper-checked"
+                >
+                  <span
+                    class="c7n-radio-button c7n-radio-button-checked"
+                  >
+                    <input
+                      checked=""
+                      class="c7n-radio-button-input"
+                      type="radio"
+                      value="horizontal"
+                    />
+                    <span
+                      class="c7n-radio-button-inner"
+                    />
+                  </span>
+                  <span>
+                    Horizontal
+                  </span>
+                </label>
+                <label
+                  class="c7n-radio-button-wrapper"
+                >
+                  <span
+                    class="c7n-radio-button"
+                  >
+                    <input
+                      class="c7n-radio-button-input"
+                      type="radio"
+                      value="vertical"
+                    />
+                    <span
+                      class="c7n-radio-button-inner"
+                    />
+                  </span>
+                  <span>
+                    Vertical
+                  </span>
+                </label>
+                <label
+                  class="c7n-radio-button-wrapper"
+                >
+                  <span
+                    class="c7n-radio-button"
+                  >
+                    <input
+                      class="c7n-radio-button-input"
+                      type="radio"
+                      value="inline"
+                    />
+                    <span
+                      class="c7n-radio-button-inner"
+                    />
+                  </span>
+                  <span>
+                    Inline
+                  </span>
+                </label>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-form-item"
+    >
+      <div
+        class="c7n-form-item-control-wrapper"
+      >
+        <div
+          class="c7n-form-item-control"
+        >
+          <span
+            class="c7n-form-item-children"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        input placeholder
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-form-item"
+    >
+      <div
+        class="c7n-form-item-control-wrapper"
+      >
+        <div
+          class="c7n-form-item-control"
+        >
+          <span
+            class="c7n-form-item-children"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        input placeholder
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-form-item"
+    >
+      <div
+        class="c7n-form-item-control-wrapper"
+      >
+        <div
+          class="c7n-form-item-control"
+        >
+          <span
+            class="c7n-form-item-children"
+          >
+            <button
+              class="c7n-btn c7n-btn-primary c7n-btn-flat"
+              type="button"
+            >
+              <span>
+                Submit
+              </span>
+              <div
+                class="c7n-ripple-wrapper"
+              />
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`renders ./components/form/demo/normal-login.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal login-form"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-prefix c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <span
+                  class="c7n-input-prefix"
+                >
+                  <i
+                    class="icon icon-person_outline"
+                    style="color:rgba(0,0,0,.25)"
+                  />
+                </span>
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="userName"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Username
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-prefix c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <span
+                  class="c7n-input-prefix"
+                >
+                  <i
+                    class="icon icon-lock_outline"
+                    style="color:rgba(0,0,0,.25)"
+                  />
+                </span>
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="password"
+                    type="password"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Password
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox c7n-checkbox-checked"
+            >
+              <input
+                checked=""
+                class="c7n-checkbox-input"
+                data-__field="[object Object]"
+                data-__meta="[object Object]"
+                id="remember"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+            <span>
+              Remember me
+            </span>
+          </label>
+          <a
+            class="login-form-forgot"
+            href=""
+          >
+            Forgot password
+          </a>
+          <button
+            class="c7n-btn login-form-button c7n-btn-primary c7n-btn-raised"
+            type="submit"
+          >
+            <span>
+              Log in
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+          Or 
+          <a
+            href=""
+          >
+            register now!
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/register.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="email"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      email
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="password"
+                    type="password"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      password
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-icon"
+                  >
+                    <i
+                      class="icon icon-visibility_off c7n-input-icon-copy"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="confirm"
+                    type="password"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      password
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-icon"
+                  >
+                    <i
+                      class="icon icon-visibility_off c7n-input-icon-copy"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    data-__field="[object Object]"
+                    data-__meta="[object Object]"
+                    id="nickname"
+                    maxlength="20"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      名称
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c7n-input-length-info"
+              >
+                0/20
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-input-number"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-value c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input"
+                      id="age"
+                      max="100"
+                      min="1"
+                      step="1"
+                      type="text"
+                      value="20"
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Age
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <div
+                      class="c7n-input-number-handler-wrap"
+                    >
+                      <span
+                        aria-disabled="false"
+                        aria-label="Increase Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-up "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                      <span
+                        aria-disabled="false"
+                        aria-label="Decrease Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-down "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-cascader-picker c7n-input-has-value"
+            tabindex="0"
+          >
+            <span
+              class="c7n-cascader-picker-label"
+            >
+              Zhejiang / Hangzhou / West Lake
+            </span>
+            <span
+              class="c7n-input-wrapper c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input c7n-cascader-input "
+                      data-__field="[object Object]"
+                      data-__meta="[object Object]"
+                      id="residence"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </span>
+            <i
+              class="icon icon-close c7n-cascader-picker-clear"
+            />
+            <i
+              class="icon icon-arrow_drop_down c7n-cascader-picker-arrow"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-select-show-search c7n-select-auto-complete c7n-select c7n-select-has-label c7n-select-combobox c7n-select-enabled c7n-select-has-border"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--single"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <div
+                  class="c7n-select-search c7n-select-search--inline"
+                  style="display:inline-block"
+                >
+                  <div
+                    class="c7n-select-search__field__wrap"
+                  >
+                    <span
+                      class="c7n-input-wrapper"
+                    >
+                      <div
+                        class="c7n-input-content"
+                      >
+                        <div
+                          class="c7n-input-rendered-wrapper"
+                        >
+                          <div
+                            class="c7n-input-rendered"
+                          >
+                            <input
+                              class="c7n-input c7n-select-search__field"
+                              type="text"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                    <span
+                      class="c7n-select-search__field__mirror"
+                    >
+                       
+                    </span>
+                  </div>
+                </div>
+                <span
+                  class="c7n-select-arrow"
+                  style="user-select:none;-webkit-user-select:none"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-arrow_drop_down"
+                  />
+                  <b />
+                </span>
+              </div>
+              <div
+                class="c7n-select-label-wrapper"
+              >
+                <div
+                  class="c7n-select-label"
+                >
+                  website
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-row"
+            style="margin-left:-4px;margin-right:-4px"
+          >
+            <div
+              class="c7n-col-12"
+              style="padding-left:4px;padding-right:4px"
+            >
+              <span
+                class="c7n-input-wrapper c7n-input-has-label c7n-input-has-border"
+              >
+                <div
+                  class="c7n-input-content"
+                >
+                  <div
+                    class="c7n-input-rendered-wrapper"
+                  >
+                    <div
+                      class="c7n-input-rendered"
+                    >
+                      <input
+                        class="c7n-input"
+                        data-__field="[object Object]"
+                        data-__meta="[object Object]"
+                        id="captcha"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="c7n-input-label-wrapper"
+                      >
+                        <div
+                          class="c7n-input-label"
+                        >
+                          Captcha
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div
+              class="c7n-col-12"
+              style="padding-left:4px;padding-right:4px"
+            >
+              <button
+                class="c7n-btn c7n-btn-raised"
+                type="button"
+              >
+                <span>
+                  Get captcha
+                </span>
+                <div
+                  class="c7n-ripple-wrapper"
+                />
+              </button>
+            </div>
+          </div>
+        </span>
+        <div
+          class="c7n-form-extra"
+        >
+          We must make sure that your are a human.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <label
+            class="c7n-checkbox-wrapper"
+          >
+            <span
+              class="c7n-checkbox"
+            >
+              <input
+                class="c7n-checkbox-input"
+                data-__field="[object Object]"
+                data-__meta="[object Object]"
+                id="agreement"
+                type="checkbox"
+              />
+              <span
+                class="c7n-checkbox-inner"
+              />
+            </span>
+            <span>
+              I have read the 
+              <a
+                href=""
+              >
+                agreement
+              </a>
+            </span>
+          </label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-raised"
+            type="submit"
+          >
+            <span>
+              Register
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/time-related-controls.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            id="date-picker"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-calendar-picker-input c7n-input"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select date
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <span
+                      class="c7n-calendar-picker-icon-wrapper"
+                    >
+                      <i
+                        class="icon icon-date_range c7n-calendar-picker-icon"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            id="date-time-picker"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-calendar-picker-input c7n-input"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select date
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <span
+                      class="c7n-calendar-picker-icon-wrapper"
+                    >
+                      <i
+                        class="icon icon-date_range c7n-calendar-picker-icon"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            id="month-picker"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-calendar-picker-input c7n-input"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select date
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <span
+                      class="c7n-calendar-picker-icon-wrapper"
+                    >
+                      <i
+                        class="icon icon-date_range c7n-calendar-picker-icon"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            id="range-picker"
+            tabindex="0"
+          >
+            <span
+              class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+            >
+              <span
+                class="c7n-calendar-picker-input c7n-input"
+              >
+                <input
+                  class="c7n-calendar-range-picker-input"
+                  placeholder="Start date"
+                  readonly=""
+                  tabindex="-1"
+                  value=""
+                />
+                <span
+                  class="c7n-calendar-range-picker-separator"
+                >
+                   ~ 
+                </span>
+                <input
+                  class="c7n-calendar-range-picker-input"
+                  placeholder="End date"
+                  readonly=""
+                  tabindex="-1"
+                  value=""
+                />
+                <span
+                  class="c7n-input-suffix"
+                >
+                  <i
+                    class="icon icon-date_range c7n-calendar-picker-icon"
+                  />
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            id="range-time-picker"
+            style="width:350px"
+            tabindex="0"
+          >
+            <span
+              class="c7n-calendar-range-picker c7n-input-wrapper c7n-input-has-border"
+            >
+              <span
+                class="c7n-calendar-picker-input c7n-input"
+              >
+                <input
+                  class="c7n-calendar-range-picker-input"
+                  placeholder="Start date"
+                  readonly=""
+                  tabindex="-1"
+                  value=""
+                />
+                <span
+                  class="c7n-calendar-range-picker-separator"
+                >
+                   ~ 
+                </span>
+                <input
+                  class="c7n-calendar-range-picker-input"
+                  placeholder="End date"
+                  readonly=""
+                  tabindex="-1"
+                  value=""
+                />
+                <span
+                  class="c7n-input-suffix"
+                >
+                  <i
+                    class="icon icon-date_range c7n-calendar-picker-icon"
+                  />
+                </span>
+              </span>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-time-picker "
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-time-picker-input"
+                      id="time-picker"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select time
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <i
+                      class="icon icon-av_timer c7n-time-picker-icon"
+                    />
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Submit
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/validate-other.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-form-text"
+          >
+            China
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-has-border"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <div
+                  class="c7n-select-selection-selected-value"
+                  style="opacity:1"
+                />
+                <span
+                  class="c7n-select-arrow"
+                  style="user-select:none;-webkit-user-select:none"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-arrow_drop_down"
+                  />
+                  <b />
+                </span>
+              </div>
+              <div
+                class="c7n-select-label-wrapper"
+              >
+                <div
+                  class="c7n-select-label"
+                >
+                  Please select a country
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper is-required"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-multiple c7n-select-has-border"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        id="select-multiple"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <span
+                  class="c7n-select-arrow"
+                  style="user-select:none;-webkit-user-select:none"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-arrow_drop_down"
+                  />
+                  <b />
+                </span>
+              </div>
+              <div
+                class="c7n-select-label-wrapper"
+              >
+                <div
+                  class="c7n-select-label"
+                >
+                  Please select favourite colors
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-input-number"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input"
+                      id="input-number"
+                      max="10"
+                      min="1"
+                      step="1"
+                      type="text"
+                      value="3"
+                    />
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <div
+                      class="c7n-input-number-handler-wrap"
+                    >
+                      <span
+                        aria-disabled="false"
+                        aria-label="Increase Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-up "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                      <span
+                        aria-disabled="false"
+                        aria-label="Decrease Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-down "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+          <span
+            class="c7n-form-text"
+          >
+             machines
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-switch"
+            data-__field="[object Object]"
+            data-__meta="[object Object]"
+            id="switch"
+            tabindex="0"
+          >
+            <span
+              class="c7n-switch-inner"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-slider c7n-slider-with-marks"
+          >
+            <div
+              class="c7n-slider-rail"
+            />
+            <div
+              class="c7n-slider-track"
+              style="left:0%;width:0%"
+            />
+            <div
+              class="c7n-slider-step"
+            >
+              <span
+                class="c7n-slider-dot c7n-slider-dot-active"
+                style="left:0%"
+              />
+              <span
+                class="c7n-slider-dot"
+                style="left:20%"
+              />
+              <span
+                class="c7n-slider-dot"
+                style="left:40%"
+              />
+              <span
+                class="c7n-slider-dot"
+                style="left:60%"
+              />
+              <span
+                class="c7n-slider-dot"
+                style="left:80%"
+              />
+              <span
+                class="c7n-slider-dot"
+                style="left:100%"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              aria-valuemax="100"
+              aria-valuemin="0"
+              aria-valuenow="0"
+              class="c7n-slider-handle"
+              role="slider"
+              style="left:0%"
+              tabindex="0"
+            />
+            <div
+              class="c7n-slider-mark"
+            >
+              <span
+                class="c7n-slider-mark-text c7n-slider-mark-text-active"
+                style="width:18%;margin-left:-9%;left:0%"
+              >
+                A
+              </span>
+              <span
+                class="c7n-slider-mark-text"
+                style="width:18%;margin-left:-9%;left:20%"
+              >
+                B
+              </span>
+              <span
+                class="c7n-slider-mark-text"
+                style="width:18%;margin-left:-9%;left:40%"
+              >
+                C
+              </span>
+              <span
+                class="c7n-slider-mark-text"
+                style="width:18%;margin-left:-9%;left:60%"
+              >
+                D
+              </span>
+              <span
+                class="c7n-slider-mark-text"
+                style="width:18%;margin-left:-9%;left:80%"
+              >
+                E
+              </span>
+              <span
+                class="c7n-slider-mark-text"
+                style="width:18%;margin-left:-9%;left:100%"
+              >
+                F
+              </span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-radio-group-wrapper"
+          >
+            <div
+              class="c7n-radio-group"
+              id="radio-group"
+            >
+              <label
+                class="c7n-radio-wrapper"
+              >
+                <span
+                  class="c7n-radio"
+                >
+                  <input
+                    class="c7n-radio-input"
+                    type="radio"
+                    value="a"
+                  />
+                  <span
+                    class="c7n-radio-inner"
+                  />
+                </span>
+                <span>
+                  item 1
+                </span>
+              </label>
+              <label
+                class="c7n-radio-wrapper"
+              >
+                <span
+                  class="c7n-radio"
+                >
+                  <input
+                    class="c7n-radio-input"
+                    type="radio"
+                    value="b"
+                  />
+                  <span
+                    class="c7n-radio-inner"
+                  />
+                </span>
+                <span>
+                  item 2
+                </span>
+              </label>
+              <label
+                class="c7n-radio-wrapper"
+              >
+                <span
+                  class="c7n-radio"
+                >
+                  <input
+                    class="c7n-radio-input"
+                    type="radio"
+                    value="c"
+                  />
+                  <span
+                    class="c7n-radio-inner"
+                  />
+                </span>
+                <span>
+                  item 3
+                </span>
+              </label>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-radio-group-wrapper"
+          >
+            <div
+              class="c7n-radio-group"
+              id="radio-button"
+            >
+              <label
+                class="c7n-radio-button-wrapper"
+              >
+                <span
+                  class="c7n-radio-button"
+                >
+                  <input
+                    class="c7n-radio-button-input"
+                    type="radio"
+                    value="a"
+                  />
+                  <span
+                    class="c7n-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  item 1
+                </span>
+              </label>
+              <label
+                class="c7n-radio-button-wrapper"
+              >
+                <span
+                  class="c7n-radio-button"
+                >
+                  <input
+                    class="c7n-radio-button-input"
+                    type="radio"
+                    value="b"
+                  />
+                  <span
+                    class="c7n-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  item 2
+                </span>
+              </label>
+              <label
+                class="c7n-radio-button-wrapper"
+              >
+                <span
+                  class="c7n-radio-button"
+                >
+                  <input
+                    class="c7n-radio-button-input"
+                    type="radio"
+                    value="c"
+                  />
+                  <span
+                    class="c7n-radio-button-inner"
+                  />
+                </span>
+                <span>
+                  item 3
+                </span>
+              </label>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <ul
+            class="c7n-rate"
+            tabindex="0"
+          >
+            <li
+              class="c7n-rate-star c7n-rate-star-full"
+            >
+              <div
+                class="c7n-rate-star-first"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+              <div
+                class="c7n-rate-star-second"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+            </li>
+            <li
+              class="c7n-rate-star c7n-rate-star-full"
+            >
+              <div
+                class="c7n-rate-star-first"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+              <div
+                class="c7n-rate-star-second"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+            </li>
+            <li
+              class="c7n-rate-star c7n-rate-star-full"
+            >
+              <div
+                class="c7n-rate-star-first"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+              <div
+                class="c7n-rate-star-second"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+            </li>
+            <li
+              class="c7n-rate-star c7n-rate-star-zero"
+            >
+              <div
+                class="c7n-rate-star-first"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+              <div
+                class="c7n-rate-star-second"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+            </li>
+            <li
+              class="c7n-rate-star c7n-rate-star-zero"
+            >
+              <div
+                class="c7n-rate-star-first"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+              <div
+                class="c7n-rate-star-second"
+              >
+                <i
+                  class="icon icon-star"
+                />
+              </div>
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class=""
+          >
+            <div
+              class="c7n-upload c7n-upload-select c7n-upload-select-picture"
+              style="display:"
+            />
+            <div
+              class="c7n-upload-list c7n-upload-list-picture"
+            />
+          </span>
+        </span>
+        <div
+          class="c7n-form-extra"
+        >
+          longgggggggggggggggggggggggggggggggggg
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="dropbox"
+          >
+            <span
+              class=""
+            >
+              <div
+                class="c7n-upload c7n-upload-drag"
+              />
+              <div
+                class="c7n-upload-list c7n-upload-list-text"
+              />
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <button
+            class="c7n-btn c7n-btn-primary c7n-btn-flat"
+            type="submit"
+          >
+            <span>
+              Submit
+            </span>
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/validate-static.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item c7n-form-item-with-help"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-error"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="error"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      unavailable choice
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+        <div
+          class="c7n-form-explain"
+        >
+          Should be combination of numbers & alphabets
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-warning"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="warning"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Warning
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item c7n-form-item-with-help"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback is-validating"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="validating"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      I'm the content is being validated
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+        <div
+          class="c7n-form-explain"
+        >
+          The information is being validated...
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="success"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      I'm the content
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-warning"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="warning"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      Warning
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item c7n-form-item-with-help"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-error"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-input-wrapper c7n-input-has-border"
+          >
+            <div
+              class="c7n-input-content"
+            >
+              <div
+                class="c7n-input-rendered-wrapper"
+              >
+                <div
+                  class="c7n-input-rendered"
+                >
+                  <input
+                    class="c7n-input"
+                    id="error"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="c7n-input-label-wrapper"
+                  >
+                    <div
+                      class="c7n-input-label"
+                    >
+                      unavailable choice
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </span>
+        <div
+          class="c7n-form-explain"
+        >
+          Should be combination of numbers & alphabets
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-calendar-picker"
+            style="width:100%"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-calendar-picker-input c7n-input"
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select date
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <span
+                      class="c7n-calendar-picker-icon-wrapper"
+                    >
+                      <i
+                        class="icon icon-date_range c7n-calendar-picker-icon"
+                      />
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-warning"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-time-picker "
+            style="width:100%"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      class="c7n-input c7n-time-picker-input"
+                      id=""
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="c7n-input-label-wrapper"
+                    >
+                      <div
+                        class="c7n-input-label"
+                      >
+                        Select time
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <i
+                      class="icon icon-av_timer c7n-time-picker-icon"
+                    />
+                  </span>
+                </div>
+              </div>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-error"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--single"
+              role="combobox"
+              tabindex="0"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <div
+                  class="c7n-select-selection-selected-value"
+                  style="opacity:1"
+                  title="Option 1"
+                >
+                  Option 1
+                </div>
+                <span
+                  class="c7n-select-arrow"
+                  style="user-select:none;-webkit-user-select:none"
+                  unselectable="unselectable"
+                >
+                  <i
+                    class="icon icon-arrow_drop_down"
+                  />
+                  <b />
+                </span>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item c7n-form-item-with-help"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback is-validating"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <span
+            class="c7n-cascader-picker c7n-input-has-value"
+            tabindex="0"
+          >
+            <span
+              class="c7n-cascader-picker-label"
+            />
+            <span
+              class="c7n-input-wrapper c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input c7n-cascader-input "
+                      readonly=""
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </span>
+            <i
+              class="icon icon-close c7n-cascader-picker-clear"
+            />
+            <i
+              class="icon icon-arrow_drop_down c7n-cascader-picker-arrow"
+            />
+          </span>
+        </span>
+        <div
+          class="c7n-form-explain"
+        >
+          The information is being validated...
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-col-11"
+          >
+            <div
+              class="c7n-form-item c7n-form-item-with-help"
+            >
+              <div
+                class="c7n-form-item-control-wrapper"
+              >
+                <div
+                  class="c7n-form-item-control has-error"
+                >
+                  <span
+                    class="c7n-form-item-children"
+                  >
+                    <span
+                      class="c7n-calendar-picker"
+                    >
+                      <span
+                        class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+                      >
+                        <div
+                          class="c7n-input-content"
+                        >
+                          <div
+                            class="c7n-input-rendered-wrapper"
+                          >
+                            <div
+                              class="c7n-input-rendered"
+                            >
+                              <input
+                                class="c7n-input c7n-calendar-picker-input c7n-input"
+                                readonly=""
+                                type="text"
+                                value=""
+                              />
+                              <div
+                                class="c7n-input-label-wrapper"
+                              >
+                                <div
+                                  class="c7n-input-label"
+                                >
+                                  Select date
+                                </div>
+                              </div>
+                            </div>
+                            <span
+                              class="c7n-input-suffix"
+                            >
+                              <span
+                                class="c7n-calendar-picker-icon-wrapper"
+                              >
+                                <i
+                                  class="icon icon-date_range c7n-calendar-picker-icon"
+                                />
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </span>
+                    </span>
+                  </span>
+                  <div
+                    class="c7n-form-explain"
+                  >
+                    Please select the correct date
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-col-2"
+          >
+            <span
+              style="display:inline-block;width:100%;text-align:center"
+            >
+              -
+            </span>
+          </div>
+          <div
+            class="c7n-col-11"
+          >
+            <div
+              class="c7n-form-item"
+            >
+              <div
+                class="c7n-form-item-control-wrapper"
+              >
+                <div
+                  class="c7n-form-item-control"
+                >
+                  <span
+                    class="c7n-form-item-children"
+                  >
+                    <span
+                      class="c7n-calendar-picker"
+                    >
+                      <span
+                        class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+                      >
+                        <div
+                          class="c7n-input-content"
+                        >
+                          <div
+                            class="c7n-input-rendered-wrapper"
+                          >
+                            <div
+                              class="c7n-input-rendered"
+                            >
+                              <input
+                                class="c7n-input c7n-calendar-picker-input c7n-input"
+                                readonly=""
+                                type="text"
+                                value=""
+                              />
+                              <div
+                                class="c7n-input-label-wrapper"
+                              >
+                                <div
+                                  class="c7n-input-label"
+                                >
+                                  Select date
+                                </div>
+                              </div>
+                            </div>
+                            <span
+                              class="c7n-input-suffix"
+                            >
+                              <span
+                                class="c7n-calendar-picker-icon-wrapper"
+                              >
+                                <i
+                                  class="icon icon-date_range c7n-calendar-picker-icon"
+                                />
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-form-item"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control has-feedback has-success"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-input-number"
+            style="width:100%"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input"
+                      min="-9007199254740991"
+                      step="1"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <div
+                      class="c7n-input-number-handler-wrap"
+                    >
+                      <span
+                        aria-disabled="false"
+                        aria-label="Increase Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-up "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                      <span
+                        aria-disabled="false"
+                        aria-label="Decrease Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-down "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders ./components/form/demo/without-form-create.md correctly 1`] = `
+<form
+  class="c7n-form c7n-form-horizontal"
+>
+  <div
+    class="c7n-form-item c7n-form-item-with-help"
+  >
+    <div
+      class="c7n-form-item-control-wrapper"
+    >
+      <div
+        class="c7n-form-item-control"
+      >
+        <span
+          class="c7n-form-item-children"
+        >
+          <div
+            class="c7n-input-number"
+          >
+            <span
+              class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+            >
+              <div
+                class="c7n-input-content"
+              >
+                <div
+                  class="c7n-input-rendered-wrapper"
+                >
+                  <div
+                    class="c7n-input-rendered"
+                  >
+                    <input
+                      autocomplete="off"
+                      class="c7n-input"
+                      max="12"
+                      min="8"
+                      step="1"
+                      type="text"
+                      value="11"
+                    />
+                  </div>
+                  <span
+                    class="c7n-input-suffix"
+                  >
+                    <div
+                      class="c7n-input-number-handler-wrap"
+                    >
+                      <span
+                        aria-disabled="false"
+                        aria-label="Increase Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-up "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_up c7n-input-number-handler-up-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                      <span
+                        aria-disabled="false"
+                        aria-label="Decrease Value"
+                        class="c7n-input-number-handler c7n-input-number-handler-down "
+                        role="button"
+                        unselectable="unselectable"
+                      >
+                        <i
+                          class="icon icon-baseline-arrow_drop_down c7n-input-number-handler-down-inner"
+                          unselectable="unselectable"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </span>
+        <div
+          class="c7n-form-explain"
+        >
+          A prime is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;

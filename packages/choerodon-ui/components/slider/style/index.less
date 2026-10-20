@@ -1,0 +1,188 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@slider-prefix-cls: ~'@{c7n-prefix}-slider';
+
+.@{slider-prefix-cls} {
+  .reset-component;
+  position: relative;
+  height: 0.12rem;
+  margin: @slider-margin;
+  padding: 0.04rem 0;
+  cursor: pointer;
+
+  .vertical();
+
+  &-with-marks {
+    margin-bottom: 0.28rem;
+  }
+
+  &-rail {
+    position: absolute;
+    width: 100%;
+    height: 0.04rem;
+    background-color: @slider-rail-background-color;
+    border-radius: 0.02rem;
+    transition: background-color @animation-duration-slow;
+  }
+
+  &-track {
+    position: absolute;
+    height: 0.04rem;
+    background-color: @slider-track-background-color;
+    border-radius: @border-radius-base;
+    transition: background-color @animation-duration-slow ease;
+  }
+
+  &-handle {
+    position: absolute;
+    width: 0.14rem;
+    height: 0.14rem;
+    margin-top: -0.05rem;
+    margin-left: -0.07rem;
+    background-color: @component-background;
+    border: 0.02rem @border-style-base @slider-handle-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color @animation-duration-slow, transform @animation-duration-slow cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+    &:focus {
+      border-color: @slider-handle-color-focus;
+      outline: none;
+      box-shadow: 0 0 0 0.05rem @slider-handle-color-focus-shadow;
+    }
+
+    &.@{c7n-prefix}-tooltip-open {
+      border-color: @slider-handle-color-tooltip-open;
+    }
+  }
+
+  &:hover {
+    .@{slider-prefix-cls}-rail {
+      background-color: @slider-rail-background-color-hover;
+    }
+    .@{slider-prefix-cls}-track {
+      background-color: @slider-track-background-color-hover;
+    }
+    .@{slider-prefix-cls}-handle:not(.@{c7n-prefix}-tooltip-open) {
+      border-color: @slider-handle-color-hover;
+    }
+  }
+
+  &-mark {
+    position: absolute;
+    top: 0.14rem;
+    left: 0;
+    width: 100%;
+    font-size: @font-size-base;
+  }
+
+  &-mark-text {
+    position: absolute;
+    display: inline-block;
+    color: @text-color-secondary;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &-active {
+      color: @text-color;
+    }
+  }
+
+  &-step {
+    position: absolute;
+    width: 100%;
+    height: 0.04rem;
+    background: transparent;
+  }
+
+  &-dot {
+    position: absolute;
+    top: -0.02rem;
+    width: 0.08rem;
+    height: 0.08rem;
+    margin-left: -0.04rem;
+    vertical-align: middle;
+    background-color: @component-background;
+    border: 0.02rem @border-style-base @slider-dot-border-color;
+    border-radius: 50%;
+    cursor: pointer;
+    &:first-child {
+      margin-left: -0.04rem;
+    }
+    &:last-child {
+      margin-left: -0.04rem;
+    }
+    &-active {
+      border-color: @slider-dot-border-color-active;
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+
+    .@{slider-prefix-cls}-track {
+      background-color: @slider-disabled-color !important;
+    }
+
+    .@{slider-prefix-cls}-handle,
+    .@{slider-prefix-cls}-dot {
+      background-color: @component-background;
+      border-color: @slider-disabled-color !important;
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+
+    .@{slider-prefix-cls}-mark-text,
+    .@{slider-prefix-cls}-dot {
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.vertical() {
+  &-vertical {
+    width: 0.12rem;
+    height: 100%;
+    margin: 0.06rem 0.1rem;
+    padding: 0 0.04rem;
+
+    .@{slider-prefix-cls}-rail {
+      width: 0.04rem;
+      height: 100%;
+    }
+
+    .@{slider-prefix-cls}-track {
+      width: 0.04rem;
+    }
+
+    .@{slider-prefix-cls}-handle {
+      margin-bottom: -0.07rem;
+      margin-left: -0.05rem;
+    }
+
+    .@{slider-prefix-cls}-mark {
+      top: 0;
+      left: 0.12rem;
+      width: 0.18rem;
+      height: 100%;
+    }
+
+    .@{slider-prefix-cls}-mark-text {
+      left: 0.04rem;
+      white-space: nowrap;
+    }
+
+    .@{slider-prefix-cls}-step {
+      width: 0.04rem;
+      height: 100%;
+    }
+
+    .@{slider-prefix-cls}-dot {
+      top: auto;
+      left: 0.02rem;
+      margin-bottom: -0.04rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.chat-type {
+  padding: 12px;
+  width: 72px;
+  box-sizing: border-box;
+  border-right: 1px solid #e5e7ec;
+  background-color: #f7f8fa;
+
+  .chat-type-item {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 400;
+
+    :global {
+      img {
+        height: 20px;
+        width: 20px;
+      }
+
+      span {
+        margin-top: 1px;
+      }
+    }
+
+    &.active {
+      border-radius: 3px;
+      background-color: #e5e7ec;
+    }
+  }
+}

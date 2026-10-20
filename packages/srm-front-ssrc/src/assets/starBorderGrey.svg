@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/star_border备份 6</title>
+    <g id="询价工作台&amp;询价单维护" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工作台-列聚合表视图-待发布-切换视图" transform="translate(-684.000000, -421.000000)" fill-rule="nonzero">
+            <g id="编组-10备份" transform="translate(660.000000, 421.000000)">
+                <g id="star_border" transform="translate(24.000000, 0.000000)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                    <g id="color" transform="translate(1.000000, 1.000000)">
+                        <polygon id="路径" fill="#BFBFBF" points="13.6666667 5.16 8.87333333 4.74666667 7 0.333333328 5.12666667 4.75333333 0.333333328 5.16 3.97333333 8.31333333 2.88 13 7 10.5133333 11.12 13 10.0333333 8.31333333"></polygon>
+                        <polygon id="路径" fill="#FFFFFF" points="7 9.26666667 4.49333333 10.78 5.16 7.92666667 2.94666667 6.00666667 5.86666667 5.75333333 7 3.06666667 8.14 5.76 11.06 6.01333333 8.84666667 7.93333333 9.51333333 10.7866667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

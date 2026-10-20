@@ -1,0 +1,53 @@
+.rectification-anchor {
+  position: absolute;
+  top: 40%;
+  width: 12px;
+  height: 55px;
+  background-color: #c1c1c1;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  :global {
+    .rectification-anchor-icon {
+      font-size: 1px;
+      color: black;
+    }
+  }
+}
+
+.rectification-anchor-container {
+  position: absolute;
+  top: calc(40% - 70px);
+  right: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 8px #d8d6d6;
+
+  :global {
+    .rectification-anchor-wrapper {
+      width: 120px;
+      height: 200px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .ant-anchor {
+        .ant-anchor-ink {
+          height: 0;
+        }
+
+        .ant-anchor-link {
+          .ant-anchor-link-title {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>add</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6-字段选择" transform="translate(-1194.000000, -159.000000)">
+            <g id="编组-19" transform="translate(1194.000000, 158.000000)">
+                <g id="编组" transform="translate(0.000000, 1.000000)">
+                    <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="14" height="14"></rect>
+                    <path d="M1.5,7.5 L12.5,7.5 C12.7761424,7.5 13,7.27614237 13,7 C13,6.72385763 12.7761424,6.5 12.5,6.5 L1.5,6.5 C1.22385763,6.5 1,6.72385763 1,7 C1,7.27614237 1.22385763,7.5 1.5,7.5 Z" id="路径-5备份" fill="#0840F8" fill-rule="nonzero"></path>
+                    <path d="M6.5,1.5 L6.5,12.5 C6.5,12.7761424 6.72385763,13 7,13 C7.27614237,13 7.5,12.7761424 7.5,12.5 L7.5,1.5 C7.5,1.22385763 7.27614237,1 7,1 C6.72385763,1 6.5,1.22385763 6.5,1.5 Z" id="路径" fill="#0840F8" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

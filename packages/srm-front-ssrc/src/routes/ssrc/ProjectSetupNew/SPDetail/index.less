@@ -1,0 +1,55 @@
+.ssrc-sp-wrapper {
+  height: 100%;
+  background-color: #f7f8fa;
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+
+  .ssrc-sp-content-version-wrapper { // 版本页面样式
+    height: calc(100% - 0.48rem);
+    overflow: auto;
+    padding: 0 8px;
+  }
+
+  .ssrc-sp-content-approval-wrapper { // 审批页面样式
+    padding: 4px 8px 0;
+  }
+
+  .ssrc-sp-content-wrapper, .ssrc-sp-content-approval-wrapper { // 明细页面样式
+    height: 100%;
+    .sp-common-top-section-card:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .sp-common-top-section-card {
+    background: #fff;
+    padding: 0.2rem;
+    margin: 8px 0;
+  }
+  .sp-common-top-section-has-child.sp-common-top-section-card {
+    :global {
+      .second-section-title {
+        &:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+  .ssrc-source-project-approval-af-basic-card.sp-common-top-section-card { // 审批页面基础卡片样式
+    padding: 0;
+    :global {
+      .af-basic-container,
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .title-field {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-text-message {
+  max-width: calc(100% - 28px);
+
+  pre {
+    white-space: pre-wrap;
+    overflow: hidden;
+    word-break: break-word;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: @basic-font-color;
+    padding: 0;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+    img {
+      width: 22px;
+      height: 22px;
+    }
+    :global {
+      img {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+.smbl-text-message-left {
+  justify-content: flex-start;
+  background: #f2f3f5;
+  border-radius: 5px;
+  pre {
+    padding: 8px 12px;
+  }
+}
+
+.smbl-text-message-right {
+  justify-content: flex-end;
+  background: fade(#1984f7, 10%);
+  border-radius: 5px;
+  pre {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/analytics_black_余额</title>
+    <defs>
+        <path d="M53.3333333,0 L6.66666667,0 C3,0 0,3 0,6.66666667 L0,53.3333333 C0,57 3,60 6.66666667,60 L53.3333333,60 C57,60 60,57 60,53.3333333 L60,6.66666667 C60,3 57,0 53.3333333,0 Z M20,46.6666667 L13.3333333,46.6666667 L13.3333333,30 L20,30 L20,46.6666667 Z M33.3333333,46.6666667 L26.6666667,46.6666667 L26.6666667,36.6666667 L33.3333333,36.6666667 L33.3333333,46.6666667 Z M33.3333333,30 L26.6666667,30 L26.6666667,23.3333333 L33.3333333,23.3333333 L33.3333333,30 Z M46.6666667,46.6666667 L40,46.6666667 L40,13.3333333 L46.6666667,13.3333333 L46.6666667,46.6666667 Z" id="path-1"></path>
+    </defs>
+    <g id="回收♻️" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-182.000000, -325.000000)">
+            <g id="analytics_black_24dp" transform="translate(182.000000, 325.000000)">
+                <polygon id="路径" points="0 0 80 0 80 80 0 80"></polygon>
+                <g id="color" transform="translate(10.000000, 10.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill-opacity="0.03" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

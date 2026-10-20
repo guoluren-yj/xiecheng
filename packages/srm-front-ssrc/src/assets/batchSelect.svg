@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 19</title>
+    <g id="选用模式切换-v1217" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-19">
+            <rect id="矩形" fill="currentColor" x="0" y="0" width="16" height="16" rx="2"></rect>
+            <g id="Icon/flash_on" transform="translate(2.000000, 2.000000)">
+                <path d="M9,3.5 L8.295,2.795 L5.125,5.965 L5.83,6.67 L9,3.5 Z M11.12,2.795 L5.83,8.085 L3.74,6 L3.035,6.705 L5.83,9.5 L11.83,3.5 L11.12,2.795 Z M0.204999996,6.705 L3,9.5 L3.705,8.795 L0.915,6 L0.204999996,6.705 Z" id="icon" fill="#FFFFFF"></path>
+                <rect id="done_all" x="0" y="0" width="12" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

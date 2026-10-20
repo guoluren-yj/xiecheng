@@ -1,0 +1,612 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+
+.approve-record-timeline {
+  padding-top: 20px !important;
+  &-arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    box-shadow: -0.03rem 0.03rem 0.07rem rgba(0, 0, 0, 0.12);
+    left: 19px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    top: 20px;
+    border-color: transparent;
+    border-style: solid;
+    border-bottom-left-radius: 2px;
+    border-width: 1px;
+  }
+  &-content {
+    width: 400px;
+    display: inline-block;
+    padding: 8px 16px 8px 10px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.02rem;
+    box-shadow: 0 0.02rem 0.08rem rgba(0, 0, 0, 0.12);
+  }
+  &-comment {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  &-footer {
+    margin-top: 10px;
+  }
+  &-icon {
+    font-size: 14px;
+    vertical-align: text-bottom;
+    color: #a5a5a5;
+  }
+  &-time {
+    margin-left: 2px;
+    color: #a5a5a5;
+  }
+  &-file {
+    margin-left: 16px;
+  }
+  :global {
+    .c7n-timeline-item-content {
+      top: -16px !important;
+      padding-left: 24px;
+    }
+  }
+}
+
+.approve-record-collapse {
+  .approve-record-node {
+    display: flex;
+    &-name {
+      display: flex;
+      width: 100%;
+      padding-right: 20px;
+      margin-bottom: 0.04rem;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 12px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &-tag {
+      height: 18px;
+      line-height: 16px;
+      margin-right: 0;
+      padding: 0 4px;
+      transform: scale(0.85);
+    }
+    &-tag-right {
+      height: 18px;
+      line-height: 16px;
+      margin-right: 0;
+      font-weight: 600;
+      border: 1px solid #979797;
+      border-radius: 2px;
+      padding: 0 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: scale(0.85);
+    }
+    :global {
+      .c7n-timeline-item-head-custom {
+        top: 0;
+        left: 0;
+      }
+      .c7n-timeline-item-tail {
+        top: 0;
+      }
+      .c7n-timeline-item-content {
+        padding: 0 0 0 0.24rem;
+      }
+    }
+  }
+  .timeline-green {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #47b881 !important;
+      }
+    }
+  }
+  .timeline-red {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #f56349 !important;
+      }
+    }
+  }
+  .timeline-black {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #dadada !important;
+        color: #dadada;
+      }
+    }
+  }
+  .timeline-orange {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #f88d10 !important;
+        color: #f88d10;
+      }
+    }
+  }
+  .timeline-blue {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #02a7f0 !important;
+        color: #02a7f0;
+      }
+    }
+  }
+  .timeline-deepBlue {
+    :global {
+      .c7n-timeline-item-head-blue {
+        border-color: #1d62f5 !important;
+        color: #1d62f5;
+      }
+    }
+  }
+  .timeline-border-dotted {
+    // 审批中时间轴虚线
+    :global {
+      .c7n-timeline .c7n-timeline-item-tail {
+        border-left-style: dotted;
+      }
+    }
+  }
+  .approve-record-timeline {
+    &-item {
+      display: flex;
+      &-records {
+        display: flex;
+        > div {
+          > div {
+            margin-bottom: 0.04rem;
+          }
+          > div:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      & > div {
+        margin: 0.02rem 0 0.16rem 0;
+        > div {
+          width: 5rem;
+          margin-bottom: 0.16rem;
+        }
+        > div:first-child {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        > div:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+      & > div:first-child {
+        flex: 1 1;
+        > div:first-child {
+          font-size: 13px;
+        }
+      }
+      & > div:last-child {
+        // width: 150px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        > div:last-child {
+          margin-bottom: 0.16rem !important;
+        }
+      }
+
+      .assignee-name {
+        cursor: default;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+        margin-right: 10px;
+        display: flex;
+        color: #000;
+        height: 18px;
+        line-height: 18px;
+        &-label {
+          width: 60px;
+          margin-right: 0.16rem;
+          color: rgba(0, 0, 0, 0.45);
+        }
+        > span:last-child {
+          color: #000;
+        }
+      }
+
+      // 审批人后面的勾叉icon
+      .status-icon {
+        margin-right: 10px;
+        height: 18px;
+        line-height: 18px;
+        :global {
+          .icon {
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: -2px;
+          }
+        }
+      }
+    }
+    &-label,
+    &-time {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &-label {
+      display: inline-block;
+      width: 100px;
+      margin-right: 10px;
+    }
+  }
+  .approve-record-comment {
+    display: flex;
+    &-label {
+      flex-shrink: 0;
+      width: 60px;
+      margin-right: 0.16rem !important;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &-content {
+      flex: 1 1;
+      line-height: 1.8;
+    }
+  }
+  .approve-record-time {
+    display: flex;
+    color: #000;
+    &-label {
+      width: 60px;
+      margin-right: 0.16rem;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &-content {
+      flex: 1 1;
+
+      &-approveDuration {
+        margin-left: 8px;
+        color: #f88d10;
+        background-color: #fdf5e5;
+        padding: 2px 4px;
+        font-weight: 600;
+        border-radius: 2px;
+      }
+    }
+  }
+  :global {
+    .c7n-timeline .c7n-timeline-item-tail {
+      display: block;
+      border-left-style: solid;
+    }
+    .c7n-collapse-extra {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .c7n-collapse-item {
+      border-bottom: none;
+    }
+    .c7n-collapse-header {
+      padding: 0 !important;
+    }
+    .c7n-collapse-content-box {
+      padding-bottom: 0.08rem !important;
+    }
+    .c7n-timeline {
+      flex: 1 1;
+      &-item {
+        padding-bottom: 0;
+        &-content {
+          min-height: unset;
+        }
+      }
+    }
+    .c7n-timeline-item .c7n-collapse-content {
+      padding: 0;
+    }
+    .c7n-timeline-item-head-red {
+      color: #dadada;
+      border-color: #dadada;
+    }
+    .c7n-timeline-item-head-blue {
+      color: #dadada;
+      border-color: #dadada;
+    }
+  }
+}
+
+// 流程预览按钮
+.approve-forecast {
+  margin-top: -8px;
+  :global {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+
+    .approve-forecast-font {
+      background-color: @primary-color;
+      width: fit-content;
+      color: #fff;
+      padding: 5px 4px;
+      border-radius: 2px;
+      cursor: pointer;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      .icon {
+        margin: 0 4px;
+      }
+      .icon-help {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.approve-record-collapse {
+  //未结束的时间线改成虚线
+  > div:last-child {
+    .approve-record-node {
+      :global {
+        .c7n-timeline .c7n-timeline-item-tail {
+          display: none;
+        }
+        .c7n-timeline .c7n-timeline-item-last .c7n-timeline-item-head-blue {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  :global {
+    .c7n-timeline-item-head-custom {
+      display: none;
+    }
+  }
+}
+
+.approve-record-collapse {
+  // margin-left: 8px;
+  // margin-top: 8px;
+  :global {
+    .c7n-collapse-content {
+      padding: 0;
+    }
+    .empty-img {
+      text-align: center;
+      margin-top: calc(100vh / 2 - 180px);
+      .desc {
+        font-size: 12px;
+        display: inline-block;
+        color: #868d9c;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//详情页锚点样式
+.anchor-point {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  .anchor-point-left {
+    display: inline-block;
+    width: 32px;
+    height: 160px;
+    float: left;
+    padding: 42px 0;
+    margin-right: -16px;
+
+    .anchor-point-icon {
+      width: 32px;
+      height: 60px;
+      line-height: 60px;
+      background: #e0e0e0;
+      border-radius: 35%;
+      cursor: pointer;
+    }
+  }
+
+  .anchor-point-content {
+    display: inline-block;
+    width: 156px;
+    height: 160px;
+    background: #fff;
+    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.12);
+    padding: 16px;
+
+    :global {
+      .c7n-timeline-item-tail {
+        top: 0;
+        height: 130%;
+      }
+      .c7n-timeline-item-head-blue {
+        display: none;
+      }
+    }
+    .anchor-point-selected {
+      :global {
+        .c7n-timeline-item-head-blue {
+          display: block;
+        }
+        .c7n-timeline-item-content {
+          color: #29bece;
+        }
+      }
+    }
+  }
+}
+.cc-record-container {
+  max-height: 400px;
+  max-width: 400px;
+  padding-left: 0;
+  overflow: auto;
+  box-shadow: 0 0.02rem 0.08rem rgba(0, 0, 0, 0.12);
+}
+
+// 抄送记录
+.approve-record-ccRecord {
+  margin: 0 0.04rem;
+  &-title {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    margin-bottom: 0.04rem;
+  }
+  &-content {
+    margin-bottom: 0.12rem;
+    .record {
+      display: flex;
+      margin-top: 0.04rem;
+      &-title {
+        margin-right: 0.2rem;
+        color: rgba(0, 0, 0, 0.45);
+        width: 60px;
+        white-space: nowrap;
+      }
+      &-content {
+        color: #000;
+        flex: 1;
+      }
+    }
+  }
+  &-content:last-child {
+    margin-bottom: 0;
+  }
+}
+.approvalComment-content {
+  height: auto;
+}
+.approvalComment-attachment {
+  margin-top: -4px;
+  font-weight: 400;
+  padding-left: 0;
+}
+.approvalComment-attachment:hover {
+  background-color: transparent !important;
+}
+
+.approve-record-more-information {
+  color: @primary-color;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.approve-info-assigneeName-tag {
+  :global {
+    line-height: 18px;
+    height: 18px;
+    border: none;
+    padding: 0 4px;
+    cursor: default;
+    margin-left: 4px;
+    transform: scale(0.84);
+    color: #4e5769 !important;
+  }
+}
+
+.work-log-button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 4px;
+  & > i {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+    vertical-align: bottom;
+  }
+}
+.work-log-content {
+  padding: 0.16rem;
+  .delegate-record-title {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+  }
+  .delegate-record-label {
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+    font-weight: 400;
+    width: 80px;
+    display: inline-block;
+  }
+  .delegate-record-text {
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: text-top;
+  }
+  .delegate-record-line {
+    background: #e8e8e8;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 0.01rem;
+    margin: 0.16rem 0;
+  }
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0.16rem;
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}
+
+.reply-item {
+  width: 5rem;
+  display: flex;
+  & + .reply-item {
+    margin-top: 16px;
+  }
+  &-border {
+    background-image: linear-gradient(270deg, rgba(229, 231, 236, 0) 0%, #e5e7ec 100%);
+    width: 8px;
+  }
+  &-main {
+    flex: 1;
+    margin-left: 12px;
+  }
+  &-card {
+    display: flex;
+    margin-bottom: 4px;
+  }
+  &-title {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  &-label {
+    flex-shrink: 0;
+    width: 60px;
+    margin-right: 0.16rem !important;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+  }
+  &-content {
+    word-break: break-word;
+  }
+  .approvalComment-attachment {
+    height: 18px;
+  }
+}
+
+.cc-record-read-tag {
+  background-color: #e5e7ec;
+  font-weight: 400;
+  margin-right: 6px;
+  border-radius: 2px;
+  border-left: 3px solid;
+  padding: 2px 4px;
+  white-space: nowrap;
+}

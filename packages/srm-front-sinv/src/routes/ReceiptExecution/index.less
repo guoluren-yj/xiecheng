@@ -1,0 +1,35 @@
+.execution-content {
+  display: flex;
+  :global {
+    .left-content {
+      width: 16%;
+      margin-right: 10px;
+      .c7n-tree {
+        max-height: calc(100vh - 235px);
+        overflow: auto;
+        font-size: 13px;
+        margin-top: 10px;
+        .tree-node-title {
+          font-weight: bold;
+        }
+      }
+    }
+    .right-content {
+      width: 84%;
+      .process-header {
+        .steps {
+          margin: 24px 32px;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  :global {
+    .c7n-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+}

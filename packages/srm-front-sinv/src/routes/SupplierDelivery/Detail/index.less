@@ -1,0 +1,201 @@
+/*
+ * index
+ * @date: 2018-12-05
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.content {
+  :global {
+    .ant-tag {
+      color: @primary-color;
+      background-color: @primary-3 !important;
+    }
+  }
+}
+
+.sinv-delivery-delivery-detail {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+
+  :global {
+    .form-collapse,
+    .ant-collapse {
+      border: none;
+      margin-bottom: 16px;
+
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+
+      .ant-collapse-item {
+        border-bottom: none;
+
+        .ant-collapse-header {
+          height: 48px;
+          line-height: 48px;
+          background-color: #fafafa;
+
+          & > i {
+            color: rgb(41, 190, 206);
+            font-weight: bold;
+            margin-left: 8px;
+          }
+
+          & > h3 {
+            text-indent: 16px;
+            display: inline-block;
+          }
+
+          & > a {
+            margin-left: 16px;
+          }
+        }
+
+        .ant-collapse-content {
+          border-top: none;
+        }
+      }
+    }
+
+    .item-rows {
+      // border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+
+    .item-label {
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: bold;
+      text-align: right;
+      padding-right: 8px;
+    }
+
+    .ant-col-15 {
+      word-break: break-all;
+    }
+  }
+
+  .special-row {
+    :global {
+      .ant-row div {
+        &:first-child {
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: bold;
+          text-align: right;
+          padding-right: 8px;
+          float: left;
+        }
+
+        &:last-child {
+          float: left;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
+
+.information-item {
+  :global {
+    .item-rows {
+      line-height: 20px;
+      // margin-bottom: 16px;
+    }
+
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+
+    .ant-form-item-label label {
+      color: rgba(0, 0, 0, 0.85) !important;
+    }
+    .ant-col-9,
+    .ant-col-3 {
+      text-align: left;
+      padding-right: 8px;
+      color: #666;
+    }
+
+    .ant-col-15,
+    .ant-col-21 {
+      word-break: break-all;
+      color: #333;
+    }
+  }
+}
+
+.logistics {
+  padding: 0 6px;
+
+  :global {
+    .item-rows {
+      .ant-col-24 {
+        // border-bottom: 1px #dcdcdc dashed;
+        padding: 0 5px 4px;
+        margin-bottom: 20px;
+
+        .ant-row div {
+          &:first-child {
+            width: 12.5%;
+            float: left;
+          }
+
+          &:last-child {
+            width: 87.5%;
+            float: left;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+  }
+}
+.detail-logistic {
+  padding-left: 16px;
+  :global {
+    .ant-row.ant-form-item {
+      .ant-col-9.ant-form-item-label {
+        text-align: left;
+        line-height: 20px;
+        label {
+          color: #666;
+        }
+      }
+      .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.add-logistics {
+  :global {
+    .ant-form-item-label {
+      width: 25%;
+    }
+  }
+}
+
+.add-log-alert {
+  display: flex;
+  .add-log-icon {
+    background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+    margin: 0 8px 0 12px;
+    width: 16px;
+    height: 16px;
+    line-height: 32px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+  }
+}
+.add-log-form {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}

@@ -1,0 +1,611 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '../../biddingHallCommonStyle.less';
+
+.supplier-bidding-hall-body-quotation-detail-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  // 总价
+  &.supplier-bidding-hall-body-quotation-detail-total-price-wrap {
+    // height: calc(100% - 46px);
+
+    .detail-bidding-item-content-wrap {
+      flex: 1;
+      overflow: auto;
+      padding: 20px;
+    }
+  }
+  // 单价
+  &.supplier-bidding-hall-body-quotation-detail-unit-price-wrap {
+    padding: 20px;
+    padding-top: 16px;
+  }
+
+  .quotation-detail-header-wrap {
+    // margin-bottom: 16px;
+    .detail-title {
+      .ssrc-bidding-hall-common-title-1();
+      max-width: 80%;
+      .ellipsis-word();
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .detail-header-others-wrap {
+      .ssrc-bidding-hall-common-text-5();
+      font-size: 12px;
+      .flex();
+    }
+
+    .detail-header-specs-divide-line {
+      margin: 0 16px;
+      border: 1px solid @border-3;
+      align-self: center;
+      height: 10px;
+    }
+
+    .detail-header-items {
+      display: inherit;
+      flex-shrink: 1;
+      min-width: 50px;
+      white-space: nowrap;
+
+      .detail-header-item-specs-values {
+        display: inline-block;
+        min-width: 20px;
+        // max-width: 184px;
+        .ellipsis-word();
+        margin-left: 8px;
+      }
+
+      .detail-header-item-quantity-values {
+        margin-left: 8px;
+        // max-width: 160px;
+        .ellipsis-word();
+        flex-shrink: 1;
+      }
+    }
+
+    :global {
+      // override AFBasic style
+      .af-basic-container {
+        padding: 0;
+        margin: 4px;
+      }
+    }
+  }
+}
+
+.supplier-bidding-hall-body-quotation-warning-wrap {
+  .flex();
+  // padding: 0 16px;
+  border-top: 1px dashed @table-border-color;
+  justify-content: space-between;
+  align-items: center;
+  // height: 72px;
+  // line-height: 72px;
+  vertical-align: middle;
+  background-color: @white;
+  // padding: 16px 20px;
+  padding-top: 20px;
+  // padding-bottom: 4px;
+
+  &.supplier-bidding-hall-body-quotation-warning-wrap-totalPrice {
+    padding: 20px;
+  }
+
+  &.supplier-bidding-hall-body-quotation-warning-wrap-unit-price-whole-batch {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .supplier-bidding-hall-body-quotation-warning-item {
+    .flex-inline();
+    line-height: 1.2;
+    align-items: center;
+    width: 100%;
+
+    .warning-item-wrap {
+      .flex();
+      flex-shrink: 1;
+      min-width: 60px;
+      align-items: center;
+    }
+
+    .warning-item-wrap:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    .warning-item-label {
+      font-size: 12px;
+      color: @text-3;
+      font-weight: 400;
+      // max-width: 90px;
+      display: inline-block;
+      flex-shrink: 1;
+      min-width: 30px;
+    }
+
+    .warning-item-value {
+      .ssrc-bidding-hall-common-text-5();
+      margin-left: 8px;
+      flex-shrink: 1;
+      min-width: 30px;
+    }
+
+    .warning-item-edit {
+      flex: 1;
+      text-align: right;
+
+      &.warning-item-edit-clear-flex {
+        flex: 0;
+      }
+    }
+  }
+
+  .supplier-bidding-hall-body-quotation-warning-total-price-wrap {
+    .flex();
+    align-items: center;
+
+    .supplier-bidding-hall-body-quotation-warning-total-price-left-wrap {
+      line-height: 1.5;
+      margin-right: 12px;
+      .flex-inline();
+      align-items: center;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .total-price-amount-wrap {
+      .flex-inline-between-center();
+      .ssrc-bidding-hall-common-text-4();
+      font-size: 12px;
+      flex-shrink: 1;
+      min-width: 20px;
+      .ellipsis-word();
+
+      .total-price-amount-difference-price-wrap {
+        margin-left: 8px;
+        max-width: 160px;
+        .ellipsis-word();
+      }
+    }
+
+    .total-price-quotation-count-wrap {
+      .ssrc-bidding-hall-common-text-3();
+      margin-left: 8px;
+    }
+
+    .total-price-amount-to-wrap {
+      .flex-inline();
+      align-items: center;
+
+      .total-price-amount-to-label {
+        font-size: 12px;
+        color: @fill-2;
+        font-weight: 400;
+        margin-left: 8px;
+      }
+
+      .total-price-amount-to-price-value {
+        .ssrc-bidding-hall-red-text-5();
+        height: 28px;
+        line-height: 28px;
+
+        .total-price-amount-price {
+          margin-left: 8px;
+          display: inline-block;
+          max-width: 140px;
+          .ellipsis-word();
+        }
+      }
+    }
+  }
+}
+
+// 删除报价消息
+.ssrc-bidding-hall-quotation-partial-delete-quotaion-message {
+  .text-warning-message-red-1();
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  .flex();
+  align-items: center;
+  .delete-quotation-text-tips {
+    .ellipsis-word();
+    margin-left: 8px;
+  }
+}
+
+.divide-line-vertical {
+  .divide-line-vertical();
+}
+
+.detail-header-form-wrap {
+  // height: calc(100% - 200px);
+  flex: 1;
+  overflow: auto;
+
+  &.detail-header-form-total-price-wrap {
+    // max-height: 260px;
+    // height: auto;
+    overflow-y: hidden;
+
+    .detail-form-quotation-range {
+      max-width: 120px;
+      .ellipsis-word();
+    }
+  }
+
+  .detail-form-start-bidding-price {
+    display: inline-block;
+    // max-width: 120px;
+    max-width: 90%;
+    .ellipsis-word();
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .detail-header-form-lowest-wrap {
+    .flex-inline();
+    align-items: center;
+    // height: 30px;
+    width: 100%;
+    height: 24px;
+
+    .detail-header-form-lowest-values {
+      max-width: 45%;
+      .ellipsis-word();
+      .ssrc-bidding-hall-red-text-5();
+    }
+
+    .detail-header-form-lowest-supplier-name {
+      max-width: 45%;
+      .ellipsis-word();
+      .ssrc-bidding-hall-common-text-5();
+      font-size: 12px;
+    }
+  }
+
+  .detail-form-red-price-value {
+    .ssrc-bidding-hall-red-text-5();
+    font-size: 14px;
+  }
+
+  .detail-header-form-rank-quotation-wrap {
+    .flex-inline();
+    align-items: center;
+    // height: 30px;
+    width: 100%;
+
+    .detail-header-form-rank-quotation-values {
+      .ssrc-bidding-hall-text-2(12px, 400);
+      max-width: 35%;
+      .ellipsis-word();
+    }
+
+    .detail-header-form-rank-quotation-values-supplier-name {
+      .ssrc-bidding-hall-common-text-5();
+      font-size: 12px;
+      min-width: 100px;
+      max-width: 55%;
+      .ellipsis-word();
+
+      &.detail-header-form-rank-quotation-values-supplement-price {
+        .ssrc-bidding-hall-red-text-5();
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .detail-header-form-below-wrap {
+    margin-left: 109px;
+    margin-top: 12px;
+    // margin-bottom: 16px;
+
+    .quotation-price-btn {
+      height: 40px;
+      width: 240px;
+    }
+  }
+
+  // japan/dutch total form label-width is fixed 120
+  .detail-header-form-below-total-button-wrap {
+    margin-left: 129px;
+  }
+
+  // .detail-header-form-submit-button {
+  //   width: 240px;
+  //   height: 40px;
+  //   line-height: 40px;
+  //   border-radius: 2px;
+  //   text-align: center;
+  //   color: @white;
+  //   background-color: #00B8CC;
+  //   font-size: 12px;
+  //   color: @white;
+  //   font-weight: 600;
+  //   margin-left: 109px;
+  //   cursor: pointer;
+  // }
+
+  .detail-header-form-submit-after-beleft-count {
+    .ssrc-smal-common-text();
+    margin-top: 8px;
+  }
+
+  :global {
+    // .c7n-pro-form > table > tbody > tr > td {
+    //   vertical-align: middle !important;
+    // }
+
+    .c7n-pro-form-wrapper.c7n-pro-form {
+      .c7n-pro-field-label label {
+        // padding-bottom: 0 !important;
+        vertical-align: middle !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        // font-size: 12px !important;
+        margin-right: 20px;
+        color: @text-3;
+
+        & > span {
+          display: inline-block;
+          width: 120px;
+          text-align: justify;
+          text-align-last: justify;
+          line-height: 27px;
+
+          &:after {
+            content: '' !important;
+          }
+        }
+      }
+
+      .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-left {
+        & > label {
+          // margin-top: 8px !important;
+
+          &:after {
+            content: unset !important;
+          }
+        }
+      }
+
+      .c7n-pro-field-wrapper {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        // font-size: 12px !important;
+        color: @text-2;
+      }
+
+      .c7n-pro-output {
+        line-height: 2 !important;
+      }
+    }
+  }
+}
+
+// 竞价记录
+.supplier-bidding-hall-body-quotation-bidding-record {
+  height: 100%;
+
+  .quotation-bidding-record-title-wrap {
+    .flex();
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 20px;
+
+    .quotation-bidding-record-title-left {
+      .flex-inline();
+      align-items: center;
+    }
+
+    .bidding-detail-title {
+      .ssrc-bidding-hall-common-title-1();
+      .ellipsis-word();
+      // width: 100%;
+    }
+
+    .bidding-detail-title-data-length {
+      color: @fill-3;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+
+    .bidding-detail-title-show-change-wrap {
+      color: @fill-2;
+      font-size: 12px;
+    }
+  }
+
+  .quotation-bidding-record-content-wrap {
+    height: calc(100% - 45px);
+
+    .quotation-bidding-record-content-data-pagination-wrap {
+      text-align: right;
+      margin-top: 16px;
+      padding: 0 20px;
+    }
+
+    .quotation-bidding-record-content-not-start-wrap {
+      height: 100%;
+      text-align: center;
+      margin-top: 70%;
+
+      .quotation-bidding-record-content-not-start-image {
+        height: 58px;
+        width: 56px;
+        display: inline-block;
+      }
+
+      .quotation-bidding-record-content-not-start-warning-text {
+        margin-top: 16px;
+        .ssrc-bidding-hall-common-text-2();
+        font-size: 12px;
+        color: @text-2;
+      }
+
+      .quotation-bidding-record-content-not-start-warning-status {
+        margin-top: 8px;
+        .ssrc-bidding-hall-common-text-3();
+      }
+    }
+
+    .quotation-bidding-record-content-data-wrap {
+      height: calc(100%);
+      // width: 100%;
+      .flex();
+      flex-direction: column;
+      .quotation-bidding-record-content-list-wrap {
+        padding: 0 20px;
+        overflow-y: auto;
+        flex-shrink: 1;
+      }
+
+      .bidding-history-new-list-item-line-icon-name {
+        .flex-inline();
+        align-items: center;
+      }
+
+      .history-item-supplier-name {
+        display: inline-block;
+        max-width: 180px;
+        .ellipsis-word();
+        .ssrc-bidding-hall-common-text-2();
+        font-size: 12px;
+      }
+
+      .history-item-bidding-round-value {
+        margin: 0 2px;
+        .ssrc-bidding-hall-common-text-2();
+        font-weight: 600;
+        font-size: 12px;
+        color: #f05434;
+        font-family: PingFangSC-Regular, sans-serif;
+      }
+
+      .history-item-supplier-price-value {
+        .ssrc-bidding-hall-common-text-2();
+        font-size: 12px;
+        font-weight: 600;
+        .ellipsis-word();
+        display: inline-block;
+        max-width: 120px;
+        margin-left: 4px;
+      }
+
+      .bidding-history-new-list-wrap {
+        .bidding-history-new-list-item-wrap {
+          height: 38px;
+          line-height: 38px;
+          border-bottom: 1px solid #f2f3f5;
+        }
+
+        .bidding-history-new-list-item-line-wrap {
+          .flex();
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+
+      .bidding-history-list-wrap {
+        height: 100%;
+
+        :global {
+          .c7n-steps-item {
+            .c7n-steps-item-content {
+              max-width: 88% !important;
+              min-height: 0.38rem !important;
+
+              .c7n-text-wrapper {
+                display: inline-block;
+                width: 100%;
+              }
+
+              .c7n-steps-item-title {
+                display: none;
+              }
+
+              .c7n-steps-item-description {
+                border-bottom: 1px solid @item-active-bg;
+                padding-bottom: 2px;
+              }
+            }
+
+            .c7n-steps-icon-dot {
+              background: rgba(0, 0, 0, 0.26);
+            }
+
+            .c7n-steps-item-icon .c7n-steps-icon-dot:after {
+              display: none;
+            }
+
+            .c7n-steps-item-tail:after {
+              background-color: #f2f3f5;
+            }
+          }
+        }
+
+        .bidding-history-list-item-wrap {
+          .flex-inline();
+          width: 100%;
+          justify-content: space-between;
+
+          .bidding-history-list-item-wrap-left {
+            .flex-inline();
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 公用样式 - 提取到最外
+.price-below-start-bidding-priceWrap {
+  font-size: 12px;
+  color: #f05434;
+  font-weight: 600;
+  margin: 8px 0 12px;
+  .flex();
+  align-items: center;
+  width: 100%;
+  .ellipsis-word();
+}
+
+.ssrc-bidding-hall-custom-price-warning-table-inside-wrap {
+  margin: 4px 0 0 0;
+  height: 18px;
+}
+
+// total price wrap
+.ssrc-bidding-hall-content-left-content-total-price-wrap {
+  max-height: 500px;
+  // height: 280px;
+  margin-top: 32px;
+  // margin-bottom: 16px;
+
+  .table-wrap-title {
+    .flex();
+    align-items: center;
+    color: @text-1;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    // .ssrc-bidding-hall-common-title-1();
+
+    .table-wrap-line {
+      border-left: 3px solid @primary-color;
+      margin-right: 8px;
+      height: 12px;
+    }
+  }
+}
+
+.ssrc-bidding-hall-red-price-value {
+  color: #f05434;
+}

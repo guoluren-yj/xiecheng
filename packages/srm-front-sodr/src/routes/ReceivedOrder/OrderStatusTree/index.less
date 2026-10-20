@@ -1,0 +1,86 @@
+/*
+ * style - 我收到的订单状态树
+ * @date: 2018-10-13
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.order-type {
+  height: 100%;
+  overflow: auto;
+  border-right: solid rgba(245, 245, 245, 1) 1px;
+  width: 180px;
+  .type-wrapper {
+    min-height: 100%;
+    padding: 18px 0;
+    font-size: 14px;
+    line-height: 2;
+    .current-item {
+      a {
+        color: #29bece;
+      }
+      background-color: #f3fefe;
+    }
+    .current-item-border {
+      span a {
+        border-left: 2px solid #29bece;
+        padding-left: 22px !important;
+        color: #29bece;
+      }
+      background-color: #f3fefe;
+    }
+    .first-stage {
+      text-indent: 23px;
+      font-weight: bold;
+    }
+    .second-stage > span:first-child {
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      a {
+        padding-left: 12px;
+        font-weight: bold;
+      }
+    }
+    .second-stage-normal {
+      text-indent: 54px;
+    }
+    .second-stage-bold {
+      text-indent: 54px;
+      font-weight: bold;
+    }
+    .third-stage {
+      text-indent: 54px;
+      span {
+        display: inline-block;
+        line-height: 2;
+        text-indent: -2px;
+        border-left: 2px solid rgba(229, 229, 229, 1);
+        a {
+          white-space: nowrap;
+          padding-left: 24px;
+        }
+      }
+    }
+    // .third-stage:hover {
+    //   a {
+    //     // border-left: 2px solid rgba(94, 126, 230, 1);
+    //     padding-left: 22px;
+    //   }
+    // }
+    .triangle {
+      display: inline-block;
+      border-top: 4px solid #000;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+    }
+  }
+  .type-wrapper > div:hover {
+    background-color: #f3fefe;
+    cursor: pointer;
+  }
+  .type-wrapper a {
+    color: #333;
+  }
+}

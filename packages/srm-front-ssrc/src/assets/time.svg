@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>time</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="供应商报价-切换视图" transform="translate(-1143.000000, -206.000000)">
+            <g id="time" transform="translate(1143.000000, 206.000000)">
+                <circle id="Oval" stroke="#D2D2D2" cx="7" cy="7" r="6.5"></circle>
+                <circle id="Oval" fill="#D2D2D2" cx="7" cy="7" r="5"></circle>
+                <rect id="Rectangle" fill="#FFFFFF" x="6" y="4" width="1" height="4" rx="0.5"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" transform="translate(7.560660, 8.560660) rotate(-315.000000) translate(-7.560660, -8.560660) " x="5.56066017" y="8.06066017" width="4" height="1" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

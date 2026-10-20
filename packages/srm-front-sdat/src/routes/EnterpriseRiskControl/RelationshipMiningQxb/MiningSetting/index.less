@@ -1,0 +1,208 @@
+/**
+ * @Description: 排查设置组件样式
+ * @Author: Felix(LQX5731@163.com)
+ * @Version: 1.0.0
+ * @CreateTime: 2026-05-25 17:32:46
+ * @LastEditTime: 2026-05-25 17:38:33
+ * @FileName: index.less
+ */
+.settings-container {
+  padding-bottom: 24px;
+  height: calc(100vh - 240px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.settings-container-modal {
+  height: 100%;
+  padding-right: 6px;
+}
+
+.settings-section {
+  margin-bottom: 8px;
+  border: 1px solid #e5e7ec;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.settings-section-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7ec;
+
+  :global {
+    .c7n-pro-checkbox-wrapper {
+      font-weight: 600;
+      color: #0c0e12;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.settings-help-icon {
+  margin-left: 8px;
+  color: #6b7280;
+  cursor: help;
+  font-size: 12px !important;
+}
+
+.settings-section-content {
+  margin: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background: #f8f9fb;
+}
+
+.settings-item-row {
+  margin-bottom: 4px;
+
+  :global {
+    .c7n-pro-checkbox-wrapper {
+      color: #868d9c;
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+
+.settings-item-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.settings-item-children {
+  padding: 0 0 8px 16px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e5e7ec;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.settings-item-label {
+  color: #868d9c;
+  font-size: 12px;
+  line-height: 22px;
+  flex: 1;
+}
+
+.settings-checkbox-label {
+  margin-left: 8px;
+  max-width: 160px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.settings-checkbox-label-default {
+  max-width: 100px;
+}
+
+.settings-item-child-row {
+  margin-bottom: 12px;
+
+  :global {
+    .c7n-pro-checkbox-wrapper {
+      color: #868d9c;
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+}
+
+.settings-item-sub {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #868d9c;
+  font-size: 12px;
+  gap: 4px;
+
+  :global {
+    .c7n-pro-number-field-wrapper {
+      width: 128px;
+    }
+
+    .c7n-pro-input {
+      text-align: center;
+    }
+  }
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+
+  :global {
+    .c7n-pro-checkbox-wrapper {
+      color: #868d9c;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.settings-block-title {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #0c0e12;
+  font-size: 12px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.settings-level-section {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+}
+
+.settings-level-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-level-slider-wrap {
+  display: flex;
+
+  :global {
+    .c7n-pro-range {
+      margin-top: 12px;
+    }
+  }
+}
+
+.settings-level-tip {
+  padding-left: 100px;
+  color: #868d9c;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.settings-level-value {
+  min-width: 84px;
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #e5e7ec;
+  border-radius: 6px;
+  background: #fff;
+  color: #1d2129;
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+}

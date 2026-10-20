@@ -1,0 +1,63 @@
+/*!
+    style - 员工定义
+    @author WH <heng.wei@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+// 数据列表样式
+.hpfm-hr-list {
+  height: auto;
+  :global {
+    .ant-form-item {
+      width: 90%;
+      display: inline-block;
+      line-height: 28px;
+      margin-bottom: 0 !important;
+    }
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+  .full-width {
+    width: 100%;
+  }
+}
+
+.menu {
+  li {
+    padding: 0 28px 0 16px !important;
+
+    button {
+      overflow: visible !important;
+      border: none;
+      padding: 0 !important;
+      i {
+        display: none;
+      }
+    }
+  }
+  :global {
+    .srm-common-import-button-tag {
+      top: -3px !important;
+      right: -20px !important;
+    }
+  }
+}
+
+.srm-common-new-button {
+  position: relative;
+  .srm-common-export-button-tag {
+    display: inline-block;
+    font-size: 8px;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    line-height: 1.5;
+    position: absolute;
+    padding: 0 2px;
+    top: -2px;
+    margin-left: -14px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+}

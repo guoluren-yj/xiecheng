@@ -1,0 +1,42 @@
+.adaptorEditor {
+  height: 800px;
+  :global {
+    .adaptor-editor-test {
+      text-align: center;
+    }
+    .adaptor-editor-content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      .editor-left {
+        height: 100%;
+        width: 45%;
+
+        .editor-left-scriptContent {
+          height: 100%;
+        }
+      }
+      .edit-action-button {
+        width: 5%;
+        text-align: center;
+      }
+      .editor-right {
+        height: 100%;
+        width: 45%;
+
+        .editor-right-outputParam {
+          overflow: auto;
+          .editor-right-param-table {
+            height: 90%;
+            overflow: auto;
+          }
+        }
+        .editor-right-inputParam {
+          height: 33.3%;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}

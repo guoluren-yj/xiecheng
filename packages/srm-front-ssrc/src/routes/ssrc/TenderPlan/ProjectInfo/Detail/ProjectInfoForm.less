@@ -1,0 +1,124 @@
+// 项目信息
+.headerInfo {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+      line-height: 34px;
+    }
+  }
+}
+
+.lov-input {
+  .ant-input-group-wrapper {
+    vertical-align: middle;
+  }
+
+  .ant-input {
+    // 两个 icon 的位置
+    padding-right: 48px !important;
+    transition: padding 0s, background-color 0.3s, border 0.3s;
+  }
+
+  .ant-input-suffix {
+    > .lov-clear {
+      margin-right: 4px;
+      display: none;
+    }
+  }
+}
+
+.lov-suffix {
+  .ant-input-suffix {
+    > .anticon {
+      // ICON
+    }
+    > .lov-clear {
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    .ant-input-suffix {
+      > .lov-clear {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.lov-modal {
+  word-break: break-all;
+
+  .ant-modal-title {
+    font-size: 18px;
+  }
+
+  .ant-modal-header {
+    padding: 16px 16px 0;
+    border-bottom: none;
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+    padding: 0 16px 16px;
+    margin-top: 16px;
+  }
+
+  .ant-form-item {
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+.tender_plan {
+  :global {
+    .form-collapse,
+    .ant-collapse {
+      border: none;
+      margin-bottom: 24px;
+
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+
+      .ant-collapse-item {
+        border-bottom: 0;
+
+        .ant-collapse-header {
+          height: 48px;
+          line-height: 48px;
+
+          & > i {
+            color: rgb(41, 190, 206);
+            font-weight: bold;
+            margin-left: 8px;
+          }
+
+          & > h3 {
+            text-indent: 16px;
+            display: inline-block;
+            line-height: 1.17em;
+          }
+
+          & > a {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .ant-collapse-content {
+        border-top: none;
+      }
+      .ant-collapse-content-box {
+        padding-bottom: 0;
+      }
+    }
+    .ant-form-inline {
+      margin-bottom: 16px;
+      button {
+        margin-left: 8px !important;
+      }
+    }
+  }
+}

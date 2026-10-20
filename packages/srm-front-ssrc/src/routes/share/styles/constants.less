@@ -1,0 +1,70 @@
+// constant css
+
+@import '~hzero-front/lib/srm-variables.less';
+
+// constant
+@zero: 0;
+@default-distance: 16px;
+@default-font-size: 16px;
+@font-weight-bold: 600;
+
+// common color
+@black-color: #000000;
+@title-left-line-color: @primary-color;
+
+.m-t(@distance: 16px) {
+  margin-top: @distance;
+}
+
+.m-b(@distance: 16px) {
+  margin-bottom: @distance;
+}
+
+.p-l(@distance: 16px) {
+  padding-left: @distance;
+}
+
+.p-t(@distance: 16px) {
+  padding-top: @distance;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-align(@align: middle) {
+  vertical-align: @align;
+}
+
+.m-t-m {
+  .m-t();
+}
+
+.m-t-xlg {
+  .m-t(32px);
+}
+
+.m-t-md {
+  .m-t(20px);
+}
+
+.m-t-lg {
+  .m-t(32px);
+}
+
+.m-b-m {
+  .m-b();
+}
+
+.p-l-m-10 {
+  .p-l(10px);
+}
+
+.p-t-md {
+  .p-t();
+}
+
+.vertical-align-center {
+  .vertical-align();
+}

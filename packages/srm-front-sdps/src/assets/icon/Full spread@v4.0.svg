@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>左侧列表/Full spread@v4.0</title>
+    <defs>
+        <path d="M7,6.04545455 L11.3214288,10.1704548 C11.5146408,10.3548844 11.8186925,10.3548844 12.0119045,10.1704548 L12.6210995,9.5889505 C12.8208486,9.39828089 12.828209,9.08178397 12.6375394,8.88203485 C12.6321876,8.8764282 12.6267061,8.87094676 12.6210995,8.86559496 L7.34523787,3.82954524 C7.15202587,3.64511561 6.84797413,3.64511561 6.65476213,3.82954524 L1.37890052,8.86559496 C1.17915141,9.05626457 1.17179101,9.37276148 1.36246062,9.5725106 C1.36781243,9.57811725 1.37329387,9.5835987 1.37890052,9.5889505 L1.98809546,10.1704548 C2.18130746,10.3548844 2.48535921,10.3548844 2.67857121,10.1704548 L7,6.04545455 L7,6.04545455 Z" id="path-1"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-257.000000, -112.000000)">
+            <g id="左侧列表/Full-spread" transform="translate(256.000000, 109.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="路径" fill="#5A6677" fill-rule="nonzero" transform="translate(7.000000, 7.000000) scale(1, -1) translate(-7.000000, -7.000000) " xlink:href="#path-1"></use>
+                <g id="编组" mask="url(#mask-2)">
+                    <g transform="translate(-33.000000, -33.000000)">
+                        <rect id="矩形" fill="#29BECE" x="0" y="0" width="80" height="80"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

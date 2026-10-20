@@ -1,0 +1,59 @@
+.overflow-point {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  :global {
+    .info-img {
+      border: 1px solid #e8e8e8;
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    .info-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      > p {
+        margin: 0;
+        padding: 0;
+        height: 18px;
+        line-height: 18px;
+        > span {
+          display: inline-block;
+          background: #ddd;
+          color: #666;
+          padding: 0 4px;
+        }
+      }
+      .product-name {
+        .overflow-point;
+        margin-bottom: 8px;
+      }
+      .product-other {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        .product-spu {
+          max-width: 100px;
+          text-align: center;
+          white-space: nowrap;
+          margin-right: 8px;
+        }
+        .product-category {
+          .overflow-point;
+        }
+      }
+      .last-v {
+        color: #fca000;
+      }
+    }
+  }
+}

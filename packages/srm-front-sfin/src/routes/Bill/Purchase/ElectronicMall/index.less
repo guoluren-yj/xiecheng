@@ -1,0 +1,49 @@
+@import '~hzero-front/lib/srm-variables';
+.detail-form {
+  :global {
+    .form-collapse {
+      border: none;
+      .ant-collapse-item {
+        border: none;
+      }
+      .ant-collapse-header {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 !important;
+        i {
+          margin-left: 8px;
+          color: @primary-color;
+          font-weight: bold;
+          padding: 0;
+          //border-radius: 28px;
+          -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+          &:hover {
+            color: @primary-color;
+            background: #e6e9ed;
+          }
+        }
+        h3 {
+          display: inline-block;
+          text-indent: 16px;
+        }
+        a {
+          margin-left: 16px;
+        }
+      }
+      .ant-collapse-content {
+        border-top: 0;
+        padding-top: 5px;
+        .ant-collapse-content-box {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .c7n-pro-form > table > tbody > tr > td {
+    vertical-align: middle;
+  }
+}

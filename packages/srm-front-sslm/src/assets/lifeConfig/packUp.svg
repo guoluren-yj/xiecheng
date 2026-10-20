@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 58备份</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5、供应商工作台-有正在升降级单据-适用策略" transform="translate(-1128.000000, -385.000000)">
+            <g id="编组-58备份" transform="translate(1128.000000, 385.000000)">
+                <circle id="椭圆形" stroke="#C9CDD4" fill="#FFFFFF" cx="12" cy="12" r="11.5"></circle>
+                <g id="编组-57" transform="translate(8.000000, 9.000000)" stroke="#868D9C" stroke-linecap="square" stroke-width="2">
+                    <polyline id="路径-packUp-1" transform="translate(1.500000, 3.000000) scale(-1, 1) translate(-1.500000, -3.000000) " points="3 6 0 3 3 0"></polyline>
+                    <polyline id="路径packUp-2" transform="translate(6.500000, 3.000000) scale(-1, 1) translate(-6.500000, -3.000000) " points="8 6 5 3 8 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

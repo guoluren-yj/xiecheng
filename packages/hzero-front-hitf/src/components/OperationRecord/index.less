@@ -1,0 +1,57 @@
+.operation-record {
+  &-info {
+    :global {
+      .icon {
+        font-size: 12px;
+        margin: 0 0.1rem 0 0.16rem;
+      }
+    }
+  }
+  .info-name,
+  .info-type {
+    font-size: 12px;
+    color: #000;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .info-description {
+    font-size: 12px;
+    color: rgba(35, 32, 32, 0.65);
+    line-height: 18px;
+    font-weight: 400;
+  }
+  &-date {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+    font-weight: 400;
+    padding-bottom: 0.12rem;
+    margin: 0.04rem 0 0 0.38rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  :global {
+    .c7n-timeline {
+      .c7n-timeline-item {
+        padding: 0 0 0.12rem;
+        .c7n-timeline-item-tail {
+          border-left: 0.02rem solid #e5e5e5;
+        }
+        // 普通节点
+        .c7n-timeline-item-head-blue {
+          color: #e5e5e5;
+          border-color: #e5e5e5;
+        }
+        // 通过的节点
+        .c7n-timeline-item-head-green {
+          color: #47b881;
+          border-color: #47b881;
+        }
+        // 拒绝的节点
+        .c7n-timeline-item-head-red {
+          color: #f56349;
+          border-color: #f56349;
+        }
+      }
+    }
+  }
+}

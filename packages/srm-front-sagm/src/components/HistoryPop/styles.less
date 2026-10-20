@@ -1,0 +1,31 @@
+@import '~hzero-front/lib/srm-variables.less';
+.pop-history-list {
+  font-size: 12px;
+  color: #868d9c;
+  max-height: 400px;
+  overflow: auto;
+  :global {
+    .c7n-menu-item {
+      height: 54px;
+      padding: 7px 15px;
+      div {
+        line-height: 18px;
+      }
+      .version {
+        color: #1d2129;
+        margin-bottom: 4px;
+      }
+      .operate {
+        color: #868d9c;
+        & span + span {
+          margin-left: 8px;
+        }
+      }
+      &:hover {
+        .version {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

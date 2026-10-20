@@ -1,0 +1,124 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+
+.drawer(@modal-prefix-cls) {
+  &-drawer {
+    top: 0;
+    margin: 0;
+    transition: margin-right @animation-duration-slow @ease-in-out;
+
+    &-slide-right,
+    &-slide-left {
+      width: 5.2rem;
+      height: 100vh;
+
+      &.@{modal-prefix-cls}-large {
+        width: ~'calc(100% - 3.5rem)';
+      }
+
+      &.@{modal-prefix-cls}-small {
+        width: 3.8rem;
+      }
+    }
+
+    &-slide-up,
+    &-slide-down {
+      width: 100%;
+      height: 60%;
+
+      &.@{modal-prefix-cls}-large {
+        height: 80%;
+      }
+
+      &.@{modal-prefix-cls}-small {
+        height: 30%;
+      }
+    }
+
+    &-slide-up {
+      top: 0;
+      bottom: unset;
+    }
+
+    &-slide-right {
+      right: 0;
+      left: unset;
+    }
+
+    &-slide-down {
+      top: unset;
+      bottom: 0;
+    }
+
+    &-slide-left {
+      right: unset;
+      left: 0;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      border-radius: @border-radius-base;
+    }
+
+    &-header {
+      padding: @modal-drawer-header-padding;
+
+      &-combined {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    &-body {
+      flex-grow: 1;
+      max-height: none;
+      padding: @modal-drawer-body-padding;
+    }
+
+    &-footer {
+      flex-shrink: 0;
+      padding: @modal-drawer-footer-padding;
+      text-align: left;
+    }
+  }
+
+  &-container-embedded &-drawer-slide-right,
+  &-container-embedded &-drawer-slide-left {
+    top: 0;
+    bottom: 0;
+    height: auto;
+  }
+
+  &-container-embedded &-drawer-slide-up,
+  &-container-embedded &-drawer-slide-down {
+    right: 0;
+    left: 0;
+    width: auto;
+  }
+}
+
+.modal-active() {
+  &-active {
+    z-index: 2;
+  }
+}
+
+.border-header() {
+  &-border &-header {
+    border-bottom: @border-width-base @border-style-base @border-color-base;
+  }
+}
+
+.border-footer() {
+  &-border &-footer {
+    border-top: @border-width-base @border-style-base @border-color-base;
+  }
+}
+
+.modal-border() {
+  .border-header;
+  .border-footer;
+}

@@ -1,0 +1,66 @@
+.card-wait-deal {
+  height: 100%;
+  overflow-y: auto;
+  :global {
+    .card-body {
+      height: 100%;
+      overflow-y: auto;
+      transition: 0.5s;
+      background: 200% 220% url(../../assets/dashboard/purchase-order-b.svg) no-repeat;
+      .card-header {
+        padding: 12px 16px 10px 16px;
+        background: 16px 16px url(../../assets/dashboard/purchase-order.svg) no-repeat;
+      }
+      .card-title {
+        font-size: 14px;
+        color: #6d7a80;
+        letter-spacing: 0;
+        line-height: 22px;
+        padding-left: 22px;
+      }
+      .card-icon {
+        display: none;
+        float: right;
+      }
+      &:hover {
+        background: 100% 130% url(../../assets/dashboard/purchase-order-b.svg) no-repeat;
+        .card-header {
+          background: 16px 16px url(../../assets/dashboard/purchase-order-s.svg) no-repeat;
+        }
+        .card-title {
+          color: #1e3255;
+        }
+        .card-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.card-wait-deal-content {
+  :global {
+    .card-content-row {
+      padding: 6px 12px;
+      .card-content-row-link {
+        font-size: 12px;
+        color: #4c4c4c;
+        line-height: 22px;
+      }
+      .card-content-row-num {
+        font-size: 14px;
+        color: #1e3255;
+        text-align: right;
+        line-height: 24px;
+      }
+      &:hover {
+        background: rgba(41, 190, 206, 0.1);
+        .card-content-row-link {
+          color: #000;
+        }
+        .card-content-row-num {
+          color: #29bece;
+        }
+      }
+    }
+  }
+}

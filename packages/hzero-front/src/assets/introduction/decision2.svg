@@ -1,0 +1,41 @@
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>多维度数据分析</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFB72E" offset="0%"></stop>
+            <stop stop-color="#FFB72E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#5A95E9" offset="0%"></stop>
+            <stop stop-color="#ABD4FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#5A95E9" offset="0%"></stop>
+            <stop stop-color="#ABD4FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#1EE0F1" offset="0%"></stop>
+            <stop stop-color="#1EE0F1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#5AC7E9" offset="0%"></stop>
+            <stop stop-color="#ABE6FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="多维度数据分析" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-18" transform="translate(1.000000, 2.000000)">
+            <rect id="矩形" fill="url(#linearGradient-1)" opacity="0.75" x="0" y="53" width="24" height="24" rx="4"></rect>
+            <rect id="矩形" fill="url(#linearGradient-2)" x="14" y="27" width="56" height="36" rx="1"></rect>
+            <rect id="矩形" fill="url(#linearGradient-3)" opacity="0.5" x="58" y="7" width="30" height="30" rx="4"></rect>
+            <rect id="矩形" fill="url(#linearGradient-4)" opacity="0.6" x="57" y="0" width="12" height="12" rx="2"></rect>
+            <path d="M54.5,76 C55.8807119,76 57,77.1192881 57,78.5 C57,79.8807119 55.8807119,81 54.5,81 L29.5,81 C28.1192881,81 27,79.8807119 27,78.5 C27,77.1192881 28.1192881,76 29.5,76 L54.5,76 Z M72,18.5 C75.5898509,18.5 78.5,21.4101491 78.5,25 L78.5,25 L78.5,65 C78.5,68.5898509 75.5898509,71.5 72,71.5 L72,71.5 L12,71.5 C8.41014913,71.5 5.5,68.5898509 5.5,65 L5.5,65 L5.5,25 C5.5,21.4101491 8.41014913,18.5 12,18.5 L12,18.5 Z M72,23.5 L12,23.5 C11.1715729,23.5 10.5,24.1715729 10.5,25 L10.5,25 L10.5,65 C10.5,65.8284271 11.1715729,66.5 12,66.5 L12,66.5 L72,66.5 C72.8284271,66.5 73.5,65.8284271 73.5,65 L73.5,65 L73.5,25 C73.5,24.1715729 72.8284271,23.5 72,23.5 L72,23.5 Z" id="形状结合" fill="url(#linearGradient-5)"></path>
+            <polyline id="路径-12" stroke="url(#linearGradient-6)" stroke-width="4" stroke-linecap="round" points="21 55 34 43 47 49 62 35"></polyline>
+        </g>
+    </g>
+</svg>

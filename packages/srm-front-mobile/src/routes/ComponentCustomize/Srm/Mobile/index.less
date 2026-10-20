@@ -1,0 +1,60 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.srm-mobile-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+
+  .srm-mobile-page {
+    flex-grow: 1;
+    background: #f2f2f2;
+    height: calc(100% - 49px);
+  }
+  .srm-mobile-tab {
+    flex-shrink: 0;
+    height: 49px;
+    display: flex;
+    border-top: 1px solid #ccc;
+    background: white;
+    z-index: 1;
+
+    .srm-mobile-tab-item {
+      flex-grow: 1;
+      display: flex;
+      color: #757575;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .srm-mobile-tab-item-selected {
+      color: #276ef1;
+    }
+  }
+  .srm-mobile-scroll {
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .srm-mobile-scroll::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+
+.srm-mobile-page-center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .srm-mobile-page-center-title {
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+  }
+}

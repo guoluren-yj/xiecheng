@@ -1,0 +1,92 @@
+@import '~hzero-front/lib/srm-variables';
+
+.supplier-info-wrapper {
+  :global {
+    .page-content {
+      padding: 0;
+    }
+    .supplier-info-title {
+      font-size: 16px;
+      color: #1d2129;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .c7n-tabs.c7n-tabs-top {
+      padding: 20px 20px 0;
+      > .c7n-tabs-bar {
+        margin-bottom: 0;
+      }
+      > .c7n-tabs-content {
+        .c7n-pro-form {
+          margin-top: 16px;
+          padding-top: 7px;
+          max-height: calc(100vh - 240px);
+          overflow-y: scroll;
+          -ms-overflow-style: none;
+          overflow: -moz-scrollbars-none;
+          &::-webkit-scrollbar {
+            width: 0 !important;
+          }
+          .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+            &:before {
+              display: none;
+              content: '';
+            }
+          }
+        }
+      }
+    }
+    .c7n-tabs.c7n-tabs-left {
+      .c7n-tabs-bar {
+        padding: 20px 0;
+        min-width: 180px;
+        max-width: 220px;
+        height: calc(100vh - 214px);
+        .c7n-tabs-nav-container.c7n-tabs-nav-container-scrolling {
+          padding: 0;
+          .c7n-tabs-tab-prev,
+          .c7n-tabs-tab-next {
+            display: none;
+          }
+        }
+        .c7n-tabs-tab,
+        .c7n-tabs-tab > div {
+          text-align: left;
+          padding: 0 24px 0 0 !important; // 覆盖调查表样式
+        }
+        .c7n-tabs-tab > div {
+          display: inline !important; // 覆盖调查表样式
+        }
+      }
+      .c7n-tabs-content {
+        padding: 20px 0 20px 20px;
+        .c7n-tabs-tabpane {
+          .c7n-pro-form,
+          .no-top-section {
+            padding-top: 7px;
+            margin-top: -7px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            max-height: calc(100vh - 286px);
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+            &::-webkit-scrollbar {
+              width: 0 !important;
+            }
+            & > table > tbody > tr:first-child .c7n-pro-field-wrapper {
+              margin-top: 0; // 覆盖调查表样式
+            }
+          }
+          .no-top-section {
+            .top-section-title {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .attachment-help {
+      color: @text-3;
+    }
+  }
+}

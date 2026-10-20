@@ -1,0 +1,50 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.container {
+  max-height: 340px;
+  overflow: auto;
+  > div {
+    height: 24px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+
+    .left-label {
+      color: #747474;
+    }
+    span + span {
+      margin-left: 15px;
+      color: #000;
+    }
+  }
+}
+.expand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: @primary-color;
+}
+
+.approval-line {
+  display: flex;
+  .left-label {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .approval-status {
+    display: inline-block;
+    min-width: 50px;
+  }
+}
+
+.popover {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0.08em 0.16em;
+    }
+  }
+}

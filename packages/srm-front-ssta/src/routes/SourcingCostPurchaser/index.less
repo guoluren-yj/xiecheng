@@ -1,0 +1,231 @@
+@import '../common.less';
+@sign-width: 40px;
+@col-count: 5;
+
+.ssta-tag-popover-sourcingCost {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0;
+    }
+  }
+}
+
+.ssta-detail-content-sourcingCost {
+  padding: 0 20px;
+
+  :global {
+    .c7n-collapse {
+      .ssta-collapse();
+    }
+
+    .c7n-pro-form-wrapper {
+      .ssta-form();
+    }
+
+    .ued-detail-card {
+      .ssta-card();
+    }
+  }
+}
+
+.ssta-detail-horizontal-line {
+  height: 8px;
+  margin: 0 -20px;
+  background-color: #f4f5f7;
+}
+
+.detail-summary-wrapper {
+  padding: 20px 0;
+
+  &.workflow {
+    padding-top: 0;
+  }
+  & > div:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  :global {
+    .c7n-pro-output {
+      line-height: inherit;
+      font-weight: inherit;
+    }
+
+    .detail-summary-total {
+      height: 90px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 2px;
+      border: 1px solid @fill-5;
+
+      .detail-summary-total-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .summary-total-amount {
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+
+        .c7n-pro-output {
+          display: inline-flex;
+
+          &:not(:first-child) {
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .summary-total-status {
+        display: flex;
+
+        .c7n-pro-output:not(:first-child) {
+          margin-left: 60px;
+        }
+
+        .status-label {
+          color: @text-3;
+        }
+      }
+
+      .detail-summary-total-right {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .detail-summary-row {
+      display: flex;
+
+      .amount-card {
+        height: 58px;
+        width: calc((20% - (@sign-width * (@col-count - 1) / @col-count)));
+        padding: 8px 12px;
+        border: 1px solid #e5e7ec;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+
+        .amount-card-label {
+          color: @text-3;
+          &.ultra-long {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+
+        .amount-card-help {
+          font-size: 14px;
+          margin-left: 4px;
+          vertical-align: text-bottom;
+        }
+
+        .amount-card-value {
+          color: @text-1;
+          font-size: 14px;
+        }
+      }
+
+      .amount-sign {
+        width: @sign-width;
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.ssta-deposit-approval-wrapper {
+  background-color: #f7f8fa;
+  padding: 0 8px;
+  .ssta-deposit-approval-af-basic-card.approval-common-top-section-card {
+    padding: 0;
+    :global {
+      .af-basic-container,
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .af-basic-container .af-basic-remain-area {
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+        .c7n-statistic-title {
+          margin-bottom: 0;
+        }
+      }
+      .af-basic-bottom-remain-area button {
+        color: @text-1;
+      }
+    }
+  }
+  .approval-common-top-section-card {
+    position: relative;
+    background: #fff;
+    padding: 0.2rem;
+    margin: 8px 0;
+    :global {
+      .c7n-collapse {
+        background-color: #fff;
+        border: none;
+
+        & > .c7n-collapse-item {
+          overflow: auto;
+          border: none;
+          .c7n-collapse-header {
+            position: absolute;
+            top: 8px;
+            left: 100px;
+          }
+        }
+        .pay-record-panel-15 .c7n-collapse-header {
+          left: 170px;
+        }
+        .pay-record-panel-20 .c7n-collapse-header {
+          left: 200px;
+        }
+        .transfer-out-panel-15 .c7n-collapse-header {
+          left: 150px;
+        }
+        .transfer-out-panel-20 .c7n-collapse-header {
+          left: 200px;
+        }
+        .c7n-collapse-content {
+          border-top: none;
+          padding: 0;
+        }
+      }
+      .top-section-title {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .ssta-deposit-approval-af-extra-card {
+    :global {
+      .af-extra-container {
+        margin: 4px 0 !important;
+        .af-extra-field {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  .approval-top-section-pur_org_card.approval-common-top-section-card {
+    :global {
+      .second-section-title {
+        &:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}

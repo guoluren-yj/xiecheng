@@ -1,0 +1,17 @@
+@import '~hzero-front/lib/srm-variables';
+.settle-header-batch-edit {
+  height: 100%;
+  // 因为steps外面默认包裹了一层div，无法添加边距，会遮挡下面的表格label
+  .batch-edit-steps-bar {
+    margin-bottom: 20px;
+  }
+  .batch-edit-step-content {
+    height: calc(100vh - 220px);
+    overflow: clip auto; // 适配表单宽度超过容器宽度
+    padding-top: 8px;
+  }
+}
+
+.settle-selected-tips {
+  line-height: 30px;
+}

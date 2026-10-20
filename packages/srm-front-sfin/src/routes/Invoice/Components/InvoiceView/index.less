@@ -1,0 +1,496 @@
+/*
+ * index.less - 发票查验明细样式
+ * @date: 2019-07-24
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+// @normal-table-border: 1px solid rgb(232, 232, 232);
+// @table-bottom-bold-border: 1px solid rgb(232, 232, 232);
+@normal-table-border: 1px solid #c29b4a;
+@table-bottom-bold-border: 1px solid #c29b4a;
+@invoice-color: #c29b4a;
+@invoice-data-color: #425ed9;
+
+.invoice-verification-detail {
+  width: 100%;
+  height: 100%;
+
+  :global {
+    .ant-carousel {
+      .slick-slider {
+        .slick-list {
+          h1 {
+            color: #fff;
+          }
+        }
+
+        // 轮播左右箭头与小点
+        .slick-dots {
+          position: fixed;
+          bottom: 0;
+          height: 30px;
+          line-height: 30px;
+          background-color: #6e6e6e;
+          opacity: 0.8;
+
+          li {
+            margin: 0 5px;
+            vertical-align: middle;
+            color: #878787;
+            cursor: pointer;
+
+            &.slick-active button {
+              background: #29bece;
+              width: 15px;
+              height: 15px;
+            }
+
+            button {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-table-footer {
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .commodityName {
+      white-space: normal !important;
+    }
+
+    .ant-table.ant-table-bordered .ant-table-title {
+      padding: 0;
+    }
+
+    .ant-col-9.ant-form-item-label {
+      line-height: 20px;
+      text-align: left;
+
+      & > label {
+        color: #666;
+      }
+    }
+
+    .blue-color {
+      color: @invoice-data-color;
+    }
+
+    .ant-col-15.ant-form-item-control-wrapper > .ant-form-item-control {
+      line-height: 20px;
+    }
+
+    .ant-row.ant-form-item {
+      margin-bottom: 16px;
+
+      label {
+        color: @invoice-color;
+      }
+
+      .ant-form-item-control {
+        color: @invoice-data-color;
+      }
+    }
+
+    .ant-table-body {
+      overflow-x: hidden !important;
+    }
+
+    .list-of-goods-footer-row {
+      display: flex;
+      justify-content: space-between;
+      line-height: 40px;
+      height: 40px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #d5dae0;
+      }
+
+      .one {
+        width: 72px;
+        text-align: center;
+        border-right: 1px solid rgb(232, 232, 232);
+      }
+
+      .two {
+        width: calc(100% - 1080px);
+      }
+
+      .three {
+        width: 580px;
+      }
+
+      .four {
+        width: 180px;
+      }
+
+      .five {
+        width: 80px;
+      }
+
+      .six {
+        width: 180px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+// 上部分电子发票样式
+.electronic-invoice {
+  :global {
+    .invoice-amount-row {
+      padding: 0 16px 16px;
+    }
+
+    .header-information-row {
+      display: flex;
+      justify-content: space-between;
+
+      .ant-form-item-control {
+        color: @invoice-data-color;
+      }
+
+      & > div:first-child {
+        min-width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 16px;
+
+        .qr-code {
+          width: 100px;
+          height: 100px;
+          border: 1px solid #eee;
+        }
+      }
+
+      & > div:nth-child(2) {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+
+        p {
+          line-height: 22px;
+          color: @invoice-color;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background: @invoice-color;
+            transform: translate(0, 33px);
+          }
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background: @invoice-color;
+            transform: translate(0, 6px);
+          }
+        }
+      }
+
+      & > div:last-child {
+        min-width: 25%;
+      }
+    }
+
+    .middle-information-table {
+      .first-last-row {
+        display: flex;
+        border-top: @normal-table-border;
+        border-right: @normal-table-border;
+        border-bottom: @normal-table-border;
+
+        & > div {
+          padding: 0 16px;
+          color: @invoice-color;
+
+          p {
+            line-height: 20px;
+            margin-bottom: 4px;
+            word-wrap: break-word;
+
+            & > span:first-child {
+              min-width: 100px;
+              display: inline-block;
+            }
+
+            & > span:last-child {
+              color: @invoice-data-color;
+            }
+          }
+        }
+
+        & > div:not(:last-child) {
+          border-right: @normal-table-border;
+        }
+
+        & > div:first-child {
+          width: 50px;
+          display: flex;
+          align-items: center;
+          border-left: @normal-table-border;
+        }
+
+        & > div:nth-child(2) {
+          padding: 10px 16px;
+          // width: calc(100% - 485px);
+          width: 565px;
+        }
+
+        & > div:nth-child(3) {
+          width: 45px;
+          display: flex;
+          align-items: center;
+        }
+
+        & > div:nth-child(4) {
+          padding: 10px 16px;
+          width: 405px;
+        }
+      }
+
+      .last-row {
+        border-bottom: @normal-table-border;
+      }
+
+      .table-with-no-border-bottom {
+        height: 330px;
+        overflow-y: hidden;
+
+        .ant-table .ant-table-tbody tr > td {
+          border-bottom: none;
+          color: @invoice-data-color;
+        }
+
+        .ant-table-body table th {
+          color: @invoice-color !important;
+          border-bottom: @table-bottom-bold-border;
+        }
+
+        .ant-table-body td,
+        .ant-table-body th {
+          border-left: 1px solid #c29b4a;
+
+          &:last-child {
+            border-right: 1px solid #c29b4a;
+          }
+        }
+
+        .ant-table .ant-table-tbody tr {
+          &:nth-last-child(3):hover > td {
+            background: rgb(255, 255, 255);
+          }
+
+          &:nth-last-child(2):hover > td {
+            background: rgb(255, 255, 255);
+          }
+
+          &:last-child:hover > td {
+            background: rgb(255, 255, 255);
+          }
+        }
+
+        .ant-table-wrapper,
+        .ant-spin-nested-loading,
+        .ant-spin-container,
+        .ant-table,
+        .ant-table-content,
+        .ant-table-scroll,
+        .ant-table-body,
+        .ant-table-fixed,
+        .ant-table-tbody {
+          height: 100%;
+        }
+
+        .tbody.ant-table-tbody > tr > td {
+          border: @normal-table-border;
+        }
+
+        .ant-table .ant-table-tbody tr {
+          &:last-child > td {
+            border-bottom: @normal-table-border;
+
+            &:nth-child(1) {
+              text-align: center;
+              color: @invoice-color;
+            }
+
+            &:nth-child(2),
+            &:nth-last-child(2) {
+              color: @invoice-data-color;
+              text-align: center;
+            }
+          }
+
+          &:nth-last-child(2) > td {
+            color: @invoice-data-color;
+
+            &:nth-child(1) {
+              text-align: center;
+              color: @invoice-color;
+            }
+          }
+
+          &:nth-last-child(3) {
+            height: 100%;
+          }
+
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .table-below-line {
+      margin-top: 12px;
+
+      div label {
+        color: @invoice-color !important;
+      }
+
+      .ant-form-item-children {
+        color: @invoice-data-color !important;
+      }
+
+      .ant-form-item-label {
+        width: 30.5%;
+      }
+
+      .ant-form-item-control-wrapper {
+        width: 69.5%;
+      }
+    }
+  }
+}
+
+// 下部分销货清单样式
+.list-of-goods {
+  width: 100%;
+
+  :global {
+    .blank-space {
+      height: 20px;
+      background: #fafafa;
+      margin-bottom: 0;
+    }
+
+    .title {
+      width: 100%;
+      line-height: 102px;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .ant-row.read-row {
+      margin: 0 !important;
+
+      // div {
+      //   white-space: pre-wrap !important;
+      // }
+
+      .ant-form-item .ant-form-item-label label {
+        color: black;
+      }
+    }
+
+    // ListOfGoods 增值税应税货物或劳务销货清单的table
+    .table-with-no-border-bottom-bom {
+      height: 900px;
+
+      .ant-table .ant-table-tbody tr > td {
+        border-bottom: none;
+      }
+
+      .ant-table-wrapper,
+      .ant-spin-nested-loading,
+      .ant-spin-container,
+      .ant-table,
+      .ant-table-content,
+      .ant-table-scroll,
+      .ant-table-body,
+      .ant-table-body > table,
+      .ant-table-fixed,
+      .ant-table-tbody {
+        height: 100%;
+      }
+
+      .ant-table .ant-table-tbody tr {
+        &:nth-last-child(3) {
+          height: 100%;
+
+          &:hover > td {
+            background: rgb(255, 255, 255);
+          }
+        }
+
+        &:last-child > td {
+          border-bottom: 1px solid rgb(232, 232, 232);
+
+          &:last-child,
+          &:nth-last-child(3) {
+            color: @invoice-data-color;
+          }
+        }
+
+        &:nth-last-child(2) > td {
+          &:last-child,
+          &:nth-last-child(3) {
+            color: @invoice-data-color;
+          }
+        }
+
+        &:last-child:hover > td,
+        &:nth-last-child(2):hover > td {
+          background: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    .table-below-line {
+      padding: 0 16px;
+      margin: 50px 0 24px 0;
+
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+      }
+
+      .table-below-line-label {
+        &:last-child {
+          text-align: right;
+        }
+
+        label {
+          color: black !important;
+        }
+      }
+    }
+
+    .list-last-row {
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        width: 25%;
+      }
+    }
+  }
+}

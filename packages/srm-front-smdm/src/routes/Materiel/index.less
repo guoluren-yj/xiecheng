@@ -1,0 +1,92 @@
+/**
+ * 物料定义 - less
+ * @date: 2018-9-20
+ * @author: YB <bo.yang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.modal-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: right;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+.table {
+  :global {
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+}
+.form-info {
+  margin-bottom: 30px;
+}
+// .divider-span {
+//   padding: 10px;
+//   background-color: #f0f2f5;
+//   border-radius: 5px;
+//   border: 1px solid #e8e8e8;
+// }
+.table-column {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bgfff {
+  :global {
+    .ant-input-group-addon {
+      background-color: #fff;
+    }
+  }
+}
+
+.menu {
+  li {
+    padding: 0 28px 0 16px !important;
+    padding: 0;
+    button {
+      overflow: visible !important;
+      border: none;
+      padding: 0 !important;
+      i {
+        display: none;
+      }
+    }
+    :global {
+      .srm-common-import-button-tag {
+        top: -3px !important;
+        right: -20px !important;
+      }
+    }
+  }
+}
+
+.srm-common-new-button {
+  position: relative;
+  .srm-common-export-button-tag {
+    display: inline-block;
+    font-size: 8px;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    line-height: 1.5;
+    position: absolute;
+    padding: 0 2px;
+    top: -2px;
+    margin-left: -14px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+}
+
+.overflow-detail-content {
+  overflow-y: auto !important;
+  height: calc(100vh - 128px) !important;
+}

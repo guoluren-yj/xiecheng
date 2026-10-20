@@ -1,0 +1,39 @@
+.sprm-project-change-info {
+  :global {
+    .c7n-card > .c7n-card-head {
+      border: 0;
+      padding: 16px 16px 25px 11px !important;
+      .c7n-card-head-title {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    .c7n-card-head::before {
+      top: 22px !important;
+      height: 12px !important;
+    }
+    .change-last-card {
+      padding-top: 16px;
+      .c7n-card-head {
+        border: 0;
+        padding: 16px 16px 16px 11px !important;
+      }
+    }
+    .c7n-card.ued-detail-card-table > .c7n-card-head,
+    .c7n-card.ued-detail-card > .c7n-card-body {
+      border: 0;
+      padding: 0;
+    }
+    .tree-table-project {
+      :global {
+        .c7n-pro-table-content {
+          > table {
+            > thead > tr > th:nth-child(1) {
+              padding-left: 45px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

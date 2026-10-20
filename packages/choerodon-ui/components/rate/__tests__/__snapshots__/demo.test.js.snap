@@ -1,0 +1,851 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/rate/demo/basic.md correctly 1`] = `
+<ul
+  class="c7n-rate"
+  tabindex="0"
+>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/rate/demo/character.md correctly 1`] = `
+<div>
+  <ul
+    class="c7n-rate"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-heart"
+        />
+      </div>
+    </li>
+  </ul>
+  <br />
+  <ul
+    class="c7n-rate"
+    style="font-size:36px"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        A
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        A
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        A
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        A
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        A
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        A
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        A
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        A
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        A
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        A
+      </div>
+    </li>
+  </ul>
+  <br />
+  <ul
+    class="c7n-rate"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        好
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        好
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        好
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        好
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        好
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        好
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        好
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        好
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        好
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        好
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders ./components/rate/demo/clear.md correctly 1`] = `
+<div>
+  <ul
+    class="c7n-rate"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+  </ul>
+   allowClear: true
+  <br />
+  <ul
+    class="c7n-rate"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+  </ul>
+   allowClear: false
+</div>
+`;
+
+exports[`renders ./components/rate/demo/disabled.md correctly 1`] = `
+<ul
+  class="c7n-rate c7n-rate-disabled"
+  tabindex="-1"
+>
+  <li
+    class="c7n-rate-star c7n-rate-star-full"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-full"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/rate/demo/half.md correctly 1`] = `
+<ul
+  class="c7n-rate"
+  tabindex="0"
+>
+  <li
+    class="c7n-rate-star c7n-rate-star-full"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-full"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-half c7n-rate-star-active"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+  <li
+    class="c7n-rate-star c7n-rate-star-zero"
+  >
+    <div
+      class="c7n-rate-star-first"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+    <div
+      class="c7n-rate-star-second"
+    >
+      <i
+        class="icon icon-star"
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/rate/demo/text.md correctly 1`] = `
+<span>
+  <ul
+    class="c7n-rate"
+    tabindex="0"
+  >
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-full"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-rate-star c7n-rate-star-zero"
+    >
+      <div
+        class="c7n-rate-star-first"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+      <div
+        class="c7n-rate-star-second"
+      >
+        <i
+          class="icon icon-star"
+        />
+      </div>
+    </li>
+  </ul>
+  <span
+    class="c7n-rate-text"
+  >
+    3 stars
+  </span>
+</span>
+`;

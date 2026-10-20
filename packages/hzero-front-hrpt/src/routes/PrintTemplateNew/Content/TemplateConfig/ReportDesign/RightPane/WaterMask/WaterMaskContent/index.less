@@ -1,0 +1,59 @@
+.water-mask-content-editor {
+  min-height: 300px;
+  display: flex;
+  height: 100%;
+  &-left {
+    flex: 1;
+    overflow-x: hidden;
+    padding: 16px;
+    word-break: break-all;
+    line-height: 24px;
+    :global {
+      .c7n-pro-textarea-wrapper {
+        width: 100%;
+      }
+      .c7n-pro-input-wrapper {
+        vertical-align: baseline;
+      }
+      .c7n-pro-input {
+        padding: 0;
+        height: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+  &-right {
+    width: 280px;
+    background: #F8F9FB;
+    overflow: hidden;
+    border-right: 1px solid rgb(229, 231, 236);
+    :global {
+      .c7n-tabs {
+        height: 100%;
+      }
+      .c7n-tabs-bar {
+        padding-top: 16px;
+        padding-left: 20px;
+      }
+      .c7n-tabs-content {
+        padding-left: 20px;
+        overflow: auto;
+      }
+    }
+  }
+  &-param {
+    line-height: 32px;
+    cursor: pointer;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+}
+.water-mask-content-tree {
+  background-color: transparent;
+  :global {
+    .c7n-tree-switcher {
+      background-color: transparent;
+    }
+  }
+}

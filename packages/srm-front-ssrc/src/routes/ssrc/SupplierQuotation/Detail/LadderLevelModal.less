@@ -1,0 +1,46 @@
+/*!
+    Message - 阶梯报价
+    @date 2011-3-25
+    @author: hzl <zili.hou@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+.ssrc-ladder-level-header {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding: 4px 16px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .ant-form-item-label label {
+        color: #999;
+      }
+      .ant-form-item-label {
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .ant-form-item {
+        margin-top: -10px;
+        margin-bottom: 0;
+      }
+      .ant-input-number-input {
+        color: black;
+        padding: 0;
+      }
+    }
+  }
+}

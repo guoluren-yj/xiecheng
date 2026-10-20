@@ -1,0 +1,62 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.context-style {
+  min-height: 200px;
+  padding: 16px;
+  // border: 1px solid #000;
+}
+.create-container {
+  :global {
+    .form-collapse {
+      border: none;
+      background-color: #fff;
+      .ant-collapse-item {
+        border: none;
+        margin-bottom: 16px;
+        background-color: #fafafa;
+      }
+      .ant-collapse-header {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 !important;
+        i {
+          margin-left: 8px;
+          color: @primary-color;
+          font-weight: bold;
+          padding: 0;
+          border-radius: 28px;
+          -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+          &:hover {
+            color: @primary-color;
+            background: #e6e9ed;
+          }
+        }
+        h3 {
+          display: inline-block;
+          text-indent: 16px;
+        }
+        a {
+          margin-left: 16px;
+        }
+      }
+      .ant-collapse-content {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.information-container {
+  .information-item {
+    margin-bottom: 16px;
+  }
+  :global {
+    .ant-form-item-label {
+      line-height: 18px;
+    }
+    .ant-form-item-control-wrapper {
+      width: 50%;
+    }
+  }
+}

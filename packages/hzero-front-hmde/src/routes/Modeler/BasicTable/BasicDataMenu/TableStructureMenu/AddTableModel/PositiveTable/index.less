@@ -1,0 +1,51 @@
+@import '../../../../global';
+
+.positive-table {
+  .positive-table-title {
+    display: inline-block;
+    font-size: 14px;
+    border-bottom: 2px solid @Blue;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    // color: @Blue;
+  }
+
+  .first-step {
+    width: 500px;
+    margin: auto;
+
+    :global {
+      .c7n-pro-field-label {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.tableDetailContain {
+  :global {
+    .c7n-pro-table-header {
+      // color: #012492;
+      font-size: 16px;
+      padding-left: 0;
+      font-weight: 600;
+    }
+  }
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// 引入样式 更改table表单默认按钮居右
+.btnFloatRight {
+  > div {
+    > div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

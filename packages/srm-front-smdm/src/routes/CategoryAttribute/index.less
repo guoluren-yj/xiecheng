@@ -1,0 +1,131 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.tabs {
+  :global {
+    .c7n-tabs-tab {
+      // padding: 10px 15px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.config-page-content {
+  padding: 0 !important;
+  :global {
+    .config-vertical-tabs {
+      & > .c7n-tabs-content {
+        min-height: calc(100vh - 160px) !important;
+        border-left: 1px solid #e8e8e8 !important;
+        padding-left: 20px;
+      }
+      & > .c7n-tabs-bar {
+        border: none;
+        .c7n-tabs-bar-inner {
+          padding-top: 20px;
+        }
+        .c7n-tabs-nav-container {
+          overflow: visible;
+          .c7n-tabs-nav-scroll {
+            overflow: visible;
+          }
+        }
+        .c7n-tabs-nav-wrap {
+          overflow: visible;
+        }
+        .c7n-tabs-tab {
+          width: 180px;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: left;
+          margin-bottom: 0.24rem;
+          padding: 0 0.24rem;
+        }
+        .c7n-tabs-ink-bar {
+          display: none;
+          height: 22px !important;
+          width: 3px;
+        }
+      }
+    }
+    .config-top-tabs {
+      & > .c7n-tabs-bar {
+        .c7n-tabs-bar-inner {
+          padding-top: 16px;
+        }
+        .c7n-tabs-tab {
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+    }
+    .config-right-content {
+      height: 100%;
+      padding-right: 20px;
+      .config-right-content-one-title {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .config-chunk-content {
+        margin-top: 16px;
+        padding-bottom: 16px;
+        .config-right-content-two-title {
+          height: auto;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          &-ink {
+            display: inline-block;
+            margin-right: 12px;
+            height: 14px;
+            width: 3px;
+            background: #36c2cf;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabTitle {
+  display: inline-block;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// tag颜色渲染
+.warning-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.notice-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.danger-tag {
+  color: @color-danger !important;
+  background-color: @color-danger-percent10;
+  margin-bottom: 1px;
+}
+
+.success-tag {
+  color: @color-success !important;
+  background-color: @color-success-percent10;
+  margin-bottom: 1px;
+}

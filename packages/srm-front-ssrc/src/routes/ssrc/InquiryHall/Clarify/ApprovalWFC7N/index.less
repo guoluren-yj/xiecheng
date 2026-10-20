@@ -1,0 +1,63 @@
+.ssrc-clarify-approval-wrapper {
+  background-color: #f7f8fa;
+  padding: 0 8px;
+
+  .ssrc-clarify-approval-af-basic-card.approval-common-top-section-card {
+    padding: 0;
+
+    :global {
+      .af-basic-container,
+      .af-basic-bottom-remain-area {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .approval-common-top-section-card {
+    background: #fff;
+    padding: 0.2rem;
+    margin: 8px 0;
+  }
+
+  .approval-top-section-pur_org_card.approval-common-top-section-card {
+    :global {
+      .second-section-title {
+        &:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+
+  // 澄清函正文
+  .context-style {
+    max-height: 6rem;
+    overflow: auto;
+  }
+
+  // 折叠框
+  :global {
+    .c7n-collapse > .c7n-collapse-item {
+      .c7n-collapse-header,
+      .c7n-collapse-content {
+        padding: 0;
+      }
+      .c7n-collapse-content > .c7n-collapse-content-box {
+        padding-top: 0;
+      }
+      .c7n-collapse-expand-icon {
+        font-weight: 500;
+      }
+      .c7n-collapse-header {
+        font-size: 0.16rem;
+        font-weight: 600;
+      }
+    }
+    .c7n-collapse > .c7n-collapse-item-active {
+      .c7n-collapse-header {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

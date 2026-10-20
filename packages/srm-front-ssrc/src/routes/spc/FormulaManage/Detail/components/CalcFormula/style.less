@@ -1,0 +1,177 @@
+@import '~hzero-front/lib/srm-variables';
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  border: 1px solid #e5e7ec;
+  border-radius: 2px;
+}
+
+.left,
+.right {
+  width: 240px;
+}
+
+.left {
+  margin: 16px;
+}
+
+.right {
+  :global {
+    .c7n-tabs-nav-scroll {
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 21px;
+      font-weight: 600;
+    }
+  }
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  border-left: 1px solid #e5e7ec;
+  border-right: 1px solid #e5e7ec;
+
+  div:focus {
+    outline: none;
+  }
+
+  .centerTop {
+    flex: 1;
+    margin: 16px;
+
+    .calcFormulaTitle {
+      margin-bottom: 1.4%;
+      font-size: 14px;
+      color: #101319;
+      letter-spacing: 0;
+      line-height: 21px;
+      font-weight: 600;
+    }
+  }
+
+  .errorTips {
+    padding: 0 20px;
+    min-height: 40px;
+    background: rgba(237, 47, 0, 0.05);
+    font-size: 13px;
+    color: #ed2f00;
+    letter-spacing: 0;
+    line-height: 40px;
+    font-weight: 400;
+  }
+}
+
+.calcFormulaWrapper {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 500;
+
+  &:empty:before {
+    content: attr(placeholder);
+    font-size: 0.12rem;
+    color: #c9cdd4;
+  }
+
+  &:focus:before {
+    content: '';
+  }
+
+  .calcFormula {
+    display: inline-block;
+    margin: 0 4px;
+    background: rgba(29, 98, 245, 0.1);
+    border-radius: 2px;
+    font-size: 12px;
+    color: #1d62f5;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 1px 4px;
+  }
+}
+
+.editorFieldTitle {
+  margin-bottom: 16px;
+}
+
+.fieldList {
+  min-height: 300px;
+  max-height: 400px;
+  overflow: auto;
+  margin-top: 16px;
+
+  .fieldType {
+    display: inline-block;
+    margin-left: 16px;
+    padding: 2px;
+    border: 1px solid #3bb346;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #3bb346;
+    text-align: justify;
+    line-height: 15px;
+    font-weight: 400;
+  }
+
+  .fieldExpand {
+    color: @primary-color;
+  }
+}
+
+.originFormula {
+  padding-left: 30px;
+  font-size: 13px;
+  color: #101319;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.operatorWrapper {
+  margin: 0 16px;
+
+  .line {
+    margin-bottom: 32px;
+
+    .title {
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: #101319;
+      letter-spacing: 0;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .item {
+      margin-right: 4px;
+    }
+  }
+}
+
+.preview-no-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .no-content-img {
+    color: @primary-color;
+
+    :global {
+      svg {
+        width: 280px;
+        height: 160px;
+      }
+    }
+  }
+
+  .no-content-text {
+    font-size: 14px;
+    color: @text-3;
+  }
+}

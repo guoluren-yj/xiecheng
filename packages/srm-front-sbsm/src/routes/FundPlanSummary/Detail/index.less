@@ -1,0 +1,35 @@
+@import '../../../common.less';
+@import '~hzero-front/lib/srm-variables.less';
+
+.children_table {
+  :global {
+    thead tr th:nth-child(2) {
+      .c7n-pro-table-cell-inner {
+        padding-left: 22px !important;
+      }
+    }
+    .c7n-pro-table-cell-prefix {
+      padding-left: 0;
+      position: relative;
+      left: -7px;
+    }
+    .c7n-pro-table-cell-prefix + .c7n-pro-table-cell-inner:not(.c7n-pro-table-cell-inner-editable) {
+      left: -9px;
+    }
+  }
+}
+
+.children_table_td {
+  :global {
+    thead tr th:nth-child(2) {
+      .c7n-pro-table-cell-inner {
+        padding-left: 0 !important;
+      }
+    }
+    thead tr th:nth-child(1) {
+      .c7n-pro-table-cell-inner {
+        padding-left: 22px !important;
+      }
+    }
+  }
+}

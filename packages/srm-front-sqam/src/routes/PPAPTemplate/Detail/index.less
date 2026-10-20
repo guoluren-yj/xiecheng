@@ -1,0 +1,130 @@
+@import '../../common.less';
+@import '~hzero-front/lib/srm-variables';
+
+@strategy-config-bar-height: 44px;
+
+.sqam-detail-form {
+  &.c7n-pro-form-float-label {
+    margin: 0 -8px;
+  }
+
+  & > table > tbody > tr {
+    &:last-child {
+      .c7n-pro-field-label-vertical + .c7n-pro-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c7n-pro-field-label-vertical {
+    // color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    padding: 0;
+  }
+
+  .c7n-pro-field-label-vertical + .c7n-pro-field-wrapper {
+    padding: 4px 16px 16px 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 18px;
+
+    .c7n-pro-output {
+      line-height: 18px;
+    }
+  }
+}
+
+.full-height-spinning() {
+  height: 100%;
+
+  .c7n-spin-container {
+    height: 100%;
+  }
+}
+
+.common-select-card-label-help() {
+  font-size: 14px;
+  margin-top: -2px;
+  margin-left: 4px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.strategy-tabs-left(@between: 4px) {
+  height: 100%;
+  .c7n-tabs-bar {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 16px 0 16px 16px;
+    .c7n-tabs-tab {
+      font-size: 14px;
+      text-align: left;
+      padding-right: 55px;
+      margin-bottom: 16px;
+      padding-left: 0;
+    }
+    .c7n-tabs-tab-active {
+      font-weight: 600;
+    }
+  }
+
+  .c7n-tabs-content {
+    padding-left: 0;
+    height: 100%;
+    overflow: auto;
+    .c7n-tabs-tabpane {
+      padding: 20px;
+      height: 100%;
+    }
+  }
+}
+
+.sqam-ppap-content {
+  height: 100%;
+  :global {
+    .page-content-wrap {
+      height: 100%;
+      .page-content {
+        height: calc(100% - 16px) !important;
+        padding: 0;
+      }
+    }
+    .c7n-pro-table-wrapper {
+      & > div {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+.sqam-ppap-approval {
+  :global {
+    .c7n-pro-table-wrapper {
+      & > div {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.sqam-ppap-detail {
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  .sqam-ppap-header {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  :global {
+    .full-height-spinning {
+      .full-height-spinning();
+    }
+    .c7n-tabs-left {
+      .strategy-tabs-left(4px);
+    }
+    .c7n-pro-form-wrapper {
+      .sqam-detail-form;
+    }
+  }
+}

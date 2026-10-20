@@ -1,0 +1,126 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+
+.@{c7n-pro-prefix}-pagination {
+  line-height: 0.3rem;
+
+  > * {
+    vertical-align: middle;
+  }
+
+  &-size-changer:not(&-size-editable) .@{c7n-pro-prefix}-select,
+  &-size-changer&-size-editable .@{c7n-pro-prefix}-select:not(:hover):not(:focus) {
+    border-color: transparent;
+  }
+
+  &-page-info {
+    margin: 0 0.2rem;
+  }
+
+  &-pager {
+    height: @btn-circle-size;
+
+    &.@{c7n-pro-prefix}-btn-flat {
+      color: @text-color !important;
+    }
+  }
+
+  &-quick-jumper {
+    margin-left: .2rem;
+
+    &-input {
+      display: inline-block;
+      padding-right: .05rem;
+      line-height: 1;
+      border: @border-width-base @border-style-base transparent;
+      border-radius: @input-border-radius;
+      transition: border @animation-duration-slow;
+
+      &-focused {
+        border-color: @input-focus-border-color;
+      }
+
+      &:hover {
+        border-color: @input-hover-border-color;
+      }
+
+      .@{c7n-pro-prefix}-input-number-wrapper {
+        vertical-align: baseline;
+      }
+    }
+  }
+
+  &-simple-pager {
+    display: inline-block;
+    height: 0.3rem;
+    margin-right: 0.08rem;
+    vertical-align: middle;
+
+    input {
+      position: relative;
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.3rem;
+      margin: 0 0.08rem;
+      padding: 0.04rem 0.11rem;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 1.5;
+      -webkit-transition: all @animation-duration-slow;
+      transition: all @animation-duration-slow;
+    }
+  }
+
+  &-go-button {
+    margin-left: 0.1rem;
+  }
+
+  &-patching.@{c7n-pro-prefix}-btn {
+    float: left;
+    color: @table-row-group-title-color !important;
+
+    &>span {
+      display: flex;
+      align-items: center;
+    }
+
+    &:focus {
+      color: @table-row-group-title-color !important;
+    }
+
+    svg {
+      margin-right: @margin-xss;
+      transform: rotate(180deg);
+    }
+  }
+
+  &-patching-expanded.@{c7n-pro-prefix}-btn svg {
+    transform: rotate(0);
+  }
+
+  &-patching-options {
+    height: 0;
+    margin-top: -0.01rem;
+    overflow: hidden;
+  }
+
+  &-patching-description {
+    float: right;
+    color: @text-color-secondary;
+    font-size: @font-size-sm;
+    cursor: default;
+
+    .icon-help {
+      margin-left: @margin-xss;
+      font-size: 0.14rem;
+      vertical-align: text-top;
+      cursor: pointer;
+    }
+  }
+
+  &-patching-options-expanded {
+    height: auto;
+    padding: @padding-md @padding-sm;
+    background-color: @table-row-hover-bg;
+    transition: all @animation-duration-base @ease-out;
+  }
+}

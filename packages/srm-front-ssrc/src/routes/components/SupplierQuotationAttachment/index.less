@@ -1,0 +1,56 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.file-group-view-component-wrap-ssrc {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      max-width: 800px !important;
+      min-width: 480px !important;
+      padding: 0;
+      max-height: 480px;
+      overflow-y: auto;
+    }
+  }
+}
+
+.link-color {
+  cursor: pointer;
+  :global {
+    path {
+      fill: @link-color;
+    }
+  }
+}
+
+.link-color-new-check {
+  cursor: pointer;
+  :global {
+    path {
+      fill: @fill-1;
+    }
+  }
+}
+
+.ssrc-attachment-tooltip-title-common-class {
+  margin-left: 8px;
+  color: @fill-3;
+}
+
+.item-line-upload-time {
+  .ssrc-attachment-tooltip-title-common-class();
+}
+
+.title-common-label-name {
+  .ssrc-attachment-tooltip-title-common-class();
+
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.ssrc-file-group-empty-files-text {
+  margin: 16px;
+}

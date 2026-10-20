@@ -1,0 +1,29 @@
+.ssrc-ladder-level-header {
+  :global {
+    .ant-form-item {
+      margin: 5px 0 12px;
+    }
+    .ant-modal-body {
+      padding: 0 24px 24px;
+    }
+  }
+}
+.ladder-lever {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}

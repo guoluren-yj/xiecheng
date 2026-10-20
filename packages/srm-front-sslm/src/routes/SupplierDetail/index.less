@@ -1,0 +1,320 @@
+/*!
+    index - 供应商360度查询
+    @date 2018-08-20
+    @author lokya <kan.li01@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+@import '~hzero-front/lib/srm-variables';
+
+:global {
+  .first-title {
+    font-size: 20px;
+    margin: 40px 0 0 0;
+    color: #333;
+  }
+  .second-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    color: #333;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      border-left: 3px @primary-color solid;
+      margin-right: 8px;
+    }
+  }
+  .information-item {
+    margin-bottom: 16px;
+    margin-left: 3px !important;
+    .information-item-lable {
+      color: #666;
+    }
+    .information-item-children {
+      padding-left: 6px !important;
+    }
+  }
+
+  .info-detail {
+    display: flex;
+    flex-flow: row;
+    .info-content {
+      display: flex;
+      flex: 1;
+    }
+    .info-menu {
+      width: 400px;
+      height: 100px;
+      border: 1px solid #000;
+    }
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .catalog-row {
+    height: 160px;
+
+    margin: 40px 0 0 0;
+  }
+  .catalog-title {
+    float: left;
+    height: 160px;
+    width: 92px;
+    background: "url('srm-front-sslm/lib/assets/bg-categories.png')";
+    background-repeat: no-repeat;
+  }
+  .catalog-title div {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+  }
+  .catalog-li {
+    list-style-type: none;
+    padding: 3px;
+    text-indent: 12px;
+    text-indent: 20px;
+    width: 170px;
+  }
+  .botder-li {
+    border-right: 1px solid #eee;
+  }
+  .catalog-ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 158px;
+    margin-bottom: 0;
+    padding: 12px 0;
+    width: 400px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+  }
+  .catalog-li-span {
+    margin-right: 10px;
+  }
+  .catalog-li-lelel1 {
+    color: #6e7ad6;
+    font-size: 14px;
+  }
+  .catalog-li-lelel2,
+  .catalog-li-lelel3 {
+    color: #666;
+    margin-left: 16px;
+  }
+  .catalog-col-img {
+    height: 160px;
+  }
+  .catalog-col-img img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .words-space {
+    margin-right: 4px;
+  }
+  .logo-div {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin-right: 24px;
+    text-align: center;
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #eee;
+  }
+  .logo-img {
+    margin-top: 10px;
+    width: 130px;
+    height: 80px;
+  }
+  .first-menu-number-1 {
+    font-size: 14px;
+  }
+  .first-menu-description-1 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .first-menu-number-2 {
+    margin-left: 16px;
+  }
+
+  .first-menu-description-2 {
+    margin-left: 10px;
+  }
+  .company-info {
+    float: left;
+    width: 60%;
+  }
+  .hide-step {
+    display: none !important;
+  }
+  .show-step {
+    display: block !important;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon {
+    border-color: #1cbc86ff;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: #1cbc86ff;
+  }
+  div.ant-steps-small .ant-steps-item-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+  div.ant-steps-vertical.ant-steps-small .ant-steps-item-tail {
+    left: 15px;
+    padding: 34px 0 4px;
+  }
+  .supplier-steps {
+    margin-left: 24px !important;
+  }
+  .step-proposer,
+  .step-approver {
+    margin-left: 12px;
+  }
+  .compose-form-disabled {
+    .row-disabled {
+      border: none;
+    }
+  }
+  .basic-half-row {
+    margin-bottom: 16px;
+    .ant-col-12 {
+      width: 100%;
+      .ant-col-9.ant-form-item-label {
+        width: 11.5%;
+        line-height: 20px;
+        > label {
+          color: #666;
+        }
+      }
+      .ant-col-15.ant-form-item-control-wrapper {
+        width: 88.5%;
+        .ant-form-item-control {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.aIconstyle {
+  margin-left: 10px;
+}
+
+.table-column-g {
+  background-color: #52c41a !important;
+}
+.table-column-y {
+  background-color: #faad14 !important;
+}
+.table-column-r {
+  background-color: #f5222d !important;
+}
+
+// c7n Anchor组件相关样式
+.page-anchor-container {
+  background-color: white;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 16px;
+  width: 210px;
+  z-index: 100;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+
+  .anchor-icon {
+    position: absolute;
+    right: 210px;
+    width: 12px;
+    line-height: 56px;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* Internet Explorer */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+  }
+
+  &.toggle-show {
+    right: -210px;
+  }
+
+  .anchor-content {
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    max-height: 300px;
+    overflow: scroll;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.supplier-top-section {
+  :global {
+    .top-section-title,
+    .second-section-title {
+      margin-top: 40px;
+    }
+    h3:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
+
+.stage-form {
+  :global {
+    .ant-row {
+      .ant-col-6 {
+        width: 17%;
+        padding-right: 0 !important;
+        .ant-row.ant-form-item {
+          margin-bottom: 0;
+          .ant-col-9 {
+            line-height: 20px;
+          }
+          .ant-col-15 {
+            .ant-form-item-control {
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.attachemnt-wrap {
+  :global {
+    .c7n-pro-btn-wrapper.c7n-pro-attachment {
+      padding: 0;
+      height: 18px;
+    }
+  }
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

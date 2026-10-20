@@ -1,0 +1,334 @@
+@import '~hzero-front/lib/srm-variables';
+.policy-header-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  .policy-header-lov {
+    :global {
+      .c7n-pro-select-lov {
+        width: 240px;
+      }
+    }
+  }
+  .policy-header-btns {
+    text-align: right;
+    flex: 1 1;
+    :global {
+      .c7n-pro-btn-primary {
+        background-color: #1e3255 !important;
+        border-color: #1e3255 !important;
+      }
+    }
+  }
+}
+.policy-all-content {
+  padding: 0;
+  border: 0 !important;
+  :global {
+    .c7n-tabs-left {
+      .c7n-tabs-bar {
+        padding-top: 20px;
+        min-height: calc(100vh - 153px);
+        min-width: 180px;
+        max-width: 220px;
+        .c7n-tabs-nav {
+          .c7n-tabs-invalid-badge {
+            .c7n-scroll-number-custom-component {
+              display: none;
+            }
+          }
+        }
+        .c7n-tabs-bar-inner {
+          .c7n-tabs-nav-container {
+            .c7n-tabs-nav-wrap {
+              .c7n-tabs-nav {
+                .c7n-tabs-tab {
+                  padding: 0 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .c7n-tabs-content {
+        padding-left: 0;
+      }
+    }
+    .c7n-tabs-content {
+      max-height: calc(100vh - 152px);
+      overflow: auto;
+      .c7n-tabs-tabpane-active {
+        & > .page-content-wrap:not(:first-child) {
+          & > .page-content {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.policy-content-card {
+  padding: 20px;
+  margin: 0 !important;
+  :global {
+    .c7n-card {
+      .c7n-card-head {
+        border: none;
+        padding: 0 0 0 11px;
+        min-height: 22px;
+        height: 22px;
+        margin-bottom: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 12px;
+          background-color: @primary-color;
+          pointer-events: none;
+        }
+        .c7n-card-head-title {
+          padding-top: 0;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+      .c7n-card-body {
+        padding: 0;
+      }
+    }
+    .c7n-divider {
+      margin: 20px -20px 0 -20px;
+      display: block;
+      width: inherit;
+    }
+  }
+  .card-standard-tab {
+    :global {
+      .c7n-card:not(:first-child) {
+        .c7n-card-head {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+  .card-title-tips {
+    margin: -20px -20px 16px -20px !important;
+    :global {
+      .c7n-alert-message {
+        font-size: 12px;
+        color: #1983f5;
+        line-height: 22px;
+        font-weight: 400;
+        display: inline;
+      }
+      .c7n-alert-close-icon {
+        .icon-close {
+          color: #1983f5;
+        }
+      }
+    }
+  }
+  .standard-config-form {
+    margin-bottom: 16px;
+  }
+  .basic-policy-dimension-form {
+    :global {
+      .c7n-card-head {
+        margin-top: 32px;
+      }
+    }
+  }
+  .policy-content-card-title {
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+}
+.policy-content-card-view {
+  :global {
+    // 只读页隐藏必填样式
+    .c7n-pro-vertical-form-display {
+      .c7n-pro-field-label.c7n-pro-field-required {
+        &:before {
+          display: none;
+          content: '';
+        }
+      }
+    }
+  }
+}
+.policy-version-history-model {
+  :global {
+    .c7n-pro-modal-drawer-body {
+      padding: 0;
+      .c7n-tabs-left {
+        .c7n-tabs-bar {
+          min-height: calc(100vh - 112px);
+        }
+      }
+    }
+  }
+  .policy-all-content {
+    margin: 0;
+  }
+}
+
+.policy-all-content-header {
+  :global {
+    .c7n-spin-nested-loading {
+      .c7n-spin-container {
+        padding: 0;
+        .c7n-tabs-left {
+          .c7n-tabs-bar {
+            min-height: calc(100vh - 160px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.policy-investig-conditions {
+  max-height: 400px;
+  overflow-y: scroll;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  :global {
+    .c7n-menu-item {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      height: 18px;
+      margin-bottom: 8px;
+    }
+  }
+  .policy-investig-conditions-title {
+    margin-top: 4px;
+    color: #868d9c;
+  }
+}
+
+.view-conditions-modal {
+  :global {
+    .c7n-pro-modal-drawer-body {
+      .c7n-list {
+        .c7n-spin-container {
+          .c7n-list-item {
+            .c7n-list-item-content {
+              display: block;
+            }
+          }
+        }
+        .c7n-list-footer {
+          background-color: #f7f8fa;
+          color: #868d9c;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  &-body-title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #868d9c;
+  }
+  &-body-operator {
+    color: #868d9c;
+    font-weight: 400;
+  }
+  &-no-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 180px);
+    svg {
+      margin-bottom: 16px;
+      color: @primary-color;
+    }
+  }
+}
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+.history-version-submenu {
+  :global {
+    .c7n-menu-submenu-title {
+      width: 140px;
+    }
+    .c7n-menu.c7n-menu-sub.c7n-menu-vertical {
+      max-height: 400px;
+      overflow-y: auto;
+      .c7n-menu-item {
+        height: auto;
+        line-height: normal;
+        padding: 8px 16px;
+      }
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.header-alert {
+  color: @blue-6;
+  border: none;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+    }
+  }
+}

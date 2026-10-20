@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13.3333333px" height="13.3333333px" viewBox="0 0 13.3333333 13.3333333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(6.6667, 6.6667) rotate(90) translate(-6.6667, -6.6667)translate(-1.3333, -1.3333)">
+            <polygon id="路径" points="0 0 16 0 16 16 0 16"></polygon>
+            <path d="M8,1.33333333 C11.68,1.33333333 14.6666667,4.32 14.6666667,8 C14.6666667,11.68 11.68,14.6666667 8,14.6666667 C4.32,14.6666667 1.33333333,11.68 1.33333333,8 C1.33333333,4.32 4.32,1.33333333 8,1.33333333 Z M8,7.33333333 L5.33333333,7.33333333 L5.33333333,8.66666667 L8,8.66666667 L8,10.6666667 L10.6666667,8 L8,5.33333333 L8,7.33333333 Z" id="形状" fill="#E64322" fill-rule="nonzero" transform="translate(8, 8) rotate(-90) translate(-8, -8)"></path>
+        </g>
+    </g>
+</svg>

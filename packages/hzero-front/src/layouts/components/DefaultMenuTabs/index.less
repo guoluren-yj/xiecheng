@@ -1,0 +1,77 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+@import '../../../srm-variables';
+
+.menu-tabs {
+  &:global(.ant-tabs.ant-tabs-card) {
+    > :global(.ant-tabs-bar) {
+      background-color: #fff;
+
+      :global {
+        .ant-tabs-tab {
+          // 换成这个颜色 不配 梯形 更丑了
+          // background-color: @hzero-bgc-color-light;
+          font-weight: normal;
+          // tabs 的颜色 默认是 #4c4c4c
+          // color: #4c4c4c;
+          border: 0 none;
+          height: 32px;
+          background-color: darken(@hzero-bgc-color-lightest, 5%);
+          border-radius: 4px 4px 0 0;
+          margin: 3px 2px 0 0;
+          padding-left: @hzero-gutter-md;
+          padding-right: @hzero-gutter-md;
+
+          &:last-child {
+            margin-right: 3px;
+          }
+
+          &.ant-tabs-tab-active {
+            color: @hzero-primary-color-2;
+            background-color: @hzero-bgc-color-lightest;
+
+            &:first-child {
+              background-color: lighten(@hzero-primary-color, 5%);
+            }
+          }
+
+          .ant-tabs-invalid-badge {
+            line-height: 1.5;
+
+            .icon {
+              vertical-align: -0.125em;
+            }
+          }
+        }
+
+        .ant-tabs-ink-bar + .ant-tabs-tab {
+          border: 0 none;
+          margin: 3px 2px 0 3px;
+          position: relative;
+          z-index: 10;
+          background-color: @hzero-primary-color;
+          color: #eee;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .default-menu-tabs {
+    &-context-menu {
+      min-width: 1.5rem;
+
+      &-item {
+        .icon {
+          margin-right: .08rem;
+          font-size: .14rem;
+        }
+
+        &-group {
+          border-top: @border-width-base @border-style-base @border-4;
+        }
+      }
+    }
+  }
+}

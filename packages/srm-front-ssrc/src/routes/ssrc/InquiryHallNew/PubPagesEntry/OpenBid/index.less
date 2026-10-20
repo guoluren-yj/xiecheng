@@ -1,0 +1,45 @@
+@import '~hzero-front/lib/srm-variables';
+.ssrc-pub-pages-entry-open-bid-wrapper {
+  .pt-16 {
+    padding-top: 16px;
+  }
+  .pb-16 {
+    padding-bottom: 16px;
+  }
+  :global {
+    .page-content {
+      height: calc(100vh - 72px) !important;
+    }
+  }
+  .level-vertical-center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .tip-content-text {
+      .pt-16;
+      .pb-16;
+    }
+    .password-form-button {
+      display: flex;
+      form {
+        width: 270px;
+      }
+    }
+    .tip-txt-style {
+      font-size: 14px;
+      color: @primary-color;
+    }
+  }
+  .open-bid-svg {
+    display: inline-block;
+    color: @primary-color;
+    :global {
+      svg {
+        width: 268px;
+        height: 100%;
+      }
+    }
+  }
+}

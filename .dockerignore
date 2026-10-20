@@ -1,0 +1,4 @@
+.git/
+packages/
+srm-dist/
+node_modules/

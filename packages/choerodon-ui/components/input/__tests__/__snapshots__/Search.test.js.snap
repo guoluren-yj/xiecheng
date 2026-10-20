@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input.Search should support custom Button 1`] = `
+<span
+  class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+>
+  <div
+    class="c7n-input-content"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <div
+        class="c7n-input-rendered c7n-input-rendered-sm"
+        style="margin: 0px 0px 0px 0px;"
+      >
+        <input
+          class="c7n-input c7n-input-sm c7n-input-search c7n-input-search-enter-button c7n-input-search-small"
+          type="text"
+          value=""
+        />
+      </div>
+      <span
+        class="c7n-input-suffix c7n-input-suffix-sm"
+      >
+        <button
+          class="c7n-btn c7n-input-search-button c7n-btn-sm c7n-btn-flat"
+          type="button"
+        >
+          <span>
+            ok
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </button>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Input.Search should support custom button 1`] = `
+<span
+  class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+>
+  <div
+    class="c7n-input-content"
+  >
+    <div
+      class="c7n-input-rendered-wrapper"
+    >
+      <div
+        class="c7n-input-rendered c7n-input-rendered-sm"
+        style="margin: 0px 0px 0px 0px;"
+      >
+        <input
+          class="c7n-input c7n-input-sm c7n-input-search c7n-input-search-enter-button c7n-input-search-small"
+          type="text"
+          value=""
+        />
+      </div>
+      <span
+        class="c7n-input-suffix c7n-input-suffix-sm"
+      >
+        <button
+          type="button"
+        >
+          ok
+        </button>
+      </span>
+    </div>
+  </div>
+</span>
+`;

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": ["./node_modules/hzero-front/lib/utils/*"],
+      "components/*": ["./node_modules/hzero-front/lib/components/*"],
+      "services/*": ["./node_modules/hzero-front/lib/services/*"],
+      "_utils/*": ["./node_modules/srm-front-boot/lib/utils/*"],
+      "_components/*": ["./node_modules/srm-front-boot/lib/components/*"],
+      "_services/*": ["./node_modules/srm-front-boot/lib/services/*"],
+      "@/*": ["./src/*"],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

@@ -1,0 +1,100 @@
+@hwfp-task-footer-height: 48px;
+@hwfp-task-footer-line-height: 48px;
+@hwfp-task-border: 1px #f5f5f5 solid;
+
+.content-wrapper {
+  // padding-bottom: 0;
+  // height: calc(100% - 0.48rem);
+  :global {
+    .page-content {
+      min-height: calc(100% - 24px);
+      height: calc(100% - 32px) !important;
+      padding: 4px 0 0;
+    }
+  }
+}
+.content {
+  background: #f5f5f5;
+  // padding: 8px 16px 16px;
+  flex: 1 1;
+  overflow: hidden;
+  height: 100%;
+
+  &-container {
+    height: 100%;
+    background-color: #fff;
+    .double-tabs {
+      height: 100%;
+      :global {
+        .c7n-tabs {
+          height: 100%;
+          .c7n-tabs-bar {
+            margin: 0;
+            padding-left: 16px;
+            padding-bottom: 4px;
+          }
+          .c7n-tabs-bar-with-groups {
+            // padding: 7px 10px;
+            .c7n-tabs-nav-container {
+              font-size: 14px;
+            }
+          }
+          .c7n-tabs-content {
+            height: calc(100% - 51px);
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.approve-setting {
+  font-size: 12px;
+  color: #000 !important;
+  border: none !important;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  font-weight: 500;
+  > span {
+    font-weight: 500;
+  }
+  :global {
+    .ant-btn .anticon {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+  }
+}
+.approve-setting:hover {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+:global {
+  .c7n-pro-modal-container > .c7n-pro-modal-container-drawer {
+    .setting-drawer {
+      width: 64vw;
+      max-width: 1200px;
+      :global {
+        .c7n-pro-modal-header {
+          padding: 0.15rem 0.2rem;
+        }
+        .c7n-pro-modal-body {
+          padding: 0.1rem 0 0;
+        }
+      }
+    }
+  }
+}
+.approve-by-border,
+.started-by-border {
+  :global {
+    .c7n-tabs-ink-bar.c7n-tabs-ink-bar-animated {
+      display: none !important;
+      // width: -webkit-fill-available !important;
+      // width: -moz-available !important;
+    }
+    .c7n-tabs-nav .c7n-tabs-tab-active {
+      font-weight: 600;
+    }
+  }
+}

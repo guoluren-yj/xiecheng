@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should support maxLength 1`] = `
+<Input
+  border={true}
+  disabled={false}
+  maxLength="3"
+  readOnly={false}
+  showLengthInfo={true}
+  showPasswordEye={false}
+  type="text"
+>
+  <span
+    className="c7n-input-wrapper c7n-input-has-border"
+  >
+    <div
+      className="c7n-input-content"
+    >
+      <div
+        className="c7n-input-rendered-wrapper"
+      >
+        <div
+          className="c7n-input-rendered"
+        >
+          <input
+            className="c7n-input"
+            disabled={false}
+            maxLength="3"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            readOnly={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c7n-input-length-info"
+      >
+        0/3
+      </div>
+    </div>
+  </span>
+</Input>
+`;
+
+exports[`Input.Search should support suffix 1`] = `
+<Search
+  enterButton={false}
+  size="small"
+  suffix="suffix"
+>
+  <Input
+    border={true}
+    className="c7n-input-search c7n-input-search-small"
+    disabled={false}
+    onPressEnter={[Function]}
+    prefixCls="c7n-input"
+    readOnly={false}
+    showLengthInfo={true}
+    showPasswordEye={false}
+    size="small"
+    suffix={
+      Array [
+        "suffix",
+        <Button
+          funcType="flat"
+          ghost={false}
+          icon="search"
+          loading={false}
+          shape="circle"
+          size="small"
+          type="primary"
+        />,
+      ]
+    }
+    type="text"
+  >
+    <span
+      className="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        className="c7n-input-content"
+      >
+        <div
+          className="c7n-input-rendered-wrapper"
+        >
+          <div
+            className="c7n-input-rendered c7n-input-rendered-sm"
+          >
+            <input
+              className="c7n-input c7n-input-sm c7n-input-search c7n-input-search-small"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              readOnly={false}
+              type="text"
+              value=""
+            />
+          </div>
+          <span
+            className="c7n-input-suffix c7n-input-suffix-sm"
+          >
+            suffix
+            <Button
+              funcType="flat"
+              ghost={false}
+              icon="search"
+              loading={false}
+              shape="circle"
+              size="small"
+              type="primary"
+            >
+              <Ripple>
+                <RippleChild
+                  key=".0"
+                  prefixCls="c7n-ripple"
+                >
+                  <MouseDown
+                    rippleChild={
+                      <button
+                        className="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <Icon
+                          type="search"
+                        />
+                      </button>
+                    }
+                  >
+                    <button
+                      className="c7n-btn c7n-btn-primary c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      type="button"
+                    >
+                      <Icon
+                        type="search"
+                      >
+                        <i
+                          className="icon icon-search"
+                        />
+                      </Icon>
+                      <Animate
+                        animation={Object {}}
+                        component="div"
+                        componentProps={
+                          Object {
+                            "className": "c7n-ripple-wrapper",
+                          }
+                        }
+                        hiddenProp="hidden"
+                        key="ripple"
+                        transitionAppear={false}
+                        transitionEnter={true}
+                        transitionLeave={true}
+                        transitionName="fade"
+                      >
+                        <div
+                          className="c7n-ripple-wrapper"
+                        />
+                      </Animate>
+                    </button>
+                  </MouseDown>
+                </RippleChild>
+              </Ripple>
+            </Button>
+          </span>
+        </div>
+      </div>
+    </span>
+  </Input>
+</Search>
+`;
+
+exports[`TextArea should support disabled 1`] = `
+<TextArea
+  border={true}
+  disabled={true}
+  showLengthInfo={true}
+>
+  <span
+    className="c7n-input-wrapper c7n-input-textarea c7n-input-disabled c7n-input-has-border"
+  >
+    <div
+      className="c7n-input-rendered-wrapper"
+    >
+      <textarea
+        border={true}
+        className="c7n-input c7n-input-textarea-element"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        onKeyDown={[Function]}
+        style={Object {}}
+      />
+    </div>
+  </span>
+</TextArea>
+`;
+
+exports[`TextArea should support maxLength 1`] = `
+<TextArea
+  border={true}
+  maxLength="10"
+  showLengthInfo={true}
+>
+  <span
+    className="c7n-input-wrapper c7n-input-textarea c7n-input-has-border"
+  >
+    <div
+      className="c7n-input-rendered-wrapper"
+    >
+      <textarea
+        border={true}
+        className="c7n-input c7n-input-textarea-element"
+        maxLength="10"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onInput={[Function]}
+        onKeyDown={[Function]}
+        style={Object {}}
+      />
+    </div>
+    <div
+      className="c7n-input-length-info"
+    >
+      0/10
+    </div>
+  </span>
+</TextArea>
+`;

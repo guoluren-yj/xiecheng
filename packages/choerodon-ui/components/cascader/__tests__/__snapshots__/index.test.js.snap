@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cascader can be selected 1`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-placement-bottomLeft "
+  >
+    <div>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected 2`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-placement-bottomLeft "
+  >
+    <div>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader can be selected 3`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-placement-bottomLeft  c7n-cascader-menus-hidden"
+  >
+    <div>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-active"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly when panel is hidden 1`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-empty c7n-cascader-menus-placement-bottomLeft  c7n-cascader-menus-hidden"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly when panel is open 1`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-placement-bottomLeft "
+  >
+    <div>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader popup correctly with defaultValue 1`] = `
+<div>
+  <div
+    class="c7n-cascader-menus  c7n-cascader-menus-placement-bottomLeft "
+  >
+    <div>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Zhejiang"
+        >
+          Zhejiang
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand"
+          title="Jiangsu"
+        >
+          Jiangsu
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item c7n-cascader-menu-item-expand c7n-cascader-menu-item-active"
+          title="Hangzhou"
+        >
+          Hangzhou
+          <span
+            class="c7n-cascader-menu-item-expand-icon"
+          >
+            <i
+              class="icon icon-navigate_next"
+            />
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="c7n-cascader-menu"
+      >
+        <li
+          class="c7n-cascader-menu-item"
+          title="West Lake"
+        >
+          West Lake
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Cascader support controlled mode 1`] = `
+<span
+  class="c7n-cascader-picker c7n-input-has-value"
+  tabindex="0"
+>
+  <span
+    class="c7n-cascader-picker-label"
+  >
+    Zhejiang / Hangzhou / West Lake
+  </span>
+  <span
+    class="c7n-input-wrapper c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+          style="margin: 0px; width: 100%;"
+        >
+          <input
+            autocomplete="off"
+            class="c7n-input c7n-cascader-input "
+            readonly=""
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </span>
+  <i
+    class="icon icon-close c7n-cascader-picker-clear"
+  />
+  <i
+    class="icon icon-arrow_drop_down c7n-cascader-picker-arrow"
+  />
+</span>
+`;

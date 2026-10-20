@@ -1,0 +1,287 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@progress-prefix-cls: ~'@{c7n-prefix}-progress';
+
+.@{progress-prefix-cls} {
+  .reset-component;
+  display: inline-block;
+
+  &-line {
+    position: relative;
+    width: 100%;
+    font-size: @font-size-base;
+  }
+
+  &-small&-line,
+  &-small&-line &-text .@{iconfont-css-prefix} {
+    font-size: @font-size-sm;
+  }
+
+  &-outer {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    .@{progress-prefix-cls}-show-info & {
+      margin-right: ~'calc(-2em - .08rem)';
+      padding-right: ~'calc(2em + .08rem)';
+    }
+  }
+
+  &-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    background-color: @progress-remaining-color;
+    border-radius: 1rem;
+  }
+
+  &-circle-trail {
+    stroke: @progress-remaining-color;
+  }
+
+  &-circle-path {
+    animation: ~'@{c7n-prefix}-progress-appear' @animation-duration-slow;
+    stroke: @progress-default-color;
+  }
+
+  &-success-bg,
+  &-bg {
+    position: relative;
+    background-color: @progress-default-color;
+    border-radius: 1rem;
+    transition: all 0.4s @ease-out-circ 0s;
+  }
+
+  &-success-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @success-color;
+  }
+
+  &-text {
+    display: inline-block;
+    width: 2em;
+    margin-left: 0.08rem;
+    color: @text-color-secondary;
+    font-size: 1em;
+    line-height: 1;
+    text-align: left;
+    vertical-align: middle;
+    word-break: normal;
+    .@{iconfont-css-prefix} {
+      font-size: @font-size-base;
+    }
+  }
+
+  &-circle &-inner {
+    position: relative;
+    line-height: 1;
+    background-color: transparent;
+  }
+
+  &-circle &-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    color: @text-color;
+    line-height: 1;
+    text-align: center;
+    transform: translateY(-50%);
+
+    .@{iconfont-css-prefix} {
+      font-size: 14 / 12em;
+    }
+  }
+
+  &-circle &-text-bottom {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    color: @text-color;
+    line-height: 1;
+    text-align: center;
+    transform: translateY(-50%);
+
+    .@{iconfont-css-prefix} {
+      font-size: 14 / 12em;
+    }
+  }
+
+  &-circle &-pointer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 35%;
+    height: 35%;
+    transform-origin: bottom left;
+
+    svg {
+      position: absolute;
+      top: 35%;
+      left: -18.75%;
+      width: 100%;
+      height: 85%;
+    }
+
+    img {
+      position: absolute;
+      top: 20%;
+      left: -20%;
+      height: 100%;
+    }
+    &-circle {
+      position: absolute;
+      top: 90px;
+      left: 90px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #000;
+      border-radius: 50%;
+    }
+
+    &-line {
+      position: absolute;
+      top: 23px;
+      left: 101px;
+      width: 2px;
+      height: 80px;
+      background: red;
+    }
+  }
+
+  &-loading &-inner {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: transparent;
+    transform: rotate(-90deg);
+  }
+
+  &-loading &-inner svg {
+    animation: ~'@{c7n-prefix}-progress-rotate' 1.4s linear infinite;
+  }
+
+  &-loading &-inner circle {
+    animation: ~'@{c7n-prefix}-progress-loading' 1.4s ease-in-out infinite;
+    fill: none;
+    stroke: @primary-color;
+    stroke-width: 4;
+    stroke-dasharray: 80px 200px;
+    stroke-dashoffset: 0;
+  }
+
+  &-small&-loading &-inner {
+    width: 0.2rem;
+    height: 0.2rem;
+  }
+
+  &-large&-loading &-inner {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  &-status-pointer-success {
+    fill: @success-color;
+  }
+
+  &-status-pointer-exception {
+    fill: @error-color;
+  }
+
+  &-status-pointer-normal {
+    fill: @progress-default-color;
+  }
+
+  &-status-active {
+    .@{progress-prefix-cls}-bg::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: @component-background;
+      border-radius: 0.1rem;
+      opacity: 0;
+      animation: ~'@{c7n-prefix}-progress-active' 2.4s @ease-out-quint infinite;
+      content: '';
+    }
+  }
+
+  &-status-exception {
+    .@{progress-prefix-cls}-bg {
+      background-color: @error-color;
+    }
+    .@{progress-prefix-cls}-text {
+      color: @error-color;
+    }
+    .@{progress-prefix-cls}-circle-path {
+      stroke: @error-color;
+    }
+    .@{progress-prefix-cls}-inner circle {
+      stroke: @error-color;
+    }
+  }
+
+  &-status-success {
+    .@{progress-prefix-cls}-bg {
+      background-color: @success-color;
+    }
+    .@{progress-prefix-cls}-text {
+      color: @success-color;
+    }
+    .@{progress-prefix-cls}-circle-path {
+      stroke: @success-color;
+    }
+    .@{progress-prefix-cls}-inner circle {
+      stroke: @success-color;
+    }
+  }
+}
+
+@keyframes ~"@{c7n-prefix}-progress-rotate" {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ~"@{c7n-prefix}-progress-loading" {
+  0% {
+    stroke-dasharray: 1px 200px;
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dasharray: 100px 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px 200px;
+    stroke-dashoffset: -120px;
+  }
+}
+
+@keyframes ~"@{c7n-prefix}-progress-active" {
+  0% {
+    transform: translateX(-100%) scaleX(0);
+    opacity: 0.1;
+  }
+  20% {
+    transform: translateX(-100%) scaleX(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 0;
+  }
+}

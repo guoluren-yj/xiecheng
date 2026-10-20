@@ -1,0 +1,481 @@
+import React, { Fragment } from 'react';
+import { Modal, Input, Icon, Button, message, Tooltip } from 'hzero-ui';
+import { isEmpty, isFunction, omit, isNil, join, isArray } from 'lodash';
+import { Bind, Throttle } from 'lodash-decorators';
+import uuid from 'uuid/v4';
+
+import intl from 'utils/intl';
+import { getResponse } from 'utils/utils';
+import { queryLov, queryMapIdpValue } from 'services/api';
+
+import LovModal from './LovModal';
+import './index.less';
+
+const defaultRowKey = 'key';
+export default class Lov extends React.Component {
+  static displayName = 'Lov';
+
+  loading = false;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentText: null,
+      text: props.isInput ? props.value : props.textValue,
+      textField: props.textField,
+      lov: {},
+      loading: false,
+      ldpData: {},
+    };
+    this.modalRef = React.createRef();
+  }
+
+  // eslint-disable-next-line
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    const { currentText, text } = this.state;
+    let data = {
+      currentText: nextProps.textValue === currentText ? currentText : nextProps.textValue,
+    };
+
+    if (currentText && currentText !== nextProps.textValue) {
+      data = {
+        ...data,
+        text: nextProps.textValue,
+      };
+    }
+    if (!text && nextProps.textValue) {
+      data = {
+        ...data,
+        text: nextProps.textValue,
+      };
+    }
+    if (nextProps.value === null || nextProps.value === undefined) {
+      data = {
+        ...data,
+        text: null,
+      };
+    }
+    if (nextProps.isInput) {
+      data = {
+        ...data,
+        text: nextProps.value,
+      };
+    }
+
+    this.setState({
+      ...data,
+    });
+  }
+
+  // @Bind()
+  // onSelect(record=[]) {
+  //   const {changeSelectRows} = this.props;
+  //   changeSelectRows(record);
+  // }
+
+  @Bind()
+  selectAndClose() {
+    const { changeSelectRows = () => {} } = this.props;
+    const lovRecords = this.modalRef.current?.state.selectedRows;
+    if (isEmpty(lovRecords)) {
+      Modal.warning({
+        title: intl.get('hzero.common.validation.atLeast').d('请至少选择一条数据'),
+      });
+      return false;
+    }
+    changeSelectRows(lovRecords);
+    this.selectRecord();
+    this.setState({
+      modalVisible: false,
+    });
+  }
+
+  getTextField() {
+    const { form } = this.props;
+    const { textField } = this.state;
+    if (form && textField) {
+      form.registerField(textField);
+    }
+    return textField;
+  }
+
+  selectRecord() {
+    const { isInput } = this.props;
+    const selectRows = this.modalRef.current?.state.selectedRows;
+    const { valueField: rowkey = defaultRowKey, displayField: displayName } = this.state.lov;
+
+    // TODO: 值为 0 -0 '' 等的判断
+
+    this.setState(
+      {
+        text: this.parseField(selectRows, displayName),
+      },
+      () => {
+        const { form } = this.props;
+        const textField = this.getTextField();
+        if (form && textField) {
+          form.setFieldsValue({
+            [textField]: this.parseField(selectRows, displayName),
+          });
+        }
+        // 设置额外表单值
+        if (form && this.props.extSetMap) {
+          this.setExtMapToForm(selectRows, this.props.extSetMap, form);
+        }
+
+        if (this.props.onChange) {
+          const valueField = isInput ? displayName : rowkey;
+          this.props.onChange(this.parseField(selectRows, valueField), selectRows);
+        }
+        if (isFunction(this.props.onOk)) {
+          this.props.onOk(selectRows);
+        }
+      }
+    );
+  }
+
+  /**
+   * 设置额外表单值
+   * @param {Object} record 数据对象
+   * @param {String} extSetMap 额外字段映射, 可以有多个, 以逗号分隔 bankId,bankName->bankDescription
+   * @param {表单对象} form 表单对象
+   */
+  setExtMapToForm(record, extSetMap, form) {
+    const dataSet = {};
+    extSetMap.split(/\s*,\s*/g).forEach((entryStr) => {
+      const [recordField, formFieldTmp] = entryStr.split('->');
+      const formField = formFieldTmp || recordField;
+      form.getFieldDecorator(formField);
+      dataSet[formField] = record[recordField];
+    });
+    form.setFieldsValue(dataSet);
+  }
+
+  @Bind()
+  onCancel() {
+    const { onCancel = (e) => e } = this.props;
+    this.setState({
+      modalVisible: false,
+    });
+    if (this.modalRef.current) {
+      this.modalRef.current.state.selectedRows = [];
+    }
+    if (isFunction(onCancel)) {
+      onCancel();
+    }
+  }
+
+  showLoading(partialState = {}) {
+    this.setState({
+      loading: true,
+      ...partialState,
+    });
+  }
+
+  hideLoading() {
+    this.setState({
+      loading: false,
+    });
+  }
+
+  @Bind()
+  modalWidth(tableFields) {
+    let width = 100;
+    if (isArray(tableFields)) {
+      tableFields.forEach((n) => {
+        width += n.width;
+      });
+    }
+    return width;
+  }
+
+  @Bind()
+  onSearchBtnClick() {
+    const {
+      disabled = false,
+      onClick = (e) => e,
+      lovOptions: { valueField: customValueField, displayField: customDisplayField } = {},
+    } = this.props;
+    if (disabled || this.loading) return; // 节流
+
+    this.record = null;
+    const { code: viewCode, originTenantId: tenantId } = this.props;
+    this.loading = true;
+    this.showLoading({
+      loading: true,
+      modalVisible: true,
+      lovModalKey: uuid(),
+    });
+    queryLov({ viewCode, tenantId })
+      .then((oriLov) => {
+        if (getResponse(oriLov)) {
+          const lov = { ...oriLov };
+          if (customValueField) {
+            lov.valueField = customValueField;
+          }
+          if (customDisplayField) {
+            lov.displayField = customDisplayField;
+          }
+          if (!isEmpty(lov)) {
+            const { viewCode: hasCode, title = '', tableFields, queryFields } = lov;
+            // 获取独立值集编码
+            const valueList = (queryFields || []).filter((item) => item.dataType === 'SELECT');
+            if (valueList.length > 0) {
+              const valueCode = {};
+              valueList.forEach(({ sourceCode }) => {
+                if (sourceCode) {
+                  valueCode[sourceCode] = sourceCode;
+                }
+              });
+              queryMapIdpValue(valueCode).then((res) => {
+                if (getResponse(res)) {
+                  this.setState({ ldpData: res });
+                }
+              });
+            }
+
+            if (hasCode) {
+              const width = this.modalWidth(tableFields);
+              this.setState(
+                {
+                  lov,
+                  title,
+                  width,
+                },
+                () => {
+                  const { modalVisible: lovModalVisible } = this.state;
+                  if (lovModalVisible && this.modalRef.current) {
+                    this.modalRef.current.loadOnFirstVisible();
+                  }
+                }
+              );
+              if (isFunction(onClick)) {
+                onClick();
+              }
+            } else {
+              this.hideLoading();
+              message.error(
+                intl.get('hzero.common.components.lov.notification.undefined').d('值集视图未定义!')
+              );
+            }
+          }
+        }
+      })
+      .finally(() => {
+        this.hideLoading();
+        this.loading = false;
+      });
+  }
+
+  searchButton() {
+    if (this.state.loading) {
+      return <Icon key="search" type="loading" />;
+    }
+    return (
+      <Icon
+        key="search"
+        type="search"
+        onClick={this.onSearchBtnClick}
+        style={{ cursor: 'pointer', color: '#666' }}
+      />
+    );
+  }
+
+  @Bind()
+  emitEmpty() {
+    const { text, lov } = this.state;
+    const { form, onClear = (e) => e, value, changeSelectRows = () => {} } = this.props;
+    changeSelectRows([]);
+    if (this.props.onChange) {
+      const record = {};
+      this.setState(
+        {
+          text: '',
+        },
+        () => {
+          this.props.onChange(undefined, record);
+          const textField = this.getTextField();
+          if (form && textField) {
+            form.setFieldsValue({
+              [textField]: undefined,
+            });
+          }
+        }
+      );
+    }
+    // TODO: 当初次进入时的情况
+    if (isFunction(onClear)) {
+      const record = {
+        [lov.displayField]: text,
+        [lov.valueField]: value,
+      };
+      onClear(record);
+    }
+  }
+
+  /**
+   * 访问对象由字符串指定的多层属性
+   * @param {Object} obj 访问的对象
+   * @param {String} str 属性字符串，如 'a.b.c.d'
+   */
+  @Bind()
+  parseField(arr, str) {
+    // if (/[.]/g.test(str)) {
+    //   const arr = str.split('.');
+    //   const newObj = obj[arr[0]];
+    //   const newStr = arr.slice(1).join('.');
+    //   return this.parseField(newObj, newStr);
+    // }
+    const nameStr = [];
+    if (isArray(arr)) {
+      arr.forEach((n) => {
+        nameStr.push(n[str]);
+      });
+    }
+    return join(nameStr, ',');
+  }
+
+  /**
+   * 同步 Lov 值节流以提高性能
+   * @param {String} value - Lov 组件变更值
+   */
+  @Bind()
+  @Throttle(500)
+  setValue(value) {
+    if (this.props.onChange) {
+      this.props.onChange(value);
+    }
+  }
+
+  /**
+   * 同步输入值至 Input 及 Lov
+   * @param {String} value - 输入框内的值
+   */
+  @Bind()
+  setText(value) {
+    const { isInput } = this.props;
+    if (isInput) {
+      this.setState(
+        {
+          text: value,
+        },
+        () => {
+          this.setValue(value);
+        }
+      );
+    }
+  }
+
+  render() {
+    const { text: stateText, ldpData = {} } = this.state;
+    const {
+      form,
+      value,
+      textValue,
+      queryParams,
+      queryInputProps,
+      style,
+      isButton,
+      isInput,
+      className,
+      selectedRows = [],
+      allowClear = true,
+      getCheckboxProps,
+      buttonText = '',
+      ...otherProps
+    } = this.props;
+    const textField = this.getTextField();
+    let text;
+    const omitProps = ['onOk', 'onCancel', 'onClick', 'onClear', 'textField', 'lovOptions'];
+    if (isInput) {
+      text = stateText;
+      omitProps.push('onChange');
+    } else {
+      const texts = textField ? form && form.getFieldValue(textField) : stateText;
+      text = isNil(value) ? '' : texts === 0 ? 0 : texts || textValue;
+    }
+    const inputStyle = isButton
+      ? style
+      : {
+          ...style,
+          verticalAlign: 'middle',
+          position: 'relative',
+          top: -1,
+        };
+    const isDisabled = this.props.disabled !== undefined && !!this.props.disabled;
+    const showSuffix = text && allowClear && !isButton && !isDisabled;
+    const suffix = (
+      <Fragment>
+        <Icon key="clear" className="lov-clear" type="close-circle" onClick={this.emitEmpty} />
+        {this.searchButton()}
+      </Fragment>
+    );
+
+    const lovClassNames = [className, 'lov-input'];
+    if (showSuffix) {
+      lovClassNames.push('lov-suffix');
+    }
+    if (isDisabled) {
+      lovClassNames.push('lov-disabled');
+    }
+    const { title = '', width = 400, lov = {}, modalVisible, loading, lovModalKey } = this.state;
+    const modalProps = {
+      title,
+      width,
+      // destroyOnClose: true,
+      wrapClassName: 'lov-modal',
+      maskClosable: false,
+      onOk: this.selectAndClose,
+      bodyStyle: title ? { padding: '16px' } : { padding: '56px 16px 0' },
+      onCancel: this.onCancel,
+      style: {
+        minWidth: 400,
+      },
+      visible: modalVisible,
+    };
+    return (
+      <Fragment>
+        {isButton ? (
+          <Button
+            onClick={this.onSearchBtnClick}
+            {...otherProps}
+            style={style}
+            className={lovClassNames.join(' ')}
+          >
+            {buttonText}
+          </Button>
+        ) : (
+          <Tooltip title={join(selectedRows.map((n) => n[textField]))}>
+            <Input
+              readOnly={!isInput}
+              // addonAfter={this.searchButton()}
+              value={text}
+              style={inputStyle} // Lov 组件垂直居中样式，作用于 ant-input-group-wrapper
+              suffix={suffix}
+              onChange={(e) => this.setText(e.target.value)}
+              {...omit(otherProps, omitProps)}
+              className={lovClassNames.join(' ')}
+            />
+          </Tooltip>
+        )}
+        <Modal {...modalProps}>
+          <LovModal
+            {...otherProps}
+            key={lovModalKey}
+            lov={lov}
+            ldpData={ldpData}
+            queryParams={queryParams}
+            queryInputProps={queryInputProps}
+            // onSelect={this.onSelect}
+            onClose={this.selectAndClose}
+            lovLoadLoading={loading}
+            wrappedComponentRef={this.modalRef}
+            selectedRows={selectedRows}
+            getCheckboxProps={getCheckboxProps}
+            // lovLoadLoading={loading}
+          />
+        </Modal>
+      </Fragment>
+    );
+  }
+}

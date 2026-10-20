@@ -1,0 +1,229 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.certification-container :global {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../../assets/background.png');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .c7n-spin-nested-loading,
+  .c7n-spin-spinning,
+  .c7n-spin-container {
+    max-width: inherit;
+    max-height: inherit;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+  }
+}
+
+.certification-card :global {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6rem;
+  min-height: 5.2rem;
+  transform: translate(-50%, -50%);
+  background-color: @component-background;
+  box-shadow: 0 0.01rem 0.03rem 0 rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+
+  .msg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(252, 136, 0, 0.05);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    .icon-warning {
+      color: orange;
+    }
+    .icon-error {
+      color: red;
+    }
+    .msg-body {
+      margin-left: 8px;
+      font-size: 13px;
+      color: #101319;
+      letter-spacing: 0;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    .close-msg {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: orange;
+      font-size: 18px;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .icon-arrow_back {
+    position: absolute;
+    top: 1.04rem;
+    left: 0.52rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    text-align: center;
+    line-height: 0.32rem;
+    background: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .certification-tabs {
+    height: 0.4rem;
+  }
+
+  .certification-tab-pane {
+    float: left;
+    line-height: 0.4rem;
+    margin-bottom: 0.12rem;
+    font-size: 0.28rem;
+    color: @text-color-secondary;
+    cursor: pointer;
+
+    &.active-pane {
+      color: #000;
+      font-weight: 600;
+    }
+
+    &:first-of-type {
+      margin-right: 0.56rem;
+    }
+  }
+
+  .certification-tip {
+    font-size: @font-size-lg;
+    color: @text-color-secondary;
+    line-height: 0.24rem;
+    margin-bottom: 0.32rem;
+    text-align: left;
+    clear: both;
+
+    .c7n-statistic-content {
+      display: inline-block;
+      font-size: @font-size-lg;
+      color: @text-color-secondary;
+
+      &-suffix {
+        margin-left: 0;
+      }
+    }
+
+    &:first-of-type > span {
+      color: @text-color;
+      font-weight: 600;
+      margin: 0 0.05rem;
+    }
+
+    &:last-of-type {
+      font-size: @font-size-sm;
+      line-height: 0.18rem;
+    }
+  }
+
+  .certification-empty-tip {
+    font-size: 0.18rem;
+    margin: 0.06rem 0;
+  }
+
+  .certification-info {
+    display: block;
+    width: 100%;
+    height: 0.46rem;
+    padding: 0.1rem;
+    margin-bottom: 0.32rem;
+    background: @disabled-bg;
+    color: @disabled-color;
+    border: @border-width-base @border-style-base @border-color-base;
+    border-radius: @border-radius-base;
+    font-size: @font-size-lg;
+  }
+
+  .c7n-pro-btn {
+    max-width: inherit;
+    width: 100%;
+    height: 0.46rem;
+    line-height: 0.42rem;
+    font-size: @font-size-lg;
+    font-weight: 600;
+    margin-bottom: 0.12rem;
+
+    .c7n-statistic-content {
+      display: inline-block;
+      font-size: @font-size-lg;
+      color: @text-color-dark;
+    }
+  }
+
+  .c7n-statistic {
+    display: inline-block;
+
+    &-content {
+      display: inline-block;
+      font-size: @font-size-lg;
+
+      &-suffix {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .repeat-get-captcha {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+
+.certification-form :global {
+  width: calc(100% + 0.16rem);
+  transform: translateX(-0.08rem);
+
+  .c7n-pro-field-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0.16rem !important;
+  }
+
+  .c7n-pro-input-number-wrapper:not(.c7n-pro-input-number-empty) .c7n-pro-input-number {
+    border-color: @primary-color;
+  }
+
+  .c7n-pro-input-number {
+    width: 0.5rem;
+    height: 0.5rem;
+    text-align: center;
+    font-size: 0.2rem;
+  }
+
+  tr:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.certification-copy-right :global {
+  font-size: @font-size-sm;
+  color: @text-color-secondary;
+  line-height: 0.18rem;
+  margin-bottom: 0.24rem;
+}

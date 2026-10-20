@@ -1,0 +1,133 @@
+/**
+ * index.less - index.less
+ * @date: 2018-10-18
+ * @author: geekrainy <chao.zheng02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright: Copyright (c) 2018, Hand
+ */
+
+.partner-tabs {
+  :global {
+    .ant-tabs-bar {
+      margin: 0 !important;
+    }
+  }
+}
+
+.partner-content {
+  border: 1px solid #e4e4e4;
+  :global {
+    .page-head {
+      display: none;
+    }
+    .ant-form {
+      line-height: 1 !important;
+      :global {
+        .ant-col-18 {
+          width: 72%;
+        }
+        .ant-col-6 {
+          width: 28%;
+        }
+        .ant-col-9 {
+          width: 33.5%;
+        }
+      }
+    }
+    .table-list-search {
+      margin-top: 16px;
+    }
+    padding: 0 16px 0 0;
+    overflow: hidden;
+  }
+}
+
+.supplier-wrap {
+  overflow: visible;
+  :global {
+    .ant-tabs-bar {
+      background: #f5f5f5 !important;
+    }
+    .ant-tabs-bar {
+      min-height: 650px;
+      position: absolute;
+      border: none !important;
+      width: 150px;
+      .ant-tabs-tab-active {
+        background: #fff;
+      }
+      .ant-tabs-ink-bar {
+        display: none !important;
+      }
+      .ant-tabs-tab {
+        padding: 0;
+        width: 150px;
+        text-align: center !important;
+      }
+    }
+    .ant-tabs-content {
+      padding-left: 16px !important;
+      margin-left: 150px;
+      border: none !important;
+      .table-list-search {
+        margin: 16px 0;
+      }
+    }
+  }
+}
+
+.customer-row-wrap {
+  display: inline-block;
+  margin-right: 36px !important;
+  width: 77%;
+  :global {
+    .ant-col-8 {
+      padding: 0 !important;
+    }
+  }
+  + .ant-form-item {
+    margin-left: 46px;
+  }
+}
+
+.erp-drawer {
+  :global {
+    .ant-table-body {
+      border-color: #e8e8e8;
+      border-style: solid;
+      border-width: 0 1px;
+      border-collapse: collapse;
+      table {
+        border-left: 0;
+      }
+    }
+  }
+}
+
+.customer-content {
+  margin-top: 10px;
+}
+
+.table-list-btn {
+  margin-bottom: 16px;
+  text-align: right;
+  button {
+    margin-left: 8px;
+  }
+}
+
+:global {
+  .platform-from-wrap {
+    .ant-col-10.ant-form-item-label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.btnGroup {
+  button {
+    margin-right: 8px;
+  }
+}

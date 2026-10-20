@@ -1,0 +1,349 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.smbl-me-editor {
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 220px;
+  position: relative;
+  border-top: 1px solid #e5e7ec;
+  display: flex;
+  flex-direction: column;
+
+  .smbl-me-editor-forbidden {
+    padding: 7px 0;
+    color: #0161d5;
+    background-color: #e8f3fe;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      margin: 0 8px 0 16px;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url('../../../../../assets/editor_help.svg') no-repeat center center;
+    }
+  }
+
+  .smbl-me-editor-buttons {
+    position: relative;
+    padding: 8px 13px;
+
+    .smbl-me-editor-drag-view {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 10;
+      cursor: row-resize;
+    }
+
+    .smbl-me-editor-btn {
+      border-radius: 2px;
+      margin-left: 3.5px;
+
+      :global {
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .smbl-me-editor-textarea {
+    flex-grow: 1;
+    padding: 0 20px;
+    border: 0 none;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-weight: 400;
+    overflow-y: auto;
+    background: @primary-color-white;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,
+      Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+
+    &:empty {
+      &::before {
+        content: attr(data-placeholder);
+        letter-spacing: 0;
+        color: #64686e;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #d5cfcf;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ededed;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #c9cdd4;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .smbl-me-editor-footer {
+    flex-shrink: 0;
+    padding: 8px 16px 16px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .smbl-me-editor-send-target {
+      max-width: 320px;
+      cursor: pointer;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-right: 10px;
+    }
+  }
+}
+
+.smbl-emoji-board {
+  width: 305px;
+  height: 260px;
+
+  .smbl-emoji-list {
+    width: 100%;
+    height: 220px;
+    overflow-y: scroll;
+
+    .smbl-emoji-img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+
+      &:hover {
+        padding: 0;
+      }
+    }
+  }
+
+  .smbl-emoji-tab {
+    height: 40px;
+    width: 100%;
+    background: #eff1f7;
+
+    .smbl-emoji-tab-item {
+      width: 40px;
+      height: 40px;
+      background: white;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.smbl-me-editor-emoji-popover {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0;
+    }
+
+    .c7n-popover-arrow {
+      background: #eff1f7;
+    }
+  }
+}
+
+.smbl-send-to-board {
+  width: 180px;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.smbl-send-to-board-tree-node {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .smbl-tree-node-name {
+    color: #333;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .smbl-tree-node-current {
+    color: @color-success;
+    background: @color-success-percent10;
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-left: 4px;
+  }
+}
+
+.smbl-send-to-board-tree-node-selected {
+  .smbl-tree-node-name {
+    font-weight: 600;
+    color: #000;
+    font-size: 12px;
+  }
+}
+
+.smbl-send-to-tree {
+  .c7n-tree-treenode {
+    width: 100%;
+
+    .c7n-tree-node-content-wrapper {
+      overflow: hidden;
+    }
+  }
+
+  :global {
+    .c7n-tree-treenode {
+      width: 100%;
+
+      .c7n-tree-node-content-wrapper {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.smbl-me-editor-send-target-popover {
+  left: unset !important;
+
+  // right: 10px !important;
+  :global {
+    .c7n-popover-inner-content {
+      padding: 4px 0;
+    }
+  }
+}
+
+.smbl-me-editor-send-tool-tip {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      font-size: 12px;
+      color: #1d2129;
+      min-height: initial;
+    }
+  }
+}
+
+.people-target-panel {
+  height: 242px;
+  // min-width: 460px;
+  overflow: hidden;
+
+  .select-tree-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e5e7ec;
+
+    .select-type-col {
+      width: 140px;
+      height: 200px;
+    }
+
+    .select-company-col {
+      width: 180px;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      border-right: 1px solid #e5e7ec;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background-color: white;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #c0bebc;
+      }
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background-color: #c0bebc;
+        }
+      }
+    }
+
+    .select-user-col {
+      width: 140px;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      border-right: 1px solid #e5e7ec;
+      flex: 1 1 auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background-color: white;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #c0bebc;
+      }
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background-color: #c0bebc;
+        }
+      }
+    }
+  }
+
+  .select-count-row {
+    height: 40px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.select-item-style {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #101319;
+  cursor: pointer;
+}
+
+.select-item-active {
+  background: #f2f3f5;
+}
+
+.smbl-me-editor-textarea-popover {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0;
+    }
+  }
+}

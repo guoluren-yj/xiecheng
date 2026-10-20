@@ -1,0 +1,90 @@
+/*
+ * style - 采购申请审批样式
+ * @date: 2019-01-24
+ * @author: guochaochao <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.order-detail {
+  height: auto;
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: auto;
+
+  :global {
+    .approve-header {
+      background: #f5f5f5;
+      height: 32px;
+      line-height: 32px;
+      margin-bottom: 0;
+      padding-left: 24px;
+      border-top: 1px solid #e8e8e8;
+      border-left: 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+    }
+
+    .line-wrapper {
+      .ant-collapse-content-box {
+        padding: 16px 0 0;
+      }
+    }
+
+    .approve-option {
+      textarea.ant-input {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .ant-row.ant-form-item {
+        margin-bottom: 24px;
+      }
+    }
+
+    .form-collapse,
+    .ant-collapse {
+      border: none;
+      margin-bottom: 24px;
+
+      .ant-collapse-item.ant-collapse-no-arrow .ant-collapse-header {
+        padding: 0;
+      }
+
+      .ant-collapse-item {
+        border-bottom: 0;
+
+        .ant-collapse-header {
+          height: 48px;
+          line-height: 48px;
+
+          & > i {
+            color: rgb(41, 190, 206);
+            font-weight: bold;
+            margin-left: 8px;
+          }
+
+          & > h3 {
+            text-indent: 16px;
+            display: inline-block;
+            line-height: 1.17em;
+          }
+
+          & > a {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .ant-collapse-content {
+        border-top: none;
+      }
+      .ant-collapse-content-box {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.erp-list-bgc {
+  background: #ff5252;
+}

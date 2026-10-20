@@ -1,0 +1,64 @@
+// .avatar-uploader {
+// }
+.yulan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+  margin-left: 20px;
+  > p {
+    width: 130px;
+    font-size: 12px;
+    text-align: center;
+  }
+  > p:first-child {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  :global {
+    .preview-title {
+      width: 100%;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .img-preview {
+      width: 212px;
+      height: 106px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
+.cropper-box {
+  margin-top: 20px;
+  :global {
+    .top-area {
+      display: flex;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+:global {
+  .avatar-uploader-Modal {
+    .c7n-modal-header {
+      border-bottom: none;
+    }
+    .c7n-modal-footer {
+      border-top: none;
+      padding: 24px 0;
+    }
+    .c7n-modal-title {
+      font-size: 16px;
+    }
+  }
+
+  .img-preview {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+}

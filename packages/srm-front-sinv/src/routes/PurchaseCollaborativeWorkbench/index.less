@@ -1,0 +1,198 @@
+.tip {
+  margin-left: 4px;
+  margin-right: 4px;
+  color: red;
+}
+
+.pageWrap {
+  margin-bottom: 16px;
+}
+
+.pageTitle {
+  line-height: 24px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrap {
+  margin-bottom: 8;
+  padding: 20;
+  overflow: auto;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .pageWrapperOne {
+    background-color: #fff;
+    padding: 20px;
+    margin: 8px 8px 0 8px;
+  }
+
+  .pageWrapperTwo {
+    background-color: #fff;
+    padding: 20px;
+    margin: 8px 8px 0 8px;
+  }
+
+  .pageWrapperThree {
+    background-color: #fff;
+    padding: 20px;
+    margin: 8px 8px 8px 8px;
+    flex: 1;
+  }
+}
+
+.pageContent {
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.attachment {
+  margin-top: 0;
+  margin-bottom: 8;
+  padding: 20;
+}
+
+.logistics-title {
+  font-size: 14px;
+  position: relative;
+  padding: 0 16px 16px;
+
+  &::before {
+    content: '';
+    width: 3px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    background: #29bece;
+  }
+}
+
+.logistics-basic {
+  padding: 0 16px;
+
+  .ant-form-item-label {
+    text-align: left;
+  }
+}
+
+.oDiv {
+  background: #fff;
+  border: 1px solid rgba(229, 231, 236, 1);
+  border-radius: 2px;
+  width: 196px;
+  height: 78px;
+  padding-left: 20px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  line-height: 78px;
+  margin-bottom: 20px;
+
+  .oContent {
+    height: 44px;
+    line-height: 20px;
+
+    .oText {
+      font-size: 12px;
+      color: #4e5769;
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    .oNum {
+      font-size: 16px;
+      color: #1d2129;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+.oInventory {
+  background: #fff;
+  border: 1px solid rgba(229, 231, 236, 1);
+  border-radius: 2px;
+  width: 196px;
+  height: 78px;
+  padding-left: 20px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  line-height: 78px;
+  margin-bottom: 20px;
+  margin-left: 26px;
+
+  .oContent {
+    height: 35px;
+    line-height: 20px;
+
+    .oText {
+      font-size: 12px;
+      color: #4e5769;
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    .oNum {
+      font-size: 16px;
+      color: #1d2129;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+.equal {
+  font-size: large;
+  line-height: 78px;
+  height: 78px;
+  margin-left: 25px;
+}
+
+.oWrap {
+  display: flex;
+}
+
+.footerForm {
+  :global {
+    display: flex;
+    width: 100%;
+
+    .c7n-pro-field-label {
+      height: 0;
+      padding: 0;
+    }
+
+    .c7n-pro-form-wrapper {
+      table {
+        tr {
+          td {
+            max-height: 10%;
+            overflow-y: auto;
+
+            .c7n-pro-field-wrapper {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.myWrap {
+  overflow-y: hidden !important;
+  height: 100%;
+}

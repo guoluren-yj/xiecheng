@@ -1,0 +1,99 @@
+.price-compare-container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  border: 1px solid #ddd;
+  color: #333;
+  :global {
+    table {
+      width: 100%;
+      border-radius: 2px;
+      .col-num {
+        width: 10%;
+      }
+      .col-img {
+        width: 20%;
+      }
+      .col-supply,
+      .col-price,
+      .col-source {
+        width: 15%;
+      }
+      .col-product {
+        width: 25%;
+      }
+    }
+    .compare-title {
+      border-bottom: 1px solid #ddd;
+      background: #fafafa;
+      td {
+        border-right: 1px solid #ddd;
+        height: 40px;
+        line-height: 40px;
+      }
+      td:last-child {
+        border-right: none;
+      }
+    }
+    .compare-num {
+      border-right: 1px solid #ddd;
+      height: 80px;
+      line-height: 80px;
+    }
+    .compare-content {
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #ddd;
+      td {
+        border-left: 1px solid #ddd;
+      }
+    }
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+    }
+    .compare-num,
+    .compare-img {
+      vertical-align: top;
+      padding-top: 25px;
+      border-top: 1px solid #ddd;
+    }
+    .no-data {
+      border-left: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    .compare-content:last-child {
+      td:nth-child(3) {
+        color: #d0521e;
+      }
+    }
+    .col-product,
+    .compare-name {
+      padding: 0 15px;
+      text-align: left;
+      div {
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+    .compare-supply > div {
+      width: 160px;
+      line-height: 18px;
+      padding: 0 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .no-content {
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+    }
+  }
+}

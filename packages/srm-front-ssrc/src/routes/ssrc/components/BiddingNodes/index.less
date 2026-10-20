@@ -1,0 +1,103 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.timeLine-nodes {
+  margin-top: 0.16rem;
+  overflow-x: auto;
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+  }
+  &-content {
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  li {
+    position: relative;
+  }
+  // 标题样式
+  &-title {
+    font-family: PingFangSC-Regular, sans-serif;
+    font-size: 0.12rem;
+    color: #868d9c;
+    font-weight: 400;
+  }
+  // 文字样式
+  &-text {
+    font-family: PingFangSC-Regular, sans-serif;
+    font-size: 0.12rem;
+    color: #1d2129;
+    line-height: 0.18rem;
+    font-weight: 400;
+  }
+  &-item {
+    // 头标题
+    &-head {
+      text-align: center;
+      margin: 0 auto;
+    }
+    // &-head-center {
+    //   padding-left: 0.4rem;
+    // }
+    // 线、点
+    &-track {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.08rem;
+      margin-top: 0.02rem;
+      position: relative;
+    }
+    &-dot {
+      width: 0.12rem;
+      height: 0.12rem;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid @primary-color;
+    }
+    &-dot-interval {
+      margin-left: 0.98rem;
+    }
+    &-dot-prefix-line {
+      &::before {
+        content: '';
+        width: 0.98rem;
+        border: 1px solid #e5e7ec;
+        height: 1px;
+        position: absolute;
+        left: -0.98rem;
+        top: 0.05rem;
+      }
+    }
+    &-line {
+      // width: calc(100% - 24px);
+      border: 1px solid @primary-color;
+      &-dotted {
+        border: 1px dotted @primary-color;
+      }
+    }
+    &-line-interval {
+      width: 0.98rem;
+      border: 1px solid #e5e7ec;
+    }
+
+    // 节点文字
+    &-text {
+      position: relative;
+      height: 0.18rem;
+      line-height: 0.18rem;
+      &-from {
+        // max-width: 0.6rem;
+        position: absolute;
+        transform: translate(-50%, 0);
+      }
+      // &-wait {
+      //   margin-left: 1.04rem;
+      // }
+      &-end {
+        // max-width: 0.6rem;
+        float: right;
+        transform: translate(40%, 0);
+      }
+    }
+  }
+}

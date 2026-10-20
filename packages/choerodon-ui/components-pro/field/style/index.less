@@ -1,0 +1,203 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+
+@field-prefix-cls: ~'@{c7n-pro-prefix}-field';
+
+.@{field-prefix-cls} {
+  width: 100%;
+  &,
+  &.@{c7n-prefix}-row {
+    display: inline-block;
+  }
+
+  &-row &-label,
+  &-label label > span,
+  &-label-vertical {
+    overflow: hidden;
+    font-weight: @label-font-weight;
+    line-height: @label-line-height;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  &-label {
+    padding: @label-wrapper-padding;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &-right {
+      text-align: right;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &&-left label > span {
+      flex: unset;
+    }
+  }
+
+  label&-label,
+  &-label label {
+    display: flex;
+    align-items: baseline;
+    padding: @label-wrapper-padding;
+    padding-right: 0;
+    padding-left: 0;
+    color: @label-color-horizontal;
+
+    > span {
+      flex: 1;
+    }
+  }
+
+  &-wrapper {
+    padding: @form-item-wrapper-padding;
+
+    .@{c7n-pro-prefix}-checkbox-wrapper, .@{c7n-pro-prefix}-switch-wrapper {
+      height: @input-height-base;
+    }
+  }
+
+  label&-label-vertical {
+    display: inline-block;
+    padding: @label-wrapper-padding;
+    padding-top: @label-vertical-wrapper-padding-vertical;
+    padding-bottom: @label-vertical-wrapper-padding-vertical;
+    color: @label-color-vertical;
+    line-height: @label-line-height;
+    direction: ltr;
+    text-align: left;
+
+    & + .@{field-prefix-cls}-wrapper {
+      padding-top: 0;
+    }
+  }
+
+  &-row &-label::after,
+  &-label label::after {
+    display: inline-block;
+    color: @label-required-color;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    vertical-align: middle;
+    content: ' ';
+  }
+
+  &-row &-required&-label::after,
+  &-required&-label label::after {
+    width: 0.08rem;
+    margin-left: 0.04rem;
+    content: '*';
+  }
+
+  &-label-vertical&-required::after,
+  &-label&-label-useColon::after {
+    display: none;
+  }
+
+  &-row &-label&-label-useColon::after,
+  &-label&-label-useColon label::after {
+    position: relative;
+    top: -0.01rem;
+    display: inline-block;
+    width: 0;
+    margin-left: 0.02rem;
+    color: @label-colon-color;
+    vertical-align: baseline;
+    content: ':';
+  }
+
+  &-row &-label&-label-useColon::after {
+    width: 0.04rem;
+  }
+
+  &-label-help {
+    .icon-help {
+      position: relative;
+      top: 0.02rem;
+      margin-left: 0.02rem;
+      color: @field-icon-help-color;
+      font-size: @icon-font-size-sm;
+    }
+
+    & + .icon-help {
+      margin-left: 0.02rem;
+      color: @field-icon-help-color;
+      font-size: @icon-font-size-sm;
+
+      & + .@{field-prefix-cls}-wrapper {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &-label-vertical&-label&-label-useColon {
+    max-width: 100%;
+  }
+  &-label-vertical&-label&-label-useColon&-label-help {
+    max-width: calc(100% - 0.3rem);
+  }
+
+  &-row &-required&-label-useColon::before,
+  &-label-vertical&-required&-label::before,
+  &-required&-label&-label-useColon label > span::before {
+    display: inline-block;
+    margin-right: 0.04rem;
+    color: @label-required-color;
+    font-size: 0.14rem;
+    line-height: 1;
+    content: '*';
+  }
+
+  &-help {
+    color: @input-placeholder-color;
+    font-size: @font-size-sm;
+    // 帮助信息相对输入框应该另起一行
+    // display: inline-block;
+    margin-top: 0.04rem;
+    font-weight: 400;
+    word-break: break-word;
+  }
+
+  &-output {
+    padding-top: @label-output-wrapper-padding-vertical;
+    padding-bottom: @label-output-wrapper-padding-vertical;
+  }
+
+  &-label-output label {
+    padding-top: @form-item-wrapper-output-padding-vertical;
+    padding-bottom: @form-item-wrapper-output-padding-vertical;
+  }
+
+  &-output-mix, &-label-output-mix label {
+    padding: @label-wrapper-padding;
+  }
+
+  &-row&-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &-col {
+    position: relative;
+    flex-grow: 0;
+    max-width: 100%;
+    min-height: 1px;
+
+    &-control {
+      flex: 1;
+    }
+
+    & .@{field-prefix-cls}-wrapper {
+      padding: @form-item-wrapper-padding;
+    }
+  }
+
+  &-col &-label {
+    display: inline-block;
+  }
+}

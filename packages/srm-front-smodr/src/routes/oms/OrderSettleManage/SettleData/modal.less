@@ -1,0 +1,51 @@
+.execute-modal-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  :global {
+    .execute-modal-left {
+      width: 160px;
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 20px 0 0 20px;
+
+      .execute-btn {
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 16px;
+
+        &.active {
+          color: #29bece;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .execute-modal-right {
+      .execute-right-content {
+        // padding: 20px 20px 0 20px;
+        .execute-right-top {
+          display: flex;
+          margin-bottom: 25px;
+          .execute-right-img {
+            margin-right: 8px;
+          }
+          .execute-right-label {
+            .execute-right-title {
+              font-size: 14px;
+              font-weight: 600;
+              margin-bottom: 14px;
+            }
+            .execute-right-code {
+              color: rgba(0, 0, 0, 0.65);
+              margin-bottom: 8px;
+            }
+            .execute-right-sku {
+              color: rgba(0, 0, 0, 0.65);
+            }
+          }
+        }
+      }
+    }
+  }
+}

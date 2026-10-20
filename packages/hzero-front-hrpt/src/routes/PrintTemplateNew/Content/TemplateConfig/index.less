@@ -1,0 +1,76 @@
+.card {
+  :global {
+    .c7n-card-head {
+      padding: 16px;
+      padding-left: 11px;
+      position: relative;
+      border: none;
+      margin-top: 16px;
+    }
+    .c7n-card-body {
+      padding: 0;
+    }
+    .c7n-card-head::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 19.5px;
+      width: 3px;
+      height: 14px;
+      background-color: @primary-color;
+      pointer-events: none;
+    }
+    .c7n-card-head-title {
+      font-size: 14px;
+      padding: 0;
+    }
+    .c7n-pro-switch-wrapper.c7n-pro-field {
+      line-height: 32px;
+    }
+  }
+}
+.report-desgin-model {
+  :global {
+    .c7n-pro-modal-header,
+    .c7n-pro-modal-body {
+      padding: 0;
+    }
+    .c7n-pro-modal-body {
+      overflow: hidden;
+    }
+  }
+}
+.link-edit {
+  cursor: pointer;
+  color: @primary-color;
+}
+.alert {
+  margin-bottom: 32px;
+  color: #E48311;
+  :global {
+    .icon-close {
+      font-size: 14px;
+      color: #E48311;
+    }
+  }
+}
+.template-upload-tips {
+  background-color: rgba(250, 205, 145, 0.3);
+  color: #DC851F;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.popver-content {
+  &-btn {
+    padding: 0 0.12rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+      box-shadow: none;
+    }
+  }
+  :global {
+    .c7n-popover-inner-content {
+      padding: 0.04rem 0;
+    }
+  }
+}

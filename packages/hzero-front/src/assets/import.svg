@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>inport</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="暂无消息" transform="translate(-604.000000, -155.000000)">
+            <g id="编组-5备份" transform="translate(415.000000, 40.000000)">
+                <g id="编组-2" transform="translate(1.000000, 0.000000)">
+                    <g id="inport" transform="translate(188.000000, 115.000000)">
+                        <rect id="矩形" x="0" y="0" width="74" height="74"></rect>
+                        <g id="Combined-Shape" transform="translate(5.000000, 1.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#F0F1F3" stroke-linejoin="round" stroke-width="2">
+                            <g id="path-1-link">
+                                <path d="M56,45.5392327 C54.7265637,45.1877653 53.3852093,45 52,45 C43.7157288,45 37,51.7157288 37,60 C37,61.3852093 37.1877653,62.7265637 37.5392327,64 L3,64 C1.3431458,64 0,62.6568542 0,61 L0,3 C0,1.34314575 1.3431458,0 3,0 L40.5,0 L56,16 L56,45.5392327 Z" id="path-1"></path>
+                            </g>
+                        </g>
+                        <g id="Combined-Shape" transform="translate(9.000000, 5.000000)" fill-rule="nonzero">
+                            <g id="path-3-link" fill="#F4F5F7">
+                                <path d="M48,41 C39.7157288,41 33,47.7157288 33,56 L2,56 C0.8954305,56 0,55.1045695 0,54 L0,2 C0,0.8954305 0.8954305,0 2,0 L36,0 L48,12 L48,41 Z" id="path-3"></path>
+                            </g>
+                            <g id="path-3-link" transform="translate(5.046000, 8.456000)" fill="#C9CDD4">
+                                <polygon id="路径" points="5.628 1.488 1.668 1.488 1.668 3.588 5.04 3.588 5.04 5.076 1.668 5.076 1.668 8.544 0 8.544 0 0 5.628 0"></polygon>
+                                <polygon id="路径" points="8.748 8.544 7.08 8.544 7.08 0 8.748 0"></polygon>
+                                <polygon id="路径" points="16.284 8.544 10.74 8.544 10.74 0 12.408 0 12.408 7.056 16.284 7.056"></polygon>
+                                <polygon id="路径" points="23.268 8.544 17.64 8.544 17.64 0 23.268 0 23.268 1.488 19.308 1.488 19.308 3.492 22.68 3.492 22.68 4.98 19.308 4.98 19.308 7.056 23.268 7.056"></polygon>
+                            </g>
+                        </g>
+                        <g id="FILE" transform="translate(14.046000, 13.456000)"></g>
+                        <g id="path-6-link" transform="translate(45.010159, 0.025737)" fill="#E6E7EB">
+                            <path d="M0,0 L4.0397132,4.02413561 L8.0477604,8.03218285 L12.0558077,12.0402301 L16.9898406,17.1917067 L2.9898406,17.1917067 C1.3329864,17.1917067 0,15.8742978 0,14.2174436 L0,0 Z" id="path-6"></path>
+                        </g>
+                        <g id="upload" transform="translate(45.000000, 49.000000)">
+                            <g id="path-10-link" fill="currentColor">
+                                <circle id="path-10" cx="12" cy="12" r="12"></circle>
+                            </g>
+                            <g id="up" transform="translate(4.000000, 4.000000)">
+                                <rect id="Rectangle-path" x="0" y="0" width="16" height="16"></rect>
+                                <path d="M7.3,2.3 L2.3,7.3 C1.91340068,7.68659932 1.91340068,8.31340068 2.3,8.7 L2.3,8.7 C2.68659932,9.08659932 3.31340068,9.08659932 3.7,8.7 L7,5.4 L7,13 C7,13.5522847 7.44771525,14 8,14 L8,14 C8.55228475,14 9,13.5522847 9,13 L9,5.4 L12.3,8.7 C12.6865993,9.08659932 13.3134007,9.08659932 13.7,8.7 L13.7,8.7 C14.0865993,8.31340068 14.0865993,7.68659932 13.7,7.3 L8.7,2.3 C8.3,1.9 7.7,1.9 7.3,2.3 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(8.000000, 8.000000) scale(1, -1) translate(-8.000000, -8.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

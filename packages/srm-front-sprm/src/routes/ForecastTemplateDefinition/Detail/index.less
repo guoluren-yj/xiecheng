@@ -1,0 +1,79 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.sprm-forecast-template {
+  :global {
+    overflow-y: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+
+    .contect-item {
+      overflow: initial;
+      height: 100%;
+      .c7n-tabs-tab {
+        text-align: left !important;
+        font-size: 14px;
+        height: 42px;
+        width: 200px;
+        padding: 10px 20px 10px 0;
+        margin-bottom: 8px;
+      }
+      .c7n-tabs-tab-active {
+        font-weight: 600;
+      }
+      .c7n-tabs-nav {
+        padding-top: 20px;
+      }
+      .c7n-tabs-content {
+        padding: 20px 20px 0;
+        padding-right: 20px;
+        overflow: auto;
+        height: 100%;
+        .content-title {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .c7n-card {
+          margin-top: 16px;
+        }
+        .c7n-card > .c7n-card-head::before {
+          background-color: @primary-color;
+          top: 5px;
+        }
+        .c7n-card > .c7n-card-head {
+          border: none;
+          min-height: 0;
+          padding: 0 16px 0;
+        }
+        .c7n-card > .c7n-card-body {
+          padding: 16px 0;
+        }
+
+        .c7n-pro-radio-wrapper {
+          margin: 0;
+          height: 28px;
+        }
+        .c7n-tabs-tabpane {
+          height: 100%;
+        }
+        .overflow-config {
+          height: calc(100vh - 220px);
+          overflow: auto;
+          box-sizing: border-box;
+        }
+        .form-select-box {
+          .c7n-pro-field-label-left > label {
+            padding: 0 0 16px;
+          }
+          .c7n-pro-field-wrapper {
+            padding: 0 0 16px;
+          }
+        }
+      }
+    }
+  }
+}

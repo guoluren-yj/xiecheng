@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs tabPosition remove card 1`] = `
+<Tabs
+  hideAdd={false}
+  tabBarExtraContent="xxx"
+  tabPosition="left"
+>
+  <Tabs
+    className="c7n-tabs-line c7n-tabs-vertical"
+    destroyInactiveTabPane={false}
+    hideAdd={false}
+    onChange={[Function]}
+    prefixCls="c7n-tabs"
+    renderTabBar={[Function]}
+    renderTabContent={[Function]}
+    style={Object {}}
+    tabBarExtraContent="xxx"
+    tabBarPosition="left"
+    tabPosition="left"
+  >
+    <div
+      className="c7n-tabs c7n-tabs-left c7n-tabs-line c7n-tabs-vertical"
+      style={Object {}}
+    >
+      <ScrollableInkTabBar
+        activeKey="1"
+        extraContent={
+          <div
+            className="c7n-tabs-extra-content"
+          >
+            xxx
+          </div>
+        }
+        inkBarAnimated={true}
+        key="tabBar"
+        onKeyDown={[Function]}
+        onNextClick={[Function]}
+        onPrevClick={[Function]}
+        onTabClick={[Function]}
+        panels={
+          <TabPane
+            placeholder={null}
+            tab="foo"
+          >
+            foo
+          </TabPane>
+        }
+        prefixCls="c7n-tabs"
+        scrollAnimated={true}
+        styles={Object {}}
+        tabBarPosition="left"
+      >
+        <div
+          className="c7n-tabs-bar"
+          onKeyDown={[Function]}
+          role="tablist"
+          tabIndex="0"
+        >
+          <div
+            className="c7n-tabs-nav-container"
+            key="content"
+          >
+            <span
+              className="c7n-tabs-tab-prev c7n-tabs-tab-btn-disabled"
+              onClick={null}
+              onTransitionEnd={[Function]}
+              unselectable="unselectable"
+            >
+              <span
+                className="c7n-tabs-tab-prev-icon"
+              />
+            </span>
+            <span
+              className="c7n-tabs-tab-next c7n-tabs-tab-btn-disabled"
+              onClick={null}
+              unselectable="unselectable"
+            >
+              <span
+                className="c7n-tabs-tab-next-icon"
+              />
+            </span>
+            <div
+              className="c7n-tabs-nav-wrap"
+            >
+              <div
+                className="c7n-tabs-nav-scroll"
+              >
+                <div
+                  className="c7n-tabs-nav c7n-tabs-nav-animated"
+                >
+                  <div
+                    className="c7n-tabs-ink-bar c7n-tabs-ink-bar-animated"
+                    key="inkBar"
+                  />
+                  <Ripple
+                    key="1"
+                  >
+                    <RippleChild
+                      key=".0"
+                      prefixCls="c7n-ripple"
+                    >
+                      <MouseDown
+                        rippleChild={
+                          <div
+                            aria-disabled="false"
+                            aria-selected="true"
+                            className="c7n-tabs-tab-active c7n-tabs-tab"
+                            onClick={[Function]}
+                            role="tab"
+                            style={
+                              Object {
+                                "marginRight": undefined,
+                              }
+                            }
+                          >
+                            foo
+                          </div>
+                        }
+                      >
+                        <div
+                          aria-disabled="false"
+                          aria-selected="true"
+                          className="c7n-tabs-tab-active c7n-tabs-tab"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          role="tab"
+                          style={
+                            Object {
+                              "marginRight": undefined,
+                            }
+                          }
+                        >
+                          foo
+                          <Animate
+                            animation={Object {}}
+                            component="div"
+                            componentProps={
+                              Object {
+                                "className": "c7n-ripple-wrapper",
+                              }
+                            }
+                            hiddenProp="hidden"
+                            key="ripple"
+                            transitionAppear={false}
+                            transitionEnter={true}
+                            transitionLeave={true}
+                            transitionName="fade"
+                          >
+                            <div
+                              className="c7n-ripple-wrapper"
+                            />
+                          </Animate>
+                        </div>
+                      </MouseDown>
+                    </RippleChild>
+                  </Ripple>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="c7n-tabs-extra-content"
+            key="extra"
+            style={Object {}}
+          >
+            xxx
+          </div>
+        </div>
+      </ScrollableInkTabBar>
+      <TabContent
+        activeKey="1"
+        animated={true}
+        animatedWithMargin={true}
+        destroyInactiveTabPane={false}
+        key="tabContent"
+        onChange={[Function]}
+        prefixCls="c7n-tabs"
+        tabBarPosition="left"
+      >
+        <div
+          className="c7n-tabs-content c7n-tabs-content-animated"
+          style={
+            Object {
+              "marginTop": "0%",
+            }
+          }
+        >
+          <TabPane
+            active={true}
+            destroyInactiveTabPane={false}
+            key="1"
+            placeholder={null}
+            rootPrefixCls="c7n-tabs"
+            tab="foo"
+          >
+            <div
+              aria-hidden="false"
+              className="c7n-tabs-tabpane c7n-tabs-tabpane-active"
+              role="tabpanel"
+            >
+              foo
+            </div>
+          </TabPane>
+        </div>
+      </TabContent>
+    </div>
+  </Tabs>
+</Tabs>
+`;

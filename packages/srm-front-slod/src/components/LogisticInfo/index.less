@@ -1,0 +1,272 @@
+.contents {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.wrap {
+  .wrap-icon {
+    width: 100%;
+    height: 80px;
+    // padding: 0 20px 0 20px;
+    // border-bottom: 1px dashed #E5E7EC;
+  }
+  .wrap-col {
+    padding: 16px 0;
+    // border-right: 0.2px solid rgba(0, 0, 0, 0.2);
+  }
+  :global {
+    .page-content {
+      padding: 0;
+    }
+  }
+  .logistics-details {
+    border-radius: 2px;
+    // overflow: hidden;
+    overflow-y: auto;
+    .logistics-refresh {
+      background: #f8f9f9;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 16px;
+      line-height: 40px;
+      .logistics-last {
+        color: #666;
+      }
+      button {
+        margin-left: 30px;
+      }
+    }
+    .logistics-list {
+      padding: 16px 16px 0;
+      ul {
+        padding-left: 0;
+        li.active {
+          .logistics-desc {
+            color: #47b881;
+          }
+        }
+        li {
+          width: 100%;
+          display: flex;
+          color: #999;
+          > div {
+            padding-bottom: 8px;
+            min-height: 8px;
+            > span {
+              line-height: 8px;
+            }
+          }
+          // 日期
+          .logistics-date {
+            min-width: 70px;
+            margin-right: 25px;
+            color: rgba(0, 0, 0, 0.45);
+          }
+          // 时间
+          .logistics-time {
+            min-width: 52px;
+          }
+          .logistics-box-cicle {
+            width: 76px;
+          }
+          // 圆
+          .logistics-cicle {
+            background: #ccc;
+            position: relative;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            line-height: 5px;
+            margin: 0 30px;
+            border-radius: 50%;
+            left: 5px;
+          }
+          .logistics-cicle.active {
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            background: #47b881;
+            position: relative;
+            left: 0;
+            top: 2px;
+            &::before {
+              content: '';
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              width: 10px;
+              height: 10px;
+              background: url('../../assets/wuliu-first-duigou-icon.png');
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+          .logistics-cicle.line {
+            &::after {
+              background: #ccc;
+              position: absolute;
+              top: 5px;
+              left: 2px;
+              display: inline-block;
+              content: '';
+              width: 1px;
+              height: 30px;
+            }
+          }
+          .logistics-cicle.line.twoLongLine {
+            &::after {
+              height: 48px;
+            }
+          }
+          .logistics-cicle.line.threeLongLine {
+            &::after {
+              height: 62px;
+            }
+          }
+          .logistics-cicle.line.active {
+            &::after {
+              top: 16px;
+              left: 7px;
+              background: #ccc;
+            }
+          }
+          .logistics-desc {
+            width: 700px;
+            color: rgba(0, 0, 0, 0.65);
+            .logistics-desc-operator {
+              display: inline-block;
+              margin-right: 24px;
+              min-width: 100px;
+            }
+          }
+        }
+        li {
+          color: #999;
+        }
+        li.active {
+          color: #333;
+        }
+      }
+    }
+    .no-logistics {
+      height: 100px;
+      padding: 16px;
+    }
+  }
+  .logistics-info-btn {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    margin: 8px 0 2px 200px;
+    line-height: 28px;
+    color: #29bece;
+    cursor: pointer;
+  }
+  div.close-btn {
+    margin-top: 0;
+  }
+  .min {
+    // max-height: 180px;
+    max-height: 217px;
+  }
+  .large {
+    height: 179px;
+  }
+
+  .logistics-details.more {
+    height: auto;
+  }
+}
+
+.logistics-line {
+  // height: 73%;
+  height: 93%;
+  position: absolute;
+  top: 8px;
+  width: 0.2px;
+  // background: red;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleX(1);
+  // background: rgba(0, 0, 0, 0.2);
+}
+
+.logistics-status {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 20px 20px 0 20px;
+  .logistics-border {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px dashed #e5e7ec;
+    .logistics-border-left {
+      float: left;
+      width: 50%;
+      height: 100%;
+      .imgIcon {
+        width: 36px;
+        height: 36px;
+        float: left;
+      }
+      .logistics-texts {
+        float: left;
+        margin-left: 16px;
+        .logistics-tip {
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+        }
+        .logistics-text {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+    }
+    .logistics-border-right {
+      float: left;
+      width: 50%;
+      height: 100%;
+      .logistics-border-right-btn {
+        float: right;
+      }
+    }
+  }
+  .logistics-btns {
+    display: flex;
+    margin: 12px 0 0 0;
+  }
+}
+
+.logistics-status-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 322px !important;
+  height: auto;
+  margin-left: 20px;
+
+  .logistics-tip {
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  .logistics-text {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+  }
+  .logistics-btns {
+    display: flex;
+    margin: 12px 0 0 0;
+  }
+}
+
+.helpOutline {
+  font-size: 14px;
+  color: @primary-color;
+}

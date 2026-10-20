@@ -1,0 +1,268 @@
+import { AxiosInstance, AxiosRequestConfig } from 'axios';
+import { action as mobxAction, runInAction } from 'mobx';
+import { DataSetContext } from '../data-set/DataSet';
+import AttachmentFile from '../data-set/AttachmentFile';
+import AttachmentFileChunk from '../data-set/AttachmentFileChunk';
+import { appendFormData } from '../data-set/utils';
+import axios, { AxiosCancelToken } from '../axios';
+import PromiseQueue from '../promise-queue';
+import { UploaderProps } from './Uploader';
+import { $l } from '../locale-context';
+import { formatFileSize } from '../formatter';
+import UploadError from './UploadError';
+
+function getAxios(context: DataSetContext): AxiosInstance {
+  return context.getConfig('axios') || axios;
+}
+
+export function isAcceptFile(attachment: AttachmentFile, accept: string[]): boolean {
+  const acceptTypes = accept.map(type => (
+    new RegExp(type.replace(/\./g, '\\.').replace(/\*/g, '.*'))
+  ));
+  const { name, type } = attachment;
+  return acceptTypes.some(acceptType => acceptType.test(name) || acceptType.test(type));
+}
+
+function getCancelToken(saveUploadCancel) {
+  return new AxiosCancelToken(e => {
+    if (saveUploadCancel) {
+      saveUploadCancel(e);
+    }
+  })
+}
+
+function getUploadAxiosConfig(
+  props: UploaderProps,
+  attachment: AttachmentFile,
+  chunk: AttachmentFileChunk | undefined,
+  attachmentUUID: string,
+  context: DataSetContext,
+  onUploadProgress: (e) => void,
+): AxiosRequestConfig {
+  const { originFileObj } = attachment;
+  if (originFileObj) {
+    const blob = chunk ? originFileObj.slice(chunk.start, chunk.end) : originFileObj;
+    const globalConfig = context.getConfig('attachment');
+    const { action, data, headers, fileKey = globalConfig.defaultFileKey, withCredentials } = props;
+    const newHeaders = {
+      'X-Requested-With': 'XMLHttpRequest',
+      ...headers,
+    };
+    const formData = new FormData();
+    formData.append(fileKey, blob);
+    if (data) {
+      appendFormData(formData, data);
+    }
+    if (action && !chunk) {
+      return {
+        url: action,
+        headers: newHeaders,
+        data: formData,
+        onUploadProgress,
+        method: 'POST',
+        withCredentials,
+        cancelToken: getCancelToken(props.saveUploadCancel),
+      };
+    }
+    const actionHook = globalConfig.action;
+    if (actionHook) {
+      const { bucketName, bucketDirectory, storageCode, isPublic } = props;
+      const newConfig = typeof actionHook === 'function' ? actionHook({
+        attachment,
+        chunk,
+        bucketName,
+        bucketDirectory,
+        storageCode,
+        attachmentUUID,
+        isPublic,
+      }) : actionHook;
+      const { data: customData, onUploadProgress: customUploadProgress } = newConfig;
+      if (customData) {
+        appendFormData(formData, customData);
+      }
+      return {
+        withCredentials,
+        method: 'POST',
+        ...newConfig,
+        headers: {
+          ...newHeaders,
+          ...newConfig.headers,
+        },
+        data: formData,
+        onUploadProgress: (e) => {
+          onUploadProgress(e);
+          if (customUploadProgress) {
+            customUploadProgress(e);
+          }
+        },
+        cancelToken: getCancelToken(props.saveUploadCancel),
+      };
+    }
+    throw new Error(`Please set configure.attachment.action .`);
+  }
+  throw new Error('AttachmentFile can be uploaded only from input.files or DragEvent.dataTransfer.files');
+}
+
+async function uploadChunk(props: UploaderProps, attachment: AttachmentFile, chunk: AttachmentFileChunk, attachmentUUID: string, context: DataSetContext): Promise<any> {
+  try {
+    const { onBeforeUploadChunk } = context.getConfig('attachment');
+    if (!onBeforeUploadChunk || await onBeforeUploadChunk({
+      chunk,
+      attachment,
+      bucketName: props.bucketName,
+      bucketDirectory: props.bucketDirectory,
+      storageCode: props.storageCode,
+      isPublic: props.isPublic,
+      attachmentUUID,
+    }) !== false) {
+      const config = getUploadAxiosConfig(props, attachment, chunk, attachmentUUID, context, mobxAction((e) => {
+        chunk.percent = e.total > 0 ? (e.loaded / e.total) * 100 : 0;
+      }));
+      const resp = await getAxios(context)(config);
+      chunk.status = 'success';
+      return resp;
+    }
+  } catch (e) {
+    chunk.status = 'error';
+    throw new UploadError(e);
+  }
+}
+
+function uploadChunks(
+  props: UploaderProps,
+  attachment: AttachmentFile,
+  chunks: AttachmentFileChunk[],
+  attachmentUUID: string,
+  context: DataSetContext,
+  threads: number,
+): Promise<void> {
+  const { length } = chunks;
+  if (length) {
+    runInAction(() => {
+      attachment.status = 'uploading';
+    });
+    const queue = new PromiseQueue(threads);
+    chunks.forEach(chunk => {
+      if (chunk.status !== 'success') {
+        queue.add(() => uploadChunk(props, attachment, chunk, attachmentUUID, context));
+      }
+    });
+    return queue.ready();
+  }
+  return Promise.resolve();
+}
+
+async function uploadNormalFile(props: UploaderProps, attachment: AttachmentFile, attachmentUUID: string, context: DataSetContext) {
+  try {
+    runInAction(() => {
+      attachment.status = 'uploading';
+    });
+    const config = getUploadAxiosConfig(props, attachment, undefined, attachmentUUID, context, mobxAction((e) => {
+      const percent = e.total > 0 ? (e.loaded / e.total) * 100 : 0;
+      attachment.percent = percent;
+      const { onUploadProgress: handleProgress } = props;
+      if (handleProgress) {
+        handleProgress(percent, attachment);
+      }
+    }));
+    const resp = await getAxios(context)(config);
+    attachment.percent = 100;
+    return new Promise<any>((resolve) => {
+      setTimeout(() => resolve(resp), 0);
+    });
+  } catch (e) {
+    throw new UploadError(e);
+  }
+}
+
+function cuteFile(attachment: AttachmentFile, chunkSize: number): AttachmentFileChunk[] {
+  const { size, chunks } = attachment;
+  if (!chunks) {
+    const count = chunkSize ? Math.ceil(size / chunkSize) : 1;
+    let start = 0;
+    let index = 0;
+    let len;
+    const newChunks: AttachmentFileChunk[] = [];
+    while (index < count) {
+      len = Math.min(chunkSize, size - start);
+      newChunks.push(new AttachmentFileChunk({
+        file: attachment,
+        total: size,
+        start,
+        end: chunkSize ? (start + len) : size,
+        index,
+      }));
+      index += 1;
+      start += len;
+    }
+    if (newChunks.length > 1) {
+      attachment.chunks = newChunks;
+    }
+    return newChunks;
+  }
+  return chunks;
+}
+
+export async function beforeUploadFile(
+  props: UploaderProps,
+  context: DataSetContext,
+  attachment: AttachmentFile,
+  attachments: AttachmentFile[] = [],
+  useChunk?: boolean,
+): Promise<boolean | undefined> {
+  const globalConfig = context.getConfig('attachment');
+  const { accept } = props;
+  if (accept && !isAcceptFile(attachment, accept)) {
+    runInAction(() => {
+      attachment.status = 'error';
+      attachment.invalid = true;
+      attachment.errorMessage = $l('Attachment', 'file_type_mismatch', undefined, { types: accept.join(',') }) as string;
+    });
+    return;
+  }
+  const { defaultFileSize, fetchFileSize } = globalConfig;
+  let { fileSize } = props;
+  if (!fileSize && fetchFileSize) {
+    fileSize = await fetchFileSize({
+      bucketName: props.bucketName,
+      bucketDirectory: props.bucketDirectory,
+      storageCode: props.storageCode,
+      isPublic: props.isPublic,
+      useChunk,
+    });
+  }
+  if (!fileSize && fileSize !== 0) {
+    fileSize = defaultFileSize;
+  }
+  if ((fileSize === 0 || fileSize && fileSize > 0) && attachment.size > fileSize) {
+    runInAction(() => {
+      attachment.status = 'error';
+      attachment.invalid = true;
+      attachment.errorMessage = $l('Attachment', 'file_max_size', undefined, { size: formatFileSize(fileSize || defaultFileSize) }) as string;
+    });
+    return;
+  }
+  const { onBeforeUpload } = globalConfig;
+  if (onBeforeUpload && await onBeforeUpload(attachment, attachments, {
+    useChunk,
+    bucketName: props.bucketName,
+    bucketDirectory: props.bucketDirectory,
+    storageCode: props.storageCode,
+    isPublic: props.isPublic,
+  }) === false) {
+    return false;
+  }
+
+  const { beforeUpload } = props;
+  return !(beforeUpload && await beforeUpload(attachment, attachments) === false);
+}
+
+export async function uploadFile(props: UploaderProps, attachment: AttachmentFile, attachmentUUID: string, context: DataSetContext, chunkSize: number, useChunk?: boolean): Promise<any> {
+  if (useChunk) {
+    const chunks = cuteFile(attachment, chunkSize);
+    const globalConfig = context.getConfig('attachment');
+    const { chunkThreads = globalConfig.defaultChunkThreads } = props;
+    return uploadChunks(props, attachment, chunks.slice(), attachmentUUID, context, Math.min(chunks.length, chunkThreads));
+  }
+  return uploadNormalFile(props, attachment, attachmentUUID, context);
+}

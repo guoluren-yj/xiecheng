@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="319px" viewBox="0 0 208 319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>有指标-评估单据</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="208" height="319" rx="4"></rect>
+    </defs>
+    <g id="v1102-附件导出" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="有指标-评估单据">
+            <g id="矩形" stroke-dasharray="4">
+                <g id="path-1-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <path d="M4,0 L204,0 C206.209139,-4.05812251e-16 208,1.790861 208,4 L208,315 C208,317.209139 206.209139,319 204,319 L4,319 C1.790861,319 1.3527075e-16,317.209139 0,315 L0,4 C-2.705415e-16,1.790861 1.790861,2.705415e-16 4,0 Z" id="path-1" stroke="#C9CDD4" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+            <g id="展开备份-12" transform="translate(64, 48)">
+                <g id="采购方附件" transform="translate(48, 0)" fill="#1D2129" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                    <text id="供应商自评附件">
+                        <tspan x="0" y="13">供应商自评附件</tspan>
+                    </text>
+                </g>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="展开备份-12备份" transform="translate(112, 83)">
+                <g id="采购方附件" transform="translate(48, 0)" fill="#1D2129" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                    <text id="指标A">
+                        <tspan x="0" y="13">指标A</tspan>
+                    </text>
+                </g>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="展开备份-12" transform="translate(16, 16)">
+                <text id="评估单据1" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18" fill="#1D2129">
+                    <tspan x="48" y="13">评估单据1</tspan>
+                </text>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="展开备份-13" transform="translate(16, 215)">
+                <g id="协议2" transform="translate(48, 0)" fill="#1D2129" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                    <text id="评估单据2">
+                        <tspan x="0" y="13">评估单据2</tspan>
+                    </text>
+                </g>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(8, 9) scale(-1, 1) rotate(90) translate(-8, -9)translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="展开备份-14" transform="translate(16, 247)">
+                <g id="协议3" transform="translate(48, 0)" fill="#1D2129" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                    <text id="评估单据3">
+                        <tspan x="0" y="13">评估单据3</tspan>
+                    </text>
+                </g>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(8, 9) scale(-1, 1) rotate(90) translate(-8, -9)translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="展开备份-12" transform="translate(64, 149)">
+                <g id="附件" transform="translate(48, 0)" fill="#1D2129" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                    <text id="审查结果附件">
+                        <tspan x="0" y="13">审查结果附件</tspan>
+                    </text>
+                </g>
+                <g id="icon/folder_open" transform="translate(24, 1)">
+                    <polygon id="folder_open" points="0 0 16 0 16 16 0 16"></polygon>
+                    <path d="M4.2837196,7.81719059 L2,13.9069597 L12.9069597,13.9069597 L14.9380813,8.49048561 C15.1731503,7.86363507 14.7097543,7.1949845 14.0403546,7.1949845 L5.18144628,7.1949845 C4.78177393,7.1949845 4.42404206,7.44296126 4.2837196,7.81719059 Z M12.9069597,6.3559876 C12.9069597,5.42925721 12.1556963,4.6779938 11.2289659,4.6779938 L7.65214233,4.6779938 C7.52498258,4.67801433 7.40302347,4.6275169 7.31309769,4.53761164 L6.05640019,3.28091414 C5.87657315,3.10104868 5.63265191,3 5.37831091,3 L2.9588536,3 C2.42929338,3 2,3.42929338 2,3.9588536 L2,13.9069597 L3.51109335,7.10688983 C3.60856824,6.66813509 3.99772221,6.35596485 4.44717417,6.3559876 L12.9069597,6.3559876 Z" id="icon" fill="currentColor" fill-rule="nonzero"></path>
+                </g>
+                <g id="Icon/baseline-arrow_right" transform="translate(0, 1)">
+                    <polygon id="icon" fill="#1D2129" fill-rule="nonzero" points="4.66666667 6.66666667 8 10 11.3333333 6.66666667"></polygon>
+                    <rect id="baseline-arrow_drop_down" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <polyline id="路径-2" stroke="#D9D9D9" points="96 70 96 73.524553 96 91 108 91"></polyline>
+            <polyline id="路径-2备份-3" stroke="#D9D9D9" points="96 171 96 174.524553 96 192 108 192"></polyline>
+            <polyline id="路径-2备份-2" stroke="#D9D9D9" points="144 105 144 108.524553 144 126 156 126"></polyline>
+            <polyline id="路径-2" stroke="#D9D9D9" points="48 38 48 41.524553 48 59 60 59"></polyline>
+            <polyline id="路径-2备份-7" stroke="#D9D9D9" points="48 59 48 158 60 158"></polyline>
+            <g id="附件3" transform="translate(112, 183)" fill="#4E5769" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                <text>
+                    <tspan x="0" y="13">附件3</tspan>
+                </text>
+            </g>
+            <g id="附件3备份" transform="translate(160, 117)" fill="#4E5769" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="18">
+                <text id="附件3">
+                    <tspan x="0" y="13">附件3</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

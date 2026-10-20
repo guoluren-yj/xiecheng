@@ -1,0 +1,37 @@
+.full-text-comparison {
+  :global {
+    .ant-modal {
+      top: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .ant-modal-header {
+      overflow: hidden;
+    }
+
+    .ant-modal-body {
+      overflow: auto;
+      min-height: calc(100vh - 55px);
+      max-height: calc(100vh - 55px);
+    }
+    pre {
+      white-space: break-spaces !important;
+    }
+  }
+}
+
+.current-version-title {
+  position: absolute;
+  left: 50%;
+  top: 11px;
+//   margin-top: -3%;
+}
+
+.version-style {
+  :global {
+    .ant-tabs-tab:nth-of-type(4) {
+      display: none;
+    }
+  }
+}

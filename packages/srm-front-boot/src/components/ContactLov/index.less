@@ -1,0 +1,145 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.view-tree-container :global {
+  .c7n-pro-modal-drawer-body > .c7n-pro-modal-selection-list-container + div {
+    width: calc(100% - 2.8rem);
+  }
+}
+
+.search-top :global {
+  .c7n-pro-input-wrapper {
+    width: 100%;
+    max-width: 5.2rem;
+    height: 0.32rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .icon-close::before {
+    opacity: 0.45;
+  }
+
+  .icon-close:hover::before {
+    opacity: 1;
+  }
+
+  .c7n-btn {
+    margin-left: 0.08rem;
+  }
+}
+
+.search-tree :global {
+  width: calc(100% - 15px);
+
+  .c7n-tree-switcher {
+    width: 0.1rem;
+    background-color: transparent;
+  }
+
+  .c7n-tree-switcher-leaf-line {
+    display: none;
+  }
+
+  .c7n-tree-treenode:hover {
+    background-color: @item-active-bg;
+  }
+}
+
+.search-empty-tip:global {
+  max-width: 5.2rem;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 0.1rem;
+  text-align: center;
+}
+
+.search-max-tip :global {
+  color: #ff8a2b;
+  margin-bottom: 0.08rem;
+}
+
+.view-tree-container :global {
+  display: flex;
+  flex-direction: column;
+
+  .c7n-tree-treenode {
+    width: 100%;
+    position: relative;
+    max-width: 5.2rem;
+
+    .c7n-tree-node-content-wrapper {
+      flex: 1;
+      min-width: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .icon-star_border {
+      color: @tree-directory-selected-bg;
+      display: none;
+    }
+
+    .icon-star {
+      color: @tree-directory-selected-bg;
+    }
+
+    .c7n-tree-title {
+      .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .icon-person {
+          margin-right: 0.1rem;
+          vertical-align: text-bottom;
+        }
+
+        .hl {
+          color: @tree-directory-selected-bg;
+        }
+
+        & > span:first-of-type {
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+      }
+
+      .title-path {
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+
+    &.c7n-tree-treenode-checkbox-checked,
+    &.treenode-checked {
+      .title {
+        color: @tree-directory-selected-bg;
+      }
+    }
+
+    &:hover .icon-star_border {
+      display: inline-block;
+    }
+  }
+
+  .item-tree {
+    .c7n-tree-treenode:hover {
+      .c7n-tree-switcher,
+      .c7n-tree-checkbox,
+      .c7n-tree-node-content-wrapper {
+        background-color: @item-active-bg;
+      }
+    }
+  }
+}
+
+.contact-lov-modal {
+  width: 11rem !important;
+}

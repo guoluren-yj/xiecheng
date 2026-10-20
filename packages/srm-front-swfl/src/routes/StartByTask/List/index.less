@@ -1,0 +1,20 @@
+.content {
+  margin: 8px 16px 16px;
+  padding: 16px;
+  height: calc(100% - 32px);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  flex: 1;
+  overflow: hidden;
+  :global {
+    .ant-table-wrapper,
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}

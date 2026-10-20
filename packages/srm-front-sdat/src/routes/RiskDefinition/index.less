@@ -1,0 +1,113 @@
+@import '~hzero-front/lib/srm-variables';
+
+.risk-definition-basic-content {
+  overflow: hidden;
+
+  :global {
+    // .c7n-pro-table-search-bar-fields .c7n-pro-output:first-child {
+    //   display: none;
+    // }
+
+    .c7n-tag {
+      border: none;
+      margin: 0;
+    }
+
+    .action-link a:not(:first-child),
+    .action-link span:not(:first-child) {
+      margin: 0 0 0 8px;
+    }
+  }
+}
+
+.risk-definition-status-tag-enabled {
+  color: rgb(71, 184, 129);
+  background-color: rgba(71, 184, 129, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.risk-definition-status-tag-disabled {
+  color: rgb(245, 99, 73);
+  background-color: rgba(245, 99, 73, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.risk-definition-status-tag-draft {
+  color: rgb(248, 141, 16);
+  background-color: rgba(252, 160, 0, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.risk-def-search-basic-panel {
+  margin-bottom: 16px;
+  :global {
+    .c7n-pro-table-search-bar-operator-left {
+      display: none;
+    }
+
+    .c7n-pro-table-search-bar-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .c7n-pro-table-search-bar-add-field {
+      display: none;
+    }
+  }
+}
+
+.risk-define-view-config-basic {
+  :global {
+    .c7n-tag {
+      border: none;
+      margin: 0;
+    }
+
+    .action-link a:not(:first-child),
+    .action-link span:not(:first-child) {
+      margin: 0 0 0 8px;
+    }
+
+    .c7n-pro-table-cell-inner-dirty:after {
+      display: none;
+    }
+  }
+}
+
+.status-high-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #e64322;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+.status-middle-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #feb936;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+.status-low-tag {
+  color: #fff;
+  line-height: 18px;
+  height: 18px;
+  background-color: #179454;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0 4px;
+}

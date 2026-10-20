@@ -1,0 +1,54 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+@content-padding: 32px;
+
+.self-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :global(.ant-modal) {
+    top: 0;
+    padding: 0;
+  }
+
+  :global(.ant-modal-body) {
+    padding: 0 !important;
+  }
+
+  :global(.self-modal-header) {
+    height: 137px;
+    // padding-top: 20px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    color: @primary-color;
+    & > img {
+      width: 100%;
+      position: absolute;
+      top: calc(50% + 20px);
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  :global(.self-modal-content) {
+    .hzero-font-size(14px);
+    padding: 20px @content-padding 8px;
+
+    :global(.user-info) {
+      color: @hzero-primary-color-2;
+    }
+  }
+
+  :global(.self-modal-footer) {
+    padding: 0 @content-padding 24px;
+    text-align: right;
+
+    :global(.go-info) {
+      height: 28px;
+    }
+  }
+}

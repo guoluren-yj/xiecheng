@@ -1,0 +1,31 @@
+// 不换行
+.popover-wrapper {
+  .title-wrapper,
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #5a6677;
+
+    .title-text,
+    .content-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+// 换行
+.wrap-popover-wrapper {
+  .title-wrapper,
+  .content-wrapper {
+    display: flex;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #5a6677;
+  }
+}

@@ -1,0 +1,66 @@
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.orderLine-table {
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      height: auto !important;
+      // border: none;
+    }
+
+    .c7n-pro-select-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-select {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-input {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-input-number {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-calendar-picker {
+      height: 0.28rem !important;
+    }
+  }
+}
+
+.orderLine-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,45 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+@import '~hzero-front/lib/srm-variables.less';
+
+.agm-table {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: fit-content !important;
+      line-height: unset !important;
+      .c7n-pro-btn-link + .c7n-pro-btn-link {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+.agm-tag {
+  :global {
+    i {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.sagm-detail-out-price {
+  position: relative;
+  :global {
+    span {
+      position: relative;
+      top: -1px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-right: 8px;
+      display: inline-block;
+    }
+    .green {
+      background-color: @green-6;
+    }
+    .red {
+      background-color: @red-6;
+    }
+  }
+}

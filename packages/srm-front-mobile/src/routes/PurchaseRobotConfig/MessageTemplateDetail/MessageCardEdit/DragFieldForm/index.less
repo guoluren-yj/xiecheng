@@ -1,0 +1,76 @@
+.field-title-tag {
+  font-size: 12px;
+  color: #000;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 12px;
+  // margin-top: 12px;
+  margin-bottom: 13px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 3px;
+    width: 3px;
+    height: 12px;
+    background: #29bece;
+  }
+}
+.field-item {
+  margin-bottom: 8px;
+  &:hover {
+    .edit-button-form-drag,
+    .del-icon {
+      visibility: visible;
+    }
+  }
+  .drag-field-cards {
+    width: 100%;
+    padding: 18px 8px 8px 8px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+  }
+  .drag-field-card {
+    width: 100%;
+    padding: 7px 0 14px 0;
+  }
+  .edit-button-form-drag-container {
+    position: absolute;
+    // left: -15px;
+    // top: 12px;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .edit-button-form-drag {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    &:hover {
+      visibility: visible;
+    }
+  }
+  .del-icon-container {
+    position: absolute;
+    // right: -15px;
+    // top: 12px;
+    right: -15px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .del-icon {
+    font-size: 12px;
+    visibility: hidden;
+    cursor: pointer;
+    &:hover {
+      visibility: visible;
+    }
+  }
+}

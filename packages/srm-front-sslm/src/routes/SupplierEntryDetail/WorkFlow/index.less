@@ -1,0 +1,155 @@
+@import '~hzero-front/lib/srm-variables';
+.workflow {
+  background: #f4f5f7;
+  padding: 8px;
+
+  .workflow-extra {
+    :global {
+      .af-basic-container {
+        margin: 0;
+      }
+      .af-basic-bottom-remain-area {
+        margin: 0;
+        .c7n-pro-btn.c7n-pro-btn-flat {
+          color: @text-1;
+        }
+      }
+    }
+  }
+
+  .workflow-wrap {
+    background: #f4f5f7;
+    :global {
+      // 表单样式
+      .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+        padding: 0;
+        line-height: 1.5;
+        // margin-bottom: 4px;
+        // margin-top: 16px;
+      }
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+        padding: 4px 0 16px 0;
+      }
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+        line-height: 1.5;
+      }
+      .c7n-pro-vertical-form-display {
+        .c7n-pro-field-label.c7n-pro-field-required {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      .page-content {
+        margin: 0 !important;
+        padding: 0;
+        background: #f4f5f7;
+        .top-section-title {
+          display: none;
+        }
+        .card-wrap {
+          padding: 20px;
+          margin: 8px 0;
+          background: #fff;
+          :global {
+            .c7n-tabs-content {
+              .c7n-tabs-tabpane {
+                padding: 0;
+              }
+            }
+          }
+          // 卡片标题
+          .card-detail-title {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            .card-detail-checkbox {
+              float: right;
+              font-size: 12px;
+              color: #1d2129;
+              font-weight: 400;
+            }
+          }
+          .card-detail-title-tips {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            // color: #868D9C;
+            color: rgba(0, 0, 0, 0.45);
+          }
+          .card-remark {
+            padding-bottom: 16px;
+            .c7n-pro-field-label.c7n-pro-field-label-vertical {
+              font-size: 14px;
+              color: #868d9c;
+              font-weight: 400;
+              margin-bottom: 4px;
+            }
+            .c7n-pro-output-wrapper.c7n-pro-field.c7n-pro-output {
+              font-size: 14px;
+              color: #1d2129;
+              font-weight: 600;
+            }
+          }
+          .enterprise-title {
+            margin: 0 -16px;
+            border-bottom: 1px solid #e5e7ec;
+            div {
+              padding: 0 16px 16px;
+            }
+          }
+          .enterprise-title-no-border {
+            margin: 0 -16px;
+            div {
+              padding: 0 16px 16px;
+            }
+          }
+        }
+      }
+      .c7n-tabs.c7n-tabs-left {
+        .c7n-tabs-bar {
+          padding: 16px 0;
+          .c7n-tabs-bar-inner {
+            .c7n-tabs-tab {
+              text-align: left;
+              padding-left: 0;
+            }
+          }
+        }
+        .c7n-tabs-content {
+          padding: 20px 0 20px 20px;
+          .tab-pane-content-title {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 信息补录
+.supplier-entry-approval-supplement {
+  :global {
+    .top-section-title {
+      display: none;
+    }
+  }
+}
+
+// 企业标签样式
+.enterprise-tags-wrap {
+  margin: 8px 0 8px;
+  background-color: #fff;
+  padding: 20px;
+  .enterprise-tags-title {
+    font-size: 16px;
+    color: #1d2129;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+}

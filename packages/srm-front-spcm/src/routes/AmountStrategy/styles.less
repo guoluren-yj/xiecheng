@@ -1,0 +1,91 @@
+// 策略明细样式
+.strategy-content {
+  padding: 0 !important;
+  :global {
+    .c7n-tabs-bar {
+      min-height: calc(100vh - 152px) !important;
+      min-width: 180px;
+      max-width: 220px;
+      .c7n-tabs-bar-inner {
+        .c7n-tabs-nav-wrap {
+          padding: 16px 0;
+          .c7n-tabs-tab {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    .c7n-tabs-content {
+      padding: 20px !important;
+      .top-section-title {
+        display: none;
+      }
+    }
+  }
+}
+
+// 模板历史记录样式
+.history-version-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  :global {
+    .c7n-menu-item {
+      height: auto;
+      line-height: normal;
+      padding: 8px 16px;
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}
+.history-version-submenu {
+  :global {
+    .c7n-menu-submenu-title {
+      width: 140px;
+    }
+    .c7n-menu.c7n-menu-sub.c7n-menu-vertical {
+      max-height: 400px;
+      overflow-y: auto;
+      .c7n-menu-item {
+        height: auto;
+        line-height: normal;
+        padding: 8px 16px;
+      }
+    }
+  }
+  .history-version-menu-item-wrap {
+    &:hover {
+      .history-version-menu-title {
+        color: @primary-color;
+      }
+    }
+    .history-version-menu-title {
+      font-size: 12px;
+      color: #1d2129;
+      line-height: 20px;
+    }
+    .history-version-menu-person {
+      font-size: 12px;
+      color: #868d9c;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+}

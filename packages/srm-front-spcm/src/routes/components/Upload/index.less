@@ -1,0 +1,45 @@
+.filesNumber {
+  margin-left: 8px;
+}
+
+// 非按钮上传
+.fileNumber, .filesNumber {
+  :global {
+    .c7n-tag {
+      background-color: @link-color !important;
+      color: #fff;
+      height: auto !important;
+      line-height: 15px !important;
+      margin-left: 4px !important;
+    }
+  }
+}
+
+.viewer-container {
+  position: fixed;
+  opacity: 0;
+  &-show {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    opacity: 1;
+  }
+}
+
+.file-list .file-list-item {
+  &-a,
+  &-icon,
+  &-a:hover,
+  &-icon:hover {
+    color: @link-color;
+  }
+  &-icon {
+    float: right;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 6px;
+    cursor: pointer;
+  }
+}

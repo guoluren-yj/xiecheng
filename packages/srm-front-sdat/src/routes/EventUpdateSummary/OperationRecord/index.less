@@ -1,0 +1,37 @@
+@import '~hzero-front/lib/srm-variables';
+
+.operation-record-modal-basic-panel {
+  :global {
+    .c7n-timeline-item:last-child {
+      .c7n-timeline-item-tail {
+        display: none;
+      }
+    }
+  }
+}
+
+.operation-record-modal-basic {
+  width: 100%;
+  max-height: 54px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.operation-record-modal-basic:hover {
+  text-overflow: clip;
+  white-space: normal;
+  display: block;
+}
+
+.chart-no-content-message {
+  margin-top: 8px;
+  color: @text-3;
+}
+
+.operation-record-modal-basic-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

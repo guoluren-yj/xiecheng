@@ -1,0 +1,83 @@
+.template-table {
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  .template-label {
+    background: #fafafa;
+    width: 10%;
+  }
+  td {
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    width: 40%;
+  }
+}
+
+.no-data {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 24px;
+}
+
+.template-upload {
+  > div {
+    width: 204px !important;
+    height: 195px !important;
+    > div {
+      width: 204px !important;
+      height: 195px !important;
+    }
+  }
+}
+
+.template-upload-logo {
+  > div {
+    width: 204px !important;
+    height: 146px !important;
+    > div {
+      width: 204px !important;
+      height: 146px !important;
+    }
+  }
+}
+
+.template-title,
+.template-footer {
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+  margin-left: 13px !important;
+}
+.template-footer {
+  line-height: 24px !important;
+}
+.template-title:before,
+.template-footer:before {
+  content: '';
+  width: 3px;
+  position: absolute;
+  height: 20px;
+  background: #29bece;
+  left: 0;
+  top: 2px;
+  border-radius: 3px;
+}
+.template-footer:before {
+  left: -13px;
+  top: 3px;
+}
+.template-upload-form {
+  margin: 12px auto 24px;
+  padding-left: 15px;
+}
+.template-content {
+  padding: 0 15px;
+  .template-comdes {
+    height: 150px;
+    margin-top: 15px;
+  }
+  :global(.ant-form-explain) {
+    margin-top: 5px;
+  }
+}

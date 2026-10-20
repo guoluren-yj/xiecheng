@@ -1,0 +1,129 @@
+.detail-content {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 !important;
+  padding: 8px 0 0 0;
+  border: 0 !important;
+
+  .card-content {
+    padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .detail-card {
+      .card-title {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      :global {
+        .c7n-pro-field-label-vertical.c7n-pro-field-label.c7n-pro-field-label-useColon {
+          padding: 0;
+          line-height: 1.5;
+          margin-bottom: 4px;
+          margin-top: 16px;
+        }
+        .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+          padding: 0;
+        }
+        .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper span {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+// 联系人信息-联系电话样式
+.LineForm {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+  }
+}
+
+// TextField前置标签样式
+.addon-before-style {
+  .c7n-pro-input-group-before {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    width: 130px;
+  }
+  :global {
+    .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-output::after {
+      content: ':';
+    }
+  }
+}
+
+// 处理表单，使用FormField时，只读页面不展示必填*标识
+.c7n-pro-readOnly-style {
+  table > tbody > tr:first-child > td > label {
+    margin-top: 0 !important;
+  }
+  :global {
+    .c7n-pro-field-label-vertical.c7n-pro-field-required.c7n-pro-field-label:before,
+    .c7n-pro-field-required.c7n-pro-field-label.c7n-pro-field-label-useColon label > span:before,
+    .c7n-pro-field-row .c7n-pro-field-required.c7n-pro-field-label-useColon:before {
+      display: none;
+      content: '';
+    }
+  }
+}
+
+// ”评估进度“样式
+.progress-steps {
+  :global {
+    .c7n-steps-item {
+      .c7n-steps-item-tail {
+        left: 8px;
+      }
+      .c7n-steps-item-icon {
+        margin-right: 8px;
+      }
+      .c7n-steps-item-content {
+        .c7n-steps-item-title {
+          margin-top: 2px;
+        }
+        .c7n-steps-item-description {
+          color: #4e5769;
+        }
+      }
+      &:last-child {
+        .c7n-steps-item-content {
+          min-height: 24px;
+        }
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-process,
+    .c7n-steps-item.c7n-steps-item-finish {
+      .c7n-steps-item-icon,
+      .c7n-steps-item-title {
+        color: #179454;
+        font-weight: 400;
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-wait {
+      .c7n-steps-item-icon {
+        color: #c9cdd4;
+      }
+      .c7n-steps-item-title {
+        color: #868d9c;
+      }
+    }
+  }
+}
+
+.indicator-status-popover {
+  :global {
+    .c7n-popover-content {
+      width: 680px;
+    }
+  }
+}

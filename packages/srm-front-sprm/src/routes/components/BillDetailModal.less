@@ -1,0 +1,58 @@
+.sprm-bill-detail-tabs {
+  :global {
+    .c7n-tabs-tab {
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .c7n-tabs-bar {
+      border-bottom: none;
+      margin: 0.16rem 0 -0.1rem 0;
+    }
+
+    .c7n-tabs-content {
+      padding-top: 0.16rem;
+    }
+
+    .sprm-execution-bill-mode {
+      .c7n-radio-button-wrapper {
+        font-size: 14px;
+        height: 30px;
+        min-width: 44px;
+        line-height: 26px;
+        border: none;
+        display: inline-block;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.06);
+
+        span:last-child {
+          padding: 3.75px 6px;
+          color: rgba(0, 0, 0, 0.45);
+        }
+      }
+
+      .c7n-radio-button-wrapper:first-child {
+        border-radius: 2px 0 0 2px;
+      }
+
+      .c7n-radio-button-wrapper:last-child {
+        border-radius: 0 2px 2px 0;
+      }
+
+      .c7n-radio-button-wrapper:not(:first-child)::before {
+        content: none;
+      }
+
+      .c7n-radio-button-wrapper-checked {
+        box-shadow: none;
+
+        span:last-child {
+          font-weight: 600;
+          background-color: #fff;
+          border-radius: 2px;
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+}

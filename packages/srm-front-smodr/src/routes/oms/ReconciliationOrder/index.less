@@ -1,0 +1,28 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.page-content-layout {
+  :global {
+    .header-line {
+      // margin: 8px 0 16px 0;
+      padding-bottom: 16px;
+      padding-left: 11px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 16px;
+      // border-bottom: 1px solid #eee;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+      }
+    }
+    .other {
+      margin-top: 32px;
+    }
+  }
+}

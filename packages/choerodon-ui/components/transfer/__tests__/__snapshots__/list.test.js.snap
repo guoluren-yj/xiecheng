@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should render correctly 1`] = `
+<div
+  class="c7n-transfer-list"
+>
+  <div
+    class="c7n-transfer-list-header"
+  >
+    <label
+      class="c7n-checkbox-wrapper"
+    >
+      <span
+        class="c7n-checkbox c7n-checkbox-indeterminate"
+      >
+        <input
+          class="c7n-checkbox-input"
+          type="checkbox"
+        />
+        <span
+          class="c7n-checkbox-inner"
+        />
+      </span>
+    </label>
+    <span
+      class="c7n-transfer-list-header-selected"
+    >
+      <span>
+        1/3 
+      </span>
+      <span
+        class="c7n-transfer-list-header-title"
+      />
+    </span>
+  </div>
+  <div
+    class="c7n-transfer-list-body"
+  >
+    <ul
+      class="c7n-transfer-list-content"
+    >
+      <li
+        class="c7n-transfer-list-content-item"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox c7n-checkbox-checked"
+          >
+            <input
+              checked=""
+              class="c7n-checkbox-input"
+              type="checkbox"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+        </label>
+        <span />
+      </li>
+      <li
+        class="c7n-transfer-list-content-item"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox"
+          >
+            <input
+              class="c7n-checkbox-input"
+              type="checkbox"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+        </label>
+        <span />
+      </li>
+      <li
+        class="c7n-transfer-list-content-item c7n-transfer-list-content-item-disabled"
+      >
+        <label
+          class="c7n-checkbox-wrapper"
+        >
+          <span
+            class="c7n-checkbox c7n-checkbox-disabled"
+          >
+            <input
+              class="c7n-checkbox-input"
+              disabled=""
+              type="checkbox"
+            />
+            <span
+              class="c7n-checkbox-inner"
+            />
+          </span>
+        </label>
+        <span />
+      </li>
+    </ul>
+    <div
+      class="c7n-transfer-list-body-not-found"
+    >
+      Not Found
+    </div>
+  </div>
+</div>
+`;

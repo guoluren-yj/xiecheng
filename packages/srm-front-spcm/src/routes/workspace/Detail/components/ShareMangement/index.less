@@ -1,0 +1,22 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.alert-wrapper {
+  :global {
+    .c7n-alert-info {
+      background-color: @blue-1;
+      border: 0;
+    }
+    .c7n-alert-icon,
+    .c7n-alert-message {
+      color: @blue-6;
+    }
+    .c7n-alert-message {
+      // margin-left: 8px;
+      text-align: center; // src-27383 小伍说文字居中对齐
+    }
+
+    .c7n-alert-close-icon .icon-close {
+      color: @blue-6;
+    }
+  }
+}

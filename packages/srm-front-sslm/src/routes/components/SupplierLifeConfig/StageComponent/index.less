@@ -1,0 +1,24 @@
+.stage-canvas {
+  :global {
+    .stage-edge-menu {
+      & > div {
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background: rgba(29, 33, 41, 0.8);
+        & > img {
+          padding: 6px;
+          cursor: pointer;
+        }
+        & > img:first-child {
+          margin-right: 4px;
+        }
+        & > img:hover {
+          background: #4c5465;
+        }
+      }
+    }
+  }
+}

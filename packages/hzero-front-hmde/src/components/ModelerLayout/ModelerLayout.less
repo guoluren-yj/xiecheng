@@ -1,0 +1,67 @@
+@import '../../lowcodeGlobalColor.less';
+
+.layoutSpin {
+  height: 100% !important;
+
+  :global {
+    .c7n-spin-container {
+      height: 100% !important;
+    }
+  }
+}
+
+.modelerLayout {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+
+  :global {
+    .c7n-spin-nested-loading {
+      height: 100%;
+    }
+  }
+
+  .modelerPageContainer {
+    overflow: hidden;
+    :global {
+      .page-head {
+        height: 40px;
+        min-height: 40px;
+        border-bottom: none;
+
+        .page-head-title {
+          font-size: 24px;
+        }
+      }
+
+      .page-content-wrap {
+        height: 100%;
+        .page-content {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .no-permission {
+    text-align: center;
+
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+
+    > img {
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    > span {
+      font-size: 16px;
+      color: #5a6677;
+      text-align: center;
+    }
+  }
+}

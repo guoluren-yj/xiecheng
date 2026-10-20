@@ -1,0 +1,1 @@
+新版hzero-front中，Icons组件和IconPicker需要‘assets/icons’目录

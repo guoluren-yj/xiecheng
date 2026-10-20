@@ -1,0 +1,263 @@
+.check-rules-basic {
+  margin: 8px;
+  height: calc(100vh - 152px);
+  display: flex;
+  align-items: stretch;
+}
+
+.check-rules-left {
+  background-color: #fff;
+  display: flex;
+}
+
+.check-rules-left-content {
+  flex: 1;
+  // padding: 16px;
+  width: 242px;
+  overflow-y: auto;
+}
+
+.tree-container {
+  padding: 16px 0;
+
+  .tree-node {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    &.selected {
+      background-color: #f5f5f5;
+    }
+
+    // 垂直连接线 - 默认从顶部到底部
+    &::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #d9d9d9;
+    }
+
+    // 水平连接线
+    &::after {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      width: 12px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+
+    // 根节点不显示连接线
+    &.root-node {
+      &::before {
+        display: none !important;
+      }
+
+      &::after {
+        display: none !important;
+      }
+    }
+
+    // 最后一个子节点的垂直连接线只到中间位置，形成L型
+    &.last-child {
+      &::before {
+        height: 50% !important;
+      }
+    }
+
+    .expand-icon {
+      position: relative;
+      z-index: 2;
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+      font-size: 12px;
+      color: #1d2129;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .leaf-icon {
+      width: 16px;
+      margin-right: 4px;
+    }
+
+    .node-title {
+      flex: 1;
+      padding-left: 4px;
+      color: #1d2129;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .tree-children {
+    position: relative;
+    padding-left: 36px;
+
+    .tree-node {
+      &::before {
+        left: -12px;
+      }
+
+      &::after {
+        left: -12px;
+      }
+
+      // 最后一个子节点需要特殊处理
+      &.last-child {
+        // 覆盖父容器的垂直连接线，只显示到当前节点的中间位置
+        &::before {
+          height: 50% !important;
+          top: 0 !important;
+        }
+      }
+    }
+
+    // 最后一个子节点后面不应该有垂直连接线
+    .tree-node.last-child ~ * {
+      &::before {
+        display: none;
+      }
+    }
+
+    // 为最后一个子节点的父容器添加特殊样式
+    &:has(.tree-node.last-child:last-child)::before {
+      bottom: 50%;
+    }
+  }
+}
+
+.tree-node-item {
+  :global {
+    .c7n-menu-item {
+      display: flex;
+      // height: 12px !important;
+      // line-height: 12px !important;
+      padding: 8px 16px !important;
+    }
+  }
+}
+
+.tree-node-drop-menu {
+  padding: 4px 0;
+
+  .tree-node-drop-menu-item {
+    padding: 7px 16px;
+
+    &:hover {
+      background-color: #f2f3f5;
+    }
+  }
+}
+
+.check-rule-card-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #1d2129;
+  font-weight: 600;
+}
+
+.toggle-button {
+  width: 12px;
+  height: 56px;
+  border-radius: 0 25px 25px 0;
+  background-color: #d8d6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+
+  .anticon {
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+.check-rules-right {
+  margin-left: 2px;
+  padding: 16px;
+  flex: 1;
+  background-color: #fff;
+  overflow-y: auto;
+
+  :global {
+    .c7n-pro-table-filter-bar-add-field {
+      display: none;
+    }
+  }
+}
+
+.basic-info {
+  margin-bottom: 24px;
+
+  .info-row {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 14px;
+
+    .label {
+      color: #666;
+      margin-right: 8px;
+      min-width: 120px;
+    }
+
+    .value {
+      color: #333;
+      font-weight: 500;
+    }
+  }
+}
+
+.check-rules-no-data {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  :global {
+    svg path {
+      color: @primary-color;
+    }
+  }
+}
+
+.risk-type-option-tag {
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #f06200;
+  line-height: 18px;
+  font-weight: 600;
+  background: rgba(242, 128, 26, 0.15);
+  border-radius: 2px;
+}
+
+.risk-type-option-tag-org {
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #179454;
+  line-height: 18px;
+  font-weight: 600;
+  background: rgba(71, 184, 131, 0.15);
+  border-radius: 2px;
+}

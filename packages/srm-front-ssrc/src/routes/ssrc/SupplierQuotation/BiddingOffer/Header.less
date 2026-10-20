@@ -1,0 +1,206 @@
+/*!
+    Message - 供应商报价头信息
+    @date 2011-1-29
+    @author: hzl <zili.hou@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+@import '~hzero-front/lib/srm-variables.less';
+
+.ssrc-inquiry-header {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+.contentStyle {
+  padding: 20px;
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+
+  .biddingDetail {
+    width: 100%;
+    min-width: 1045px;
+    .detailLeft {
+      float: left;
+      width: 26%;
+      min-width: 270px;
+      font-size: 14px;
+      border-top: 1px solid #e8e8e8;
+      .leftList {
+        height: 90px;
+        border-bottom: 1px solid #e8e8e8;
+        .listTop {
+          height: 30px;
+          line-height: 30px;
+          .rfxLineItemNumLeft {
+            float: left;
+            margin-left: 10px;
+          }
+          .tagRight {
+            float: right;
+            margin-right: 10px;
+          }
+        }
+        .listBottom {
+          height: 30px;
+          line-height: 30px;
+          .itemCodeStyle {
+            margin-left: 10px;
+            width: calc(100% - 90px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .carLeft {
+            margin-left: 10px;
+            float: left;
+            font-size: 14px;
+          }
+          .taxRateRight {
+            margin-right: 10px;
+            float: right;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .detailRight {
+      float: left;
+      width: 74%;
+      border: 1px solid #e8e8e8;
+      .detailTitle {
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #e8e8e8;
+        .titleLeft {
+          float: left;
+          font-size: 18px;
+          font-weight: 500;
+          .titleName {
+            margin: 0 15px 0 10px;
+          }
+        }
+        .titleRight {
+          float: right;
+          font-size: 14px;
+          .icon {
+            margin-left: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .footerBottom {
+        position: fixed;
+        bottom: 1px;
+        left: 236px;
+        text-align: right;
+        right: 32px;
+        z-index: 1;
+        padding: 8px 32px;
+        background: #fff;
+        box-shadow: 0 -0.5px 1px 0 #bbb;
+        .buttonSave {
+          margin-right: 16px;
+        }
+      }
+    }
+    .pagination {
+      margin: 10px 0;
+      float: right;
+      z-index: 3;
+    }
+  }
+  .subTitle {
+    width: 65%;
+
+    & > h4 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .verticalLine {
+        width: 2px;
+        height: 15px;
+        background: @primary-color;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.priceColorStyle {
+  background: #e6f7ff;
+}
+.detailHover {
+  &:hover {
+    color: #333;
+    background-color: #e8e8e8;
+  }
+}
+
+.leftHover {
+  &:hover {
+    background: #f8f8f8;
+    border-left: 3px solid @primary-color;
+  }
+}
+
+.selectItem {
+  background: #f8f8f8;
+  border-left: 3px solid @primary-color;
+  .leftHover;
+}
+
+.contentRightStyle :global {
+  .ant-table {
+    .ant-table-body {
+      // overflow-x: hidden !important;
+    }
+  }
+}
+
+.labelCol {
+  font-weight: bold;
+  border-left: 2px solid #1e3255;
+  text-indent: 10px;
+  color: #1e3255;
+  display: inline-block;
+  line-height: 14px;
+}
+
+.noBtn {
+  border: none;
+  color: #000;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-weight: 400;
+  padding: 0 16px;
+  width: 100%;
+  text-align: left;
+  &:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+}

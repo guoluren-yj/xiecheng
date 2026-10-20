@@ -1,0 +1,21 @@
+@import '~hzero-front/lib/srm-variables';
+
+.more-btn-wrap {
+  :global {
+    .c7n-pro-btn-wrapper.c7n-pro-btn.c7n-pro-btn-link {
+      margin-left: 0;
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .icon.icon-expand_more {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+:has(> .more-btn-wrap) {
+  display: flex;
+  align-items: center;
+}

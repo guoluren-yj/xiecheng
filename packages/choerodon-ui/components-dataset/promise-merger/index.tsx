@@ -1,0 +1,114 @@
+import { action, IReactionDisposer, toJS } from 'mobx';
+import chunk from 'lodash/chunk';
+import Cache, { refreshCacheOptions } from '../cache';
+
+const KEY = Symbol('KEY');
+
+export default class PromiseMerger<K, ARGS, V> {
+  timeout: number;
+
+  limit: number;
+
+  cache: Cache<string, K>;
+
+  dataMap: Map<string, V>;
+
+  promiseMap: Map<string | symbol, Map<string, { resolves: Function[]; rejects: Function[] }>>;
+
+  waitID;
+
+  callback: (codes: string[], args: ARGS, dataList: V[]) => Promise<{ [key: string]: K }>;
+
+  reaction: IReactionDisposer;
+
+  constructor(callback: (codes: string[], args: ARGS, dataList: V[]) => Promise<{ [key: string]: K }>, config, timeout = 200, limit = 0) {
+    this.timeout = timeout;
+    this.limit = limit;
+    this.promiseMap = new Map<string | symbol, Map<string, { resolves: Function[]; rejects: Function[] }>>();
+    this.cache = new Cache<string, K>(toJS(config));
+    this.dataMap = new Map<string, V>();
+    this.callback = callback;
+    this.reaction = refreshCacheOptions(this.cache);
+  }
+
+  dispose() {
+    this.reaction();
+  }
+
+  @action
+  add(code: string, getBatchKey: ((defaultKey: symbol) => string | symbol) | undefined, args: ARGS, data?: V): Promise<K> {
+    const { cache, promiseMap, dataMap } = this;
+    const item = cache.get(code);
+    if (item !== undefined) {
+      return Promise.resolve(item);
+    }
+    if (data) {
+      dataMap.set(code, data);
+    }
+    const batchKey = getBatchKey ? getBatchKey(KEY) : KEY;
+    return new Promise<K>((resolve, reject) => {
+      const promiseList = promiseMap.get(batchKey) || new Map();
+      promiseMap.set(batchKey, promiseList);
+      let promise = promiseList.get(code);
+      const resolveCallback = () => {
+        resolve(cache.get(code));
+      };
+      if (promise) {
+        promise.resolves.push(resolveCallback);
+        promise.rejects.push(reject);
+      } else {
+        const batchLoader = (codeList: string[]) => {
+          if (process.env.LOGGER_LEVEL === 'info') {
+            // eslint-disable-next-line no-console
+            console.info(`batch request: ${codeList}`);
+          }
+          this.callback(codeList, args, codeList.reduce<V[]>((list, $code) => {
+            const $value = dataMap.get($code);
+            if ($value !== undefined) {
+              list.push($value);
+            }
+            return list;
+          }, [])).then(res => {
+            codeList.forEach((key) => {
+              const value = promiseList.get(key);
+              promiseList.delete(key);
+              const { resolves = [] } = value || {};
+              if (res) {
+                const data = res[key];
+                this.cache.set(key, data);
+                resolves.forEach(r => r(data));
+              } else {
+                resolves.forEach(r => r());
+              }
+            });
+          })
+            .catch(error => {
+              codeList.forEach(key => {
+                const value = promiseList.get(key);
+                promiseList.delete(key);
+                const { rejects = [] } = value || {};
+                rejects.forEach(r => r(error));
+              });
+            });
+        }
+        promise = {
+          resolves: [resolveCallback],
+          rejects: [reject],
+        };
+        promiseList.set(code, promise);
+        if (this.waitID) {
+          clearTimeout(this.waitID);
+        }
+        this.waitID = setTimeout(() => {
+          if (this.limit) {
+            chunk(Array.from(promiseList.keys()), this.limit).forEach(list => {
+              batchLoader(list);
+            });
+          } else {
+            batchLoader(Array.from(promiseList.keys()));
+          }
+        }, this.timeout);
+      }
+    });
+  }
+}

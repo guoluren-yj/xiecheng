@@ -1,0 +1,44 @@
+.table-box {
+  height: calc(100vh - 300px);
+}
+
+.base-content-body {
+  :global {
+    .c7n-pro-modal-drawer-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.blacklist-list-page-basic {
+  :global {
+    .c7n-pro-table-search-bar-merge-field .c7n-pro-input-prefix {
+      margin-left: 8px;
+    }
+  }
+}
+
+.search-bar-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.quota-count {
+  flex: none;
+  margin-top: 10px;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.paid-feature-tip {
+  margin: 8px 0 8px;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 500;
+}

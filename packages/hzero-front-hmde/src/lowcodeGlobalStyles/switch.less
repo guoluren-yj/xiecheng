@@ -1,0 +1,75 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  .hmde,
+  .lowcode-m-modal {
+    :global {
+      // C7N 的 Pro 组件
+      .c7n-pro-switch-label {
+        min-width: 0.44rem;
+        height: 0.18rem;
+        border-radius: 2px;
+      }
+      .c7n-pro-switch + .c7n-pro-switch-label {
+        padding: 0 0.22rem 0 0.05rem;
+        background: rgba(0, 0, 0, 0.25);
+      }
+      .c7n-pro-switch + .c7n-pro-switch-label::after {
+        background-image: url(../assets/icon/switch-off@2x.png);
+        background-size: 100% 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 0.26rem;
+        height: 0.2rem;
+      }
+      .c7n-pro-switch:checked + .c7n-pro-switch-label {
+        padding: 0 0.22rem 0 0.05rem;
+        background: rgba(59, 135, 245, 0.4);
+      }
+      .c7n-pro-switch:checked + .c7n-pro-switch-label::after {
+        background-image: url(../assets/icon/switch.jpg);
+        background-size: 100% 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 0.26rem;
+        height: 0.2rem;
+      }
+      // Hzero 组件
+      .ant-switch {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        width: 0.44rem;
+        height: 0.18rem;
+      }
+      .ant-switch-checked {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        // background: rgba(59, 135, 245, 0.4) !important;
+        border-radius: 2px;
+        width: 0.44rem;
+        height: 0.18rem;
+      }
+
+      .ant-switch::after {
+        background-image: url(../assets/icon/switch-off@2x.png);
+        background-size: 100% 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 0.26rem;
+        height: 0.2rem;
+        margin-top: -0.03rem;
+      }
+      .ant-switch-checked::after {
+        background-image: url(../assets/icon/switch.jpg);
+        background-size: 100% 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 0.26rem;
+        height: 0.2rem;
+        margin-top: -0.03rem;
+      }
+    }
+  }
+}

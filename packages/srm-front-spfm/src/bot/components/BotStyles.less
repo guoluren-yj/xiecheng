@@ -1,0 +1,1021 @@
+/**
+ * BotStyles.less — 盘古 Bot 全部样式，使用 CSS Modules 导入
+ *
+ * 所有 Bot 组件共享此样式文件：
+ *   BotPanel.js         → import styles from './BotStyles.less'
+ *   BotMessages.js      → import styles from './BotStyles.less'
+ *   BotInput.js         → import styles from './BotStyles.less'
+ *   BotConfirmationDialog.js → import styles from './BotStyles.less'
+ *   BotMarkdown.js      → import styles from './BotStyles.less'
+ *   DiffViewer.js       → import styles from './BotStyles.less'
+ *   BotToolbar.js       → import styles from './BotStyles.less'
+ *   BotErrorBoundary.js → import styles from './BotStyles.less'
+ *   BotTopControls.js   → import styles from './BotStyles.less'
+ *
+ * 类名前缀 bot- 避免与项目其他样式冲突。
+ * CSS Modules 会添加哈希后缀，通过 styles['bot-panel'] 访问。
+ *
+ * 布局参照天工 Bot（UnifiedEnhancedBot）：
+ *   flex column: top-controls → session-bar + toolbar → messages-container(flex:1) → input
+ * 消息气泡参照 TG BotMessages：
+ *   user: right-aligned, 85% max-width
+ *   assistant: left-aligned, 85% max-width
+ */
+
+/* =========================================================
+   BotPanel — 主容器
+   ========================================================= */
+
+.bot-panel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  border-left: 1px solid #e8e8e8;
+}
+
+/* =========================================================
+   BotTopControls — 顶部控制栏
+   ========================================================= */
+
+.bot-top-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+  min-height: 32px;
+}
+
+.bot-top-controls-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bot-top-controls-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bot-top-controls-btn {
+  font-size: 12px !important;
+  padding: 0 4px !important;
+}
+
+.bot-top-controls-model-label {
+  font-size: 12px;
+  color: #999;
+  margin-right: 2px;
+}
+
+.bot-top-controls-model-value {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 模型配置弹窗表单 */
+.bot-model-config-form {
+  padding: 8px 0;
+}
+
+.bot-model-config-field {
+  margin-bottom: 16px;
+}
+
+.bot-model-config-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.bot-model-config-value {
+  font-size: 14px;
+  color: #666;
+  padding: 6px 0;
+}
+
+.bot-model-config-hint {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* =========================================================
+   Session Bar
+   ========================================================= */
+
+.bot-session-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  min-height: 36px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.session-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.session-bar-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.session-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   BotToolbar — 工具栏
+   ========================================================= */
+
+.bot-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+  padding: 4px 8px 0;
+}
+
+.bot-toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.bot-toolbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.bot-toolbar-btn {
+  font-size: 12px !important;
+  padding: 0 4px !important;
+}
+
+.bot-toolbar-btn-active {
+  color: #1890ff;
+  background: rgba(24, 144, 255, 0.08) !important;
+}
+
+/* 工具开关弹出面板 */
+.bot-toolbar-settings-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  width: 240px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin-top: 4px;
+  padding: 8px;
+}
+
+.bot-toolbar-settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 6px;
+}
+
+.bot-toolbar-settings-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.bot-toolbar-settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bot-toolbar-switch-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.15s;
+}
+
+.bot-toolbar-switch-item:hover {
+  background: #f5f5f5;
+}
+
+.bot-toolbar-switch-item-enabled {
+  color: #333;
+}
+
+.bot-toolbar-switch-item-disabled {
+  color: #bbb;
+}
+
+.bot-toolbar-switch-checkbox {
+  margin-right: 6px;
+}
+
+.bot-toolbar-switch-label {
+  flex: 1;
+}
+
+.bot-toolbar-switch-indicator {
+  font-size: 10px;
+}
+
+/* 内联开关（直接铺在工具栏上） */
+.bot-toolbar-switch-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.bot-toolbar-switch-label-inline {
+  color: #555;
+  font-size: 12px;
+  user-select: none;
+}
+
+/* =========================================================
+   Messages 容器
+   ========================================================= */
+
+.bot-messages-container {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 100px;
+}
+
+.bot-messages {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* =========================================================
+   消息气泡 — 通用
+   ========================================================= */
+
+.bot-message {
+  margin-bottom: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  max-width: 85%;
+  word-break: break-word;
+  line-height: 1.6;
+  font-size: 14px;
+  transition: box-shadow 0.2s;
+}
+
+.bot-message:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 用户消息 — 右对齐蓝色气泡 */
+.bot-message-user {
+  margin-left: auto;
+  background: linear-gradient(135deg, #e6f7ff, #f0fbff);
+  border: 1px solid #91d5ff;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 1px 3px rgba(24, 144, 255, 0.1);
+}
+
+.bot-message-user-content {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #333;
+}
+
+/* AI 消息 — 左对齐白色气泡 */
+.bot-message-assistant {
+  margin-right: auto;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* 工具消息 — 左对齐绿色气泡 */
+.bot-message-tool {
+  margin-right: auto;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-bottom-left-radius: 4px;
+  font-size: 12px;
+  box-shadow: 0 1px 2px rgba(82, 196, 26, 0.08);
+  padding: 8px 12px;
+}
+
+.bot-message-tool-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #555;
+}
+
+.bot-message-tool-name {
+  font-weight: 600;
+}
+
+.bot-message-tool-content {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  font-size: 12px;
+  color: #555;
+}
+
+/* 系统消息 */
+.bot-message-system {
+  margin: 6px auto;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 100%;
+  padding: 6px 14px;
+}
+
+.bot-message-system-content {
+  color: #8c6e00;
+}
+
+/* =========================================================
+   打字指示器动画（Phase 4 新增）
+   ========================================================= */
+
+.bot-typing-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 8px;
+}
+
+.bot-typing-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #bbb;
+  border-radius: 50%;
+  animation: bot-typing-bounce 1.4s ease-in-out infinite;
+}
+
+.bot-typing-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bot-typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bot-typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bot-typing-bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   消息区空状态
+   ========================================================= */
+
+.bot-messages-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.bot-messages-empty-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+.bot-messages-empty-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.bot-messages-empty-hint {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 16px;
+}
+
+.bot-messages-empty-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  max-width: 260px;
+}
+
+.bot-messages-empty-tip-item {
+  font-size: 12px;
+  color: #999;
+  padding: 4px 8px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   BotMarkdown — Markdown 渲染
+   ========================================================= */
+
+.bot-markdown-root {
+  width: 100%;
+}
+
+.bot-markdown-content {
+  font-size: 14px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.bot-markdown-content p {
+  margin-bottom: 6px;
+}
+
+.bot-markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.bot-markdown-content pre {
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px 12px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+.bot-markdown-content code {
+  background: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.bot-markdown-content pre code {
+  background: none;
+  padding: 0;
+}
+
+/* =========================================================
+   代码块语法高亮容器（Phase 4 新增）
+   ========================================================= */
+
+.bot-code-block-container {
+  margin: 8px 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bot-code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2b2b2b;
+  padding: 6px 12px;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.bot-code-block-lang {
+  font-size: 11px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.bot-code-copy-button {
+  font-size: 11px;
+  color: #ccc;
+  background: transparent;
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  line-height: 1.4;
+}
+
+.bot-code-copy-button:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #888;
+}
+
+.bot-markdown-content ul,
+.bot-markdown-content ol {
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+
+.bot-markdown-content blockquote {
+  border-left: 3px solid #1890ff;
+  margin: 6px 0;
+  padding: 4px 12px;
+  background: #f0f5ff;
+}
+
+.bot-markdown-content table {
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.bot-markdown-content th,
+.bot-markdown-content td {
+  border: 1px solid #e8e8e8;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.bot-markdown-content th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.bot-markdown-content img {
+  max-width: 100%;
+}
+
+/* Think 思维块 — 可折叠区域 */
+.bot-think-block {
+  margin: 8px 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.bot-think-summary {
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #999;
+  font-weight: 500;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bot-think-summary:hover {
+  background: #f0f0f0;
+}
+
+.bot-think-icon {
+  font-size: 14px;
+}
+
+.bot-think-content {
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  border-top: 1px solid #f0f0f0;
+}
+
+.bot-think-content p {
+  margin-bottom: 4px;
+}
+
+/* =========================================================
+   工具调用状态指示器
+   ========================================================= */
+
+.bot-tool-calls-inline {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bot-tool-call-item {
+  font-size: 11px;
+}
+
+.bot-tool-status-executing {
+  color: #1890ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.bot-tool-status-spinner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #e8e8e8;
+  border-top-color: #1890ff;
+  border-radius: 50%;
+  animation: bot-spin 0.8s linear infinite;
+}
+
+@keyframes bot-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bot-tool-status-success {
+  color: #52c41a;
+  font-size: 12px;
+}
+
+.bot-tool-status-error {
+  color: #f5222d;
+  font-size: 12px;
+}
+
+/* =========================================================
+   处理中指示器
+   ========================================================= */
+
+.bot-message-processing {
+  margin-right: auto;
+  padding: 8px 10px;
+  font-style: italic;
+  color: #999;
+  font-size: 13px;
+}
+
+/* =========================================================
+   Input 区域
+   ========================================================= */
+
+.bot-input {
+  padding: 8px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.bot-input-container {
+  display: flex;
+  gap: 6px;
+  align-items: stretch;
+}
+
+.bot-input-actions {
+  display: flex;
+  align-items: stretch;
+
+  :global {
+    .c7n-pro-btn {
+      height: 100%;
+    }
+  }
+}
+
+/* =========================================================
+   DiffViewer — 代码差异对比
+   ========================================================= */
+
+.diff-viewer {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 400px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.diff-viewer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+.diff-viewer-line {
+  transition: background 0.1s;
+}
+
+.diff-viewer-line:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.diff-viewer-line-equal {
+  background: #fff;
+}
+
+.diff-viewer-line-add {
+  background: #e6ffed;
+}
+
+.diff-viewer-line-del {
+  background: #ffeef0;
+}
+
+.diff-viewer-line-number-old,
+.diff-viewer-line-number-new {
+  width: 32px;
+  min-width: 32px;
+  padding: 0 4px;
+  text-align: right;
+  color: #999;
+  font-size: 11px;
+  vertical-align: top;
+  border-right: 1px solid #e8e8e8;
+  user-select: none;
+}
+
+.diff-viewer-line-type {
+  width: 14px;
+  min-width: 14px;
+  padding: 0 2px;
+  text-align: center;
+  color: #999;
+  font-size: 11px;
+  vertical-align: top;
+  user-select: none;
+}
+
+.diff-viewer-line-content {
+  padding: 0 8px;
+  white-space: pre;
+  word-break: break-all;
+}
+
+.diff-viewer-line-pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.diff-viewer-empty,
+.diff-viewer-summary {
+  padding: 12px 16px;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+.diff-viewer-summary-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #666;
+}
+
+.diff-viewer-summary-stats {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.diff-viewer-add-badge {
+  color: #52c41a;
+  font-weight: 600;
+}
+
+.diff-viewer-del-badge {
+  color: #f5222d;
+  font-weight: 600;
+}
+
+/* =========================================================
+   BotConfirmationDialog — 确认弹窗
+   ========================================================= */
+
+.bot-confirm-dialog-content {
+  padding: 4px 0;
+}
+
+.bot-confirm-description {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.bot-confirm-diff-section {
+  margin-bottom: 8px;
+}
+
+.bot-confirm-diff-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.bot-confirm-newcode-section {
+  margin-bottom: 8px;
+}
+
+.bot-confirm-pre {
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-height: 300px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 0;
+}
+
+.bot-confirm-no-content {
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+}
+
+/* =========================================================
+   确认弹窗 — snippet_replace 模式（Phase 4 新增）
+   ========================================================= */
+
+.bot-confirm-optype-section {
+  margin-bottom: 10px;
+}
+
+.bot-confirm-optype-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1890ff;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+.bot-confirm-position-section {
+  margin-bottom: 10px;
+}
+
+.bot-confirm-position {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.bot-confirm-position-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.bot-confirm-position-snippet {
+  font-size: 12px;
+  font-family: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
+  color: #333;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 2px;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================================
+   BotErrorBoundary — 错误边界
+   ========================================================= */
+
+.bot-error-boundary {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.bot-error-boundary-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.bot-error-boundary-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f5222d;
+  margin-bottom: 8px;
+}
+
+.bot-error-boundary-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.bot-error-boundary-btn {
+  min-width: 120px;
+}
+
+/* =========================================================
+   上下文超限警告横幅
+   ========================================================= */
+
+.bot-context-warning-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  margin: 4px 8px;
+  background: #fff7e6;
+  border: 1px solid #ffd591;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #d46b08;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bot-context-warning-banner:hover {
+  background: #fff1cc;
+}
+
+.bot-context-warning-banner-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.bot-context-warning-banner-text {
+  flex: 1;
+}
+
+.bot-context-warning-banner-action {
+  margin-left: 12px;
+  text-decoration: underline;
+  color: #d46b08;
+  font-weight: 500;
+  white-space: nowrap;
+}

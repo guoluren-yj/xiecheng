@@ -1,0 +1,397 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+.page-title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.content-auto {
+  overflow-y: auto;
+
+  .title-h3 {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 16px;
+    font-weight: 600;
+
+    .block {
+      height: 12px;
+      width: 3px;
+      background-color: @primary-color;
+      margin-right: 8px;
+    }
+
+    .form {
+      padding: 0 0 32px 20px !important;
+    }
+  }
+}
+
+.content-hidden {
+  overflow-y: hidden;
+  .title-h3 {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 16px;
+    font-weight: 600;
+
+    .block {
+      height: 12px;
+      width: 3px;
+      background-color: @primary-color;
+      margin-right: 8px;
+    }
+
+    .form {
+      padding: 0 0 32px 20px !important;
+    }
+  }
+}
+
+.content-marg-header {
+  // margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding: 20px !important;
+
+  .return-tit {
+    position: relative;
+
+    .check-box-return {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.content-marg {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding: 20px !important;
+
+  .return-tit {
+    position: relative;
+
+    .check-box-return {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.card {
+  width: 100%;
+  height: 280px;
+  // background-color: pink;
+  overflow: hidden;
+
+  .card-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+    .card-img {
+      width: 300px;
+      height: 165px;
+      position: absolute;
+      right: 0;
+      top: 30%;
+    }
+  }
+
+  .card-right {
+    width: 35%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+    .card-right-title {
+      font-size: 16px;
+      color: text-1;
+      line-height: 24px;
+      font-weight: 500;
+      position: absolute;
+      left: 0;
+      top: 35%;
+    }
+
+    .card-right-text {
+      font-size: 14px;
+      color: text-3;
+      line-height: 22px;
+      font-weight: 400;
+      position: absolute;
+      left: 0;
+      top: 47%;
+    }
+
+    .card-right-btn {
+      position: absolute;
+      left: 0;
+      top: 70%;
+    }
+  }
+}
+
+// 策略行样式
+.line-show {
+  width: 100%;
+  height: calc(100vh - 268px);
+
+  // height: calc(100vh - 300px);
+  .all-line-show-left {
+    // 左侧盒子样式
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+
+    .tit-btn-edit {
+      //设置标题和按钮的样式
+      width: 100%;
+      height: 68px;
+      padding-bottom: 16px;
+
+      .page-title {
+        // 标题样式
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      .charts-btn-btn {
+        // 按钮样式
+        font-size: 12px;
+        // margin-right: 8px;
+        font-weight: 400 !important;
+      }
+
+      :global {
+        .c7n-pro-btn-wrapper {
+          font-size: 12px;
+          font-weight: 800;
+          color: #29bece !important;
+        }
+      }
+    }
+
+    .tit-btn {
+      //设置标题和按钮的样式
+      width: 100%;
+      height: 40px;
+      padding-bottom: 16px;
+
+      .page-title {
+        // 标题样式
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      .charts-btn-btn {
+        // 按钮样式
+        margin-right: 8px;
+      }
+    }
+
+    .left-charts {
+      // 流程图盒子
+      width: 100%;
+      height: calc(100% - 68px);
+
+      .left-charts-flow {
+        // 流程图
+        width: 100%;
+        height: 100%;
+        background-color: #fafafa;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.line-show:after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.line-show-right {
+  padding-left: 5px;
+
+  :global {
+    tr:last-child .c7n-pro-field {
+      margin-bottom: 0;
+    }
+
+    .c7n-pro-field {
+      margin-bottom: 16px;
+    }
+
+    .c7n-pro-field-wrapper {
+      padding: 0 10px 0 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+
+      .title-h3 {
+        display: flex !important;
+        align-items: center !important;
+        margin-bottom: 16px;
+
+        .block {
+          height: 16px;
+          width: 4px;
+          background-color: #29bece;
+          // margin-right: 16px;
+          margin-right: 8px;
+        }
+      }
+
+      .c7n-pro-field {
+        .block {
+          width: 4px;
+          height: 16px;
+          background-color: #29bece;
+        }
+      }
+    }
+  }
+
+  .form-text {
+    scrollbar-width: none;
+    /* firefox */
+    // 隐藏滚动条
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    // 隐藏滚动条
+    padding-top: 0;
+    overflow-y: auto;
+
+    :global {
+      .c7n-pro-select-group-help {
+        height: 32px;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .form-text::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+  }
+}
+
+// 新流程图样式
+.new-line-charts {
+  width: 100%;
+  // height: calc(100vh - 365px); // dev test
+  height: calc(100vh - 315px); // prod
+
+  // padding: 16px;
+  .page-title {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 94%;
+    //  background-color: #fafafa;
+    overflow: hidden;
+  }
+}
+
+// 新流程图样式-只读
+.new-line-charts-read {
+  width: 100%;
+  // height: calc(100vh - 380px); // dev test
+  height: calc(100vh - 325px); // prod
+
+  // padding: 16px;
+  .page-title {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 94%;
+    //  background-color: #fafafa;
+    overflow: hidden;
+  }
+}
+
+.new-line-modal {
+  width: 100%;
+  height: calc(100vh - 338px);
+
+  // padding: 16px;
+  .page-title {
+    // 标题样式
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .new-charts-img {
+    // 流程图
+    width: 100%;
+    height: 94%;
+    //  background-color: #fafafa;
+    overflow: hidden;
+  }
+}
+
+// 明细变更返回按钮样式
+.header-style {
+  position: relative;
+  .back-style {
+    float: left;
+    width: 40px;
+    height: 48px;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    // position: absolute;
+    // top: 40;
+    // left: 20;
+    .back-style-dev {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      .back-style-icon {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+    .back-style-dev:hover {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #f0f2f5;
+    }
+  }
+  // 明细变更返回按钮样式
+  .header-style-box {
+    .page-head-title {
+      margin-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '~hzero-front/lib/srm-variables';
+
+.container {
+  > div {
+    height: 18px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+    margin: 0 0 0.04rem;
+
+    .left-label {
+      color: #747474;
+    }
+
+    span + span {
+      margin-left: 15px;
+      color: #000;
+    }
+  }
+}
+
+.expand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: @primary-color;
+}
+
+.ssta-settle-attachments-download-modal {
+  :global {
+    .c7n-pro-modal-title {
+      div > div {
+        font-size: 12px !important;
+        font-weight: normal;
+      }
+    }
+  }
+}

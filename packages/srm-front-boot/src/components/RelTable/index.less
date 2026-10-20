@@ -1,0 +1,19 @@
+.relTable-component-form-wrapper {
+  :global {
+    .c7n-pro-code-area-float-label.c7n-pro-code-area-focused .c7n-pro-field-label,
+    .c7n-pro-code-area-float-label .c7n-pro-field-label {
+      transform: scaleY(0.8) translate(0, -8px);
+    }
+    .c7n-pro-code-area-float-label .c7n-pro-field-label-wrapper {
+      border-top: unset;
+    }
+    .c7n-pro-code-area-empty:not(.c7n-pro-code-area-focused) .c7n-pro-field-label {
+      font-weight: inherit;
+      font-size: inherit;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      pointer-events: none;
+    }
+  }
+}

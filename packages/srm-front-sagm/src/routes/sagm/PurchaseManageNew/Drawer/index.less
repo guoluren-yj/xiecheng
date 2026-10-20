@@ -1,0 +1,26 @@
+@import '~hzero-front/lib/srm-variables.less';
+.dimension-table {
+  :global {
+    td[data-index='dimensionCode'] {
+      .c7n-pro-select-wrapper {
+        display: table-cell !important;
+        .c7n-pro-select {
+          border-color: rgba(0, 0, 0, 0.2);
+        }
+      }
+      .c7n-pro-select-wrapper > label {
+        height: 28px !important;
+      }
+      input.c7n-pro-select {
+        height: 28px !important;
+      }
+    }
+    .c7n-pro-table-cell-inner {
+      height: max-content !important;
+    }
+  }
+}
+.dimension-table-title {
+  color: @text-2;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,39 @@
+.move-unit {
+  position: relative;
+  height: 100%;
+  top: 0;
+
+  .right-slide-solid {
+    height: 100vh;
+    position: fixed;
+    display: block;
+    border-left: 1px solid #e2e2e6;
+  }
+
+  .rigth-slide {
+    position: fixed;
+    display: block;
+    width: 10px;
+    margin-left: -5px;
+    background-color: transparent;
+    height: 100%;
+    z-index: 200;
+    cursor: col-resize;
+
+    &:hover {
+      cursor: col-resize;
+    }
+  }
+
+  .right-slide-dotted {
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 10px;
+    //margin-left: -5px;
+    border-left: 1px dotted #9e9e9e;
+    height: 100%;
+    z-index: 300;
+    cursor: col-resize;
+  }
+}

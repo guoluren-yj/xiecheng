@@ -1,0 +1,27 @@
+// 线上和本地hzero-ui版本不一样，样式层级不一样
+.ssrc-notice-collapse-panel-title-text {
+  width: 100% !important;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.ssrc-accept-rfx-notice-new-content {
+  padding: 16px;
+
+  :global {
+    .c7n-collapse.form-collapse {
+      .c7n-collapse-item {
+        border-bottom: none;
+
+        .c7n-collapse-header {
+          background-color: #fafafa;
+        }
+
+        .c7n-collapse-content {
+          border-top: none;
+        }
+      }
+    }
+  }
+}

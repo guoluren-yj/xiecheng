@@ -1,0 +1,49 @@
+@import '~hzero-front/lib/srm-variables';
+
+.risk-incident-detail-modal-basic-info {
+  :global {
+    .c7n-pro-output-float-label > .c7n-pro-field-label-wrapper > .c7n-pro-field-label {
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 400;
+    }
+
+    .c7n-pro-output-float-label {
+      line-height: 22px;
+      margin-top: 8px;
+    }
+
+    .c7n-pro-output {
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    .c7n-pro-form.c7n-pro-form-float-label {
+      margin: 0;
+    }
+
+    .c7n-pro-form.c7n-pro-form-float-label > table > tbody > tr .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+  }
+}
+
+.risk-incident-detail-modal-basic {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 8px;
+  border-left: 3px solid @primary-color;
+  line-height: 12px;
+  margin-bottom: 4px;
+}
+
+.risk-incident-detail-modal-supplier-panel {
+  :global {
+    .c7n-pro-form.c7n-pro-form-float-label
+      > table
+      > tbody
+      > tr:not(:first-child)
+      .c7n-pro-field-wrapper {
+      margin-top: 0 !important;
+    }
+  }
+}

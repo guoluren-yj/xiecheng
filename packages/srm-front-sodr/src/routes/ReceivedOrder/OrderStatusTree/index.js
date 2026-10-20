@@ -1,0 +1,348 @@
+/*
+ * index - 订单状态树查询
+ * @date: 2018/10/13 11:39:51
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+import React, { PureComponent, Fragment } from 'react';
+import { Bind } from 'lodash-decorators';
+import classnames from 'classnames';
+
+import intl from 'utils/intl';
+import styles from './index.less';
+
+const modelPrompt = 'sodr.sendOrder.model.common';
+export default class OrderStatusTree extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentLi: null,
+    };
+  }
+
+  @Bind()
+  getAllSelectedChild(value) {
+    let statusCodes = [];
+    switch (value) {
+      case 'all':
+        return {
+          statusCodes:
+            'PUBLISHED,DELIVERY_DATE_REVIEW,DELIVERY_DATE_REJECT,CONFIRMED,PUBLISH_CANCEL,CANCELED,CANCELING_WFL,CLOSED,CLOSE_WFL,CANCELTOBECOMFIRMED,CLOSETOBECOMFIRMED',
+        };
+      case 'processing':
+        statusCodes = [
+          'PUBLISHED',
+          'PART_FEED_BACK',
+          'DELIVERY_DATE_REVIEW',
+          'DELIVERY_DATE_REJECT',
+          'CONFIRMED',
+        ].toString();
+        return { statusCodes };
+      case 'cancell':
+        statusCodes = ['CANCELED', 'CANCELING_WFL', 'CANCELTOBECOMFIRMED'].toString();
+        return { statusCodes };
+      case 'close':
+        statusCodes = ['CLOSED', 'CLOSE_WFL', 'CLOSETOBECOMFIRMED'].toString();
+        return { statusCodes };
+      case 'NOTEVALUATED':
+        statusCodes = ['CONFIRMED'].toString();
+        return {
+          statusCodes,
+          evaluationFlag: 0,
+          confirmedFlag: 1,
+        };
+      case 'EVALUATED':
+        statusCodes = ['CONFIRMED'].toString();
+        return {
+          statusCodes,
+          evaluationFlag: 1,
+          confirmedFlag: 1,
+        };
+      case null:
+        return {};
+      // return {
+      //   statusCodes: 'PUBLISHED,DELIVERY_DATE_REVIEW,DELIVERY_DATE_REJECT',
+      //   confirmedFlag: 1,
+      //   publishCancelFlag: 1,
+      //   closedFlag: 1,
+      // };
+      default:
+        statusCodes = [value].toString();
+        return { statusCodes };
+    }
+  }
+
+  @Bind()
+  cancelBubble(e) {
+    const evt = e || window.event;
+    if (evt.stopPropagation) {
+      evt.stopPropagation();
+    } else {
+      // IE
+      evt.cancelBubble = true;
+    }
+  }
+
+  @Bind()
+  handleTypeDeal(e) {
+    const { currentLi } = this.state;
+    const { handleSearch } = this.props;
+    const value = e.target.getAttribute('value');
+    if (value) {
+      const newCurrentLi = currentLi === value ? null : value;
+      const fields = this.getAllSelectedChild(newCurrentLi);
+      handleSearch(fields, newCurrentLi);
+      this.setState({ currentLi: newCurrentLi });
+      this.cancelBubble(e);
+    }
+  }
+
+  @Bind()
+  renderTree() {
+    // TODO国际化
+    const { settings = {} } = this.props;
+    return (
+      <div className={styles['type-wrapper']} onClick={this.handleTypeDeal}>
+        <div
+          className={classnames({
+            [styles['first-stage']]: true,
+            [styles['current-item']]: this.state.currentLi === 'all',
+          })}
+          value="all"
+        >
+          <span>
+            <a value="all">{intl.get(`sodr.receivedOrder.view.message.all`).d('全部')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['second-stage']]: true,
+            [styles['current-item']]: this.state.currentLi === 'processing',
+          })}
+          value="processing"
+        >
+          <span value="processing">
+            {/* <span className={styles.triangle} value="processing">
+              {null}
+            </span> */}
+            <a value="processing">
+              {intl.get(`sodr.receivedOrder.view.message.processing`).d('执行中')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'PUBLISHED',
+          })}
+          value="PUBLISHED"
+        >
+          <span>
+            <a value="PUBLISHED">
+              {intl.get(`sodr.receivedOrder.view.message.published`).d('已发布')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'PART_FEED_BACK',
+          })}
+          value="PART_FEED_BACK"
+        >
+          <span>
+            <a value="PART_FEED_BACK">
+              {intl.get(`sodr.receivedOrder.view.message.partFeedback`).d('部分反馈')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'DELIVERY_DATE_REVIEW',
+          })}
+          value="DELIVERY_DATE_REVIEW"
+        >
+          <span>
+            <a value="DELIVERY_DATE_REVIEW">
+              {intl.get(`sodr.sendOrder.model.common.orderFeedbackReview`).d('订单反馈审核')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'DELIVERY_DATE_REJECT',
+          })}
+          value="DELIVERY_DATE_REJECT"
+        >
+          <span>
+            <a value="DELIVERY_DATE_REJECT">
+              {intl
+                .get(`sodr.sendOrder.model.common.orderFeedbackReviewReject`)
+                .d('订单反馈审核拒绝')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CONFIRMED',
+          })}
+          value="CONFIRMED"
+        >
+          <span>
+            <a value="CONFIRMED">
+              {intl.get(`sodr.receivedOrder.view.message.confirmedFlag`).d('已确认')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['second-stage-bold']]: true,
+            [styles['current-item']]: this.state.currentLi === 'PUBLISH_CANCEL',
+          })}
+          value="PUBLISH_CANCEL"
+        >
+          <span>
+            <a value="PUBLISH_CANCEL">
+              {intl.get(`sodr.receivedOrder.view.message.publishCancelFlag`).d('取消发布')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['second-stage']]: true,
+            [styles['current-item']]: this.state.currentLi === 'cancell',
+          })}
+          value="cancell"
+        >
+          <span value="cancell">
+            <a value="cancell">{intl.get(`${modelPrompt}.cancell`).d('取消')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CANCELED',
+          })}
+          value="CANCELED"
+        >
+          <span>
+            <a value="CANCELED">{intl.get(`${modelPrompt}.cancelled`).d('已取消')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CANCELING_WFL',
+          })}
+          value="CANCELING_WFL"
+        >
+          <span>
+            <a value="CANCELING_WFL">{intl.get(`${modelPrompt}.cancelingWfl`).d('取消审批中')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CANCELTOBECOMFIRMED',
+          })}
+          value="CANCELTOBECOMFIRMED"
+        >
+          <span>
+            <a value="CANCELTOBECOMFIRMED">
+              {intl.get(`sodr.common.model.common.canceltobecomfirmed`).d('取消待确认')}
+            </a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['second-stage']]: true,
+            [styles['current-item']]: this.state.currentLi === 'close',
+          })}
+          value="close"
+        >
+          <span value="close">
+            <a value="close">{intl.get(`${modelPrompt}.close`).d('关闭')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CLOSED',
+          })}
+          value="CLOSED"
+        >
+          <span>
+            <a value="CLOSED">{intl.get(`${modelPrompt}.closed`).d('已关闭')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CLOSE_WFL',
+          })}
+          value="CLOSE_WFL"
+        >
+          <span>
+            <a value="CLOSE_WFL">{intl.get(`${modelPrompt}.closeWfl`).d('关闭审批中')}</a>
+          </span>
+        </div>
+        <div
+          className={classnames({
+            [styles['third-stage']]: true,
+            [styles['current-item-border']]: this.state.currentLi === 'CLOSETOBECOMFIRMED',
+          })}
+          value="CLOSETOBECOMFIRMED"
+        >
+          <span>
+            <a value="CLOSETOBECOMFIRMED">
+              {intl.get(`sodr.common.model.common.closetobecomfirmed`).d('关闭待确认')}
+            </a>
+          </span>
+        </div>
+        {settings['010217'] === '1' && settings['010218'] === '1' && (
+          <Fragment>
+            <div
+              className={classnames({
+                [styles['second-stage-bold']]: true,
+                [styles['current-item']]: this.state.currentLi === 'NOTEVALUATED',
+              })}
+              value="NOTEVALUATED"
+            >
+              <span>
+                <a value="NOTEVALUATED">
+                  {intl.get(`sodr.common.view.message.notEvaluated`).d('待评价')}
+                </a>
+              </span>
+            </div>
+            <div
+              className={classnames({
+                [styles['second-stage-bold']]: true,
+                [styles['current-item']]: this.state.currentLi === 'EVALUATED',
+              })}
+              value="EVALUATED"
+            >
+              <span>
+                <a value="EVALUATED">
+                  {intl.get(`sodr.common.view.message.evaluated`).d('已评价')}
+                </a>
+              </span>
+            </div>
+          </Fragment>
+        )}
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div className={styles['order-type']}>{this.renderTree()}</div>
+      </React.Fragment>
+    );
+  }
+}

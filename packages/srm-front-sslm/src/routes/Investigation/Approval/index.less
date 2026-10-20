@@ -1,0 +1,36 @@
+/*
+ * style - 调查表审批
+ * @date: 2018-08-07
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 16px 24px;
+  .one-line {
+    flex: 0 0 100%;
+  }
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+    & > :first-child {
+      width: 121.13px;
+      color: #666;
+    }
+    & > :nth-child(2) {
+      width: 201.88px;
+      color: #333;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

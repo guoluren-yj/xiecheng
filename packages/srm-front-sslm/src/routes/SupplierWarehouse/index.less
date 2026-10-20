@@ -1,0 +1,82 @@
+// 卡片样式
+.warehouse-content {
+  :global {
+    .top-section-title {
+      margin-top: -20px;
+    }
+    .second-section-title {
+      font-size: 16px;
+    }
+    div > .second-section-title:not(:nth-child(2)) {
+      margin-top: 16px;
+    }
+  }
+  .second-top-section {
+    :global {
+      .top-section-title {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// .simple-card-title {
+//   font-size: 16px;
+//   color: #000;
+//   line-height: 24px;
+//   margin-bottom: 16px;
+// }
+.simple-card-title {
+  > span {
+    color: #999;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+}
+
+// 省市区级联图标
+.regist-icon {
+  &:focus {
+    outline: none;
+  }
+}
+
+// 省市区table列样式
+.region-td {
+  .c7n-pro-input-group {
+    margin-top: -4px;
+  }
+  .c7n-pro-table-cell-inner {
+    .c7n-pro-input-wrapper.c7n-pro-input-readonly {
+      .c7n-pro-input {
+        height: 0.26rem;
+        line-height: 0.26rem;
+      }
+    }
+  }
+  .c7n-pro-table-cell-inner-invalid {
+    .c7n-pro-input {
+      background-color: #fcebeb;
+      border-color: #f56349;
+    }
+  }
+}
+
+// 联系电话样式
+.line-form {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-select,
+    .c7n-pro-input {
+      border-color: #fca000;
+      background-color: #fffbef;
+    }
+    .c7n-pro-select:focus,
+    .c7n-pro-input:focus {
+      background-color: #fff !important;
+    }
+  }
+}

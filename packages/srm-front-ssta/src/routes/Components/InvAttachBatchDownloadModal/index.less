@@ -1,0 +1,49 @@
+.ssta-settle-attachments-category {
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 10px;
+}
+
+.ssta-settle-attachments-content {
+  :global {
+    max-height: 155px;
+    overflow-y: scroll;
+    padding-top: 5px;
+
+    .attachments-item {
+      background: #f3f3f3;
+      padding: 0.07rem;
+      margin-bottom: 5px;
+
+      .item-img {
+        width: 0.14rem;
+        height: 0.14rem;
+      }
+
+      .item-text-distance {
+        padding: 0 0.1rem;
+
+        .file-name {
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .file-size {
+          margin-left: 0.02rem;
+          color: #868d9c;
+        }
+      }
+    }
+  }
+}
+
+.ssta-settle-attachments-download-modal {
+  :global {
+    .c7n-pro-modal-title {
+      div > div {
+        font-size: 12px !important;
+        font-weight: normal;
+      }
+    }
+  }
+}

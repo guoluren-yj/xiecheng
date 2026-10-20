@@ -1,0 +1,158 @@
+.unit-detail {
+  display       : flex;
+  position      : relative;
+  height        : 100%;
+  flex-direction: column;
+
+  :global {
+
+    .c7n-tree>div[role="tree"]+.c7n-tree-treenode {
+      display: none;
+    }
+
+    #unit-wrap-container-cusz {
+      .c7n-tabs-content {
+        padding-top: 0;
+
+        .c7n-tabs-tabpane:not(.unit-config-searchbar-config) {
+          padding-top: 16px !important;
+        }
+
+        .search-bar-fix-style {
+          margin-top: 0;
+        }
+      }
+
+      .unit-right-container {
+        &>.c7n-spin-nested-loading {
+          height  : 100%;
+          overflow: hidden;
+
+          &>.c7n-spin-container {
+            height        : 100%;
+            overflow      : hidden;
+            display       : flex;
+            flex-direction: column;
+          }
+        }
+
+        .unit-config-searchbar-config {
+          &>.c7n-spin-nested-loading {
+
+            &,
+            &>.c7n-spin-container {
+              height  : 100%;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .unit-detail-container {
+      background-color: #fff;
+      margin          : 8px;
+      padding         : 16px 0 16px 16px;
+      flex            : 1;
+      display         : flex;
+      position        : relative;
+      overflow: auto;
+      .unit-detail-left {
+        display         : flex;
+        flex-direction  : column;
+        margin-right    : 10px;
+        background-color: #fff;
+        width           : 240px;
+        overflow        : hidden;
+        transition      : width 0.3s;
+        position: relative;
+        .c7n-tree-treenode {
+          width: 100%;
+        }
+
+        .c7n-collapse {
+          overflow: auto;
+          height  : 100%;
+        }
+
+
+
+        &#unit-tree-container-cusz,
+        &#unit-tree-container {
+          display       : flex;
+          flex-direction: column;
+
+          .unit-tree-container-content {
+            overflow: auto;
+            flex    : 1;
+          }
+
+          .c7n-collapse-header {
+            background-color: transparent;
+            padding-left    : 0;
+            padding-right   : 0;
+          }
+
+          .c7n-collapse-content {
+            padding-left : 4px;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .unit-info {
+        padding : 0 20px 0 16px;
+        overflow: hidden;
+
+        .unit-detail-title {
+          display        : flex;
+          justify-content: space-between;
+          align-items    : center;
+          margin-bottom  : 16px;
+
+          &>span {
+            font-size  : 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    // flex下的直接子元素到满足display为block后代元素间的所有层级，均需要设置overflow:hidden，否则宽度会被下级文本节点撑大
+    .c7n-tree .c7n-tree-node-content-wrapper {
+      display : flex;
+      flex    : 1;
+      overflow: hidden;
+      padding : 0 0 0 4px;
+    }
+
+    .c7n-tree-title {
+      flex         : 1;
+      overflow     : hidden;
+      white-space  : nowrap;
+      text-overflow: ellipsis;
+
+      &>* {
+        padding-right: 20px;
+        position     : relative;
+        display      : flex;
+        overflow     : hidden;
+        white-space  : nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .c7n-tree-node-selected .c7n-tree-title {
+      border-right: 2px solid #29BECE;
+      color       : #29BECE;
+    }
+
+    .c7n-tree-title:hover {
+      color: #29BECE;
+    }
+
+    .c7n-tree-node-selected {
+      background-color: #FFFFFF !important;
+    }
+  }
+}

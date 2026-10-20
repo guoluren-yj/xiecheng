@@ -1,0 +1,33 @@
+.flexLinkModalHeader {
+  font-size: 16px;
+  line-height: 18px;
+}
+.flexLinkModal {
+  .style_sub-page-wrapper {
+    height: auto;
+  }
+  :global {
+    .page-head {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      width: 100%;
+    }
+    .page-head + div {
+      // margin-top: 48px !important;
+      // height: calc(100% - 48px);
+      overflow: unset;
+    }
+    .fixed-content-wrapper {
+      top: 48px !important;
+    }
+    .c7n-pro-modal-body,
+    .c7n-pro-modal-body > div {
+      height: auto;
+    }
+
+    #approve-form {
+      position: relative;
+    }
+  }
+}

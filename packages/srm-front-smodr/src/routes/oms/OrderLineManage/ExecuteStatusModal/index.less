@@ -1,0 +1,54 @@
+.execute-modal-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  :global {
+    .c7n-tabs-vertical.c7n-tabs-left>.c7n-tabs-bar {
+      width: 160px;
+      padding-top: 16px;
+      & .c7n-tabs-tab {
+        text-align: left;
+      }
+    }
+
+    .execute-right-content {
+      padding: 20px 20px 20px 0;
+
+      .execute-right-top {
+        display: flex;
+        margin-bottom: 25px;
+
+        .execute-right-img {
+          margin-right: 8px;
+        }
+
+        .execute-right-label {
+          .execute-right-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 14px;
+          }
+
+          .execute-right-code {
+            color: rgba(0, 0, 0, 0.65);
+            margin-bottom: 8px;
+          }
+
+          .execute-right-sku {
+            color: rgba(0, 0, 0, 0.65);
+          }
+        }
+      }
+    }
+  }
+}
+
+// 放最外层，兼容tooltip内容
+.action-link-btns {
+  :global {
+    .c7n-pro-btn-link+.c7n-pro-btn-link {
+      margin-left: 16px;
+    }
+  }
+}

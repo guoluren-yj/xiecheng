@@ -1,0 +1,170 @@
+.offline-reply-wrap {
+  max-height: calc(100vh - 260px);
+  width: 100%;
+  overflow: scroll;
+  overflow-x: visible;
+}
+
+.offline-reply-table-buttons {
+  margin-bottom: 4px;
+}
+
+.offline-reply-table-card {
+  display: flex;
+  width: 100%;
+  margin-top: -31px;
+  &-left {
+    display: flex;
+    // width: 60%;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+
+    .offline-reply-right-content:nth-child(n + 2) {
+      :global {
+        .c7n-pro-table-head {
+          visibility: collapse;
+        }
+      }
+    }
+
+    .offline-reply-right-content {
+      :global {
+        .c7n-pro-table-body {
+          height: 2.05rem !important;
+        }
+        .c7n-pro-table-selection-tips {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}
+.offline-reply-table-card-empty {
+  display: flex;
+  width: 100%;
+  &-left {
+    display: flex;
+    // width: 60%;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+
+    .offline-reply-right-content:nth-child(n + 2) {
+      :global {
+        .c7n-pro-table-head {
+          visibility: collapse;
+        }
+      }
+    }
+
+    .offline-reply-right-content {
+      :global {
+        .c7n-pro-table-body {
+          height: 1.99rem !important;
+        }
+      }
+    }
+  }
+}
+.offline-reply-again {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9;
+  height: 31px;
+  overflow: hidden;
+
+  &-left {
+    // width: 60%;
+    display: flex;
+    :global {
+      .c7n-pro-table-tbody {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &-right {
+    width: 57%;
+
+    :global {
+      .c7n-pro-table-tbody {
+        visibility: hidden;
+      }
+
+      .c7n-pro-table-content-overflow {
+        overflow-x: hidden;
+      }
+    }
+
+    .offline-reply-right-content:nth-child(n + 2) {
+      :global {
+        .c7n-pro-table-head {
+          visibility: collapse;
+        }
+      }
+    }
+  }
+}
+
+.offline-reply-pagination {
+  float: right;
+  margin-top: 10px;
+}
+
+.offline-reply-page-wrapper {
+  height: 100%;
+  :global {
+    .c7n-spin-nested-loading, .c7n-spin-container {
+      height: 100%;
+    }
+  }
+}
+
+.offline-reply-page {
+  height: 100%;
+  :global {
+    .page-head {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+  }
+  .card-warp:nth-last-of-type(1) {
+      flex: 1;
+    }
+}
+
+.offline-reply-table-card-second-table {
+  :global {
+    .c7n-pro-table-aggregation {
+      border-right: 1px solid #e5e7ec !important;
+    }
+  }
+}
+
+// .offline-reply-content {
+//   height: 100%;
+//   :global {
+//     .c7n-spin-nested-loading {
+//       height: 100%;
+
+//       .c7n-spin-container {
+//         height: 100%;
+//       }
+//     }
+//   }
+
+//   .offline-reply-page {
+//     height: 94.3%;
+//   }
+// }

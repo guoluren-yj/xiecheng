@@ -1,0 +1,280 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.portal-login-container :global {
+  border: @border-width-base @border-style-base @border-color-base;
+  border-radius: 0.02rem;
+
+  width: 2.93rem;
+  height: 2.94rem;
+
+  .login-user {
+    font-size: 0.16rem;
+    line-height: 0.24rem;
+    color: @text-color;
+    margin-bottom: 0.15rem;
+
+    > span {
+      margin-right: 0.05rem;
+    }
+  }
+
+  .login-welcome {
+    font-size: 0.12rem;
+    line-height: 0.2rem;
+    color: @heading-color;
+    margin-bottom: 0.2rem;
+  }
+
+  .btn-theme {
+    border-radius: 0.02rem;
+    width: 100%;
+    height: 0.32rem;
+    text-align: center;
+    font-size: 0.12rem;
+    line-height: 0.32rem;
+  }
+
+  .c7n-pro-form .c7n-pro-field-wrapper {
+    padding: 0.04rem 0;
+  }
+
+  .get-code-btn.c7n-pro-btn-raised,
+  .get-code-btn.c7n-pro-btn-raised {
+    float: right;
+    width: 45%;
+    height: 0.3rem;
+    border: @border-width-base @border-style-base @hzero-primary-color-2;
+    border-radius: 0.02rem;
+    color: @hzero-primary-color-2;
+    margin-left: 5%;
+    box-shadow: none;
+
+    & > button {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.c7n-pro-btn-disabled {
+      color: rgba(0, 0, 0, 0.25);
+      border-color: #e0e0e0;
+    }
+
+    &.countdown-duration {
+      .c7n-statistic-content {
+        font-size: 0.14rem;
+        margin-right: 0.05rem;
+
+        > span {
+          font-weight: 400;
+        }
+      }
+
+      & > button > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &:not(.c7n-pro-btn-disabled):hover {
+      color: @hzero-primary-color-2-hover;
+      background-color: initial;
+    }
+  }
+
+  .workspace-btn {
+    clear: both;
+    background: @hzero-primary-color-2;
+    color: #fff;
+    margin-top: 0.1rem;
+    margin-bottom: 0.04rem;
+    height: 0.32rem;
+    border: none;
+    cursor: pointer;
+
+    &.c7n-pro-btn.c7n-pro-btn-default:hover {
+      background: @hzero-primary-color-2-hover;
+      color: #fff;
+    }
+  }
+
+  .logout-btn,
+  .registration-btn {
+    border: @border-width-base @border-style-base @hzero-primary-color-2;
+    background-color: transparent;
+    color: @hzero-primary-color-2;
+    margin-left: 0 !important;
+    text-decoration: none;
+
+    &:hover {
+      color: @hzero-primary-color-2-hover !important;
+    }
+  }
+
+  .logout-btn {
+    margin-top: 0.1rem;
+  }
+
+  .registration-btn {
+    margin-top: -0.08rem;
+    margin-bottom: 0.04rem;
+  }
+
+  .login-tab {
+    &.tab-left {
+      .c7n-tabs-bar {
+        border: none;
+
+        .c7n-tabs-tab {
+          text-align: left;
+          margin-top: 0.02rem;
+          padding-left: 0.12rem;
+          color: #000;
+        }
+
+        .c7n-tabs-ink-bar {
+          display: none;
+        }
+      }
+
+      .c7n-tabs-content {
+        transform: translateY(-0.16rem);
+      }
+    }
+
+    .c7n-tabs-nav {
+      display: flex;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+    }
+
+    .c7n-tabs-tab {
+      flex: 1;
+      text-align: center;
+      font-size: 0.16rem;
+      padding: 0;
+      line-height: 0.5rem;
+      display: inline-block;
+    }
+
+    .c7n-tabs-tabpane {
+      padding: 0 0.2rem;
+
+      .c7n-pro-password-wrapper,
+      .c7n-pro-input-wrapper {
+        width: 100%;
+
+        input {
+          height: 0.3rem;
+        }
+      }
+
+      .login-other {
+        width: calc(100% + 0.1rem);
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        align-items: center;
+        margin-left: -0.05rem;
+
+        > a {
+          width: 50%;
+          height: 0.14rem;
+          line-height: 0.14rem;
+          margin-bottom: 0.04rem;
+          text-align: center;
+          text-decoration: none;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 0 0.04rem;
+          position: relative;
+
+          &:nth-of-type(odd)::after {
+            content: '';
+            width: 0.01rem;
+            height: 0.08rem;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          &:last-of-type::after {
+            display: none;
+          }
+
+          .icon {
+            font-size: 0.14rem;
+            margin-left: 0.02rem;
+            margin-top: -0.02rem;
+            color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+          }
+        }
+
+        .theme-color {
+          color: @hzero-primary-color-2;
+        }
+      }
+
+      .login-other-1 {
+        justify-content: end;
+        > a {
+          width: auto;
+        }
+      }
+    }
+
+    .c7n-pro-input-prefix {
+      color: @input-placeholder-color;
+    }
+  }
+
+  .c7n-tabs-tabpane-active {
+    position: relative;
+  }
+
+  .portal-login-error {
+    display: block;
+    color: #c12e2a;
+    word-break: break-word;
+    margin-top: -0.1rem;
+    opacity: 0;
+  }
+
+  .text-line-clamp-2 {
+    height: 36px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    opacity: 1;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .c7n-pro-input-required,
+  .c7n-pro-password-required {
+    background-color: #fff;
+  }
+
+  .c7n-pro-password-required:not(.c7n-pro-password-invalid),
+  .c7n-pro-input-required:not(.c7n-pro-input-invalid) {
+    input {
+      border-color: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+
+  .c7n-pro-select-trigger {
+    top: 0.02rem;
+  }
+}

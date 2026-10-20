@@ -1,0 +1,99 @@
+.mark-area {
+  width: 135px;
+  height: 67px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin: 20px 0 0 20px;
+
+  .mark-area-score {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .mark-area-score-high {
+    color: #47b881;
+    span {
+      background: #47b881;
+      color: #fff;
+    }
+  }
+
+  .mark-area-score-middle {
+    color: #fca000;
+    span {
+      background: #fca000;
+      color: #fff;
+    }
+  }
+
+  .mark-area-score-low {
+    color: #f56349;
+    span {
+      background: #f56349;
+      color: #fff;
+    }
+  }
+
+  .mark-area-tag {
+    display: inline-block;
+    padding: 1px 3px;
+    font-size: 12px;
+    height: 16px;
+    line-height: 14px;
+    border-radius: 2px;
+    margin: 22px 0 0 5px;
+  }
+}
+
+.risk-content {
+  max-height: 54px;
+  min-height: 36px;
+  font-size: 12px;
+  color: #000;
+  line-height: 18px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // white-space:nowrap; // 单行文本
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.tag-span {
+  display: inline-block;
+  line-height: 18px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 5px;
+  margin: 4px 8px 0 0;
+}
+
+.tag-warning {
+  color: #f56349;
+  background: rgba(245, 99, 73, 0.1);
+}
+
+.tag-normal {
+  color: #3095f2;
+  background: rgba(48, 149, 242, 0.1);
+}
+
+.line-progress {
+  width: calc(100% - 2px);
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  .progress-item {
+    display: inline-block;
+    width: 32.8%;
+    height: 100%;
+  }
+}

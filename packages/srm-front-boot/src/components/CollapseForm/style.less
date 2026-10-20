@@ -1,0 +1,38 @@
+@import '~choerodon-ui/lib/style/themes/default';
+
+.anchor {
+  font-size: 12px;
+  line-height: 18px;
+  height: 18px;
+  display: inline-block;
+  color: @primary-color;
+  &:hover {
+    cursor: pointer;
+  }
+  :global {
+    .icon {
+      font-size: 16px;
+      margin-left: 6px;
+    }
+    .text {
+      height: 18px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.collapse-form {
+  transition: 0.3s all;
+  overflow: hidden;
+  padding-top: 12px;
+  margin-top: -12px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding-right: 16px;
+    }
+  }
+}
+
+.anchorWrapper {
+  margin-top: 16px;
+}

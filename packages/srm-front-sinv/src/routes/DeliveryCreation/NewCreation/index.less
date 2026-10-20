@@ -1,0 +1,33 @@
+.row-agent-column {
+  display: flex;
+  align-items: center;
+  img {
+    height: 16px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.node-select {
+  width: 100px;
+  :global {
+    .c7n-pro-select {
+      height: 33px;
+    }
+    // .c7n-select-has-value {
+    //   height: 27px !important;
+    //   .c7n-select-selection__rendered {
+    //     height: 27px !important;
+    //   }
+    // }
+  }
+}

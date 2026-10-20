@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table.filter renders custom content correctly 1`] = `
+<div>
+  <div
+    class="c7n-dropdown  c7n-dropdown-placement-bottomLeft  c7n-dropdown-hidden"
+  >
+    <div>
+      <div
+        class="custom-filter-dropdown"
+      >
+        custom filter
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders filter correctly 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-table c7n-table-default c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+              </colgroup>
+              <thead
+                class="c7n-table-thead"
+              >
+                <tr>
+                  <th
+                    class="c7n-table-column-has-filters"
+                    tabindex="-1"
+                  >
+                    <span>
+                      Name
+                      <i
+                        class="icon icon-filter_list c7n-dropdown-trigger"
+                        title="Filter menu"
+                      />
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="c7n-table-tbody"
+              >
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class="c7n-table-column-has-filters"
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Jack
+                  </td>
+                </tr>
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class="c7n-table-column-has-filters"
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Lucy
+                  </td>
+                </tr>
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class="c7n-table-column-has-filters"
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Tom
+                  </td>
+                </tr>
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class="c7n-table-column-has-filters"
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Jerry
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders menu correctly 1`] = `
+<div>
+  <div
+    class="c7n-dropdown  c7n-dropdown-placement-bottomLeft  c7n-dropdown-hidden"
+  >
+    <div
+      class="c7n-table-filter-dropdown"
+    >
+      <ul
+        class="c7n-dropdown-menu  c7n-dropdown-menu-root c7n-dropdown-menu-vertical"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          aria-selected="false"
+          class="c7n-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="c7n-radio-wrapper"
+          >
+            <span
+              class="c7n-radio"
+            >
+              <input
+                class="c7n-radio-input"
+                type="radio"
+              />
+              <span
+                class="c7n-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Boy
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </li>
+        <li
+          aria-selected="false"
+          class="c7n-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="c7n-radio-wrapper"
+          >
+            <span
+              class="c7n-radio"
+            >
+              <input
+                class="c7n-radio-input"
+                type="radio"
+              />
+              <span
+                class="c7n-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Girl
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </li>
+        <li
+          class="c7n-dropdown-menu-submenu c7n-dropdown-menu-submenu-vertical"
+          role="menuitem"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="c7n-dropdown-menu-submenu-title"
+            title="Title"
+          >
+            Title
+            <i
+              class="c7n-dropdown-menu-submenu-arrow"
+            />
+          </div>
+        </li>
+      </ul>
+      <div
+        class="c7n-table-filter-dropdown-btns"
+      >
+        <a
+          class="c7n-table-filter-dropdown-link confirm"
+        >
+          OK
+        </a>
+        <a
+          class="c7n-table-filter-dropdown-link clear"
+        >
+          Reset
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table.filter renders radio filter correctly 1`] = `
+<div>
+  <div
+    class="c7n-dropdown  c7n-dropdown-placement-bottomLeft  c7n-dropdown-hidden"
+  >
+    <div
+      class="c7n-table-filter-dropdown"
+    >
+      <ul
+        class="c7n-dropdown-menu  c7n-dropdown-menu-root c7n-dropdown-menu-vertical"
+        role="menu"
+        tabindex="0"
+      >
+        <li
+          aria-selected="false"
+          class="c7n-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="c7n-radio-wrapper"
+          >
+            <span
+              class="c7n-radio"
+            >
+              <input
+                class="c7n-radio-input"
+                type="radio"
+              />
+              <span
+                class="c7n-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Boy
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </li>
+        <li
+          aria-selected="false"
+          class="c7n-dropdown-menu-item"
+          role="menuitem"
+        >
+          <label
+            class="c7n-radio-wrapper"
+          >
+            <span
+              class="c7n-radio"
+            >
+              <input
+                class="c7n-radio-input"
+                type="radio"
+              />
+              <span
+                class="c7n-radio-inner"
+              />
+            </span>
+          </label>
+          <span>
+            Girl
+          </span>
+          <div
+            class="c7n-ripple-wrapper"
+          />
+        </li>
+        <li
+          class="c7n-dropdown-menu-submenu c7n-dropdown-menu-submenu-vertical"
+          role="menuitem"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="c7n-dropdown-menu-submenu-title"
+            title="Title"
+          >
+            Title
+            <i
+              class="c7n-dropdown-menu-submenu-arrow"
+            />
+          </div>
+        </li>
+      </ul>
+      <div
+        class="c7n-table-filter-dropdown-btns"
+      >
+        <a
+          class="c7n-table-filter-dropdown-link confirm"
+        >
+          OK
+        </a>
+        <a
+          class="c7n-table-filter-dropdown-link clear"
+        >
+          Reset
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

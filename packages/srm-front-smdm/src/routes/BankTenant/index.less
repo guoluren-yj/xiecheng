@@ -1,0 +1,30 @@
+.form {
+  &-code {
+    width: 120px;
+  }
+  &-name {
+    width: 150px;
+  }
+  &-short-name {
+    width: 150px;
+  }
+  // 为了让它比antd Select组件的优先级高
+  div&-type {
+    width: 150px !important;
+  }
+}
+
+.editable-table :global {
+  // .ant-form-explain {
+  //   position: absolute;
+  //   font-size: 12px;
+  //   margin-top: -4px;
+  // }
+  .ant-form-item-control {
+    line-height: 29px;
+  }
+}
+
+.border-error {
+  border: 1px solid #f5222d;
+}

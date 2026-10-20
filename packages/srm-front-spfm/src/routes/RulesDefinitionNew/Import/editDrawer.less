@@ -1,0 +1,124 @@
+/**
+*右侧页面-(菜单展开)
+*/
+.page-open {
+  left: -25px;
+  width: calc(100% + 25px);
+  float: left;
+  padding-top: 16px; // 控制右侧距离顶部高度
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  // border-left: 1px solid #e8e8e8;
+  position: relative;
+  .menu-icon {
+    width: 5px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .menu-icon-a {
+    width: 12px;
+    height: 55px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(180deg);
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid #cfcdcd;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+      color: #000;
+    }
+  }
+}
+
+/**
+    *右侧页面-(菜单收起)
+    */
+.page-off {
+  left: -25px;
+  width: calc(100% + 25px);
+  height: 100%;
+  float: left;
+  padding-top: 16px; // 控制右侧距离顶部高度
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  // border-left: 1px solid #e8e8e8;
+  position: relative;
+  .menu-icon {
+    width: 12px;
+    height: 55px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid #cfcdcd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+      color: #000;
+    }
+  }
+  .menu-icon-a {
+    width: 5px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(180deg);
+    background-color: #d8d6d6;
+    border-radius: 0 16px 16px 0;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    .page-icon {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.show-left {
+  :global {
+    .c7n-tabs-bar {
+      display: none;
+    }
+  }
+}
+
+.hidden-left {
+  :global {
+    .c7n-tabs-bar {
+      display: block;
+    }
+  }
+}

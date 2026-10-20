@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "utils/*": ["./node_modules/hzero-front/lib/utils/*"],
+      "components/*": ["./node_modules/hzero-front/lib/components/*"],
+      "services/*": ["./node_modules/hzero-front/lib/services/*"],
+      "@/*": ["./src/*"],
+    },
+    /* Basic Options */
+    "module": "commonjs",
+    /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+    "target": "es6",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

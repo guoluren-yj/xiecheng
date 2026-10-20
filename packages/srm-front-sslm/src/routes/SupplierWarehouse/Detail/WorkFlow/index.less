@@ -1,0 +1,232 @@
+@import '~choerodon-ui/lib/style/themes/default';
+.simple-card-title {
+  > span {
+    color: #999;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+}
+
+// 省市区级联图标
+.regist-icon {
+  &:focus {
+    outline: none;
+  }
+}
+
+// 省市区table列样式
+.region-td {
+  .c7n-pro-input-group {
+    margin-top: -4px;
+  }
+  .c7n-pro-table-cell-inner {
+    .c7n-pro-input-wrapper.c7n-pro-input-readonly {
+      .c7n-pro-input {
+        height: 0.26rem;
+        line-height: 0.26rem;
+      }
+    }
+  }
+  .c7n-pro-table-cell-inner-invalid {
+    .c7n-pro-input {
+      background-color: #fcebeb;
+      border-color: #f56349;
+    }
+  }
+}
+
+// 联系电话样式
+.line-form {
+  margin-top: -3px;
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .c7n-pro-select,
+    .c7n-pro-input {
+      border-color: #fca000;
+      background-color: #fffbef;
+    }
+    .c7n-pro-select:focus,
+    .c7n-pro-input:focus {
+      background-color: #fff !important;
+    }
+  }
+}
+:global {
+  .warehouse-detail {
+    padding: 0 !important;
+    margin: 0;
+    background-color: #f2f3f5;
+    :global {
+      .warehouse-button {
+        padding: 8px;
+        margin: 0 0 8px 0;
+        .c7n-card-body {
+          padding: 0 !important;
+        }
+      }
+      .af-basic-container .title-field {
+        font-weight: 600;
+      }
+      .c7n-tabs-vertical.c7n-tabs-left > .c7n-tabs-bar .c7n-tabs-tab {
+        text-align: left;
+      }
+      .c7n-card-head {
+        padding: 20px 20px 16px 20px;
+        .c7n-card-head-title {
+          padding: 0;
+        }
+      }
+      .c7n-tabs-bar {
+        width: auto;
+        max-width: 180px;
+      }
+      .c7n-tabs-tabpane {
+        padding: 0;
+      }
+      .c7n-pro-form {
+        padding: 20px;
+        .c7n-pro-field-label-vertical {
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .c7n-pro-field-wrapper {
+          .c7n-pro-field {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+      .detail-tabs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(0, 0, 0, 0.06);
+        font-size: 12px;
+        font-weight: 400;
+        padding: 2px;
+        :global {
+          div {
+            height: 28px;
+            line-height: 28px;
+            padding: 0 8px 0;
+            color: rgba(0, 0, 0, 0.45);
+            cursor: pointer;
+          }
+        }
+        .active-detail-key {
+          color: rgba(0, 0, 0, 0.8);
+          background: #fff;
+          border-radius: 2px;
+          font-weight: 600;
+        }
+      }
+      .card-detail-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #1d2129;
+        padding: 20px 20px 0;
+      }
+      .card-detail-remark > .c7n-pro-form {
+        padding: 0 20px 20px 20px !important;
+      }
+      .c7n-badge {
+        margin-left: 8px;
+        margin-top: -3px;
+      }
+      .card-titile {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+      }
+      #supplierWarehouseAnchor {
+        margin: 8px;
+        background-color: #f2f3f5;
+        .af-basic-container {
+          margin: 0 0 4px 0 !important;
+          padding: 20px;
+          border-bottom: 0.01rem solid #f4f5f7 !important;
+          .title-field {
+            font-size: 18px;
+            color: #1d2129;
+            font-weight: 600;
+          }
+          .normal-fields {
+            font-size: 12px;
+            color: #868d9c;
+            font-weight: 400;
+          }
+        }
+        .af-basic-bottom-remain-area {
+          display: flex;
+          justify-content: space-between;
+          margin: -4px 0 8px !important;
+          padding: 4px 16px;
+        }
+      }
+      .page-content {
+        padding: 0 !important;
+        margin: 8px;
+      }
+      .page-content-wrap {
+        background-color: #f2f3f5 !important;
+      }
+      .c7n-tabs-tab {
+        font-weight: 400;
+        padding: 0 20px !important;
+        margin: 0 0 16px 0;
+      }
+      .c7n-tabs-content {
+        padding: 0 !important;
+      }
+      .c7n-tabs-tab-active > .c7n-text-wrapper > .c7n-text {
+        font-weight: 600;
+      }
+      .c7n-tabs-nav {
+        padding: 16px 0;
+      }
+      .c7n-pro-table-empty-text-wrapper {
+        font-weight: 400;
+      }
+      .c7n-pro-table {
+        margin: 20px 20px 0 20px;
+      }
+      .c7n-pro-table-pagination {
+        margin: 10px 20px;
+      }
+      .crad-detail-remark > .c7n-pro-form {
+        padding: 16px 20px 20px 20px;
+      }
+      .c7n-tabs-bar {
+        padding: 0 !important;
+      }
+      .tapne-title {
+        margin-top: 16px;
+        font-size: 16px;
+        color: #1d2129;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .c7n-tabs-vertical.c7n-tabs-left > .c7n-tabs-bar .c7n-tabs-tab {
+        font-weight: 400;
+        text-align: left;
+      }
+      .card-titile {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+      }
+      .af-basic-container .title-field {
+        font-weight: 600;
+      }
+      .second-section-title {
+        padding-left: 20px;
+        margin: 0;
+      }
+      .c7n-tabs-tabpane-active {
+        padding: 0 !important;
+      }
+    }
+  }
+}

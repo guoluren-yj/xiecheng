@@ -1,0 +1,51 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.c7n-form-label-required {
+  :global {
+    .c7n-pro-field-required {
+      &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        line-height: 1;
+        content: '*';
+      }
+
+      &::after {
+        content: '';
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+  }
+}
+
+.collapse-card {
+  margin-top: 16px;
+
+  :global {
+    .c7n-collapse-header {
+      padding-left: 0 !important;
+      color: @primary-color !important;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .c7n-collapse-content {
+      padding-left: 0;
+    }
+  }
+}
+
+.card-sub-title {
+  margin: 32px 0 16px;
+
+  .card-sub-title-line {
+    display: inline-block;
+    margin-right: 8px;
+    height: 12px;
+    border-left: 3px solid @primary-color;
+  }
+}

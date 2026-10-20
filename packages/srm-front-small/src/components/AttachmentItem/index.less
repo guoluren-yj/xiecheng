@@ -1,0 +1,33 @@
+.attachment-item {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0 5px;
+  padding-right: 18px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  :global {
+    .delete-icon {
+      font-size: 12px;
+      cursor: pointer;
+      display: none;
+      margin-left: 8px;
+    }
+  }
+  &:hover {
+    :global {
+      .delete-icon {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.content {
+  z-index: 1002;
+}

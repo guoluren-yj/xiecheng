@@ -1,0 +1,66 @@
+.accept-order-wfp {
+    padding: 8px;
+    background: #f4f5f7;
+
+    :global {
+        .c7n-collapse .c7n-collapse-item {
+            border-bottom: none !important;
+            padding: 8px;
+
+            // 分割线
+            &:after {
+                content: '';
+                width: 100%;
+                height: 8px;
+                position: absolute;
+                left: 0;
+                background-color: #f4f5f7;
+            }
+        }
+
+        .c7n-collapse>.c7n-collapse-item>.c7n-collapse-header[aria-expanded=false] {
+            padding-bottom: 20px !important;
+        }
+
+        .c7n-collapse>.c7n-collapse-item>.c7n-collapse-header[aria-expanded=true] {
+            padding-bottom: 16px;
+        }
+
+        .c7n-collapse-content>.c7n-collapse-content-box {
+            padding-bottom: 20px;
+            padding-top: 0 !important;
+        }
+
+        .c7n-pro-form-wrapper {
+            display: inline-block;
+        }
+
+        .c7n-collapse-icon-position-text-right>.c7n-collapse-item .c7n-collapse-expand-icon-wrapper {
+            margin-left: 8px;
+        }
+
+        .c7n-collapse-borderless>.c7n-collapse-item>.c7n-collapse-content {
+            padding: 0 12px;
+        }
+
+        .c7n-collapse-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .af-basic-container {
+            margin: 0 0 9px 0;
+            padding: 16px 20px;
+        }
+
+        .af-basic-bottom-remain-area {
+            margin: 0;
+            padding: 8px 20px;
+        }
+
+        .header-title{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    }
+}

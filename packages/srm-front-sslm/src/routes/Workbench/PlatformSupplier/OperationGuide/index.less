@@ -1,0 +1,64 @@
+@import '~hzero-front/lib/srm-variables';
+
+// 详情步骤条样式
+.steps-wrap {
+  color: red;
+  :global {
+    .c7n-steps-item.c7n-steps-item-process,
+    .c7n-steps-item.c7n-steps-item-finish {
+      .c7n-steps-item-icon {
+        width: 24px;
+        height: 24px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-right: 8px;
+        background: #179454;
+        border-color: #179454;
+        .c7n-steps-icon.icon-check {
+          font-size: 23px;
+        }
+      }
+      .c7n-steps-item-tail {
+        &::after {
+          background: #179454;
+        }
+      }
+      .c7n-steps-item-title {
+        font-size: 14px;
+        color: #1d2129;
+        font-weight: 500;
+      }
+      .c7n-steps-item-description {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        .c7n-pro-select-box-wrapper {
+          width: 100%;
+          color: rgb(29, 33, 41);
+          font-weight: 500;
+          .c7n-pro-select-box {
+            .c7n-pro-radio-wrapper {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+    }
+    .c7n-steps-item.c7n-steps-item-finish {
+      .c7n-steps-item-title {
+        color: @text-2;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.supplier-wrap {
+  font-size: 14px;
+  color: #1d2129;
+  line-height: 22px;
+  &-name {
+    font-weight: 600;
+  }
+}

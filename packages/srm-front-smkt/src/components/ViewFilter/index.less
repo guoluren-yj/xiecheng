@@ -1,0 +1,25 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.workbench-view-filter {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  > span {
+    cursor: pointer;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    > i {
+      font-size: 16px;
+    }
+  }
+  .view-active {
+    background: rgba(0, 0, 0, 0.05);
+    color: @primary-color-cyan-hover;
+    border-radius: 2px;
+  }
+}

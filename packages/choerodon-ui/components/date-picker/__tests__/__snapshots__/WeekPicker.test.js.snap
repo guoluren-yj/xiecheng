@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeekPicker should support style prop 1`] = `
+<span
+  class="c7n-calendar-picker"
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    style="width: 400px;"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+          style="margin: 0px 0px 0px 0px;"
+        >
+          <input
+            class="c7n-input c7n-calendar-picker-input c7n-input"
+            readonly=""
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              Select date
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <span
+            class="c7n-calendar-picker-icon-wrapper"
+          >
+            <i
+              class="icon icon-date_range c7n-calendar-picker-icon"
+            />
+          </span>
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;

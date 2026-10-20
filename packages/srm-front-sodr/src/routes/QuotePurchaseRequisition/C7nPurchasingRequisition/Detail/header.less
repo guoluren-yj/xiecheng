@@ -1,0 +1,147 @@
+/**
+ * LineCreation - 按行引用创建
+ * @date: 2019-02-20
+ * @author: guochaochao <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.button-group {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 16px;
+  :global {
+    .ant-btn:first-child {
+      margin-left: 8px;
+    }
+  }
+}
+// 订单维护行
+.pr-line {
+  :global {
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+}
+
+.purchase-application {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}
+
+.number-input {
+  :global {
+    text-align: right;
+  }
+}
+
+.order-top {
+  &-title {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    border: #dcf3d1;
+    background: #edf9e8;
+    line-height: 32px;
+
+    & span {
+      background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+      margin: 0 8px 0 12px;
+      width: 16px;
+      height: 16px;
+      line-height: 32px;
+      display: inline-flex;
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+.order-maintain-top-title {
+  :global {
+    margin-bottom: 16px !important;
+    border: none;
+    color: rgba(48, 149, 242);
+    background-color: rgba(48, 149, 242, 0.1) !important;
+
+    .c7n-alert-icon {
+      color: rgba(48, 149, 242);
+    }
+  }
+}
+
+.order-top-title-alert {
+  :global {
+    width: 363px;
+    margin: -20px -20px 20px;
+    background-color: #e6f7ff;
+    border: none;
+    color: #1890ff;
+    vertical-align: middle;
+    line-height: 21px;
+
+    .c7n-alert-close-icon {
+      top: 0.1rem;
+      color: #1890ff;
+    }
+
+    div {
+      i {
+        margin-top: -4px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+//C7N订单维护- 提交按钮弱校验弹框样式
+.batch-submit-modal {
+  :global {
+    .c7n-pro-modal-content {
+      padding: 0.24rem;
+      padding-bottom: 0;
+      padding-right: 0.15rem;
+      .c7n-pro-modal-body {
+        padding: 0;
+        white-space: pre-line;
+        max-height: 140px;
+      }
+      .c7n-pro-confirm-title {
+        font-size: 14px;
+        line-height: 0.28rem;
+      }
+    }
+  }
+}
+
+.detail-save-confirm-modal {
+  :global {
+    .c7n-pro-confirm-content {
+      white-space: pre-line;
+      max-height: 140px;
+      overflow: auto;
+    }
+  }
+}

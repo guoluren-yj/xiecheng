@@ -1,0 +1,75 @@
+.templateWarp {
+  :global {
+    .title {
+      width: 100%;
+      height: 20px;
+      border-left: 3px solid @primary-color;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 16px;
+      margin-bottom: 16px;
+    }
+
+    .upload {
+      padding-left: 24px;
+    }
+
+    .portal-information {
+      margin-top: 48px;
+    }
+
+    .upload-logo {
+      display: flex;
+      padding-left: 24px;
+      .template-upload-logo {
+        // display: flex;
+        // width: 260px;
+        // flex-direction: row-reverse;
+        .ant-upload-list {
+          display: none;
+        }
+        .ant-upload-select {
+          padding: 7px;
+          border: 1px dashed #d9d9d9;
+          margin-left: 8px;
+          background-color: #fafafa;
+        }
+      }
+      .image {
+        width: 168px;
+        height: 48px;
+        border: 1px solid #d9d9d9;
+        padding: 8px;
+        img {
+          height: 100%;
+          max-width: 150px;
+        }
+      }
+    }
+
+    .template-upload-favicon {
+      > div {
+        // width: 204px !important;
+        height: 78px !important;
+        width: 78px !important;
+        img {
+          height: 100%;
+        }
+        // width: auto !important;
+
+        > div {
+          // width: 204px !important;
+          height: 78px !important;
+          width: 78px !important;
+          // width: auto !important;
+        }
+      }
+      .ant-upload-list-item-info > span {
+        display: inline;
+      }
+      .ant-upload-list-item-file-name {
+        display: none;
+      }
+    }
+  }
+}

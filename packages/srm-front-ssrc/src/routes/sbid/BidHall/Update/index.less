@@ -1,0 +1,65 @@
+/**
+ * 招标样式文件
+ * @date: 2019-05-28
+ * @author: zoukang <kang.zou@hand-china.com>
+ * @version: 1.0.0
+ * @copyright Copyright (c) 2018, Hand
+*/
+
+.detailTitle {
+  background: #fafafa;
+  padding: 12px;
+  margin-bottom: 10px;
+  .titleLeft {
+    float: left;
+    .titleName {
+      margin: 0 15px 0 2px;
+    }
+  }
+  .titleRight {
+    float: right;
+    font-size: 14px;
+    .icon {
+      margin-left: 10px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.item-list-search {
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.tabStyle > div {
+  margin-bottom: 0;
+}
+
+.tabStyle {
+  :global {
+    .ant-tabs-bar {
+      margin: 0 0 8px 0;
+
+      .ant-tabs-extra-content {
+        margin-right: 16px;
+      }
+    }
+  }
+}

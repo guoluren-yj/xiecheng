@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>勾选</title>
+    <defs>
+        <path d="M10.5,0.214285714 L1.5,0.214285714 C0.786428571,0.214285714 0.214285714,0.792857143 0.214285714,1.5 L0.214285714,10.5 C0.214285714,11.2071429 0.786428571,11.7857143 1.5,11.7857143 L10.5,11.7857143 C11.2135714,11.7857143 11.7857143,11.2071429 11.7857143,10.5 L11.7857143,1.5 C11.7857143,0.792857143 11.2135714,0.214285714 10.5,0.214285714 Z M4.71428571,9.21428571 L1.5,6 L2.40642857,5.09357143 L4.71428571,7.395 L9.59357143,2.51571429 L10.5,3.42857143 L4.71428571,9.21428571 Z" id="path-1"></path>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-页面设置-自定义页边距&amp;纸张大小" transform="translate(-942.000000, -94.000000)">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(16.000000, 0.000000)">
+                        <g id="编组-14备份-3" transform="translate(602.000000, 4.000000)">
+                            <g id="Icon/checkbox_selected" transform="translate(104.000000, 0.000000)">
+                                <polygon id="路径" points="0 0 20 0 20 20 0 20"></polygon>
+                                <g id="icon/color" transform="translate(4.000000, 4.000000)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="蒙版" fill-rule="nonzero"></g>
+                                    <g id="编组" mask="url(#mask-2)">
+                                        <g transform="translate(-1.714286, -1.714286)" id="icon/color">
+                                            <rect id="矩形" fill="#29BECE" x="0" y="0" width="15.4285714" height="15.4285714"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

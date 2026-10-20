@@ -1,0 +1,28 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.sku-container {
+  :global {
+    .sku-info {
+      width: 100%;
+      display: flex;
+      .sku-img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        margin-top: 6px;
+      }
+      .sku-content {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+:global {
+  .c7n-pro-btn-link.action-link-btn + .c7n-pro-btn-link.action-link-btn {
+    margin-left: 16px;
+  }
+}

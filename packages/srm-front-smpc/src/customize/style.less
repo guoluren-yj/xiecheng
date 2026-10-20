@@ -1,0 +1,16 @@
+// 当图片有变更时
+.mall-card {
+  :global {
+    .card-body {
+      background-image: url('../assets/dashboard/purchase-order-b.svg');
+      .card-header {
+        background-image: url('../assets/dashboard/purchase-order.svg');
+      }
+      &:hover {
+        .card-header {
+          background-image: url('../assets/dashboard/purchase-order-s.svg');
+        }
+      }
+    }
+  }
+}

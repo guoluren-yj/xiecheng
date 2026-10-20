@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 23</title>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4、维护明细-流程设置-节点设置" transform="translate(-1068.000000, -440.000000)">
+            <g id="编组-29" transform="translate(1042.000000, 424.000000)">
+                <g id="编组-28" transform="translate(16.000000, 16.000000)">
+                    <g id="编组-23" transform="translate(10.000000, 0.000000)">
+                        <rect id="矩形" fill="#1984F7" x="0" y="0" width="36" height="36" rx="4"></rect>
+                        <g id="Icon/flash_on" transform="translate(6.000000, 6.000000)">
+                            <polygon id="icon" fill="#FFFFFF" points="7 2 7 13 10 13 10 22 17 10 13 10 17 2"></polygon>
+                            <polygon id="flash_on" points="0 0 24 0 24 24 0 24"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

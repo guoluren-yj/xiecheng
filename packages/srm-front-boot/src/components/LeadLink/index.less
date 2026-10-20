@@ -1,0 +1,128 @@
+.header-link {
+  display: inline-block;
+  line-height: 40px;
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.header-vip {
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+
+  & > img {
+    max-height: 0.2rem;
+    margin-right: 0.1rem;
+  }
+}
+
+.c7n-modal {
+  :global {
+    .c7n-modal-content {
+      padding: 0;
+
+      .icon-close {
+        line-height: 2.5;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .logoSelf,
+      .logoF {
+        border-radius: 100%;
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        background-color: #fff;
+        text-align: center;
+        line-height: 56px;
+        box-shadow: #eee 0 1px;
+
+        img {
+          width: 30px;
+          max-height: 30px;
+        }
+      }
+
+      .lineTo {
+        position: relative;
+        display: inline-block;
+        line-height: 28px;
+        width: 68px;
+        text-align: center;
+        margin: 0 16px;
+
+        .lineToIcon {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          background-color: #ddd;
+          height: 2px;
+        }
+
+        .lineToIcon::before,
+        .lineToIcon::after {
+          position: absolute;
+          content: '';
+          width: 8px;
+          height: 2px;
+          background-color: #ddd;
+          right: 0;
+          transform-origin: right;
+        }
+
+        .lineToIcon::before {
+          // top: ;
+          transform: rotateZ(45deg);
+        }
+
+        .lineToIcon::after {
+          transform: rotateZ(-45deg);
+        }
+      }
+
+      .modalTop {
+        padding: 0.24rem;
+        background-color: #f6f9fd;
+      }
+
+      .modalBottom {
+        padding: 0.24rem;
+      }
+    }
+  }
+}
+.login-modal {
+  :global {
+    .c7n-modal-footer {
+      margin-bottom: -0.12rem;
+    }
+  }
+}
+
+.language-modal {
+  :global {
+    .icon-close {
+      color: #1d2129;
+    }
+    .c7n-modal-title {
+      font-size: 16px;
+      color: #1d2129;
+      line-height: 24px;
+      font-weight: 600;
+    }
+    .c7n-modal-body {
+      font-size: 14px;
+      color: #4e5769;
+      line-height: 22px;
+      padding: 20px 0;
+      font-weight: 400;
+    }
+  }
+}

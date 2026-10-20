@@ -1,0 +1,28 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.content {
+  display: flex;
+  height: 32px;
+  line-height: 28px;
+  :global {
+    .role-list {
+      margin-right: 10px;
+      display: flex;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 2px;
+      border-radius: 2px;
+      color: @text-color-secondary;
+      font-size: 14px;
+      .btn {
+        padding: 0 12px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .btn.active {
+        background-color: #fff;
+        font-weight: 600;
+        color: @text-color;
+      }
+    }
+  }
+}

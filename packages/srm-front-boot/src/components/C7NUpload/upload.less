@@ -1,0 +1,174 @@
+@import '~hzero-front/lib/srm-variables';
+
+.c7n-pro-upload-list-bkt {
+  border: none;
+  color: #333;
+  line-height: 16px;
+  :global {
+    .c7n-pro-upload-list-item-success {
+      color: #333;
+
+      a {
+        color: #333;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .c7n-pro-upload-list-item {
+      // margin-bottom: 4px;
+      // border: 0.01rem solid #e0e0e0;
+      .c7n-pro-upload-list-item-time,
+      .c7n-pro-upload-list-item-size,
+      .c7n-pro-upload-list-item-name {
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .c7n-pro-upload-list-item-size {
+        color: #999;
+        max-width: 130px;
+      }
+      .c7n-pro-upload-list-item-time {
+        color: #999;
+        max-width: 175px;
+      }
+      .c7n-pro-upload-list-item-name {
+        max-width: 145px;
+        padding-left: 4px;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.c7n-pro-upload-bkt {
+  width: 100%;
+  display: inline-block;
+  padding-top: 8px;
+
+  :global {
+    .flex-wrapper {
+      margin-bottom: 8px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+    }
+
+    .c7n-pro-upload-select {
+      margin-right: 0;
+    }
+  }
+}
+
+.c7n-alert-bkt {
+  :global {
+    .c7n-alert-icon {
+      top: 8px;
+    }
+  }
+}
+
+:global {
+  .c7n-pro-upload-bkt-wrapper {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .c7n-pro-upload-bkt {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 24px;
+
+    a + .c7n-tag {
+      background-color: @link-color;
+      border-color: @link-color;
+    }
+  }
+  .c7n-pro-upload-bkt-invalid a {
+    color: #d50000;
+  }
+
+  // .c7n-pro-upload-bkt-float-label .c7n-pro-upload-bkt {
+  //   height: 0.32rem !important;
+  //   line-height: 0.32rem;
+  //   border-radius: 0.02rem !important;
+  //   padding-left: 10px;
+  //   padding-right: 0.24rem;
+  // }
+  // .c7n-pro-upload-bkt-float-label::before {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   display: block;
+  //   border: 0.01rem solid rgba(0, 0, 0, 0.2);
+  //   border-radius: 0.05rem;
+  //   content: ' ';
+  // }
+
+  // .c7n-pro-upload-bkt-float-label::before {
+  //   border-style: dashed;
+  //   border-radius: 0.02rem;
+  // }
+  // .c7n-pro-upload-bkt-float-label .c7n-pro-field-label {
+  //   font-size: 14px !important;
+  //   -webkit-transform: scaleY(0.8);
+  //   transform: scaleY(0.8);
+  //   color: rgba(0, 0, 0, 0.65);
+  //   font-weight: 400;
+  //   padding: 0;
+  //   line-height: 2.61538462;
+  //   -webkit-transform-origin: inherit;
+  //   -ms-transform-origin: inherit;
+  //   transform-origin: inherit;
+  //   -webkit-transition: inherit;
+  //   transition: inherit;
+  //   pointer-events: none;
+  //   z-index: -1;
+  // }
+
+  // .c7n-pro-upload-bkt-float-label .c7n-pro-field-label-wrapper,
+  // .c7n-pro-upload-bkt-float-label .c7n-pro-upload-bkt:focus + .c7n-pro-field-label-wrapper {
+  //   -webkit-transform: scaleX(0.8);
+  //   -ms-transform: scaleX(0.8);
+  //   transform: scaleX(0.8);
+  // }
+
+  // .c7n-pro-upload-bkt-float-label .c7n-pro-field-label-wrapper {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0.1rem;
+  //   max-width: 98%;
+  //   height: 0;
+  //   margin-left: -0.05rem;
+  //   padding: 0 0.05rem;
+  //   border-top: 0.02rem solid #fff;
+  //   -webkit-transform-origin: 0.1rem -230%;
+  //   -ms-transform-origin: 0.1rem -230%;
+  //   transform-origin: 0.1rem -230%;
+  //   -webkit-transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  //   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  // }
+
+  .c7n-pro-upload-list-item-remove-bkt {
+    cursor: pointer;
+  }
+
+  .c7n-pro-upload-list-item-preview-bkt {
+    right: 0.2rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.btn-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  & > button:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+
+.field-match-btns {
+  :global {
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+      background-color: #29bece;
+      border-color: #29bece;
+      color: #fff;
+    }
+    .c7n-pro-checkbox-inner {
+      border: none;
+      transform: rotate(45deg) scale(1) translateX(1.5px);
+    }
+  }
+}

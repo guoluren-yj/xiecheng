@@ -1,0 +1,286 @@
+@title-margin-bottom: 16px;
+@title-prefix-color: @primary-color;
+@import '../../components/AFCards/af.less';
+@import '~choerodon-ui/lib/style/themes/default';
+
+// 全局通用样式
+:global {
+  /**
+  * c7n pro 只读垂直排布表单UED规范样式
+  * example:
+  *   <Form labelLayout='vertical' className='c7n-pro-vertical-form-display'>
+  *     ...formfield
+  *   </Form>
+  */
+  .c7n-pro-vertical-form-display {
+    margin-right: -0.16rem;
+
+    tr:first-child .c7n-pro-field-label + .icon {
+      margin-bottom: 5px;
+      font-size: 0.14rem;
+    }
+
+    tr:not(:first-child) .c7n-pro-field-label {
+      margin-top: 16px;
+
+      & + .icon {
+        margin-top: 17px;
+        margin-bottom: 6px;
+        font-size: 0.14rem;
+      }
+    }
+
+    .c7n-pro-field-label {
+      margin-bottom: 4px;
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-left: 0;
+      line-height: 1.5;
+    }
+
+    .c7n-pro-field-wrapper {
+      margin-top: 0;
+      color: @text-1;
+      font-weight: 600;
+      padding: 0 0.16rem 0 0 !important;
+
+      span {
+        line-height: 1.5;
+        word-break: break-word;
+      }
+    }
+  }
+
+  /*
+  * 非主按钮无线框样式
+  * example:
+  *   <HzeroUiButton className='no-border-btn' />
+  *   <C7nButton className='no-border-btn' />
+  *   <C7nProButton className='no-border-btn' />
+  */
+  .no-border-btn {
+    &:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    &.ant-btn:not(.ant-btn-primary),
+    &.c7n-btn-raised:not(.c7n-btn-primary),
+    &.c7n-pro-btn-raised:not(.c7n-pro-btn-primary) {
+      &,
+      &:active,
+      &:focus,
+      &:hover {
+        color: #333;
+        border: none;
+        background-color: transparent;
+      }
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+
+  /**
+  * 双标签页样式
+  */
+  .double-tabs-tab-container {
+    &.invide {
+      .double-tabs-bottom-tab {
+        padding-top: 8px;
+        border-top: 1px solid #e8e8e8;
+      }
+
+      .double-tabs-invide-line {
+        margin: 8px 16px 16px;
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .double-tabs-left-wrapper,
+    .double-tabs-right-wrapper {
+      display: block;
+      float: left;
+      line-height: 32px;
+
+      ul > li {
+        list-style: none;
+      }
+    }
+
+    .double-tabs-left-wrapper {
+      // max-width: 180px;
+      overflow: auto;
+      line-height: 30px;
+    }
+
+    .double-tabs-left-tab {
+      display: inline-block;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 2px;
+      line-height: 25px;
+
+      ul.double-tabs-root {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      .double-tabs-item {
+        width: max-content;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 0 12px;
+        cursor: pointer;
+      }
+
+      .double-tabs-item-selected {
+        background: #fff;
+        font-weight: 600;
+      }
+
+      &.double-tabs-dot {
+        .dot::after {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: red;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .double-tabs-right-tab {
+      display: inline-block;
+
+      .double-tabs-root {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      .double-tabs-item {
+        font-size: 14px;
+        margin-right: 28px;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .double-tabs-count {
+        color: rgba(0, 0, 0, 0.65);
+        margin-left: 5px;
+      }
+
+      .double-tabs-item-selected,
+      .double-tabs-item-active {
+        font-weight: 600;
+        color: @primary-color;
+
+        .double-tabs-count {
+          color: @primary-color;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .double-tabs-invide-line {
+      display: block;
+      float: left;
+      width: 1px;
+      height: 16px;
+      line-height: 32px;
+      margin: 8px;
+    }
+
+    .double-tabs-bottom-tab {
+      display: block;
+      clear: both;
+
+      :global {
+        .c7n-tabs-bar {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /** Section组件样式 */
+  .top-section-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: @title-margin-bottom;
+  }
+
+  .second-section-title {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: @title-margin-bottom;
+  }
+
+  .second-section-title::before {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    border-left: 3px @title-prefix-color solid;
+    margin-right: @title-margin-bottom / 2;
+  }
+
+  /** 个性化ProxyExport组件 Icon样式覆盖 */
+  .proxy-export .icon {
+    font-size: 0.14rem;
+    font-weight: initial;
+  }
+
+  // 个性化自定义实现telField样式
+  .srm-tel-field-group {
+    &.c7n-pro-output-invalid {
+      border: none;
+      padding: 0;
+      .c7n-pro-select {
+        border-color: @error-color !important;
+      }
+    }
+    .c7n-pro-input-disabled .c7n-pro-input {
+      border-bottom: none !important;
+    }
+    .srm-tel-field {
+      display: flex;
+      .c7n-pro-select {
+        height: 28px;
+        border: 0.01rem @disabled-color solid;
+        border-right: none;
+        border-radius: 2px 0 0 2px;
+        background-color: #f7f8fa;
+        border-color: @disabled-color !important;
+      }
+      .c7n-pro-select-suffix i {
+        color: #1d2129 !important;
+      }
+      .c7n-pro-input-wrapper {
+        flex: 1;
+      }
+      .c7n-pro-input {
+        border-radius: 0 2px 2px 0;
+      }
+      .c7n-pro-validation-message {
+        display: none;
+      }
+    }
+  }
+}

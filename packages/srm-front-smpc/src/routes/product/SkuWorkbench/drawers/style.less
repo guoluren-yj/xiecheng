@@ -1,0 +1,229 @@
+@import '~hzero-front/lib/srm-variables.less';
+.evaluate-container {
+  :global {
+    .c7n-pro-table-tbody .c7n-pro-table-cell {
+      vertical-align: top;
+    }
+    .evaluate-wrapper {
+      width: 100%;
+    }
+    .rate-list {
+      color: #fa6400;
+      font-size: 16px;
+      line-height: 20px;
+      vertical-align: top;
+    }
+    .evaluate-text {
+      margin: 0;
+      color: #000;
+      line-height: 18px;
+      font-weight: 400;
+      height: 36px;
+      text-align: left;
+      display: -webkit-box !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+.batch-sku-container {
+  :global {
+    .c7n-pro-field-wrapper {
+      padding-right: 16px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.update-price-alert {
+  border: none;
+  color: #fca000;
+  margin-bottom: 16px;
+  :global {
+    .c7n-alert-icon {
+      font-size: 16px;
+    }
+  }
+}
+
+.sku-card-container {
+  margin-top: 32px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+  :global {
+    .sku-card-head {
+      margin-bottom: 16px;
+      height: 22px;
+      line-height: 22px;
+      position: relative;
+      padding: 0 0 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > span {
+        display: block;
+      }
+      .sku-card-title {
+        font-size: 14px;
+        color: #000;
+        font-weight: 600;
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+      }
+    }
+  }
+}
+
+.label-select-container {
+  position: relative;
+  :global {
+    .label-create-wrapper {
+      position: relative;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 2px;
+      background-color: #fff;
+      z-index: 10;
+      .label-create-content {
+        padding: 16px;
+        > p {
+          margin: 0;
+          padding: 0;
+        }
+        .form-label {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 18px;
+          font-weight: 600;
+          .required {
+            color: #f56349;
+          }
+          margin-bottom: 8px;
+        }
+      }
+      .label-create-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 8px 16px;
+      }
+    }
+    .c7n-select-selection__rendered {
+      border: none;
+    }
+  }
+}
+
+.label-create-wrapper {
+  width: 100%;
+  :global {
+    .label-create-content {
+      padding: 16px;
+      > p {
+        margin: 0;
+        padding: 0;
+      }
+      .form-label {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 18px;
+        font-weight: 600;
+        .required {
+          color: #f56349;
+        }
+        margin-bottom: 8px;
+      }
+    }
+    .label-create-footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 8px 16px;
+    }
+  }
+}
+
+.primary-btn {
+  color: #fff !important;
+  background-color: @primary-color !important;
+  border-color: @primary-color !important;
+}
+
+.sku-record-timeline {
+  :global {
+    .c7n-timeline-item-content {
+      padding-left: 24px;
+      top: -4px;
+    }
+  }
+}
+
+.operate-container {
+  width: 100%;
+  display: flex;
+  :global {
+    .operate-icon .icon {
+      position: relative;
+      top: -1px;
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .operate-content {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding-bottom: 12px;
+      flex: 1;
+      .operate-action {
+        margin-bottom: 8px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        .approve-tag {
+          padding: 1px 4px;
+          border-radius: 2px;
+          color: #fff;
+        }
+      }
+      // .operate-text {
+      //   .operate-label {
+      //     color: #000;
+      //     margin-right: 4px;
+      //   }
+      // }
+      .operate-time {
+        margin-top: 8px;
+        color: rgba(0, 0, 0, 0.45);
+      }
+    }
+
+    .sku-createby,
+    .sku-text {
+      font-weight: 500;
+    }
+    .sku-action {
+      margin: 0 8px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}
+
+.warning-help {
+  position: relative;
+  top: -20px;
+  margin: 0 -20px;
+  border: none;
+
+  :global {
+    .icon {
+      font-size: 16px !important;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+.process-define-config-form {
+  :global {
+    .c7n-pro-field-wrapper {
+      margin-top: 16px;
+    }
+    .c7n-pro-field-wrapper:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.process-define-config-form1 {
+  :global {
+    .c7n-pro-field-wrapper {
+      margin-top: 0 !important;
+    }
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  .custom-bottom {
+    background: #f2f3f5;
+    height: 24px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1;
+    margin-right: 8px;
+    padding: 0 8px 0 2px;
+  }
+}
+.process-label {
+  position: relative;
+  &:hover {
+    .process-label-close {
+      display: inline-block;
+    }
+  }
+  &-close {
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    right: -6px;
+    color: #fff;
+    background-color: rgba(32, 45, 64, 0.3);
+    border-radius: 50%;
+    &:hover {
+      background-color: rgba(32, 45, 64, 0.5);
+    }
+    i {
+      font-size: 12px !important;
+      margin: 0 !important;
+      vertical-align: top;
+    }
+  }
+  &-add {
+    padding: 0;
+    text-align: center;
+    width: 22px;
+    background: #fff;
+    border: 1px solid #c9cdd4;
+    border-radius: 2px;
+    color: #4e5769;
+    i {
+      font-size: 12px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.label-title {
+  font-weight: 700;
+  border-left: 3px solid @primary-color;
+  text-indent: 8px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 13px;
+  margin-bottom: 16px;
+}
+.label-color-item {
+  display: inline-block;
+  margin-right: 16px;
+  width: 24px;
+  cursor: pointer;
+  color: #fff;
+  height: 24px;
+  vertical-align: bottom;
+  text-align: center;
+  i {
+    line-height: 24px;
+  }
+}
+
+.fast-reply-alert {
+  border: none;
+  background-color: rgba(25, 131, 245, 0.1);
+  color: #1983f5;
+  padding: 0.08rem 0.08rem 0.08rem 0.4rem;
+  :global {
+    .c7n-alert-icon {
+      font-size: 16px;
+    }
+    .c7n-alert-close-icon i {
+      font-size: 16px;
+      color: #1983f5;
+    }
+  }
+}
+
+.fast-reply-label {
+  position: relative;
+  color: #1d2129;
+  line-height: 26px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #f2f3f5;
+  border-radius: 2px;
+  margin-top: 8px;
+  &:hover {
+    .fast-reply-label-close {
+      display: inline-block;
+    }
+  }
+  &-close {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -6px;
+    right: -6px;
+    color: #fff;
+    background-color: rgba(32, 45, 64, 0.3);
+    border-radius: 50%;
+    &:hover {
+      background-color: rgba(32, 45, 64, 0.5);
+    }
+    i {
+      font-size: 12px !important;
+      margin: 0 !important;
+      vertical-align: top;
+    }
+  }
+  &-add {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    color: #4e5769;
+    margin-top: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(201, 205, 212, 1);
+    border-radius: 2px;
+    i {
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.collapse {
+  :global {
+    .sub-title {
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      line-height: 1;
+      .green-dot {
+        width: 3px;
+        height: 14px;
+        background-color: @primary-color;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+    .c7n-collapse-expand-icon-wrapper {
+      margin-left: 0 !important;
+    }
+    .c7n-collapse-expand-icon {
+      vertical-align: sub !important;
+    }
+    .c7n-collapse-header,
+    .c7n-collapse-content {
+      padding: 0 !important;
+    }
+    .c7n-collapse-content-box {
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+    }
+  }
+}
+
+.lov-button-mode {
+  height: 14px;
+  width: 22px;
+  padding: 0;
+  :global {
+    .icon {
+      vertical-align: baseline;
+      font-size: 12px;
+    }
+  }
+}
+
+.todo-remind-radio {
+  &-label {
+    white-space: normal;
+  }
+  :global {
+    .c7n-pro-radio-label {
+      flex: 1;
+    }
+  }
+}

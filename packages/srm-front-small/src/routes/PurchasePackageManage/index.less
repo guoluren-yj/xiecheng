@@ -1,0 +1,86 @@
+
+@import '~hzero-front/lib/srm-variables';
+.combo-info {
+  width: 100%;
+  overflow: hidden auto;
+  :global {
+    .basic-info {
+      .info-tab {
+        margin-bottom: 16px;
+        .divider {
+          display: inline-block;
+          width: 3px;
+          height: 12px;
+          background-color: @primary-color;
+          margin: 0 10px -1px 0;
+        }
+        .desc {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .product-info {
+      margin-top: 20px;
+      position: relative;
+      .info-tab {
+        margin-bottom: 16px;
+        .divider {
+          display: inline-block;
+          width: 3px;
+          height: 12px;
+          background-color:@primary-color;
+          margin: 0 10px -1px 0;
+        }
+        .desc {
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+      }
+      .btn-group {
+        position: absolute;
+        left: 100px;
+        top: 39px;
+        z-index: 10;
+      }
+    }
+    .upload-crop{
+      .c7n-upload-list-item{
+        width: 148px;
+        height: 148px;
+      }
+      .c7n-upload{
+        width: 148px;
+        height: 148px;
+      }
+      .c7n-upload-list-item-picture-card{
+        height: 130px;
+      }
+      .c7n-upload-list-item-picture-card::before{
+        height: 130px;
+      }
+    }
+    .upload-crop> p:first-child{
+      margin: 0 !important;
+    }
+    .attachment-label{
+      color: #868D9C;
+    }
+    .attachment-help{
+      margin-left: 4px;
+      position: relative;
+      top: -1px;
+      color: #868D9C;
+    }
+    .attachment-readOnly{
+      .c7n-pro-attachment-header{
+        display: none;
+      }
+      .c7n-pro-attachment-list-item-title{
+        display: none;
+      }
+    }
+  }
+}

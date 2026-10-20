@@ -1,0 +1,161 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+@keyframes init {
+  from {
+    height: 0;
+  }
+  to {
+    height: 64px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chat-item {
+  height: 64px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+
+  &:not(.active):hover {
+    background-color: #f2f3f5;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    background-color: #e5e7ec;
+  }
+
+  :global {
+    img {
+      display: flex;
+      height: 40px;
+      width: 40px;
+      border-radius: 5px;
+    }
+  }
+
+  &.init {
+    animation: init 0.2s linear;
+  }
+
+  &.fade-in {
+    animation: fade-in 0.3s linear;
+  }
+
+  &.active {
+    &::after {
+      display: none;
+    }
+
+    .chat-item-inner {
+      background-color: #e5e7ec;
+    }
+  }
+
+  &.last-top {
+    &::after {
+      display: none;
+    }
+  }
+
+  &.top {
+    background-color: #f8f9fb;
+
+    &.active {
+      .chat-item-inner {
+        background-color: #e5e7ec;
+      }
+    }
+  }
+
+  .chat-item-inner {
+    padding: 12px 18px;
+    width: 100%;
+
+    .chat-item-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      background: #9ca7bd;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .chat-item-info {
+      flex: 1;
+      justify-content: space-between;
+      overflow: hidden;
+      margin-left: 10px;
+
+      :global {
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &.chat-item-info-center {
+        justify-content: center;
+      }
+
+      .chat-item-title {
+        justify-content: space-between;
+        align-items: center;
+
+        :global {
+          span:nth-of-type(1) {
+            flex: 1;
+            margin-right: 8px;
+          }
+
+          span:nth-of-type(2) {
+            font-size: 10px;
+            color: #868d9c;
+          }
+        }
+      }
+
+      .chat-item-message {
+        font-size: 12px;
+        color: #868d9c;
+
+        .chat-item-message-drafts {
+          font-size: 10px;
+          pointer-events: none;
+          :global {
+            span {
+              font-size: 12px;
+            }
+
+            span:nth-of-type(1) {
+              color: @primary-color-red;
+              margin-right: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

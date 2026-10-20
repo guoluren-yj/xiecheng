@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb should allow Breadcrumb.Item is null or undefined 1`] = `
+<div
+  class="c7n-breadcrumb"
+>
+  <span>
+    <span
+      class="c7n-breadcrumb-link"
+    >
+      Home
+    </span>
+    <span
+      class="c7n-breadcrumb-separator"
+    >
+      /
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb should not display Breadcrumb Item when its children is falsy 1`] = `
+<div
+  class="c7n-breadcrumb"
+>
+  <span>
+    <span
+      class="c7n-breadcrumb-link"
+    >
+      xxx
+    </span>
+    <span
+      class="c7n-breadcrumb-separator"
+    >
+      /
+    </span>
+  </span>
+  <span>
+    <span
+      class="c7n-breadcrumb-link"
+    >
+      yyy
+    </span>
+    <span
+      class="c7n-breadcrumb-separator"
+    >
+      /
+    </span>
+  </span>
+</div>
+`;

@@ -1,0 +1,183 @@
+@import '~hzero-front/lib/srm-variables';
+.enterprise-info-detail-content {
+  :global {
+    .page-content {
+      display: flex;
+      padding: 0;
+      margin: 8px;
+      .c7n-spin-nested-loading {
+        width: 100%;
+        .c7n-spin-container {
+          height: 100%;
+        }
+      }
+      .card-content-wrap {
+        background: #f4f5f7;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // 详情头和底部附件信息
+        .card-content {
+          padding: 20px;
+          margin-bottom: 8px;
+          background: #fff;
+          &-title {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            margin-bottom: 16px;
+          }
+        }
+        & > .card-content:last-child {
+          margin-bottom: 0;
+        }
+        & > .c7n-card:last-child {
+          margin-bottom: 0;
+        }
+        // 企业信息 card
+        & > .c7n-card {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 8px;
+          .c7n-card-head {
+            padding: 0 20px;
+            .c7n-card-head-title {
+              color: #1d2129;
+              font-weight: 600;
+              padding-top: 20px;
+              .card-content-title-description {
+                font-size: 12px;
+                font-weight: 400;
+                // color: #868D9C;
+                color: rgba(0, 0, 0, 0.45);
+              }
+            }
+          }
+          .c7n-card-body {
+            flex-grow: 1;
+            padding: 0;
+            .c7n-tabs.c7n-tabs-left {
+              height: 100%;
+              .c7n-tabs-bar {
+                padding: 20px 0;
+                min-width: 180px;
+                max-width: 220px;
+                .c7n-tabs-nav-container-scrolling {
+                  padding: 0;
+                  .c7n-tabs-tab-prev,
+                  .c7n-tabs-tab-next {
+                    display: none;
+                  }
+                }
+                .c7n-tabs-tab,
+                .c7n-tabs-tab > div {
+                  text-align: left;
+                  padding: 0 24px 0 20px !important; // 覆盖调查表样式
+                }
+              }
+              .c7n-tabs-content {
+                padding: 20px;
+              }
+            }
+            .c7n-spin-nested-loading {
+              height: 100%;
+            }
+          }
+        }
+        // 只读页隐藏必填样式
+        .c7n-pro-vertical-form-display {
+          .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+            &:before {
+              display: none;
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.enterprise-info-detail-alert-banner {
+  :global {
+    .c7n-alert-message {
+      font-size: 12px;
+      color: #1983f5;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .c7n-alert-close-icon {
+      .icon-close {
+        color: #1983f5;
+      }
+    }
+  }
+}
+
+// 企业信息变更-表格删除行样式
+.enterprise-info-field-delete {
+  text-decoration: line-through;
+}
+
+// 详情仅展示变更/全部按钮
+.enterprise-info-header-center-btn {
+  position: absolute;
+  right: 44%;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px;
+  :global {
+    .c7n-spin-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        height: 28px;
+        line-height: 28px;
+        padding: 0 8px 0;
+        color: rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+      }
+    }
+  }
+  .active {
+    color: rgba(0, 0, 0, 0.8) !important;
+    background: #fff;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+}
+
+// 列表新建弹窗
+.enterprise-info-list-create-modal {
+  :global {
+    .c7n-pro-modal-body {
+      .c7n-pro-form {
+        .c7n-pro-field-wrapper {
+          .c7n-pro-field-help {
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 附件信息提示样式
+.att-alert {
+  color: @blue-6;
+  border: none;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+    }
+  }
+}

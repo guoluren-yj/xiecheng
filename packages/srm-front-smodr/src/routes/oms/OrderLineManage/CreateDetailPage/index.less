@@ -1,0 +1,58 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.order-detail-content {
+  :global {
+    // .c7n-pro-form-wrapper {
+    //   display: inline-block;
+    // }
+    .order-detail-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .order-detail-base {
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 16px;
+      // margin-top: 12px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        top: 5px;
+        left: 0;
+      }
+    }
+    .order-base-content {
+      // margin-bottom: 16px;
+      .order-base-row {
+        display: flex;
+      }
+    }
+    .order-org-info {
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 16px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+        top: 5px;
+        left: 0;
+      }
+    }
+    .order-product-info {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+  }
+}

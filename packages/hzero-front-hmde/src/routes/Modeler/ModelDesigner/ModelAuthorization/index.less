@@ -1,0 +1,107 @@
+@import '../global';
+
+// 模型授权租户
+.source-authorization {
+  display: flex;
+  flex-flow: column;
+  padding: 16px;
+  height: 100%;
+
+  :global {
+    .c7n-pro-table-wrapper {
+      overflow: hidden;
+
+      .c7n-spin-nested-loading {
+        overflow: auto;
+      }
+    }
+  }
+
+  .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .model-authority-table {
+    overflow-y: auto;
+
+    :global {
+      .c7n-spin-nested-loading {
+        height: auto;
+      }
+
+      .c7n-pro-table-toolbar {
+        width: 100%;
+
+        .c7n-pro-table-toolbar-button-group {
+          display: inline-block;
+          width: 100%;
+
+          .c7n-pro-btn-flat {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  .source-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    span {
+      display: flex;
+      margin-left: 14px;
+      padding: 0 6px;
+      height: 18px;
+      align-items: center;
+      font-size: 12px;
+      background: #e1ebff;
+      border-radius: 15px;
+      color: #5a6677;
+      font-weight: normal;
+    }
+  }
+
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+
+    .form-label {
+      padding: 10px 0;
+      width: 76px;
+
+      i {
+        margin: 0 4px;
+        color: @red1;
+      }
+    }
+
+    :global {
+      .c7n-pro-form {
+        width: 400px;
+      }
+    }
+  }
+
+  .table-title {
+    float: left;
+    margin-bottom: 0;
+    width: 58px;
+    // margin-bottom: -30px;
+    font-size: 14px;
+    color: @HzeroGreen;
+    font-weight: bold;
+    border-bottom: 2px solid @HzeroGreen;
+  }
+
+  .article-text {
+    margin-bottom: 24px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #5a6677;
+  }
+}

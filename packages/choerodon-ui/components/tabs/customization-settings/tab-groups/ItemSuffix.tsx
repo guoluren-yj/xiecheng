@@ -1,0 +1,118 @@
+import React, { FunctionComponent, ReactElement, useCallback, useContext } from 'react';
+import { observer } from 'mobx-react-lite';
+import classNames from 'classnames';
+import Button from 'choerodon-ui/pro/lib/button/Button';
+import { FuncType } from 'choerodon-ui/pro/lib/button/enum';
+import Dropdown from 'choerodon-ui/pro/lib/dropdown/Dropdown';
+import Record from 'choerodon-ui/pro/lib/data-set/Record';
+import { ColumnLock } from 'choerodon-ui/pro/lib/table/enum';
+import { Placements } from 'choerodon-ui/pro/lib/dropdown/enum';
+import { $l } from 'choerodon-ui/pro/lib/locale-context';
+import Tooltip from 'choerodon-ui/pro/lib/tooltip/Tooltip';
+import Menu, { ClickParam, MenuProps } from '../../../menu';
+import { Size } from '../../../_util/enum';
+import TabsContext from '../../TabsContext';
+import Icon from '../../../icon';
+
+const { Item, SubMenu } = Menu;
+
+export interface ItemSuffixProps {
+  record: Record;
+  records: Record[];
+  index: number;
+  defaultKey?: string | undefined;
+  onDefaultKeyChange: (defaultKey: string) => void;
+  groups: { value: ColumnLock | false; records: Record[] }[];
+}
+
+const ItemSuffix: FunctionComponent<ItemSuffixProps> = function ItemSuffix(props) {
+  const { record, defaultKey, onDefaultKeyChange } = props;
+  const { prefixCls, tabCountHideable, defaultChangeable, tabTitleEditable } = useContext(TabsContext);
+  const itemKey = record.get('key');
+  const showCount = record.get('showCount');
+  const destroyInactive = record.get('destroyInactive');
+  const handleMenuClick = useCallback((arg: ClickParam) => {
+    switch (arg.key) {
+      case 'set_default':
+        onDefaultKeyChange(itemKey);
+        break;
+      case 'rename':
+        record.setState('editing', true);
+        break;
+      case 'show_count_yes':
+        record.set('showCount', true);
+        break;
+      case 'show_count_no':
+        record.set('showCount', false);
+        break;
+      case 'destroy_inactive_yes':
+        record.set('destroyInactive', true);
+        break;
+      case 'destroy_inactive_no':
+        record.set('destroyInactive', false);
+        break;
+      default:
+    }
+  }, [record, onDefaultKeyChange, itemKey]);
+  const getTreeNodesMenus = (): ReactElement<MenuProps> | undefined => {
+    const menus: ReactElement<any>[] = [];
+    if (defaultChangeable && !record.get('disabled') && itemKey !== defaultKey) {
+      menus.push(
+        <Item key="set_default">
+          <span>{$l('Tabs', 'set_default')}</span>
+          <Tooltip title={$l('Tabs', 'set_default_tip')}>
+            <Icon type="help" className={`${prefixCls}-tip`} />
+          </Tooltip>
+        </Item>);
+    }
+    if (tabTitleEditable) {
+      menus.push(
+        <Item key="rename">{$l('Tabs', 'rename')}</Item>,
+      );
+    }
+    if (tabCountHideable) {
+      menus.push(
+        <SubMenu key="show_count" title={$l('Tabs', 'show_count')}>
+          <Item key="show_count_yes" className={classNames({ [`${prefixCls}-dropdown-menu-item-selected`]: showCount })}>
+            <span>{$l('Tabs', 'yes')}</span>
+          </Item>
+          <Item key="show_count_no" className={classNames({ [`${prefixCls}-dropdown-menu-item-selected`]: !showCount })}>
+            <span>{$l('Tabs', 'no')}</span>
+          </Item>
+        </SubMenu>,
+      );
+    }
+    menus.push(
+      <SubMenu key="destroy_inactive" title={$l('Tabs', 'destroy_inactive')}>
+        <Item key="destroy_inactive_yes" className={classNames({ [`${prefixCls}-dropdown-menu-item-selected`]: destroyInactive })}>
+          <span>{$l('Tabs', 'yes')}</span>
+        </Item>
+        <Item key="destroy_inactive_no" className={classNames({ [`${prefixCls}-dropdown-menu-item-selected`]: !destroyInactive })}>
+          <span>{$l('Tabs', 'no')}</span>
+        </Item>
+      </SubMenu>,
+    );
+    if (menus.length) {
+      return (
+        <Menu prefixCls={`${prefixCls}-dropdown-menu`} onClick={handleMenuClick} mode="vertical">
+          {menus}
+        </Menu>
+      );
+    }
+  };
+  const menu = getTreeNodesMenus();
+  return menu ? (
+    <Dropdown overlay={menu} placement={Placements.bottomRight}>
+      <Button
+        funcType={FuncType.flat}
+        size={Size.small}
+        icon="more_horiz"
+        className={`${prefixCls}-customization-group-item-hover-button`}
+      />
+    </Dropdown>
+  ) : null;
+};
+
+ItemSuffix.displayName = 'ItemSuffix';
+
+export default observer(ItemSuffix);

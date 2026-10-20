@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs tabPosition remove card 1`] = `
+<div
+  class="ant-tabs ant-tabs-left ant-tabs-vertical ant-tabs-line"
+>
+  <div
+    class="ant-tabs-bar"
+    role="tablist"
+    tabindex="0"
+  >
+    <div
+      class="ant-tabs-nav-container"
+    >
+      <span
+        class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-prev-icon"
+        />
+      </span>
+      <span
+        class="ant-tabs-tab-next ant-tabs-tab-btn-disabled"
+        unselectable="unselectable"
+      >
+        <span
+          class="ant-tabs-tab-next-icon"
+        />
+      </span>
+      <div
+        class="ant-tabs-nav-wrap"
+      >
+        <div
+          class="ant-tabs-nav-scroll"
+        >
+          <div
+            class="ant-tabs-nav ant-tabs-nav-animated"
+          >
+            <div
+              class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+            />
+            <div
+              aria-disabled="false"
+              aria-selected="true"
+              class="ant-tabs-tab-active ant-tabs-tab"
+              role="tab"
+            >
+              foo
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ant-tabs-extra-content"
+    >
+      xxx
+    </div>
+  </div>
+  <div
+    class="ant-tabs-content ant-tabs-content-animated"
+    style="margin-top:0%"
+  >
+    <div
+      aria-hidden="false"
+      class="ant-tabs-tabpane ant-tabs-tabpane-active"
+      role="tabpanel"
+    >
+      foo
+    </div>
+  </div>
+</div>
+`;

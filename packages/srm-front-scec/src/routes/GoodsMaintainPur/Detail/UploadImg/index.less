@@ -1,0 +1,107 @@
+.uploadPhoto {
+  flex: 1;
+  margin-bottom: 24px;
+  .upload-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    .first-li {
+      margin-top: 30px;
+    }
+    .selected {
+      width: 115px;
+      border: 1px solid #6c8be0;
+      margin-top: 13px;
+      float: left;
+      span {
+        width: 45px;
+        height: 20px;
+        background: #6c8be0;
+        color: #fff;
+        display: block;
+        line-height: 20px;
+        text-align: center;
+        margin-top: -20px;
+      }
+    }
+    .noSelect {
+      border: none;
+      float: left;
+      margin-top: 15px;
+      span {
+        display: none;
+      }
+    }
+    .upload-li {
+      width: 115px;
+      float: left;
+      text-align: center;
+      margin-top: 8px;
+      margin-right: 5px;
+    }
+    .photoCard {
+      width: 104px;
+      height: 120px;
+      margin: 12px 9px;
+      text-align: center;
+      .upload-img {
+        width: '90px';
+        height: '114px';
+      }
+      .upload-img:hover:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 86px;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+      }
+      .photo-eye {
+        z-index: 10;
+        cursor: pointer;
+        font-size: 16px;
+        width: 16px;
+        color: rgba(255, 255, 255, 0.85);
+        transition: all 0.3s ease 0s;
+        margin: 0 6px;
+      }
+      .photo-eye:before {
+        content: '';
+      }
+      .photo-delete {
+        opacity: 0;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        z-index: 10;
+        cursor: pointer;
+        font-size: 16px;
+        width: 16px;
+        color: rgba(255, 255, 255, 0.85);
+        transition: all 0.3s ease 0s;
+        margin: 0 6px;
+      }
+    }
+    .ant-upload {
+      display: inline-table;
+      margin-top: 10px;
+      height: 90px;
+      width: 90px;
+    }
+  }
+  .ant-card {
+    position: relative;
+    height: 124px;
+    width: 104px;
+    .del-picture {
+      position: absolute;
+      cursor: pointer;
+      right: 2px;
+      top: 2px;
+    }
+  }
+}

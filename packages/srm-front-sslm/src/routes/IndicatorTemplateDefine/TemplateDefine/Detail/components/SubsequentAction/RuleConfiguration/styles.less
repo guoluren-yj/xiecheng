@@ -1,0 +1,33 @@
+// 查看策略样式
+.check-rule-wrap {
+  margin-top: 16px;
+  .condition-type {
+    color: #868d9c;
+  }
+  .condition-detail-wrap {
+    margin-top: 8px;
+    border-radius: 2px;
+    border: 1px solid #e5e7ec;
+    border-bottom: none;
+    .condition-detail {
+      color: #1d2129;
+      padding: 8px 16px;
+      border-bottom: 1px solid #e5e7ec;
+      span {
+        &:nth-child(1) {
+          font-weight: 600;
+          margin-right: 16px;
+        }
+        &:nth-child(3) {
+          color: #868d9c;
+          margin: 0 16px;
+        }
+      }
+    }
+    .condition-combination {
+      padding: 8px 16px;
+      background: #f7f8fa;
+      border-bottom: 1px solid #e5e7ec;
+    }
+  }
+}

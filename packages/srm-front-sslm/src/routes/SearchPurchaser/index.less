@@ -1,0 +1,67 @@
+.purchaser-info-c7n-card {
+  :global {
+    .c7n-card {
+      margin-bottom: 32px;
+      .c7n-card-head {
+        border: none;
+        padding: 0 11px;
+        min-height: 22px;
+        height: 22px;
+        margin-bottom: 16px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 3px;
+          height: 14px;
+          background-color: @primary-color;
+          pointer-events: none;
+        }
+        .c7n-card-head-title {
+          padding-top: 0;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+      .c7n-card-body {
+        padding: 0;
+        .c7n-pro-input-group-before {
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          width: 130px;
+        }
+        .c7n-pro-input-group-input {
+          margin-left: -0.01rem;
+        }
+      }
+    }
+    .c7n-spin-container {
+      & > .c7n-card:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// 邀约信息弹窗
+.search-purchaser-invite-modal {
+  .search-purchaser-invite-modal-agreement {
+    margin-top: 16px;
+    :global {
+      .c7n-col-24 {
+        display: flex;
+        align-items: flex-start;
+        & > span {
+          padding-top: 1px;
+        }
+      }
+      .c7n-pro-checkbox-wrapper {
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+}

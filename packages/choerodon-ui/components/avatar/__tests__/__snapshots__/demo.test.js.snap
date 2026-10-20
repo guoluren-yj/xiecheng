@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/avatar/demo/badge.md correctly 1`] = `
+<div>
+  <span
+    style="margin-right:24px"
+  >
+    <span
+      class="c7n-badge"
+    >
+      <span
+        class="c7n-avatar c7n-avatar-square c7n-avatar-icon"
+      >
+        <i
+          class="icon icon-person"
+        />
+      </span>
+      <sup
+        class="c7n-scroll-number c7n-badge-count"
+        title="1"
+      >
+        <span
+          class="c7n-scroll-number-only"
+          style="transition:none;-ms-transform:translateY(-1100%);-webkit-transform:translateY(-1100%);transform:translateY(-1100%)"
+        >
+          <p
+            class=""
+          >
+            0
+          </p>
+          <p
+            class=""
+          >
+            1
+          </p>
+          <p
+            class=""
+          >
+            2
+          </p>
+          <p
+            class=""
+          >
+            3
+          </p>
+          <p
+            class=""
+          >
+            4
+          </p>
+          <p
+            class=""
+          >
+            5
+          </p>
+          <p
+            class=""
+          >
+            6
+          </p>
+          <p
+            class=""
+          >
+            7
+          </p>
+          <p
+            class=""
+          >
+            8
+          </p>
+          <p
+            class=""
+          >
+            9
+          </p>
+          <p
+            class=""
+          >
+            0
+          </p>
+          <p
+            class="current"
+          >
+            1
+          </p>
+          <p
+            class=""
+          >
+            2
+          </p>
+          <p
+            class=""
+          >
+            3
+          </p>
+          <p
+            class=""
+          >
+            4
+          </p>
+          <p
+            class=""
+          >
+            5
+          </p>
+          <p
+            class=""
+          >
+            6
+          </p>
+          <p
+            class=""
+          >
+            7
+          </p>
+          <p
+            class=""
+          >
+            8
+          </p>
+          <p
+            class=""
+          >
+            9
+          </p>
+          <p
+            class=""
+          >
+            0
+          </p>
+          <p
+            class=""
+          >
+            1
+          </p>
+          <p
+            class=""
+          >
+            2
+          </p>
+          <p
+            class=""
+          >
+            3
+          </p>
+          <p
+            class=""
+          >
+            4
+          </p>
+          <p
+            class=""
+          >
+            5
+          </p>
+          <p
+            class=""
+          >
+            6
+          </p>
+          <p
+            class=""
+          >
+            7
+          </p>
+          <p
+            class=""
+          >
+            8
+          </p>
+          <p
+            class=""
+          >
+            9
+          </p>
+        </span>
+      </sup>
+    </span>
+  </span>
+  <span>
+    <span
+      class="c7n-badge"
+    >
+      <span
+        class="c7n-avatar c7n-avatar-square c7n-avatar-icon"
+      >
+        <i
+          class="icon icon-person"
+        />
+      </span>
+      <sup
+        class="c7n-scroll-number c7n-badge-dot"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/avatar/demo/basic.md correctly 1`] = `
+<div>
+  <div>
+    <span
+      class="c7n-avatar c7n-avatar-circle c7n-avatar-icon"
+      style="width:64px;height:64px;line-height:64px;font-size:32px"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-lg c7n-avatar-circle c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-circle c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-sm c7n-avatar-circle c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+  </div>
+  <div>
+    <span
+      class="c7n-avatar c7n-avatar-square c7n-avatar-icon"
+      style="width:64px;height:64px;line-height:64px;font-size:32px"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-lg c7n-avatar-square c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-square c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+    <span
+      class="c7n-avatar c7n-avatar-sm c7n-avatar-square c7n-avatar-icon"
+    >
+      <i
+        class="icon icon-person"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/avatar/demo/dynamic.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-avatar c7n-avatar-lg c7n-avatar-circle"
+    style="background-color:#f56a00;vertical-align:middle"
+  >
+    <span
+      class="c7n-avatar-string"
+    >
+      U
+    </span>
+  </span>
+  <button
+    class="c7n-btn c7n-btn-sm c7n-btn-flat"
+    style="margin-left:16px;vertical-align:middle"
+    type="button"
+  >
+    <span>
+      Change
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/avatar/demo/type.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-avatar c7n-avatar-circle c7n-avatar-icon"
+  >
+    <i
+      class="icon icon-person"
+    />
+  </span>
+  <span
+    class="c7n-avatar c7n-avatar-circle"
+  >
+    <span
+      class="c7n-avatar-string"
+    >
+      U
+    </span>
+  </span>
+  <span
+    class="c7n-avatar c7n-avatar-circle"
+  >
+    <span
+      class="c7n-avatar-string"
+    >
+      USER
+    </span>
+  </span>
+  <span
+    class="c7n-avatar c7n-avatar-circle c7n-avatar-image"
+  >
+    <img
+      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+    />
+  </span>
+  <span
+    class="c7n-avatar c7n-avatar-circle"
+    style="color:#f56a00;background-color:#fde3cf"
+  >
+    <span
+      class="c7n-avatar-string"
+    >
+      U
+    </span>
+  </span>
+  <span
+    class="c7n-avatar c7n-avatar-circle c7n-avatar-icon"
+    style="background-color:#87d068"
+  >
+    <i
+      class="icon icon-user"
+    />
+  </span>
+</div>
+`;

@@ -1,0 +1,25 @@
+.description-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 40px;
+  .one-line {
+    flex: 0 0 100%;
+  }
+  .two-col {
+    display: flex;
+    flex: 0 0 66.64%;
+  }
+  & > div {
+    display: flex;
+    flex: 0 0 33.33%;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px dashed #dcdcdc;
+    & > :first-child {
+      width: 100px;
+      color: #aaa;
+    }
+    & > :nth-child(2) {
+      flex: auto;
+    }
+  }
+}

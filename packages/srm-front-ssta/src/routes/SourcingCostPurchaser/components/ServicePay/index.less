@@ -1,0 +1,66 @@
+@import '~hzero-front/lib/srm-variables';
+@sign-width: 40px;
+@col-count: 3;
+
+.ssta-radio-wrap-servicePay {
+  margin-bottom: 16px;
+
+  :global {
+    .c7n-pro-radio-wrapper:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.ssta-service-pay-summary-row {
+  display: flex;
+
+  :global {
+    .c7n-pro-output {
+      line-height: inherit;
+      font-weight: inherit;
+    }
+
+    .amount-card {
+      height: 58px;
+      width: calc((100% / 3 - (@sign-width * (@col-count - 1) / @col-count)));
+      padding: 8px 12px;
+      border: 1px solid #e5e7ec;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+
+      .amount-card-label {
+        color: @text-3;
+      }
+
+      .amount-card-help {
+        font-size: 14px;
+        margin-left: 4px;
+        vertical-align: text-bottom;
+      }
+
+      .amount-card-value {
+        color: @text-1;
+        font-size: 14px;
+      }
+    }
+
+    .amount-sign {
+      width: @sign-width;
+      display: flex;
+      font-size: 20px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.ssta-service-pay-search-bar-wrapper {
+  :global {
+    .c7n-pro-table-search-bar-fields {
+      margin-top: 0;
+    }
+  }
+}

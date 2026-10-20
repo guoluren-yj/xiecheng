@@ -1,0 +1,258 @@
+@import '../../style/themes/default';
+@import '../../style/mixins/index';
+
+@card-prefix-cls: ~'@{c7n-prefix}-card';
+@card-head-height: 0.48rem;
+@card-hover-border: rgba(0, 0, 0, 0.09);
+
+.@{card-prefix-cls} {
+  .reset-component;
+  position: relative;
+  background: @component-background;
+  border-radius: @border-radius-sm;
+  transition: all @animation-duration-slow;
+
+  &-hoverable {
+    cursor: pointer;
+    &:hover {
+      border-color: @card-hover-border;
+      box-shadow: @card-shadow;
+    }
+  }
+
+  &-bordered {
+    border: @border-width-base @border-style-base @border-color-split;
+  }
+
+  &-head {
+    min-height: @card-head-height;
+    margin-bottom: -0.01rem; // Fix card grid overflow bug: https://gw.alipayobjects.com/zos/rmsportal/XonYxBikwpgbqIQBeuhk.png
+    padding: 0 @card-padding-base;
+    background: @card-head-background;
+    border-bottom: @border-width-base @border-style-base @border-color-split;
+    border-radius: @border-radius-sm @border-radius-sm 0 0;
+    .clearfix;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &-title {
+      display: inline-block;
+      flex: 1;
+      padding: @card-head-padding 0;
+      overflow: hidden;
+      color: @card-head-color;
+      font-weight: 500;
+      font-size: @font-size-lg;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .@{c7n-prefix}-tabs {
+      clear: both;
+      margin-bottom: -0.17rem;
+
+      &-bar {
+        border-bottom: @border-width-base @border-style-base @border-color-split;
+      }
+    }
+  }
+
+  &-extra {
+    float: right;
+    // https://stackoverflow.com/a/22429853/3040605
+    margin-left: auto;
+    padding: @card-head-padding + 0.015rem 0;
+    text-align: right;
+  }
+
+  &-body {
+    padding: @card-padding-base;
+    .clearfix;
+  }
+
+  &-contain-grid &-body {
+    margin: -0.01rem 0 0 -0.01rem;
+    padding: 0;
+  }
+
+  &-grid {
+    float: left;
+    width: 33.33%;
+    padding: @card-padding-base;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0.01rem 0 0 0 @border-color-split, 0 0.01rem 0 0 @border-color-split,
+      0.01rem 0.01rem 0 0 @border-color-split, 0.01rem 0 0 0 @border-color-split inset,
+      0 0.01rem 0 0 @border-color-split inset;
+    transition: all @animation-duration-slow;
+    &:hover {
+      position: relative;
+      z-index: 1;
+      box-shadow: @box-shadow-base;
+    }
+  }
+
+  &-contain-tabs &-head-title {
+    min-height: @card-head-height - @card-head-padding;
+    padding-bottom: 0;
+  }
+
+  &-contain-tabs &-extra {
+    padding-bottom: 0;
+  }
+
+  &-cover > * {
+    display: block;
+    width: 100%;
+  }
+
+  &-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: @card-actions-background;
+    border-top: @border-width-base @border-style-base @border-color-split;
+    .clearfix;
+
+    & > li {
+      float: left;
+      margin: 0.12rem 0;
+      color: @text-color-secondary;
+      text-align: center;
+
+      & > span {
+        position: relative;
+        display: inline-block;
+        min-width: 0.32rem;
+        font-size: 0.14rem;
+        line-height: 0.22rem;
+        cursor: pointer;
+
+        &:hover {
+          color: @primary-color;
+          transition: color @animation-duration-slow;
+        }
+
+        & > .anticon {
+          font-size: 0.16rem;
+        }
+
+        a {
+          color: @text-color-secondary;
+
+          &:hover {
+            color: @primary-color;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        border-right: @border-width-base @border-style-base @border-color-split;
+      }
+    }
+  }
+
+  &-wider-padding &-head {
+    padding: 0 @card-padding-wider;
+  }
+
+  &-wider-padding &-body {
+    padding: @card-padding-base @card-padding-wider;
+  }
+
+  &-padding-transition &-head,
+  &-padding-transition &-body {
+    transition: padding @animation-duration-slow;
+  }
+
+  &-padding-transition &-extra {
+    transition: right @animation-duration-slow;
+  }
+
+  &-type-inner &-head {
+    padding: 0 @card-padding-base;
+    background: @background-color-light;
+
+    &-title {
+      padding: @card-inner-head-padding 0;
+      font-size: @font-size-base;
+    }
+  }
+
+  &-type-inner &-body {
+    padding: 0.16rem @card-padding-base;
+  }
+
+  &-type-inner &-extra {
+    padding: @card-inner-head-padding + 0.015rem 0;
+  }
+
+  &-meta {
+    margin: -0.04rem 0;
+    .clearfix;
+
+    &-avatar {
+      float: left;
+      padding-right: 0.16rem;
+    }
+
+    &-detail {
+      overflow: hidden;
+      > div:not(:last-child) {
+        margin-bottom: 0.08rem;
+      }
+    }
+
+    &-title {
+      overflow: hidden;
+      color: @card-head-color;
+      font-weight: 500;
+      font-size: @font-size-lg;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-description {
+      color: @text-color-secondary;
+    }
+  }
+
+  &-loading &-body {
+    padding: 0;
+    user-select: none;
+  }
+
+  &-loading-content {
+    padding: @card-padding-base;
+    p {
+      margin: 0;
+    }
+  }
+
+  &-loading-block {
+    display: inline-block;
+    height: 0.14rem;
+    margin: 0.05rem 2% 0 0;
+    background: linear-gradient(
+      90deg,
+      rgba(207, 216, 220, 0.2),
+      rgba(207, 216, 220, 0.4),
+      rgba(207, 216, 220, 0.2)
+    );
+    background-size: 600% 600%;
+    border-radius: @border-radius-sm;
+    animation: card-loading 1.4s ease infinite;
+  }
+}
+
+@keyframes card-loading {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

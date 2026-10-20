@@ -1,0 +1,85 @@
+.flow-context-comp {
+  margin-bottom: 5px;
+
+  .flow-context-node {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .flowContextTitle {
+      font-size: 14px;
+      color: #1c1c1c;
+    }
+
+    .flow-context-icon {
+      color: #0840f8;
+      cursor: pointer;
+    }
+
+    .flow-context-action {
+      display: none;
+    }
+
+    &:hover {
+      .flow-context-action {
+        display: block;
+      }
+    }
+  }
+
+  :global {
+    .c7n-tree-treenode {
+      width: 100%;
+
+      .c7n-tree-node-content-wrapper {
+        display: flex;
+        width: 100%;
+
+        .c7n-tree-title {
+          flex: 1;
+        }
+
+        &.c7n-tree-node-selected {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+.analysis-title {
+  line-height: 28px;
+  background: #f2f2f2;
+  border-radius: 2px 2px 0 0;
+
+  h4 {
+    margin: 0 12px;
+  }
+}
+
+.analysis-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid #e8e8e8;
+  border-radius: 0 0 2px 2px;
+  border-top: none;
+}
+
+.select-field-title {
+  font-size: 16px;
+  color: #1c1c1c;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.select-field-search {
+  width: 200px;
+
+  :global {
+    .c7n-input-label-wrapper {
+      .c7n-input-label {
+        color: #999;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.authority-manage-table {
+  // 展开图标左对齐
+  :global {
+    .c7n-pro-table-thead
+      .c7n-pro-table-cell[data-index='statusCodeMeaning']
+      .c7n-pro-table-cell-inner {
+      padding-left: 20px;
+    }
+
+    table .c7n-pro-table-tbody .c7n-pro-table-row td[data-index='statusCodeMeaning'] {
+      padding-left: 0 !important;
+
+      .c7n-pro-table-cell-prefix {
+        padding-left: 0 !important;
+      }
+    }
+
+    .action-link-btns {
+      display: flex;
+      height: 100%;
+      // :global {
+      .c7n-pro-btn-link + .c7n-pro-btn-link {
+        margin-left: 16px !important;
+      }
+      > .c7n-pro-btn-disabled > button {
+        display: inline-flex;
+        align-items: center;
+      }
+      // }
+    }
+  }
+}
+
+.authority-update-tip {
+  font-size: 12px;
+  color: @text-color-secondary;
+  line-height: 18px;
+  margin-bottom: 16px;
+  margin-top: -8px;
+}
+
+.operate-column-drop {
+  :global {
+    .c7n-pro-btn {
+      color: @text-1;
+
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}

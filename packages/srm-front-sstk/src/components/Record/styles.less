@@ -1,0 +1,47 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.sku-record-timeline {
+  :global {
+    .c7n-timeline-item {
+      padding-bottom: 12px;
+    }
+    .c7n-timeline-item-content {
+      padding-left: 24px;
+      top: -4px;
+    }
+    .timeline-no-data {
+      position: relative;
+      top: 120px;
+      text-align: center;
+    }
+  }
+}
+
+.timeline-container {
+  width: 100%;
+  display: flex;
+  :global {
+    .timeline-icon .icon {
+      position: relative;
+      top: -1px;
+      font-size: 14px;
+      margin-right: 16px;
+      color: @fill-1;
+    }
+    .timeline-content {
+      border-bottom: 1px solid @border-4;
+      padding-bottom: 12px;
+      flex: 1;
+      .timeline-header {
+        margin-bottom: 8px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+      }
+      .timeline-footer {
+        margin-top: 8px;
+        color: @text-3;
+      }
+    }
+  }
+}

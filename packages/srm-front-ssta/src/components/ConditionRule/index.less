@@ -1,0 +1,46 @@
+@import '~hzero-front/lib/srm-variables';
+@rule-viewer-item-height: 34px;
+.viewer-list-wrapper {
+  padding-top: 1px; // 防止上边框被覆盖
+}
+.viewer-list {
+  border: 1px solid @border-4;
+}
+.viewer-item-wrapper {
+  height: @rule-viewer-item-height;
+  padding: 0 16px;
+  &:not(:first-child) {
+    border-top: 1px solid @border-4;
+  }
+}
+.viewer-item-bottom {
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  .viewer-list-condition {
+    color: #868d9c;
+  }
+}
+.viewer-item {
+  display: flex;
+  gap: 8px;
+  &-serial {
+    font-weight: 700;
+    width: 30px;
+  }
+  &-origin {
+    width: 120px;
+  }
+  &-relation {
+    width: 40px;
+    color: @text-3;
+  }
+  :global {
+    .c7n-pro-output {
+      line-height: @rule-viewer-item-height - 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

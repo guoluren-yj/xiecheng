@@ -1,0 +1,204 @@
+.invite-certification-detail {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 0 16px !important;
+  padding: 0;
+  :global {
+    .page-content-wrap {
+      .page-content {
+        margin-bottom: 0;
+        & > div:first-child {
+          font-size: 16px;
+          color: #000;
+          line-height: 24px;
+          margin-bottom: 16px;
+          font-weight: 600;
+        }
+        .c7n-pro-form-wrapper.c7n-pro-vertical-form-display.c7n-pro-form {
+          .c7n-pro-field-label.c7n-pro-field-label-left.c7n-pro-field-required.c7n-pro-field-label-vertical.c7n-pro-field-label-useColon {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .c7n-collapse {
+      border: none;
+      background: #f4f5f7;
+      > .c7n-collapse-item {
+        &:first-child {
+          margin-top: 8px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        margin-bottom: 8px;
+        background: #fff;
+        border: none;
+        .c7n-collapse-header {
+          font-size: 16px;
+          color: #1d2129;
+          font-weight: 600;
+          padding: 20px;
+          .c7n-collapse-expand-icon-wrapper {
+            margin-left: 8px;
+          }
+        }
+        .c7n-collapse-content {
+          border: none;
+          padding: 0 20px;
+          .c7n-collapse-content-box {
+            padding-top: 0;
+            padding-bottom: 20px;
+            // margin-top: -4px;
+            .c7n-pro-form-wrapper {
+              .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+                &:before {
+                  display: none;
+                  content: '';
+                }
+              }
+            }
+          }
+        }
+      }
+      > .c7n-collapse-item-active {
+        .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+.page-content-card-wrap {
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.page-content-title {
+  padding: 16px 16px 0 16px;
+  float: left;
+}
+
+.page-content-btn {
+  float: right;
+  height: 32px;
+  border-radius: 2px;
+  background: #f2f3f5;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.page-content-btn-supplier {
+  float: left;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1d2129;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.page-content-btn-item {
+  float: right;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1d2129;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.supplier-item {
+  // width: 100%;
+  // height: 100%;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.page-content-collapses {
+  background: #f4f5f7;
+  padding: 0 16px;
+
+  :global {
+    // 折叠栏
+    .c7n-collapse {
+      border: none;
+      background: #f4f5f7;
+      > .c7n-collapse-item {
+        &:last-child {
+          margin-bottom: 0;
+        }
+        margin-bottom: 8px;
+        background: #fff;
+        border: none;
+        .c7n-collapse-header {
+          font-size: 16px;
+          color: #1d2129;
+          font-weight: 600;
+          padding: 20px;
+          .c7n-collapse-expand-icon-wrapper {
+            margin-left: 8px;
+          }
+        }
+        .c7n-collapse-content {
+          border: none;
+          padding: 0 20px;
+          .c7n-collapse-content-box {
+            padding-top: 0;
+            padding-bottom: 20px;
+            // margin-top: -4px;
+            .c7n-pro-form-wrapper {
+              .c7n-pro-field-label.c7n-pro-field-required.c7n-pro-field-label-useColon {
+                &:before {
+                  display: none;
+                  content: '';
+                }
+              }
+            }
+          }
+        }
+      }
+      > .c7n-collapse-item-active {
+        .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+    .no-top-section {
+      // TopSection组件无标题时使用
+      .top-section-title {
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+
+.form-alert {
+  margin: -20px -20px 20px -20px;
+  :global {
+    .c7n-alert-message {
+      font-size: 12px;
+      color: #1983f5;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    .c7n-alert-close-icon {
+      .icon-close {
+        color: #1983f5;
+      }
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+    }
+  }
+}

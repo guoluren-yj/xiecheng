@@ -1,0 +1,26 @@
+.button-group {
+  margin-bottom: 16px;
+  :global {
+    .ant-btn:not(:first-child) {
+      margin-left: 14px;
+    }
+  }
+}
+.row-agent-column {
+  display: flex;
+  align-items: center;
+  img {
+    height: 16px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,723 @@
+@import '../../..//share/styles/constants.less';
+
+@import '~hzero-front/lib/srm-variables.less';
+
+// :global {
+//   .page-container {
+//     padding-bottom: 8px;
+//     .c7n-spin-nested-loading {
+//       height: 100% !important;
+//     }
+
+//     .c7n-spin-container {
+//       height: 100% !important;
+//     }
+//   }
+// }
+// constant
+@zero: 0;
+@default-distance: 16px;
+@default-font-size: 16px;
+@font-weight-bold: 600;
+
+// common color
+@black-color: #000000;
+@red-color: #f56349;
+
+.rfx-card-item-title-line {
+  // todo class will delete
+  display: inline-block;
+  height: 12px;
+  border-left: 3px @primary-color solid;
+  margin-right: @default-distance / 2;
+}
+
+.lov-button {
+  color: @primary-color;
+  font-size: 12px;
+
+  &-left-margin {
+    margin-left: 26px;
+  }
+}
+
+.score-element-header {
+  font-size: 12px;
+  font-weight: 600;
+  .m-b();
+}
+
+.default-gap {
+  width: max-content;
+  display: block;
+  clear: both;
+  .m-b();
+}
+
+.quotationFormContainer {
+  // margin: 12px 0;
+}
+
+// 固定头部 内容滚动
+.rfxControlParentEle {
+  height: 100%;
+  overflow: hidden;
+
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container {
+      height: 100%;
+    }
+
+    .page-content-wrap {
+      height: calc(100% - 48px);
+      overflow-x: hidden !important;
+      overflow: hidden !important;
+    }
+
+    .page-head {
+      // width: 100%;
+      // position: sticky;
+      // top: 0;
+      // z-index: 5;
+
+      // .page-head-operator {
+      //   // flex-grow: 0;
+      //   // width: 67%;
+      //   position: relative;
+
+      //   .c7n-pro-btn-primary {
+      //     position: absolute;
+      //     right: 226px;
+      //   }
+      //   .c7n-pro-btn-default{
+      //     position: absolute;
+      //     right: 310px;
+      //   }
+      // }
+      .c7n-col-16 {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+.rfx-control-section {
+  height: 100%;
+  overflow-y: scroll;
+  margin-left: 8px;
+  //margin-top: 48px;
+
+  .controller-content .controller-content-first {
+    :global {
+      .page-content-wrap > .page-content {
+        margin: 8px !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  :global {
+    .page-content-wrap > .page-content {
+      margin: 8px !important;
+      margin-bottom: 0 !important;
+    }
+
+    .page-content-wrap:last-child {
+      > .page-content {
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+}
+
+.rfx-control-no-section {
+  height: calc(100% - 48px);
+  overflow-y: scroll;
+  margin-bottom: 8px;
+  //margin-top: 48px;
+
+  .controller-content-no-section {
+    margin-bottom: 8px;
+  }
+
+  :global {
+    .page-content-wrap > .page-content {
+      margin: 8px !important;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.rfxControlContainer {
+  :global {
+    .c7n-pro-calendar-picker {
+      color: inherit;
+    }
+
+    .c7n-pro-calendar-picker-wrapper {
+      width: 100%;
+    }
+
+    .quotationFields {
+      margin: 16px -10px;
+    }
+
+    form {
+      width: 100%;
+      // max-width: 1172px;
+    }
+  }
+}
+
+// --------
+.page-anchor-container {
+  position: fixed;
+  bottom: 160px;
+  right: 0;
+  width: 220px;
+  height: 200px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  .anchor-icon {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+  }
+
+  :global {
+    .c7n-anchor-ink-ball:after {
+      color: @anchor-primary-color;
+    }
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+  }
+}
+
+.quotationRuningTime {
+  :global {
+    .c7n-pro-field-wrapper {
+      display: flex;
+    }
+
+    .diffRender {
+      input {
+        color: @red-color;
+      }
+    }
+  }
+}
+
+.diffContainer {
+  :global {
+    .c7n-pro-input-number-wrapper {
+      width: 100%;
+    }
+
+    .c7n-pro-select-group-help {
+      color: rgba(0, 0, 0);
+    }
+    .c7n-pro-attachment-list-wrapper .c7n-pro-attachment-header {
+      align-items: baseline;
+    }
+  }
+  .redColor {
+    color: @red-color;
+
+    input {
+      color: @red-color;
+    }
+
+    :global {
+      // override c7n pro textarea color #000
+      .c7n-pro-textarea-wrapper.c7n-pro-textarea-float-label.c7n-pro-textarea-border {
+        .c7n-pro-textarea {
+          color: @red-color;
+        }
+      }
+      .c7n-pro-btn-wrapper.c7n-pro-attachment.c7n-pro-btn.c7n-pro-btn-link.c7n-pro-btn-primary {
+        color: @red-color;
+      }
+    }
+  }
+}
+
+.redColor {
+  color: @red-color;
+
+  input {
+    color: @red-color;
+  }
+
+  :global {
+    // override c7n pro textarea color #000
+    .c7n-pro-textarea-wrapper.c7n-pro-textarea-float-label.c7n-pro-textarea-border {
+      .c7n-pro-textarea {
+        color: @red-color;
+      }
+    }
+    .c7n-pro-btn-wrapper.c7n-pro-attachment.c7n-pro-btn.c7n-pro-btn-link.c7n-pro-btn-primary {
+      color: @red-color;
+    }
+  }
+}
+
+.contentTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.c7nUpload {
+  line-height: 32px;
+}
+
+// 组件引用至其他标段的样式，有必要可以迁出去
+.applySectionContainer {
+  width: 200px;
+
+  :global {
+    .title {
+      height: 32px;
+      line-height: 32px;
+      margin: 0 -16px;
+      border-bottom: 1px solid #e8e8e8;
+
+      .selecAll {
+        margin: 0 16px;
+      }
+    }
+
+    .c7n-checkbox-group-wrapper {
+      width: 100%;
+    }
+
+    .c7n-spin-container {
+      margin: 0 -16px;
+    }
+
+    .checkbox-line {
+      padding: 5px 8px;
+    }
+
+    .checkbox-grops {
+      width: 100%;
+      margin: 8px 0;
+      height: 180px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+
+      &::-o-scrollbar {
+        width: 0;
+      }
+
+      &::-moz-scrollbar {
+        width: 0;
+      }
+    }
+
+    .footer {
+      margin: 0 -16px;
+      padding-top: 8px;
+      border-top: 1px solid #e8e8e8;
+
+      .confirm {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+// 【询价工作台】=》 招标过程控制 =》【询价控制页】
+.rfxControlWrap {
+  :global {
+    .page-content {
+      margin: 8px 8px 0;
+
+      #rfxDeamnd {
+        margin-bottom: 16px;
+      }
+
+      .quotationFormContainer {
+        // margin: 16px 0;
+      }
+
+      .rfx-prequalification {
+        margin-top: 27px;
+        display: inline-block;
+      }
+    }
+
+    .c7n-pro-table-row-height-fixed .c7n-pro-table-cell-inner {
+      overflow: hidden;
+      height: 0.32rem !important;
+      line-height: 0.32rem !important;
+    }
+
+    // .page-content-wrap:last-child {
+    //   .page-content {
+    //     margin-bottom: 8px;
+    //   }
+    // }
+  }
+}
+
+.controller-content {
+  :global {
+    .page-content {
+      margin-top: 4px;
+    }
+  }
+}
+
+.controller-content-first {
+  :global {
+    .page-content {
+      margin-top: 8px !important;
+    }
+  }
+}
+
+.apply {
+  padding: 8px 0;
+}
+
+// 历史对比-style
+.history-controller-field-red {
+  :global {
+    color: @red-color;
+
+    input {
+      color: @red-color;
+    }
+    .c7n-pro-select-disabled .c7n-pro-select,
+    .c7n-pro-select:disabled {
+      color: @red-color;
+    }
+  }
+}
+
+// lov 历史对比
+.diffLovContainer {
+  > span {
+    width: 100%;
+  }
+
+  .componentDiffRender {
+    display: inline-block;
+    width: 100%;
+
+    > span {
+      width: 100%;
+    }
+
+    :global {
+      .c7n-pro-select-float-label .c7n-pro-select-multiple-block > div {
+        color: @red-color;
+      }
+    }
+  }
+  .redColor {
+    color: @red-color;
+
+    input {
+      color: @red-color;
+    }
+
+    :global {
+      // override c7n pro textarea color #000
+      .c7n-pro-textarea-wrapper.c7n-pro-textarea-float-label.c7n-pro-textarea-border {
+        .c7n-pro-textarea {
+          color: @red-color;
+        }
+      }
+      .c7n-pro-btn-wrapper.c7n-pro-attachment.c7n-pro-btn.c7n-pro-btn-link.c7n-pro-btn-primary {
+        color: @red-color;
+      }
+    }
+  }
+}
+
+.line-item-table {
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      height: auto !important;
+      // border: none;
+    }
+
+    .c7n-pro-table-cell-inner-editable {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-select-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-select {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-input {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      height: 0.28rem !important;
+    }
+  }
+
+  .quotation-controller-range-wrapper {
+    :global {
+      .c7n-pro-input-number-group {
+        align-items: center;
+      }
+
+      .c7n-pro-input-number-group-before {
+        .c7n-pro-select-wrapper {
+          vertical-align: inherit;
+        }
+      }
+
+      .c7n-pro-input-number-group-after,
+      .c7n-pro-input-number {
+        height: 0.28rem;
+      }
+    }
+  }
+
+  // 比较组件内容区域，防止出现内容宽高为0导致气泡显示不出
+  .compareComponentContent {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.supplier-table {
+  .supplier-link {
+    display: block;
+    line-height: 0.28rem;
+  }
+
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      height: auto !important;
+      // border: none;
+    }
+
+    .c7n-pro-table-cell-inner-editable {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-select-rendered-value {
+      border: none;
+    }
+
+    .c7n-pro-select-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-select {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-input {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      height: 0.28rem !important;
+    }
+  }
+}
+
+.expert-table {
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      height: auto !important;
+      // border: none;
+    }
+
+    .c7n-pro-table-cell-inner-editable {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-select-rendered-value {
+      border: none;
+    }
+
+    .c7n-pro-select-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-select {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-input {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      height: 0.28rem !important;
+    }
+  }
+}
+
+.score-table {
+  :global {
+    .c7n-pro-table-cell-inner-bordered {
+      height: auto !important;
+      // border: none;
+    }
+
+    .c7n-pro-table-cell-inner-editable {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-select-rendered-value {
+      border: none;
+    }
+
+    .c7n-pro-select-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-input-wrapper {
+      font-size: 12px;
+    }
+
+    .c7n-pro-select {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-select-multiple .c7n-pro-select {
+      height: auto !important;
+    }
+
+    .c7n-pro-input {
+      height: 0.28rem !important;
+    }
+
+    .c7n-pro-form-wrapper {
+      height: 0.28rem !important;
+    }
+  }
+}
+
+.rfx-controller-control {
+  :global {
+    form {
+      width: 100%;
+    }
+  }
+}
+
+.redAttachment {
+  :global {
+    .c7n-pro-attachment-list.c7n-pro-attachment-list-no-card {
+      color: @red-color;
+    }
+  }
+}
+
+.diffSelectContainer {
+  :global {
+    .c7n-pro-select,
+    .c7n-pro-select-wrapper {
+      color: #000;
+    }
+  }
+
+  .redColor {
+    :global {
+      .c7n-pro-select,
+      .c7n-pro-select-wrapper {
+        color: @red-color;
+      }
+    }
+  }
+}
+
+// 报价幅度
+.quotation-controller-range-wrapper,
+.quotation-controller-range-table-wrapper {
+  :global {
+    .c7n-pro-input-number-group-before {
+      width: 90px;
+      padding: 0;
+      border: 0;
+    }
+  }
+}
+
+// 询价要求
+.rfx-quotation-controller-rfxDemand-wrapper {
+  .rfx-quotation-controller-item-content {
+    // 二级标题
+    .rfx-card-item-title-level-two {
+      font-size: 14px;
+      margin: 32px 0 16px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+    }
+    &:nth-of-type(1) {
+      .rfx-card-item-title-level-two {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+// 页面卡片样式
+.rfx-control-top-section {
+  background: #fff;
+  padding: 0.2rem;
+  margin: 8px;
+}

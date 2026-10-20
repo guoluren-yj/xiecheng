@@ -1,0 +1,44 @@
+.row-10 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-text {
+  font-size: 12px;
+  color: #0840f8;
+  letter-spacing: 0;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e1e1e;
+  margin-bottom: 16px;
+  border-left: 2px solid @primary-color;
+  text-indent: 10px;
+  line-height: 14px;
+}
+
+.delete-icon {
+  color: #868d9c;
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.content {
+  overflow: hidden;
+  margin: 8px 16px 16px;
+  padding: 16px;
+  background-color: #fff;
+  flex-grow: 1;
+  height: calc(100% - 48px);
+  :global {
+    .c7n-tabs {
+      height: 100%;
+    }
+  }
+}

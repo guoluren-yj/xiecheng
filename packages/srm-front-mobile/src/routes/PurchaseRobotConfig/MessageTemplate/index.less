@@ -1,0 +1,21 @@
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.skill-tree-list {
+  :global {
+    .c7n-pro-table-cell-inner {
+      height: auto !important;
+      max-height: 60px;
+      min-height: 30px;
+    }
+    .line-feed-text {
+      word-wrap: break-word !important;
+      word-break: normal !important;
+      white-space: pre-wrap !important;
+      max-height: 60px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+}

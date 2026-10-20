@@ -1,0 +1,43 @@
+.enterprise-tags-wrap {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  .tags-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -8px;
+    .enterprise-tags {
+      margin-bottom: 8px;
+    }
+    .assist-tag {
+      visibility: hidden;
+      position: absolute;
+      top: -999999px;
+      left: -999999px;
+    }
+    .sesame-tags {
+      background: #eff6ff;
+      color: #333;
+      border: 0.01rem solid #eff6ff;
+      display: flex;
+      align-items: center;
+      white-space: normal;
+      height: auto;
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+      }
+    }
+    .more-btn {
+      height: 22px;
+      font-size: 13px;
+      line-height: normal;
+    }
+  }
+  .zhima-logo {
+    width: 100px;
+    height: 16px;
+  }
+}

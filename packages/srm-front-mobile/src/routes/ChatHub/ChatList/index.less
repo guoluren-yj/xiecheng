@@ -1,0 +1,152 @@
+.chat-list {
+	height: 100%;
+
+	.chat-list-main {
+		position: relative;
+		background-color: #fff;
+		width: 280px;
+		border-right: 1px solid #e5e7ec;
+
+		.chat-item-search {
+			position: absolute;
+			background-color: #fff;
+			z-index: 99;
+			width: 100%;
+			left: 0;
+			top: 0;
+		}
+
+		.chat-list-ul {
+			flex: 1;
+			overflow: auto;
+			position: relative;
+
+			&.top {
+				.chat-item:first-child {
+					margin-top: 65px;
+				}
+			}
+
+			.chat-list-loading {
+				margin-top: 86px;
+				width: 100%;
+			}
+
+			.chat-list-empty {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 14px;
+				font-weight: bold;
+				color: #868d9c;
+			}
+		}
+
+		.chat-list-footer {
+			height: 32px;
+			min-height: 32px;
+			cursor: pointer;
+			margin: 10px 16px 16px 16px;
+			background-color: #f2f3f5;
+			border-radius: 3px;
+			font-size: 13px;
+		}
+
+		.chat-list-footer-disabled {
+			visibility: hidden;
+			height: 58px;
+		}
+	}
+}
+
+.chat-list-main-agent {
+	position: relative;
+	background-color: #fff;
+	width: 210px;
+	border-right: 1px solid #e5e7ec;
+
+	.chat-item-search {
+		position: absolute;
+		background-color: #fff;
+		z-index: 99;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.chat-list-ul {
+		flex: 1;
+		overflow: auto;
+		position: relative;
+
+		&.top {
+			.chat-item:first-child {
+				margin-top: 65px;
+			}
+		}
+
+		.chat-list-loading {
+			margin-top: 86px;
+			width: 100%;
+		}
+
+		.chat-list-empty {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 14px;
+			font-weight: bold;
+			color: #868d9c;
+		}
+	}
+
+	.chat-list-footer {
+		height: 32px;
+		min-height: 32px;
+		cursor: pointer;
+		margin: 10px 16px 16px 16px;
+		background-color: #f2f3f5;
+		border-radius: 3px;
+		font-size: 13px;
+	}
+
+	.chat-list-footer-disabled {
+		visibility: hidden;
+		height: 58px;
+	}
+}
+
+.aiagent-header {
+	:global {
+		.c7n-pro-btn-overflow-text {
+			flex: none !important;
+		}
+
+		.c7n-pro-btn:not(.c7n-pro-btn-disabled-wrapper) {
+			max-width: unset !important;
+		}
+	}
+}
+
+.agent-type-list-item {
+	padding: 0 20px;
+	height: 36px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #4e5769;
+	font-weight: 400;
+	cursor: pointer;
+
+	&:hover {
+		background: #f3f4f5 !important;
+		color: #1d2129 !important;
+		font-weight: 500 !important;
+		i {
+			color: #1d2129 !important;
+		}
+	}
+}

@@ -1,0 +1,299 @@
+@import '~hzero-front/lib/srm-variables.less';
+.sbsm-detail-form (@formWidth: 100%) {
+  width: @formWidth;
+
+  &.c7n-pro-form-float-label {
+    margin: 0 -8px;
+  }
+
+  & > table > tbody > tr {
+    &:last-child {
+      .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c7n-pro-field-label-vertical {
+    max-width: 100%;
+    line-height: 18px;
+    padding: 0;
+  }
+
+  .c7n-pro-field-label-vertical ~ .c7n-pro-field-wrapper {
+    padding: 4px 16px 16px 0;
+    font-weight: 600;
+    line-height: 18px;
+
+    .c7n-pro-output {
+      line-height: 18px;
+    }
+  }
+
+  .c7n-pro-field-label-help + .icon-help {
+    font-size: 14px;
+  }
+}
+
+.sbsm-detail-card () {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .c7n-card-body {
+    padding: 0;
+  }
+
+  .c7n-card-head {
+    min-height: 0;
+    border-bottom: none;
+    padding: 0 0 16px 11px;
+
+    &:before {
+      top: 5px;
+      height: 12px;
+    }
+
+    .c7n-card-head-wrapper {
+      flex-direction: column;
+
+      .c7n-card-head-title {
+        font-size: 14px;
+        font-weight: 600;
+        flex: none;
+      }
+
+      .c7n-card-extra {
+        font-size: 12px;
+        line-height: 21px;
+        margin-left: 0;
+        padding: 12px 0 0 0;
+        float: left;
+        text-align: left;
+
+        a:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.sbsm-detail-collapse (@fullfit: false) {
+  & > .c7n-collapse-item {
+    padding: 20px 20px;
+    &:not(:last-child) {
+      border-bottom: 8px solid #f4f4f4;
+    }
+    & when (@fullfit = true) {
+      padding: 20px 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+    & > .c7n-collapse-header {
+      font-size: 16px;
+      font-weight: 600;
+      padding: 0;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0;
+      }
+    }
+
+    & > .c7n-collapse-content {
+      padding: 0;
+      & > .c7n-collapse-content-box {
+        padding: 0;
+      }
+    }
+  }
+  & > .c7n-collapse-item-active {
+    & > .c7n-collapse-header {
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.collapse-content-wrap {
+  :global(.c7n-pro-modal-body) & {
+    overflow: visible !important;
+  }
+  .collapse-content {
+    padding: 0;
+
+    :global {
+      .c7n-collapse {
+        .sbsm-detail-collapse();
+      }
+
+      .c7n-pro-form-wrapper {
+        .sbsm-detail-form();
+      }
+
+      .ued-detail-card {
+        .sbsm-detail-card();
+      }
+    }
+  }
+
+  .collapse-content-fullfit:extend(.collapse-content) {
+    margin: 0;
+    padding: 0;
+    :global {
+      .c7n-collapse {
+        .sbsm-detail-collapse(true);
+      }
+    }
+  }
+}
+
+.sbsm-detail-content-payTermsCtrl {
+  padding: 0 20px;
+  :global {
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        overflow: visible; // 覆盖overflow默认值以完全显示伪元素分隔符
+        & > .c7n-collapse-header {
+          padding: 20px 0;
+          font-size: 16px;
+          font-weight: 600;
+          overflow: hidden; // 组件父元素默认overflow迁移到子元素下以兼容
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+
+        & > .c7n-collapse-content {
+          overflow: hidden; // 组件父元素默认overflow迁移到子元素下以兼容
+          padding: 0 0 20px 0;
+
+          & > .c7n-collapse-content-box {
+            padding: 0;
+
+            .c7n-pro-form-float-label {
+              padding-top: 4px;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          position: relative;
+          padding-bottom: 8px;
+
+          &::after {
+            content: '';
+            bottom: 0;
+            height: 8px;
+            left: -20px;
+            right: -20px;
+            position: absolute;
+            background-color: #f4f5f7;
+          }
+        }
+      }
+
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+    .c7n-pro-form-wrapper {
+      .sbsm-detail-form();
+    }
+    .ued-detail-card {
+      .sbsm-detail-card();
+    }
+  }
+}
+
+.sbsm-no-line-content-payTermsCtrl {
+  :global {
+    .c7n-result {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      .c7n-result-icon {
+        margin-bottom: 12px;
+      }
+      .c7n-result-title {
+        text-align: left;
+        .content-payTermsCtrl-warpper {
+          height: 100%;
+          display: flex;
+          max-width: 560px;
+          flex-direction: column;
+          justify-content: space-around;
+          .content-payTermsCtrl-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: @text-color;
+          }
+          .content-payTermsCtrl-desc {
+            font-size: 14px;
+            color: @text-color-secondary;
+          }
+          .content-payTermsCtrl-button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sbsm-panel-extra-checkbox {
+  font-size: 12px;
+  font-weight: 500;
+  :global {
+    .c7n-pro-checkbox-label {
+      padding-right: 0;
+    }
+  }
+}
+
+.sbsm-term-no-line-svg {
+  :global {
+    .term-primary-svg-color {
+      fill: @primary-color;
+    }
+    .term-primary-svg-color-1 {
+      fill: @primary-1;
+    }
+  }
+}
+
+.sbsm-payTermsCtrl-alert-info {
+  min-height: 36px;
+  color: #1890ff;
+  background-color: rbga(24, 144, 255, 0.1);
+  border: none;
+  margin-bottom: 16px;
+
+  :global {
+    .icon {
+      font-size: 16px;
+      color: #1890ff;
+    }
+  }
+}
+
+.sbsm-payTermsCtrl-option-help {
+  font-size: 14px;
+  margin-top: -2px;
+  margin-left: 4px;
+  color: @fill-3;
+  font-weight: 400;
+}

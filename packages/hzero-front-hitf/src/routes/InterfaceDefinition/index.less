@@ -1,0 +1,140 @@
+.interface-definition-container {
+  height: calc(100% - 48px);
+  width: 100%;
+  overflow-y: auto;
+  .interface-definition-content {
+    display: flex;
+    margin: 8px 16px 16px;
+    background-color: #fff;
+    min-height: calc(100% - 32px);
+    .content-left {
+      flex: 0 0 280px;
+      padding: 24px 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.03);
+    }
+    .content-right {
+      flex: 1 1 auto;
+      padding: 20px;
+      width: calc(100% - 312px);
+      .link-span {
+        cursor: pointer;
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+// 树目录
+.left-tree {
+  &-header,
+  &-all {
+    padding: 0 20px;
+  }
+  &-all:hover {
+    color: #36c2cf;
+    background: rgba(53, 193, 206, 0.1);
+  }
+  &-header {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+  }
+  &-select {
+    width: calc(100% - 40px);
+    height: 32px;
+    margin: 12px 20px 16px;
+  }
+  &-all {
+    font-size: 12px;
+    color: #000;
+    line-height: 34px;
+    font-weight: 400;
+    height: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    :global {
+      .icon {
+        margin-left: auto;
+      }
+    }
+  }
+  &-all-select {
+    color: #36c2cf;
+    background: rgba(53, 193, 206, 0.1);
+  }
+  .node-title {
+    display: flex;
+    align-items: center;
+    &-text {
+      font-size: 12px;
+      line-height: 34px;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &-dropdown {
+      display: none;
+    }
+  }
+  .node-title:hover {
+    .node-title-dropdown {
+      margin-left: auto;
+      display: inline-block;
+    }
+  }
+
+  :global {
+    .c7n-tree .c7n-tree-switcher {
+      display: none;
+    }
+    .c7n-tree {
+      .c7n-tree-list {
+        .c7n-tree-treenode {
+          height: 34px;
+          width: 100%;
+          .c7n-tree-node-content-wrapper {
+            width: 100%;
+            .c7n-tree-title {
+              color: #000;
+              width: 100%;
+              height: 100%;
+              display: inline-block;
+              padding: 0 16px;
+            }
+          }
+          .c7n-tree-node-content-wrapper:hover {
+            background: rgba(53, 193, 206, 0.1);
+          }
+        }
+        .c7n-tree-treenode:hover {
+          .c7n-tree-title {
+            color: #36c2cf;
+          }
+        }
+        .c7n-tree-treenode-selected {
+          .c7n-tree-node-selected {
+            background: rgba(53, 193, 206, 0.1);
+            .c7n-tree-title {
+              color: #36c2cf;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-form {
+  .repeat-info {
+    font-size: 12px;
+    color: #f56349;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.interface-definition-modal {
+  width: 742px;
+}

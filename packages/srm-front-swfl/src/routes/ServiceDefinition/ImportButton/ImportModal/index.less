@@ -1,0 +1,51 @@
+.import-content {
+  background-color: #fff;
+}
+.import-title {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.import-upload-pic {
+  color: @primary-color;
+}
+.import-upload-text {
+  padding-bottom: 4px;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.import-uploader {
+  margin: 16px 0 24px;
+}
+.import-upload-complete {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0.16rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.04);
+  border: 0.01rem dashed #e0e0e0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  &:hover {
+    border-color: @primary-color;
+  }
+  &-button {
+    margin-top: 12px;
+  }
+  &-filename {
+    padding-bottom: 4px;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 6px;
+  }
+}
+.import-upload-process {
+  width: calc(100% - 40px);
+}

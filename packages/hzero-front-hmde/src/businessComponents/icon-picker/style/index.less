@@ -1,0 +1,114 @@
+@HzeroGreen: #29bece;
+
+.icon-picker-mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.icon-picker-content {
+  box-sizing: border-box;
+  z-index: 101; // 需要高于遮罩的层级
+
+  :global {
+    .c7n-pro-input-wrapper {
+      width: 100%;
+    }
+    .c7n-pro-input-suffix {
+      display: flex;
+      width: auto;
+      & > i:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .icon-picker-tabs-content {
+    position: absolute;
+    margin-top: 4px;
+    width: 700px;
+    height: 297px;
+    transition: height 0.2s;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 #8e92a0;
+    border-radius: 0 0 2px 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 101; // 需要高于遮罩的层级
+
+    :global {
+      .c7n-tabs {
+        height: 100%;
+
+        .c7n-tabs-content {
+          height: calc(100% - 51px);
+          overflow: unset;
+        }
+      }
+      .c7n-tabs-nav-scroll {
+        padding: 0 20px;
+      }
+    }
+
+    .icon-picker-category {
+      box-sizing: border-box;
+      font-size: 12px;
+      color: #5a6677;
+      // text-align: center;
+      line-height: 18px;
+      font-weight: 400;
+      height: 100%;
+      overflow: auto;
+
+      .icon-picker-no-data {
+        padding: 20px 0;
+      }
+
+      ul {
+        position: relative;
+        width: 100%;
+        max-height: 290px;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          // float: left;
+          width: 20%;
+          padding: 0.02rem;
+          text-align: center;
+          vertical-align: top;
+          display: inline-block;
+
+          .icon-picker-item-content {
+            padding: 0.05rem;
+            border-radius: 0.02rem;
+            cursor: pointer;
+            transition: all 0.1s ease 0s;
+
+            & > p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .icon-picker-item-content:hover {
+            background-color: fade(@primary-color, 10%);
+            color: @primary-color;
+          }
+          .icon-picker-item-selected {
+            color: #0840f8;
+            background: #ebf0fb !important;
+          }
+        }
+      }
+    }
+  }
+
+  .hidden-style {
+    height: 0;
+    visibility: hidden;
+  }
+}

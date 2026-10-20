@@ -1,0 +1,163 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.link-color {
+  cursor: pointer;
+  :global {
+    path {
+      fill: #868d9c;
+    }
+  }
+}
+
+.section-content {
+  display: flex;
+  height: 100%;
+
+  .section-left {
+    max-width: 260px;
+    // height: 100%;
+    border-right: 1px solid #e5e7ec;
+    .section-item-content {
+      overflow-y: auto;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      &::-o-scrollbar {
+        width: 0;
+      }
+
+      &::-moz-scrollbar {
+        width: 0;
+      }
+    }
+    .section-item-top {
+      width: 260px;
+      height: 80px;
+      border-bottom: 1px solid #e5e7ec;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .section-item-supplier-name-top {
+        max-width: 85%;
+        font-size: 14px;
+        color: #1d2129;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 4px;
+      }
+    }
+    .section-item {
+      width: 260px;
+      height: 80px;
+      padding: 8px 20px;
+      display: flex;
+      cursor: pointer;
+      margin: 8px 0;
+      .section-item-left {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .section-item-supplier-name {
+          font-size: 14px;
+          color: #1d2129;
+          font-weight: 500;
+          line-height: 22px;
+          margin-bottom: 2px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          :hover {
+            color: #00b8cc;
+          }
+        }
+        .section-item-supplier-name-choose {
+          color: #00b8cc;
+        }
+        .section-item-supplier-price {
+          display: flex;
+          max-width: 85%;
+          .section-item-supplier-price-left {
+            display: flex;
+            .section-item-supplier-price-box {
+              max-width: 76px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+          .section-item-supplier-price-right {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .section-item-right {
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 22px;
+        .section-item-right-icon {
+          font-weight: 600;
+          line-height: 16px;
+          .section-item-right-rank-one {
+            height: 20px;
+            width: 14px;
+            background-image: url('../../../../../../assets/rank-one.svg');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            z-index: 1;
+            text-align: center;
+            color: #ff9700;
+          }
+          .section-item-right-rank-two {
+            height: 20px;
+            width: 14px;
+            background-image: url('../../../../../../assets/rank-two.svg');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            z-index: 1;
+            text-align: center;
+            color: #3da1ff;
+          }
+          .section-item-right-rank-three {
+            height: 20px;
+            width: 14px;
+            background-image: url('../../../../../../assets/rank-three.svg');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            z-index: 1;
+            text-align: center;
+            color: #8f94bc;
+          }
+          .section-item-right-rank-other {
+            height: 20px;
+            width: 14px;
+            background-image: url('../../../../../../assets/rank-other.svg');
+            background-size: 14px;
+            background-repeat: no-repeat;
+            z-index: 1;
+            text-align: center;
+            color: #868d9c;
+          }
+        }
+      }
+    }
+  }
+
+  .section-right {
+    color: black;
+    padding: 20px;
+  }
+  .section-right-nochild {
+    width: 100%;
+    color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../lowcodeGlobalColor.less';
+
+:global {
+  .hmde,
+  .lowcode-m-modal {
+    // 全局覆盖样式
+    // a {
+    //   color: @darkblue2;
+    // }
+
+    // a:hover {
+    //   color: @darkblue;
+    // }
+
+    :global {
+      // btn
+      .c7n-pro-btn-default:focus {
+        // border-color: @lightblue1;
+        color: #000;
+      }
+
+      // 列表上按钮
+      // .c7n-pro-btn-primary.c7n-pro-btn-flat {
+      //   color: @darkblue2 !important;
+      // }
+
+      // .c7n-pro-btn-primary.c7n-pro-btn-flat:hover {
+      //   color: @darkblue !important;
+      // }
+
+      // 进度条
+      .c7n-steps-item-title {
+        font-weight: bold;
+      }
+
+      // .c7n-steps-item-finish .c7n-steps-item-icon,
+      // .c7n-steps-item-process .c7n-steps-item-icon {
+      //   background-color: @darkblue !important;
+      // }
+
+      // .c7n-steps-item-process .c7n-steps-item-title {
+      //   color: @darkblue;
+      // }
+
+      .c7n-pro-table-professional-toolbar {
+        .c7n-pro-btn-flat:enabled:hover,
+        .c7n-pro-btn-flat:enabled:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

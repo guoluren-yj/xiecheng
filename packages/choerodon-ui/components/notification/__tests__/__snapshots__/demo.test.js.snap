@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/notification/demo/basic.md correctly 1`] = `
+<button
+  class="c7n-btn c7n-btn-primary c7n-btn-flat"
+  type="button"
+>
+  <span>
+    Open the notification box
+  </span>
+  <div
+    class="c7n-ripple-wrapper"
+  />
+</button>
+`;
+
+exports[`renders ./components/notification/demo/custom-icon.md correctly 1`] = `
+<button
+  class="c7n-btn c7n-btn-primary c7n-btn-flat"
+  type="button"
+>
+  <span>
+    Open the notification box
+  </span>
+  <div
+    class="c7n-ripple-wrapper"
+  />
+</button>
+`;
+
+exports[`renders ./components/notification/demo/custom-style.md correctly 1`] = `
+<button
+  class="c7n-btn c7n-btn-primary c7n-btn-flat"
+  type="button"
+>
+  <span>
+    Open the notification box
+  </span>
+  <div
+    class="c7n-ripple-wrapper"
+  />
+</button>
+`;
+
+exports[`renders ./components/notification/demo/duration.md correctly 1`] = `
+<button
+  class="c7n-btn c7n-btn-primary c7n-btn-flat"
+  type="button"
+>
+  <span>
+    Open the notification box
+  </span>
+  <div
+    class="c7n-ripple-wrapper"
+  />
+</button>
+`;
+
+exports[`renders ./components/notification/demo/placement.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-select c7n-select-has-value c7n-select-enabled c7n-select-has-border"
+    style="width:120px;margin-right:10px"
+  >
+    <div
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="c7n-select-selection
+            c7n-select-selection--single"
+      role="combobox"
+      tabindex="0"
+    >
+      <div
+        class="c7n-select-selection__rendered"
+      >
+        <div
+          class="c7n-select-selection-selected-value"
+          style="opacity:1"
+          title="topRight"
+        >
+          topRight
+        </div>
+        <span
+          class="c7n-select-arrow"
+          style="user-select:none;-webkit-user-select:none"
+          unselectable="unselectable"
+        >
+          <i
+            class="icon icon-arrow_drop_down"
+          />
+          <b />
+        </span>
+      </div>
+    </div>
+  </div>
+  <button
+    class="c7n-btn c7n-btn-primary c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Open the notification box
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;
+
+exports[`renders ./components/notification/demo/with-btn.md correctly 1`] = `
+<button
+  class="c7n-btn c7n-btn-primary c7n-btn-flat"
+  type="button"
+>
+  <span>
+    Open the notification box
+  </span>
+  <div
+    class="c7n-ripple-wrapper"
+  />
+</button>
+`;
+
+exports[`renders ./components/notification/demo/with-icon.md correctly 1`] = `
+<div>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Success
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Info
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Warning
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+  <button
+    class="c7n-btn c7n-btn-flat"
+    type="button"
+  >
+    <span>
+      Error
+    </span>
+    <div
+      class="c7n-ripple-wrapper"
+    />
+  </button>
+</div>
+`;

@@ -1,0 +1,27 @@
+.empty-panel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+
+  .empty-panel-close-wrap {
+    position: absolute;
+    height: 56px;
+    top: 0;
+    right: 0;
+
+    .empty-panel-close {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      border-radius: 2px;
+      color: #868d9c;
+      :global {
+        .icon {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

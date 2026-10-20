@@ -1,0 +1,60 @@
+.rules-definition-editor-wrapper {
+  margin-top: 16px;
+  :global {
+    .editor-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 24px 0;
+      display: flex;
+
+      & > i {
+        margin-left: 5px;
+      }
+    }
+
+    .rule-editor-form {
+      margin-bottom: 10px;
+      .c7n-pro-form-wrapper > table > tbody > tr > td:first-child,
+      .c7n-pro-form-wrapper > table > tbody > tr > td:last-child {
+        font-size: 14px;
+        vertical-align: middle;
+      }
+      .c7n-pro-select-float-label {
+        width: 100%;
+      }
+      .c7n-pro-input-empty {
+        width: 100%;
+      }
+      .c7n-pro-select-multiple .c7n-pro-select {
+        height: 0.36rem;
+      }
+    }
+
+    .rules-definition-control-point {
+      height: 36px;
+      width: 100%;
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+        border-color: #000;
+      }
+    }
+  }
+}
+.rule-config-condition {
+  :global {
+    .c7n-pro-select-box {
+      margin-top: 4px;
+      min-height: 32px !important;
+      line-height: 1.5;
+      .c7n-pro-radio-wrapper {
+        margin-right: 16px;
+      }
+    }
+  }
+}

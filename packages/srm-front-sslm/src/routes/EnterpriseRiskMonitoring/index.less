@@ -1,0 +1,22 @@
+.monitoring-button {
+  margin-right: 24px;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background: #d9d9d9;
+    margin: 4px 0 4px 12px;
+  }
+}
+
+.modify-group {
+  :global {
+    .ant-modal-content {
+      .ant-modal-footer {
+        border-top: none;
+        padding: 0 24px 24px;
+      }
+    }
+  }
+}

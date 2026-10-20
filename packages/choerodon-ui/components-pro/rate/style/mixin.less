@@ -1,0 +1,48 @@
+@import '../../../components/style/themes/default';
+@import '../../field/style/mixin';
+
+@rate-line-height: 1;
+
+.rate-basic() {
+  &-wrapper {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    line-height: @rate-line-height;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+  }
+
+  &-float-label&-required .@{field-label-prefix-cls}::after {
+    display: inline-block;
+    width: 0.08rem;
+    color: #f56349;
+    font-size: .14rem;
+    line-height: 1;
+    content: "*";
+  }
+
+  &-float-label + .@{c7n-pro-prefix}-validation-message {
+    padding-left: 0;
+  }
+
+  &-float-label .@{field-label-prefix-cls} {
+    display: inline-block;
+    padding: 0;
+
+    &::after {
+      width: 0;
+    }
+  }
+}

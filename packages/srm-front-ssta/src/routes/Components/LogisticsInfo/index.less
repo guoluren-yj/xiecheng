@@ -1,0 +1,135 @@
+.logistics-info-wrap {
+  :global {
+    .logistics-list {
+      padding: 16px 16px 0;
+
+      ul {
+        padding-left: 0;
+
+        li.active {
+          .logistics-desc {
+            color: #47b881;
+          }
+        }
+
+        li {
+          width: 100%;
+          display: flex;
+          color: #999;
+
+          > div {
+            padding-bottom: 8px;
+            min-height: 8px;
+
+            > span {
+              line-height: 8px;
+            }
+          }
+
+          // 日期
+          .logistics-date {
+            min-width: 70px;
+            margin-right: 25px;
+            color: rgba(0, 0, 0, 0.45);
+          }
+
+          // 时间
+          .logistics-time {
+            min-width: 52px;
+          }
+
+          .logistics-box-cicle {
+            width: 76px;
+          }
+
+          // 圆
+          .logistics-cicle {
+            background: #ccc;
+            position: relative;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            line-height: 5px;
+            margin: 0 30px;
+            border-radius: 50%;
+            left: 5px;
+          }
+
+          .logistics-cicle.active {
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            background: #47b881;
+            position: relative;
+            left: 0;
+            top: 2px;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              width: 10px;
+              height: 10px;
+              background: url('../../../assets/wuliu-first-duigou-icon.png');
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+
+          .logistics-cicle.line {
+            &::after {
+              background: #ccc;
+              position: absolute;
+              top: 5px;
+              left: 2px;
+              display: inline-block;
+              content: '';
+              width: 1px;
+              height: 30px;
+            }
+          }
+
+          .logistics-cicle.line.twoLongLine {
+            &::after {
+              height: 48px;
+            }
+          }
+
+          .logistics-cicle.line.threeLongLine {
+            &::after {
+              height: 62px;
+            }
+          }
+
+          .logistics-cicle.line.active {
+            &::after {
+              top: 16px;
+              left: 7px;
+              background: #ccc;
+            }
+          }
+
+          .logistics-desc {
+            width: 700px;
+            color: rgba(0, 0, 0, 0.65);
+
+            .logistics-desc-operator {
+              display: inline-block;
+              margin-right: 24px;
+              min-width: 100px;
+            }
+          }
+        }
+
+        li {
+          color: #999;
+        }
+
+        li.active {
+          color: #333;
+        }
+      }
+    }
+  }
+}

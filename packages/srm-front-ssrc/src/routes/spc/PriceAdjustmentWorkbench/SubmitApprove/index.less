@@ -1,0 +1,68 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.approval {
+  background-color: @background-color-base;
+  min-height: 50px;
+  min-width: 100%;
+  :global {
+    .page-content {
+      margin-top: 0 !important;
+      padding: 20px;
+    }
+  }
+  .custom-page-content {
+    h3 {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.basic-box {
+  padding-top: 8px;
+  :global {
+    .af-basic-container {
+      margin: 0 8px;
+      border-bottom: 1px solid @border-4;
+    }
+    .af-basic-bottom-remain-area {
+      padding: 8px 20px;
+      margin: 0 8px;
+      border: none;
+      .c7n-pro-btn-flat {
+        color: @text-color;
+      }
+    }
+  }
+}
+
+.basic-afextra {
+  :global {
+    .af-extra-container {
+      margin: 8px 8px 0;
+      .af-extra-field {
+        height: auto;
+        .af-extra-field-value > div {
+          height: auto;
+          white-space: pre-wrap;
+        }
+      }
+    }
+    // .af-extra-container .af-extra-field:last-child {
+    //   flex: 1 1 100%;
+    // }
+    // .af-extra-container .af-extra-field:nth-last-child(2), .af-extra-container .af-extra-fields:nth-last-child(2) {
+    //   margin-right: 0;
+    // }
+  }
+  .basic-afextra-label-box {
+    display: flex;
+    align-items: center;
+    .basic-afextra-label-node {
+      margin-right: 4px;
+    }
+  }
+  .afextra-update {
+    color: rgb(245, 99, 73);
+  }
+}

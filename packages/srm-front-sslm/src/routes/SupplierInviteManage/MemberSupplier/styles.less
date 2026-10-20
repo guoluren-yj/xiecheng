@@ -1,0 +1,98 @@
+@import '~hzero-front/lib/srm-variables';
+
+.member-supplier {
+  height: calc(100vh - 260px);
+  :global {
+    .member-supplier-name {
+      cursor: pointer;
+      &:hover {
+        color: @primary-color !important;
+      }
+    }
+    .c7n-pro-table {
+      border: none;
+      .c7n-pro-table-tbody {
+        .c7n-pro-table-row {
+          height: auto !important;
+          &:hover > .c7n-pro-table-cell {
+            background: transparent;
+          }
+          .c7n-pro-table-cell {
+            border: none;
+            padding: 0;
+            .c7n-pro-table-cell-inner {
+              &:hover {
+                background: #f7f8fa;
+              }
+              padding: 12px;
+              margin-bottom: 8px;
+              border-radius: 4px;
+              height: auto !important;
+              border: 1px solid #e5e7ec;
+            }
+          }
+        }
+      }
+    }
+    .c7n-pro-pagination-wrapper {
+      height: 32px;
+      .c7n-pro-pagination-pager {
+        top: 0;
+        font-weight: 500;
+      }
+      .c7n-pro-pagination-pager-jump-next {
+        font-weight: 400;
+      }
+      .c7n-pro-pagination-size-changer {
+        margin-left: 16px;
+        height: 32px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 2px;
+        &:hover {
+          border: 1px solid #1d2129;
+        }
+        .c7n-pro-select {
+          &:hover {
+            border: 1px solid transparent;
+          }
+        }
+      }
+      .c7n-pro-btn-wrapper {
+        width: 32px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 2px;
+      }
+      .c7n-pro-btn-flat {
+        background-color: #fff !important;
+        &:hover {
+          border: 1px solid #1d2129 !important;
+        }
+      }
+      .c7n-pro-btn-raised {
+        color: @primary-color !important;
+        background-color: #fff !important;
+        border: 1px solid @primary-color;
+      }
+    }
+  }
+}
+
+// 供应商信息弹框样式
+.supplier-detail-modal {
+  :global {
+    .member-supplier-detail {
+      margin-bottom: -32px;
+      .top-section-title {
+        display: none;
+      }
+      .second-section-title {
+        + div,
+        + form {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

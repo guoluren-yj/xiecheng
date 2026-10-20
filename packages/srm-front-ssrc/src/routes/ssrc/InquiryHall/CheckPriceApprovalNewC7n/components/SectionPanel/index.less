@@ -1,0 +1,166 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.section {
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: #f7f8fa;
+  :global {
+    // 分标段间距为4px，不分标段为8px
+    .page-content {
+      margin: 4px;
+    }
+  }
+
+  .section-left {
+    width: 160px;
+    background: white;
+    margin: 8px;
+    margin-right: -8px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &.closed-panel {
+      width: 70px;
+      transition: all 0.3s ease-in;
+    }
+    .section-left-title {
+      padding: 16px;
+      border-bottom: 1px solid #e5e7ec;
+      .section-left-title-top {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 4px;
+      }
+      .section-left-title-str {
+        color: @text-3;
+      }
+    }
+    .section-item {
+      width: 160px;
+      height: 34px;
+      line-height: 34px;
+      padding-left: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      &.closed-panel {
+        width: 70px;
+        transition: all 0.3s ease-in;
+        padding-left: 0;
+        margin-left: -9px;
+      }
+      .section-items-item-collapsed-container {
+        height: 24px;
+        text-align: center;
+        line-height: 24px;
+        padding: 8px 8px;
+      }
+
+      .section-items-item-collapsed {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 12px;
+        background-color: #f2f2f2;
+        position: relative;
+        &.item-collapsed {
+          background-color: #ecf7f1;
+          color: #47b881;
+        }
+
+        .active-stars {
+          position: absolute;
+          left: 28px;
+          background-color: @tabs-primary-color;
+          width: 4px;
+          height: 4px;
+          line-height: 4px;
+          top: 12px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .section-left-list {
+      height: calc(100% - 65px);
+      overflow-y: scroll;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+      &::-o-scrollbar {
+        width: 0;
+      }
+
+      &::-moz-scrollbar {
+        width: 0;
+      }
+      .section-left-list-item {
+        margin: 8px;
+        font-size: 14px;
+        position: relative;
+        .active-item-vertical-icon {
+          position: absolute;
+          left: 131px;
+          width: 3px;
+          height: 22px;
+          line-height: 22px;
+          top: 6px;
+          background-color: #29bedb;
+        }
+        .section-items-item-rfx-num:hover {
+          color: #29bedb !important;
+        }
+        .section-items-item-rfx-num-choose {
+          color: #29bedb !important;
+        }
+      }
+    }
+  }
+  .section-right {
+    flex: 1;
+    overflow-y: hidden;
+    background: #f7f8fa;
+    :global {
+      .page-content {
+        overflow-x: hidden;
+      }
+    }
+  }
+  .anchor-icon-collapsed {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    z-index: 99;
+    left: 148px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+    transition: all 0.3s ease-out;
+  }
+
+  .anchor-icon-expand {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    z-index: 99;
+    left: 58px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+    transition: all 0.3s ease-in;
+  }
+}

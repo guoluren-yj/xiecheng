@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2备份</title>
+    <g id="核价聚合表优化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="核价" transform="translate(-120, -534)">
+            <g id="编组-2备份" transform="translate(120, 534)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" opacity="0.01" x="0" y="0" width="12" height="12"></rect>
+                <g id="编组" transform="translate(0, 2)" fill="currentColor" fill-rule="nonzero">
+                    <path d="M12,4.36361603 L12,5.45452413 C12,7.26199522 9.31369335,8.72724843 6,8.72724843 C2.7454666,8.72724843 0.0961417308,7.3138679 0.00255817949,5.55101495 L0,5.45452413 L0,4.36361603 C0,6.17108712 2.68629029,7.63634033 6,7.63634033 C9.31369335,7.63634033 12,6.17108712 12,4.36361603 Z M6,0 C9.31369335,0 12,1.46524776 12,3.27270793 C12,5.08017902 9.31369335,6.54543223 6,6.54543223 C2.68629029,6.54543223 0,5.08017902 0,3.27270793 C0,1.46524776 2.68629029,0 6,0 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

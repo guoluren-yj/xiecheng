@@ -1,0 +1,33 @@
+.viewer-container {
+  position: fixed;
+  opacity: 0;
+  &-show {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    opacity: 1;
+  }
+}
+
+.upload-alert-fix > i.icon {
+  /**
+  * 图标大小18px 行高1 时的修正位置
+  */
+  top: 7.5px;
+}
+
+.file-list .file-list-item {
+  &-icon {
+    color: @link-color;
+  }
+  &-a {
+    word-break: break-word;
+  }
+}
+
+.files-number-tag {
+  background-color: @link-color !important;
+  border-color: @link-color !important;
+}

@@ -1,0 +1,165 @@
+/**
+ * 供货能力清单 - less
+ * @date: 2018-9-20
+ * @author: YB <bo.yang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.modal-button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: right;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+}
+.table {
+  :global {
+    .ant-form-item {
+      margin: 0;
+    }
+  }
+}
+.form-info {
+  padding: 0 16px;
+  margin-bottom: 24px;
+  // :global {
+  //   .ant-form-item {
+  //     margin: 0;
+  //   }
+  // }
+}
+.divider-span {
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+.table-column-g {
+  background-color: #52c41a !important;
+}
+.table-column-y {
+  background-color: #faad14 !important;
+}
+.table-column-r {
+  background-color: #f5222d !important;
+}
+
+.no-file {
+  color: #999;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.down {
+  padding: 40px 0;
+  :global {
+    .ant-upload {
+      display: none;
+    }
+  }
+}
+
+// form
+.information-container {
+  .information-item {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    :global {
+      .ant-row {
+        display: flex;
+        align-items: center;
+      }
+      .ant-col-24 > .ant-row > .ant-col-9 {
+        margin-left: -13px;
+      }
+    }
+  }
+  // .information-item-edit {
+  //   line-height: 28px;
+  // }
+  .information-item-label {
+    color: #666;
+    &::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  .item-label-required {
+    color: #666;
+    &::before {
+      display: inline-block;
+      margin-right: 4px;
+      color: #f5222d;
+      font-size: 14px;
+      line-height: 1;
+      content: '*';
+    }
+    &::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  .information-item-children {
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    :global {
+      .ant-form-item-control-wrapper {
+        width: 100%;
+        .ant-form-item-control {
+          line-height: 28px;
+          & > .ant-form-explain {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .information-half-item {
+    .information-item-label {
+      width: 25%;
+      margin-right: -6px;
+      float: left;
+      line-height: 28px;
+    }
+    .information-item-children {
+      width: 75%;
+      float: left;
+      color: #333;
+      line-height: 28px;
+    }
+  }
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+:global {
+  .form-info {
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+  .detail-form-wrap {
+    .ant-form-item-children {
+      > div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

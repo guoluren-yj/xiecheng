@@ -1,0 +1,201 @@
+@import '~hzero-front/lib/assets/styles/variables.less';
+
+@todo-flag-color: #f8b304;
+@urge-flag-color: #ef2b2c;
+
+.list-icon() {
+  color: white;
+  border-radius: 3px;
+  padding: 2px 2px;
+  margin-right: 2px;
+  width: 17px;
+  // transform: scale(0.9);
+  display: inline-block;
+  line-height: 14px;
+}
+
+.list-todo-icon {
+  .list-icon();
+  background-color: @todo-flag-color;
+}
+
+.list-urge-icon {
+  .list-icon();
+  background-color: @urge-flag-color;
+}
+
+// 查询条件
+.query-bar {
+  display: flex;
+  .query-bar-btn {
+    flex-shrink: 0;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0.1rem 0 0.1rem 0.7rem;
+  }
+}
+
+// 切换按钮
+.icon-group() {
+  margin: 10px;
+  display: inline-block;
+  .icon-item {
+    color: @hzero-primary-color-2;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      color: @hzero-primary-color-2-hover;
+    }
+  }
+  .icon-item:not(:first-child) {
+    margin-left: 0.05rem;
+  }
+}
+
+.card-button {
+  &::after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.icon-group-right {
+  .icon-group();
+  float: right;
+}
+
+.icon-group-left {
+  .icon-group();
+}
+
+// 卡片展示
+.card-container {
+  overflow-y: auto;
+  .card-item {
+    display: flex;
+    align-items: center;
+    padding-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    // box-shadow: 0px 4px 10px 0px rgba(134, 145, 204, 0.16);
+    .card-item-content {
+      border: 1px solid rgba(0, 34, 77, 0.1);
+      box-shadow: rgba(0, 34, 77, 0.1) 0 1px 3px;
+      border-radius: 2px;
+      position: relative;
+      display: flex;
+      width: 100%;
+      padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+      margin-left: 0.1rem;
+      justify-content: space-between;
+      .card-icon() {
+        @total-width: 60px; // 改长度
+        @item-width: 25px; // 改高度
+        @triangle-width: (@total-width - @item-width) / 2;
+        width: @total-width;
+        height: @total-width;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-45deg);
+        .task-flag-content {
+          width: @item-width;
+          height: @triangle-width;
+          background-color: @flag-color;
+          margin-left: @triangle-width;
+          z-index: 1;
+          position: absolute;
+          span {
+            transform: rotate(45deg);
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .triangle() {
+          width: 0;
+          height: 0;
+          border-right: @triangle-width solid transparent;
+          border-left: @triangle-width solid transparent;
+          border-bottom: @triangle-width solid @flag-color;
+        }
+        .task-flag-left-triangle {
+          position: absolute;
+          .triangle();
+        }
+        .task-flag-right-triangle {
+          .triangle();
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+      .card-todo-icon {
+        @flag-color: @todo-flag-color;
+        .card-icon();
+      }
+      .card-urge-icon {
+        @flag-color: @urge-flag-color;
+        .card-icon();
+      }
+      .flow-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .primary-field {
+          font-size: 0.18rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .primary-field-value {
+            margin-left: 0.05rem;
+          }
+        }
+        .second-primary-field {
+          font-size: 0.12rem;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .second-primary-field-value {
+            margin-left: 0.03rem;
+          }
+        }
+      }
+      .extend-field-row:not(:first-child) {
+        margin-top: 0.1rem;
+      }
+      .extend-field-row {
+        width: 100%;
+        .extend-field {
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .extend-field-value {
+            margin-left: 0.05rem;
+          }
+        }
+      }
+      .arrow-icon {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        bottom: 16px;
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+.no-content {
+  height: 60px;
+  text-align: center;
+  width: 100%;
+}

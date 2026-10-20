@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>text</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-109.000000, -179.000000)">
+            <g id="text" transform="translate(109.000000, 179.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形备份-7" fill-opacity="0.01" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M17,2 C17.5522847,2 18,2.44771525 18,3 L18,17 C18,17.5522847 17.5522847,18 17,18 L3,18 C2.44771525,18 2,17.5522847 2,17 L2,3 C2,2.44771525 2.44771525,2 3,2 L17,2 Z M17,3 L3,3 L3,17 L17,17 L17,3 Z M13,6 C13.2761424,6 13.5,6.22385763 13.5,6.5 C13.5,6.77614237 13.2761424,7 13,7 L10.5,7 L10.5,13.5 C10.5,13.7761424 10.2761424,14 10,14 C9.72385763,14 9.5,13.7761424 9.5,13.5 L9.5,7 L7,7 C6.72385763,7 6.5,6.77614237 6.5,6.5 C6.5,6.22385763 6.72385763,6 7,6 L13,6 Z" id="矩形" fill="#0840F8" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jiesu16</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F0828D" offset="0%"></stop>
+            <stop stop-color="#F45063" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="事务处理流配置页" transform="translate(-208.000000, -377.000000)">
+            <g id="编组-2备份-15" transform="translate(196.000000, 94.000000)">
+                <g id="jiesu16" transform="translate(12.000000, 283.000000)">
+                    <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M8,3 C10.7614237,3 13,5.23857625 13,8 C13,10.7614237 10.7614237,13 8,13 C5.23857625,13 3,10.7614237 3,8 C3,5.23857625 5.23857625,3 8,3 Z" id="椭圆形" fill="url(#linearGradient-1)"></path>
+                    <circle id="椭圆形" fill="#FDBBC1" cx="8" cy="8" r="4"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

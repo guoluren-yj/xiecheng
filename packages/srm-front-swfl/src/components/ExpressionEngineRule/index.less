@@ -1,0 +1,94 @@
+@import '~hzero-front/lib/srm-variables';
+.expression-engine1 {
+  :global {
+    .expression-engine-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .expression-engine-default-rule-title,
+    .expression-engine-rule-edit-title {
+      display: flex;
+      justify-content: space-between;
+      height: 22px;
+      line-height: 22px;
+      margin: 16px 0;
+      > span {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 3px;
+          height: 14px;
+          margin-right: 8px;
+          background-color: @primary-color;
+        }
+      }
+    }
+    .expression-engine-rule-edit-title {
+      margin-top: 32px;
+    }
+    .expression-engine-default-rule {
+      .c7n-alert-info {
+        margin: 16px 0;
+        border: none;
+      }
+      .c7n-alert-message {
+        color: #1984f7;
+      }
+    }
+  }
+}
+
+.expression-engine-rule-edit-modal {
+  :global {
+    .edit-modal-base-info,
+    .edit-modal-expression-engine-component,
+    .edit-modal-execution-rule {
+      .title {
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 3px;
+          height: 14px;
+          background-color: @primary-color;
+          margin-right: 8px;
+        }
+
+        & > i {
+          margin-left: 5px;
+        }
+      }
+    }
+    .edit-modal-expression-engine-component {
+      .title {
+        margin: 20px 0 20px 0;
+      }
+    }
+    .edit-modal-execution-rule {
+      .title {
+        margin: 16px 0 16px 0;
+      }
+      .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+        padding: 0;
+      }
+    }
+    .edit-modal-base-info {
+      .title {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

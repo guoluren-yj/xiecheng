@@ -1,0 +1,23 @@
+@import '~hzero-front/lib/srm-variables.less';
+.apply-detail-approve {
+  :global {
+    .sub-title {
+      font-weight: 600;
+      font-size: 14px;
+      height: 22px;
+      color: @text-1;
+      margin-left: 11px;
+      margin-bottom: 16px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 12px;
+        position: relative;
+        top: 1px;
+        left: -11px;
+        background-color: @primary-color;
+      }
+    }
+  }
+}

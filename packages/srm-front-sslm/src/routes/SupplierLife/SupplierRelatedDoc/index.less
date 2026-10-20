@@ -1,0 +1,134 @@
+.triangle-up-validateResult {
+  position: relative;
+  margin-top: 5px;
+
+  .triangle {
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  .triangle:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    border: 11px solid transparent;
+    bottom: 2px;
+    margin-bottom: -5px;
+    border-top-width: 0;
+    border-bottom-width: 22px;
+    border-bottom-color: rgba(255, 177, 0, 0.12);
+  }
+
+  .validateFailCount {
+    position: absolute;
+    left: 7.5px;
+    bottom: -1px;
+    color: rgb(255, 177, 0);
+  }
+}
+
+.process-node-list {
+  transform: scale(0.7);
+  min-width: 420px;
+  margin-left: -56px;
+  :global {
+    // 步骤条样式
+    .c7n-steps-item {
+      cursor: pointer;
+      text-align: left;
+    }
+    .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title {
+      font-weight: 400;
+      color: #1d2129;
+    }
+    .c7n-steps-item-process > .c7n-steps-item-content > .c7n-steps-item-title {
+      font-weight: 400;
+      color: #1d2129;
+    }
+    .c7n-steps-item-error > .c7n-steps-item-content > .c7n-steps-item-title {
+      font-weight: 400;
+      color: #1d2129;
+    }
+    .c7n-steps-item-wait > .c7n-steps-item-content > .c7n-steps-item-title {
+      font-weight: 400;
+      color: #1d2129;
+    }
+    .least-process-node > .c7n-steps-item-content > .c7n-steps-item-title::after {
+      visibility: hidden;
+    }
+    .c7n-steps-item-finish > .c7n-steps-item-content > .c7n-steps-item-title::after {
+      background-color: #46b880;
+    }
+    .c7n-steps-item-finish .c7n-steps-item-icon {
+      font-weight: 400;
+      background-color: #46b880;
+    }
+    .c7n-steps-item-process .c7n-steps-item-icon {
+      font-weight: 400;
+      background-color: #fca400;
+    }
+    .c7n-steps-item-error .c7n-steps-item-icon {
+      font-weight: 400;
+      background-color: #e64322;
+    }
+    .c7n-steps-item-wait .c7n-steps-item-icon {
+      font-weight: 400;
+      background-color: #c9cdd4;
+    }
+    .process-steps-item-early .c7n-steps-item-icon {
+      color: #fff !important;
+      background-color: #46b880 !important;
+      border: 1px solid #46b880 !important;
+      // border: 1px solid transparent !important;
+    }
+    .c7n-steps-item-title {
+      position: relative;
+      display: inline-block;
+      padding-right: 0.02rem;
+      color: #1d2129;
+      font-size: 0.16rem;
+      line-height: 0.28rem;
+      .steps-text-in_progress {
+        color: #fca400;
+      }
+      .steps-text-not_started {
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+    .c7n-steps-horizontal .c7n-steps-item {
+      margin-right: 0.04rem;
+      white-space: nowrap;
+    }
+    .process-node-status-custom-icon {
+      width: 0.28rem !important;
+      height: 0.28rem !important;
+      line-height: 0.28rem !important;
+    }
+    .process-node-status-custom-icon > .icon {
+      color: #fff;
+      margin-top: -0.04rem;
+    }
+    .process-most-text {
+      text-overflow: ellipsis;
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+.popup-process-node-list {
+  width: 420px;
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      width: 96%;
+      max-width: max-content;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,374 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../trigger-field/style/mixin';
+
+@date-picker-prefix: ~'@{c7n-pro-prefix}-calendar';
+@date-picker-width: 2.8rem;
+@datetime-picker-width: 4.3rem;
+@date-picker-horizontal-padding: 0.12rem;
+@date-picker-border-base: @border-width-base @border-style-base @input-border-color;
+@date-time-list-width: (@date-picker-width - @date-picker-horizontal-padding * 2 + 0.02rem) / 3;
+@date-time-list-item-height: 0.29rem;
+
+.@{date-picker-prefix} {
+  &-picker {
+    .trigger-field;
+
+    &-popup {
+      width: @date-picker-width;
+      line-height: 1.5;
+      background-clip: padding-box;
+
+      &-editor {
+        width: 100%;
+        padding: .02rem;
+        border-bottom: @border-width-base @border-style-base @border-color-base;
+      }
+    }
+
+    &-popup-datetime {
+      width: @datetime-picker-width;
+    }
+
+    &-popup-hover-value .@{c7n-pro-prefix}-input,
+    &-popup-hover-value-start &-range-start,
+    &-popup-hover-value-end &-range-end {
+      color: @gray-6;
+    }
+  }
+
+  &-datetime-wrapper {
+    display: flex;
+    align-items: center;
+
+    .@{date-picker-prefix}-time {
+      width: 40%;
+    }
+  }
+
+  &-body {
+    width: 100%;
+    padding: 0.08rem @date-picker-horizontal-padding;
+    overflow: hidden;
+
+    table {
+      width: 100%;
+      font-size: @font-size-lg;
+    }
+
+    th {
+      width: 0.33rem;
+      padding: 0.06rem 0;
+      font-weight: normal;
+      line-height: 0.18rem;
+      text-align: center;
+    }
+  }
+
+  &-cell {
+    height: 0.3rem;
+    padding: 0.03rem 0;
+    text-align: center;
+
+    &-inner {
+      display: block;
+      height: 0.24rem;
+      margin: 0 auto;
+      padding: 0;
+      line-height: 0.22rem;
+      text-align: center;
+      background-color: transparent;
+      border: @border-width-base @border-style-base transparent;
+      border-radius: @border-radius-sm;
+      cursor: pointer;
+      transition: background @animation-duration-slow ease;
+
+      &:hover {
+        background-color: @item-hover-bg;
+      }
+
+      &:active {
+        color: #fff;
+        background-color: @date-primary-hover-color;
+      }
+    }
+  }
+
+  &-now-disabled {
+    color: #bcbcbc;
+
+    &:hover {
+      color: #bcbcbc;
+    }
+  }
+
+  &-old &-cell-inner,
+  &-new &-cell-inner {
+    color: @disabled-color;
+  }
+
+  &-today &-cell-inner {
+    color: @date-primary-color;
+    font-weight: bold;
+    border-color: @date-primary-color;
+  }
+
+  &-cell&-selected &-cell-inner {
+    color: #fff;
+    background: @date-primary-color;
+    border: @border-width-base @border-style-base transparent;
+
+    &:hover {
+      background: @date-primary-color;
+    }
+  }
+
+  &-disabled &-cell-inner {
+    width: auto;
+    color: #bcbcbc;
+    background: @disabled-bg;
+    border: @border-width-base @border-style-base transparent;
+    border-radius: 0;
+    cursor: not-allowed;
+
+    &:hover {
+      background: @disabled-bg;
+    }
+  }
+
+  &-disabled&-today &-cell-inner {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0.01rem;
+      left: 0.01rem;
+      width: 0.2rem;
+      height: 0.2rem;
+      border: @border-width-base @border-style-base #bcbcbc;
+      border-radius: @border-radius-base;
+      content: ' ';
+    }
+  }
+
+  &-day-panel &-cell-inner {
+    width: 0.24rem;
+  }
+
+  &-month-panel &-cell,
+  &-year-panel &-cell {
+    padding: 0.2rem 0;
+  }
+
+  &-month-panel &-cell-inner,
+  &-year-panel &-cell-inner {
+    display: inline-table;
+    padding: 0 0.06rem;
+  }
+
+  &-time-panel &-cell-inner {
+    width: .4rem;
+    height: @date-time-list-item-height - 0.06rem;
+    line-height: @date-time-list-item-height - 0.07rem;
+  }
+
+  &-header {
+    height: 0.4rem;
+    padding: 0 0.07rem;
+    line-height: 0.4rem;
+    text-align: center;
+    border-bottom: @border-width-base @border-style-base @border-color-split;
+    user-select: none;
+
+    a:hover {
+      color: @date-primary-hover-color;
+    }
+  }
+
+  &-prev-year,
+  &-prev-month,
+  &-next-year,
+  &-next-month {
+    padding: 0 0.05rem;
+    color: @text-color-secondary;
+    font-size: 0.14rem;
+    font-family: Arial, 'Hiragino Sans GB', 'Microsoft Yahei', 'Microsoft Sans Serif', sans-serif;
+  }
+
+  &-prev-year,
+  &-prev-month {
+    float: left;
+  }
+
+  &-next-year,
+  &-next-month {
+    float: right;
+  }
+
+  &-view-select {
+    padding: 0 0.02rem;
+    color: @text-color;
+    font-weight: bold;
+    line-height: 0.34rem;
+  }
+
+  &-footer-extra,
+  &-footer {
+    position: relative;
+    height: 0.39rem;
+    line-height: 0.39rem;
+    text-align: center;
+    border-top: @border-width-base @border-style-base @border-color-split;
+
+    button {
+      transition: all @animation-duration-slow ease-out, visibility 0s;
+    }
+
+    a:not(.@{date-picker-prefix}-now-disabled) {
+      color: @date-primary-color;
+
+      &:hover {
+        color: @date-primary-color;
+      }
+    }
+  }
+
+
+
+  &-footer-now-btn {
+    position: absolute;
+    left: 0.12rem;
+  }
+
+  &-footer-view-select {
+    position: absolute;
+    top: 0.04rem;
+    right: 0.12rem;
+    display: inline-block;
+    height: @btn-height-base;
+    padding: @btn-padding-base;
+    color: @text-color-dark !important;
+    line-height: @btn-height-base;
+    text-align: center;
+    vertical-align: middle;
+    background-color: @date-primary-color;
+    background-image: none;
+    border: none;
+    border-radius: @border-radius-base;
+    outline: none;
+    box-shadow: @btn-box-shadow;
+    cursor: pointer;
+    transition: all @animation-duration-slow ease-out;
+    user-select: none;
+    touch-action: manipulation;
+
+    &:hover {
+      color: @text-color-dark;
+      background-color: @date-primary-hover-color;
+    }
+  }
+
+  &-week-panel {
+    tbody tr {
+      &:hover {
+        .@{date-picker-prefix}-cell-inner {
+          background-color: @item-hover-bg;
+        }
+      }
+
+      &:active {
+        .@{date-picker-prefix}-cell-inner {
+          color: #fff;
+          background-color: @date-primary-hover-color;
+        }
+      }
+
+      .@{date-picker-prefix}-selected .@{date-picker-prefix}-cell-inner {
+        color: #fff;
+        background-color: @date-primary-color;
+      }
+    }
+
+    .@{date-picker-prefix}-cell {
+      &-inner {
+        border-radius: 0;
+      }
+
+      &:first-child .@{date-picker-prefix}-cell-inner {
+        border-top-left-radius: @border-radius-base;
+        border-bottom-left-radius: @border-radius-base;
+      }
+
+      &:last-child .@{date-picker-prefix}-cell-inner {
+        border-top-right-radius: @border-radius-base;
+        border-bottom-right-radius: @border-radius-base;
+      }
+    }
+  }
+
+  &-week-cell &-cell-inner {
+    color: @disabled-color;
+  }
+
+  &-time-panel {
+    height: 2.10rem;
+
+    &-inner {
+      position: relative;
+      height: @date-time-list-item-height;
+    }
+  }
+
+  &-time-list {
+    position: relative;
+    float: left;
+    height: 100%;
+
+    &:first-child .@{date-picker-prefix}-time-focus {
+      border-right: 0;
+      border-top-left-radius: @border-radius-base;
+      border-bottom-left-radius: @border-radius-base;
+    }
+
+    &:nth-child(3) .@{date-picker-prefix}-time-focus {
+      border-left: 0;
+      border-top-right-radius: @border-radius-base;
+      border-bottom-right-radius: @border-radius-base;
+    }
+
+    ul {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: top @animation-duration-slow ease;
+    }
+
+    li {
+      height: @date-time-list-item-height;
+      list-style: none;
+    }
+  }
+
+  &-time-focus,
+  &-time-focus-active {
+    position: absolute;
+    top: 350%;
+    border: @border-width-base @border-style-base @input-border-color;
+  }
+
+  &-time-focus {
+    width: 100%;
+    height: 100%;
+
+    &-active {
+      height: 100%;
+      .active(@date-primary-color);
+      border-radius: @border-radius-base;
+      transition: left @animation-duration-slow ease;
+    }
+  }
+}

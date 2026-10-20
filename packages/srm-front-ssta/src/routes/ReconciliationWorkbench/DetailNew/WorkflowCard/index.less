@@ -1,0 +1,51 @@
+@import '~hzero-front/lib/srm-variables';
+
+.bill-workflow-card-wrapper {
+  margin: 8px 8px 0 8px;
+  :global {
+    .af-basic-container,
+    .af-basic-bottom-remain-area {
+      margin: 0;
+    }
+    .af-extra-container {
+      margin: 8px 0 0;
+      .af-extra-field {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.ssta-bill-workflow-basic-right {
+  height: 100%;
+  display: flex;
+  text-align: right;
+  padding-right: 16px;
+  flex-direction: column;
+  justify-content: center;
+  :global {
+    .workflow-basic-right-label {
+      font-size: 12px;
+      color: @text-3;
+    }
+    .workflow-basic-right-value {
+      font-size: 24px;
+      font-weight: 600;
+      span + span {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.ssta-bill-workflow-basic-bottom {
+  :global {
+    .c7n-pro-btn-flat {
+      &,
+      &:active,
+      &:focus {
+        color: #000;
+      }
+    }
+  }
+}

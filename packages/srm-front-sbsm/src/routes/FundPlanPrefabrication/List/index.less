@@ -1,0 +1,66 @@
+.prefab-tooltip {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      padding: 0;
+    }
+  }
+  .po-status {
+    padding: 10px;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .prefab-status-info {
+    padding: 10px 24px 0 24px;
+    .prefab-status-row {
+      margin-bottom: 12px;
+      display: flex;
+      position: relative;
+      .prefab-status-row-title {
+        width: 100px;
+      }
+      .prefab-status-finish::before {
+        content: '';
+        background: #49915b;
+        .common-status;
+      }
+      .prefab-status-not::before {
+        content: '';
+        background: #cbcdd3;
+        .common-status;
+      }
+      .prefab-status-ing::before {
+        content: '';
+        background: #de6b2d;
+        .common-status;
+      }
+      .common-status {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: -10px;
+      }
+      .prefab-status-row-amount {
+        width: 80px;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.sbsm-table-cell-error-icon {
+  font-size: 12px;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-align: center;
+  color: #f56349;
+  background-color: rgba(245, 99, 73, 0.1);
+}

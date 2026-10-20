@@ -1,0 +1,135 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.card-wrap {
+  margin-top: 8px;
+  padding: 20px;
+  background-color: #fff;
+
+  .card-head {
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 3px;
+    //   height: 22px;
+    //   background: rgb(83, 101, 234);
+    // }
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .card-content {
+    margin-top: 16px;
+  }
+}
+
+.card-wrap-read {
+  .card-wrap;
+  margin-top: 8px;
+}
+
+.button-group-wrap {
+  margin: 0;
+  padding: 0.02rem;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .button-group-item {
+    display: inline-block;
+    padding: 0.03rem 0.08rem;
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+    font-size: 0.14rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .button-group-item-selected {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 2px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 15%);
+  }
+}
+
+.help-message-section-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  margin-top: 8px;
+  margin-bottom: -8px;
+  padding: 8px 20px;
+  line-height: 22px;
+  background-color: @blue-1;
+  color: #3095f2;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: PingFangSC-Regular, sans-serif;
+
+  .left-icon {
+    margin-top: -2px;
+    margin-right: 11px;
+  }
+
+  .right-icon {
+    position: absolute;
+    right: 20px;
+  }
+
+  i.right-icon {
+    cursor: pointer;
+  }
+}
+
+.help-message-section-wrap-section {
+  margin-top: 0;
+}
+
+.batch-edit-drawer-container {
+  .help-message-section-wrap {
+    margin: -20px -20px 16px -20px;
+  }
+}
+
+.supplementary-item-drawer-container {
+  .help-message-section-wrap {
+    margin: -20px -20px 16px -20px;
+  }
+}
+
+.tagGroup {
+  margin-bottom: 12px;
+  line-height: normal;
+  display: flex;
+}
+
+.checkedTagCommon {
+  width: 120px;
+  border: none;
+  line-height: 28px;
+  border-radius: 2px;
+  height: 28px;
+}
+
+.checkedTag {
+  background-color: @primary-1;
+  color: @primary-color;
+  .checkedTagCommon;
+  &:active {
+    background-color: @primary-1;
+  }
+}
+
+.unCheckedTag {
+  background-color: @fill-7;
+  color: @fill-3;
+  &:active {
+    background-color: @fill-7;
+  }
+  .checkedTagCommon;
+}

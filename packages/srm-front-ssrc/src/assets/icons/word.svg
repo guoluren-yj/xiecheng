@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/File/Word</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/File/Word">
+            <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+            <g id="编组-22" transform="translate(1.330000, 0.000000)" fill-rule="nonzero">
+                <path d="M7.875,0 L11.375,3.5 L11.375,13.125 C11.375,13.6082625 10.9832625,14 10.5,14 L0.875,14 C0.3917375,14 0,13.6082625 0,13.125 L0,0.875 C0,0.3917375 0.3917375,0 0.875,0 L7.875,0 Z M3.1549,4.9 L2.1385,4.9 L3.717,10.3978 L4.6795,10.3978 L5.7575,6.2629 L5.7883,6.2629 L6.8586,10.3978 L7.8134,10.3978 L9.3996,4.9 L8.3832,4.9 L7.3514,9.0811 L7.3206,9.0811 L6.2349,4.9 L5.3032,4.9 L4.2175,9.0811 L4.1867,9.0811 L3.1549,4.9 Z" id="形状结合" fill="#3F5BB5"></path>
+                <path d="M7.875,0 L11.375,3.5 L8.75,3.5 C8.2667375,3.5 7.875,3.1082625 7.875,2.625 L7.875,0 Z" id="路径" fill="#B5C8FC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

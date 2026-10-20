@@ -1,0 +1,78 @@
+@import '~hzero-front/lib/srm-variables';
+
+.expression-engine {
+  :global {
+    .expression-engine-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .expression-engine-multiple-rule-add-btn {
+      height: 36px;
+      width: 100%;
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+
+      &:hover {
+        cursor: pointer;
+        border-color: @primary-color;
+      }
+
+      &.rule-add-btn-disabled {
+        cursor: not-allowed;
+        border: 1px dashed #d9d9d9;
+        &:hover {
+          cursor: not-allowed;
+          border: 1px dashed #d9d9d9;
+        }
+      }
+    }
+    .expression-engine-multiple-rule-row {
+      padding: 0 4px;
+      .rule-delete-icon {
+        width: 32px;
+        color: @fill-3;
+        i {
+          font-size: 0.16rem;
+          margin-right: 0;
+        }
+        &:not(.c7n-pro-btn-disabled) {
+          &:hover {
+            border: 50%;
+            color: @primary-color;
+          }
+        }
+      }
+      table > tbody > tr .c7n-pro-field-wrapper {
+        padding: 0 4px;
+        margin: 8px 0 !important;
+      }
+    }
+    .condition-type-select {
+      padding: 0 4px;
+    }
+  }
+}
+
+.common-modal {
+  :global {
+    .c7n-pro-modal-header {
+      border-bottom: none !important;
+      padding-top: 24px;
+    }
+    .c7n-pro-modal-body {
+      padding-top: 0 !important;
+    }
+    .c7n-pro-modal-footer {
+      padding-bottom: 24px;
+      border-top: none !important;
+    }
+  }
+}

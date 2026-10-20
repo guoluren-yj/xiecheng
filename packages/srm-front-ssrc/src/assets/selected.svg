@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="工作台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我发出的订单" transform="translate(-732.000000, -257.000000)">
+            <g id="Group-5" transform="translate(622.000000, 208.000000)">
+                <g id="selected" transform="translate(110.000000, 49.000000)">
+                    <rect id="Rectangle" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="12" height="12"></rect>
+                    <path d="M5.0652549,7.29585278 L9.30789559,3.05321209 C9.69841988,2.6626878 10.3315849,2.6626878 10.7221092,3.05321209 C11.1126334,3.44373638 11.1126334,4.07690136 10.7221092,4.46742565 L5.77236169,9.41717312 C5.38183739,9.80769741 4.74867242,9.80769741 4.35814812,9.41717312 L1.529721,6.588746 C1.13919671,6.19822171 1.13919671,5.56505673 1.529721,5.17453244 C1.92024529,4.78400814 2.55341027,4.78400814 2.94393456,5.17453244 L5.0652549,7.29585278 Z" id="Path" fill="#29BECE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

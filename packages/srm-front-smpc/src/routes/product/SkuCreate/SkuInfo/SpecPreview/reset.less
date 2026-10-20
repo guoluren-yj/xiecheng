@@ -1,0 +1,45 @@
+@import '~hzero-front/lib/srm-variables.less';
+:global {
+  .c7n-pro-tooltip-popup-inner:not(.c7n-pro-tooltip-popup-inner-light):has(> #staticSpec) {
+    & * {
+      color: initial !important;
+      // 该死组件加了权重太大了，样式不起作用
+      // margin: unset !important;
+      // padding: initial !important;
+      // font-size: inherit !important;
+    }
+    & p {
+      color: #fff !important;
+    }
+    & .c7n-pro-field-label {
+      color: rgba(0, 0, 0, 0.5) !important;
+    }
+    & .c7n-pro-select-disabled i.c7n-pro-select-trigger {
+      color: #c9cdd4 !important;
+    }
+    & .c7n-pro-select-suffix i.c7n-pro-select-trigger {
+      color: #fff !important;
+    }
+    & .c7n-pro-select-clear-button i.icon-close {
+      color: @primary-color !important;
+    }
+    & .small-images {
+      .icon {
+        color: @text-3 !important;
+      }
+    }
+    img {
+      display: inline-block !important;
+    }
+  }
+  .c7n-pro-tooltip-popup-inner:not(.c7n-pro-tooltip-popup-inner-light):has(#rightDetail) {
+    & .spec-list {
+      .label {
+        color: @text-2 !important;
+      }
+      .value {
+        color: @text-1 !important;
+      }
+    }
+  }
+}

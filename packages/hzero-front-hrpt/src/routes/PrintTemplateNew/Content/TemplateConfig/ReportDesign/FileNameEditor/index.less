@@ -1,0 +1,56 @@
+.file-name-modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 300px;
+  &-left {
+    flex: 1 1;
+    overflow-x: hidden;
+    padding: 16px;
+    word-break: break-all;
+    line-height: 24px;
+    :global {
+      .c7n-pro-textarea-wrapper {
+        width: 100%;
+      }
+      .c7n-pro-input-wrapper {
+        vertical-align: baseline;
+      }
+      .c7n-pro-input {
+        padding: 0;
+        height: 18px;
+        line-height: 18px;
+      }
+    }
+  } 
+  &-right {
+    width: 280px;
+    background: #f8f9fb;
+    border-right: 1px solid #e5e7ec;
+    overflow: hidden;
+    :global {
+      .c7n-tabs {
+        height: 100%;
+      }
+      .c7n-tabs-bar {
+        padding-top: 16px;
+        padding-left: 20px;
+      }
+      .c7n-tabs-content {
+        padding-left: 20px;
+        overflow: auto;
+      }
+      .c7n-tree, .c7n-tree-switcher {
+        background-color: transparent !important;
+      }
+    }
+  }
+   .fix-param {
+    line-height: 32px;
+    cursor: pointer;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+}

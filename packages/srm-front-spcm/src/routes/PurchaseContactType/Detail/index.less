@@ -1,0 +1,68 @@
+/*
+ * index.less - 采购协议类型详情样式
+ * @date: 2019-05-15
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.anchor-wrapper {
+  :global {
+    .ant-anchor-link {
+      & > .ant-anchor-link-title {
+        font-size: 13px;
+      }
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.panel-list-wrapper {
+  :global {
+    .ant-collapse-content-box {
+      padding: 16px 0 0;
+    }
+    .ant-input {
+      overflow: hidden;
+    }
+  }
+}
+
+.btn-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  & > button:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+.life-cycle {
+  :global {
+    .ant-form-item-label label {
+      color: #666 !important;
+    }
+  }
+}
+
+.paddingLeft32 {
+  padding: 0px 16px;
+}
+.flex-form-item {
+  display: flex;
+  align-items: center;
+
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    a {
+      margin-left: 10px;
+    }
+
+    .ant-form-item-control-wrapper {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.supplier-master-data-wrap {
+  :global {
+    .page-content {
+      padding: 0;
+      margin: 8px;
+      background-color: #f4f5f7;
+      // 公司信息
+      .company-container {
+        padding: 20px 20px 0;
+        background: #fff;
+        margin-bottom: 8px;
+        .company-head {
+          display: flex;
+          padding-bottom: 16px;
+          border-bottom: dashed 1px #e5e7ec;
+          &-left {
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
+            margin-right: 24px;
+            line-height: 138px;
+            text-align: center;
+            border: 1px solid #e5e7ec;
+            img {
+              width: 100%;
+              height: 100%;
+              padding: 10px;
+            }
+          }
+          &-right {
+            flex-grow: 1;
+            .company-title {
+              font-size: 20px;
+              color: #1d2129;
+              font-weight: 600;
+              margin-bottom: 16px;
+            }
+            .erp-info-wrap {
+              width: 96%;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              display: inline-block;
+            }
+          }
+        }
+        .company-footer {
+          display: flex;
+          .stage-wrap {
+            svg {
+              height: 92px;
+            }
+            .stage-desc {
+              position: absolute;
+              margin-left: -132px;
+              margin-top: 38px;
+              width: 116px;
+              height: 40px;
+              padding: 3px 12px;
+              transform: rotate(-15deg);
+              -ms-transform: rotate(-15deg);
+              -moz-transform: rotate(-15deg);
+              -webkit-transform: rotate(-15deg);
+              -o-transform: rotate(-15deg);
+              span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 22px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 600;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .supplier-detail-content {
+        margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        background-color: #fff;
+        .c7n-card-head {
+          padding: 0 20px;
+          .c7n-card-head-title {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            .section-title-help {
+              font-size: 12px;
+              color: #868d9c;
+              font-weight: 400;
+            }
+          }
+        }
+        .c7n-card-body {
+          padding: 0;
+          .c7n-tabs-vertical {
+            .c7n-tabs-bar {
+              padding: 16px 0;
+              .c7n-tabs-tab {
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 20px;
+              }
+            }
+            .c7n-tabs-content {
+              padding: 20px;
+            }
+          }
+        }
+      }
+      .no-data-permission {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 150px);
+        min-height: 150px;
+        &-tips {
+          font-size: 12px;
+          color: #868d9c;
+          font-weight: 400;
+          text-align: center;
+          margin-top: 4px;
+        }
+      }
+      // .no-data-permission-full-screen {
+      //   height: calc(100vh - 152px) !important;
+      // }
+    }
+  }
+}
+
+.supplier-master-data-header-btn {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  &-left {
+    :global {
+      .c7n-pro-select-lov {
+        width: 240px;
+      }
+    }
+  }
+  &-right {
+    text-align: right;
+    flex: 1 1;
+    :global {
+      .c7n-pro-btn-primary {
+        background-color: #1e3255 !important;
+        border-color: #1e3255 !important;
+      }
+    }
+  }
+}
+
+// 企业信息提示样式
+.enterprise-alert {
+  color: @blue-6;
+  border: none;
+  background-color: @blue-1;
+  :global {
+    .icon {
+      color: @blue-6;
+    }
+    .c7n-alert-message {
+      max-height: initial;
+      -webkit-line-clamp: 3;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+
+<svg width="180" height="30" xmlns="http://www.w3.org/2000/svg">
+    <title>border_type_meidum</title>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h180v30H0z"/>
+        <path fill-opacity=".88" fill="#000" d="M28 14h136v2H28z"/>
+    </g>
+</svg>

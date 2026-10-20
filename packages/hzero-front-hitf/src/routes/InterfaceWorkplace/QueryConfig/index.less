@@ -1,0 +1,243 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: -0.16rem;
+  height: calc(100vh - 210px);
+
+  &-leftTree {
+    background-color: #fff;
+    width: 220px;
+    height: calc(100vh - 2.1rem);
+    padding: 0.16rem 0;
+
+    .left-search {
+      margin-bottom: 0.16rem;
+      :global {
+        .c7n-pro-form {
+          .c7n-pro-field-wrapper {
+            padding: 0 0.16rem 0 0;
+          }
+        }
+      }
+    }
+
+    .left-tree-content {
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: calc(100% - 0.5rem);
+
+      :global {
+        .c7n-tree-switcher-line-icon {
+          display: none;
+        }
+
+        .c7n-tree-node-content-wrapper {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .tree-node-parent {
+        font-size: 12px;
+        color: #000;
+        line-height: 18px;
+      }
+
+      .tree-node-child {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.75);
+        line-height: 18px;
+      }
+      .tree-node-child-check {
+        font-size: 12px;
+        line-height: 18px;
+        color: @primary-color;
+      }
+    }
+  }
+
+  &-rightList {
+    width: calc(100% - 220px);
+    background-color: #fff;
+    padding: 0.16rem;
+    border-left: 1px solid #ebebeb;
+
+    .tag-green {
+      font-size: 12px;
+      font-weight: 600;
+      color: #47b881;
+      background: rgba(71, 184, 129, 0.1);
+      border-radius: 2px;
+      border: none;
+      height: 0.18rem;
+      line-height: 0.18rem;
+    }
+
+    .tag-red {
+      font-size: 12px;
+      font-weight: 600;
+      color: #f56349;
+      background: rgba(245, 99, 73, 0.1);
+      border-radius: 2px;
+      border: none;
+      height: 0.18rem;
+      line-height: 0.18rem;
+    }
+
+    .tag-yellow {
+      font-size: 12px;
+      font-weight: 600;
+      color: #f88d10;
+      background-color: rgba(252, 160, 0, 0.1);
+      border: none;
+      border-radius: 2px;
+      height: 0.18rem;
+      line-height: 0.18rem;
+    }
+
+    .none-content {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      &-svg {
+        width: 3rem;
+        height: 2.5rem;
+        // margin-top: 0.5rem;
+        color: @primary-color;
+      }
+
+      .text-tip {
+        &-title {
+          font-size: 16px;
+          color: #000;
+          line-height: 24px;
+        }
+
+        &-content {
+          font-size: 14px;
+          color: #8c8c8c;
+          text-align: center;
+          margin-top: 0.1rem;
+        }
+      }
+    }
+
+    :global {
+      .c7n-pro-table-search-bar {
+        .c7n-pro-table-search-bar-fields {
+          .c7n-pro-table-search-bar-operator-custom-wrap {
+            .c7n-pro-input {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 表格
+.link-span {
+  cursor: pointer;
+  color: @primary-color;
+}
+
+.edit-span {
+  color: @primary-color;
+  cursor: pointer;
+}
+
+// 查询条件样式
+.filter-form {
+  display: flex;
+  align-items: flex-start;
+
+  &-btns {
+    margin-left: 10px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .other-filter {
+    display: flex;
+
+    :global {
+      span > label > input {
+        height: 32px;
+      }
+    }
+  }
+
+  :global {
+    .c7n-pro-form-float-label {
+      margin: 0 !important;
+    }
+
+    .c7n-pro-form-float-label .c7n-pro-field-wrapper {
+      margin: 0 16px 16px 0 !important;
+      max-width: 300px;
+    }
+
+    .c7n-pro-form.c7n-pro-form-float-label > table > tbody .c7n-pro-field-wrapper {
+      padding: 0;
+    }
+
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0 0 0.04rem;
+    }
+
+    // 高级检索样式
+    // lov
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper {
+      padding: 0 0 0.1rem 0;
+    }
+
+    .c7n-pro-field-wrapper .c7n-pro-select {
+      border: none !important;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    // datepicker
+    .c7n-pro-calendar-picker {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0 0.02rem 0.08rem rgba(0, 0, 0, 0.12);
+    }
+
+    .c7n-pro-calendar-picker-suffix .icon {
+      display: none;
+    }
+
+    // 单个查询样式
+    .c7n-pro-input-wrapper {
+      .c7n-pro-input-prefix {
+        margin-left: 5px;
+        margin-top: 6px;
+      }
+
+      .c7n-pro-input {
+        padding-left: 0.34rem;
+      }
+    }
+  }
+}
+
+// 弹窗样式
+.query-config-field {
+  :global {
+    .c7n-pro-field-wrapper {
+      .c7n-pro-switch-wrapper {
+        line-height: 0.3rem;
+      }
+    }
+  }
+}

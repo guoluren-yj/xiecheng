@@ -1,0 +1,315 @@
+@payment-primary-color: #f56349;
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.header {
+  width: 100%;
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  &-topbar {
+    max-width: 1190px;
+    margin: 0 auto;
+    height: 30px;
+    &-container {
+      display: inline-block;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 30px;
+    }
+    .user-info {
+      a {
+        color: @payment-primary-color;
+        margin-right: 12px;
+      }
+      float: right;
+      line-height: 30px;
+    }
+  }
+}
+
+.logo,
+.content {
+  margin: 0 auto;
+  max-width: 1190px;
+  height: 76px;
+  clear: both;
+  position: relative;
+}
+
+.logo-icon {
+  float: left;
+  min-width: 220px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  span {
+    cursor: text;
+    font-size: 24px;
+    color: #333;
+    margin-left: 20px;
+  }
+}
+
+.content {
+  .payment-type-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 22px;
+  }
+  .payment-order {
+    display: flex;
+    margin: 8px 0;
+    &-num {
+      flex: 1 1;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.65);
+      line-height: 18px;
+    }
+    &-amount > span:first-child {
+      font-size: 12px;
+      color: #333;
+      line-height: 18px;
+    }
+    &-amount > span:last-child {
+      font-size: 16px;
+      color: @payment-primary-color;
+      line-height: 24px;
+    }
+    &-num > span:first-child::after,
+    &-amount > span:first-child::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+
+  .payment-card {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    .payment-type-icon {
+      max-width: 200px;
+      height: 40px;
+    }
+    &-title {
+      background: #f8f8f8;
+      font-size: 14px;
+      color: #333;
+      line-height: 36px;
+      padding-left: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    &-content {
+      width: 100%;
+      padding: 0.4rem;
+      & > div {
+        margin-bottom: 0.4rem;
+        max-height: 70px;
+      }
+    }
+    &-footer {
+      text-align: right;
+      margin-top: 16px;
+      button {
+        background: @payment-primary-color;
+        color: #fff;
+        width: 86px;
+        height: 36px;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .timer {
+        margin-top: 8px;
+        &-title {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 18px;
+          &::after {
+            content: ':';
+            margin: 0 8px 0 2px;
+            position: relative;
+            top: -0.5px;
+          }
+        }
+        &-count {
+          font-size: 12px;
+          color: @payment-primary-color;
+          line-height: 18px;
+        }
+        &-unit {
+          margin: 0 2px;
+        }
+      }
+    }
+    :global {
+      .c7n-radio-checked .c7n-radio-inner {
+        background-color: @payment-primary-color;
+        border-color: @payment-primary-color;
+      }
+      .c7n-radio-group-wrapper,
+      .c7n-radio-group {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.payment-modal {
+  :global {
+    .c7n-modal-title {
+      font-size: 16px;
+      color: #252525;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    .c7n-modal-close-x {
+      line-height: 0.56rem;
+    }
+  }
+}
+
+.payment-qrcode-container {
+  width: 260px;
+  min-height: 350px;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+  & > div {
+    text-align: center;
+  }
+  &-spinning {
+    width: 100%;
+    padding: 0.2rem 0;
+  }
+  .payment-qrcode-timer > span {
+    &:first-child::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+    &:not(:first-child) {
+      font-size: 12px;
+      color: @payment-primary-color;
+      line-height: 18px;
+    }
+  }
+  .payment-qrcode-msg > span {
+    margin-left: 4px;
+  }
+  &-footer {
+    text-align: right;
+  }
+}
+
+.payment-banks-list {
+  &-item {
+    text-align: center;
+  }
+  .bank-list-logo {
+    background-image: url('../../assets/payment/bank/bank-list.png');
+    background-repeat: no-repeat;
+    background-position: 0 -4256px;
+    width: 125px;
+    height: 28px;
+  }
+  :global {
+    .c7n-radio-checked .c7n-radio-inner {
+      background-color: @payment-primary-color;
+      border-color: @payment-primary-color;
+    }
+    .c7n-radio-wrapper > span {
+      display: inline-block;
+      &:first-child {
+        height: 40px;
+      }
+      &:last-child {
+        margin: 0 16px 16px 8px;
+      }
+    }
+  }
+}
+
+.payment-banks-container {
+  min-height: 350px;
+  padding: 0.2rem;
+  &-header {
+    height: 32px;
+    background: #ebf7f1;
+    border-radius: 2px;
+    font-size: 14px;
+    padding-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #47b881;
+    text-align: justify;
+    line-height: 32px;
+    letter-spacing: 1px;
+    & > i {
+      vertical-align: sub;
+      margin-right: 0.1rem;
+    }
+  }
+  &-footer {
+    text-align: right;
+    & > button:last-child {
+      color: @payment-primary-color;
+    }
+  }
+}
+
+.wysepay-tabs {
+  :global {
+    .c7n-tabs-nav .c7n-tabs-tab:hover,
+    .c7n-tabs-nav .c7n-tabs-tab-active {
+      color: @payment-primary-color !important;
+    }
+    .c7n-tabs-ink-bar {
+      background-color: #f00 !important;
+    }
+  }
+}
+
+.payment-qrcode-timer-invalid {
+  position: relative;
+  margin: 10px 0;
+  background: #000;
+  & > div {
+    cursor: pointer;
+    position: absolute;
+    line-height: 30px;
+    width: 220px;
+    background-color: #fff;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    & > i {
+      padding-bottom: 4px;
+      color: @payment-primary-color;
+    }
+  }
+  & > img {
+    opacity: 0.2;
+  }
+}
+
+.payment-qrcode-noCode {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  & > i {
+    padding-bottom: 4px;
+    color: @payment-primary-color;
+  }
+}
+
+.payment-radio-item > span:last-child {
+  display: inline-block;
+  width: 150px;
+  line-height: 70px;
+}

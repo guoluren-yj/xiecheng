@@ -1,0 +1,356 @@
+/**
+ * MultiSelectModal 用于供应商多选框
+ * @date: 2018-11-20
+ * @author dengtingmin <tingmin.deng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+import React, { PureComponent, Fragment } from 'react';
+import { isEmpty } from 'lodash';
+import { Bind } from 'lodash-decorators';
+import { Form, Input, Drawer, Row, Button, Col, Tag, Tooltip, Spin, Icon, Select } from 'hzero-ui';
+import { Text } from 'choerodon-ui';
+import Table from 'srm-front-boot/lib/components/Table';
+import { TableAutoHeightType } from 'choerodon-ui/pro/lib/table/enum';
+import formatterCollections from 'utils/intl/formatterCollections';
+import intl from 'utils/intl';
+import AssignCategoryModal from './AssignCategoryModal';
+
+const FormItem = Form.Item;
+const { Option } = Select;
+
+const formItemLayout = {
+  labelCol: { span: 9 },
+  wrapperCol: { span: 15 },
+};
+@formatterCollections({
+  code: ['sslm.investMaintain'],
+})
+@Form.create({ fieldNameProp: null })
+export default class MultiSelectModal extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tags: [], // 标签集合
+      selectedChildRows: [],
+      classifyVisible: false,
+      checkedKeys: [],
+      display: false,
+    };
+  }
+
+  supplierClassify = {};
+
+  componentDidMount() {
+    this.props.onRef(this);
+  }
+
+  /**
+   * 重置
+   */
+  @Bind()
+  handlerFormReset() {
+    const { form } = this.props;
+    form.resetFields();
+    this.setState({ checkedKeys: [], tags: [] });
+  }
+
+  /**
+   * 多选框
+   */
+  @Bind()
+  handleRowSelect(selectedRowKeys, selectedChildRows) {
+    this.setState({
+      selectedChildRows,
+    });
+  }
+
+  @Bind()
+  cancelModal() {
+    const { onChange } = this.props;
+    this.setState({
+      selectedChildRows: [],
+      tags: [],
+      checkedKeys: [],
+    });
+    onChange();
+  }
+
+  @Bind()
+  handleSaveRecord() {
+    const { onSaveRecord } = this.props;
+    const { selectedChildRows } = this.state;
+    if (selectedChildRows.length < 1) {
+      this.cancelModal();
+    } else {
+      onSaveRecord(selectedChildRows);
+      this.setState({ selectedChildRows: [] });
+    }
+  }
+
+  /**
+   * 选择供应商分类弹框
+   */
+  @Bind()
+  handleClassifyModal() {
+    const { classifyVisible } = this.state;
+    this.setState({ classifyVisible: !classifyVisible });
+    if (!classifyVisible) {
+      const { fetchSupplierClassify } = this.props;
+      fetchSupplierClassify();
+    }
+    this.supplierClassify.props.form.resetFields();
+  }
+
+  /**
+   * 选择供应商分类 确认回调
+   */
+  @Bind()
+  handleClassifyOk(data = []) {
+    const { fetchSupplierData } = this.props;
+    const tagsList = data;
+    const ids = data.map(({ categoryId }) => categoryId);
+    this.setState({ tags: tagsList, checkedKeys: ids }, () => {
+      this.handleClassifyModal();
+      fetchSupplierData(null, { ids });
+    });
+  }
+
+  /**
+   * 标签关闭时的回调
+   */
+  @Bind()
+  handleTagClose(tag) {
+    const { tags } = this.state;
+    const { fetchSupplierData } = this.props;
+    const newList = tags.filter((n) => n.categoryId !== tag.categoryId);
+    const ids = newList.map((n) => n.categoryId);
+    this.setState({ tags: newList, checkedKeys: ids }, () => {
+      fetchSupplierData(null, { ids });
+    });
+    if (this.supplierClassify) this.supplierClassify.setState({ selectedRows: newList });
+  }
+
+  /**
+   * 多查询条件展示
+   */
+  @Bind()
+  toggleForm() {
+    const { display } = this.state;
+    this.setState({
+      display: !display,
+    });
+  }
+
+  @Bind()
+  renderLabelWithHelp({ label, help }) {
+    return (
+      <>
+        <Text style={{ maxWidth: 'calc(100% - 34px)' }}>{label}</Text>
+        <Tooltip title={help}>
+          <Icon type="question-circle-o" style={{ verticalAlign: 'baseline', marginLeft: '4px' }} />
+        </Tooltip>
+      </>
+    );
+  }
+
+  render() {
+    const {
+      queryFields = [],
+      supplierVisible,
+      fieldsColumn = [],
+      supplierPagination = {},
+      supplierList = {},
+      form: { getFieldDecorator },
+      fetchSupplierData,
+      querySupplierLoading,
+      supplierClassifyList,
+      fetchSupplierClassify,
+      queryClassifyLoading,
+      customizeTable,
+      customizeFilterForm,
+      form,
+      stageCodesList = [],
+    } = this.props;
+    const { classifyVisible, selectedChildRows, tags, display } = this.state;
+    // 品类
+    const assignCategoryProps = {
+      classifyVisible,
+      supplierClassifyList,
+      queryClassifyLoading,
+      onCancel: this.handleClassifyModal,
+      onOk: this.handleClassifyOk,
+      onSearch: fetchSupplierClassify,
+      onRef: (node) => {
+        this.supplierClassify = node;
+      },
+    };
+
+    // 查询条件
+    const span = queryFields.length <= 1 ? 24 : 12;
+    const queryCondition = queryFields.map((queryItem) => {
+      return (
+        <Col span={span} key={queryItem.field}>
+          <FormItem {...formItemLayout} label={queryItem.label}>
+            {getFieldDecorator(
+              queryItem.field,
+              {}
+            )(<Input onPressEnter={(vals) => fetchSupplierData(null, vals)} />)}
+          </FormItem>
+        </Col>
+      );
+    });
+    return (
+      <Fragment>
+        <Drawer
+          destroyOnClose
+          title={intl.get('sslm.investMaintain.create.investMaintain.title').d('选择供应商')}
+          width={750}
+          visible={supplierVisible}
+          onClose={this.cancelModal}
+        >
+          <AssignCategoryModal {...assignCategoryProps} />
+
+          <Spin spinning={querySupplierLoading}>
+            <Row style={{ marginBottom: 16 }}>
+              <Col span={3}>{intl.get('sslm.common.view.supplier.class').d('供应商分类')}：</Col>
+              <Col span={7}>
+                <a onClick={this.handleClassifyModal}>
+                  + {intl.get('hzero.common.button.add').d('新增')}
+                </a>
+              </Col>
+            </Row>
+            <Row style={{ marginBottom: isEmpty(tags) ? 0 : 8 }}>
+              {tags &&
+                tags.map((tag) => {
+                  const { categoryDescription } = tag;
+                  const isLongTag = categoryDescription.length > 10;
+                  const tagElem = (
+                    <Tag
+                      closable
+                      color="blue"
+                      key={tag.categoryId}
+                      onClose={() => this.handleTagClose(tag)}
+                      style={{ marginBottom: 8 }}
+                    >
+                      {isLongTag ? `${categoryDescription.slice(0, 10)}...` : categoryDescription}
+                    </Tag>
+                  );
+                  return isLongTag ? (
+                    <Tooltip title={categoryDescription} key={tag.categoryId}>
+                      {tagElem}
+                    </Tooltip>
+                  ) : (
+                    tagElem
+                  );
+                })}
+            </Row>
+            <div className="table-list-search">
+              {customizeFilterForm(
+                {
+                  code: 'SPFM.PORTAL.BUSINESSORDER.PUBLISH.SUPPLIER.SEACH',
+                  form,
+                  expand: display,
+                },
+                <Form layout="inline" className="more-fields-form">
+                  <Row gutter={12}>
+                    <Col span={14}>
+                      <Row>{queryCondition}</Row>
+                      <Row style={{ display: display ? 'block' : 'none' }} >
+                        <Col span={span}>
+                          <FormItem {...formItemLayout}
+                            label={this.renderLabelWithHelp({
+                              label: intl.get('entity.supplier.stageCode').d('生命周期'),
+                              help: intl.get('entity.supplier.stageCode.tooltip').d('业务通知单选择供应商时会默认过滤淘汰阶段的供应商，查询条件仅选择淘汰时会导致查询不到对应的供应商。'),
+                            })}
+                          >
+                            {getFieldDecorator('stageCodes')(
+                              <Select allowClear mode='multiple'>
+                                {stageCodesList?.map((n) => (
+                                  <Option key={n.stageCode} value={n.stageCode}>
+                                    {n.meaning}
+                                  </Option>
+                                ))}
+                              </Select>
+                            )}
+                          </FormItem>
+                        </Col>
+                      </Row>
+                    </Col>
+                    <Col span={10} className="search-btn-more">
+                      <FormItem>
+                        <Button
+                          style={{ display: !display ? 'inline-block' : 'none' }}
+                          onClick={this.toggleForm}
+                        >
+                          {intl.get('hzero.common.button.viewMore').d('更多查询')}
+                        </Button>
+                        <Button
+                          style={{ display: !display ? 'none' : 'inline-block' }}
+                          onClick={this.toggleForm}
+                        >
+                          {intl.get('hzero.common.button.collected').d('收起查询')}
+                        </Button>
+                        <Button data-code="reset" onClick={this.handlerFormReset}>
+                          {intl.get('hzero.common.button.reset').d('重置')}
+                        </Button>
+                        <Button
+                          type="primary"
+                          onClick={() => fetchSupplierData(null, { ids: this.state.checkedKeys })}
+                        >
+                          {intl.get('hzero.common.button.search').d('查询')}
+                        </Button>
+                      </FormItem>
+                    </Col>
+                  </Row>
+                </Form>
+              )}
+            </div>
+            <div style={{ height: 'calc(100vh - 240px)', overflowY: 'scroll' }}>
+              {customizeTable(
+                {
+                  code: 'SPFM.PORTAL.BUSINESSORDER.PUBLISH.SUPPLIER.TABLE',
+                },
+                <Table
+                  dataSource={supplierList.content}
+                  pagination={supplierPagination}
+                  columns={fieldsColumn}
+                  autoHeight={{ type: TableAutoHeightType.maxHeight, diff: 60 }}
+                  onChange={(page) => fetchSupplierData(page)}
+                  rowKey="supplierCompanyId"
+                  rowSelection={{
+                    selectedRows: selectedChildRows,
+                    selectedRowKeys: selectedChildRows.map((n) => n.supplierCompanyId),
+                    onChange: this.handleRowSelect,
+                  }}
+                  bordered
+                />
+              )}
+            </div>
+          </Spin>
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              width: '100%',
+              borderTop: '1px solid #e8e8e8',
+              padding: '10px 16px',
+              textAlign: 'right',
+              left: 0,
+              background: '#fff',
+              borderRadius: '0 0 4px 4px',
+            }}
+          >
+            <Button style={{ marginRight: 8 }} onClick={this.cancelModal}>
+              {intl.get('hzero.common.button.cancel').d('取消')}
+            </Button>
+            <Button onClick={this.handleSaveRecord} type="primary">
+              {intl.get(`hzero.common.button.ok`).d('确定')}
+            </Button>
+          </div>
+        </Drawer >
+      </Fragment >
+    );
+  }
+}

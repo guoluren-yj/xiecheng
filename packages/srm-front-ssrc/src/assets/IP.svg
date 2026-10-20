@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="核价审批-v401" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+        <g id="编组-17" transform="translate(2.000000, 2.000000)">
+            <rect id="矩形" fill="currentColor" x="0" y="0" width="12" height="12" rx="2"></rect>
+            <text id="IP" font-family="PingFangSC-Semibold, PingFang SC" font-size="8" font-weight="500" letter-spacing="1" fill="#FFFFFF">
+                <tspan x="2" y="9">IP</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

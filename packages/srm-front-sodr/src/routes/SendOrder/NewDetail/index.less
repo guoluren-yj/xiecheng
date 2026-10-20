@@ -1,0 +1,65 @@
+/*!
+    index - 我收到的订单
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.sodr-send-order-new-detail {
+  :global {
+    overflow-y: auto;
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+
+    .content-title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    :not(:last-child) {
+      .page-content {
+        margin-bottom: 0;
+      }
+    }
+
+    .detail-list {
+      tr.ant-table-row {
+        td.status {
+          img {
+            height: 16px;
+            width: 12px;
+            min-width: 12px;
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+    .associated-tale-row.c7n-pro-table-row-current {
+      background-color: #f0fffe;
+      &:hover {
+        background-color: #f0fffe;
+      }
+      .c7n-pro-table-cell {
+        background-color: #f0fffe;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+/*
+ * style - 采购申请审批样式
+ * @date: 2019-01-24
+ * @author: guochaochao <chaochao.guo@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.header-wrapper {
+  :global {
+    .ant-row.approve-header {
+      font-size: 14px;
+      border: none;
+      background: none;
+      padding-left: 0;
+    }
+
+    .ant-row.approve-header:hover {
+      border: none;
+      background: none;
+    }
+
+    div.ant-row.items-row {
+      line-height: 20px;
+      margin-bottom: 16px;
+
+      .ant-form-item {
+        margin-bottom: 0;
+        margin-top: -5px;
+      }
+
+      .item-label {
+        text-align: left;
+        padding-right: 8px;
+        color: #666;
+      }
+      .remark-context {
+        font-family: 'Monospaced Number', sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .ant-col-15,
+      .ant-col-21 {
+        word-break: break-all;
+        color: #333;
+      }
+      .two-col {
+        & > .item-label {
+          width: 12.5%;
+          margin-right: -12px;
+          float: left;
+        }
+        & > :not(.item-label) {
+          width: 41.66%;
+          float: left;
+        }
+      }
+    }
+
+    div.ant-row.items-row:last-child {
+      margin-bottom: 0;
+      .ant-form-explain {
+        margin-top: 4px;
+      }
+    }
+
+    .ant-collapse-header {
+      a,
+      i {
+        color: #29bece;
+        margin-left: 8px;
+      }
+    }
+    .ant-collapse.form-collapse {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.purchase-application {
+  .purchase-application-line {
+    position: relative;
+    padding: 8px 10px;
+    margin: 15px 0;
+    border: 1px dashed #ccc;
+
+    :global {
+      .prompt-message {
+        position: absolute;
+        top: -10px;
+        display: inline-block;
+        padding: 0 5px;
+        background-color: #fff;
+      }
+
+      .ant-row.ant-form-item {
+        width: 300px;
+      }
+    }
+  }
+
+  .button-group {
+    margin-bottom: 15px;
+
+    :global {
+      .ant-btn:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.ant-modal-body {
+  :global {
+    .ant-form-explain {
+      margin-top: 0;
+    }
+  }
+}

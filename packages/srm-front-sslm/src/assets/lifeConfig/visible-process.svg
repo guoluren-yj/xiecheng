@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="171px" viewBox="0 0 300 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 86</title>
+    <defs>
+        <rect id="path-visibleProcess-1" x="0" y="0" width="180" height="128" rx="2"></rect>
+        <filter x="-3.9%" y="-3.9%" width="107.8%" height="110.9%" filterUnits="objectBoundingBox" id="filter-visibleProcess-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.11372549   0 0 0 0 0.129411765   0 0 0 0 0.160784314  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-visibleProcess-3" x="0" y="32" width="20" height="8" rx="1"></rect>
+        <rect id="path-visibleProcess-4" x="0" y="0" width="45" height="72" rx="1"></rect>
+        <filter x="-44.4%" y="-22.2%" width="188.9%" height="155.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.317647059   0 0 0 0 0.345098039   0 0 0 0 0.454901961  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.317647059   0 0 0 0 0.345098039   0 0 0 0 0.454901961  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-visibleProcess-6" x="0" y="0" width="20" height="8" rx="1"></rect>
+        <rect id="path-visibleProcess-7" x="0" y="48" width="20" height="8" rx="1"></rect>
+    </defs>
+    <g id="923" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4、维护明细-流程设置-编辑流程" transform="translate(-831.000000, -379.000000)">
+            <g id="编组-86" transform="translate(831.000000, 379.000000)">
+                <rect id="矩形-visibleProcess-1" x="0" y="0" width="300" height="165"></rect>
+                <g id="编组-78" transform="translate(68.000000, 37.000000)">
+                    <g id="bg/白色底备份">
+                        <g id="矩形-visibleProcess-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-visibleProcess-2)" xlink:href="#path-visibleProcess-1"></use>
+                            <use fill="#F1F4F8" fill-rule="evenodd" xlink:href="#path-visibleProcess-1"></use>
+                        </g>
+                        <path d="M2,0 L178,0 C179.104569,-2.02906125e-16 180,0.8954305 180,2 L180,12 L180,12 L0,12 L0,2 C-1.3527075e-16,0.8954305 0.8954305,-2.41183085e-16 2,0 Z" id="矩形备份" fill="#E4E7EB"></path>
+                        <g id="编组-3" transform="translate(8.000000, 4.000000)" fill="#FFFFFF">
+                            <circle id="椭圆形" cx="2" cy="2" r="2"></circle>
+                            <circle id="椭圆形备份" cx="10" cy="2" r="2"></circle>
+                            <circle id="椭圆形备份-2" cx="18" cy="2" r="2"></circle>
+                        </g>
+                    </g>
+                    <g id="mg/外框/无导航备份" transform="translate(8.000000, 20.000000)" fill="#FFFFFF" opacity="0.897321429">
+                        <rect id="矩形-visibleProcess-3" x="0" y="0" width="56" height="100" rx="2"></rect>
+                    </g>
+                    <g id="mg/外框/无导航备份-2" transform="translate(72.000000, 20.000000)" fill="#FFFFFF" opacity="0.897321429">
+                        <rect id="矩形-visibleProcess-4" x="0" y="0" width="100" height="100" rx="2"></rect>
+                    </g>
+                    <g id="编组-74" transform="translate(26.000000, 34.000000)">
+                        <line x1="10" y1="8" x2="10" y2="64" id="路径-19" stroke="#F1F4F8"></line>
+                        <rect id="矩形-visibleProcess-5" fill="#EAEEF1" x="0" y="0" width="20" height="8" rx="1"></rect>
+                        <rect id="矩形备份-35" fill="#EAEEF1" x="0" y="16" width="20" height="8" rx="1"></rect>
+                        <g id="矩形备份-41">
+                            <use fill="currentColor" xlink:href="#path-visibleProcess-3"></use>
+                            <use fill-opacity="0.15" fill="#FFFFFF" xlink:href="#path-visibleProcess-3"></use>
+                        </g>
+                        <rect id="矩形备份-42" fill="#EAEEF1" x="0" y="48" width="20" height="8" rx="1"></rect>
+                        <rect id="矩形备份-43" fill="#EAEEF1" x="0" y="64" width="20" height="8" rx="1"></rect>
+                    </g>
+                    <circle id="椭圆形" stroke="#F1F4F8" stroke-width="2" fill="currentColor" cx="68" cy="70" r="11"></circle>
+                    <g id="编组" transform="translate(62.000000, 64.000000)">
+                        <polygon id="路径" points="0 0 12 0 12 12 0 12"></polygon>
+                        <path d="M6.53,4.055 L7.2375,4.7625 C7.89395457,5.41888759 8.26275254,6.30918041 8.26275254,7.2375 C8.26275254,8.16581959 7.89395457,9.05611241 7.2375,9.7125 L7.0605,9.889 C5.69359524,11.2559047 3.47740478,11.2559047 2.11050004,9.88899996 C0.743595295,8.52209522 0.743595279,6.30590476 2.1105,4.939 L2.818,5.6465 C2.18182545,6.27712654 1.93167195,7.19992655 2.16225149,8.06551362 C2.39283104,8.93110069 3.06889931,9.60716896 3.93448638,9.83774851 C4.80007345,10.0683281 5.72287346,9.81817455 6.3535,9.182 L6.5305,9.005 C7.50645485,8.02875037 7.50645485,6.44624963 6.5305,5.47 L5.823,4.7625 L6.5305,4.0555 L6.53,4.055 Z M9.889,7.0605 L9.182,6.3535 C9.81817455,5.72287346 10.0683281,4.80007345 9.83774851,3.93448638 C9.60716896,3.06889931 8.93110069,2.39283104 8.06551362,2.16225149 C7.19992655,1.93167195 6.27712654,2.18182545 5.6465,2.818 L5.4695,2.995 C4.49354515,3.97124963 4.49354515,5.55375037 5.4695,6.53 L6.177,7.2375 L5.4695,7.9445 L4.7625,7.2375 C4.10604543,6.58111241 3.73724746,5.69081959 3.73724746,4.7625 C3.73724746,3.83418041 4.10604543,2.94388759 4.7625,2.2875 L4.9395,2.111 C5.82373234,1.22676766 7.11252904,0.881435628 8.32041287,1.20508713 C9.52829671,1.52873862 10.4717614,2.47220329 10.7954129,3.68008713 C11.1190644,4.88797096 10.7737323,6.17676766 9.8895,7.061 L9.889,7.0605 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                    <g id="编组-76" transform="translate(86.000000, 44.000000)">
+                        <rect id="矩形-visibleProcess-6" fill="#EAEEF1" x="0" y="31" width="20" height="8" rx="1"></rect>
+                        <rect id="矩形备份-32" fill="#EAEEF1" x="58" y="31" width="20" height="8" rx="1"></rect>
+                        <path d="M10,31 L10,14 C10,12.8954305 10.8954305,12 12,12 L22,12 L22,12" id="路径-9备份-2" stroke="#EAEEF1"></path>
+                        <path d="M10,51 L10,41 C10,39.8954305 10.8954305,39 12,39 L58,39 L58,39" id="路径-9备份-8" stroke="#EAEEF1" transform="translate(34.000000, 45.000000) scale(1, -1) translate(-34.000000, -45.000000) "></path>
+                        <path d="M57,31 L57,14 C57,12.8954305 57.8954305,12 59,12 L69,12 L69,12" id="路径-9备份-7" stroke="#EAEEF1" transform="translate(63.000000, 21.500000) scale(-1, 1) translate(-63.000000, -21.500000) "></path>
+                        <path d="M57,51 L57,41 C57,39.8954305 57.8954305,39 59,39 L69,39 L69,39" id="路径-9备份-9" stroke="#EAEEF1" transform="translate(63.000000, 45.000000) scale(-1, -1) translate(-63.000000, -45.000000) "></path>
+                        <path d="M22,12 L22,4 C22,2.8954305 22.8954305,2 24,2 L38,2 L38,2" id="路径-9备份-3" stroke="#EAEEF1"></path>
+                        <path d="M37,12 L37,4 C37,2.8954305 37.8954305,2 39,2 L57,2 L57,2" id="路径-9备份-5" stroke="#EAEEF1" transform="translate(47.000000, 7.000000) scale(-1, 1) translate(-47.000000, -7.000000) "></path>
+                        <path d="M22,21 L22,13 C22,11.8954305 22.8954305,11 24,11 L38,11 L38,11" id="路径-9备份-4" stroke="#EAEEF1" transform="translate(30.000000, 16.000000) scale(1, -1) translate(-30.000000, -16.000000) "></path>
+                        <path d="M37,21 L37,13 C37,11.8954305 37.8954305,11 39,11 L57,11 L57,11" id="路径-9备份-6" stroke="#EAEEF1" transform="translate(47.000000, 16.000000) scale(-1, -1) translate(-47.000000, -16.000000) "></path>
+                        <rect id="矩形备份-33" fill="#E2F4E3" x="35" y="19" width="10" height="4" rx="1"></rect>
+                        <rect id="矩形备份-34" fill="#FFEBD9" x="26" y="0" width="10" height="4" rx="1"></rect>
+                        <rect id="矩形备份-46" fill="#DDEDFE" x="42" y="0" width="10" height="4" rx="1"></rect>
+                        <line x1="20" y1="35" x2="58" y2="35" id="路径-22" stroke="#EAEEF1"></line>
+                        <rect id="矩形备份-47" fill="#DDEDFE" x="35" y="33" width="10" height="4" rx="1"></rect>
+                        <rect id="矩形备份-48" fill="#FFEBD9" x="20" y="49" width="10" height="4" rx="1"></rect>
+                        <rect id="矩形备份-49" fill="#E2F4E3" x="51" y="49" width="10" height="4" rx="1"></rect>
+                    </g>
+                    <rect id="矩形-visibleProcess-7" fill="#F1F4F8" x="144" y="28" width="20" height="6" rx="1"></rect>
+                </g>
+                <g id="编组-85" transform="translate(220.000000, 18.000000)">
+                    <g id="矩形-visibleProcess-8">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-visibleProcess-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-visibleProcess-4"></use>
+                    </g>
+                    <g id="编组-84" transform="translate(8.000000, 8.000000)">
+                        <line x1="10" y1="8" x2="10" y2="46" id="路径-21" stroke="currentColor"></line>
+                        <g id="矩形-visibleProcess-9">
+                            <use fill="currentColor" xlink:href="#path-visibleProcess-6"></use>
+                            <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-visibleProcess-6"></use>
+                        </g>
+                        <g id="矩形备份-30">
+                            <use fill="currentColor" xlink:href="#path-visibleProcess-7"></use>
+                            <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-visibleProcess-7"></use>
+                        </g>
+                        <path d="M10.1788854,44.3577709 L11.8552786,47.7105573 C11.9046765,47.809353 11.8646316,47.9294876 11.7658359,47.9788854 C11.7380648,47.992771 11.7074422,48 11.6763932,48 L8.3236068,48 C8.21314985,48 8.1236068,47.9104569 8.1236068,47.8 C8.1236068,47.768951 8.13083582,47.7383284 8.14472136,47.7105573 L9.82111456,44.3577709 C9.87051241,44.2589752 9.99064702,44.2189303 10.0894427,44.2683282 C10.1281482,44.2876809 10.1595327,44.3190654 10.1788854,44.3577709 Z" id="三角形备份" fill="currentColor" transform="translate(10.000000, 46.000000) scale(1, -1) translate(-10.000000, -46.000000) "></path>
+                        <g id="编组-79" transform="translate(9.500000, 21.500000)" fill="currentColor">
+                            <polygon id="三角形" transform="translate(2.500000, 2.777778) rotate(90.000000) translate(-2.500000, -2.777778) " points="2.5 0.277777778 5.27777778 5.27777778 -0.277777778 5.27777778"></polygon>
+                            <rect id="矩形-visibleProcess-10" transform="translate(2.750000, 4.500000) rotate(-34.000000) translate(-2.750000, -4.500000) " x="2" y="1.5" width="1.5" height="6"></rect>
+                        </g>
+                    </g>
+                    <rect id="矩形-visibleProcess-11" fill="#F1F4F8" x="23" y="33" width="14" height="14" rx="1"></rect>
+                    <rect id="矩形备份-50" fill="#DBDEE3" x="25" y="35" width="10" height="10" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,56 @@
+.overflow-point {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brand-manage-container {
+  .info-item {
+    width: 100%;
+    .overflow-point;
+  }
+}
+
+.brand-manage-modal {
+  .logo-url {
+    padding: 5px;
+    margin: 0;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    position: relative;
+    img {
+      width: 80px;
+      height: 45px;
+      display: block;
+      overflow: hidden;
+    }
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+    }
+    &:hover .icon {
+      display: inline;
+    }
+  }
+  :global {
+    .c7n-pro-field-help {
+      font-size: 12px;
+    }
+    // .c7n-pro-upload {
+    //   width: 100%;
+    //   .c7n-pro-upload-list-item {
+    //     img {
+    //       width: 48px;
+    //       height: 48px;
+    //     }
+    //     .c7n-pro-upload-list-item-name {
+    //       width: 100%;
+    //       display: inline-block;
+    //       .overflow-point;
+    //     }
+    //   }
+    // }
+  }
+}

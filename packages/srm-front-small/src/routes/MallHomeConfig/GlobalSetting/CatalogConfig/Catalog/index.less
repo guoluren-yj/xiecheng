@@ -1,0 +1,32 @@
+@import '~hzero-front/lib/srm-variables';
+.content {
+  :global {
+    .catalog-title {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .catalog-onlyInstock {
+      height: 18px;
+      line-height: 18px;
+      margin: 16px 0;
+    }
+    .catalog-item {
+      .edit-catalog-icon {
+        display: none;
+      }
+      &:hover {
+        .edit-catalog-icon {
+          display: block;
+        }
+        .catalog-name{
+          margin-right: 20px;
+        }
+      }
+    }
+    .catalog-item-old{
+      color: @fill-3;
+    }
+  }
+}

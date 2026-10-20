@@ -1,0 +1,163 @@
+// 基础样式文件
+@import '~srm-front-boot/lib/utils/style/basic.less';
+
+.config-page-content {
+  padding: 0 !important;
+  height: 100%;
+  overflow: hidden;
+  margin: 8px;
+  background-color: #fff;
+  :global {
+    .full-height-spinning {
+      height: 100%;
+      .c7n-spin-container {
+        height: 100%;
+      }
+    }
+    .config-vertical-tabs {
+      height: 100%;
+      & > .c7n-tabs-content {
+        padding-left: 20px;
+        border-left: 1px solid #e8e8e8 !important;
+      }
+      & > .c7n-tabs-bar {
+        border: none;
+        .c7n-tabs-bar-inner {
+          padding-top: 20px;
+        }
+        .c7n-tabs-nav-container {
+          min-width: 180px;
+          max-width: 220px;
+        }
+
+        .c7n-tabs-tab {
+          font-size: 14px;
+          line-height: 22px;
+          text-align: left;
+          margin-bottom: 16px;
+          padding: 0 20px;
+        }
+        .c7n-tabs-ink-bar {
+          height: 22px !important;
+          width: 3px;
+        }
+      }
+    }
+    .config-top-tabs {
+      & > .c7n-tabs-bar {
+        .c7n-tabs-bar-inner {
+          padding-top: 16px;
+        }
+        .c7n-tabs-tab {
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 600;
+        }
+      }
+    }
+    .config-right-content {
+      height: 100%;
+      padding-right: 20px;
+      padding-top: 20px;
+      .config-right-content-one-title {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .config-chunk-content {
+        // margin-top: 16px;
+        padding-bottom: 32px;
+        .config-right-content-two-title {
+          height: auto;
+          font-size: 14px;
+          color: #000;
+          line-height: 22px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          &-ink {
+            display: inline-block;
+            margin-right: 8px;
+            height: 12px;
+            position: relative;
+            top: -1px;
+            width: 3px;
+            background-color: @primary-color;
+            vertical-align: middle;
+          }
+        }
+      }
+      .config-chunk-content:last-child {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// tag颜色渲染
+.warning-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.notice-tag {
+  color: @color-waning !important;
+  background-color: @color-waning-percent10;
+  margin-bottom: 1px;
+}
+
+.danger-tag {
+  color: @color-danger !important;
+  background-color: @color-danger-percent10;
+  margin-bottom: 1px;
+}
+
+.success-tag {
+  color: @color-success !important;
+  background-color: @color-success-percent10;
+  margin-bottom: 1px;
+}
+
+.tabTitle {
+  display: flex;
+  flex: 1;
+  min-width: 140px;
+  max-width: 180px;
+  justify-content: space-between;
+  .tab-title-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  > .c7n-tag {
+    border: 0 !important;
+  }
+}
+
+.srpm-col-btn {
+  margin-right: 16px;
+  margin-left: 0 !important;
+}
+.srpm-col-btn:last-child {
+  margin-right: 0;
+  margin-left: 0 !important;
+}
+.menu-list-history {
+  height: 40px !important;
+  margin: 8px 15px !important;
+  padding: 0 !important;
+  a {
+    line-height: 18px;
+  }
+  a > .version {
+    height: 18px;
+  }
+  a > .lastupdate_info {
+    height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

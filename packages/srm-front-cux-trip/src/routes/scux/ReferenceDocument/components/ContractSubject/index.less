@@ -1,0 +1,85 @@
+/*
+ * index.less - 协议标的样式
+ * @date: 2019-05-15
+ * @author: HB <bin.huang02@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+
+.operation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .collapsed {
+    display: inline-block;
+    margin-bottom: 16px;
+    align-self: center;
+  }
+  :global {
+    .ant-form.ant-form-inline {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-bottom: 16px;
+      .ant-form-item {
+        margin-right: 0;
+        & > .ant-form-item-label {
+          text-align: right;
+        }
+      }
+      & > div.ant-form-item.ant-row {
+        width: auto !important;
+        display: inline-flex;
+      }
+      & > div,
+      & > button {
+        margin-left: 8px;
+      }
+    }
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+  }
+}
+.operation-wrapper-labelWidth {
+  :global {
+    .ant-form-item-control-wrapper {
+      width: 100px;
+    }
+  }
+}
+
+// .operation-wrapper {
+//   display: flex;
+// }
+
+// .btn-wrapper {
+//   margin-bottom: 16px;
+//   display: flex;
+//   flex-direction: row-reverse;
+//   margin-left: auto;
+//   & > button:not(:last-child) {
+//     margin-left: 8px;
+//   }
+// }
+// .edit-table-wrapper {
+//   :global {
+//     .ant-input-number {
+//       width: 100%;
+//     }
+//   }
+// }
+
+.search-form-wrapper {
+  // position: absolute;
+  // left: 0;
+  // top: 58px;
+  // width: 20vw;
+  flex: 0 0 20%;
+  margin-right: auto;
+}
+
+.Line_purchase-application__r8huj .ant-form.ant-form-inline > div.ant-form-item.ant-row {
+  width: auto !important;
+}

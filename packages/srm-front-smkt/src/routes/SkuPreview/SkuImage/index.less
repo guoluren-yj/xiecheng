@@ -1,0 +1,113 @@
+.common-product-img-content {
+  position: relative;
+  :global {
+    #smpc-detail-images {
+      width: 270px;
+      margin-left: 8px;
+      margin-right: 4px;
+    }
+    .detail-images-wrapper {
+      display: flex;
+      align-items: center;
+      margin: 30px 0 20px;
+      position: relative;
+    }
+    .detail-images-prev,
+    .detail-images-next {
+      width: 20px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 36px;
+      }
+    }
+    .swiper-container {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+    }
+    .swiper-button-disabled {
+      cursor: not-allowed;
+      i {
+        color: #ccc;
+      }
+    }
+    .product-detail-imgs {
+      width: 72px;
+      height: 56px;
+      display: flex;
+      .small-img.small-img-box {
+        border: solid 1px #f56349;
+      }
+
+      .small-img {
+        width: 56px;
+        height: 56px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        position: relative;
+        border: solid 1px #e0e0e0;
+        .video-react {
+          padding-top: 0 !important;
+        }
+        .video-react.video-react-fluid {
+          width: 54px;
+          height: 54px;
+          position: relative;
+          .video-react-big-play-button {
+            display: none;
+          }
+          .video-react-control-bar {
+            display: none;
+          }
+        }
+        .disabled-video {
+          position: absolute;
+          height: 54px;
+          width: 54px;
+          left: 0;
+          top: 0;
+          z-index: 999;
+        }
+      }
+    }
+    .product-img-control {
+      .p-collect {
+        display: inline-block;
+        width: 106px;
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        border-style: none;
+      }
+      .collected {
+        color: #d49d18;
+      }
+    }
+
+    .sku-btns-wrapper {
+      display: flex;
+      align-items: center;
+      .sku-btn {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        color: #000;
+        font-weight: 600;
+        cursor: pointer;
+        i {
+          font-size: 16px;
+          margin-right: 4px;
+        }
+        span {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

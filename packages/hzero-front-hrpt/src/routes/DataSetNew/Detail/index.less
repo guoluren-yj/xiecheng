@@ -1,0 +1,143 @@
+.header-enable {
+  margin-top: 16px;
+  &-label {
+    margin-right: 8px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+.header-code-area {
+  height: calc( 100% - 90px );
+  :global {
+    .c7n-pro-field-label {
+      padding-bottom: 0;
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    .CodeMirror.CodeMirror-wrap {
+      font-family: Asia;
+      font-size: 13px;
+    }
+    .c7n-pro-form, .c7n-row {
+      height: 100%;
+    }
+    .c7n-col-24 {
+      flex-direction: column;
+      height: 100%;
+      display: flex;
+    }
+    .c7n-pro-field-wrapper {
+      flex: 1;
+      overflow: hidden;
+    }
+    .c7n-pro-code-area-wrapper {
+      height: 100%; 
+      & > label {
+        display: block;
+        height: 100%;
+      }
+    }
+    .c7n-pro-code-area {
+      height: 100% !important;
+      overflow: auto;
+    }
+    .CodeMirror-scroll {
+      height: 100% !important;
+    }
+    .CodeMirror {
+      height: 100% !important;
+    }
+  }
+}
+
+.card {
+  margin-bottom: 32px;
+}
+
+.card-title {
+  font-weight: 700;
+  border-left: 3px solid #29becf;
+  text-indent: 8px;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 13px;
+  margin-bottom: 16px;
+}
+
+.node-name {
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  i {
+    // visibility: hidden;
+    font-size: 14px;
+    color: @primary-color;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  &-icon {
+    margin-right: 8px;
+  }
+  &-text {
+    vertical-align: middle;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &-icon,
+  &-text {
+    display: inline-block;
+  }
+  &:hover i {
+    // visibility: visible;
+  }
+}
+.form {
+  :global {
+    .c7n-pro-switch-wrapper.c7n-pro-field {
+      line-height: 32px;
+    }
+    .c7n-pro-select-box-wrapper {
+      margin-top: 4px;
+    }
+  }
+}
+.content-wrap {
+  :global {
+    .page-content {
+      height: calc(100% - 32px) !important;
+    }
+    .c7n-spin-nested-loading,
+    .c7n-spin-container,
+    .c7n-tabs {
+      height: 100%;
+      position: relative;
+    }
+    .c7n-tabs,
+    .c7n-tabs-tabpane {
+      // height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .c7n-tabs-content {
+      flex-shrink: 1;
+      flex-grow: 1;
+      overflow-x: hidden;
+    }
+  }
+}
+.meta-table {
+  :global {
+    .c7n-pro-table-cell-inner-dirty:after {
+      display: none;
+    }
+  }
+}
+.add-btn, .save-btn {
+  font-weight: 600;
+  margin-right: 8px;
+}
+.add-object-btn > span {
+  visibility: hidden;
+}

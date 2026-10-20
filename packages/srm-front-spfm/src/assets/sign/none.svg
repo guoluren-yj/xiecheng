@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="96px" viewBox="0 0 136 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>none</title>
+    <defs>
+        <path d="M16.659116,29 C17.5602735,33.4126286 16.6747129,37.0792952 14.0024343,40 C11.3266897,37.0792952 10.4393962,33.4126286 11.3405537,29 L16.659116,29" id="path-1"></path>
+        <path d="M14.4611025,32 C12.8602213,29.9621241 10.2242115,29.7250871 6.55307316,31.2888889 C2.95710059,18.3010304 5.60569158,7.87140075 14.4988461,0 C23.4050192,7.87140075 26.0405917,18.3010304 22.4446191,31.2888889 C18.7759079,29.7250871 16.1411117,29.9621241 14.5402304,32" id="path-2"></path>
+        <path d="M14.5,0 C22.9364024,7.79872447 26.2084952,17.6489816 22.4446191,31.2888889 C21.59355,30.909453 20.771468,30.637419 19.9929453,30.472594 C23.3405773,18.2098667 21.5091414,8.05215092 14.5,0 Z" id="path-3"></path>
+    </defs>
+    <g id="老功能提示公告" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电子签章老功能公告" transform="translate(-676, -356)">
+            <g id="编组-4" transform="translate(369, 356)">
+                <g id="none" transform="translate(307, 0)">
+                    <g id="path-1-link" fill="#F2F4F6">
+                        <rect id="path-1" x="0" y="0" width="136" height="96" rx="3"></rect>
+                    </g>
+                    <g id="title" fill-rule="nonzero">
+                        <path d="M3,0 L133,0 C134.656854,0 136,1.34314575 136,3 L136,9 L136,9 L0,9 L0,3 C0,1.34314575 1.34314575,0 3,0 Z" id="Rectangle-Copy-10" fill="#606C80" opacity="0.200000003"></path>
+                        <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="5.5" cy="4.5" r="1.5"></circle>
+                        <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="11.5" cy="4.5" r="1.5"></circle>
+                        <circle id="Oval" fill="#FFFFFF" opacity="0.746814546" cx="17.5" cy="4.5" r="1.5"></circle>
+                    </g>
+                    <g id="issue" transform="translate(6, 14)">
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="124" height="77" rx="2"></rect>
+                        <g id="编组-3" transform="translate(10, 13)">
+                            <rect id="Rectangle-Copy-12" fill="#E6EAF1" fill-rule="nonzero" x="0" y="44" width="104" height="5" rx="1"></rect>
+                            <rect id="Rectangle-Copy-12备份-2" fill="#E6EAF1" fill-rule="nonzero" x="36" y="53" width="32" height="5" rx="1"></rect>
+                            <g id="编组-2" transform="translate(39, 0)">
+                                <g id="路径-10">
+                                    <use fill="#00B8CC" xlink:href="#path-1"></use>
+                                    <use fill-opacity="0.1" fill="#000000" xlink:href="#path-1"></use>
+                                </g>
+                                <path d="M7,28.5263158 C3.45787166,28.3113629 1.19419007,28.802591 0.208955224,30 C-0.696517413,24.367335 1.34079602,19.7006683 6.32089552,16 C5.5701867,21.4258925 5.79655485,25.5849738 7,28.477244" id="路径-9" fill="#00B8CC"></path>
+                                <path d="M29,28.5263158 C25.4578717,28.3113629 23.1941901,28.802591 22.2089552,30 C21.3034826,24.367335 23.340796,19.7006683 28.3208955,16 C27.5701867,21.4258925 27.7965549,25.5849738 29,28.477244" id="路径-9备份" fill="#00B8CC" transform="translate(25.5, 23) scale(-1, 1) translate(-25.5, -23)"></path>
+                                <g id="路径-8">
+                                    <use fill="#00B8CC" xlink:href="#path-2"></use>
+                                    <use fill-opacity="0.8" fill="#FFFFFF" xlink:href="#path-2"></use>
+                                </g>
+                                <g id="形状结合">
+                                    <use fill="#00B8CC" xlink:href="#path-3"></use>
+                                    <use fill-opacity="0.3" fill="#FFFFFF" xlink:href="#path-3"></use>
+                                </g>
+                                <ellipse id="椭圆形" fill="#FFFFFF" cx="14.5" cy="10" rx="2.5" ry="3"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

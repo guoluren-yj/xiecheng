@@ -1,0 +1,501 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/time-picker/demo/12hours.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-time-picker "
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select time
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-time-picker "
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select time
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-time-picker "
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value=""
+            />
+            <div
+              class="c7n-input-label-wrapper"
+            >
+              <div
+                class="c7n-input-label"
+              >
+                Select time
+              </div>
+            </div>
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/time-picker/demo/addon.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            id=""
+            readonly=""
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              Select time
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`renders ./components/time-picker/demo/basic.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-label c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            id=""
+            readonly=""
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              Select time
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`renders ./components/time-picker/demo/disabled.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-value c7n-input-disabled c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            disabled=""
+            id=""
+            readonly=""
+            type="text"
+            value="12:08:23"
+          />
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`renders ./components/time-picker/demo/hide-column.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            id=""
+            readonly=""
+            type="text"
+            value="12:08"
+          />
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`renders ./components/time-picker/demo/interval-options.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            id=""
+            readonly=""
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              Select time
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;
+
+exports[`renders ./components/time-picker/demo/size.md correctly 1`] = `
+<div>
+  <span
+    class="c7n-time-picker c7n-time-picker-large"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value="12:08:23"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-time-picker "
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value="12:08:23"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+  <span
+    class="c7n-time-picker c7n-time-picker-small"
+  >
+    <span
+      class="c7n-input-wrapper c7n-input-has-value c7n-input-has-suffix c7n-input-has-border"
+    >
+      <div
+        class="c7n-input-content"
+      >
+        <div
+          class="c7n-input-rendered-wrapper"
+        >
+          <div
+            class="c7n-input-rendered"
+          >
+            <input
+              class="c7n-input c7n-time-picker-input"
+              id=""
+              readonly=""
+              type="text"
+              value="12:08:23"
+            />
+          </div>
+          <span
+            class="c7n-input-suffix"
+          >
+            <i
+              class="icon icon-av_timer c7n-time-picker-icon"
+            />
+          </span>
+        </div>
+      </div>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`renders ./components/time-picker/demo/value.md correctly 1`] = `
+<span
+  class="c7n-time-picker "
+>
+  <span
+    class="c7n-input-wrapper c7n-input-has-suffix c7n-input-has-border"
+  >
+    <div
+      class="c7n-input-content"
+    >
+      <div
+        class="c7n-input-rendered-wrapper"
+      >
+        <div
+          class="c7n-input-rendered"
+        >
+          <input
+            class="c7n-input c7n-time-picker-input"
+            id=""
+            readonly=""
+            type="text"
+            value=""
+          />
+          <div
+            class="c7n-input-label-wrapper"
+          >
+            <div
+              class="c7n-input-label"
+            >
+              Select time
+            </div>
+          </div>
+        </div>
+        <span
+          class="c7n-input-suffix"
+        >
+          <i
+            class="icon icon-av_timer c7n-time-picker-icon"
+          />
+        </span>
+      </div>
+    </div>
+  </span>
+</span>
+`;

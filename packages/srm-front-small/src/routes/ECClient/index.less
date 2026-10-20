@@ -1,0 +1,45 @@
+
+// 更多按钮下
+.c7n-menu {
+    .drop-down-import-btn-wrapper {
+      padding: 0 16px;
+      height: 40px;
+      display: block !important;
+      :global {
+        .srm-common-import-button,
+        .srm-common-export-button {
+          overflow: visible;
+          padding-left: 0;
+          .srm-common-import-button-tag,
+          .srm-common-export-button-tag {
+            right: -14px;
+          }
+        }
+        .c7n-pro-btn-wrapper {
+          height: 40px;
+        }
+      }
+      .c7n-pro-btn-disabled {
+        padding: 0;
+      }
+      button {
+        color: #000 !important;
+        margin-left: 0;
+        font-weight: 400;
+        padding: 0;
+        > span {
+          font-weight: 400 !important;
+        }
+        &:hover {
+          color: @primary-color !important;
+          background-color: transparent !important;
+        }
+        i.icon {
+          display: none;
+        }
+      }
+      & .c7n-pro-btn-disabled button {
+        color: #c9cdd4 !important;
+      }
+    }
+  }

@@ -1,0 +1,51 @@
+// 联系电话样式
+.line-form {
+  :global {
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+    // .c7n-pro-select,
+    // .c7n-pro-input {
+    //   border-color: #fca000;
+    //   background-color: #fffbef;
+    // }
+    // .c7n-pro-select:focus,
+    // .c7n-pro-input:focus {
+    //   background-color: #fff !important;
+    // }
+    & td:first-child {
+      padding: 0;
+    }
+    .c7n-pro-field-wrapper {
+      .c7n-row {
+        display: flex;
+        align-items: center;
+        // 覆盖脱敏组件只读样式
+        .c7n-pro-output {
+          background-color: transparent;
+          font-weight: 400;
+        }
+        // 脱敏组件样式
+        .c7n-pro-input-secret {
+          margin-top: 0;
+          .c7n-pro-input {
+            padding: 0.01rem 10px;
+            border: 0.01rem #c9cdd4 solid;
+          }
+        }
+      }
+    }
+    // .c7n-pro-input-required {
+    //   background-color: #fffbef;
+    // }
+    .c7n-pro-select-required {
+      background-color: #fffbef;
+    }
+    .c7n-pro-input-focused {
+      background-color: #fff !important;
+    }
+    .c7n-pro-validation-message {
+      display: none;
+    }
+  }
+}

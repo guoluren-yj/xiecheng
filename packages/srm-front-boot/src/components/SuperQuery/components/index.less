@@ -1,0 +1,249 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+@blue: @primary-color;
+@color-search: #fff;
+
+.super-form {
+  :global {
+    table {
+      background-color: @color-search;
+      -webkit-box-shadow: -10px -4px 10px 51px @color-search;
+      -moz-box-shadow: -10px -4px 10px 51px @color-search;
+      box-shadow: -10px -4px 10px 51px @color-search;
+    }
+
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+
+    .c7n-pro-input {
+      height: 40px;
+
+      &:not(textarea):not(:first-child) {
+        padding-left: 0.3rem !important;
+        font-size: 14px;
+      }
+    }
+
+    .c7n-pro-input-focused.c7n-pro-input,
+    .c7n-pro-input::selection {
+      background: @blue !important;
+    }
+
+    .c7n-pro-input:focus {
+      border-color: @blue !important;
+    }
+  }
+
+  .super-input {
+    position: absolute;
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    width: 32px;
+    line-height: 32px;
+
+    &:hover {
+      color: @blue;
+    }
+  }
+}
+
+.super-tabs-list {
+  margin-top: 10px;
+
+  :global {
+    .c7n-tabs-bar {
+      background-color: @color-search;
+    }
+  }
+}
+
+.data-record {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+
+  // &-bill {
+  //   position: relative;
+  //   bottom: 5px;
+  // }
+
+  &-text {
+    font-size: 12px;
+    color: #4e5769;
+    line-height: 17px;
+    font-weight: 400;
+  }
+
+  &-number {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: @blue;
+    line-height: 17px;
+    font-weight: 500;
+  }
+
+  &-default {
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  &-see {
+    width: 48px;
+    height: 17px;
+    font-size: 12px;
+    color: @blue;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 22px;
+    margin-left: auto;
+    float: right;
+  }
+
+  &-box {
+    position: relative;
+    top: 6px;
+    left: -7px;
+  }
+
+  &-type {
+    // margin: 0;
+    margin-top: 2px;
+    padding: 0;
+
+    &-tag {
+      position: relative;
+      border-radius: 2px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      margin: 4px 0 4px 8px;
+      bottom: 6px;
+      background-color: #fff;
+      color: #1d2129 !important;
+      border: 1px solid rgba(201, 205, 212, 1);
+      font-size: 12px;
+      font-weight: 500;
+
+      &:active {
+        background-color: #fff;
+      }
+
+      & > span {
+        color: #4e5769;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    &-switch {
+      border: 1px solid @blue;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-color: transparent @blue @blue transparent;
+        border-style: solid;
+        border-width: 7px;
+      }
+
+      &:before {
+        content: '';
+        width: 5px;
+        height: 8px;
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+        border: 1px solid #fff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        transform: rotate(40deg);
+        z-index: 9;
+      }
+    }
+  }
+}
+
+.data-record-wrapper {
+  padding: 20px;
+  overflow: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  :global {
+    .c7n-result {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .c7n-result-icon {
+        margin-bottom: 12px;
+      }
+
+      .c7n-result-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+    }
+  }
+}
+
+.search-bar {
+  :global {
+    .c7n-pro-table-search-bar {
+      margin-top: -15px;
+
+      &-expand {
+        margin-top: 0;
+
+        .c7n-pro-table-search-bar-left {
+          .c7n-pro-table-search-bar-operator {
+            &-left {
+              bottom: 19px;
+            }
+
+            &-right {
+              position: absolute;
+              right: 15px;
+              top: -16px;
+
+              > span {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      &-left {
+        .c7n-pro-table-search-bar-operator-right {
+          > span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .c7n-pro-table-search-bar-operator {
+      .c7n-pro-table-search-bar-operator-left {
+        position: absolute;
+        right: 7px;
+        bottom: 4px;
+      }
+    }
+
+    .c7n-pro-table-search-bar-fields {
+      width: calc(100% - 110px);
+      margin-top: -18px;
+
+      .c7n-pro-table-search-bar-merge-field {
+        display: none;
+      }
+    }
+  }
+}

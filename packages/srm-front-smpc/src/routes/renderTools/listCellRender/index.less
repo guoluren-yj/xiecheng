@@ -1,0 +1,27 @@
+.over-flow {
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.c7n-list-cell {
+  .over-flow;
+  .c7n-list-cell-row {
+    margin: 0;
+    margin-bottom: 4px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    .over-flow;
+    .c7n-list-cell-label {
+      display: block;
+      color: inherit;
+      margin-right: 8px;
+      max-width: 120px;
+    }
+    .c7n-list-cell-content {
+      display: block;
+      color: inherit;
+      .over-flow;
+    }
+  }
+}

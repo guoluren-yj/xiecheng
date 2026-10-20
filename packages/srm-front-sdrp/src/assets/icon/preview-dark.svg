@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>preview-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="展现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="栅格组件样式" transform="translate(-1352.000000, -17.000000)">
+            <g id="编组-21">
+                <g id="按钮组1备份" transform="translate(1223.000000, 10.000000)">
+                    <g id="btn-保存" transform="translate(117.000000, 0.000000)">
+                        <g id="preview-2" transform="translate(12.000000, 7.000000)">
+                            <rect id="矩形" fill="#D8D8D8" opacity="0.01" x="0" y="0" width="14" height="14"></rect>
+                            <path d="M12.4999998,1.75186188 C12.4999998,1.66242777 12.476012,1.57463061 12.4305364,1.4976213 C12.2901232,1.25984252 11.983538,1.18091212 11.7457593,1.32132532 L2.85844746,6.56946344 C2.78573846,6.61239958 2.72508762,6.67305042 2.68215148,6.74575942 C2.54173828,6.98353819 2.62066868,7.29012336 2.85844746,7.43053656 L11.7457593,12.6786747 C11.8227686,12.7241502 11.9105657,12.7481381 11.9999998,12.7481381 C12.2761422,12.7481381 12.4999998,12.5242805 12.4999998,12.2481381 L12.4999998,1.75186188 Z" id="矩形" stroke="#333435" fill="#FFFFFF" transform="translate(7.073023, 7.000000) scale(-1, 1) translate(-7.073023, -7.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

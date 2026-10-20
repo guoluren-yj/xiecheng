@@ -1,0 +1,123 @@
+@import '~choerodon-ui/lib/style/themes/default';
+
+.page-anchor-container {
+  width: auto;
+  position: fixed;
+  bottom: 50px;
+  right: 33px;
+  max-width: 220px;
+  height: auto;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+  .anchor-icon {
+    cursor: pointer;
+    width: 12px;
+    height: 56px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8d6d6;
+    border: 1px solid #c0bebe;
+    border-radius: 25px 0 0 25px;
+
+    .icon {
+      font-size: 12px;
+    }
+  }
+
+  .anchor-icon-custom-left {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* Internet Explorer */
+    -moz-transform: rotate(180deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+  }
+
+  .index_page-anchor-container__1EoL7 {
+    padding: 0;
+  }
+
+  .anchor-content {
+    width: 100%;
+
+    :global {
+      .c7n-anchor-ink::before {
+        background-color: white;
+      }
+
+      .c7n-anchor-ink-ball {
+        border: none;
+      }
+
+      .c7n-anchor-link {
+        padding: 0 0 0 12px;
+        line-height: 28px;
+      }
+
+      .c7n-anchor-ink::before {
+        width: 0;
+      }
+
+      .c7n-anchor-link-title {
+        margin-bottom: 0;
+      }
+
+      .c7n-anchor-ink-ball::after {
+        margin-top: -12px;
+        margin-left: -3px;
+        width: auto;
+        height: auto;
+        color: #29bece;
+        border: none;
+        border-radius: 0;
+        line-height: 1;
+        font-size: 12px;
+        display: inline-block;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        vertical-align: middle;
+        background-image: none;
+        font-family: @icon-font-family, sans-serif !important;
+        // speak: none;
+        font-style: normal;
+        font-weight: inherit;
+        -webkit-font-feature-settings: normal;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\E163';
+      }
+
+      .c7n-anchor-wrapper {
+        padding: 8px 40px 8px 16px;
+      }
+
+      .c7n-popover-inner {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.page-anchor-container-collapse {
+  right: 0;
+  transform: translateX(100%);
+}

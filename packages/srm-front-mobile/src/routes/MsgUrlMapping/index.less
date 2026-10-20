@@ -1,0 +1,56 @@
+.wx-tpl-container {
+  height: 100%;
+  :global {
+    .c7n-alert {
+      margin-bottom: 16px;
+      border: none;
+    }
+    .c7n-alert-message {
+      display: flex;
+      align-items: center;
+      color: #29bece;
+      max-height: unset!important;
+      i.icon {
+        margin-right: 4px;
+      }
+    }
+    .wx-tpl-item {
+      padding-bottom: 32px;
+    }
+    .wx-tpl-title {
+      margin-bottom: 16px;
+      padding-left: 8px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      &::before {
+        content: "";
+        display: block;
+        background-color: #29bece;
+        width: 3px;
+        height: 18px;
+        margin-right: 4px;
+      }
+    }
+
+    .wx-account-list {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: auto;
+
+      .c7n-pro-form.c7n-pro-form-float-label {
+        margin: 0;
+      }
+
+    }
+    .c7n-spin-nested-loading, .c7n-spin-container {
+      height: 100%;
+    }
+    .c7n-spin-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

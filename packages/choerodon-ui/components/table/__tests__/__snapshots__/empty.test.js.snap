@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders empty table 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-table-filter-bar"
+      >
+        <div
+          class="c7n-table-filter-select"
+        >
+          <div
+            class="c7n-table-filter-select-icon"
+          >
+            <i
+              class="icon icon-filter_list"
+            />
+          </div>
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-allow-clear c7n-select-tags"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-filter-select-columns"
+          />
+        </div>
+        <div
+          class="c7n-table-columns-chooser"
+        >
+          <button
+            class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-view_column"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="c7n-table c7n-table-default c7n-table-empty c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead
+                class="c7n-table-thead"
+              >
+                <tr>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 1
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 2
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 3
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 4
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 5
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 6
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 7
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 8
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="c7n-table-tbody"
+              />
+            </table>
+          </div>
+          <div
+            class="c7n-table-placeholder"
+          >
+            No data
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table with custom emptyText 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-table-filter-bar"
+      >
+        <div
+          class="c7n-table-filter-select"
+        >
+          <div
+            class="c7n-table-filter-select-icon"
+          >
+            <i
+              class="icon icon-filter_list"
+            />
+          </div>
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-allow-clear c7n-select-tags"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-filter-select-columns"
+          />
+        </div>
+        <div
+          class="c7n-table-columns-chooser"
+        >
+          <button
+            class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-view_column"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="c7n-table c7n-table-default c7n-table-empty c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead
+                class="c7n-table-thead"
+              >
+                <tr>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 1
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 2
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 3
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 4
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 5
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 6
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 7
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 8
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="c7n-table-tbody"
+              />
+            </table>
+          </div>
+          <div
+            class="c7n-table-placeholder"
+          >
+            custom empty text 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table with fixed columns 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-table-filter-bar"
+      >
+        <div
+          class="c7n-table-filter-select"
+        >
+          <div
+            class="c7n-table-filter-select-icon"
+          >
+            <i
+              class="icon icon-filter_list"
+            />
+          </div>
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-allow-clear c7n-select-tags"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-filter-select-columns"
+          />
+        </div>
+        <div
+          class="c7n-table-columns-chooser"
+        >
+          <button
+            class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-view_column"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="c7n-table c7n-table-default c7n-table-empty c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-scroll"
+          >
+            <div
+              class="c7n-table-body"
+            >
+              <table
+                class=""
+              >
+                <colgroup>
+                  <col
+                    style="width:100px;min-width:100px"
+                  />
+                  <col
+                    style="width:100px;min-width:100px"
+                  />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col
+                    style="width:100px;min-width:100px"
+                  />
+                </colgroup>
+                <thead
+                  class="c7n-table-thead"
+                >
+                  <tr>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Full Name
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Age
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 1
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 2
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 3
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 4
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 5
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 6
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 7
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Column 8
+                      </span>
+                    </th>
+                    <th
+                      class=""
+                      tabindex="-1"
+                    >
+                      <span>
+                        Action
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="c7n-table-tbody"
+                />
+              </table>
+            </div>
+            <div
+              class="c7n-table-placeholder"
+            >
+              No data
+            </div>
+          </div>
+          <div
+            class="c7n-table-fixed-left"
+          >
+            <div
+              class="c7n-table-body-outer"
+              style="-webkit-transform:translate3d (0, 0, 0)"
+            >
+              <div
+                class="c7n-table-body-inner"
+              >
+                <table
+                  class="c7n-table-fixed"
+                >
+                  <colgroup>
+                    <col
+                      style="width:100px;min-width:100px"
+                    />
+                    <col
+                      style="width:100px;min-width:100px"
+                    />
+                  </colgroup>
+                  <thead
+                    class="c7n-table-thead"
+                  >
+                    <tr>
+                      <th
+                        class=""
+                        tabindex="-1"
+                      >
+                        <span>
+                          Full Name
+                        </span>
+                      </th>
+                      <th
+                        class=""
+                        tabindex="-1"
+                      >
+                        <span>
+                          Age
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="c7n-table-tbody"
+                  />
+                </table>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-fixed-right"
+          >
+            <div
+              class="c7n-table-body-outer"
+              style="-webkit-transform:translate3d (0, 0, 0)"
+            >
+              <div
+                class="c7n-table-body-inner"
+              >
+                <table
+                  class="c7n-table-fixed"
+                >
+                  <colgroup>
+                    <col
+                      style="width:100px;min-width:100px"
+                    />
+                  </colgroup>
+                  <thead
+                    class="c7n-table-thead"
+                  >
+                    <tr>
+                      <th
+                        class=""
+                        tabindex="-1"
+                      >
+                        <span>
+                          Action
+                        </span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    class="c7n-table-tbody"
+                  />
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table renders empty table without emptyText when loading 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin c7n-spin-spinning c7n-table-without-pagination c7n-table-spin-holder"
+    >
+      <div
+        class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-default c7n-spin-dot"
+      >
+        <div
+          class="c7n-progress-inner"
+        >
+          <svg
+            viewBox="0 0 50 50"
+          >
+            <circle
+              cx="25"
+              cy="25"
+              r="20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-spin-container c7n-spin-blur"
+    >
+      <div
+        class="c7n-table-filter-bar"
+      >
+        <div
+          class="c7n-table-filter-select"
+        >
+          <div
+            class="c7n-table-filter-select-icon"
+          >
+            <i
+              class="icon icon-filter_list"
+            />
+          </div>
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-allow-clear c7n-select-tags"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-filter-select-columns"
+          />
+        </div>
+        <div
+          class="c7n-table-columns-chooser"
+        >
+          <button
+            class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-view_column"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="c7n-table c7n-table-default c7n-table-empty c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead
+                class="c7n-table-thead"
+              >
+                <tr>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 1
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 2
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 3
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 4
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 5
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 6
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 7
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Column 8
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="c7n-table-tbody"
+              />
+            </table>
+          </div>
+          <div
+            class="c7n-table-placeholder"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

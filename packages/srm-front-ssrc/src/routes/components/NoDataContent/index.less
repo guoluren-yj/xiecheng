@@ -1,0 +1,57 @@
+@import '~hzero-front/lib/srm-variables';
+
+.noData-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .noData-container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .noData-container-img {
+      width: 280px;
+      height: 143px;
+      color: @primary-color;
+
+      :global {
+        // svg path {
+        //     fill: @primary-color;
+        // }
+        svg {
+          //fill: @primary-color;
+          #path-3-link:first-child {
+            fill: @primary-color;
+          }
+          #path-4-link:first-child {
+            fill: @primary-color;
+          }
+          #path-5-link:first-child {
+            fill: @primary-color;
+          }
+          #path-6-link:first-child {
+            fill: @primary-color;
+          }
+          #path-7-link:first-child {
+            fill: @primary-color;
+          }
+          #path-8-link:first-child {
+            fill: @primary-color;
+          }
+        }
+      }
+    }
+
+    .noData-container-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #868d9c;
+      font-weight: 400;
+    }
+  }
+}

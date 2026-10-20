@@ -1,0 +1,56 @@
+@import '~hzero-front/lib/srm-variables';
+.expression-engine1 {
+  :global {
+    .expression-engine-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-secondLevel {
+        margin-top: 32px;
+        > span {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 14px;
+            background-color: @primary-color;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .expression-engine-multiple-rule-add-btn {
+      height: 36px;
+      width: 100%;
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+
+      &:hover {
+        cursor: pointer;
+        border-color: #000;
+      }
+      &.rule-add-btn-disabled {
+        cursor: not-allowed;
+        border: 1px dashed #d9d9d9;
+        &:hover {
+          cursor: not-allowed;
+          border: 1px dashed #d9d9d9;
+        }
+      }
+    }
+    .expression-engine-multiple-rule-row {
+      margin-bottom: 8px;
+    }
+  }
+}

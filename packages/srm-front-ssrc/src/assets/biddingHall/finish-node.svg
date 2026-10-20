@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>已完成</title>
+    <g id="【采】竞价大厅3.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标补全" transform="translate(-107, -185)">
+            <g id="已完成" transform="translate(107, 185)">
+                <circle id="椭圆形" fill-opacity="0.15" fill="#47B883" cx="8" cy="8" r="8"></circle>
+                <g id="编组" transform="translate(2.5, 5)" fill="#179454" fill-rule="nonzero">
+                    <path d="M5.301,3.890205 L6.007,4.596205 L10.23975,0.363405 L10.9469,1.07051 L6.007,6.010405 L2.825,2.828405 L3.532105,2.121305 L4.5945,3.183705 L5.30125,3.889955 L5.301,3.890205 Z M5.30185,2.476355 L7.77815,0 L8.4833,0.70514 L6.007,3.181455 L5.30185,2.476355 Z M3.88849,5.303905 L3.18198,6.010405 L0,2.828405 L0.707105,2.121305 L1.413615,2.827855 L1.41302,2.828405 L3.88849,5.303905 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

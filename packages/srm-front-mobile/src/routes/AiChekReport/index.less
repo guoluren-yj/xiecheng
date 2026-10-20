@@ -1,0 +1,229 @@
+.report-container {
+  margin: 8px 8px 0 8px;
+  height: calc(100vh - 145px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  :global {
+    .c7n-pro-table-filter-bar-add-field {
+      display: none !important;
+    }
+
+    .c7n-pro-table-filter-bar-fields {
+      margin-top: 0 !important;
+    }
+
+    .c7n-pro-table-filter-bar {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .statistics-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #f3f4f5;
+
+    :global {
+      .c7n-divider-horizontal {
+        margin: 16px 0 !important;
+        height: 0 !important;
+        border-top: 1px solid #e8e8e8;
+      }
+    }
+
+    .card-item {
+      flex: 1;
+      min-width: calc(33.33% - 16px);
+      height: 300px;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      // &:nth-child(n + 4) {
+      //   min-width: calc(50% - 16px);
+      //   /* Bottom row: 2 columns */
+      // }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .card-title {
+        font-size: 16px;
+        color: #1d2129;
+        line-height: 24px;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .card-value {
+        font-size: 32px;
+        font-weight: 600;
+        color: #1d2129;
+        line-height: 44px;
+      }
+
+      .chart-container {
+        width: 100%;
+        flex: 1;
+        min-height: 200px;
+        position: relative;
+      }
+    }
+  }
+
+  .table-container {
+    background: #fff;
+    margin-top: 8px;
+    padding: 16px;
+    border-radius: 4px;
+    min-height: 200px;
+
+    :global {
+      .c7n-tabs-bar {
+        margin-bottom: 0 !important;
+      }
+
+      .c7n-pro-table-wrapper {
+        margin-top: 16px !important;
+      }
+    }
+  }
+
+  .status-alert {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fc8800;
+    background: rgba(252, 136, 0, 0.1);
+  }
+
+  .status-passed {
+    font-size: 12px;
+    font-weight: 600;
+    color: #3bb346;
+    background: rgba(59, 179, 70, 0.1);
+  }
+
+  .status-rejected {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e64322;
+    background: rgba(242, 85, 53, 0.15);
+  }
+
+  .status-alert2 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fc8800;
+    background: rgba(252, 136, 0, 0.1);
+  }
+
+  .detail-table-container {
+    background: #fff;
+    padding: 0 16px 16px 16px;
+    border-radius: 4px;
+    height: calc(100vh - 208px);
+
+    :global {
+      .c7n-tag {
+        border: none !important;
+        height: 18px;
+        line-height: 18px;
+        margin: 0;
+        padding: 0 4px;
+      }
+    }
+  }
+
+  .rule-rate-tabs {
+    display: flex;
+    margin-bottom: 16px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+    .rate-tab-item {
+      padding: 12px 24px;
+      font-size: 14px;
+      color: #1d2129;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        color: #00b8cc;
+        border-bottom-color: #00b8cc;
+      }
+    }
+  }
+
+  .page-tabs {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 2px;
+    z-index: 10;
+  }
+}
+
+.page-tab-item {
+  height: 32px;
+  padding: 4px 8px;
+  line-height: 22px;
+  border: 2px solid #f2f3f5;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #f2f3f5;
+  font-size: 14px;
+  color: #1d2129;
+
+  &.active {
+    font-weight: 600;
+    color: #1d2129;
+    border-color: #f2f3f5;
+    background: #fff;
+  }
+}
+
+.ai-check-report-overview {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  :global {
+    .c7n-pro-table-filter-bar {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.ai-check-report {
+  :global {
+    .page-head-operator {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+.table-detail-container {
+  :global {
+    .c7n-pro-table-filter-bar {
+      // margin-bottom: 8px !important;
+    }
+  }
+}

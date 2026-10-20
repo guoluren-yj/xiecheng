@@ -1,0 +1,257 @@
+/**
+ * 公司筛选 的 所有的样式
+ * @date Tue Aug 07 2018
+ * @author WY yang.wang06@hand-china.com
+ * @copyright (c) 2018 Hand
+ */
+
+@import '~hzero-front/lib/assets/styles/utils.less';
+// 查询的表单
+.search-form {
+  margin-bottom: 2px;
+  &-label {
+    text-align: left;
+  }
+  &-content {
+    // 里面的 Label 需要 垂直居中
+    :global(.ant-form-item) {
+      &:first-child {
+        border-top: solid 1px #f4f5f7;
+      }
+      &:last-child {
+        border-bottom: solid 1px #f4f5f7;
+      }
+      margin-bottom: 0;
+      display: flex;
+    }
+    .first-form-item {
+      :global(.ant-form-item-label) {
+        // border-top: 1px solid #e5e5e5;
+      }
+    }
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+        margin-right: 0;
+        display: flex;
+      }
+    }
+    :global(.ant-form-item-label) {
+      padding-left: 26px;
+      background-color: #f4f5f7;
+      border-radius: 0;
+      // border: solid 1px #e5e5e5;
+      // border-width: 0 1px 1px;
+      display: flex;
+      // text-align: left;
+      flex-direction: column;
+      justify-content: center;
+    }
+    :global(.ant-form-item-control-wrapper) {
+      padding-left: 26px;
+      border-bottom: solid 1px #f4f5f7;
+      .tag-select {
+        line-height: 40px;
+      }
+      :global(.ant-tag) {
+        margin-top: 10px;
+        color: #333;
+        &:active {
+          margin-top: 10px;
+          border-radius: 2px;
+          color: #4371ef;
+          background-color: #eef1f8;
+        }
+      }
+      :global(.ant-tag-checkable-checked) {
+        background-color: #eef1f8;
+        border-radius: 2px;
+        color: #4371ef;
+      }
+    }
+  }
+}
+
+// Card List 的样式
+.table-item {
+  height: 291px;
+  width: 247px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+      0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  :global(.ant-card-head) {
+    height: 80px;
+    padding: 0 16px;
+    border-bottom: 1px solid #eee;
+    background-color: #f7f7f7;
+  }
+  :global(.ant-card-head-title) {
+    padding: 16px 0;
+  }
+  &-body {
+    height: 188px;
+  }
+  &-content {
+    margin: 8px 24px;
+  }
+  &-footer {
+    text-align: center;
+    height: 48px;
+    padding-right: 0;
+    line-height: 48px;
+    // :global(.ant-btn) {
+    //   color: #29bece;
+    //   background-color: #fff;
+    //   border-color: #29bece;
+    //   &:hover {
+    //     background-color: #29bece;
+    //     color: #fff;
+    //   }
+    // }
+  }
+}
+
+// Card 内部内容的样式
+.list-item {
+  margin-top: 24px;
+  .list-item-content {
+    display: flex;
+    margin: 12px 24px;
+    &-first {
+      width: auto;
+      word-break: keep-all;
+      white-space: nowrap;
+      color: #999;
+    }
+    &-second {
+      flex: 1 auto;
+      color: #333;
+      .textOverflow();
+    }
+  }
+}
+
+// 公司名称
+.company-head {
+  display: flex;
+  align-items: center;
+  color: #4371ef;
+  height: 40px;
+  // 公司的icon
+  :global(.ant-avatar-string) {
+    line-height: 44px;
+  }
+  > .company-icon {
+    width: 44px;
+    min-width: 44px;
+    max-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    flex: 0 0 auto;
+    vertical-align: middle;
+    color: #333;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+  > .company-title {
+    // flex: 1 auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-left: 12px;
+    line-height: 16px;
+    > a {
+      padding-right: 10px;
+      word-break: break-all;
+      white-space: pre-line;
+    }
+    > span {
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      vertical-align: top;
+      background-image: ~"url('hzero-front/lib/assets/icon-certification.svg')";
+    }
+  }
+}
+
+// 没有查询到公司的 邀请企业注册
+.company-not-find {
+  margin-top: 65px;
+  display: flex;
+  height: 95px;
+  justify-content: center;
+  .invite-register {
+    width: 385px;
+    display: flex;
+    justify-content: center;
+    .description {
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+// 分页 在 右边
+.content-footer {
+  text-align: right;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+// 企业信息
+.information-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .information-title {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+  }
+  .information-item {
+    border-bottom: 1px #dcdcdc solid;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    .information-item-label {
+      color: #999;
+    }
+  }
+}
+
+//仅查看未合作供应商、仅查看我的供应商勾选框
+.search-supper-option-form{
+  margin-bottom: 8px;
+  :global{
+    .ant-form-item-children{
+      display: flex;
+      justify-content: flex-start;
+      .ant-checkbox-wrapper{
+        flex-shrink: 0;
+      }
+    }
+  }
+  .only-show-supper-option {
+    color: #999;
+    line-height: 39.9999px;
+    margin-right: 24px;
+    max-width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0;
+  }
+}
+

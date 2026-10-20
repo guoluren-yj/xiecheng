@@ -1,0 +1,116 @@
+.btnBox {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  z-index: 10;
+  width: 80px;
+  height: 150px;
+
+  .btnBlock {
+    text-align: center;
+    width: 40px;
+    position: absolute;
+    bottom: 49px;
+    right: 20px;
+  }
+
+  .focusModeBtnBox {
+    padding: 4px;
+    background: #fff;
+    box-shadow: 0 6px 16px -8px rgba(29, 33, 41, 0.08), 0 9px 28px 0 rgba(29, 33, 41, 0.05),
+      0 12px 48px 16px rgba(29, 33, 41, 0.03);
+    border-radius: 30px;
+    // display: flex;
+    height: 40px;
+    // transition: height 0.2s ease;
+    transition: all 0.2s ease;
+    .modeIcon {
+      // display: none;
+      height: 0;
+      width: 0;
+    }
+    &:hover {
+      height: 76px !important;
+      .modeIcon {
+        // display: flex !important;
+        height: 32px !important;
+        width: 32px !important;
+      }
+      .commonModeIcon {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .iconBox {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #e5e7ec;
+    }
+    :global {
+      .icon-swbh {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .baobiaoIconBox {
+    padding: 4px;
+    background: #fff;
+    box-shadow: 0 6px 16px -8px rgba(29, 33, 41, 0.08), 0 9px 28px 0 rgba(29, 33, 41, 0.05),
+      0 12px 48px 16px rgba(29, 33, 41, 0.03);
+    border-radius: 30px;
+    position: relative;
+    margin-top: 8px;
+  }
+  .baobiaoIcon {
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: -8px;
+    //   width: 1px;
+    //   height: 100%;
+    //   // bottom: 0;
+    //   background-image: linear-gradient(to top, #e5e7ec 0%, #e5e7ec 50%, transparent 50%);
+    //   background-size: 1px 5px;
+    //   background-repeat: repeat-y;
+    // }
+  }
+
+  .activeIcon {
+    background-color: #e5e7ec;
+  }
+  .dragIcon {
+    position: absolute;
+    left: 29px;
+    bottom: 15px;
+    margin-top: 8px;
+    transform: rotate(90deg);
+    font-size: 24px;
+    color: #c9cdd4;
+    cursor: move;
+    opacity: 0;
+  }
+}
+
+.btnBox:hover {
+  .dragIcon {
+    opacity: 1 !important;
+  }
+}
+
+.icon-swbh {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}

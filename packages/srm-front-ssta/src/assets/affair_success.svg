@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>引用结算事务新建-绿</title>
+    <g id="草稿2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV" transform="translate(-396.000000, -137.000000)">
+            <g id="引用结算事务新建-绿" transform="translate(396.000000, 137.000000)">
+                <rect id="矩形" x="0" y="0" width="44" height="44"></rect>
+                <g id="资源-11" transform="translate(2.835938, 7.860588)">
+                    <path d="M34.9953125,0 C35.2615926,0 35.479256,0.0536645297 35.4944637,0.121332029 L35.4953125,0.12890625 L35.4953125,13.340193 C35.4953125,13.411386 35.2714549,13.4690993 34.9953125,13.4690993 C34.7290324,13.4690993 34.511369,13.4154348 34.4961613,13.3477673 L34.4953125,13.340193 L34.4953125,0.12890625 C34.4953125,0.057713294 34.7191701,0 34.9953125,0 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <g id="分组-2" transform="translate(5.362500, 0.571568)">
+                        <rect id="矩形-copy" fill="#47B881" x="0" y="0" width="32.9499844" height="16.512375" rx="1"></rect>
+                        <rect id="矩形-copy-2" fill="#CAEADB" x="13.2" y="4.125" width="14.7984375" height="1.65" rx="0.825"></rect>
+                        <rect id="矩形-copy-3" fill="#CAEADB" x="13.2" y="10.725" width="8.3015625" height="1.65" rx="0.825"></rect>
+                        <rect id="矩形-copy-4" fill="#CAEADB" x="13.2" y="7.425" width="14.7984375" height="1.65" rx="0.825"></rect>
+                        <rect id="矩形-copy-5" fill="#CAEADB" x="2.0625" y="4.125" width="6.6" height="6.6" rx="3.3"></rect>
+                        <line x1="10.775" y1="4.125" x2="10.775" y2="14.8675312" id="路径-copy" stroke="#CAEADB" stroke-linecap="round" stroke-linejoin="round"></line>
+                    </g>
+                    <rect id="矩形" fill="#ECF7F2" x="0" y="12.6386305" width="32.9499844" height="16.512375" rx="1"></rect>
+                    <rect id="矩形" fill="#47B881" opacity="0.198673793" x="13.2" y="16.7636305" width="14.7984375" height="1.65" rx="0.825"></rect>
+                    <rect id="矩形" fill="#47B881" opacity="0.198673793" x="13.2" y="23.3636305" width="8.3015625" height="1.65" rx="0.825"></rect>
+                    <rect id="矩形" fill="#47B881" opacity="0.198673793" x="13.2" y="20.0636305" width="14.7984375" height="1.65" rx="0.825"></rect>
+                    <rect id="矩形" fill="#47B881" opacity="0.198673793" x="2.0625" y="16.7636305" width="6.6" height="6.6" rx="3.3"></rect>
+                    <path d="M11.121875,16.505818 C11.3881551,16.505818 11.6058185,16.5594826 11.6210262,16.6271501 L11.621875,16.6347243 L11.621875,27.3772555 C11.621875,27.4484485 11.3980174,27.5061618 11.121875,27.5061618 C10.8555949,27.5061618 10.6379315,27.4524973 10.6227238,27.3848298 L10.621875,27.3772555 L10.621875,16.6347243 C10.621875,16.5635313 10.8457326,16.505818 11.121875,16.505818 Z" id="路径" fill="#47B881" opacity="0.198673793"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

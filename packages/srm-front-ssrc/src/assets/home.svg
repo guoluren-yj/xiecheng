@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 28</title>
+    <g id="快速询价" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-28">
+            <rect id="矩形" fill="#F2F3F5" x="0" y="0" width="16" height="16" rx="2"></rect>
+            <g id="编组" transform="translate(2.5, 3)" fill="#868D9C" fill-rule="nonzero">
+                <path d="M5.5,8.86538438 L6.5,8.86538438 L6.5,2.36537438 L9.69695,3.73549938 C9.8808,3.81428938 10,3.99505438 10,4.19506938 L10,8.86538438 L11,8.86538438 L11,9.86538438 L0,9.86538438 L0,8.86538438 L1,8.86538438 L1,2.19030938 C1,1.99271438 1.116365,1.81365438 1.29693,1.73340438 L5.14845,0.0216093761 C5.27465,-0.0344656239 5.4224,0.0223543761 5.47845,0.148529376 C5.49265,0.180494376 5.5,0.215084376 5.5,0.250064376 L5.5,8.86538438 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>

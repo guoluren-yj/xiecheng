@@ -1,0 +1,75 @@
+@import '~hzero-front/lib/srm-variables';
+
+// 通用卡片样式
+.card-container {
+  display: flex;
+  flex-direction: column;
+  :global {
+    .card-top {
+      display: flex;
+      .card-top-left-wrap {
+        border-radius: 2px;
+        margin-right: 16px;
+        border: 1px solid #e5e7ec;
+        img {
+          border-radius: 1px;
+        }
+      }
+      .card-top-right-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        .card-top-right-top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 8px;
+          .card-top-right-top-name {
+            font-size: 14px;
+            color: #1d2129;
+            line-height: 22px;
+            font-weight: 600;
+            margin-right: 8px;
+          }
+          .card-top-right-top-operat {
+            margin-left: auto;
+            height: 22px;
+            .icon {
+              color: @fill-1;
+              cursor: pointer;
+              font-size: 16px;
+            }
+          }
+        }
+        .card-top-right-bottom {
+          display: flex;
+        }
+      }
+    }
+    .card-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed #e5e7ec;
+      .form-field-wrap {
+        color: #4e5769;
+        line-height: 22px;
+        .c7n-pro-output-wrapper.c7n-pro-output {
+          font-weight: 400;
+          line-height: normal;
+          background: transparent;
+        }
+        .c7n-divider.c7n-divider-vertical {
+          margin: 0 16px;
+        }
+        &:last-child {
+          .c7n-divider.c7n-divider-vertical {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.content {
+  margin: 8px 16px 16px;
+  padding: 16px;
+  height: calc(100% - 32px);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  flex: 1;
+  overflow: hidden;
+  :global {
+    .ant-table-wrapper,
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+}
+.variable-config {
+  :global {
+    .ant-table {
+      .ant-table-content {
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        .ant-table-body {
+          > table {
+            border-left: 0;
+          }
+        }
+        .ant-table-placeholder {
+          border-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.drawer-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 24px;
+  text-align: right;
+}
+
+.export-btn {
+  position: relative;
+  margin-left: 0.08rem;
+  &-icon {
+    font-size: 0.14rem;
+    margin-right: 0.05rem;
+    font-weight: 400;
+    margin-top: -0.01rem;
+  }
+  &-tag {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    display: inline-block;
+    font-size: 8px;
+    transform: scale(0.5);
+    line-height: 1.5;
+    padding: 0 2px;
+    background: #f56349;
+    border-radius: 2px;
+    color: #fff;
+  }
+  :global {
+    .c7n-pro-btn-raised:not(.c7n-pro-btn-loading):focus {
+      color: rgba(29, 33, 41);
+    }
+  }
+}
+.export-basic-btn {
+  :global {
+    .srm-common-export-button-tag {
+      display: none;
+    }
+    .c7n-pro-btn-flat:not(.c7n-pro-btn-disabled):not(.c7n-pro-btn-loading):hover {
+      background: none;
+    }
+    .c7n-pro-btn-default.c7n-pro-btn-flat {
+      color: #1d2129;
+    }
+  }
+}

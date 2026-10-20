@@ -1,0 +1,146 @@
+.register-form {
+  font-weight: normal;
+  text-align: center;
+}
+
+.register-title {
+  padding-top: 40px;
+  font-family: HanSansJP, MicrosoftYaHei, sans-serif;
+  font-size: 24px;
+  color: #333;
+  line-height: 32px;
+}
+
+.register-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 570px;
+  :global {
+    .c7n-form-text {
+      padding-left: 0;
+      font-family: HanSansJP, MicrosoftYaHei, sans-serif;
+      font-size: 16px;
+      color: #333 !important;
+      line-height: 42px;
+      float: left;
+      margin-right: 30px;
+      min-width: 160px;
+      text-align: right;
+    }
+    .c7n-input-wrapper {
+      width: 450px;
+      height: 42px;
+    }
+
+    .c7n-form-item-children {
+      .c7n-input-wrapper::before {
+        border-radius: 0 !important;
+      }
+
+      .c7n-input {
+        height: 42px;
+      }
+
+      .c7n-pro-select {
+        width: 450px;
+        height: 42px;
+        border-radius: 0;
+      }
+      .phoneStyle {
+        .c7n-input-has-border {
+          width: 300px;
+        }
+
+        .c7n-pro-select {
+          width: 150px;
+          border-left: none;
+        }
+      }
+      .captchaStyle {
+        .c7n-input-has-border {
+          width: 216px;
+        }
+      }
+    }
+
+    .c7n-form-item {
+      font-size: 14px;
+    }
+
+    .is-required {
+      .c7n-form-explain {
+        margin-left: 23.7%;
+        width: 450px;
+      }
+    }
+  }
+}
+
+.unitLov {
+  :global {
+    .c7n-form-item-children {
+      .c7n-pro-select-suffix-button {
+        border-color: #d50000;
+        background-color: white;
+      }
+      .c7n-pro-select-invalid .c7n-pro-select,
+      .c7n-pro-select-invalid label:hover .c7n-pro-select,
+      .c7n-pro-select-invalid .c7n-pro-select:hover {
+        border-width: 2px !important;
+      }
+    }
+  }
+}
+
+.unitStyle {
+  color: #d50000;
+  position: absolute;
+  left: 0;
+  top: 31px;
+}
+.loginStyle {
+  width: 50px;
+  font-size: 16px;
+  position: absolute;
+  display: inline-block;
+  margin-left: 154px;
+}
+
+.btnStyle {
+  width: 220px;
+  height: 42px;
+  margin-left: 13px;
+  border-radius: 0;
+  border: 2px solid #ddd;
+  background-color: #ddd;
+}
+
+.readANDagreeStyle {
+  :global {
+    .c7n-form-item-control-wrapper {
+      text-align: center;
+      position: relative;
+      left: -10.5%;
+    }
+    .c7n-checkbox-wrapper {
+      font-size: 16px;
+    }
+  }
+}
+
+.submitStyle {
+  :global {
+    .c7n-form-item-control-wrapper {
+      text-align: center;
+      position: relative;
+      left: 16px;
+    }
+
+    .c7n-btn-raised {
+      width: 450px;
+      height: 48px;
+      font-size: 22px;
+      font-weight: normal;
+    }
+  }
+}

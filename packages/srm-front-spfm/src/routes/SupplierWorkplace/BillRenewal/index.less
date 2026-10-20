@@ -1,0 +1,77 @@
+.content-base-area {
+  height: calc(100% - 16px);
+  margin: 8px 16px;
+  overflow: hidden;
+  // position: relative;
+  // background-image: url(../../../assets/pay_guide_bg.png);
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+
+  .content-card {
+    width: 880px;
+    height: 504px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    opacity: 0.9;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08), inset -1px -1px 5px 1px rgba(255, 255, 255, 0.2),
+      inset 1px 1px 5px 1px rgba(255, 255, 255, 0.2);
+
+    .content-title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+    }
+
+    .content-item-area {
+      color: rgba(0, 0, 0, 0.65);
+      text-align: center;
+      margin-top: 8px;
+      span {
+        margin: 0 12px;
+      }
+    }
+
+    .content-detail {
+      margin-top: 32px;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+    }
+
+    .content-detail-table {
+      margin-top: 16px;
+
+      .content-table-row {
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        font-size: 14px;
+        .content-table-short-col {
+          display: inline-block;
+          width: 250px;
+          line-height: 38px;
+          background: rgba(0, 0, 0, 0.03);
+          padding: 0 10px;
+        }
+        .content-table-col {
+          display: inline-block;
+          width: 465px;
+          line-height: 38px;
+          padding: 0 10px;
+        }
+      }
+      .content-table-row-bottom {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    .content-detail-footer {
+      margin-top: 32px;
+      float: right;
+    }
+  }
+}

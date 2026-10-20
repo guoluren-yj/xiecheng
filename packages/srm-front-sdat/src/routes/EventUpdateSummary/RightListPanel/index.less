@@ -1,0 +1,155 @@
+@import '~hzero-front/lib/srm-variables';
+
+.event-update-summary-right-panel {
+  flex: 4;
+  margin-left: -1px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid rgba(229, 231, 236, 1);
+  overflow: hidden;
+
+  :global {
+    // .c7n-pro-table-search-bar-fields .c7n-pro-output:first-child {
+    //   display: none;
+    // }
+
+    .c7n-tag {
+      border: none;
+      margin: 0;
+    }
+
+    .action-link a:not(:first-child),
+    .action-link span:not(:first-child) {
+      margin: 0 0 0 8px;
+    }
+
+    .c7n-pro-table-search-bar-merge-field .c7n-pro-input-prefix {
+      left: 8px;
+      top: 1px;
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.event-update-summary-right-monitor-searchBar {
+  :global {
+    .c7n-pro-table-search-bar-fields .c7n-pro-output:first-child {
+      display: none;
+    }
+  }
+}
+
+.risk-definition-status-tag-enabled {
+  color: rgb(71, 184, 129);
+  background-color: rgba(71, 184, 129, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.risk-definition-status-tag-disabled {
+  color: rgb(245, 99, 73);
+  background-color: rgba(245, 99, 73, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.risk-definition-status-tag-draft {
+  color: rgb(248, 141, 16);
+  background-color: rgba(252, 160, 0, 0.1);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+.business-tag-monitor {
+  padding: 2px 4px;
+  color: #0161d5;
+  line-height: 18px;
+  font-weight: 600;
+  background: rgba(10, 125, 245, 0.15);
+  border-radius: 2px;
+}
+
+.business-tag-monitor-removed {
+  padding: 2px 4px;
+  color: #4e5769;
+  line-height: 18px;
+  font-weight: 600;
+  background: #e5e7ec;
+  border-radius: 2px;
+}
+
+.business-tag-level-1 {
+  padding: 2px 4px;
+  background: #e64322;
+  border-radius: 2px;
+  color: #fff;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.business-tag-level-2 {
+  padding: 2px 4px;
+  background: rgba(242, 85, 53, 0.15);
+  border-radius: 2px;
+  color: #e64322;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.business-tag-level-3 {
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  line-height: 18px;
+  background-color: #feb936;
+  font-weight: 600;
+}
+
+.business-tag-level-4 {
+  padding: 2px 4px;
+  color: #179454;
+  text-align: justify;
+  line-height: 18px;
+  font-weight: 500;
+  background: rgba(71, 184, 131, 0.15);
+  border-radius: 2px;
+}
+
+.business-tag-level-5 {
+  padding: 2px 4px;
+  color: #fff;
+  text-align: justify;
+  line-height: 18px;
+  font-weight: 600;
+  background: #179454;
+  border-radius: 2px;
+}
+
+.event-update-summary-right-risk-searchBar {
+  margin-bottom: 16px;
+  :global {
+    // .c7n-pro-table-search-bar-fields .c7n-pro-output:first-child {
+    //   display: none;
+    // }
+
+    .c7n-pro-table-search-bar-operator-left {
+      display: none;
+    }
+
+    .c7n-pro-table-search-bar-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .c7n-pro-table-search-bar-add-field {
+      display: none;
+    }
+  }
+}

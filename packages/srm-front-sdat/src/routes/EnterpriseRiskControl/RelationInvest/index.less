@@ -1,0 +1,127 @@
+@import '~hzero-front/lib/srm-variables';
+
+.relationship-mining-basic {
+  .page-content-wrap .page-content {
+    height: calc(100vh - 155px) !important;
+    overflow: hidden;
+  }
+}
+
+.relationship-mining-container {
+  background-color: #fff;
+  height: calc(100vh - 50px); // 64
+
+  :global {
+    .c7n-tabs {
+      overflow: unset;
+    }
+    .c7n-tabs-bar {
+      margin: 0;
+    }
+    .c7n-tabs-bar-inner {
+      padding: 0 20px;
+    }
+  }
+}
+
+.relationship-mining-company-basic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relationship-mining-company-list-panel {
+  font-size: 14px;
+  color: #1d2129;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.relationship-scroll-panel {
+  max-height: 260px;
+  min-height: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.relationship-scroll-panel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.popup-tooltip-card {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      max-width: unset !important;
+      max-height: unset !important;
+      padding: 0 !important;
+    }
+
+    .c7n-pro-tooltip-popup-inner:not(.c7n-pro-tooltip-popup-inner-show-img) img {
+      display: block;
+    }
+  }
+}
+
+.relation-mining-btn-span {
+  text-align: center;
+  margin-top: 16px;
+  button {
+    max-width: 320px !important;
+  }
+}
+
+.company-list {
+  :global {
+    // .c7n-pro-checkbox:checked + .c7n-pro-checkbox-inner,
+    // .c7n-pro-checkbox-indeterminate .c7n-pro-checkbox-inner {
+    //   background-color: rgba(0, 184, 204, 0.35) !important;
+    //   border-color: rgba(0, 184, 204, 0) !important;
+    // }
+  }
+}
+
+.supplier-mining-noContent {
+  text-align: center;
+  :global {
+    svg ellipse.ellipse-1 {
+      fill: @primary-color;
+    }
+
+    .rect-1 {
+      fill: @primary-color;
+    }
+
+    .rect-2 {
+      fill: @primary-color;
+    }
+
+    .rect-3 {
+      stroke: @primary-color;
+    }
+  }
+}
+
+.supplier-mining-result-alert {
+  :global {
+    .c7n-alert-info {
+      background-color: @blue-1;
+      color: @blue-6;
+    }
+  }
+  i {
+    color: @blue-6 !important;
+  }
+}

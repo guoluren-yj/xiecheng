@@ -1,0 +1,601 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '../../pur-common.less';
+
+// 单价竞价-物料列表三角显示
+.item-triangle {
+  content: '';
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  transform: rotate(45deg);
+}
+
+.pur-main-content-bidding-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // 筛选器
+  .pur-main-content-bidding-list-search-bar {
+    margin-bottom: 0.08rem;
+    :global {
+      .c7n-pro-table-search-bar-expand {
+        margin-bottom: 0;
+      }
+      .c7n-pro-table-search-bar-fields {
+        margin-top: 0;
+      }
+      .c7n-pro-table-search-bar {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.pur-main-content-bidding-list-itemLine-wrapper {
+  flex: 1;
+  overflow: auto;
+  // 物料列表
+  .pur-main-content-bidding-list-itemLine-table-wrapper {
+    position: relative;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    .ReactVirtualized__Grid__innerScrollContainer,
+    .ReactVirtualized__Grid {
+      & > div {
+        overflow: hidden;
+      }
+      &:focus-visible {
+        outline: none !important;
+      }
+    }
+
+    :global {
+      .c7n-collapse-item {
+        border-bottom: 1px solid #e5e7ec;
+        border: 1px solid #e5e7ec;
+        border-radius: 0.02rem;
+        margin-bottom: 0.08rem;
+        position: relative;
+        .c7n-collapse-header {
+          padding-top: 0.08rem;
+          padding-bottom: 0.08rem;
+        }
+        .c7n-collapse-content {
+          padding: 0 0.12rem;
+          & > .c7n-collapse-content-box {
+            padding-bottom: 0.12rem;
+          }
+        }
+        // 进行中的物料样式
+        &-unit-price-list-item-process {
+          border-color: #0161d5;
+          &::before {
+            .item-triangle();
+            background-color: #0161d5;
+          }
+        }
+        // 暂停中的物料样式
+        &-unit-price-list-item-paused {
+          border-color: #f06200;
+          &::before {
+            .item-triangle();
+            background-color: #f06200;
+          }
+        }
+      }
+    }
+
+    // 单价竞价每个item样式
+    .bidding-hall-layout-content-unit-price-list-item {
+      // border: 1px solid #e5e7ec;
+      border-radius: 2px;
+      // padding: 0.08rem 0.12rem 0;
+      // margin-bottom: 0.08rem;
+      height: calc(100% - 0.08rem);
+
+      :global {
+        // overrice boot AFExtra
+        .af-extra-container {
+          margin: 4px -16px;
+
+          .af-extra-field {
+            .af-extra-field-value {
+              height: 22px;
+            }
+          }
+        }
+      }
+
+      .item-triangle {
+        content: '';
+        position: absolute;
+        top: -0.2rem;
+        right: -0.2rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        transform: rotate(45deg);
+      }
+      &-material-detail {
+        // 物料信息所处行
+        .material-detail-text {
+          .font-family();
+          border-radius: 0.02rem;
+          line-height: 0.18rem;
+          font-weight: 600;
+          font-size: 0.12rem;
+        }
+
+        .list-item-material-left {
+          .flexCenter();
+        }
+        .list-item-material-name {
+          color: #1d2129;
+          .material-detail-text();
+          padding-left: 0.08rem;
+          display: inline-block;
+          max-width: 1.8rem;
+        }
+        .list-item-material-split {
+          display: inline-block;
+          margin: 0 0.08rem;
+          height: 0.08rem;
+          border-right: 1px solid @fill-4;
+        }
+        .list-item-material-specs {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 0.12rem;
+          color: #868d9c;
+          font-weight: 400;
+          display: inline-block;
+          max-width: 0.95rem;
+          margin-right: 0.08rem;
+        }
+        // .list-item-material-history-chart {
+        // }
+
+        .list-item-material-right {
+          & > span:not(:last-child) {
+            margin-right: 0.04rem;
+          }
+          .list-item-timer-label {
+            padding-right: 0.04rem;
+            max-width: 1.4rem;
+            display: inline-block;
+          }
+        }
+        // .list-item-material-bidding-rule {
+        //   background: #E5E7EC;
+        //   color: #4E5769;
+        //   .material-detail-text();
+        // }
+        // .list-item-material-bidding-status {
+        //   background: #0161D5;
+        //   color: #FFFFFF;
+        //   .material-detail-text();
+        // }
+        .list-item-material-bidding-count-down {
+          background: rgba(10, 125, 245, 0.15);
+          color: #0161d5;
+          // .material-detail-text();
+        }
+      }
+      &-quotation-detail {
+        // 报价信息所处行
+        font-size: 0.14rem;
+        align-items: center;
+        margin-top: 0.08rem;
+        .quotation-detail-text-value {
+          margin-bottom: 0;
+          font-family: PingFangSC-Semibold, sans-serif;
+          color: #1d2129;
+          font-weight: 600;
+          line-height: 0.18rem;
+          font-size: 0.14rem;
+          width: 100%;
+        }
+        .quotation-detail-text-name {
+          font-family: PingFangSC-Regular, sans-serif;
+          font-size: 0.12rem;
+          color: #868d9c;
+          font-weight: 400;
+          line-height: 0.18rem;
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      .quotation-detail-text-no-start {
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 0.14rem;
+        color: #c9cdd4;
+        font-weight: 400;
+        padding-left: 20%;
+      }
+    }
+  }
+  // 物料列表分页样式
+  .pur-main-content-bidding-list-itemLine-pagination-wrapper {
+    margin-top: 8px;
+    padding-right: 5px;
+    .btn-page-border-style {
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+    }
+    :global {
+      .c7n-pro-btn-wrapper.c7n-pro-pagination-pager {
+        min-width: 32px;
+        height: 32px;
+        top: 0;
+        .btn-page-border-style();
+        &:hover {
+          border: 1px solid @primary-color;
+          background-color: #fff !important;
+        }
+      }
+      .c7n-pro-select-wrapper.c7n-pro-pagination-size-changer {
+        margin-left: 16px;
+        height: 32px;
+        .c7n-pro-select:not(:hover):not(:focus) {
+          border-color: #d9d9d9;
+        }
+      }
+
+      .c7n-pro-btn-wrapper.c7n-pro-btn-primary.c7n-pro-btn-raised {
+        background-color: #fff !important;
+        color: @primary-color!important;
+        border: 1px solid @primary-color;
+      }
+    }
+  }
+  // 无数据时占位样式
+  .list-empty-item-occupied {
+    .centeredHorizontallyAndVertically();
+    .list-empty-item-occupied-text {
+      color: @text-2;
+      margin-top: 0.12rem;
+      font-size: 0.12rem;
+    }
+  }
+}
+
+// 总价竞价供应商列表行样式
+.pur-main-content-bidding-list-supplier-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .commonRankBackgroundStyle {
+    width: 0.24rem;
+    height: 0.24rem;
+    text-align: center;
+    margin-right: 0.08rem;
+    line-height: 0.2rem;
+  }
+  .commonRankTextStyle {
+    font-family: DIN-Bold, sans-serif;
+    font-size: 0.12rem;
+    font-weight: 400;
+  }
+
+  // 竞价分析趋势图
+  .pur-main-content-bidding-list-supplier-header-wraps {
+    .flexCenter();
+    margin-bottom: 16px;
+    justify-content: flex-end;
+    height: 0.18rem;
+  }
+
+  // 总价供应商表格wrapper
+  .pur-main-content-bidding-list-supplier-table-wrapper {
+    // height: calc(100% - 0.35rem);
+    flex: 1;
+    overflow: auto;
+    :global {
+      .c7n-pro-table-aggregation .c7n-pro-table-cell {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  // 供应商详情字段
+  .total-price-table-row-field-supplierInfoDetail-wrapper {
+    .total-price-table-row-supplier-title {
+      width: calc(100% - 22px);
+      .ellipsis();
+    }
+    .flexCenter();
+    .total-price-table-row-rank-1 {
+      .commonRankBackgroundStyle();
+      background: url(../../../../../../assets/biddingHall/rank-1.svg) no-repeat center center;
+      color: #ff9700;
+    }
+    .total-price-table-row-rank-2 {
+      .commonRankBackgroundStyle();
+      background: url(../../../../../../assets/biddingHall/rank-2.svg) no-repeat center center;
+      color: #3da1ff;
+    }
+    .total-price-table-row-rank-3 {
+      .commonRankBackgroundStyle();
+      background: url(../../../../../../assets/biddingHall/rank-3.svg) no-repeat center center;
+      color: #8f94bc;
+    }
+    .total-price-table-row-rank-other {
+      .commonRankBackgroundStyle();
+      background: url(../../../../../../assets/biddingHall/rank-4.svg) no-repeat center center;
+      color: #8f94bc;
+    }
+    .total-price-table-row-rank-text-10-99 {
+      .commonRankTextStyle();
+      display: inline-block;
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+    }
+    .total-price-table-row-rank-text-100-999 {
+      .commonRankTextStyle();
+      display: inline-block;
+      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+    }
+    .total-price-table-row-supplier-name {
+      font-family: PingFangSC-Regular, sans-serif;
+      font-size: 0.14rem;
+      color: #1d2129;
+      font-weight: 400;
+    }
+    .total-price-table-row-supplier-status {
+      .flex();
+      & > span {
+        margin-right: 0.04rem;
+      }
+      & > img {
+        width: 0.18rem;
+        height: 0.18rem;
+        margin-right: 0.04rem;
+      }
+    }
+  }
+  // 签到字段
+  .total-price-table-row-field-signInFlag-wrapper {
+    img {
+      margin-right: 0.04rem;
+    }
+  }
+}
+
+.pur-main-content-bidding-list-filter-bar-wrap {
+  .flex();
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.pur-main-content-bidding-chart-button-text-wrap {
+  width: auto !important;
+}
+
+.ssrc-bidding-hall-purchase-line-search {
+  height: 30px;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+
+  .active-table-wide {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  :global {
+    .disabled {
+      font-size: 16px;
+    }
+
+    .primaryColor {
+      font-size: 16px;
+      color: @primary-color;
+    }
+  }
+}
+
+.pur-main-content-bidding-list-itemLine-wrapper-japan-dutch {
+  overflow-y: unset;
+  overflow: unset;
+  height: 100%;
+}
+
+.quotation_table_aggregation {
+  :global {
+    .c7n-pro-input-wrapper {
+      .c7n-pro-input {
+        line-height: 18px;
+        height: 20px;
+      }
+    }
+
+    .c7n-pro-textarea-wrapper {
+      .c7n-pro-textarea {
+        line-height: 16px;
+        height: 18px;
+      }
+    }
+
+    .c7n-pro-input-number-wrapper {
+      .c7n-pro-input-number {
+        line-height: 18px;
+        height: 20px;
+      }
+    }
+
+    .c7n-pro-select-wrapper {
+      .c7n-pro-select {
+        line-height: 18px;
+        height: 20px;
+      }
+    }
+
+    .c7n-pro-calendar-picker-wrapper {
+      .c7n-pro-calendar-picker {
+        line-height: 18px;
+        height: 20px;
+      }
+    }
+  }
+  .c7n-pro-table-cell-fix-left,
+  .c7n-pro-table-cell-fix-right,
+  tbody {
+    background-color: #f2f3f5;
+    :global {
+      .c7n-pro-table-row-disabled > .c7n-pro-table-cell .c7n-pro-btn {
+        color: @link-color !important;
+      }
+    }
+  }
+
+  .c7n-pro-table-cell-label {
+    color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  thead tr:nth-child(n + 2) th:nth-child(n + 2) {
+    font-weight: 400;
+  }
+
+  .c7n-pro-table-cell-fix-left {
+    .CheckBox {
+      display: none !important;
+    }
+
+    .table-cell-inner-content-wrap {
+      display: block !important;
+    }
+
+    .table-cell-inner-seal-icon-en,
+    .table-cell-inner-seal-icon-ch {
+      background: none !important;
+    }
+  }
+
+  .c7n-pro-table-body {
+    background-color: #f2f3f5;
+  }
+
+  .c7n-pro-table-thead .c7n-pro-table-cell {
+    background-color: white;
+  }
+
+  thead > tr:first-child {
+    .c7n-pro-table-cell {
+      background-color: #f2f3f5;
+    }
+  }
+
+  tbody tr td {
+    .table-cell-inner-content-wrap {
+      position: relative;
+      .CheckBox {
+        display: block;
+        padding-right: 8px;
+        float: left;
+      }
+
+      .table-cell-inner-cell {
+        min-height: 50px;
+      }
+    }
+  }
+}
+
+// aggregation table
+.ssrc-bidding-hall-aggregration-table-purchase {
+  :global {
+    .c7n-pro-table {
+      .c7n-pro-table-thead {
+        tr:nth-child(2) {
+          th {
+            // xxx
+            // 轮次下边有一样空行，暂时没找到原因，先css隐藏
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// xxx
+// 聚合表格暂时做不到extra-column再加一列，通过布局处理
+.ssrc-bidding-hall-aggregration-table-group-title-wrap {
+  .flex-inline-between-center();
+  width: 100%;
+
+  .ssrc-bidding-hall-aggregration-table-group-title-invide-left {
+    width: 180px;
+    .ellipsis();
+    padding: 8px 0;
+
+    &:hover {
+      border-right: 1px solid @table-border-color;
+    }
+  }
+
+  .ssrc-bidding-hall-aggregration-table-group-title-invide-middle {
+    width: 100px;
+    .ellipsis();
+    text-align: right;
+    padding: 0 8px;
+
+    &:hover {
+      border-left: 1px solid @table-border-color;
+      // border-right: 1px solid @table-border-color;
+    }
+  }
+
+  .ssrc-bidding-hall-aggregration-table-group-title-invide-right {
+    width: 100px;
+    .ellipsis();
+    text-align: right;
+    padding-left: 8px;
+
+    &:hover {
+      border-left: 1px solid @table-border-color;
+    }
+  }
+}
+
+.ssrc-bidding-hall-aggregration-table-group-value-wrap {
+  .flex-inline-between-center();
+  width: 100%;
+
+  .ssrc-bidding-hall-aggregration-table-group-value-invide-left {
+    width: 180px;
+    .ellipsis();
+    padding-right: 4px;
+
+    &:hover {
+      border-right: 1px solid @table-border-color;
+    }
+  }
+
+  .ssrc-bidding-hall-aggregration-table-group-value-invide-middle {
+    width: 100px;
+    .ellipsis();
+    text-align: right;
+    padding: 0 8px;
+
+    &:hover {
+      border-left: 1px solid @table-border-color;
+      // border-right: 1px solid @table-border-color;
+    }
+  }
+
+  .ssrc-bidding-hall-aggregration-table-group-value-invide-right {
+    width: 100px;
+    .ellipsis();
+    text-align: right;
+    padding-left: 8px;
+
+    &:hover {
+      border-left: 1px solid @table-border-color;
+    }
+  }
+}

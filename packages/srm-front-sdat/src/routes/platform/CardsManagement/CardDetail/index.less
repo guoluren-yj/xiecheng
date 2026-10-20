@@ -1,0 +1,50 @@
+@import '~hzero-front/lib/srm-variables';
+
+.card-manage-detail-vertical-form {
+  :global {
+    .c7n-pro-form:not(.c7n-pro-form-float-label) .c7n-pro-field-wrapper {
+      padding: 0 !important;
+    }
+
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper {
+      padding: 16px 0 0 0;
+    }
+
+    .c7n-pro-form-float-label {
+      padding-top: 16px;
+    }
+    .c7n-pro-field-label-wrapper {
+      .c7n-pro-field-label,
+      .c7n-pro-field-wrapper {
+        padding: 0 !important;
+      }
+    }
+
+    .c7n-pro-output {
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 600;
+    }
+
+    .c7n-pro-field-label-vertical {
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.65);
+      font-weight: 400;
+    }
+  }
+}
+
+.card-manage-detail-history {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+
+  .card-manage-detail-history-title {
+    display: inline-block;
+    line-height: 45px;
+    border-bottom: 3px solid @primary-color;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

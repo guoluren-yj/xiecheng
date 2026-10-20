@@ -1,0 +1,23 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+// 历史价格分析
+.ssrc-history-price-analysis {
+  // 面板
+  &-panel {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-right: 8px;
+    font-family: PingFangSC-Medium, sans-serif;
+    color: @text-1;
+    &::before {
+      content: '.';
+      display: inline-block;
+      width: 3px;
+      color: @primary-color;
+      background-color: @primary-color;
+      margin-right: 8px;
+      line-height: 12px;
+    }
+  }
+}

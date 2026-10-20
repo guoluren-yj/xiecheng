@@ -1,0 +1,140 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.content-table {
+  :global {
+    .page-content {
+      padding: 20px;
+    }
+  }
+  .content-table-header-content {
+    border-bottom: 1px solid @border-4;
+    margin-top: 0 !important;
+    .content-table-title-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .content-table-title {
+        font-size: 16px;
+        color: #1d2129;
+        font-weight: 600;
+      }
+      .content-table-title-box {
+        display: flex;
+        align-items: center;
+      }
+      .content-table-tab {
+        :global {
+          .c7n-tabs-bar {
+            border: 0;
+            margin: 0;
+          }
+          .c7n-tabs-second-nav {
+            margin: 0.02rem;
+          }
+        }
+      }
+    }
+  }
+
+  .content-table-body-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    .content-table-title-line {
+      display: inline-block;
+      height: 12px;
+      border-left: 3px @primary-color solid;
+      margin-right: 8px;
+    }
+    .content-table-title {
+      font-size: 16px;
+      color: #1d2129;
+      font-weight: 600;
+    }
+    .content-table-title-second {
+      font-size: 14px;
+      margin: 32px 0 16px 0;
+    }
+    .tableDisabled {
+      :global {
+        .c7n-pro-table-cell,
+        .c7n-pro-table-cell-fix-left {
+          opacity: 0.5;
+          &:hover,
+          &:active,
+          &:focus {
+            pointer-events: auto;
+            opacity: 0.5;
+            .c7n-pro-table-cell {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 卡片样式
+  &-list {
+    & > div:first-child {
+      :global {
+        .second-section-title:not(:nth-child(2)) {
+          margin-top: 32px;
+        }
+      }
+    }
+    & > div:last-child {
+      margin-top: 32px;
+    }
+    &-smartCard {
+      margin-top: 16px;
+      :global {
+        .c7n-collapse {
+          margin: 0;
+          .c7n-collapse-header {
+            padding-top: 0 !important;
+            padding-left: 0 !important;
+            font-size: 14px !important;
+          }
+          .c7n-collapse-content {
+            padding-left: 0;
+            .c7n-collapse-content-box {
+              padding-bottom: 0;
+              .spcm-review-risk-tabs-header {
+                padding-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-smartReviewCard {
+      margin-top: 8px;
+      :global {
+        .c7n-collapse.c7n-collapse-borderless {
+          margin: 0;
+          & > .c7n-collapse-item {
+            & > .c7n-collapse-header {
+              padding-top: 0 !important;
+              padding-left: 0 !important;
+              font-size: 14px !important;
+            }
+            & > .c7n-collapse-content {
+              padding-left: 0;
+              .c7n-collapse-content-box {
+                padding-bottom: 0;
+                .spcm-review-risk-tabs-header {
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .approval-compare {
+    margin: 16px 0 0 !important;
+    padding: 0;
+  }
+}

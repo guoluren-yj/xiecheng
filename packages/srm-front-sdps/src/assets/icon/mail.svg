@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mail</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-269.000000, -411.000000)">
+            <g id="mail" transform="translate(269.000000, 411.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形备份-28" fill-opacity="0.01" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M17,3 C17.5522847,3 18,3.44771525 18,4 L18,16 C18,16.5522847 17.5522847,17 17,17 L3,17 C2.44771525,17 2,16.5522847 2,16 L2,4 C2,3.44771525 2.44771525,3 3,3 L17,3 Z M11.041,11.578 L10.4873442,12.2013756 C10.4818351,12.2066316 10.4751229,12.2128376 10.4650547,12.2221467 C10.2050015,12.453305 9.82061119,12.4553394 9.55909539,12.2427916 L9.47681348,12.1640148 L8.956,11.579 L3.903,16 L16.097,16 L11.041,11.578 Z M3,15.46 L8.291,10.83 L3,4.87799464 L3,15.46 Z M17,4.876 L11.706,10.83 L17,15.46 L17,4.876 Z M16.441,4 L3.559,4 L9.99999464,11.246 L16.441,4 Z" id="矩形" fill="#0840F8" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

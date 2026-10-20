@@ -1,0 +1,89 @@
+@import '~hzero-front/lib/srm-variables';
+//混合
+.commonStyle {
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 18px;
+  font-weight: 400;
+}
+
+//操作记录
+.operating {
+  margin-top: 2px;
+  :global {
+    .operating-timeline {
+      .c7n-timeline-item {
+        padding: 0 0;
+
+        .c7n-timeline-item-content {
+          padding: 0 0 0.05rem 0.24rem;
+        }
+
+        .small-icon {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+
+        .operator {
+          margin-left: 0.06rem;
+        }
+
+        .date {
+          margin: 5px 0 12px 23px;
+        }
+
+        .status {
+          padding: 0 4px;
+        }
+
+        .gray {
+          font-size: 12px;
+          color: @text-3;
+          line-height: 18px;
+        }
+
+        .orange {
+          padding: 0 4px;
+          color: #f56349;
+        }
+
+        .result-info {
+          color: rgba(0, 0, 0, 0.65);
+        }
+        .result-content {
+          color: rgba(0, 0, 0);
+        }
+        .success {
+          color: #47b881;
+        }
+        .line {
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.04);
+          margin: 0 0 15px 23px;
+        }
+
+        .reamks {
+          margin: 5px 0 0 23px;
+        }
+
+        .supply {
+          border: 1px solid #00bfff;
+          border-radius: 3px;
+          color: #00bfff;
+          margin-left: 0.04rem;
+        }
+        .record-icon {
+          font-size: 16px;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}

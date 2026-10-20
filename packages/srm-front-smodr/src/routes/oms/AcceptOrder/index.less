@@ -1,0 +1,35 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.page-content-layout {
+  margin: -16px -12px;
+  :global {
+    .c7n-pro-modal-drawer-body{
+      padding: 4px 8px;
+    }
+    .c7n-collapse-item{
+      border-bottom: none;
+    }
+    .header-line {
+      // margin: 8px 0 16px 0;
+      padding-bottom: 16px;
+      margin-top: 16px;
+      padding-left: 11px;
+      font-size: 14px;
+      font-weight: 600;
+      // border-bottom: 1px solid #eee;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 3px;
+        height: 12px;
+        background-color: @primary-color;
+      }
+    }
+    .other {
+      margin-top: 32px;
+    }
+  }
+}

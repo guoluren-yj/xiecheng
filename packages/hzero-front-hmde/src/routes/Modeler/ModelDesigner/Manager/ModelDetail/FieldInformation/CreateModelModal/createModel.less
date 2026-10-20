@@ -1,0 +1,60 @@
+@import '../../../global';
+
+.createModelFieldContain {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  .baseTableField {
+    width: 480px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .moveControl {
+    width: 50px;
+    text-align: center;
+    // padding-left: 8px;
+
+    div {
+      position: absolute;
+      top: 50%;
+
+      span {
+        display: block;
+
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .dataModelField {
+    width: 480px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    :global {
+      .c7n-pro-table-cell {
+        padding: 0 !important;
+        height: 36px;
+      }
+    }
+  }
+
+  .dataModelField2 {
+    width: 100%;
+    :global {
+      .c7n-pro-table-cell {
+        padding: 0 !important;
+        height: 36px;
+      }
+    }
+  }
+}
+
+.footerModel {
+  margin-top: 20px;
+  float: right;
+}

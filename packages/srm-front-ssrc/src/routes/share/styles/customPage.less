@@ -1,0 +1,118 @@
+@import './constants.less';
+
+// override choerodon ui
+.c7n-steps-item-icon,
+.c7n-steps-item-content {
+  vertical-align: middle !important;
+}
+
+.ssrc-override-c7n-ui {
+  :global {
+    .c7n-pro {
+      &-field {
+        margin-bottom: @default-distance / 2;
+
+        &-wrapper {
+          padding-left: @zero;
+        }
+      }
+    }
+
+    .c7n-pro-form {
+      table > tbody > tr > td {
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+
+// rfx detail styles
+.ssrc-common-container {
+  position: relative;
+  padding-top: 24px;
+
+  .page-content {
+    padding: @zero;
+  }
+}
+
+.ssrc-custom-header-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: @default-font-size;
+  font-weight: 500;
+}
+
+.ssrc-custom-item-title-line {
+  display: inline-block;
+  height: 12px;
+  border-left: 3px @title-left-line-color solid;
+  margin-right: @default-distance / 2;
+}
+
+.ssrc-custom-item-title {
+  color: @black-color;
+  font-size: @default-font-size;
+  font-weight: @font-weight-bold;
+  .m-b();
+}
+
+.ssrc-custom-item-title-level-two {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: @font-weight-bold;
+  .m-b();
+}
+
+.ssrc-custom-item-form {
+  width: 75%;
+  max-width: 1172px;
+  padding-left: @zero;
+
+  :global {
+    .c7n-pro-form-float-label {
+      margin-left: @zero; // override ui
+    }
+  }
+}
+
+.ssrc-custom-card-list {
+  position: relative;
+  margin-right: @zero;
+
+  .custom-page-content {
+    padding: 24px @default-distance;
+    .m-b(@zero);
+  }
+}
+
+.ssrc-custom-default-gap {
+  width: max-content;
+  display: block;
+  clear: both;
+  .m-b();
+}
+
+.m-t-m {
+  .m-t();
+}
+
+.m-t-xlg {
+  .m-t(32px);
+}
+
+.m-t-md {
+  .m-t(20px);
+}
+
+.m-t-lg {
+  .m-t(32px);
+}
+
+.p-l-m-10 {
+  .p-l(10px);
+}
+
+.p-t-md {
+  .p-t();
+}

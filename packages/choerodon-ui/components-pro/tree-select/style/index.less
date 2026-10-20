@@ -1,0 +1,66 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+@import '../../trigger-field/style/mixin';
+@import '../../field/style/mixin';
+@import '../../../components/select/style/mixin';
+
+@tree-select-prefix: ~'@{c7n-pro-prefix}-tree-select';
+
+.@{tree-select-prefix} {
+  .trigger-field;
+
+  margin: 0;
+
+  &-disabled {
+    i {
+      color: @input-border-color;
+    }
+  }
+
+  &-trigger {
+    transition: transform @animation-duration-slow;
+  }
+
+  &-expand &-trigger {
+    &.icon-search {
+      transform: none;
+    }
+
+    &-common-item-wrapper {
+      display: none !important;
+    }
+  }
+
+  &-dropdown-menu {
+    &-item {
+      width: 100%;
+
+      &.@{c7n-prefix}-tree-treenode-selected {
+        background-color: @item-focus-bg;
+      }
+
+      &.@{c7n-prefix}-tree-treenode-active {
+        background-color: @tree-node-selected-bg;
+      }
+
+      .@{c7n-prefix}-tree-node-content-wrapper {
+        background-color: transparent !important;
+      }
+
+      &-more {
+        justify-content: center;
+
+        .@{c7n-prefix}-tree-switcher-noop,
+        .@{c7n-prefix}-tree-checkbox {
+          display: none;
+        }
+      }
+    }
+
+    .dropdown-menu;
+  }
+
+  .select-all;
+
+  .common-item;
+}

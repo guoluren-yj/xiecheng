@@ -1,0 +1,213 @@
+@import '../../../components/style/themes/default';
+@import '../../../components/style/mixins/index';
+
+@tooltip-prefix-cls: ~'@{c7n-pro-prefix}-tooltip';
+
+// Base class
+.@{tooltip-prefix-cls}-popup {
+  .reset-component;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  padding: @tooltip-distance;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  visibility: visible;
+
+  &-help {
+    z-index: 2;
+  }
+
+  &-hidden {
+    display: none;
+  }
+
+  // Wrapper for the tooltip content
+  &-inner {
+    min-width: @tooltip-min-width;
+    max-width: @tooltip-max-width;
+    min-height: @tooltip-min-height;
+    max-height: @tooltip-max-height;
+    padding: 0.06rem 0.08rem;
+    overflow: auto;
+    color: @tooltip-color;
+    text-align: left;
+    text-decoration: none;
+    word-wrap: break-word;
+    background-color: @tooltip-bg;
+    border-radius: @border-radius-base * 2;
+    box-shadow: @box-shadow-base;
+
+    &-pre {
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+
+    &:not(&-light) *:not(a[disabled]) {
+      color: @tooltip-color !important;
+    }
+
+    &:not(&-light) a[disabled] {
+      color: fade(@tooltip-color, 35%) !important;
+    }
+
+    &:not(&-light) * {
+      color: @tooltip-color !important;
+    }
+
+    &-light {
+      color: @tooltip-color-light;
+      background-color: @tooltip-bg-light;
+
+      a[disabled] {
+        color: fade(@tooltip-color-light, 35%);;
+      }
+    }
+    * {
+      font-size: @font-size-base !important;
+    }
+  }
+
+  &-inner:not(&-inner-show-img) {
+    img {
+      display: none;
+    }
+  }
+
+  // Arrows
+  &-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  &-placement-top,
+  &-placement-topLeft,
+  &-placement-topRight {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &-placement-right,
+  &-placement-rightTop,
+  &-placement-rightBottom {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &-placement-bottom,
+  &-placement-bottomLeft,
+  &-placement-bottomRight {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &-placement-left,
+  &-placement-leftTop,
+  &-placement-leftBottom {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &-placement-top &-arrow,
+  &-placement-topLeft &-arrow,
+  &-placement-topRight &-arrow {
+    bottom: @tooltip-distance - @tooltip-arrow-width;
+    border-width: @tooltip-arrow-width @tooltip-arrow-width 0;
+    border-top-color: @tooltip-arrow-color;
+
+    &-light {
+      border-top-color: @tooltip-arrow-color-light;
+    }
+  }
+
+  &-placement-top &-arrow {
+    left: 50%;
+    margin-left: -@tooltip-arrow-width;
+  }
+
+  &-placement-topLeft &-arrow {
+    left: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-topRight &-arrow {
+    right: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-right &-arrow,
+  &-placement-rightTop &-arrow,
+  &-placement-rightBottom &-arrow {
+    left: @tooltip-distance - @tooltip-arrow-width;
+    border-width: @tooltip-arrow-width @tooltip-arrow-width @tooltip-arrow-width 0;
+    border-right-color: @tooltip-arrow-color;
+
+    &-light {
+      border-right-color: @tooltip-arrow-color-light;
+    }
+  }
+
+  &-placement-right &-arrow {
+    top: 50%;
+    margin-top: -@tooltip-arrow-width;
+  }
+
+  &-placement-rightTop &-arrow {
+    top: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-rightBottom &-arrow {
+    bottom: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-left &-arrow,
+  &-placement-leftTop &-arrow,
+  &-placement-leftBottom &-arrow {
+    right: @tooltip-distance - @tooltip-arrow-width;
+    border-width: @tooltip-arrow-width 0 @tooltip-arrow-width @tooltip-arrow-width;
+    border-left-color: @tooltip-arrow-color;
+
+    &-light {
+      border-left-color: @tooltip-arrow-color-light;
+    }
+  }
+
+  &-placement-left &-arrow {
+    top: 50%;
+    margin-top: -@tooltip-arrow-width;
+  }
+
+  &-placement-leftTop &-arrow {
+    top: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-leftBottom &-arrow {
+    bottom: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-bottom &-arrow,
+  &-placement-bottomLeft &-arrow,
+  &-placement-bottomRight &-arrow {
+    top: @tooltip-distance - @tooltip-arrow-width;
+    border-width: 0 @tooltip-arrow-width @tooltip-arrow-width;
+    border-bottom-color: @tooltip-arrow-color;
+
+    &-light {
+      border-bottom-color: @tooltip-arrow-color-light;
+    }
+  }
+
+  &-placement-bottom &-arrow {
+    left: 50%;
+    margin-left: -@tooltip-arrow-width;
+  }
+
+  &-placement-bottomLeft &-arrow {
+    left: 0.08rem + @tooltip-distance;
+  }
+
+  &-placement-bottomRight &-arrow {
+    right: 0.08rem + @tooltip-distance;
+  }
+}

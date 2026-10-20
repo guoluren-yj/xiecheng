@@ -1,0 +1,38 @@
+.hpfm-organization-lazy-tree {
+  // 隐藏掉 默认的展开
+  :global {
+    .ant-table-row-indent,
+    .ant-table-row-expand-icon {
+      display: none;
+    }
+    .c7n-performance-table-cell-content {
+      padding: 0 16px !important;
+    }
+    .c7n-performance-table-cell-header .c7n-performance-table-cell-content {
+      color: #333;
+      font-weight: 500;
+    }
+    .c7n-performance-table-cell-expand-wrapper {
+      display: none;
+    }
+  }
+
+  // 有子节点
+  &-expand-icon {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+
+    // 加载数据中
+    &-loading {
+      cursor: none;
+    }
+  }
+
+  // 没有子节点
+  &-no-child {
+    padding-left: 40px;
+  }
+}

@@ -1,0 +1,81 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.ssrc-file-template-manage-wrapper {
+  height: 100%;
+  background-color: #f7f8fa;
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container {
+      height: 100%;
+    }
+  }
+  .file-template-content-wrapper {
+    height: calc(100% - 0.48rem);
+    overflow: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .common-top-section-card {
+    background: #fff;
+    padding: 0.2rem;
+    margin: 4px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// template modal tips
+.template-upload-tips {
+  background-color: rgba(250, 205, 145, 0.3);
+  color: #dc851f;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.report-desgin-model {
+  :global {
+    .c7n-pro-modal-header,
+    .c7n-pro-modal-body {
+      padding: 0;
+    }
+    .c7n-pro-modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+// line buttons
+.mainAction {
+  display: flex;
+  .display-main-action {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 16px;
+    height: 28px;
+    line-height: 28px;
+    :global {
+      .c7n-pro-btn {
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+.dropdown-menu-item-btn {
+  :global {
+    .c7n-pro-btn {
+      color: @text-1;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+}

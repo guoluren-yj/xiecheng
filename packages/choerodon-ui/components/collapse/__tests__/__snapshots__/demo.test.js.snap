@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/collapse/demo/accordion.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-trigger c7n-collapse-icon-position-left"
+  role="tablist"
+>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 1
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-trigger c7n-collapse-icon-position-left"
+>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-active"
+  >
+    <div
+      aria-expanded="true"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-expanded"
+      />
+      This is panel header 1
+    </div>
+    <div
+      class="c7n-collapse-content c7n-collapse-content-active"
+      role="tabpanel"
+    >
+      <div
+        class="c7n-collapse-content-box"
+      >
+        <p>
+          
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-disabled"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="-1"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/borderless.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-borderless c7n-collapse-trigger c7n-collapse-icon-position-left"
+>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-active"
+  >
+    <div
+      aria-expanded="true"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-expanded"
+      />
+      This is panel header 1
+    </div>
+    <div
+      class="c7n-collapse-content c7n-collapse-content-active"
+      role="tabpanel"
+    >
+      <div
+        class="c7n-collapse-content-box"
+      >
+        <p
+          style="padding-left:24px"
+        >
+          A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/custom.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-borderless c7n-collapse-trigger c7n-collapse-icon-position-left"
+>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-active"
+    style="background:#f7f7f7;border-radius:4px;margin-bottom:24px;border:0;overflow:hidden"
+  >
+    <div
+      aria-expanded="true"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-expanded"
+      />
+      This is panel header 1
+    </div>
+    <div
+      class="c7n-collapse-content c7n-collapse-content-active"
+      role="tabpanel"
+    >
+      <div
+        class="c7n-collapse-content-box"
+      >
+        <p>
+          
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+    style="background:#f7f7f7;border-radius:4px;margin-bottom:24px;border:0;overflow:hidden"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+    style="background:#f7f7f7;border-radius:4px;margin-bottom:24px;border:0;overflow:hidden"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/expandIcon.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-icon-position-right"
+>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-active"
+  >
+    <div
+      aria-expanded="true"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="c7n-collapse-expand-icon-wrapper"
+      >
+        <span
+          class="c7n-collapse-expand-text"
+        >
+          Fold
+        </span>
+        <i
+          class="c7n-collapse-expand-icon c7n-collapse-expanded"
+        />
+      </span>
+      This is panel header 1
+    </div>
+    <div
+      class="c7n-collapse-content c7n-collapse-content-active"
+      role="tabpanel"
+    >
+      <div
+        class="c7n-collapse-content-box"
+      >
+        <p>
+          
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="c7n-collapse-expand-icon-wrapper"
+      >
+        <span
+          class="c7n-collapse-expand-text"
+        >
+          Unfold
+        </span>
+        <i
+          class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+        />
+      </span>
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-disabled"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="-1"
+    >
+      <span
+        class="c7n-collapse-expand-icon-wrapper"
+      >
+        <span
+          class="c7n-collapse-expand-text"
+        >
+          Unfold
+        </span>
+        <i
+          class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+        />
+      </span>
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/mix.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-trigger c7n-collapse-icon-position-left"
+>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 1
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 2
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-collapsed"
+      />
+      This is panel header 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/collapse/demo/noarrow.md correctly 1`] = `
+<div
+  class="c7n-collapse c7n-collapse-trigger c7n-collapse-icon-position-left"
+>
+  <div
+    class="c7n-collapse-item c7n-collapse-item-active"
+  >
+    <div
+      aria-expanded="true"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      <i
+        class="c7n-collapse-expand-icon c7n-collapse-expanded"
+      />
+      This is panel header with arrow icon
+    </div>
+    <div
+      class="c7n-collapse-content c7n-collapse-content-active"
+      role="tabpanel"
+    >
+      <div
+        class="c7n-collapse-content-box"
+      >
+        <p>
+          
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-collapse-item c7n-collapse-no-arrow"
+  >
+    <div
+      aria-expanded="false"
+      class="c7n-collapse-header"
+      role="button"
+      tabindex="0"
+    >
+      This is panel header with no arrow icon
+    </div>
+  </div>
+</div>
+`;

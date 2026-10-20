@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37.3333333px" height="37.3333333px" viewBox="0 0 37.3333333 37.3333333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>竞价</title>
+    <g id="0728" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="竞价" transform="translate(2.6667, 2.6667)">
+            <circle id="椭圆形" stroke="#FFFFFF" stroke-width="2.66666667" fill-opacity="0.1" fill="currentColor" cx="16" cy="16" r="17.3333333"></circle>
+            <g id="编组-22" transform="translate(8, 8)">
+                <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                <g id="编组" transform="translate(1, 1)" fill="currentColor" fill-rule="nonzero">
+                    <path d="M8.00001333,12.8758233 L8.00001333,14.2091567 L0,14.2091567 L0,12.8758233 L8.00001333,12.8758233 Z M8.39054667,0 L13.5759467,5.18545 L12.6331467,6.12825667 L11.92608,5.89255667 L10.2761467,7.54249 L14.0474133,11.31369 L13.1045467,12.25649 L9.33334667,8.48529 L7.73054667,10.0880233 L7.91914667,10.84229 L6.97628,11.78509 L1.79086,6.59969 L2.73367333,5.65685667 L3.48792,5.84541667 L7.68341333,1.64991667 L7.44774667,0.94281 L8.39054667,0 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

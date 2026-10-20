@@ -1,0 +1,81 @@
+.refresh-model {
+  :global {
+    .c7n-pro-table-thead th,
+    .c7n-pro-table-tbody > tr > td {
+      border-left: 1px solid #e8e8e8 !important;
+    }
+
+    //.c7n-pro-table {
+    //  border: 1px solid #000 !important;
+    //}
+  }
+
+  .merge-table {
+    :global {
+      // 用于修订没有边框
+      .c7n-pro-table-bordered .c7n-pro-table-cell,
+      .c7n-pro-table-bordered .c7n-pro-table-cell {
+        border-left: 1px solid #e8e8e8;
+      }
+
+      // 用于修订组合列高度
+      .c7n-pro-table-fixed-left {
+        .c7n-pro-table-head {
+          thead > tr {
+            height: 0.8rem !important;
+          }
+        }
+      }
+
+      // 用于修订列头的显示不全
+      // .c7n-pro-table-cell-inner > * {
+      //   vertical-align: top;
+      // }
+    }
+  }
+
+  .panel-header {
+    font-size: 16px;
+
+    span {
+      font-weight: bold;
+    }
+
+    :global {
+      .icon {
+        vertical-align: text-bottom;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.merge-collapse {
+  :global {
+    .c7n-collapse-content {
+      padding: 0;
+      background: none;
+      border-top: none;
+    }
+
+    .c7n-collapse {
+      background: none;
+      border: 0;
+    }
+
+    .c7n-collapse > .c7n-collapse-item {
+      border: none;
+      margin-bottom: 15px;
+      padding: 0 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header {
+      padding: 0.12rem 0;
+    }
+
+    .c7n-collapse-content > .c7n-collapse-content-box {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.alert-error {
+  line-height: 1.5;
+  padding: 10px 20px;
+  color: #e64421;
+  margin: -20px -20px 20px;
+  background-color: #fdedeb;
+  :global {
+    .icon {
+      vertical-align: top;
+      margin-right: 8px;
+    }
+    p {
+      margin-left: 26px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.where-option-select {
+  :global {
+    .c7n-pro-select-dropdown-menu-item {
+      display: flex;
+      position: relative;
+    }
+  }
+}
+.where-option-item {
+  flex: 1;
+  display: inline-flex;
+  &-default {
+    padding: 1px 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .65);
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 2px;
+    margin-left: 10px;
+  }
+  &-menu {
+    font-weight: 400;
+  }
+}
+
+.default-value-output {
+  :global {
+    .c7n-pro-output-multiple-block {
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+.layout-form {
+  :global {
+    .c7n-pro-field-help {
+      color: #f88d10;
+    }
+  }
+}

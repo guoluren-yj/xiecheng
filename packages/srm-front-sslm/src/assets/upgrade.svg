@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/publish</title>
+    <g id="0928" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="筛选器-排序" transform="translate(-1032.000000, -317.000000)" fill-rule="nonzero">
+            <g id="编组-6" transform="translate(226.000000, 125.000000)">
+                <g id="编组-5" transform="translate(16.000000, 149.000000)">
+                    <g id="td－角色管理" transform="translate(0.000000, 41.000000)">
+                        <g id="编组-13" transform="translate(255.000000, 0.000000)">
+                            <g id="编组-19" transform="translate(477.000000, 0.000000)">
+                                <g id="publish" transform="translate(65.000000, 9.000000) rotate(90.000000) translate(-65.000000, -9.000000) translate(58.000000, 2.000000)">
+                                    <rect id="矩形" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                                    <g id="color" transform="translate(1.750000, 0.875000)" fill="#47B881">
+                                        <polygon id="路径" points="2.94566632 9.95833334 2.94566632 5.41416666 0.283333 5.41416666 4.94999966 0.625 9.61666632 5.41416666 6.954333 5.41416666 6.954333 9.95833334"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

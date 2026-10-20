@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders JSX correctly 1`] = `
+<div
+  class="c7n-table-wrapper"
+>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-table-filter-bar"
+      >
+        <div
+          class="c7n-table-filter-select"
+        >
+          <div
+            class="c7n-table-filter-select-icon"
+          >
+            <i
+              class="icon icon-filter_list"
+            />
+          </div>
+          <div
+            class="c7n-select c7n-select-enabled c7n-select-allow-clear c7n-select-tags"
+          >
+            <div
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="c7n-select-selection
+            c7n-select-selection--multiple"
+              role="combobox"
+            >
+              <div
+                class="c7n-select-selection__rendered"
+              >
+                <ul>
+                  <li
+                    class="c7n-select-search c7n-select-search--inline"
+                  >
+                    <div
+                      class="c7n-select-search__field__wrap"
+                    >
+                      <input
+                        autocomplete="off"
+                        class="c7n-select-search__field"
+                        value=""
+                      />
+                      <span
+                        class="c7n-select-search__field__mirror"
+                      >
+                         
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c7n-table-filter-select-columns"
+          />
+        </div>
+        <div
+          class="c7n-table-columns-chooser"
+        >
+          <button
+            class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+            type="button"
+          >
+            <i
+              class="icon icon-view_column"
+            />
+            <div
+              class="c7n-ripple-wrapper"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="c7n-table c7n-table-default c7n-table-scroll-position-left"
+      >
+        <div
+          class="c7n-table-content"
+        >
+          <div
+            class="c7n-table-body"
+          >
+            <table
+              class=""
+            >
+              <colgroup>
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead
+                class="c7n-table-thead"
+              >
+                <tr>
+                  <th
+                    class=""
+                    colspan="2"
+                    tabindex="-1"
+                  >
+                    <span>
+                      Name
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    rowspan="2"
+                    tabindex="-1"
+                  >
+                    <span>
+                      Age
+                    </span>
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      First Name
+                    </span>
+                  </th>
+                  <th
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span>
+                      Last Name
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="c7n-table-tbody"
+              >
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    John
+                  </td>
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    Brown
+                  </td>
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    32
+                  </td>
+                </tr>
+                <tr
+                  class="c7n-table-row  c7n-table-row-level-0"
+                >
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    <span
+                      class="c7n-table-row-indent indent-level-0"
+                      style="padding-left:0px"
+                    />
+                    Jim
+                  </td>
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    Green
+                  </td>
+                  <td
+                    class=""
+                    tabindex="-1"
+                  >
+                    42
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

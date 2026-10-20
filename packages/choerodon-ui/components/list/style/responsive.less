@@ -1,0 +1,42 @@
+@media screen and (max-width: @screen-md) {
+  .@{list-prefix-cls} {
+    &-item {
+      &-action {
+        margin-left: .24rem;
+      }
+    }
+  }
+
+  .@{list-prefix-cls}-vertical {
+    .@{list-prefix-cls}-item {
+      &-extra {
+        margin-left: .24rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .@{list-prefix-cls} {
+    &-item {
+      flex-wrap: wrap;
+      &-action {
+        margin-left: .12rem;
+      }
+    }
+  }
+
+  .@{list-prefix-cls}-vertical {
+    .@{list-prefix-cls}-item {
+      &-extra-wrap {
+        flex-wrap: wrap-reverse;
+      }
+      &-main {
+        min-width: 2.2rem;
+      }
+      &-extra {
+        margin-left: 0;
+      }
+    }
+  }
+}

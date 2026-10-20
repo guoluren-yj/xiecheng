@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>居中对齐</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-1124.000000, -94.000000)" fill-rule="nonzero">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(54.000000, 1.000000)">
+                        <g id="编组-29" transform="translate(818.500000, 0.000000)">
+                            <g id="21" transform="translate(32.000000, 3.000000)">
+                                <g id="_图标/工具栏/icon/左对齐" opacity="0" fill="#000000">
+                                    <rect id="Rectangle复制-23" x="-2.31986637e-22" y="0" width="20" height="20"></rect>
+                                </g>
+                                <path d="M15.8333333,13.8333333 L15.8333333,15 L4.16666667,15 L4.16666667,13.8333333 L15.8333333,13.8333333 Z M13.3666667,9.41666667 L13.3666667,10.5833333 L6.7,10.5833333 L6.7,9.41666667 L13.3666667,9.41666667 Z M15.8333333,5 L15.8333333,6.16666667 L4.16666667,6.16666667 L4.16666667,5 L15.8333333,5 Z" id="形状结合" fill="#464D5A"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

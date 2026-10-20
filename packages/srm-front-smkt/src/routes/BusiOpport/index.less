@@ -1,0 +1,203 @@
+.busi-page-content {
+  margin: 8px 16px 16px;
+  height: calc(100% - 16px - 16px);
+  display: flex;
+  overflow: auto;
+  :global {
+    .busi-content-left {
+      background: #fff;
+      width: 284px;
+      height: 100%;
+      margin-right: 8px;
+      padding-bottom: 16px;
+    }
+    .busi-content-right {
+      background: #fff;
+      flex: 1;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.intent-list-wrapper {
+  height: 100%;
+  overflow: auto;
+  :global {
+    .intent-list-header {
+      height: 65px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      .search-filter {
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 2px;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          color: #000;
+          font-size: 16px;
+        }
+        &.filter-visible {
+          border: none;
+          background: rgba(0, 0, 0, 0.05);
+          i {
+            color: #29bece;
+          }
+        }
+      }
+    }
+    .intent-list-body {
+      .no-data {
+        text-align: center;
+        padding-top: 24px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+      .intent-item {
+        cursor: pointer;
+        height: 70px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 12px 16px;
+        border-left: 2px solid #fff;
+        &:first-of-type {
+          border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .intent-info {
+          margin-bottom: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .intent-company {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+        }
+        .intent-num {
+          color: #000;
+          font-size: 14px;
+        }
+      }
+      .intent-item-active {
+        background: rgba(41, 190, 206, 0.05);
+        border-left-color: #29bece;
+        .intent-num {
+          color: #36c2cf;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.filter-content {
+  width: 368px;
+  :global {
+    .c7n-pro-field-label {
+      > label {
+        padding: 0 !important;
+        padding-bottom: 16px !important;
+      }
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0 !important;
+      padding-bottom: 16px;
+    }
+    .filter-footer {
+      display: flex;
+      flex-direction: row-reverse;
+      .c7n-pro-btn {
+        height: 24px;
+      }
+    }
+  }
+}
+
+.filter-popover {
+  :global {
+    .c7n-popover-inner-content {
+      padding: 16px;
+    }
+  }
+}
+
+.intent-detail-wrapper {
+  height: 100%;
+  overflow: auto;
+  :global {
+    .no-data {
+      text-align: center;
+      padding-top: 90px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .intent-detail-header {
+      height: 65px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      .intent-detail-title {
+        font-size: 16px;
+        color: #000;
+        line-height: 24px;
+        font-weight: 600;
+        margin-right: 8px;
+      }
+    }
+    .intent-detail-body {
+      padding: 0 20px;
+      .intent-company-wrapper {
+        padding-top: 20px;
+        .company-base-info {
+          display: flex;
+          margin-bottom: 16px;
+          .company-content {
+            margin-left: 12px;
+            .company-name {
+              height: 22px;
+              font-size: 14px;
+              color: #000;
+              line-height: 22px;
+              font-weight: 600;
+              margin-bottom: 8px;
+            }
+            .company-desc {
+              font-size: 12px;
+              color: #000;
+              line-height: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+        .company-other-info {
+          display: flex;
+          flex-wrap: wrap;
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          border-top: none;
+          .info-item {
+            width: 50%;
+            display: flex;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            .info-item-label,
+            .info-item-value {
+              height: 32px;
+              line-height: 32px;
+              padding: 0 12px;
+            }
+            .info-item-label {
+              width: 140px;
+              background: rgba(0, 0, 0, 0.03);
+            }
+            .info-item-value {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

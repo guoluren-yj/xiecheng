@@ -1,0 +1,119 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+.modal {
+  width: 100%;
+  height: 100%;
+  margin-top: -20px !important;
+
+  .left {
+    width: 180px;
+    height: calc(100% + 40px);
+    float: left;
+    border-right: 1px solid #ebebeb !important;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        width: 100%;
+        padding: 10px 0 10px 0;
+        font-size: 14px;
+        color: #000;
+        line-height: 22px;
+        font-weight: 400;
+        cursor: pointer;
+
+        :global {
+          .c7n-anchor-link {
+            padding-left: 0;
+          }
+        }
+      }
+
+      .aLineChecked {
+        border-right: 3px solid #29bece;
+
+        :global {
+          .c7n-anchor-link-title {
+            color: #29bece;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    float: left;
+    overflow-y: auto;
+
+    .content {
+      margin: 0;
+      padding: 16px 0;
+      overflow-x: hidden;
+
+      .form-readOnly {
+        :global {
+          .c7n-pro-field-label-vertical {
+            color: rgba(0, 0, 0, 0.65);
+            margin-bottom: 4px;
+            padding-bottom: 0;
+            padding-top: 0;
+            padding-left: 0;
+            line-height: 1.5;
+          }
+
+          tr:not(:first-child) .c7n-pro-field-label {
+            margin-top: 16px;
+          }
+
+          .c7n-pro-field-wrapper {
+            // padding: 0 0 !important;
+
+            .c7n-pro-field {
+              line-height: 1.5;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
+
+    .content1 {
+      margin: 0;
+      padding: 16px 0;
+      // overflow-x: scroll;
+      // width: 800px;
+    }
+
+    .title-h3 {
+      display: flex !important;
+      align-items: center !important;
+      margin-bottom: 16px;
+      font-weight: 600;
+
+      .block {
+        height: 12px;
+        width: 3px;
+        background-color: @primary-color;
+        margin-right: 8px;
+      }
+
+      .form {
+        padding: 0 0 32px 20px !important;
+      }
+    }
+  }
+
+  /**
+    *隐藏滚动条
+    */
+  .right::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+  }
+}

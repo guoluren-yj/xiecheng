@@ -1,0 +1,27 @@
+.table {
+  :global {
+    .ant-table .ant-table-row-indent + .ant-table-row-expanded {
+      width: 0;
+      height: 0;
+      border-top: 4px solid black;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent;
+      &::after {
+        display: none;
+      }
+      vertical-align: -1.5px;
+    }
+    .ant-table .ant-table-row-indent + .ant-table-row-collapsed {
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid black;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

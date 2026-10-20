@@ -1,0 +1,420 @@
+@import '../lowcodeGlobalColor.less';
+
+// import globalStyles from '@/lowcodeGlobalStyles/global.less';
+// 修正下拉列表最大高度/去除选中状态
+
+:global {
+  .hmde {
+    :global {
+      // 修复c7n with: 0 bug
+      .c7n-pro-field-required.c7n-pro-field-label-useColon,
+      .c7n-pro-field-label.c7n-pro-field-label-useColon::after {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.menu-pro {
+  // 修正下拉列表最大高度
+  // max-height: 500px;
+  overflow: hidden;
+  padding: 10px 0;
+  background-color: #fff;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  :global {
+    .c7n-menu-item-selected {
+      color: @Grey2;
+    }
+
+    .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-selected {
+      background-color: white;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+}
+
+// 去掉 table title的横线
+.header-border-no {
+  :global {
+    .c7n-pro-table-header {
+      border: none !important;
+    }
+  }
+}
+
+// 折叠框样式，引入即可
+.collapse {
+  :global {
+    .c7n-collapse-content {
+      padding: 0;
+      background: none;
+    }
+
+    .c7n-collapse {
+      background: none;
+      border: 0;
+    }
+
+    .c7n-collapse > .c7n-collapse-item > .c7n-collapse-header {
+      padding: 0.05rem 0;
+      margin: 0 -10px;
+      background-color: white;
+    }
+
+    .c7n-collapse > .c7n-collapse-item {
+      border: 0;
+    }
+
+    .c7n-collapse-content {
+      border: 0;
+    }
+
+    .c7n-collapse-content > .c7n-collapse-content-box {
+      padding-top: 0.1rem;
+      padding-bottom: 0.05rem;
+    }
+  }
+}
+
+// 加载loading小号，引入即可
+.spin-small {
+  :global {
+    // 修正加载圈圈缩小
+    .c7n-progress-loading .c7n-progress-inner {
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+  }
+}
+
+// 通用icon样式
+.icon {
+  vertical-align: text-bottom;
+  margin: 0 5px;
+  font-size: 0.16rem;
+}
+
+// 脚步完成按钮
+.model-footer {
+  :global {
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+      color: #fff;
+    }
+
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary:hover {
+      color: #fff;
+    }
+  }
+}
+
+// 脚步完成按钮
+.model-body {
+  width: 100%;
+}
+
+.form {
+  :global {
+    // c7n label
+    .c7n-pro-field-label {
+      padding: 0 0 0.02rem !important;
+    }
+
+    // 数据框下边距
+    .c7n-pro-field-wrapper {
+      padding-bottom: 0.05rem;
+    }
+
+    .c7n-pro-field-output {
+      padding-top: 0;
+    }
+
+    // ant label
+    .ant-form-item-label {
+      line-height: normal;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-form-item-control textarea {
+      margin-top: 4px;
+    }
+  }
+}
+
+// table
+.table-style {
+  > div {
+    > div {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  :global {
+    .c7n-pro-table {
+      height: 100%;
+      overflow: auto !important;
+    }
+    .c7n-pro-table .c7n-pro-table-thead > tr > th {
+      font-size: 12px;
+      color: #aaadba;
+      // background: #fafafa;
+      border-radius: 2px;
+    }
+    .c7n-pro-table-tbody {
+      .c7n-pro-table-row {
+        .c7n-pro-table-expand-icon:focus {
+          color: rgba(0, 0, 0, 0.85) !important;
+        }
+      }
+      .c7n-pro-table-row:hover {
+        background-color: rgba(41, 190, 206, 0.1) !important;
+      }
+
+      .c7n-pro-table-row-highlight.c7n-pro-table-row:hover {
+        > td {
+          background-color: rgba(41, 190, 206, 0.1) !important;
+        }
+      }
+
+      .c7n-pro-table-row-current.c7n-pro-table-row-highlight {
+        > td {
+          background-color: rgba(41, 190, 206, 0.1) !important;
+        }
+      }
+    }
+    .c7n-pro-table-tbody > tr > td {
+      font-size: 12px;
+      color: #5a6677 !important;
+    }
+
+    .c7n-pro-table-toolbar {
+      .c7n-pro-table-toolbar-button-group {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .c7n-pro-table-editor {
+      .c7n-pro-select-wrapper {
+        .icon-search {
+          position: static;
+        }
+      }
+    }
+  }
+}
+
+.lowcode-m-modal-content {
+  :global {
+    .c7n-pro-modal-body {
+      div,
+      span {
+        font-size: 12px !important;
+        font-weight: normal !important;
+        color: #333435 !important;
+      }
+    }
+  }
+}
+.lowcode-m-modal {
+  // top: 20px; // hzero不需要弹窗置顶 故采用默认值
+
+  :global {
+    // Modal header
+    [class^='c7n-pro'][class$='-title'] {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      color: #333435 !important;
+    }
+    // Modal body
+    .c7n-pro-modal-body {
+      .c7n-pro-radio:checked + .c7n-pro-radio-inner {
+        box-shadow: none;
+      }
+      // table content
+      .ant-table-tbody {
+        .ant-table-row {
+          .ant-input {
+            border-color: none;
+            &:focus {
+              // border-color: @darkblue !important;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .ant-form {
+        .ant-radio-checked .ant-radio-inner {
+          box-shadow: none;
+        }
+        .ant-row {
+          .ant-input {
+            border-color: none;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          .lov-input {
+            .ant-input-group-wrapper {
+              vertical-align: middle;
+            }
+            .ant-input {
+              // 两个 icon 的位置
+              padding-right: 48px !important;
+              transition: padding 0s, background-color 0.3s, border 0.3s;
+            }
+
+            .ant-input-suffix {
+              > .lov-clear {
+                margin-right: 4px;
+                display: inline-block;
+              }
+
+              // LOV 查询icon颜色和DatePicker等组件的icon颜色一样
+              .anticon-search:before {
+                color: rgba(0, 0, 0, 0.25);
+              }
+            }
+          }
+
+          .lov-suffix {
+            .ant-input-suffix {
+              > .lov-clear {
+                display: none;
+                cursor: pointer;
+              }
+            }
+
+            &:hover {
+              .ant-input-suffix {
+                > .lov-clear {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // lov query input
+    .c7n-pro-form {
+      label:hover .c7n-pro-input,
+      .c7n-pro-input {
+        border-color: none;
+      }
+    }
+
+    // table query按钮， modal 底部按钮 公用
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+      color: #fff;
+    }
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary:hover {
+      color: #fff;
+    }
+    // hzero-modal
+    .ant-modal {
+      top: 10px !important;
+
+      .ant-modal-content {
+        .ant-select-open .ant-select-selection,
+        .ant-select-focused .ant-select-selection,
+        .ant-select-selection:focus,
+        .lov-input {
+          .ant-input-group-wrapper {
+            vertical-align: middle;
+          }
+
+          .ant-input {
+            // 两个 icon 的位置
+            padding-right: 48px !important;
+            transition: padding 0s, background-color 0.3s, border 0.3s;
+          }
+
+          .ant-input-suffix {
+            > .lov-clear {
+              margin-right: 4px;
+              display: none;
+            }
+
+            // LOV 查询icon颜色和DatePicker等组件的icon颜色一样
+            .anticon-search:before {
+              color: rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+
+        .lov-suffix {
+          .ant-input-suffix {
+            > .lov-clear {
+              display: none;
+              cursor: pointer;
+            }
+          }
+
+          &:hover {
+            .ant-input-suffix {
+              > .lov-clear {
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        .ant-form-item-required .lov-suffix {
+          &:hover {
+            .ant-input-suffix {
+              display: block;
+            }
+          }
+        }
+        .ant-modal-body {
+          .ant-form-item {
+            display: flex;
+            margin-bottom: 0;
+          }
+          .ant-pagination-options-size-changer.ant-select {
+            margin-right: 0;
+          }
+          .lov-modal-btn-container {
+            flex-shrink: 0;
+            display: flex;
+            height: 40px;
+            align-items: center;
+          }
+          .ant-table-row {
+            .ant-input {
+              border-color: none;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+        .ant-form {
+          .ant-radio-checked .ant-radio-inner {
+            box-shadow: none;
+          }
+          .ant-row {
+            .ant-input {
+              border-color: none;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

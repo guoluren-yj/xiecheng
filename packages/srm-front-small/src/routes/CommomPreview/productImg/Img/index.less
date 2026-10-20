@@ -1,0 +1,39 @@
+.common-img-container {
+  position: relative;
+  width: 100%;
+  :global {
+    .cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      z-index: 1;
+    }
+    .big-img-Box {
+      width: 600px;
+      height: 600px;
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      z-index: 49;
+    }
+    .big-img-Box #bigImg {
+      position: absolute;
+      display: block;
+    }
+    .main-img-box {
+      position: relative;
+    }
+    .main-img-box span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    .main-img-box:hover span {
+      display: block;
+      background-image: url('../../../../assets/bg.png');
+    }
+  }
+}

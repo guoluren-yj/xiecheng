@@ -1,0 +1,339 @@
+@import '~hzero-front/lib/srm-variables';
+
+//混合
+.commonStyle {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: @text-3;
+}
+
+.common-list-wrap {
+  :global {
+    .c7n-timeline {
+      // margin-left: 12px;
+
+      .c7n-timeline-item:last-child {
+        .c7n-timeline-item-tail {
+          display: none;
+          border-left: 0.02rem dotted #e8e8e8;
+        }
+      }
+    }
+
+    .nodata_wrapper {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      color: #000;
+    }
+  }
+}
+
+.operation-list-wrap {
+  padding-top: 10px;
+
+  :global {
+    .c7n-timeline-item-content {
+      padding: 0 0 0 0.24rem;
+    }
+  }
+
+  .operation-record-item {
+    display: flex;
+    align-items: baseline;
+    margin-left: calc(16px - 0.18rem);
+
+    &-icon {
+      color: rgba(0, 0, 0, 0.85);
+
+      i {
+        font-size: 14px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      margin-left: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      &-desc {
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+
+        &-adopt {
+          color: #47b881;
+          font-weight: 500;
+        }
+
+        &-reject {
+          color: #f56349;
+          font-weight: 500;
+        }
+
+        &-name {
+          // margin-right: 10px;
+          color: #000;
+          font-weight: 500;
+        }
+
+        &-supply {
+          display: inline-block;
+          padding: 0 2px;
+          line-height: 16px;
+          text-align: center;
+          font-weight: 600;
+          transform: scale(0.83);
+          border: 1px solid #3095f2;
+          border-radius: 3px;
+          color: #3095f2;
+          margin-right: 4px;
+        }
+
+        &-meaning {
+          padding: 0 5px;
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        &-order {
+          font-weight: 500;
+          color: #000;
+        }
+
+        &-agree {
+          margin-right: 6px;
+          font-size: 12px;
+          color: #47b881;
+        }
+
+        &-approve {
+          margin-right: 6px;
+          font-size: 12px;
+          color: #f56349;
+        }
+
+        &-reject {
+          font-size: 12px;
+          color: #f56349;
+        }
+      }
+
+      &-changes {
+        position: relative;
+        margin-bottom: 8px;
+        .commonStyle();
+
+        &-name {
+          margin-right: 10px;
+        }
+
+        &-meaning {
+          margin-left: 5px;
+          margin-right: 7px;
+        }
+
+        &-oldvalue {
+          word-break: break-all;
+          margin-left: 5px;
+          margin-right: 7px;
+        }
+
+        &-newvalue {
+          margin-left: 5px;
+          margin-right: 7px;
+          word-break: break-all;
+        }
+      }
+
+      &-remark {
+        word-break: break-all;
+        margin-bottom: 4px;
+        font-size: 12px;
+        color: rgba(35, 32, 32, 0.65);
+
+        &-edit {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 18px;
+          font-weight: 400;
+          margin-left: 10px;
+          margin-right: 7px;
+        }
+
+        &-value {
+          width: 360px;
+        }
+      }
+
+      &-time {
+        font-family: PingFangSC-Regular, sans-serif;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+//审批记录
+.approve-list {
+  margin-top: -5px;
+
+  :global {
+    .c7n-collapse-header {
+      font-family: PingFangSC-Semibold, sans-serif;
+      font-size: 14px;
+      color: #000;
+    }
+
+    .c7n-collapse-expand-icon-wrapper {
+      margin-left: calc(40px - 0.18rem);
+    }
+
+    .c7n-collapse-content {
+      margin-left: -15px;
+    }
+
+    .c7n-timeline {
+      margin-left: 12px;
+    }
+
+    .c7n-timeline-item {
+      padding: 0 0 0.16rem;
+      font-size: 12px;
+
+      .c7n-timeline-item-content {
+        padding: 0 0 0 0.35rem;
+      }
+
+      .under-approval {
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+      }
+
+      .line {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 18px;
+        font-weight: 400;
+        margin: 5px 0 0 0;
+
+        .line-id {
+          margin-left: 20px;
+          color: #000;
+        }
+
+        .text-name {
+          color: #000;
+          margin-left: 32px;
+        }
+
+        .approve_icon {
+          font-size: 14px;
+          line-height: 18px;
+          vertical-align: middle;
+          margin-left: 4px;
+
+          &.check {
+            color: #47b883;
+          }
+
+          &.close {
+            color: #f56649;
+          }
+        }
+
+        .date-time {
+          color: #000;
+          margin-left: 45px;
+        }
+      }
+
+      .approval-comment {
+        display: flex;
+        margin-top: 5px;
+      }
+
+      .approval-title {
+        color: rgba(0, 0, 0, 0.45);
+      }
+
+      .comment {
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+
+      .approval-rejected {
+        margin-left: 10px;
+        flex: 1 1;
+        color: #f56349;
+      }
+
+      .comment-title {
+        color: #000;
+      }
+
+      .approval-value {
+        width: 360px;
+      }
+
+      .approval-content {
+        color: rgba(0, 0, 0, 0.45);
+        flex: 1 1;
+      }
+
+      .enclosure {
+        margin: 4px 0 6px 0;
+
+        .approval-upload {
+          color: rgba(0, 0, 0, 0.45);
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .empty-wrapper {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #000;
+  }
+}
+
+.approve-list-new {
+  :global {
+    .c7n-collapse-header {
+      padding: 0 !important;
+      font-size: 14px;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .c7n-collapse-content {
+      padding: 0 !important;
+    }
+
+    .c7n-collapse-expand-icon-wrapper {
+      .icon-expand_more {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -4px;
+      }
+
+      .icon-navigate_next {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -4px;
+      }
+    }
+  }
+}

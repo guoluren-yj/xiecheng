@@ -1,0 +1,758 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.unit-main-container {
+  background: #f5f5f5;
+  padding   : 8px 16px 16px;
+  flex      : 1 1;
+  overflow  : hidden;
+  height    : 100%;
+}
+
+.unit-main-container-wrapper {
+  position: absolute;
+  bottom  : 0;
+  top     : 48px;
+  overflow: auto;
+  width   : 100%;
+
+  &:not(.not-fill-parent) {
+    .c7n-spin-nested-loading,
+    .c7n-spin-container {
+      height  : 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.unit-common-style {
+  &-clip {
+    width   : 100%;
+    height  : 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .c7n-pro-table-cell button.c7n-pro-btn,
+  .c7n-pro-table-cell span.c7n-pro-btn {
+    height        : 26px;
+    vertical-align: super;
+  }
+
+  label.c7n-pro-field-label.c7n-pro-field-label-vertical {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .customize-treenode-wrapper {
+    height         : 32px;
+    display        : flex;
+    align-items    : center;
+    flex-wrap      : nowrap;
+    justify-content: space-between;
+
+    // 实现ctrl图标右对齐，将flex区域一分为二的div
+    &>div {
+      display    : flex;
+      align-items: center;
+      flex       : 1;
+      overflow   : hidden;
+
+      &>i {
+        font-size   : 16px;
+        margin-right: 4px;
+      }
+
+      &>.c7n-tag {
+        margin-right: 4px;
+      }
+
+      &>span {
+        flex         : 1;
+        text-overflow: ellipsis;
+        white-space  : nowrap;
+        overflow     : hidden;
+        line-height  : 16px;
+        height       : 16px;
+      }
+    }
+
+    .c7n-tag {
+      height     : 16px;
+      line-height: 16px;
+      font-size  : 10px;
+      font-weight: 500;
+      padding    : 0 4px;
+      border     : none;
+    }
+  }
+
+  .c7n-tree .c7n-tree-node-content-wrapper.c7n-tree-node-selected {
+    font-weight     : 600;
+
+    .icon {
+      font-weight: 400;
+    }
+  }
+
+  // flex下的直接子元素到满足display为block后代元素间的所有层级，均需要设置overflow:hidden，否则宽度会被下级文本节点撑大
+  .c7n-tree .c7n-tree-node-content-wrapper {
+    display : flex;
+    flex    : 1;
+    overflow: hidden;
+  }
+
+  .c7n-tree-title {
+    flex         : 1;
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .doc-page-header {
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: space-between;
+  }
+
+  .doc-page-header-ctrl {
+    font-size: 16px;
+
+    &:hover {
+      background-color: #e5e5e5;
+      cursor          : pointer;
+    }
+  }
+
+}
+
+.unit-wrap-container {
+  height  : 100%;
+  display : flex;
+  position: relative;
+}
+
+.unit-vertical-container {
+  background-color: #fff;
+  padding         : 20px 0;
+  margin-bottom   : 8px;
+  position        : relative;
+  overflow        : auto;
+  
+  .c7n-tabs-bar {
+    padding: 0 20px;
+  }
+
+  .unit-right-container.unit-new {
+    padding: 16px 0 0;
+    .c7n-tabs-tabpane {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 16px;
+      // 抵消上面marginTop引起的高度变化
+      height: calc(100% - 16px);
+    }
+    .c7n-tabs-tabpane.unit-config-searchbar-config {
+      margin-top: 0;
+      padding-left: 0;
+    }
+    .c7n-tabs-bar {
+      margin-bottom: 0;
+    }
+    .c7n-tabs-content {
+      padding-top: 0;
+    }
+    .search-bar-fix-style {
+      margin-top: 0;
+    }
+  }
+
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .unit-doc-stage-bar {
+    display       : flex;
+    flex-direction: row;
+    font-size     : 14px;
+    align-items   : center;
+    border-bottom : 1px solid #f5f5f5;
+    margin-bottom : 16px;
+    padding-left: 20px;
+    min-height    : 40px;
+
+    .active {
+      font-weight: 600;
+    }
+
+    .unit-doc-stage-bar-item {
+      padding-bottom: 12px;
+      margin-right  : 40px;
+      line-height   : 21px;
+      height        : 41px;
+      cursor        : pointer;
+      display       : flex;
+      align-items   : center;
+      font-weight   : 400;
+
+      &.active,
+      &:hover {
+        font-weight: 600;
+        color      : @primary-color;
+        position   : relative;
+
+        &::after {
+          content   : '';
+          background: @primary-color;
+          width     : calc(100% - 6px);
+          height    : 2px;
+          display   : block;
+          position  : absolute;
+          left      : 0;
+          bottom    : 0;
+          z-index   : 1;
+        }
+      }
+    }
+
+    .c7n-pro-btn {
+      padding      : 0 6px;
+      margin-bottom: 12px;
+      font-size    : 14px;
+      font-weight  : 600;
+      line-height  : 21px;
+      height       : 29px;
+    }
+
+  }
+
+  .c7n-pro-output {
+    word-break: break-all;
+  }
+}
+
+.unit-collapse-container {
+  background-color: #fff;
+  margin-bottom   : 8px;
+  position        : relative;
+  overflow        : auto;
+  .c7n-collapse-header {
+    padding: 20px 20px 16px!important;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .c7n-collapse-content {
+    padding: 0 20px 20px!important;
+  }
+  .c7n-collapse-content-box {
+    padding: 0!important;
+  }
+}
+.unit-left-container {
+  display         : flex;
+  flex-direction  : column;
+  margin-right    : 10px;
+  background-color: #fff;
+  width           : 220px;
+  overflow        : hidden;
+  transition: width 0.3s;
+
+  &.shadow {
+    box-shadow: rgba(0, 0, 0, 0.133) 0 0.6px 1.6px 0, rgba(0, 0, 0, 0.11) 0 0.3px 0.9px 0;
+  }
+
+  .c7n-tree-treenode {
+    width: 100%;
+  }
+
+  .c7n-collapse {
+    overflow: auto;
+    height  : 100%;
+  }
+  &:not(.not-fill-parent) {
+
+    .ant-spin-nested-loading,
+    .ant-spin-container,
+    .c7n-spin-nested-loading,
+    .ant-spin-nested-loading {
+      overflow: auto;
+      height  : 100%;
+    }
+  }
+}
+
+.vertical-divide {
+  width           : 3px;
+  height          : calc(100% + 20px);
+  padding-left    : 2px;
+  padding-right   : 2px;
+  background-image: linear-gradient(90deg, #fff 1px, #e8e8e8 1.5px, #fff 2px);
+  position        : relative;
+  transition      : none;
+
+  &.movable {
+    cursor: col-resize;
+  }
+
+  .icon {
+    position: absolute;
+    z-index : 1;
+    color   : rgba(0, 0, 0, 0.08);
+  }
+
+  .icon-baseline-arrow_left {
+    left      : -16px;
+    text-align: right;
+  }
+
+  .icon-baseline-arrow_right {
+    right: -16px;
+  }
+}
+
+.menu-tree-container-header {
+  text-align   : left;
+  font-weight  : 600;
+  padding-left : 12px;
+  background   : #fff;
+  line-height  : 42px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.menu-tree-container-body {
+  flex          : 1 1;
+  overflow      : auto;
+  padding-top   : 16px;
+  padding-left  : 16px;
+  padding-bottom: 16px;
+  position      : relative;
+
+  .c7n-tree {
+    padding-right: 16px;
+  }
+}
+
+.unit-right-container {
+  background-color: #fff;
+  flex            : 1 1;
+  overflow        : auto;
+  position        : relative;
+
+  &.shadow {
+    box-shadow: rgba(0, 0, 0, 0.133) 0 0.6px 1.6px 0, rgba(0, 0, 0, 0.11) 0 0.3px 0.9px 0;
+  }
+
+  // 子单据使用该样式覆盖unit-right-container
+  &.unit-new {
+    padding : 16px 20px 0 16px;
+    overflow: hidden;
+
+    .unit-detail-title {
+      display        : flex;
+      justify-content: space-between;
+      align-items    : center;
+      margin-bottom  : 16px;
+
+      &>span {
+        font-size  : 16px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .unit-column-field-code {
+    line-height: 18px;
+    font-size  : 12px;
+
+    .field-name,
+    .field-code {
+      display      : block;
+      text-overflow: ellipsis;
+      overflow     : hidden;
+      white-space  : nowrap;
+      word-break   : keep-all;
+    }
+
+    .field-name {
+      color: #000;
+    }
+
+    .field-code {
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .platform-list-title {
+    line-height : 24px;
+    font-weight : 600;
+    padding-top : 16px;
+    padding-left: 16px;
+    font-size   : 16px;
+  }
+
+  .right-box-area {
+    padding      : 16px 16px 20px;
+
+    .c7n-tag {
+      border     : none;
+      line-height: 18px;
+      height     : 18px;
+
+      &.c7n-tag-gray {
+        color           : rgba(0, 0, 0, 0.65);
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+
+  .right-box-divider {
+    background-color: #f5f5f5 !important;
+    height          : 12px;
+  }
+
+  .no-data {
+    text-align : center;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .c7n-tabs {
+    height: 100%;
+  }
+
+  .c7n-tabs-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height    : calc(100% - 57px);
+  }
+}
+
+.cust-type-tag {
+  height     : 16px;
+  line-height: 16px;
+  font-size  : 10px;
+  border     : none;
+  font-weight: 400;
+}
+
+.unit-content-detail {
+  padding : 0 !important;
+  overflow: hidden !important;
+}
+
+div.row-button {
+  margin-top: 20px;
+
+  &>* {
+    margin-right: 8px;
+  }
+}
+
+// 条件配置组件样式
+
+.customize-condition-line-title {
+  width           : 100%;
+  padding         : 0 10px;
+  background-color: #f5f5f5;
+
+  table {
+    width       : 100%;
+    table-layout: fixed;
+  }
+
+  thead td {
+    padding: 2px 1px;
+    height: 0.26rem;
+    line-height: 0.24rem;
+    font-weight: 600;
+    border-top: 0.01rem solid #e5e7ec;
+    border-bottom: 0.01rem solid #e5e7ec;
+  }
+
+  td.control {
+    width: 36px;
+  }
+
+}
+
+.customize-condition-line-editor {
+  width        : 100%;
+  max-height       : 245px;
+  padding-left : 10px;
+  padding-right: 10px;
+  margin-bottom: 32px;
+  overflow-y   : auto;
+  overflow-x   : hidden;
+
+  .c7n-pro-output-wrapper {
+    height     : 32px;
+    line-height: 32px;
+  }
+
+  .c7n-pro-field-wrapper {
+    padding-left: 0 !important;
+  }
+
+  td > .c7n-pro-field-wrapper {
+    padding: 4px 8px 4px 0!important;
+    line-height: 28px;
+    input:not(.c7n-pro-select-multiple-value) {
+      height: 28px;
+    }
+
+    input.c7n-pro-select-multiple-value + label .c7n-pro-select {
+      height: 28px;
+      min-height: 28px;
+    }
+  }
+
+  td.control {
+    text-align    : right;
+    width         : 36px;
+    i.icon {
+      font-size: 16px;
+      color: #868D9C;
+    }
+    i.icon:hover {
+      color: #00B8CC;
+    }
+    .c7n-pro-field-wrapper {
+      line-height   : 32px;
+    }
+  }
+
+  .c7n-pro-output>span {
+    height: 31px;
+  }
+
+  tbody > tr {
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.with-prefix-title {
+  font-size    : 14px;
+  font-weight  : 600;
+  line-height  : 22px;
+  height       : 22px;
+  margin-bottom: 16px;
+  display      : flex;
+  align-items  : center;
+
+  &::before {
+    content         : '';
+    display         : inline-block;
+    width           : 3px;
+    height          : 12px;
+    margin-right    : 8px;
+    background-color: @primary-color;
+  }
+
+  &.has-margin-top {
+    margin-top: 32px;
+  }
+}
+
+.with-prefix-title-help {
+  color        : rgba(0, 0, 0, 0.45);
+  font-size    : 12px;
+  font-weight  : 400;
+  line-height  : 18px;
+  height       : 18px;
+  // 抵消标题的下边距
+  margin-top   : -10px;
+  margin-bottom: 12px;
+  display      : flex;
+  align-items  : center;
+}
+
+.combine-field-wrapper {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+}
+
+.more-field-config-list {
+  cursor: pointer;
+}
+
+.c7n-pro-table-cell-render-editor>span {
+  height     : 0.26rem;
+  line-height: 0.25rem;
+
+  label>input {
+    line-height: 0.28rem;
+    height     : 0.28rem;
+  }
+}
+
+.compute-modal-container {
+  .ant-tabs-content {
+    padding-left : 6px !important;
+    padding-top  : 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .c7n-input-label-wrapper .c7n-input-label {
+    color: #999;
+  }
+}
+
+.blank-area {
+  display         : flex;
+  flex-direction  : column;
+  height          : 100%;
+  justify-content : center;
+  align-items     : center;
+  background-color: #fff;
+
+  :global {
+    .blank-pic {
+      background     : url('../assets/customize_config.svg') center no-repeat;
+      background-size: contain;
+      height         : 200px;
+      width          : 250px;
+      margin-top     : -90px;
+      margin-bottom  : 32px;
+    }
+
+    .blank-desc {
+      font-size    : 20px;
+      font-weight  : 900;
+      margin-bottom: 8px;
+    }
+
+    .blank-desc-supply {
+      font-size: 14px;
+    }
+  }
+}
+
+.no-data-block {
+  font-size       : 12px;
+  color           : rgba(0, 0, 0, 0.65);
+  width           : 100%;
+  line-height     : 92px;
+  z-index         : 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align      : center;
+}
+
+.tree-node-title {
+  padding-right: 20px;
+  position     : relative;
+  display      : block;
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+
+  &.no-padding-r {
+    padding-right: 0;
+  }
+
+  &-icon {
+    display: none;
+    position: absolute;
+    top: 5px;
+  }
+
+  &:hover {
+    .tree-node-title-icon {
+      display       : inline-block;
+      font-size     : 12px;
+      vertical-align: baseline;
+    }
+  }
+}
+
+.copy-field-modal {
+  :global {
+    .c7n-pro-modal-body {
+      padding: 0 !important;
+    }
+  }
+
+  .modal-content {
+    display   : flex;
+    min-height: 500px;
+
+    &-left {
+      padding: 16px;
+      flex   : 1 2;
+    }
+
+    &-right {
+      padding: 16px;
+      flex   : 1 2;
+    }
+
+    &-center {
+      position    : relative;
+      width       : 50px;
+      padding     : 0 8px;
+      border-left : 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+
+      &>div {
+        position       : absolute;
+        left           : 50%;
+        top            : 50%;
+        transform      : translate(-50%, -50%);
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-around;
+
+        &>span {
+          margin-left: 0 !important;
+        }
+      }
+
+      button {
+        margin    : 0 !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.tree-unit-name {
+  height       : 18px;
+  font-size    : 12px;
+  color        : #000;
+  line-height  : 18px;
+  margin-bottom: 4px;
+
+  .c7n-tag {
+    height     : 18px;
+    line-height: 18px;
+  }
+}
+
+.tree-unit-code {
+  height     : 18px;
+  font-size  : 12px;
+  color      : rgba(0, 0, 0, 0.45);
+  line-height: 18px;
+}
+
+.modal-max-height .c7n-pro-modal-body {
+  max-height: calc(100vh - 3rem);
+}
+
+.field-below-box {
+  float: left;
+  margin-top: -16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  & > span {
+    color: #EA6145;
+    margin-right: 4px;
+  }
+}
+
+.menu-search-wrap {
+  padding: 8px 0;
+  margin: 0!important;
+}

@@ -1,0 +1,228 @@
+@import '~hzero-front/lib/srm-variables';
+// 调查表样式
+.investigation-tabs {
+  margin: -16px;
+  :global {
+    .c7n-tabs-content {
+      padding: 16px !important;
+      .c7n-tabs-tabpane {
+        .c7n-pro-form {
+          max-height: calc(100vh - 295px);
+        }
+      }
+    }
+    .c7n-tabs-extra-content {
+      order: -1;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+  &-extra {
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    &-title {
+      font-size: 14px;
+      color: #000;
+      line-height: 22px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    &-help {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 18px;
+      font-weight: 400;
+    }
+  }
+  // &-config-name {
+  //   font-size: 14px;
+  //   color: rgba(0, 0, 0, 0.85);
+  //   line-height: 24px;
+  //   font-weight: 500;
+  //   margin-bottom: 16px;
+  //   &:before {
+  //     content: '';
+  //     display: inline-block;
+  //     width: 3px;
+  //     height: 12px;
+  //     background-color: @primary-color;
+  //     pointer-events: none;
+  //     margin-right: 8px;
+  //   }
+  // }
+}
+
+.investigation-tabs > div:first-child {
+  max-height: calc(100vh - 223px) !important;
+  padding-top: 0 !important;
+}
+.attachment-wrap {
+  padding: 0;
+  font-weight: 400;
+}
+
+// 地址信息- 省市区table列样式
+.region-td {
+  :global {
+    .c7n-pro-input-group {
+      margin-top: -4px;
+    }
+    .c7n-pro-table-cell-inner {
+      .c7n-pro-input-wrapper.c7n-pro-input-readonly {
+        .c7n-pro-input {
+          height: 0.26rem;
+          line-height: 0.26rem;
+        }
+      }
+    }
+    .c7n-pro-table-cell-inner-invalid {
+      .c7n-pro-input {
+        background-color: #fcebeb;
+        border-color: #f56349;
+      }
+    }
+  }
+}
+
+.investigation-tabs-container > div:first-child {
+  max-height: calc(100vh - 152px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
+  min-width: 180px;
+  // max-width: 220px;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  :global {
+    .c7n-tabs-nav-container {
+      .c7n-tabs-nav {
+        .c7n-tabs-tab {
+          // height: 42px;
+          // margin-bottom: 16px;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.investigation-tabs-container {
+  :global {
+    .c7n-tabs-content {
+      padding-left: 20px !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .c7n-pro-form {
+        overflow-y: scroll;
+        max-height: calc(100vh - 210px);
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        &::-webkit-scrollbar {
+          width: 0 !important;
+        }
+      }
+      & > .c7n-tabs-tabpane {
+        & > .c7n-spin-nested-loading {
+          & > .c7n-spin-container {
+            & > .c7n-pro-form {
+              padding-top: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.investigation-tab-alert-error {
+  background-color: @red-1;
+  color: @red-6;
+}
+
+.investigation-tab-alert-info {
+  background-color: @blue-1;
+  color: @blue-6;
+}
+
+// 调查表弹窗样式
+.investigation-tabs-inner-modal > div:first-child {
+  max-height: calc(100vh - 112px);
+  height: calc(100vh - 112px);
+}
+
+// 明细对比样式
+.investig-compare-tabs-wrap {
+  :global {
+    .c7n-tabs.c7n-tabs-left {
+      .c7n-tabs-bar {
+        padding: 20px 0;
+        min-width: 180px;
+        max-width: 220px;
+      }
+    }
+    .c7n-tabs-content {
+      padding: 0 !important;
+      .compare-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 214px);
+        .compare-header {
+          flex-shrink: 0;
+          display: flex;
+          height: 50px;
+          align-items: center;
+          border-bottom: 1px solid #e5e7ec;
+          & > div {
+            width: 50%;
+            font-size: 14px;
+            padding-left: 20px;
+          }
+          & > div:first-child {
+            color: #179454;
+          }
+          & > div:last-child {
+            color: #e64322;
+          }
+        }
+        .compare-content {
+          flex: auto;
+          display: flex;
+          overflow-y: scroll;
+          -ms-overflow-style: none;
+          overflow: -moz-scrollbars-none;
+          &::-webkit-scrollbar {
+            width: 0 !important;
+          }
+          & > div {
+            width: 50%;
+          }
+          .compare-content-detail {
+            min-height: 100%;
+            padding-right: 20px;
+            border-right: 1px solid #e5e7ec;
+          }
+          .compare-content-title {
+            font-size: 16px;
+            color: #1d2129;
+            font-weight: 600;
+            padding: 16px 20px;
+          }
+          .c7n-pro-form {
+            margin: 0 !important;
+            padding: 0 20px 20px !important;
+            overflow: auto !important;
+            max-height: inherit !important;
+          }
+          .c7n-pro-table-wrapper {
+            padding: 0 0 0 20px;
+          }
+        }
+      }
+    }
+  }
+}

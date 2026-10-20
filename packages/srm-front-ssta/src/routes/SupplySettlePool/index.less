@@ -1,0 +1,55 @@
+:global {
+  .settle-anchor {
+    height: 12px;
+    width: 55px;
+    background-color: #d8d6d6;
+    cursor: pointer;
+    border-radius: 25px 25px 0 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin-top: 12px;
+    :global {
+      .settle-anchor-icon {
+        font-size: 6px;
+        color: #000;
+      }
+    }
+  }
+  .settle-anchor-wrapper {
+    right: 0;
+    position: absolute;
+    // bottom: 0;
+  }
+  .no-wrapper {
+    right: 0;
+    position: fixed;
+    bottom: 0;
+  }
+  .c7n-customer-advanced-query-bar {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    background-color: #fff;
+    z-index: 999;
+    padding-bottom: 20px;
+  }
+  .c7n-pro-table-filter-select-wrapper {
+    z-index: 999;
+    background-color: #fff;
+    padding-bottom: 10px;
+    position: sticky;
+    padding-top: 6px;
+    top: 61px;
+  }
+  .settle-pool-tabs {
+    position: sticky;
+    bottom: 0;
+    // padding-top: 10px;
+    background-color: #fff;
+    z-index: 999;
+    // padding-bottom: 20px;
+  }
+}

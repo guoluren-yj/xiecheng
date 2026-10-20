@@ -1,0 +1,161 @@
+/*!
+    style - 寻源大厅-RFx明细
+    @author LC <chao.li03@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+
+.page-content {
+  :global {
+    .ant-calendar-picker {
+      width: 100%;
+    }
+    .ant-col-24 {
+      & .ant-col-22 {
+        width: 90.6%;
+      }
+      & .ant-col-2 {
+        width: 9.4%;
+      }
+      & .ant-col-3 {
+        width: 13.9%;
+      }
+      & .ant-col-21 {
+        width: 86.1%;
+      }
+      & .ant-col-offset-3 {
+        margin-left: 13.9%;
+      }
+    }
+  }
+}
+.col-wrapper {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+  }
+}
+
+.qualificationWrap {
+  // margin-bottom: 8px;
+  flex: 1;
+  :global {
+    .upload {
+      position: relative;
+      .ant-tag {
+        position: absolute;
+        z-index: 99;
+        left: 80px;
+        top: 4px;
+      }
+    }
+    .page-content-wrap {
+      height: calc(100% - 48px);
+      .page-content {
+        margin: 8px;
+        height: calc(100% - 16px) !important;
+      }
+    }
+  }
+}
+
+/*!
+    style - 寻源大厅-RFx明细--基本信息
+    @author LC <chao.li03@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2019, Hand
+*/
+.inquiry-hall-basic-info-form {
+  :global {
+    div.ant-row.items-row {
+      border-bottom: 1px #dcdcdc dashed;
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      .item-label {
+        color: #999;
+        font-weight: bold;
+        text-align: left;
+      }
+      .item-label::after {
+        content: ':';
+        margin: 0 8px 0 2px;
+      }
+      .remark-context {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.itemList {
+  width: 98%;
+  min-width: 890px;
+  height: 96px;
+  padding: 13px 0 13px 16px;
+  .itemListImg {
+    float: left;
+    width: 8%;
+    height: 70px;
+  }
+  .itemListHeaderInfo {
+    float: left;
+    margin-right: 10px;
+    height: 70px;
+    width: 90%;
+    .itemListHeader {
+      width: 100%;
+      margin-bottom: 12px;
+      .itemListNum {
+        float: left;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        /* width: 158px; */
+        margin-right: 8px;
+        max-width: 300px;
+      }
+      .itemListTag {
+        float: right;
+      }
+    }
+    .itemListDes {
+      height: 28px;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .itemListDesItem {
+      margin: 0 2px;
+    }
+  }
+}
+
+.pagination {
+  margin: 16px 0;
+  float: right;
+  z-index: 3;
+}
+
+.explainStyle {
+  :global {
+    .ant-form-explain {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.editable-form-height {
+  margin-bottom: 0 !important;
+  :global {
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+}

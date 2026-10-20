@@ -1,0 +1,153 @@
+.level-define-level-panel {
+  margin-bottom: 18px;
+  .level-panel-tips {
+    font-size: 12px;
+    color: #4e5769;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.level-define-chart-panel {
+  display: flex;
+  margin-top: 24px;
+}
+
+.level-define-item-panel {
+  color: red;
+  margin-top: 24px;
+}
+
+.level-define-table-row {
+  line-height: 32px;
+  border-top: 1px #333 solid;
+}
+
+.level-define-table-col {
+  border-left: 1px #333 solid;
+  padding: 0 20px;
+}
+
+.risk-low-level-tag {
+  background: rgba(71, 184, 131, 0.15);
+  border-radius: 2px;
+  color: #179454;
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.risk-middle-level-tag {
+  font-weight: 600;
+  color: #f06200;
+  background: rgba(242, 128, 26, 0.15);
+  border-radius: 2px;
+  padding: 1px 4px;
+}
+
+.risk-high-level-tag {
+  font-weight: 600;
+  color: #e64322;
+  background: rgba(242, 85, 53, 0.15);
+  border-radius: 2px;
+  padding: 1px 4px;
+}
+
+.level-define-card-panel-str {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.level-define-card-list {
+  height: calc(100vh - 126px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 8px;
+}
+
+.level-define-card-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.level-define-card-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.level-define-card-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+.level-define-card-panel {
+  padding: 20px;
+  margin: 8px 8px 0 8px;
+  background: #fff;
+}
+
+.level-define-card-panel:first-child {
+  margin-top: 0;
+}
+
+.level-define-card-title {
+  font-size: 16px;
+  color: #1d2129;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.level-define-card-second-level {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+
+  .card-second-title {
+    font-size: 14px;
+    color: #1d2129;
+    line-height: 22px;
+    font-weight: 500;
+    border-left: 3px solid #00b8cc;
+    padding-left: 8px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-second-btn-group {
+    margin-left: 16px;
+    font-size: 14px;
+    a {
+      margin-right: 16px;
+    }
+  }
+}
+
+.level-third-panel {
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-level-item {
+  height: 40px;
+  background: #f2f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(23.5% + 7.5px);
+  margin: 4px 8px 4px 0;
+  padding: 0 12px;
+}
+
+.card-level-item-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 8px;
+}
+
+.card-level-item:nth-child(4n) {
+  margin-right: 0;
+}

@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Upload List handle error 1`] = `
+<span
+  class=""
+>
+  <div
+    class="c7n-upload c7n-upload-select c7n-upload-select-text"
+  >
+    <span
+      class="c7n-upload"
+      role="button"
+      tabindex="0"
+    >
+      <input
+        accept=""
+        style="display: none;"
+        type="file"
+      />
+      <button
+        type="button"
+      >
+        upload
+      </button>
+    </span>
+  </div>
+  <div
+    class="c7n-upload-list c7n-upload-list-text"
+  >
+    <div
+      class="c7n-upload-list-item c7n-upload-list-item-error"
+    >
+      <div
+        class="c7n-upload-list-item-info"
+      >
+        <span>
+          <i
+            class="icon icon-attach_file"
+          />
+          <span
+            class="c7n-upload-list-item-name"
+            title="foo.png"
+          >
+            foo.png
+          </span>
+        </span>
+      </div>
+      <i
+        class="icon icon-close"
+        title="Remove file"
+      />
+      <div
+        class="c7n-upload-list-item-progress fade-leave"
+      >
+        <div
+          class="c7n-progress c7n-progress-line c7n-progress-status-normal c7n-progress-default"
+        >
+          <div>
+            <div
+              class="c7n-progress-outer"
+            >
+              <div
+                class="c7n-progress-inner"
+              >
+                <div
+                  class="c7n-progress-bg"
+                  style="width: 0%; height: 2px;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Upload List should be uploading when upload a file 1`] = `
+<span
+  class=""
+>
+  <div
+    class="c7n-upload c7n-upload-select c7n-upload-select-text"
+  >
+    <span
+      class="c7n-upload"
+      role="button"
+      tabindex="0"
+    >
+      <input
+        accept=""
+        style="display: none;"
+        type="file"
+      />
+      <button
+        type="button"
+      >
+        upload
+      </button>
+    </span>
+  </div>
+  <div
+    class="c7n-upload-list c7n-upload-list-text"
+  >
+    <div
+      class="c7n-upload-list-item c7n-upload-list-item-uploading c7n-upload-animate-enter"
+    >
+      <div
+        class="c7n-upload-list-item-info"
+      >
+        <span>
+          <i
+            class="icon icon-loading"
+          />
+          <span
+            class="c7n-upload-list-item-name"
+            title="foo.png"
+          >
+            foo.png
+          </span>
+        </span>
+      </div>
+      <i
+        class="icon icon-close"
+        title="Remove file"
+      />
+      <div
+        class="c7n-upload-list-item-progress"
+      >
+        <div
+          class="c7n-progress c7n-progress-line c7n-progress-status-normal c7n-progress-default"
+        >
+          <div>
+            <div
+              class="c7n-progress-outer"
+            >
+              <div
+                class="c7n-progress-inner"
+              >
+                <div
+                  class="c7n-progress-bg"
+                  style="width: 0%; height: 2px;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Upload List should be uploading when upload a file 2`] = `
+<span
+  class=""
+>
+  <div
+    class="c7n-upload c7n-upload-select c7n-upload-select-text"
+  >
+    <span
+      class="c7n-upload"
+      role="button"
+      tabindex="0"
+    >
+      <input
+        accept=""
+        style="display: none;"
+        type="file"
+      />
+      <button
+        type="button"
+      >
+        upload
+      </button>
+    </span>
+  </div>
+  <div
+    class="c7n-upload-list c7n-upload-list-text"
+  >
+    <div
+      class="c7n-upload-list-item c7n-upload-list-item-done"
+    >
+      <div
+        class="c7n-upload-list-item-info"
+      >
+        <span>
+          <i
+            class="icon icon-attach_file"
+          />
+          <span
+            class="c7n-upload-list-item-name"
+            title="foo.png"
+          >
+            foo.png
+          </span>
+        </span>
+      </div>
+      <i
+        class="icon icon-close"
+        title="Remove file"
+      />
+      <div
+        class="c7n-upload-list-item-progress fade-leave"
+      >
+        <div
+          class="c7n-progress c7n-progress-line c7n-progress-status-normal c7n-progress-default"
+        >
+          <div>
+            <div
+              class="c7n-progress-outer"
+            >
+              <div
+                class="c7n-progress-inner"
+              >
+                <div
+                  class="c7n-progress-bg"
+                  style="width: 0%; height: 2px;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Upload List should non-image format file preview 1`] = `
+<span
+  class=""
+>
+  <div
+    class="c7n-upload c7n-upload-select c7n-upload-select-picture"
+  >
+    <span
+      class="c7n-upload"
+      role="button"
+      tabindex="0"
+    >
+      <input
+        accept=""
+        style="display: none;"
+        type="file"
+      />
+      <button
+        type="button"
+      >
+        upload
+      </button>
+    </span>
+  </div>
+  <div
+    class="c7n-upload-list c7n-upload-list-picture"
+  >
+    <div
+      class="c7n-upload-list-item c7n-upload-list-item-removed"
+    >
+      <div
+        class="c7n-upload-list-item-info"
+      >
+        <span>
+          <a
+            class="c7n-upload-list-item-thumbnail"
+            href="https://cdn.xxx.com/aaa.zip"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i
+              class="icon icon-file"
+              style="font-size: 48px; color: rgba(0, 0, 0, 0.5);"
+            />
+          </a>
+          <a
+            class="c7n-upload-list-item-name"
+            href="https://cdn.xxx.com/aaa.zip"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="xxx.png"
+          >
+            xxx.png
+          </a>
+        </span>
+      </div>
+      <i
+        class="icon icon-close"
+        title="Remove file"
+      />
+    </div>
+  </div>
+</span>
+`;

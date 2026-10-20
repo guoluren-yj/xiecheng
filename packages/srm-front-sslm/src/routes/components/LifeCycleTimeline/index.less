@@ -1,0 +1,95 @@
+// 生命周期
+.life-cycle-wrap-one {
+  padding: 16px 0 20px;
+  :global {
+    .life-cycle-wrap-two {
+      background: #f7f8fa;
+      border-radius: 2px;
+      padding: 24px 60px;
+      // 生命周期内部小卡片
+      .life-cycle-container {
+        height: 120px;
+        overflow: hidden;
+        .life-cycle-card {
+          display: flex;
+          align-items: center;
+          overflow-y: hidden;
+          overflow-x: scroll;
+          height: 130px;
+          padding: 0 4px;
+          &-divider {
+            width: 120px;
+            height: 1px;
+            flex-shrink: 0;
+            background: #c9cdd4;
+            &:first-child {
+              display: none;
+            }
+          }
+          &-wrap {
+            width: 240px;
+            flex-shrink: 0;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 4px 8px 0 rgba(0, 0, 0, 0.06);
+          }
+          &-content {
+            padding: 12px;
+            &-head {
+              display: flex;
+              color: #868d9c;
+              padding-bottom: 6px;
+              border-bottom: dashed 1px #e5e7ec;
+              &-left {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                .icon {
+                  font-size: 14px;
+                  margin-right: 8px;
+                }
+              }
+              &-right {
+                display: flex;
+                color: #4e5769;
+                align-items: center;
+                .ife-cycle-stage {
+                  display: inline-block;
+                  max-width: 48px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+                svg {
+                  margin: 0 6px;
+                }
+              }
+            }
+            &-footer {
+              color: #4e5769;
+              div {
+                display: flex;
+                margin: 8px 0;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+                span {
+                  &:first-child {
+                    margin-right: 8px;
+                  }
+                  &:last-child {
+                    width: 182px;
+                    color: #1d2129;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

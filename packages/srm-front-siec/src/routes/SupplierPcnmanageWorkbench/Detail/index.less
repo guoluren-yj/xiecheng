@@ -1,0 +1,128 @@
+.order-top {
+  &-title {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    border: #dcf3d1;
+    background: #edf9e8;
+    line-height: 32px;
+
+    & span {
+      background: ~"url('hzero-front/lib/assets/icon-tips.svg')" no-repeat;
+      margin: 0 8px 0 12px;
+      width: 16px;
+      height: 16px;
+      line-height: 32px;
+      display: inline-flex;
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+.siec-new-detail-content {
+  :global {
+    // overflow-y: auto;
+    // padding: 0 20px;
+    margin: 8px;
+    background-color: #fff;
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+    .notice-content {
+      margin: 8px 16px 0 16px;
+      padding: 16px;
+      background-color: #fff;
+    }
+
+    :not(:last-child) {
+      .notice-content {
+        margin-bottom: 0;
+      }
+    }
+
+    .c7n-collapse {
+      & > .c7n-collapse-item {
+        padding: 0 20px;
+        & > .c7n-collapse-header {
+          padding: 20px 0;
+          font-size: 16px;
+          font-weight: 600;
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            display: inline-block;
+          }
+        }
+        & > .c7n-collapse-content {
+          padding: 0 0 20px 0;
+          & > .c7n-collapse-content-box {
+            padding: 0;
+            .c7n-pro-form-float-label {
+              padding-top: 4px;
+            }
+          }
+        }
+        &:not(:last-child) {
+          position: relative;
+          padding-bottom: 8px;
+          // 明细页面模块下的分割灰色线条 TODO
+          &::after {
+            content: '';
+            bottom: 0;
+            height: 8px;
+            left: -20px;
+            right: -20px;
+            position: absolute;
+            background-color: #f4f5f7;
+          }
+        }
+      }
+      & > .c7n-collapse-item-active {
+        & > .c7n-collapse-header {
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    .detail-list {
+      tr.ant-table-row {
+        td.status {
+          img {
+            height: 16px;
+            width: 12px;
+            min-width: 12px;
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+    .right-table {
+      width: 58.34%;
+      position: relative;
+      margin-left: 12px;
+      .arrow {
+        width: 48px;
+        height: 26px;
+        position: absolute;
+        left: -31px;
+        top: 66px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.form-info {
+  // width: 75%;
+  :global {
+    .c7n-pro-field-wrapper {
+      // margin-right: 16px !important;
+      .c7n-pro-input-group-before {
+        width: 35% !important;
+        padding: 0 !important;
+        border: none !important;
+      }
+    }
+  }
+}

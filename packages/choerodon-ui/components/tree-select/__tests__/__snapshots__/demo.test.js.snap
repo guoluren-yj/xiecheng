@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/tree-select/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-border c7n-select-enabled c7n-select-allow-clear"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection__placeholder"
+      >
+        Please select
+      </div>
+      <span
+        class="c7n-select-selection-selected-value"
+      />
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+  </div>
+  <div
+    class="c7n-select-underline"
+  >
+    <span
+      class="c7n-select-ripple"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tree-select/demo/checkable.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-border c7n-select-has-value c7n-select-multiple c7n-select-enabled"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--multiple"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <ul>
+        <li
+          class="c7n-select-selection__choice"
+          style="user-select:none;-webkit-user-select:none"
+          title="Node1"
+          unselectable="unselectable"
+        >
+          <span
+            class="c7n-select-selection__choice__remove"
+          >
+            <i
+              class="icon icon-cancel"
+            />
+          </span>
+          <span
+            class="c7n-select-selection__choice__content"
+          >
+            Node1
+          </span>
+        </li>
+        <li
+          class="c7n-select-search c7n-select-search--inline"
+        >
+          <span
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              class="c7n-select-search__field"
+              role="textbox"
+              value=""
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+               
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      class="c7n-select-search__field__placeholder"
+      style="display:none"
+    >
+      Please select
+    </span>
+  </div>
+  <div
+    class="c7n-select-underline"
+  >
+    <span
+      class="c7n-select-ripple"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tree-select/demo/multiple.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-border c7n-select-multiple c7n-select-enabled c7n-select-allow-clear"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--multiple"
+    role="combobox"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <ul>
+        <li
+          class="c7n-select-search c7n-select-search--inline"
+        >
+          <span
+            class="c7n-select-search__field__wrap"
+          >
+            <input
+              class="c7n-select-search__field"
+              role="textbox"
+              value=""
+            />
+            <span
+              class="c7n-select-search__field__mirror"
+            >
+               
+            </span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <span
+      class="c7n-select-search__field__placeholder"
+      style="display:block"
+    >
+      Please select
+    </span>
+  </div>
+  <div
+    class="c7n-select-underline"
+  >
+    <span
+      class="c7n-select-ripple"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders ./components/tree-select/demo/treeData.md correctly 1`] = `
+<div
+  class="c7n-select c7n-select-has-border c7n-select-enabled"
+  style="width:300px"
+>
+  <div
+    aria-autocomplete="list"
+    aria-haspopup="true"
+    class="c7n-select-selection
+            c7n-select-selection--single"
+    role="combobox"
+    tabindex="0"
+  >
+    <div
+      class="c7n-select-selection__rendered"
+    >
+      <div
+        class="c7n-select-selection__placeholder"
+      >
+        Please select
+      </div>
+      <span
+        class="c7n-select-selection-selected-value"
+      />
+      <span
+        class="c7n-select-arrow"
+        style="user-select:none;-webkit-user-select:none"
+        unselectable="unselectable"
+      >
+        <i
+          class="icon icon-arrow_drop_down"
+        />
+        <b />
+      </span>
+    </div>
+  </div>
+  <div
+    class="c7n-select-underline"
+  >
+    <span
+      class="c7n-select-ripple"
+    />
+  </div>
+</div>
+`;

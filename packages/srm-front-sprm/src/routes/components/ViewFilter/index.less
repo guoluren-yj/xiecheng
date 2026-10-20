@@ -1,0 +1,29 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.view-search {
+  display: inline-block;
+  :global {
+    .change-table {
+      display: inline-block;
+      text-align: center;
+      line-height: 22px;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .active {
+      display: inline-block;
+      text-align: center;
+      line-height: 22px;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      background-color: rgba(0, 0, 0, 0.08);
+      .icon {
+        color: @primary-color;
+        font-size: 16px;
+      }
+    }
+  }
+}

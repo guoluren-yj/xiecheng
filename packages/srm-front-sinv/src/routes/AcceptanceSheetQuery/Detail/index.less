@@ -1,0 +1,30 @@
+/*
+ * style - 订单审批详情
+ * @date: 2018/11/13 16:28:37
+ * @author: FQL <qilin.feng@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2018, Hand
+ */
+.detail-form {
+  :global {
+    .approve-header {
+      font-size: 14px;
+      height: 32px;
+      line-height: 32px;
+    }
+    .approve-option {
+      & .ant-form-item {
+        margin-bottom: 24px;
+      }
+      width: 50%;
+    }
+    .ant-pagination-options-size-changer,
+    .ant-select .ant-select-has-value,
+    .ant-select-enabled {
+      width: unset;
+    }
+  }
+}
+.textarea-bottom {
+  margin-bottom: 4px;
+}

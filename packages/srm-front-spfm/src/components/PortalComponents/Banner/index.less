@@ -1,0 +1,75 @@
+.portal-banner-container :global {
+  width: 100%;
+  height: 100%;
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .slick-slider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .c7n-carousel,
+  .slick-slider,
+  .slick-list,
+  .slick-slide > div {
+    width: 100%;
+    height: 100%;
+
+    .slick-arrow {
+      width: 0.4rem;
+      height: 0.68rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      line-height: 0.68rem;
+      font-size: 20px;
+      color: #fff;
+      overflow: hidden;
+      margin-top: -0.34rem;
+      z-index: 99;
+
+      &:focus {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      &.slick-prev {
+        left: 0;
+      }
+
+      &.slick-prev::before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '<';
+      }
+
+      &.slick-next {
+        right: 0;
+      }
+
+      &.slick-next::before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '>';
+      }
+    }
+
+    .banner-link {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      outline: none;
+      text-decoration: none;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

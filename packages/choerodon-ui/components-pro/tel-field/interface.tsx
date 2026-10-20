@@ -1,0 +1,3 @@
+export {
+  TelFieldProps,
+} from './TelField';

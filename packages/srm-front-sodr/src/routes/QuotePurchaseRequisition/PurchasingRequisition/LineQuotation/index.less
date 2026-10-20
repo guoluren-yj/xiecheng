@@ -1,0 +1,21 @@
+.row-agent-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  img {
+    height: 16px;
+    width: 12px;
+    min-width: 12px;
+    margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.rowSelectionAlign {
+  :global {
+    .ant-table-selection {
+      text-align: center;
+    }
+  }
+}

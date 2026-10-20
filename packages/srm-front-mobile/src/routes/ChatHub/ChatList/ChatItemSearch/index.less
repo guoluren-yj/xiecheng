@@ -1,0 +1,44 @@
+.chat-item-search {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7ec;
+  position: relative;
+
+  :global {
+    .c7n-pro-input-prefix {
+      left: 6px;
+    }
+
+    .c7n-pro-input {
+      padding-left: 30px !important;
+    }
+  }
+
+  .search-list {
+    padding: 8px 0;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.1s linear;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 54px;
+    left: 16px;
+    right: 16px;
+    max-height: 200px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 5px 14px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+
+    &.hide {
+      opacity: 0;
+      z-index: -999;
+      visibility: hidden;
+    }
+
+    .search-list-group {
+      padding: 8px 12px;
+      color: #868d9c;
+      font-weight: 400;
+    }
+  }
+}

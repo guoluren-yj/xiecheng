@@ -1,0 +1,79 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.portal-footer-container :global {
+  background: rgba(0, 0, 0, 0.04);
+  padding-top: 0.1rem;
+  position: relative;
+
+  .portal-footer-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .portal-footer-wrapper {
+    max-width: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .portal-footer-slide {
+      width: 25%;
+      height: auto;
+      padding: 0.32rem 0.24rem;
+
+      img {
+        width: 0.78rem;
+        margin-right: 0.15rem;
+      }
+    }
+  }
+
+  .portal-footer-remarks {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    line-height: 0.24rem;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ql-container.ql-snow {
+    border: none;
+
+    .ql-editor {
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        color: @text-color;
+        cursor: pointer;
+
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  .remarks-terms > a {
+    display: inline-block;
+    color: @text-color;
+    margin: 0 0.1rem;
+    position: relative;
+
+    &:first-of-type::after {
+      content: '';
+      position: absolute;
+      top: 0.07rem;
+      right: -0.1rem;
+      width: 0.01rem;
+      height: 0.1rem;
+      background-color: @text-color;
+    }
+  }
+}

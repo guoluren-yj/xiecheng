@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/spin/demo/basic.md correctly 1`] = `
+<div
+  class="c7n-spin c7n-spin-spinning"
+>
+  <div
+    class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-default c7n-spin-dot"
+  >
+    <div
+      class="c7n-progress-inner"
+    >
+      <svg
+        viewBox="0 0 50 50"
+      >
+        <circle
+          cx="25"
+          cy="25"
+          r="20"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/custom-indicator.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-spin c7n-spin-sm c7n-spin-spinning"
+  >
+    <span
+      class="custom-spin-dot c7n-spin-dot"
+    >
+      <i />
+      <i />
+      <i />
+      <i />
+    </span>
+  </div>
+  <div
+    class="c7n-spin c7n-spin-spinning"
+  >
+    <span
+      class="custom-spin-dot c7n-spin-dot"
+    >
+      <i />
+      <i />
+      <i />
+      <i />
+    </span>
+  </div>
+  <div
+    class="c7n-spin c7n-spin-lg c7n-spin-spinning"
+  >
+    <span
+      class="custom-spin-dot c7n-spin-dot"
+    >
+      <i />
+      <i />
+      <i />
+      <i />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/delayAndDebounce.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-alert c7n-alert-info c7n-alert-with-description c7n-alert-no-icon"
+      >
+        <span
+          class="c7n-alert-message"
+        >
+          Alert message title
+        </span>
+        <span
+          class="c7n-alert-description"
+        >
+          Further details about the context of this alert.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    style="margin-top:16px"
+  >
+    Loading state：
+    <span
+      class="c7n-switch"
+      tabindex="0"
+    >
+      <span
+        class="c7n-switch-inner"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/inside.md correctly 1`] = `
+<div
+  class="example"
+>
+  <div
+    class="c7n-spin c7n-spin-spinning"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-default c7n-spin-dot"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/nested.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-spin-nested-loading"
+  >
+    <div
+      class="c7n-spin-container"
+    >
+      <div
+        class="c7n-alert c7n-alert-info c7n-alert-with-description c7n-alert-no-icon"
+      >
+        <span
+          class="c7n-alert-message"
+        >
+          Alert message title
+        </span>
+        <span
+          class="c7n-alert-description"
+        >
+          Further details about the context of this alert.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    style="margin-top:16px"
+  >
+    Loading state：
+    <span
+      class="c7n-switch"
+      tabindex="0"
+    >
+      <span
+        class="c7n-switch-inner"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/size.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-spin c7n-spin-sm c7n-spin-spinning"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-small c7n-spin-dot"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-spin c7n-spin-spinning"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-default c7n-spin-dot"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-spin c7n-spin-lg c7n-spin-spinning"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-large c7n-spin-dot"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/spin/demo/tip.md correctly 1`] = `
+<div
+  class="c7n-spin-nested-loading"
+>
+  <div
+    class="c7n-spin c7n-spin-spinning c7n-spin-show-text"
+  >
+    <div
+      class="c7n-progress c7n-progress-loading c7n-progress-status-normal c7n-progress-show-info c7n-progress-default c7n-spin-dot"
+    >
+      <div
+        class="c7n-progress-inner"
+      >
+        <svg
+          viewBox="0 0 50 50"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="c7n-spin-text"
+    >
+      Loading...
+    </div>
+  </div>
+  <div
+    class="c7n-spin-container c7n-spin-blur"
+  >
+    <div
+      class="c7n-alert c7n-alert-info c7n-alert-with-description c7n-alert-no-icon"
+    >
+      <span
+        class="c7n-alert-message"
+      >
+        Alert message title
+      </span>
+      <span
+        class="c7n-alert-description"
+      >
+        Further details about the context of this alert.
+      </span>
+    </div>
+  </div>
+</div>
+`;

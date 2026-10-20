@@ -1,0 +1,1055 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/steps/demo/customized-progress-dot.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-label-vertical c7n-steps-dot"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        You can hover on the dot.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        You can hover on the dot.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        You can hover on the dot.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        You can hover on the dot.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/error.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-label-horizontal"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish c7n-steps-next-error"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-check"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-error"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-close"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Process
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/group.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal group-demo c7n-steps-label-horizontal"
+>
+  <div
+    class="c7n-steps c7n-steps-horizontal c7n-steps-group c7n-steps-label-horizontal"
+  >
+    <div
+      class="c7n-steps-header"
+    >
+      <i
+        class="icon icon-instance c7n-steps-header-icon"
+      />
+      <span
+        class="c7n-steps-header-title"
+      >
+        必填项
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-process"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          1
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          标题名称
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-wait"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          2
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          标题名称
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps c7n-steps-horizontal c7n-steps-group group-next c7n-steps-label-horizontal"
+  >
+    <div
+      class="c7n-steps-header"
+    >
+      <i
+        class="icon icon-mail_modal c7n-steps-header-icon"
+      />
+      <span
+        class="c7n-steps-header-title"
+      >
+        选填项
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-wait"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          3
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          标题名称
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-wait"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          4
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          标题名称
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/icon.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-label-horizontal"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish c7n-steps-item-custom"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <i
+          class="icon icon-person_outline"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Login
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish c7n-steps-item-custom"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <i
+          class="icon icon-panorama_vertical"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Verification
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process c7n-steps-item-custom"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <i
+          class="icon icon-schedule"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Pay
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait c7n-steps-item-custom"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <i
+          class="icon icon-tag_faces"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Done
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/progress-dot.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-label-vertical c7n-steps-dot"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        <span
+          class="c7n-steps-icon-dot"
+        />
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/simple.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-label-horizontal"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-check"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        2
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/small-size.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-horizontal c7n-steps-small c7n-steps-label-horizontal"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-check"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        2
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/step-next.md correctly 1`] = `
+<div>
+  <div
+    class="c7n-steps c7n-steps-horizontal c7n-steps-label-horizontal"
+  >
+    <div
+      class="c7n-steps-item c7n-steps-item-process"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          1
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          First
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-wait"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          2
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          Second
+        </div>
+      </div>
+    </div>
+    <div
+      class="c7n-steps-item c7n-steps-item-wait"
+    >
+      <div
+        class="c7n-steps-item-tail"
+      />
+      <div
+        class="c7n-steps-item-icon"
+      >
+        <span
+          class="c7n-steps-icon"
+        >
+          3
+        </span>
+      </div>
+      <div
+        class="c7n-steps-item-content"
+      >
+        <div
+          class="c7n-steps-item-title"
+        >
+          Last
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="steps-content"
+  >
+    First-content
+  </div>
+  <div
+    class="steps-action"
+  >
+    <button
+      class="c7n-btn c7n-btn-primary c7n-btn-flat"
+      type="button"
+    >
+      <span>
+        Next
+      </span>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/vertical.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-vertical"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-check"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        2
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders ./components/steps/demo/vertical-small.md correctly 1`] = `
+<div
+  class="c7n-steps c7n-steps-vertical c7n-steps-small"
+>
+  <div
+    class="c7n-steps-item c7n-steps-item-finish"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="icon icon-check"
+      />
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Finished
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-process"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        2
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        In Progress
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+  <div
+    class="c7n-steps-item c7n-steps-item-wait"
+  >
+    <div
+      class="c7n-steps-item-tail"
+    />
+    <div
+      class="c7n-steps-item-icon"
+    >
+      <span
+        class="c7n-steps-icon"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c7n-steps-item-content"
+    >
+      <div
+        class="c7n-steps-item-title"
+      >
+        Waiting
+      </div>
+      <div
+        class="c7n-steps-item-description"
+      >
+        This is a description.
+      </div>
+    </div>
+  </div>
+</div>
+`;

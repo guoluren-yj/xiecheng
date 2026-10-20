@@ -1,0 +1,221 @@
+.batch-authorization-wrapper {
+  display: flex;
+  height: 60vh;
+
+  .source-list {
+    padding: 16px;
+    width: 50%;
+
+    :global {
+      .c7n-list-bordered {
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+
+  .authorization-mode {
+    padding: 16px;
+    width: 50%;
+    overflow-y: auto;
+
+    .form-label {
+      margin-bottom: 21px;
+    }
+
+    .tenant-list-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .tenant-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 18px;
+        padding: 1px 3px 1px 9px;
+        margin: 4px;
+        background: rgba(231, 233, 245);
+
+        :global {
+          .icon-close {
+            margin-left: 4px;
+            font-size: 14px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .tenant-box:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.batch-authorization-wrapper {
+  // background-color: coral;
+  column-gap: 16px;
+
+  .source-list {
+    padding: 0;
+    height: 100%;
+
+    > h3 {
+      display: flex;
+      height: 32px;
+      padding-left: 16px;
+      background-color: #fafafa;
+      font-size: 12px;
+      color: #aaadba;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    > div {
+      height: calc(100% - 32px);
+      border-top: none;
+      border-bottom: none;
+      overflow-y: auto;
+    }
+
+    // :global{
+    //   .c7n-list-split .c7n-list-item:last-child {
+    //     border-bottom: 0.01rem solid #e8e8e8;
+    //   }
+    // }
+  }
+  .authorization-mode {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    border: 1px solid #f1f1f1;
+    overflow-y: hidden;
+    > h3 {
+      font-size: 14px;
+      color: #333435;
+      margin-bottom: 16px;
+    }
+    .form-label {
+      font-size: 14px;
+      color: #333435;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+    .tenant-list-wrapper {
+      flex-grow: 1;
+      margin-top: 16px;
+      overflow-y: hidden;
+      :global {
+        .header {
+          display: flex;
+          padding: 0 16px;
+          height: 33px;
+          width: 100%;
+          background-color: #fafafa;
+          font-size: 12px;
+          color: #aaadba;
+          align-items: center;
+          margin-bottom: 0;
+          > .name {
+            width: 45%;
+          }
+          > .code {
+            width: 45%;
+          }
+          > .operations {
+            width: 10%;
+          }
+        }
+        .body {
+          width: 100%;
+          height: calc(100% - 32px);
+          overflow-y: auto;
+
+          .empty-hint {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            color: #aaadba;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .objective-record {
+            height: 33px;
+            display: flex;
+            border-bottom: 1px solid #f1f1f1;
+            align-items: center;
+            &:last-child {
+              border-bottom-color: transparent;
+            }
+
+            > .name {
+              width: 45%;
+              padding-left: 16px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            > .code {
+              width: 45%;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            > .operations {
+              width: 10%;
+              // padding-left: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    :global {
+      .add-tenants {
+        margin-top: 24px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+          font-size: 14px;
+          color: #333435;
+        }
+
+        .add-button {
+          background-color: transparent !important;
+          border-color: transparent !important;
+          // color: #012492 !important;
+          color: #29bece !important;
+          height: auto;
+          padding: 0;
+
+          > span {
+            display: flex;
+            align-items: center;
+          }
+
+          .shape-cross {
+            display: inline-block;
+            background: #29bece;
+            height: 10px;
+            position: relative;
+            width: 2px;
+            margin-right: 8px;
+            &:after {
+              background: #29bece;
+              content: '';
+              height: 2px;
+              left: -4px;
+              position: absolute;
+              top: 4px;
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

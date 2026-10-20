@@ -1,0 +1,71 @@
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.config-object-async :global {
+  display: flex;
+  padding: 0.15rem;
+  height: calc(100% - 0.5rem);
+}
+
+.config-object-left :global {
+  width: 2.2rem;
+  background-color: #fff;
+  padding: 0.15rem 0.1rem;
+}
+
+.async-content :global {
+  flex: 1;
+  background-color: #fff;
+  margin-left: 0.15rem;
+  padding: 0.15rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .parent-form {
+    width: calc(100% - 1.2rem);
+    position: relative;
+    height: 0.5rem;
+  }
+
+  .c7n-tabs-top {
+    height: 100%;
+
+    .c7n-tabs-content {
+      height: calc(100% - 0.5rem);
+
+      .c7n-tabs-tabpane {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.async-group :global {
+  margin-top: 0.1rem;
+  height: calc(100% - 0.5rem);
+  overflow-y: auto;
+
+  div {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding: 0 0.1rem;
+    margin: 0.01rem 0;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .icon {
+      margin-right: 0.1rem;
+    }
+
+    &:hover {
+      background-color: @item-hover-bg;
+    }
+
+    &.active {
+      background-color: @item-active-bg;
+      color: @primary-color;
+    }
+  }
+}

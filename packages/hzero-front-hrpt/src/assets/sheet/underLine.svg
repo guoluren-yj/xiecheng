@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下划线</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-818.000000, -95.000000)">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(54.000000, 1.000000)">
+                        <g id="编组-31" transform="translate(296.000000, 0.000000)">
+                            <g id="下划线" transform="translate(248.000000, 4.000000)">
+                                <rect id="Rectangle复制-20" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="26" height="26"></rect>
+                                <path d="M15,14.109589 L15,15 L5,15 L5,14.109589 L15,14.109589 Z M7.61538462,5 L7.61538462,10.1369863 C7.61538455,11.2628158 8.60226162,12.1929313 9.86461538,12.2568493 L10,12.260274 C11.2643932,12.260274 12.3089843,11.3815479 12.3807692,10.2575342 L12.3846154,10.1369863 L12.3846154,5 L13.4615385,5 L13.4615385,10.1369863 C13.4615385,11.8392338 11.9117549,13.2191781 10,13.2191781 C8.0882451,13.2191781 6.53846154,11.8392338 6.53846154,10.1369863 L6.53846154,5 L7.61538462,5 Z" id="形状" fill="#464D5A"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

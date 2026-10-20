@@ -1,0 +1,2485 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ./components/pagination/demo/basic.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="true"
+    class="c7n-pagination-disabled c7n-pagination-prev"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      disabled=""
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+    tabindex="0"
+    title="1"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        1
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-2"
+    tabindex="0"
+    title="2"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        2
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-3"
+    tabindex="0"
+    title="3"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        3
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4"
+    tabindex="0"
+    title="4"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        4
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5"
+    tabindex="0"
+    title="5"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        5
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/changer.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-prev"
+    tabindex="0"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1"
+    tabindex="0"
+    title="1"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        1
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-2"
+    tabindex="0"
+    title="2"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        2
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-3 c7n-pagination-item-active"
+    tabindex="0"
+    title="3"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        3
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4"
+    tabindex="0"
+    title="4"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        4
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5 c7n-pagination-item-before-jump-next"
+    tabindex="0"
+    title="5"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        5
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-jump-next"
+    tabindex="0"
+    title="Next 5 Pages"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a
+        class="c7n-pagination-item-link"
+      >
+        •••
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-50"
+    tabindex="0"
+    title="50"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        50
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-options"
+  >
+    <div
+      class="c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="c7n-select-selection
+            c7n-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="c7n-select-selection__rendered"
+        >
+          <div
+            class="c7n-select-selection-selected-value"
+            style="opacity:1"
+            title="10"
+          >
+            10
+          </div>
+          <span
+            class="c7n-select-arrow"
+            style="user-select:none;-webkit-user-select:none"
+            unselectable="unselectable"
+          >
+            <i
+              class="icon icon-arrow_drop_down"
+            />
+            <b />
+          </span>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/controlled.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-prev"
+    tabindex="0"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1"
+    tabindex="0"
+    title="1"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        1
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-2"
+    tabindex="0"
+    title="2"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        2
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-3 c7n-pagination-item-active"
+    tabindex="0"
+    title="3"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        3
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4"
+    tabindex="0"
+    title="4"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        4
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5"
+    tabindex="0"
+    title="5"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        5
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/itemRender.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="true"
+    class="c7n-pagination-disabled c7n-pagination-prev"
+    title="Previous Page"
+  >
+    <a>
+      Previous
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+    tabindex="0"
+    title="1"
+  >
+    <a>
+      1
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-2"
+    tabindex="0"
+    title="2"
+  >
+    <a>
+      2
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-3"
+    tabindex="0"
+    title="3"
+  >
+    <a>
+      3
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4"
+    tabindex="0"
+    title="4"
+  >
+    <a>
+      4
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5 c7n-pagination-item-before-jump-next"
+    tabindex="0"
+    title="5"
+  >
+    <a>
+      5
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-jump-next"
+    tabindex="0"
+    title="Next 5 Pages"
+  >
+    <a
+      class="c7n-pagination-item-link"
+    >
+      •••
+    </a>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-50"
+    tabindex="0"
+    title="50"
+  >
+    <a>
+      50
+    </a>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <a>
+      Next
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/jump.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-prev"
+    tabindex="0"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1"
+    tabindex="0"
+    title="1"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        1
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-2 c7n-pagination-item-active"
+    tabindex="0"
+    title="2"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        2
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-3"
+    tabindex="0"
+    title="3"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        3
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4"
+    tabindex="0"
+    title="4"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        4
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5 c7n-pagination-item-before-jump-next"
+    tabindex="0"
+    title="5"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        5
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-jump-next"
+    tabindex="0"
+    title="Next 5 Pages"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a
+        class="c7n-pagination-item-link"
+      >
+        •••
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-50"
+    tabindex="0"
+    title="50"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        50
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-options"
+  >
+    <div
+      class="c7n-pagination-options-quick-jumper"
+    >
+      Goto
+      <input
+        type="text"
+        value=""
+      />
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/more.md correctly 1`] = `
+<ul
+  class="c7n-pagination"
+  unselectable="unselectable"
+>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-prev"
+    tabindex="0"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-1"
+    tabindex="0"
+    title="1"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        1
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-jump-prev"
+    tabindex="0"
+    title="Previous 5 Pages"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a
+        class="c7n-pagination-item-link"
+      >
+        •••
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-4 c7n-pagination-item-after-jump-prev"
+    tabindex="0"
+    title="4"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        4
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-5"
+    tabindex="0"
+    title="5"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        5
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-6 c7n-pagination-item-active"
+    tabindex="0"
+    title="6"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        6
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-7"
+    tabindex="0"
+    title="7"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        7
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-8 c7n-pagination-item-before-jump-next"
+    tabindex="0"
+    title="8"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        8
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-jump-next"
+    tabindex="0"
+    title="Next 5 Pages"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a
+        class="c7n-pagination-item-link"
+      >
+        •••
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-item c7n-pagination-item-50"
+    tabindex="0"
+    title="50"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-flat"
+      type="button"
+    >
+      <a>
+        50
+      </a>
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/simple.md correctly 1`] = `
+<ul
+  class="c7n-pagination c7n-pagination-simple "
+>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-prev"
+    tabindex="0"
+    title="Previous Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_before"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+  <li
+    class="c7n-pagination-simple-pager"
+    title="2/5"
+  >
+    <input
+      size="3"
+      type="text"
+      value="2"
+    />
+    <span
+      class="c7n-pagination-slash"
+    >
+      ／
+    </span>
+    5
+  </li>
+  <li
+    aria-disabled="false"
+    class=" c7n-pagination-next"
+    tabindex="0"
+    title="Next Page"
+  >
+    <button
+      class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+      type="button"
+    >
+      <i
+        class="icon icon-navigate_next"
+      />
+      <div
+        class="c7n-ripple-wrapper"
+      />
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`renders ./components/pagination/demo/size.md correctly 1`] = `
+<div>
+  <ul
+    class="c7n-pagination c7n-pagination-large"
+    unselectable="unselectable"
+  >
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-large"
+    unselectable="unselectable"
+  >
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-options"
+    >
+      <span
+        class="c7n-pagination-options-label"
+      >
+        Items / page
+      </span>
+      <div
+        class="c7n-select-lg c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+      >
+        <div
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c7n-select-selection
+            c7n-select-selection--single"
+          role="combobox"
+          tabindex="0"
+        >
+          <div
+            class="c7n-select-selection__rendered"
+          >
+            <div
+              class="c7n-select-selection-selected-value"
+              style="opacity:1"
+              title="10"
+            >
+              10
+            </div>
+            <span
+              class="c7n-select-arrow"
+              style="user-select:none;-webkit-user-select:none"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-arrow_drop_down"
+              />
+              <b />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-pagination-options-quick-jumper"
+      >
+        Goto
+        <input
+          type="text"
+          value=""
+        />
+      </div>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-large"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-total-text"
+    >
+      总共 50 条
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-lg c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-small"
+    unselectable="unselectable"
+  >
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-small"
+    unselectable="unselectable"
+  >
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-options"
+    >
+      <span
+        class="c7n-pagination-options-label"
+      >
+        Items / page
+      </span>
+      <div
+        class="c7n-select-sm c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+      >
+        <div
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c7n-select-selection
+            c7n-select-selection--single"
+          role="combobox"
+          tabindex="0"
+        >
+          <div
+            class="c7n-select-selection__rendered"
+          >
+            <div
+              class="c7n-select-selection-selected-value"
+              style="opacity:1"
+              title="10"
+            >
+              10
+            </div>
+            <span
+              class="c7n-select-arrow"
+              style="user-select:none;-webkit-user-select:none"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-arrow_drop_down"
+              />
+              <b />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-pagination-options-quick-jumper"
+      >
+        Goto
+        <input
+          type="text"
+          value=""
+        />
+      </div>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-small"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-total-text"
+    >
+      总共 50 条
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-sm c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders ./components/pagination/demo/tiny.md correctly 1`] = `
+<div>
+  <ul
+    class="c7n-pagination c7n-pagination-tiny"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-options"
+    >
+      <span
+        class="c7n-pagination-options-label"
+      >
+        Items / page
+      </span>
+      <div
+        class="c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+      >
+        <div
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c7n-select-selection
+            c7n-select-selection--single"
+          role="combobox"
+          tabindex="0"
+        >
+          <div
+            class="c7n-select-selection__rendered"
+          >
+            <div
+              class="c7n-select-selection-selected-value"
+              style="opacity:1"
+              title="10"
+            >
+              10
+            </div>
+            <span
+              class="c7n-select-arrow"
+              style="user-select:none;-webkit-user-select:none"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-arrow_drop_down"
+              />
+              <b />
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      class="c7n-pagination-total-text"
+    >
+      1 - 10 / 50
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-first"
+      title="First Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-first_page"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-last"
+      tabindex="0"
+      title="Last Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-last_page"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-tiny"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-options"
+    >
+      <span
+        class="c7n-pagination-options-label"
+      >
+        Items / page
+      </span>
+      <div
+        class="c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+      >
+        <div
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c7n-select-selection
+            c7n-select-selection--single"
+          role="combobox"
+          tabindex="0"
+        >
+          <div
+            class="c7n-select-selection__rendered"
+          >
+            <div
+              class="c7n-select-selection-selected-value"
+              style="opacity:1"
+              title="10"
+            >
+              10
+            </div>
+            <span
+              class="c7n-select-arrow"
+              style="user-select:none;-webkit-user-select:none"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-arrow_drop_down"
+              />
+              <b />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7n-pagination-options-quick-jumper"
+      >
+        Goto
+        <input
+          type="text"
+          value=""
+        />
+      </div>
+    </li>
+    <li
+      class="c7n-pagination-total-text"
+    >
+      1 - 10 / 50
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-first"
+      title="First Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-first_page"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-last"
+      tabindex="0"
+      title="Last Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-last_page"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <ul
+    class="c7n-pagination c7n-pagination-tiny"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-options"
+    >
+      <span
+        class="c7n-pagination-options-label"
+      >
+        Items / page
+      </span>
+      <div
+        class="c7n-pagination-options-size-changer c7n-select c7n-select-has-value c7n-select-enabled"
+      >
+        <div
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c7n-select-selection
+            c7n-select-selection--single"
+          role="combobox"
+          tabindex="0"
+        >
+          <div
+            class="c7n-select-selection__rendered"
+          >
+            <div
+              class="c7n-select-selection-selected-value"
+              style="opacity:1"
+              title="10"
+            >
+              10
+            </div>
+            <span
+              class="c7n-select-arrow"
+              style="user-select:none;-webkit-user-select:none"
+              unselectable="unselectable"
+            >
+              <i
+                class="icon icon-arrow_drop_down"
+              />
+              <b />
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      class="c7n-pagination-total-text"
+    >
+      总共 50 条
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-first"
+      title="First Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-first_page"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-last"
+      tabindex="0"
+      title="Last Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-last_page"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders ./components/pagination/demo/total.md correctly 1`] = `
+<div>
+  <ul
+    class="c7n-pagination"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-total-text"
+    >
+      总共 85 条
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+  <br />
+  <ul
+    class="c7n-pagination"
+    unselectable="unselectable"
+  >
+    <li
+      class="c7n-pagination-total-text"
+    >
+      1-20 总共 85 条
+    </li>
+    <li
+      aria-disabled="true"
+      class="c7n-pagination-disabled c7n-pagination-prev"
+      title="Previous Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        disabled=""
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_before"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-1 c7n-pagination-item-active"
+      tabindex="0"
+      title="1"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          1
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-2"
+      tabindex="0"
+      title="2"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          2
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-3"
+      tabindex="0"
+      title="3"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          3
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-4"
+      tabindex="0"
+      title="4"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          4
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      class="c7n-pagination-item c7n-pagination-item-5"
+      tabindex="0"
+      title="5"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-flat"
+        type="button"
+      >
+        <a>
+          5
+        </a>
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+    <li
+      aria-disabled="false"
+      class=" c7n-pagination-next"
+      tabindex="0"
+      title="Next Page"
+    >
+      <button
+        class="c7n-btn c7n-btn-circle c7n-btn-icon-only c7n-btn-flat"
+        type="button"
+      >
+        <i
+          class="icon icon-navigate_next"
+        />
+        <div
+          class="c7n-ripple-wrapper"
+        />
+      </button>
+    </li>
+  </ul>
+</div>
+`;

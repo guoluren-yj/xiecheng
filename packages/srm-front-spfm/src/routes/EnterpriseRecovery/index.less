@@ -1,0 +1,129 @@
+.popover {
+  :global {
+    .c7n-popover-content {
+      .c7n-popover-title {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 24px;
+        border: none;
+        padding: 30px 25px 10px 25px;
+      }
+      .c7n-popover-inner-content {
+        width: 334px;
+        padding: 10px 25px 30px 25px;
+      }
+    }
+  }
+}
+.search {
+  height: 28px;
+  margin-bottom: 16px;
+  :global {
+    .c7n-pro-select-suffix-button,
+    .c7n-pro-input-wrapper,
+    .c7n-pro-btn {
+      height: 28px;
+      float: right;
+      margin-left: 10px;
+    }
+    .primary {
+      background: #29bece !important;
+      border: 1px solid #29bece !important;
+    }
+  }
+}
+.section {
+  margin: 8px 16px 0;
+  padding: 16px;
+  background-color: #fff;
+  :global {
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      color: #000;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+    .left-line {
+      position: relative;
+      vertical-align: middle;
+      line-height: 14px;
+      font-size: 14px;
+      padding-left: 11px;
+      font-weight: 600;
+      color: #000;
+      margin: 20px 0;
+    }
+    .left-line::after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 12px;
+      background: #36c2cf;
+      left: 0;
+      top: 1px;
+    }
+    .c7n-row {
+      margin-bottom: 16px;
+      vertical-align: middle;
+      text-indent: 10px;
+      .label {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 16px;
+      }
+      .info {
+        font-size: 12px;
+        color: #000;
+        line-height: 18px;
+        min-height: 18px;
+      }
+      .middleInfo {
+        vertical-align: middle;
+        line-height: 16px;
+        .c7n-pro-checkbox-inner {
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.tooltip {
+  :global {
+    .c7n-pro-tooltip-popup-inner {
+      width: 100px;
+    }
+  }
+}
+.sectionA {
+  margin-bottom: 15px;
+  :global {
+    .c7n-pro-form-header,
+    .c7n-pro-table-header {
+      position: relative;
+      font-size: 16px;
+      font-weight: 600;
+      padding-left: 12px;
+      text-align: left;
+      border: none;
+      color: #000;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+    .c7n-pro-form-header::after,
+    .c7n-pro-table-header::after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 14px;
+      background: #36c2cf;
+      left: 0;
+      top: 17px;
+    }
+    .c7n-pro-field-label {
+      padding: 0;
+    }
+  }
+}

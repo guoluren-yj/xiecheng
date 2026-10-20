@@ -1,0 +1,110 @@
+.company-title-card {
+  display: flex;
+  align-items: center;
+  .company-title {
+    display: inline-block;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+
+  .status-tag {
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+    text-align: center;
+    background: #47b883;
+    border-radius: 2px;
+    color: #fff;
+    margin: 0 4px;
+  }
+
+  .vasit-count-tag {
+    display: inline-block;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    padding: 0 4px;
+    margin: 0 4px;
+  }
+}
+
+.company-tag-list {
+  margin: 8px 0;
+  span {
+    display: inline-block;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #3095f2;
+    font-weight: 600;
+    background: rgba(48, 149, 242, 0.1);
+    border-radius: 2px;
+    padding: 0 3px;
+    margin-right: 8px;
+  }
+}
+
+.company-detail-form {
+  margin-top: 24px;
+  .c7n-pro-field-label {
+    background: rgba(0, 0, 0, 0.03);
+    padding-left: 12px;
+  }
+  tr {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    td {
+      vertical-align: middle;
+    }
+  }
+
+  .company-detail-row {
+    line-height: 32px;
+  }
+
+  .company-detail-col {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .company-detail-row:last-child {
+    .company-detail-col {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .company-detail-short-col {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  .company-description-short-col {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    padding: 0 12px;
+    line-height: 60px;
+  }
+}
+
+.company-description {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7n-pro-modal-drawer-body {
+  padding: 0;
+}
+.company-content {
+  padding: 20px;
+}

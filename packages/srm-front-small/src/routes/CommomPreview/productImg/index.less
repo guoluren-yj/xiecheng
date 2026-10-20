@@ -1,0 +1,107 @@
+.common-product-img-content {
+  position: relative;
+  :global {
+    #detail-images {
+      width: 270px;
+    }
+    .detail-images-wrapper {
+      display: flex;
+      align-items: center;
+      margin: 10px 0 24px;
+      position: relative;
+      left: -20px;
+    }
+    .detail-images-prev,
+    .detail-images-next {
+      width: 20px;
+      height: 40px;
+      background: #fff;
+      background: url(../../../assets/default.png) no-repeat center;
+      background-size: 70%;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-image: url(../../../assets/selected.png);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .detail-images-next {
+      transform: rotate(180deg);
+    }
+    .swiper-container {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+    }
+    .swiper-button-disabled {
+      cursor: not-allowed;
+      &:hover {
+        background-image: url(../../../assets/default.png);
+      }
+    }
+    .product-detail-imgs {
+      width: 72px;
+      height: 56px;
+      display: flex;
+      .small-img.small-img-box {
+        border: solid 1px #c88f08;
+      }
+
+      .small-img {
+        width: 56px;
+        height: 56px;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        position: relative;
+        border: solid 1px #e0e0e0;
+        .video-react {
+          padding-top: 0 !important;
+        }
+        .video-react.video-react-fluid {
+          width: 54px;
+          height: 54px;
+          position: relative;
+          .video-react-big-play-button {
+            // position: absolute;
+            // left: 25%;
+            // top: 25%;
+            // width: 50%;
+            // height: 50%;
+            // border-radius: 50%;
+            // font-size: 18px;
+            display: none;
+          }
+          .video-react-control-bar {
+            display: none;
+          }
+        }
+        .disabled-video {
+          position: absolute;
+          height: 54px;
+          width: 54px;
+          left: 0;
+          top: 0;
+          z-index: 999;
+        }
+      }
+    }
+    .product-img-control {
+      .p-collect {
+        display: inline-block;
+        width: 106px;
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        border-style: none;
+      }
+      .collected {
+        color: #d49d18;
+      }
+    }
+  }
+}

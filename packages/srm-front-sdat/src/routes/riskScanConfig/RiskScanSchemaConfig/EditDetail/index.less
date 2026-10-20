@@ -1,0 +1,69 @@
+.risk-scan-schema-config-detail-basic {
+  .risk-scan-config-edit-detail-basic {
+      margin: 8px;
+      display: flex;
+      flex-direction: column;
+      // height: calc(100vh - 152px);
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      .risk-scan-config-edit-detail-steps {
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .risk-scan-config-edit-detail-basic-info {
+        margin-top: 8px;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .risk-scan-config-edit-detail-policy-config {
+        flex: 1;
+        margin-top: 8px;
+        padding: 20px;
+        background-color: #fff;
+      }
+
+      .risk-scan-config-edit-detail-frequency-config {
+        margin-top: 8px;
+        padding: 20px;
+        background-color: #fff;
+
+        :global {
+          border: none;
+        }
+      }
+    }
+
+    .risk-scan-config-edit-detail-basic::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .risk-scan-config-edit-detail-basic::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset006pxrgba(0, 0, 0, .3);
+      border-radius: 10px;
+    }
+
+    .risk-scan-config-edit-detail-basic::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: rgba(0, 0, 0, .1);
+      -webkit-box-shadow: inset006pxrgba(0, 0, 0, .5);
+    }
+
+    .risk-scan-config-edit-card-title {
+      font-size: 16px;
+      color: #101319;
+      font-weight: 600;
+    }
+
+    .scan-config-object-panel {
+      flex: 1;
+      margin-top: 8px;
+      padding: 16px;
+      height: calc(100vh - 224px);
+      background: #fff;
+    }
+}
+
+

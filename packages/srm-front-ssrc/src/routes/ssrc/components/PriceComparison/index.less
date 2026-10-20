@@ -1,0 +1,496 @@
+@import '~hzero-front/lib/srm-variables.less';
+@import '~choerodon-ui/lib/style/themes/default.less';
+
+.priceAssistant-title {
+  margin-bottom: 16px;
+}
+
+.priceAssistant-header-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .info-wrapper {
+    // height: 98px;
+    width: 49%;
+    background-color: #f6f9fd;
+
+    .info-item-top {
+      height: 49px;
+      line-height: 60px;
+      padding: 0 0 0 16px;
+
+      .info-item-price {
+        font-size: 24px;
+      }
+    }
+
+    .info-item-bottom {
+      height: 49px;
+      line-height: 38px;
+      padding: 0 16px;
+
+      .info-item-supplier {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+:global {
+  .priceAssistant-filter {
+    margin: 16px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      width: 87px !important;
+      height: 25px;
+      line-height: 25px;
+      text-align: left;
+      color: #666;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #eee;
+    }
+  }
+
+  .quotationDetail-filter {
+    margin: 16px 0 8px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      max-width: 187px;
+      height: 25px;
+      line-height: 25px;
+      text-align: right;
+      color: #666;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+.quoteInfo-icon {
+  display: inline-block;
+  margin-left: 24px;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    margin-bottom: 4px;
+    height: 100%;
+  }
+
+  :global {
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.config-modal {
+  max-height: 600px;
+  overflow: auto;
+  :global {
+    .ant-tag-checkable {
+      margin: 4px 4px;
+      border: 1px solid rgb(213, 218, 224);
+      color: rgb(102, 102, 102);
+    }
+
+    .ant-tag-checkable:hover {
+      color: #2774dc;
+    }
+
+    .ant-tag-checkable:active {
+      background: #2774dc;
+    }
+
+    .ant-tag-checkable-checked {
+      background: #fff;
+      color: #2774dc;
+      border: 1px solid #2774dc;
+      background-image: url('../../../../assets/checked.svg');
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: 12px;
+    }
+    .ant-modal-body {
+      white-space: normal;
+      padding: 20px !important;
+    }
+    .sub-title {
+      margin: 32px 0 16px 0;
+      .sub-title-line {
+        display: inline-block;
+        margin-right: 8px;
+        height: 12px;
+        border-left: 3px solid @primary-color;
+      }
+    }
+    div:nth-child(1) > .sub-title {
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+:global {
+  .priceAssistant-filter-item,
+  .priceAssistant-filter-supplier,
+  .quotationDetail-filter-column,
+  .quotationDetail-filter-supplier {
+    padding: 12px 0 !important;
+    max-height: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    overflow: auto;
+
+    :global {
+      .ant-menu-item:not(:last-child) {
+        margin-bottom: 0 !important;
+      }
+
+      .ant-menu-item {
+        height: 28px !important;
+        line-height: 28px !important;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-left: 12px;
+      height: 18px;
+      // width: 28px;
+      line-height: 18px;
+      color: #999;
+    }
+  }
+}
+
+.supplier-title {
+  margin: 16px 0;
+}
+
+.latest-title {
+  margin-bottom: 20px;
+  height: 20px;
+  line-height: 20px;
+
+  .latest-title-btn {
+    float: right;
+    border: 0;
+  }
+}
+
+.affix-menu-divider {
+  border-right: 1px solid #e8e8e8;
+
+  .history-analysis-title {
+    font-size: 14px;
+    line-height: 32px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .historyAnalysis-time {
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+
+    .time-subitem {
+      padding: 6px 8px;
+    }
+
+    .time-allTime {
+      border-bottom: 1px solid @primary-color;
+    }
+
+    .time-almostYear {
+      border-bottom: 1px solid @primary-color;
+    }
+
+    .time-nearThMonth {
+      border-bottom: 1px solid @primary-color;
+    }
+  }
+
+  .search-item {
+    position: relative;
+    line-height: 32px;
+
+    .search-icon {
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      top: 10px;
+      left: 8px;
+      background-image: url('../../../../assets/search.svg');
+      background-size: 12px;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    :global {
+      .ant-select {
+        width: 100%;
+      }
+
+      .ant-select-selection__rendered {
+        margin-left: 25px;
+      }
+
+      .ant-select-selection--single {
+        cursor: auto;
+      }
+    }
+  }
+}
+
+.chart-empty {
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.history-analysis-table {
+  margin-top: 32px;
+
+  .history-analysis-table-title {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
+
+.sidebar-menu {
+  width: 200px;
+  padding-left: 16px;
+  max-height: 332px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  .sidebar-menu-item {
+    font-size: 12px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .sidebar-menu-item-active {
+    .sidebar-menu-item;
+    color: @primary-color;
+  }
+
+  .sidebar-menu-concatName {
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+.ant-switch-checked {
+  background-color: #faad14;
+}
+
+.ant-switch-unChecked {
+  background-color: #1890ff;
+}
+
+.ladder-style {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.template-info {
+  border-left: solid @primary-color;
+  padding-left: 4px;
+  margin: 8px 0;
+}
+
+.ladder-quotation-container {
+  .search-wrapper {
+    // width: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-bottom: 16px;
+  }
+}
+
+.row-zebra {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.noBtn {
+  border: none;
+  display: inherit;
+  color: #000;
+  font-weight: 400;
+  padding: 0 16px;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 100%;
+  text-align: left;
+  margin: 0 !important;
+  &:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  :global {
+    .srm-common-import-button-tag {
+      line-height: 1.5;
+    }
+  }
+}
+
+.priceComparisonTab-supplierSelectTag {
+  color: @green-6;
+  background-color: @green-3;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+.priceComparisonTab-supplierTag {
+  color: @text-2;
+  background-color: @fill-4;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+
+.priceComparisonTab-supplierName {
+  max-width: 230px;
+  white-space: normal;
+}
+
+.quotation-detail-tabpane {
+  :global {
+    .ant-tabs-tab {
+      max-width: 200px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+// 历史价格分析tab样式
+.ssrc-history-price-analysis {
+  &-tab-wrapper {
+    .left-sidebar-menu-wrapper {
+      width: 183px;
+    }
+    .sidebar-menu {
+      height: 100%;
+      max-height: 100%;
+      padding-top: 16px;
+      padding-left: 0;
+      width: 183px;
+      border-right: 1px solid @border-4;
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+      -ms-overflow-style: none; // IE 10+
+      overflow: -moz-scrollbars-none; // 火狐
+      .sidebar-menu-item {
+        padding: 10px 5px 10px 0;
+      }
+      .sidebar-menu-item-active {
+        .sidebar-menu-item;
+        border-right: 2px solid @primary-color;
+      }
+    }
+  }
+  // 历史价格分析tab面板样式
+  &-collapse {
+    flex: 1;
+    width: calc(100% - 183px);
+    :global {
+      .c7n-collapse-header.c7n-collapse-item-expand-renderer {
+        display: flex;
+        align-items: center;
+      }
+      .c7n-collapse-content {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.modal-body-wrapper {
+  :global {
+    .ant-modal-body {
+      .ant-spin-nested-loading {
+        height: 100%;
+        .ant-spin-container {
+          height: 100%;
+          .ant-spin-nested-loading {
+            height: calc(100% - 48px);
+            .ant-spin-container {
+              height: 100%;
+              .ant-tabs-vertical {
+                height: 100%;
+                .ant-tabs-content {
+                  height: 100%;
+                  overflow: scroll;
+                  .ant-tabs-tabpane {
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .no-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .no-content-img {
+      color: @primary-color;
+      :global {
+        svg {
+          width: 280px;
+          height: 160px;
+        }
+      }
+    }
+    .no-content-text {
+      margin-top: 8px;
+      font-size: 14px;
+      color: @text-3;
+    }
+  }
+}
+
+// 比价助手tab表格最后一行有跨列1，但第一列左固定，导致滚动最后一行固定的是2列，现在取消跨列，使用样式覆盖，让两个单元格视觉是跨列的。
+:global {
+  /* 取消直接父级tr的边框 */
+  tr > td:has(.ssrc-price-comparison-subtotal-colspan-override-style) {
+    border: none !important;
+  }
+}

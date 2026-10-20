@@ -1,0 +1,102 @@
+/*!
+    index - 我收到的订单
+    @date 2018-10-23
+    @author: lijun <jun.li06@hand-china.com>
+    @version 0.0.1
+    @copyright Copyright (c) 2018, Hand
+*/
+.sodr-purchase-agreement-new-detail {
+  :global {
+    overflow-y: auto;
+
+    .page-content-wrap {
+      overflow: initial;
+    }
+
+    .content-title {
+      color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    :not(:last-child) {
+      .page-content {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.sodr-purchase-batch-editor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &:before {
+    display: block;
+    flex: 1;
+    content: '';
+  }
+
+  :global {
+    .c7n-pro-btn {
+      margin-left: 8px;
+    }
+
+    .split-border {
+      border-left: 1px solid #d5dae0;
+      margin-left: 8px;
+      height: 16px;
+    }
+
+    .colon {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.order-top-title-alert {
+  :global {
+    width: 363px;
+    margin: -20px -20px 20px;
+    background-color: #e6f7ff;
+    border: none;
+    color: #1890ff;
+    vertical-align: middle;
+    line-height: 21px;
+
+    .c7n-alert-close-icon {
+      top: 0.1rem;
+      color: #1890ff;
+    }
+
+    div {
+      i {
+        margin-top: -4px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+//C7N订单维护- 提交按钮弱校验弹框样式
+.batch-submit-modal {
+  :global {
+    .c7n-pro-modal-content {
+      padding: 0.24rem;
+      padding-bottom: 0;
+      padding-right: 0.15rem;
+      .c7n-pro-modal-body {
+        padding: 0;
+        white-space: pre-line;
+        max-height: 140px;
+      }
+      .c7n-pro-confirm-title {
+        font-size: 14px;
+        line-height: 0.28rem;
+      }
+    }
+  }
+}

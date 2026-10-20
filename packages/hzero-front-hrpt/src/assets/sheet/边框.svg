@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>边框</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="报表设计器-格式-工具展开" transform="translate(-988.000000, -95.000000)">
+            <g id="编组-13" transform="translate(219.000000, 48.000000)">
+                <g id="操作栏" transform="translate(1.000000, 42.000000)">
+                    <g id="编组-14备份" transform="translate(54.000000, 1.000000)">
+                        <g id="编组-42" transform="translate(666.500000, 1.000000)">
+                            <g id="边框" transform="translate(48.000000, 3.000000)">
+                                <rect id="bg" opacity="0.0599999987" x="0" y="0" width="20" height="20"></rect>
+                                <g id="编组-73" transform="translate(4.666667, 4.666667)">
+                                    <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="5.33333333" y="0.333333333" width="1" height="10.8333333"></rect>
+                                    <rect id="矩形" stroke="#464D5A" stroke-width="1.2" x="2.77555756e-16" y="2.77555756e-16" width="11.5" height="11.5" rx="0.5"></rect>
+                                    <polygon id="矩形" fill="#464D5A" fill-rule="nonzero" points="11.1666667 5.33333333 11.1666667 6.33333333 0.333333333 6.33333333 0.333333333 5.33333333"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

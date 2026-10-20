@@ -1,0 +1,28 @@
+.field-select-modal-content {
+  display: flex;
+  flex: 1;
+}
+
+.left-panel {
+  overflow: auto;
+  width: 180px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.left-list-item {
+  cursor: pointer;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &-active,
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.right-panel {
+  overflow: auto;
+  padding: 8px 16px;
+  flex: 1;
+}

@@ -1,0 +1,32 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.mall-home-config-content {
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  :global {
+    .mall-home-config-com-title {
+      // font-family: PingFangSC-Medium, sans-serif;
+      font-size: 14px;
+      color: @text-color;
+      line-height: 16px;
+      position: relative;
+      padding-left: 11px;
+      margin-bottom: 8px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 3px;
+        height: 12px;
+        background: @primary-color;
+      }
+    }
+    .mall-home-config-com-desc {
+      color: @text-color-secondary;
+      margin-bottom: 16px;
+    }
+  }
+}

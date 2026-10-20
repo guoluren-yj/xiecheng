@@ -1,0 +1,46 @@
+.card-implementForm-Implement {
+  :global {
+    .ImplementForm {
+      border: 0.01rem solid #e0e0e0;
+      margin-bottom: 16px;
+      .ImplementFormItem {
+        height: 0.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > p {
+          margin-bottom: 0;
+        }
+      }
+      .ImplementFormItem:nth-child(1) {
+        padding: 0 0.16rem;
+        & > p {
+          font-weight: bold;
+          font-size: 12px;
+          &:nth-child(1) {
+            width: 49%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          &:nth-child(2) {
+            width: 49%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: right;
+          }
+        }
+      }
+      .ImplementFormItem:nth-child(2) {
+        border-top: 0.01rem solid #e0e0e0;
+        margin: 0 0.12rem;
+        padding: 0 0.04rem;
+        box-sizing: border-box;
+        & > p {
+          color: #000;
+        }
+      }
+    }
+  }
+}

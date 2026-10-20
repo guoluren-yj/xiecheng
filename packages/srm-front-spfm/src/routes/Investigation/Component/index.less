@@ -1,0 +1,29 @@
+.component-wrapper {
+  > :global(.ant-tabs-bar) {
+    > :global(.ant-tabs-nav-container) {
+      > :global(.ant-tabs-nav-wrap) {
+        > :global(.ant-tabs-nav-scroll) {
+          > :global(.ant-tabs-nav) {
+            > :global(.ant-tabs-tab-active) {
+              background-color: #dbdef8;
+              color: #5867dd;
+            }
+          }
+        }
+      }
+    }
+  }
+  :global(.ant-tabs-content) {
+    :global(.table-list-operator) {
+      text-align: right;
+    }
+  }
+}
+
+:global {
+  .compose-form-disabled {
+    .row-disabled {
+      border: none;
+    }
+  }
+}

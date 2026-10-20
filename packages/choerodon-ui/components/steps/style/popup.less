@@ -1,0 +1,111 @@
+.steps-popup() {
+  display: block;
+  min-width: 1.6rem;
+  max-width: 4rem;
+  padding: @padding-md;
+  overflow: auto;
+
+  .@{steps-prefix-cls}-item {
+    display: block;
+    overflow: visible;
+
+    &-icon {
+      float: left;
+      width: 0.16rem;
+      height: 0.16rem;
+      margin-right: 0.08rem;
+      color: @text-color-dark;
+      line-height: 0.2rem;
+      text-align: center;
+
+      .@{steps-prefix-cls}-icon {
+        width: 0.16rem !important;
+        height: 0.16rem !important;
+        font-size: 0.12rem !important;
+        line-height: 0.16rem !important;
+
+        &:not(.icon) {
+          display: block;
+          line-height: 0.18rem !important;
+        }
+      }
+    }
+
+    &-content {
+      display: block;
+      overflow: hidden;
+    }
+
+    &-title {
+      padding-right: 0;
+      line-height: 0.18rem;
+
+      &-extra {
+        font-weight: @font-weight-base;
+      }
+    }
+
+    &-tail {
+      position: absolute;
+      top: 0;
+      left: 0.09rem;
+      width: 0.01rem;
+      height: 100%;
+      padding: 0.22rem 0 0.06rem;
+
+      &::after {
+        width: 0.01rem;
+        height: 100%;
+      }
+    }
+
+    &-content,
+    &-title {
+      &::after {
+        display: none;
+      }
+    }
+
+    &:not(&:last-child) {
+      padding-bottom: @padding-xs;
+
+      >&-tail {
+        display: block;
+      }
+
+      .@{steps-prefix-cls}-item-content {
+        padding-bottom: 0.12rem;
+      }
+    }
+  }
+
+  .@{steps-prefix-cls}-item-process {
+    .step-item-status(@orange-6, @orange-6);
+  }
+
+  .@{steps-prefix-cls}-item-wait {
+    .step-item-status(@disabled-color, @text-color-secondary);
+  }
+
+  .@{steps-prefix-cls}-item-finish {
+    .step-item-status(@green-6, @text-color);
+  }
+
+  .@{steps-prefix-cls}-item-close {
+    .step-item-status(@gray-6, @text-color);
+  }
+}
+
+.step-item-status(@icon-color, @title-color) {
+  .@{steps-prefix-cls}-item-title {
+    color: @title-color;
+  }
+
+  .@{steps-prefix-cls}-item-icon {
+    background-color: @icon-color;
+  }
+}
+
+.@{steps-prefix-cls}-popup {
+  .steps-popup;
+}

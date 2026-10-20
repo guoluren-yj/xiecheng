@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <title>report</title>
+  <script> 
+    // workaround for OAC 5.5 embedding login issue pt 1 - begin (this should be before embedding.js)  
+    var oOrignalXHROpen = window.XMLHttpRequest.prototype.open; 
+    window.XMLHttpRequest.prototype.open = function(sMethod, sUrl /*, bOptAsync, sOptUser, sOptPassword*/ ) { 
+    if (sMethod === 'GET' && sUrl.endsWith('v1/appservices/loggedIn')) { 
+    this.loggedInRequest = true; 
+    return; 
+    } 
+    return oOrignalXHROpen.apply(this, arguments); 
+    } 
+    var oOrignalXHRSend = window.XMLHttpRequest.prototype.send; 
+    window.XMLHttpRequest.prototype.send = function( /*oBody*/ ) { 
+    if (this.loggedInRequest) { 
+    window.bitech_loggedIn = true; 
+    return; 
+    } 
+    return oOrignalXHRSend.apply(this, arguments); 
+    } 
+    // workaround for OAC 5.5 embedding login issue pt 1 - end  
+    </script> 
+  <script src="https://zhenyunoac-zhenyun.analytics.ocp.oraclecloud.com/dv/ui/api/v1/plugins/embedding/standalone/embedding.js" type="text/javascript">
+  </script>
+</head>
+<body>
+  <!-- <h1>AJAX Standalone Demo</h1> -->
+    <div>
+      <oracle-dv project-path="/shared/embed/SRM-DEMO-2">
+      </oracle-dv>
+    </div>
+    <script>
+      requirejs(['knockout', 'ojs/ojcore', 'ojs/ojknockout', 'ojs/ojcomposite', 'jet-composites/oracle-dv/loader'], function(ko) {   ko.applyBindings();
+      });
+    </script>
+</body>
+</html>

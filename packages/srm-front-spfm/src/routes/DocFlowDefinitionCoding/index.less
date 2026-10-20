@@ -1,0 +1,155 @@
+.tab-menu {
+    float: left;
+    background-color: #fff;
+    height: auto;
+    // overflow-y: auto; // TODO
+    /**
+    *菜单展开
+    */
+    .menu-sub-open {
+      width: 220px;
+      // height: 89%; // 查询框存在的高度
+      height: 100%; // 查询框不存在的高度
+      scrollbar-width: none; /* firefox */ // 隐藏滚动条
+      -ms-overflow-style: none; /* IE 10+ */ // 隐藏滚动条
+      // transition: width 1s ease-in-out;
+      overflow-x: hidden;
+      overflow-y: auto;
+      .menu-text {
+        overflow-x: hidden;
+        .menu-instructions {
+          // 菜单中间字体
+          width: 192px;
+          padding-top: 4px;
+          // height: 18px;
+          height: auto;
+          margin: 8px 0 2px 0;
+          color: rgba(0, 0, 0, 0.65);
+          white-space: normal; // 超出部分副标题换行
+          text-align: justify;
+          overflow: hidden;
+        }
+        :global {
+          // .c7n-menu {
+          //   .c7n-menu-item {
+          //     border-left: 2px solid #fff;
+          //   }
+          // }
+          // .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-active {
+          //   border-left: 2px solid rgba(0, 0, 0, 0.01);
+          // }
+          .c7n-menu:not(.c7n-menu-horizontal) .c7n-menu-item-selected {
+            // background-color: #eaf8fa;
+            background-color: #fff;
+            /* 自右向左 起始颜色开始渐变 */
+            // background-image: linear-gradient(to left, #94d8df, #daf2f5 5px, #fff);
+            // border-left: 2px solid @primary-color !important;
+            border-right: 3px solid @primary-color !important;
+          }
+          .c7n-layout-sider {
+            width: 220px !important;
+            min-width: 220px !important;
+            max-width: 220px !important;
+            .c7n-menu-inline {
+              // 展开菜单
+              border: none; // 删除菜单组件自带边框
+              .c7n-menu-item {
+                width: 220px;
+                height: auto !important; // 单个菜单的高度调整样式
+                line-height: 18px !important;
+                padding: 24px 4px 20px 16px !important; // 强制覆盖单个菜单样式
+                border-bottom: 1px solid #e8e8e8; // 🧍‍♂️节点（策略菜单的下边框）
+                .c7n-menu-item-selected {
+                  .icon {
+                    width: 16px;
+                    height: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-right: 4px !important;
+                    color: rgba(14, 190, 206, 0.65) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /**
+    *隐藏滚动条
+    */
+    .menu-sub-open::-webkit-scrollbar {
+      display: none; /* Chrome Safari */
+    }
+}
+/**
+  *右侧页面
+  */
+  .content-page-open {
+    width: calc(100% - 205px);
+    height: calc(100vh - 365px);
+    float: left;
+    padding-top: 16px; // 控制右侧距离顶部高度
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    border-left: 1px solid #e8e8e8;
+    position: relative;
+    .menu-icon {
+      width: 5px;
+      height: 50px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      background-color: #d8d6d6;
+      border-radius: 0 16px 16px 0;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      .page-icon {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .menu-icon-a {
+      width: 12px;
+      height: 55px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      transform: rotate(180deg);
+      background-color: #d8d6d6;
+      border-radius: 0 16px 16px 0;
+      border: 1px solid #cfcdcd;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .page-icon {
+        padding: 0;
+        margin: 0;
+        color: #000;
+      }
+    }
+}
+
+
+.content_line{
+  padding: 0 !important;
+  .content_tabs{
+    :global{
+      .c7n-tabs-bar{
+        padding-top: 20px;
+      }
+      .c7n-tabs-content{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
