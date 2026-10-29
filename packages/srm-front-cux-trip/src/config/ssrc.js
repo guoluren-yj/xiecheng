@@ -14,4 +14,30 @@ export default [
     component: () => import('../routes/ssrc/InquiryHallNew'),
     FilterSupplier: true,
   },
+  // 专家评分修改
+  {
+    coverPath:
+      '/ssrc/expert-scoring/:sourceHeaderId/:expertUserId/:subjectMatterRule/:expertSequenceNum/:sourceFrom/update',
+    path:
+      '/cux/ssrc/expert-scoring/:sourceHeaderId/:expertUserId/:subjectMatterRule/:expertSequenceNum/:sourceFrom/update',
+    models: [
+      () => import('srm-front-ssrc/lib/models/expertScoring.js'),
+      () => import('srm-front-ssrc/lib/models/priceComparison.js'),
+      () => import('srm-front-ssrc/lib/models/quotationDetail.js'),
+      () => import('srm-front-ssrc/lib/models/commonModel.js'),
+    ],
+    component: () => import('../routes/sbid/ExpertScoring/Update'),
+    FilterSupplier: true,
+  },
+  // 专家评分查看（详情）
+  {
+    coverPath: '/ssrc/expert-scoring/detail/:sourceHeaderId/:expertId/:subjectMatterRule',
+    path: '/cux/ssrc/expert-scoring/detail/:sourceHeaderId/:expertId/:subjectMatterRule',
+    models: [
+      () => import('srm-front-ssrc/lib/models/expertScoring.js'),
+      () => import('srm-front-ssrc/lib/models/commonModel.js'),
+    ],
+    component: () => import('../routes/sbid/ExpertScoring/Update'),
+    FilterSupplier: true,
+  },
 ];

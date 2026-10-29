@@ -6197,6 +6197,16 @@ class InquiryHall extends React.Component {
         style: { width: '1090px' },
         onOk: async () => {
           const onOk = async () => {
+            // TODO 二开调试：打印确定按钮执行链路，调试完可删除
+            /* eslint-disable no-console */
+            console.log('[cux-开标] 点击确定(分标段)', {
+              hasRef: !!this.sourcingResultDrawerRef,
+              hasHandleSubmit: isFunction(this.sourcingResultDrawerRef?.handleSubmit),
+              currentSelStatus: this.sourcingResultDrawerRef?.state?.currentSelStatus,
+              rfxHeaderId,
+              projectLineSectionId,
+            });
+            /* eslint-enable no-console */
             if (
               this.sourcingResultDrawerRef?.handleSubmit &&
               isFunction(this.sourcingResultDrawerRef.handleSubmit)
@@ -6275,6 +6285,17 @@ class InquiryHall extends React.Component {
       style: { width: '1090px' },
       // onCancel: () => this.allQuery(),
       onOk: async () => {
+        // TODO 二开调试：打印确定按钮执行链路，调试完可删除
+        /* eslint-disable no-console */
+        console.log('[cux-开标] 点击确定(不分标段)', {
+          hasRef: !!this.sourcingResultDrawerRef,
+          hasHandleSubmit: isFunction(this.sourcingResultDrawerRef?.handleSubmit),
+          currentSelStatus: this.sourcingResultDrawerRef?.state?.currentSelStatus,
+          sourceResultList: this.sourcingResultDrawerRef?.state?.sourceResultList,
+          rfxHeaderId,
+          projectLineSectionId: record.projectLineSectionId,
+        });
+        /* eslint-enable no-console */
         const isPassValidate = await (remote?.event
           ? remote.event.fireEvent('singleOpenBidValidate', {
               rfxHeaderId,
@@ -6301,6 +6322,16 @@ class InquiryHall extends React.Component {
               quoFeedBackLackSubmitLoading: false,
             });
           }
+        } else {
+          // 二开：拿不到弹框实例时不再静默关闭，提示后中断
+          // eslint-disable-next-line no-console
+          console.warn('[cux-开标] 未获取到开标弹框实例，未调用任何接口');
+          notification.warning({
+            message: intl
+              .get('ssrc.inquiryHall.view.message.openBidNotReady')
+              .d('开标弹框未准备完成，请重新打开后再操作'),
+          });
+          return false;
         }
       },
       okProps: {

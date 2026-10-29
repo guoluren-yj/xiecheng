@@ -30,7 +30,7 @@ const editableAttachmentRender = (name, editable) => ({ record }) => (
   <Attachment
     readOnly={!editable}
     record={record}
-    funcType={editable ? undefined : 'link'}
+    funcType="link"
     name={name}
     fileSize={FIlESIZE}
     bucketName={PRIVATE_BUCKET}
