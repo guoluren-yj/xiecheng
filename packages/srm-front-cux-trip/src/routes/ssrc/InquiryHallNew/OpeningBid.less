@@ -1,0 +1,34 @@
+@import '~hzero-front/lib/srm-variables.less';
+
+.open-bid {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 16px;
+  :global {
+    div,
+    button {
+      margin-left: 8px;
+    }
+  }
+}
+.sub-title {
+  width: 65%;
+
+  & > h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .vertical-line {
+      width: 3px;
+      height: 12px;
+      background: @primary-color;
+    }
+    span {
+      margin-left: 8px;
+    }
+  }
+}
+.sub-title + .sub-title {
+  margin-top: 50px;
+}

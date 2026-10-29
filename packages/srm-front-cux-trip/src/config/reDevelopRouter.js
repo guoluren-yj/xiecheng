@@ -6,8 +6,9 @@
  * @copyright 2019-10-16 © HAND
  */
 
-module.exports = {
+import ssrcRoutes from './ssrc';
+
+export default {
   tenantNum: 'SRM-TRIP',
-  routers: [
-  ],
+  routers: [...ssrcRoutes],
 };
