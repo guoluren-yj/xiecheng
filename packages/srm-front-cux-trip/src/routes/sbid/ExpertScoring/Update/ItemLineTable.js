@@ -19,7 +19,7 @@ import { numberSeparatorRender } from 'srm-front-ssrc/lib/utils/renderer';
 import QuotationDetail from 'srm-front-ssrc/lib/routes/components/QuotationDetailNew/Detail';
 import { PRIVATE_BUCKET } from '_utils/config';
 
-import FileGroup from 'srm-front-ssrc/lib/routes/components/SupplierQuotationAttachment';
+import FileGroup from '../../../components/SupplierQuotationAttachment';
 
 const promptCode = 'ssrc.expertScoring';
 

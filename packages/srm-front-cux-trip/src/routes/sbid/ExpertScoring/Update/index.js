@@ -55,7 +55,7 @@ import { isText, getJumpRoutePrefixUrl } from 'srm-front-ssrc/lib/utils/utils';
 import { rfFetchHeader } from 'srm-front-ssrc/lib/services/expertScoringService';
 import { fetchNewQuotationConfigSheet } from 'srm-front-ssrc/lib/services/supplierQutationService';
 
-import FileGroup from 'srm-front-ssrc/lib/routes/components/SupplierQuotationAttachment';
+import FileGroup from '../../../components/SupplierQuotationAttachment';
 import RenderFileTotalCount from 'srm-front-ssrc/lib/routes/components/SupplierQuotationAttachment/RenderFileTotalCount';
 
 import styles from './index.less';
