@@ -219,7 +219,7 @@ const FileGroup = (props = {}) => {
     (file = {}) => {
       const {
         businessAttachmentUuid = null,
-        techAttachmentUuid = null,
+        attributeVarchar11 = null,
         lineAttachmentUuid = null,
       } = file || {};
 
@@ -246,10 +246,10 @@ const FileGroup = (props = {}) => {
           />
         ),
         <Attachment
-          name="techAttachmentUuid"
+          name="attributeVarchar11"
           {...Common}
-          value={techAttachmentUuid}
-          label={intl.get(`ssrc.inquiryHall.model.inquiryHall.techAttachments`).d('技术附件')}
+          value={attributeVarchar11}
+          label={intl.get(`ssrc.inquiryHall.model.inquiryHall.techAttachments`).d('技术附件（下发至评分人）')}
         />,
       ].filter(Boolean);
 
@@ -309,14 +309,14 @@ const FileGroup = (props = {}) => {
                   header={
                     <span>
                       <span style={{ fontWeight: 600 }}>{currentLineTitle ?? ''}</span>
-                      <span className={Style['title-common-label-name']}>
+                      {/* <span className={Style['title-common-label-name']}>
                         {intl.get(`ssrc.common.model.common.uploadBy`).d('上传人')} :{' '}
                         <Tooltip title={realName ?? ''}>{realName ?? ''}</Tooltip>
                       </span>
                       <span className={Style['item-line-upload-time']}>
                         {intl.get(`ssrc.common.model.common.creationDate`).d('上传时间')} :{' '}
                         {creationDate ? dateTimeRender(creationDate) : ''}
-                      </span>
+                      </span> */}
                     </span>
                   }
                   key={uniqueKey?.toString()}
