@@ -62,10 +62,10 @@ const AccountCheck = ({ dataSet, readOnly = false }) => {
       </div>
       <Form dataSet={dataSet} labelLayout="float">
         <TextField name="accountName" disabled />
-        <TextField name="bankName" disabled={readOnly} />
-        <TextField name="bankBranchName" disabled={readOnly} />
-        <TextField name="bankAccountNum" disabled={readOnly} />
-        <NumberField name="payAmount" disabled={readOnly} />
+        <TextField name="attributeVarchar2" disabled={readOnly} />
+        <TextField name="attributeVarchar3" disabled={readOnly} />
+        <TextField name="attributeVarchar4" disabled={readOnly} />
+        <NumberField name="attributeDecimal1" disabled={readOnly} />
       </Form>
     </div>
   );

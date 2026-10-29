@@ -6,6 +6,8 @@ import intl from 'utils/intl';
 import { getEnterpriseVerifyDS } from 'srm-front-sslm/lib/routes/EnterpriseCertification/stores/getAffiliatedEnterprisesDS';
 
 // 供应商打款信息
+// 后端使用扩展字段存储：attributeVarchar1-状态、attributeVarchar2-银行名称、
+// attributeVarchar3-开户行名称、attributeVarchar4-银行账号、attributeDecimal1-打款金额
 const getRemitVerifyFields = () => [
   {
     name: 'accountName',
@@ -14,23 +16,23 @@ const getRemitVerifyFields = () => [
     label: intl.get('sslm.enterpriseCertification.model.remit.accountName').d('账户名称'),
   },
   {
-    name: 'bankName',
+    name: 'attributeVarchar2',
     required: true,
     label: intl.get('spfm.bank.model.bank.bankName').d('银行名称'),
   },
   {
-    name: 'bankBranchName',
+    name: 'attributeVarchar3',
     required: true,
     label: intl.get('spfm.bank.model.bank.bankBranchName').d('开户行名称'),
   },
   {
-    name: 'bankAccountNum',
+    name: 'attributeVarchar4',
     required: true,
     pattern: /^[0-9A-Za-z-@._,/]*$/,
     label: intl.get('spfm.bank.model.bank.bankAccountNum').d('银行账号'),
   },
   {
-    name: 'payAmount',
+    name: 'attributeDecimal1',
     required: true,
     type: 'number',
     min: 0,
