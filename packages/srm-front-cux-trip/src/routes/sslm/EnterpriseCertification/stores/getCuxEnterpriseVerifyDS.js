@@ -48,8 +48,10 @@ const getCuxEnterpriseVerifyDS = key => {
   if (key !== 'REMIT') {
     return getEnterpriseVerifyDS(key);
   }
+  // 注意：这里不能加 autoCreate，否则构造时会先创建一条空记录，
+  // 调用方再 create(数据) 后 DS 里会有两条记录，validate() 会因空记录必填校验失败，
+  // 导致弹框点提交后既不关闭也没有任何提示
   return {
-    autoCreate: true,
     fields: getRemitVerifyFields(),
   };
 };
