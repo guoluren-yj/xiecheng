@@ -159,8 +159,12 @@ const Result = ({ history, location, stepsObj = {}, changeParentState = () => {}
       verifyDataSet.create(
         key === 'REMIT'
           ? {
-              ...companyAttestation,
-              accountName: companyAttestation.accountName || comBasicReq?.companyName,
+              // 打款信息字段取自 comBasicReq
+              accountName: comBasicReq.accountName || comBasicReq?.companyName,
+              attributeVarchar2: comBasicReq.attributeVarchar2,
+              attributeVarchar3: comBasicReq.attributeVarchar3,
+              attributeVarchar4: comBasicReq.attributeVarchar4,
+              attributeDecimal1: comBasicReq.attributeDecimal1,
             }
           : companyAttestation
       );
@@ -178,13 +182,15 @@ const Result = ({ history, location, stepsObj = {}, changeParentState = () => {}
           let closeFlag = false;
           if (validateFlag) {
             const verifyInfo = verifyDataSet.current?.toJSONData() || {};
+            // 对公账户打款的打款信息后端存于 comBasicReq，其他验证方式仍放在 companyAttestation
+            const isRemit = key === 'REMIT';
             closeFlag = await relevanceEnterpriseVerify({
-              comBasicReq,
+              comBasicReq: isRemit ? { ...comBasicReq, ...verifyInfo } : comBasicReq,
               companyAttestation: {
                 ...companyAttestation,
-                ...verifyInfo,
+                ...(isRemit ? {} : verifyInfo),
                 attestationType: key,
-                submitType: key === 'REMIT' ? 'TO_PAY' : null,
+                submitType: isRemit ? 'TO_PAY' : null,
               },
             }).then(response => {
               const res = getResponse(response);
@@ -252,10 +258,10 @@ const Result = ({ history, location, stepsObj = {}, changeParentState = () => {}
         if (validateFlag) {
           const receivableData = fillReceivableDs?.current.toJSONData();
           await relevanceEnterpriseVerify({
-            comBasicReq,
+            // 回款金额同样存在 comBasicReq
+            comBasicReq: { ...comBasicReq, ...receivableData },
             companyAttestation: {
               ...companyAttestation,
-              ...receivableData,
               attestationType: 'REMIT',
               submitType: 'PAY_AUTH',
             },

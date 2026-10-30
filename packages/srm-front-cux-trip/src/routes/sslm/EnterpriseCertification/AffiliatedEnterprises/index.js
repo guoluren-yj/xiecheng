@@ -41,17 +41,9 @@ const REMIT_HELP_TEXT = intl
     '请使用对公账户（对公账户名称默认为供应名称）向携程账户打款（打款金额0-1元，打款备注：企业名称+员工姓名），打款完成后输入打款的开户行和金额提交认证，提交后请确保在48小时内完成打款，否则回自动过期。'
   );
 
-// 对公账户打款-认证中状态（查看接口后端暂未提供，先本地 mock）
-const REMIT_CERTIFYING_STATUS = ['APPROVING', 'REMITTING', 'TO_PAY_SUCCESS'];
-const REMIT_MOCK_STORAGE_KEY = 'SSLM_CUX_REMIT_MOCK';
-
-const getRemitMock = () => {
-  try {
-    return JSON.parse(localStorage.getItem(REMIT_MOCK_STORAGE_KEY)) || null;
-  } catch (e) {
-    return null;
-  }
-};
+// 对公账户打款-打款单状态（后端 comBasicReq.attributeVarchar1）
+// AUTHENTICATION_PENDING-认证中、EXPIRED-已过期、SUCCESS-认证成功
+const REMIT_CERTIFYING_STATUS = ['AUTHENTICATION_PENDING'];
 
 const Index = ({
   history,
@@ -80,18 +72,22 @@ const Index = ({
   });
   const { attestationStatus, comBasicReq, companyAttestation } = state;
   const { changeReqId } = comBasicReq;
-  // 对公账户打款 mock 数据（后端暂无查看接口）
-  const [remitMock, setRemitMock] = useState(getRemitMock);
-  const useRemitMock = !!remitMock && (!attestationStatus || attestationStatus === 'NEW');
-  const finalAttestationStatus = useRemitMock ? remitMock.status : attestationStatus;
-  const attestationType = useRemitMock ? 'REMIT' : state.attestationType;
-  // 对公账户打款认证中：展示认证中状态，其他验证方式不可点击
+
+  // 对公账户打款信息由 comBasicReq 返回：
+  // attributeVarchar1-打款单状态、attributeVarchar2-银行名称、attributeVarchar3-开户行名称、
+  // attributeVarchar4-银行账号、attributeDecimal1-打款金额
+  // 打款单认证中：展示认证中状态，其他验证方式不可点击（页面是否跳结果页仍由 attestationStatus 判断）
   const remitCertifying =
-    attestationType === 'REMIT' && REMIT_CERTIFYING_STATUS.includes(finalAttestationStatus);
-  // 认证中查看数据：优先取接口返回，接口没有时使用 mock
+    state.attestationType === 'REMIT' &&
+    REMIT_CERTIFYING_STATUS.includes(comBasicReq.attributeVarchar1);
+  // 认证中查看数据
+  // 账户名称后端未返回时，默认取企业名称
   const remitViewInfo = {
-    ...((remitMock && remitMock.info) || {}),
-    ...(useRemitMock ? {} : companyAttestation),
+    accountName: comBasicReq.accountName || comBasicReq.companyName || stepsObj.companyName,
+    attributeVarchar2: comBasicReq.attributeVarchar2,
+    attributeVarchar3: comBasicReq.attributeVarchar3,
+    attributeVarchar4: comBasicReq.attributeVarchar4,
+    attributeDecimal1: comBasicReq.attributeDecimal1,
   };
   // 企业名称类型更换lov，其他字段禁用
   const changeLovFlag = noRelieve === 1 && companyFlag !== 1; // 不解绑，关联表没有数据;
@@ -212,7 +208,7 @@ const Index = ({
     }
   }, []);
 
-  // 查看对公账户打款认证中信息（查看接口后端暂未提供，先使用 mock 数据）
+  // 查看对公账户打款认证中信息（取后端返回的 companyAttestation）
   const handleViewRemit = useCallback(() => {
     const viewDataSet = new DataSet(getCuxEnterpriseVerifyDS('REMIT'));
     viewDataSet.create(remitViewInfo);
@@ -265,13 +261,15 @@ const Index = ({
         businessRegistrationNumber,
       };
     }
+    // 对公账户打款的打款信息后端存于 comBasicReq，其他验证方式仍放在 companyAttestation
+    const isRemit = key === 'REMIT';
     const payload = {
-      comBasicReq: finalComBasicReq,
+      comBasicReq: isRemit ? { ...finalComBasicReq, ...verifyInfo } : finalComBasicReq,
       companyAttestation: {
         ...companyAttestation,
-        ...verifyInfo,
+        ...(isRemit ? {} : verifyInfo),
         attestationType: key,
-        submitType: key === 'REMIT' ? 'TO_PAY' : null,
+        submitType: isRemit ? 'TO_PAY' : null,
       },
     };
     let submitSuccess = false;
@@ -281,19 +279,8 @@ const Index = ({
         submitSuccess = true;
         notification.success();
         if (key === 'REMIT') {
-          // 对公账户打款：后端暂无查看接口，先本地 mock 认证中状态与查看数据
-          const remitInfo = {
-            ...verifyInfo,
-            accountName: verifyInfo.accountName || finalComBasicReq.companyName,
-          };
-          const mockData = { status: 'APPROVING', info: remitInfo };
-          setRemitMock(mockData);
-          localStorage.setItem(REMIT_MOCK_STORAGE_KEY, JSON.stringify(mockData));
-          setState({
-            attestationType: 'REMIT',
-            attestationStatus: 'APPROVING',
-            companyAttestation: { ...companyAttestation, ...remitInfo },
-          });
+          // 对公账户打款：提交后重新查询认证状态与认证信息（认证中停留在当前页可查看）
+          queryEnterprisesInfo();
         } else {
           jumpToResult();
         }
@@ -320,7 +307,7 @@ const Index = ({
       verifyDataSet.create(
         key === 'REMIT'
           ? {
-              ...companyAttestation,
+              ...remitViewInfo,
               // 账户名称默认为头上的供应商企业名称，不可修改
               accountName:
                 enterprisesInfoDs.current?.get('companyNameObj')?.companyName ||
@@ -412,7 +399,8 @@ const Index = ({
     ocrRecognition({ dataSet, handleJumpDetail: handleRefresh });
   }, []);
 
-  const saveFlag = finalAttestationStatus !== 'APPROVING';
+  // 认证中不允许保存企业信息
+  const saveFlag = attestationStatus !== 'APPROVING' && !remitCertifying;
 
   const ContentComponent = (
     <Fragment>
@@ -541,8 +529,11 @@ const Index = ({
   );
 
   // 解决点击浏览器回退路由导致页面可以重复填写
-  // 对公账户打款认证中时停留在当前页，可点击查看已提交的打款信息
-  return attestationStatus && attestationStatus !== 'NEW' && !remitCertifying ? (
+  // 对公账户打款单认证中时停留在当前页，可点击查看已提交的打款信息；
+  // 是否跳转认证结果页按老逻辑由 attestationStatus 判断
+  const showResultPage =
+    attestationStatus && attestationStatus !== 'NEW' && !remitCertifying;
+  return showResultPage ? (
     <Result
       history={history}
       location={location}

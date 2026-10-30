@@ -6,7 +6,7 @@ import intl from 'utils/intl';
 import { getEnterpriseVerifyDS } from 'srm-front-sslm/lib/routes/EnterpriseCertification/stores/getAffiliatedEnterprisesDS';
 
 // 供应商打款信息
-// 后端使用扩展字段存储：attributeVarchar1-状态、attributeVarchar2-银行名称、
+// 后端存于 comBasicReq：attributeVarchar1-打款单状态、attributeVarchar2-银行名称、
 // attributeVarchar3-开户行名称、attributeVarchar4-银行账号、attributeDecimal1-打款金额
 const getRemitVerifyFields = () => [
   {
