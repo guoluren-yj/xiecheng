@@ -30,6 +30,7 @@ import {
   saveSecondaryInfo,
   fetchPublicData,
   checkChangeInvestigate,
+  queryTabDataConfig,
 } from 'srm-front-sslm/lib/services/enterpriseCertificationService';
 import { transformFields } from 'srm-front-sslm/lib/routes/components/EnterpriseCertification/utils/utils.js';
 import { linkList } from 'srm-front-sslm/lib/routes/EnterpriseCertification/utils';
@@ -107,6 +108,8 @@ export default class SecondaryInfo extends Component {
       saveLoading: false, // 保存接口
       otherLoading: false,
       inviteTabShowFlag: false, // 邀约信息展示
+      // 二开：页签配置（stepsObj 未下发时由页面自行查询，用于步骤条与卡片渲染）
+      secondaryTabConfig: [],
     };
     this.otherInfoDs = new DataSet({
       ...getOtherInfoDS({ changeReqId }),
@@ -154,6 +157,22 @@ export default class SecondaryInfo extends Component {
     this.handleQueryAllInfo();
   }
 
+  componentDidUpdate(prevProps) {
+    // 二开：父级 stepsObj 异步下发，挂载时若没拿到页签配置，则在配置到达后重建页签，避免页面空白
+    const { stepsObj = {} } = this.props;
+    const prevStepsObj = prevProps.stepsObj || {};
+    if (
+      prevStepsObj.registPolicyConfig !== stepsObj.registPolicyConfig &&
+      !isEmpty(stepsObj.registPolicyConfig) &&
+      isEmpty(this.state.mainDataTab)
+    ) {
+      this.handleCreateDataSet(stepsObj.registPolicyConfig);
+      if (isEmpty(this.state.secondaryTabConfig)) {
+        this.setState({ secondaryTabConfig: stepsObj.registPolicyConfig });
+      }
+    }
+  }
+
   // 查询所有数据
   @Bind()
   handleQueryAllInfo() {
@@ -199,7 +218,7 @@ export default class SecondaryInfo extends Component {
               },
             });
             // 查询二级域名配置 等该接口查询完成之后再loading为false
-            await this.handleQueryTabConfig();
+            await this.handleQueryTabConfig(publicData);
           }
         })
         .finally(() => {
@@ -267,9 +286,34 @@ export default class SecondaryInfo extends Component {
 
   // 查询表格配置
   @Bind()
-  async handleQueryTabConfig() {
+  async handleQueryTabConfig(currentPublicData = {}) {
     const { stepsObj: { registPolicyConfig } = {} } = this.props;
-    this.handleCreateDataSet(registPolicyConfig);
+    if (!isEmpty(registPolicyConfig)) {
+      this.handleCreateDataSet(registPolicyConfig);
+      return;
+    }
+    // 二开：父级未下发 stepsObj 页签配置时，页面自行查询，避免卡片区域空白
+    const { changeReqId } = this.state;
+    if (!changeReqId) {
+      return;
+    }
+    const publicData = {
+      ...(this.state.publicData || {}),
+      ...(currentPublicData || {}),
+    };
+    try {
+      const res = await queryTabDataConfig({
+        changeReqId,
+        assignId: publicData.assignId,
+        visualFlag: 1,
+      });
+      if (getResponse(res)) {
+        this.setState({ secondaryTabConfig: res });
+        this.handleCreateDataSet(res);
+      }
+    } catch (e) {
+      // 二开：兜底查询失败时保持原状，不阻断页面渲染
+    }
   }
 
   // 新建ds
@@ -885,7 +929,7 @@ export default class SecondaryInfo extends Component {
       otherLoading,
       inviteTabShowFlag,
     } = this.state;
-    const { location, stepsObj, remoteHiddenTips = false, customizeForm = () => {} } = this.props;
+    const { location, stepsObj = {}, remoteHiddenTips = false, customizeForm = () => {} } = this.props;
     const { strategyCfBasicId, dimensionCode } = strategyCfBasic;
     // 二级域名注册的已经生成co编码，业务信息禁用
     // 公开域名已经生成co编码的全部禁用或者有合作伙伴全部页签禁用
@@ -988,7 +1032,17 @@ export default class SecondaryInfo extends Component {
           </Header>
         )}
         {!isPreview && (
-          <ValidationSteps location={location} stepsObj={{ ...stepsObj, ...publicData }} />
+          <ValidationSteps
+            location={location}
+            stepsObj={{
+              ...stepsObj,
+              ...publicData,
+              // 二开：stepsObj 未下发页签配置时，使用页面自行查询的配置，避免「企业次要信息」步骤节点丢失
+              secondaryTabConfig: isEmpty(stepsObj.secondaryTabConfig)
+                ? this.state.secondaryTabConfig
+                : stepsObj.secondaryTabConfig,
+            }}
+          />
         )}
         <Content className={styles['secondary-index-content']}>
           <div id="enterpriseCertificationAnchor">

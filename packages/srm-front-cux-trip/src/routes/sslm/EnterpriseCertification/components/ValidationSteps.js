@@ -27,7 +27,8 @@ const ValidationSteps = ({ location = {}, stepsObj = {} }) => {
       !tenantRoleLevel && 'apply-manager',
       'preview',
     ].filter(Boolean);
-  }, [tenantRoleLevel, investigateTemplateId, realNameFlag]);
+    // 二开：补充 secondaryTabConfig 依赖，stepsObj 异步下发后步骤节点需要重新计算
+  }, [tenantRoleLevel, investigateTemplateId, realNameFlag, secondaryTabConfig]);
 
   // 获取步骤条集合
   const finallyStepList = stepsList().filter(step => routerPaths.includes(step.key));
