@@ -11,12 +11,14 @@ import { Bind } from 'lodash-decorators';
 import { map, isFunction, isArray, isObject } from 'lodash';
 import remote from 'hzero-front/lib/utils/remote';
 
+import { ValidationResult } from 'choerodon-ui/dataset';
 import { DataSet, Modal, Tooltip } from 'choerodon-ui/pro';
 import { Radio, Form, Row, Col } from 'hzero-ui';
 import { Spin } from 'choerodon-ui';
 import withCustomize from 'srm-front-cuz/lib/h0Customize';
 
 import intl from 'utils/intl';
+import { PRIVATE_BUCKET } from '_utils/config';
 import { yesOrNoRender } from 'utils/renderer';
 import notification from 'utils/notification';
 import { getResponse, getCurrentUser } from 'utils/utils';
@@ -170,13 +172,8 @@ class SupplierRecord extends Component {
           }
         )
       : params;
-    // TODO 二开调试：打印下发专家评分接口入参/返回，调试完可删除
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] 调用 sendExpertScore', newParams);
     const response = await sendExpertScore(newParams);
     const result = getResponse(response);
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] sendExpertScore 返回', { response, result });
     if (result && !result.failed) {
       this.afterAction();
     } else {
@@ -193,9 +190,6 @@ class SupplierRecord extends Component {
     const { currentSelStatus } = this.state;
     const { checkUserFlag } = record;
     const { expandNodeRef } = this.cacheExpendNodeRef || {};
-    // TODO 二开调试：打印成功回调链路，调试完可删除
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] afterAction 成功，关闭弹框', { currentSelStatus });
     if (sourcingResultRemote && sourcingResultRemote.event) {
       await sourcingResultRemote.event.fireEvent('remoteAfterConfirmAction', {
         currentSelStatus,
@@ -412,13 +406,6 @@ class SupplierRecord extends Component {
           record.clearValidationError('attributeVarchar11');
       });
     }
-    // 记录必填状态，供表格列渲染“必填”标识
-    this.setState({ scoreAttachmentRequired: required });
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] 技术附件（下发评分人）必填状态', {
-      required,
-      fieldRequired: field.get('required'),
-    });
   }
 
   /**
@@ -434,6 +421,70 @@ class SupplierRecord extends Component {
     (isObject(value) && Object.keys(value).length === 0);
 
   /**
+   * 二开：实时查询某行附件列表（附件数据未加载过时使用）
+   * @param {Object} record - 表格行 record
+   * @param {string} uuid - 附件 uuid
+   * @returns {Promise<Array|undefined>} 附件列表
+   */
+  @Bind()
+  async fetchRecordAttachments(record, uuid) {
+    try {
+      const field = this.tableDs.getField('attributeVarchar11');
+      const { fetchList } = this.tableDs.getConfig('attachment') || {};
+      if (!isFunction(fetchList)) return undefined;
+      const files = await fetchList({
+        bucketName: PRIVATE_BUCKET,
+        attachmentUUID: uuid,
+        isPublic: field && isFunction(field.get) ? field.get('isPublic', record) : false,
+      });
+      if (isArray(files) && field) {
+        // 缓存数量，避免重复查询
+        field.setAttachmentCount(files.length, record);
+      }
+      return files;
+    } catch (e) {
+      // 查询失败时不做拦截，退回 uuid 判断
+      return undefined;
+    }
+  }
+
+  /**
+   * 二开：判断某行「技术附件（下发评分人）」是否为空
+   * 不能只看 uuid：附件全部删除后 uuid 仍可能存在，实际附件数量为 0，需要结合 record 上的附件缓存判断
+   * 附件数据还没加载过时（首次点确定），实时查询一次附件列表再判断
+   * @param {Object} record - 表格行 record
+   * @returns {Promise<boolean>} 是否为空
+   */
+  @Bind()
+  async isScoreAttachmentEmpty(record) {
+    const value = record && isFunction(record.get) ? record.get('attributeVarchar11') : null;
+    if (this.isEmptyAttachment(value)) return true;
+
+    const field = this.tableDs.getField('attributeVarchar11');
+    if (!field) return false;
+
+    // 已拉取过附件列表时，按“上传成功/已完成”的附件数量判断
+    const attachments = isFunction(field.getAttachments) ? field.getAttachments(record) : undefined;
+    if (isArray(attachments)) {
+      const validAttachments = attachments.filter(
+        ({ status }) => !status || status === 'success' || status === 'done'
+      );
+      return validAttachments.length === 0;
+    }
+
+    // 只取到附件数量时按数量判断
+    const count = isFunction(field.getAttachmentCount) ? field.getAttachmentCount(record) : undefined;
+    if (typeof count === 'number') return count === 0;
+
+    // 附件列表、数量都还没加载：实时查询一次，避免首点确定时误判为已上传
+    const files = await this.fetchRecordAttachments(record, value);
+    if (isArray(files)) return files.length === 0;
+
+    // 查询失败时退回 uuid 判断
+    return false;
+  }
+
+  /**
    * 切换单选框
    * @param {*} e - 事件源
    */
@@ -443,19 +494,6 @@ class SupplierRecord extends Component {
     this.setState({
       currentSelStatus: e.target.value,
     });
-    // TODO 二开调试：打印执行结果表单字段值，调试完可删除
-    /* eslint-disable no-console */
-    const tableData = this.tableDs.toData();
-    console.log('[cux-开标] 执行结果变更', {
-      currentSelStatus: e.target.value,
-      formFields:
-        this.props.form && isFunction(this.props.form.getFieldsValue)
-          ? this.props.form.getFieldsValue()
-          : undefined,
-      tableData,
-      scoreAttachments: tableData.map((item) => item.attributeVarchar11),
-    });
-    /* eslint-enable no-console */
     // 二开：选中“下发专家评分”时，技术附件（下发评分人）必填
     this.setScoreAttachmentRequired(e.target.value === 'SCORING_PENDING');
     // eslint-disable-next-line no-unused-expressions
@@ -481,22 +519,10 @@ class SupplierRecord extends Component {
     } = this.props;
     const { currentSelStatus } = this.state;
     const { expandNodeRef } = this;
-    // TODO 二开调试：打印确定按钮执行链路，调试完可删除
-    /* eslint-disable no-console */
-    const submitTableData = this.tableDs.toData();
-    console.log('[cux-开标] handleSubmit 入口', {
-      currentSelStatus,
-      rfxHeaderId,
-      tableData: submitTableData,
-      scoreAttachments: submitTableData.map((item) => item.attributeVarchar11),
-    });
-    /* eslint-enable no-console */
     // 缓存弹框关闭前数据
     this.cacheExpendNodeRef = { ...(this.cacheExpendNodeRef || {}), expandNodeRef };
     switch (currentSelStatus) {
       case 'CLOSED':
-        // eslint-disable-next-line no-console
-        console.log('[cux-开标] 命中分支：关闭询价单');
         closeRFX(
           rfxHeaderId,
           this.afterAction,
@@ -511,26 +537,43 @@ class SupplierRecord extends Component {
         this.setScoreAttachmentRequired(true);
         // 注意：DataSet.validate 默认只校验处于非 sync 状态（新增/修改）的行，
         // 查询出来的行状态是 sync，直接 validate() 不会校验必填，所以逐行判断
+        const recordList = [];
+        this.tableDs.forEach((record) => recordList.push(record));
+        // 二开：uuid 存在但附件被删空时也算未上传，需要看 record 上的实际附件数量；
+        // 附件数据未加载时会实时查询列表，所以这里需要 await
+        const emptyFlags = await Promise.all(
+          recordList.map((record) => this.isScoreAttachmentEmpty(record))
+        );
         const invalidRecords = [];
-        this.tableDs.forEach((record) => {
-          const value = isFunction(record.get) ? record.get('attributeVarchar11') : null;
-          if (this.isEmptyAttachment(value)) {
+        recordList.forEach((record, index) => {
+          if (emptyFlags[index]) {
             invalidRecords.push(record);
           }
         });
-        // eslint-disable-next-line no-console
-        console.log('[cux-开标] 下发专家评分校验', {
-          invalidRows: invalidRecords.length,
-          totalRows: this.tableDs.length,
-        });
         if (invalidRecords.length) {
+          const message = intl
+            .get('ssrc.inquiryHall.view.message.scoreAttachmentRequired')
+            .d('请先上传技术附件（下发评分人）');
           // 强制校验未上传附件的行，单元格标红
-          await Promise.all(invalidRecords.map((record) => record.validate(true)));
-          notification.warning({
-            message: intl
-              .get('ssrc.inquiryHall.view.message.scoreAttachmentRequired')
-              .d('请先上传技术附件（下发评分人）'),
-          });
+          await Promise.all(
+            invalidRecords.map((record) => {
+              const value = isFunction(record.get) ? record.get('attributeVarchar11') : null;
+              if (this.isEmptyAttachment(value)) {
+                // uuid 为空：走内置必填校验
+                return record.validate(true);
+              }
+              // uuid 存在但附件被删空：内置必填校验不会报错，手动设置校验错误标红
+              record.setValidationError('attributeVarchar11', [
+                new ValidationResult({
+                  ruleName: 'valueMissing',
+                  validationMessage: message,
+                  validationProps: { name: 'attributeVarchar11' },
+                }),
+              ]);
+              return undefined;
+            })
+          );
+          notification.warning({ message });
           // 抛错由调用方（index.js 的 onOk）捕获后 return false，阻止弹框关闭
           throw new Error('scoreAttachmentRequired');
         }
@@ -541,22 +584,12 @@ class SupplierRecord extends Component {
       case 'PRETRIAL_PENDING':
       case 'CHECK_PENDING':
       case 'OPEN_BID_PENDING':
-        // eslint-disable-next-line no-console
-        console.log('[cux-开标] 命中分支：开始下一状态', currentSelStatus);
         // 二开：接口失败要抛出去，阻止弹框静默关闭
         await this.onStartNextRfxStatus(currentSelStatus);
         break;
       default:
-        // 二开：未选择执行结果时不再静默关闭弹框，避免“点确定什么都没发生就关了”
-        // eslint-disable-next-line no-console
-        console.warn('[cux-开标] 未选择执行结果，未调用任何接口', {
-          currentSelStatus,
-          sourceResultList: this.state.sourceResultList,
-        });
-        notification.warning({
-          message: intl.get('ssrc.inquiryHall.view.message.selectSourcingResult').d('请选择执行结果'),
-        });
-        throw new Error('currentSelStatusRequired');
+        // 执行结果非必填，未选择时与标准逻辑一致：不调接口，直接结束
+        break;
     }
   }
 
@@ -569,21 +602,12 @@ class SupplierRecord extends Component {
       organizationId,
       record: { rfxHeaderId },
     } = this.props;
-    // TODO 二开调试：打印 next 接口入参/返回，调试完可删除
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] 调用 startNextRfxStatus', {
-      organizationId,
-      rfxHeaderId,
-      rfxStatus: currentSelStatus,
-    });
     const response = await startNextRfxStatus({
       organizationId,
       rfxHeaderId,
       rfxStatus: currentSelStatus,
     });
     const result = getResponse(response);
-    // eslint-disable-next-line no-console
-    console.log('[cux-开标] startNextRfxStatus 返回', { response, result });
     if (result && !result.failed) {
       this.afterAction();
     } else {
