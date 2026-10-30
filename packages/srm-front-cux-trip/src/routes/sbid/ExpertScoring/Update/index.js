@@ -2136,7 +2136,11 @@ class ExpertScoring extends Component {
             <a onClick={() => this.showUploadModal(item)}>
               <span>
                 {intl.get(`hzero.common.upload.modal.title`).d('附件')}
-                <RenderFileTotalCount record={item} uiType="h0" />
+                <RenderFileTotalCount
+                  record={item}
+                  uiType="h0"
+                  fileCountName="totalDisplayFileAvr1Count"
+                />
               </span>
               <span style={{ marginLeft: '8px' }}>
                 <SVGIcon path={require('@/assets/file.svg')} className={styles['link-color']} />

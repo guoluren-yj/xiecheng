@@ -39,7 +39,7 @@ const FileGroup = (props = {}) => {
     viewMode = 'list',
     isNeedName = true,
     fileProps = {},
-    fileCountName = 'totalDisplayFileCount',
+    fileCountName = 'totalDisplayFileAvr1Count', // 二开：附件数量字段改为 totalDisplayFileAvr1Count
     // invalidFlag = 0,
     attachmentHiddenFlag = 0, // 隐藏附件flag
     queryParams = {},
