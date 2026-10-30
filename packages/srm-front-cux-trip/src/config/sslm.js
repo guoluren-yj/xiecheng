@@ -15,6 +15,12 @@ export default [
         component: () =>
           import('../routes/sslm/EnterpriseCertification/AffiliatedEnterprises/Result'),
       },
+      // 企业次要信息（步骤下各卡片组件二开覆盖）
+      {
+        coverPath: '/sslm/enterprise-certification/secondary-info',
+        path: '/cux/sslm/enterprise-certification/secondary-info',
+        component: () => import('../routes/sslm/EnterpriseCertification/SecondaryInfo'),
+      },
     ],
   },
 ];
