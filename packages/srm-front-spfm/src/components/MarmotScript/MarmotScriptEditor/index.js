@@ -9,13 +9,12 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { CodeArea, Button, Row, Modal, TextField, CheckBox } from 'choerodon-ui/pro';
-import { Card, Tooltip, Popover, message, Tabs } from 'choerodon-ui';
+import { Card, Tooltip, Popover, Tabs } from 'choerodon-ui';
 import { Icon as HIcon } from 'hzero-ui';
 import classnames from 'classnames';
-import copy from 'copy-to-clipboard';
 import crypto from 'crypto-js';
 import { isEmpty, trim, isArray, isFunction } from 'lodash';
-import { getResponse, getCurrentUser } from 'utils/utils';
+import { getResponse } from 'utils/utils';
 import intl from 'utils/intl';
 import notification from 'utils/notification';
 import Cookies from 'universal-cookie';
@@ -109,7 +108,6 @@ const sqlOptions = {
 };
 const modalKey = Modal.key();
 const cookies = new Cookies();
-const { loginName } = getCurrentUser();
 const downLoadContentTypeArr = [
   'application/vnd.ms-excel',
   'application/pdf',
@@ -138,7 +136,10 @@ function MarmotScriptEditor(props = {}) {
     // complementaryWords,
     scriptCodeDs,
     testParam = {},
-    scriptVersion,
+    // platform-9047：与调用方 MarmotScriptButton 的默认值保持一致（该处为 scriptVersion = 3）。
+    // 兜底 3 而非 undefined —— 否则 Number(undefined) !== 3 会把「未传参」误判成 v2，
+    // 导致 v3 脚本也被隐藏 Bot 入口（属功能回归，不是修复）。
+    scriptVersion = 3,
     saveScriptKey,
     scriptCacheKey,
     saveScriptData,
@@ -909,20 +910,13 @@ function MarmotScriptEditor(props = {}) {
     });
   };
 
-  const getDevTool = () => {
-    const result = `devtools://devtools/bundled/js_app.html?wss=gateway.dev.isrm.going-link.com/ssc-ws/websocket/new-debugger/${loginName}`;
-    copy(result);
-    message.destroy();
-    message.config({ duration: 2 });
-    message.success(
-      intl
-        .get('spfm.adaptorTaskDetail.copy.devtool.success')
-        .d('复制地址成功, 请手动粘贴至Chrome浏览器地址栏'),
-      undefined,
-      undefined,
-      'bottomRight'
-    );
-  };
+  // platform-9047（Q8）调试器功能整体下线：原 getDevTool 负责拼装
+  // devtools://devtools/bundled/js_app.html?wss=.../ssc-ws/websocket/new-debugger/${loginName}
+  // 并复制到剪贴板。调试器（容器 /debug 端点、debugger IP 注册、网关 /ssc-ws 动态路由）已全部删除，
+  // 该地址必然 404，故方法一并移除。
+  //
+  // ⚠ 注意区分：紧随其后的「测试脚本」按钮（onTestScript → /v1/script-debug/run）是【另一套功能】，
+  // 与断点调试器无关，owner 明确要求保留，不要顺手删掉。
 
   // 得到打开源码的tabs内容
   const getTabContent = (key, value = '') => {
@@ -1210,7 +1204,17 @@ function MarmotScriptEditor(props = {}) {
             <div className={`editor-left-scriptContent-Content${botOpen ? ' bot-open' : ''}`}>
               <div className="editor-left-scriptContent-button">
                 <Row>
-                  {botVisible && (
+                  {/*
+                    platform-9047（2026-11-04）：v2 引擎脚本【不展示】AI Bot 入口。
+                    原因：Bot 侧的提示词（后端 ScriptType.java）完全没有 v2/v3 概念，
+                    它只会按主流的 v3 写法（STD.*）生成脚本。若允许对 v2 脚本使用 Bot，
+                    会产出「v3 写法 + v2 引擎」的错配脚本，运行时抛
+                    ReferenceError: STD is not defined（NAURA 埋点即此成因）。
+                    口径：v2 已废弃、只保证既有功能，不再新增 —— 故直接隐藏入口，
+                    不做「可见但禁用」，避免误导用户以为该功能对该脚本可用。
+                    判据沿用本文件既有范式（见上方 Number(scriptVersion) !== 3 的 V2 提示）。
+                  */}
+                  {botVisible && Number(scriptVersion) === 3 && (
                     <Tooltip
                       placement="top"
                       title={intl.get('spfm.bot.view.title.botToggle').d('Bot (AI 编程助手)')}
@@ -1329,7 +1333,12 @@ function MarmotScriptEditor(props = {}) {
                   </Row>
                 )}
               </div>
-              {botOpen && (
+              {/*
+                platform-9047：与上方入口按钮共用同一判据 —— 双保险。
+                入口按钮已对 v2 隐藏，此处再拦一次，避免「状态残留 / 其他入口置 true」
+                导致 v2 脚本仍能打开 Bot 面板。
+              */}
+              {botOpen && Number(scriptVersion) === 3 && (
                 <BotPanel
                   scriptCodeDs={scriptCodeDs}
                   scriptOutputDs={scriptOutputDs}
@@ -1479,15 +1488,6 @@ function MarmotScriptEditor(props = {}) {
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 5, marginBottom: 5 }}>
             <div style={{ borderTop: '1px solid', width: 25 }} />
           </div>
-          <Row>
-            <Tooltip
-              title={intl
-                .get('spfm.adaptorTaskDetail.view.action.copyDevtool')
-                .d('点击复制devtool地址')}
-            >
-              <Button onClick={getDevTool} icon="build" funcType="flat" shape="circle" />
-            </Tooltip>
-          </Row>
           <Row>
             <Tooltip
               title={intl.get('spfm.adaptorTaskDetail.view.action.tooltip').d('点击测试脚本')}

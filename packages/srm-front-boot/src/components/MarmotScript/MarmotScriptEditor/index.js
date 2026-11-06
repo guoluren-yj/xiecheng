@@ -9,12 +9,11 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { CodeArea, Button, Row, Modal } from 'choerodon-ui/pro';
-import { Card, Tooltip, Popover, message } from 'choerodon-ui';
+import { Card, Tooltip, Popover } from 'choerodon-ui';
 import { Icon as HIcon } from 'hzero-ui';
-import copy from 'copy-to-clipboard';
 import crypto from 'crypto-js';
 import { isEmpty, trim, isArray } from 'lodash';
-import { getResponse, getCurrentUser } from 'utils/utils';
+import { getResponse } from 'utils/utils';
 import intl from 'utils/intl';
 import notification from 'utils/notification';
 import Cookies from 'universal-cookie';
@@ -97,7 +96,6 @@ const sqlOptions = {
 };
 const modalKey = Modal.key();
 const cookies = new Cookies();
-const { loginName } = getCurrentUser();
 
 function MarmotScriptEditor(props = {}) {
   /**
@@ -690,20 +688,13 @@ function MarmotScriptEditor(props = {}) {
     });
   };
 
-  const getDevTool = () => {
-    const result = `devtools://devtools/bundled/js_app.html?wss=gateway.dev.isrm.going-link.com/ssc-ws/websocket/new-debugger/${loginName}`;
-    copy(result);
-    message.destroy();
-    message.config({ duration: 2 });
-    message.success(
-      intl
-        .get('spfm.adaptorTaskDetail.copy.devtool.success')
-        .d('复制地址成功, 请手动粘贴至Chrome浏览器地址栏'),
-      undefined,
-      undefined,
-      'bottomRight'
-    );
-  };
+  // platform-9047（Q8）调试器功能整体下线：原 getDevTool 负责拼装
+  // devtools://devtools/bundled/js_app.html?wss=.../ssc-ws/websocket/new-debugger/${loginName}
+  // 并复制到剪贴板。调试器（容器 /debug 端点、debugger IP 注册、网关 /ssc-ws 动态路由）已全部删除，
+  // 该地址必然 404，故方法一并移除。
+  //
+  // ⚠ 注意区分：紧随其后的「测试脚本」按钮（onTestScript → /v1/script-debug/run）是【另一套功能】，
+  // 与断点调试器无关，owner 明确要求保留，不要顺手删掉。
 
   useEffect(() => {
     // 使用闭包解决关闭时报错的问题
@@ -1015,15 +1006,6 @@ function MarmotScriptEditor(props = {}) {
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: 5, marginBottom: 5 }}>
             <div style={{ borderTop: '1px solid', width: 25 }} />
           </div>
-          <Row>
-            <Tooltip
-              title={intl
-                .get('spfm.adaptorTaskDetail.view.action.copyDevtool')
-                .d('点击复制devtool地址')}
-            >
-              <Button onClick={getDevTool} icon="build" funcType="flat" shape="circle" />
-            </Tooltip>
-          </Row>
           <Row>
             <Tooltip
               title={intl.get('spfm.adaptorTaskDetail.view.action.tooltip').d('点击测试脚本')}
