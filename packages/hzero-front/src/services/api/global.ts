@@ -23,6 +23,16 @@ export async function getPublicKey() {
   return getResponse(res);
 }
 
+// 查询Link组件支持可自定义action的外部链接域名白名单
+export async function fetchGlobalLinkDomainWhiteList({tenantId, tenantNum}) {
+  return request(`/spfm/v1/${tenantId}/rel-table-records/spfm_front_external_link_host/list-from-site`, {
+    method: 'POST',
+    body: {
+      tenantNum,
+    }
+  });
+}
+
 // 查询业务规则中的日历开关
 export async function fetchGlobalCalendarEnable() {
   return request(`/sada/v1/${isTenantRoleLevel () ? `${getCurrentOrganizationId()}/` : ''}marmot-organization-api/CNF_INVOKE`, {

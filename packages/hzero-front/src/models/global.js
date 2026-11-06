@@ -45,6 +45,7 @@ import {
   queryUnauthorizedRouteList,
   updateDefaultLanguage,
   queryAmount10CalTax,
+  fetchGlobalLinkDomainWhiteList,
 } from '../services/api';
 import { getC7nLocale, getC7nProLocale } from '../services/localeApi';
 import { endTrace, getTraceStatus, startTrace } from '../services/traceLogService';
@@ -242,6 +243,7 @@ function getGlobalModalConfig({ app, getWrapperRouterData = (e) => e }) {
       license: {}, // 证书信息
       showLicenseTip: false, // 显示证书信息提示
       amount10CalTax: false,
+      linkLinkDomainWhiteList: [],
     },
 
     effects: {
@@ -506,6 +508,17 @@ function getGlobalModalConfig({ app, getWrapperRouterData = (e) => e }) {
             type: 'updateState',
             payload: {
               amount10CalTax: !isEmpty(amount10CalTax),
+            },
+          });
+        }
+      },
+      * fetchGlobalLinkDomainWhiteList({ payload }, { call, put }) {
+        if (`${payload.tenantId}` !== '0') {
+          const res = getResponse(yield call(fetchGlobalLinkDomainWhiteList, payload));
+          yield put({
+            type: 'updateState',
+            payload: {
+              linkLinkDomainWhiteList: (res || []).map(item => item.host),
             },
           });
         }

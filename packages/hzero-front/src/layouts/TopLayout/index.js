@@ -80,6 +80,7 @@ class TopLayout extends React.Component {
       dispatch({ type: 'global/queryGlobalCalendarEnable' });
       // 进入工作台查询配置表
       dispatch({ type: 'global/queryAmount10CalTax', payload: { tenantId, tenantNum } });
+      dispatch({ type: 'global/fetchGlobalLinkDomainWhiteList', payload: { tenantId, tenantNum } });
       // 查询证书信息
       dispatch({ type: 'global/fetchLicenseStatus' });
       // 查询消息未读数量
