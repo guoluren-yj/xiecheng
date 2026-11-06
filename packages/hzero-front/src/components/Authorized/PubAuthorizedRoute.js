@@ -67,6 +67,7 @@ export default class AuthorizedRoute extends React.Component {
             dispatch({ type: 'global/queryGlobalCalendarEnable' });
             // 进入工作台查询配置表
             dispatch({ type: 'global/queryAmount10CalTax', payload: { tenantId, tenantNum } });
+            dispatch({ type: 'global/fetchGlobalLinkDomainWhiteList', payload: { tenantId, tenantNum } });
             moment.tz.setDefault(GMT2ETCMap[timeZone] || timeZone);
             // 请求 self 接口成功
             // 设置当前语言到session

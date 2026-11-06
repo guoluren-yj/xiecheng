@@ -12,15 +12,37 @@ import { processMessageData, parseUrlParams } from './util';
 import styles from './index.less';
 import { getActiveTabKey, openTab } from '../../utils/menuTab';
 
+/**
+ * 校验 postMessage 的来源是否在白名单内
+ * @param {string} origin - msg.origin，形如 `https://youshu.com`（带协议、无路径、默认端口省略）
+ * @param {string[]} whiteList - 白名单，可能存完整 origin，也可能只存 host
+ * @returns {boolean}
+ */
+function isTrustedOrigin(origin, whiteList = []) {
+  if (!origin) return false;
+  let host = '';
+  try {
+    host = new URL(origin).host;
+  } catch (e) {
+    // origin 为 "null"（file://、沙箱 iframe、srcdoc）或非法
+    return false;
+  }
+  return whiteList.some((item) => item === origin || item === host);
+}
+
 function Link(props) {
-  const { match: { params: { link = '' } = {} } = {}, global: { menuLeafNode = [] } = {}, location: { pathname } = {}, dispatch } = props;
+  const { match: { params: { link = '' } = {} } = {}, global: { menuLeafNode = [], linkLinkDomainWhiteList = [] } = {}, location: { pathname } = {}, dispatch } = props;
   const [initLoading, setInitLoading] = useState(true);
   const [accessToken] = useState(getAccessToken());
   const API_HOST = useMemo(() => getEnvConfig().API_HOST, []);
-
   useEffect(() => {
     const listener = debounce((msg) => {
-      if (msg && msg.data && msg.data.type === "customAction") {
+      if (
+        msg &&
+        msg.data &&
+        msg.data.type === "customAction" &&
+        isTrustedOrigin(msg.origin, linkLinkDomainWhiteList)
+      ) {
         const data = processMessageData(msg);
         if (getActiveTabKey() !== pathname) return;
         const { url, processUrl: processUrlStr, modalProperties, target, modalPageData } = data;
@@ -93,7 +115,7 @@ function Link(props) {
     }, 300);
     window.addEventListener("message", listener);
     return () => window.removeEventListener("message", listener);
-  }, []);
+  }, [linkLinkDomainWhiteList]);
   const menu = menuLeafNode.find((item) => item.id.toString() === link) || {};
   const type = menu.type || '';
   let url = '';
